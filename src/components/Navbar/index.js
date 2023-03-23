@@ -124,9 +124,9 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
             {/* <NavBtn>  */}
           {/* <NavItem> */}
-                         <NavLinks2 to='/signup'>Sign Up
+                         {/* <NavLinks2 to='/signup'>Sign Up
                          {hover ? <ArrowForward /> : <ArrowRight />}
-                         </NavLinks2>
+                         </NavLinks2> */}
                          {/* </NavBtn>  */}
 
             
