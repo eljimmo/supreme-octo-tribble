@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
 
               <NavLinks2 to='/signup'>Sign Up
-                         {hover ? <ArrowForward /> : <ArrowRight />}
+                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
                          </NavLinks2>
 
                 {/* <NavLinks
@@ -108,7 +108,7 @@ const Navbar = ({ toggle }) => {
               <NavItem>
 
               <NavLinks2 to='/login'>Log In
-                         {hover ? <ArrowForward /> : <ArrowRight />}
+                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
                          </NavLinks2>
                  {/* <NavLinks
                   to='signup'
