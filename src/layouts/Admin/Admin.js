@@ -115,7 +115,7 @@ function Admin(props) {
               />
               <Routes >
                 {getRoutes(routes)}
-                <Redirect from="*" to="/admin/dashboard" />
+                {/* <Redirect from="*" to="/admin/dashboard" /> */}
               </Routes>
               {
                 // we don't want the Footer to be rendered on map page
