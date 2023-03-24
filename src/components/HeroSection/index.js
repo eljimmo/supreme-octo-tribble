@@ -197,6 +197,10 @@ function HeroSection() {
         {/* <div className="flex justify-start md:justify-between gap-4"> */}
                   {/* <div className="flex justify-start md:justify-between gap-4 "> */}
                     {/* <div> */}
+                    {/* <div className="flex justify-start md:justify-between gap-4 my-8"> */}
+        {/* <Row className="rowgap-vbox" gutter={[24, 0]}> */}
+        {/* <div className="flex justify-start md:justify-between gap-4 "> */}
+
                     <HeroBtnWrapper>
           <TButton
             to='signup'
@@ -216,7 +220,7 @@ function HeroSection() {
         </HeroBtnWrapper>
                     {/* </div> */}
 
-                    {/* <div> */}
+                    <div>
         <HeroBtnWrapper>
           <TButton
             to='signup'
@@ -234,16 +238,13 @@ function HeroSection() {
             {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
           </TButton>
         </HeroBtnWrapper>
-        {/* </div> */}
+        </div>
 
         {/* </div> */}
 
         {/* </div> */}
 
 
-        <div className="flex justify-start md:justify-between gap-4 my-8">
-        <Row className="rowgap-vbox" gutter={[24, 0]}>
-        <div className="flex justify-start md:justify-between gap-4 ">
 
         <HeroBtnWrapper>
           <TButton
@@ -263,7 +264,7 @@ function HeroSection() {
           </TButton>
         </HeroBtnWrapper>
 
-        <HeroBtnWrapper>
+        {/* <HeroBtnWrapper>
           <TButton
             to='signup'
             smooth={true}
@@ -277,11 +278,10 @@ function HeroSection() {
             onMouseLeave={onHover}
           >
             Modeling 
-            {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
           </TButton>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper>  */}
 
-        <HeroBtnWrapper>
+         {/* <HeroBtnWrapper>
           <TButton
             to='signup'
             smooth={true}
@@ -295,11 +295,10 @@ function HeroSection() {
             onMouseLeave={onHover}
           >
             RL & ML 
-            {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
           </TButton>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper>  */}
 
-        </div>
+        {/* </div> */}
 
           {/* {count.map((c, index) => (
             <Col
@@ -328,8 +327,8 @@ function HeroSection() {
               </Card>
             </Col>
           ))} */}
-        </Row>
-      </div>
+        {/* </Row> */}
+      {/* </div> */}
       </HeroContent>
 
           {/* {count.map((c, index) => (
