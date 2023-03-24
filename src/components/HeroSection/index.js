@@ -11,46 +11,9 @@ import {
   HeroP,
   AnimatedGradientText,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
   TButton,
 } from './HeroElements';
-import {
-  Card,
-  Col,
-  Row,
-  Typography,
-  Tooltip,
-  Progress,
-  Upload,
-  message,
-  Timeline,
-  Radio,
-} from "antd";
-import {
-  SidebarContainer,
-  Icon,
-  CloseIcon,
-  SidebarWrapper,
-  SidebarMenu,
-  SidebarLink,
-  SidebarLink2,
-  SidebarRoute,
-  SideBtnWrap
-} from '../Sidebar/SidebarElements';
 
-import {
-  MobileIcon,
-  Nav,
-  NavbarContainer,
-  NavItem,
-  NavLinks,
-  NavLinks2,
-  NavLogo,
-  NavMenu,
-  NavBtn,
-  NavBtnLink
-} from '../Navbar/NavbarElements';
 
 
 function HeroSection() {
