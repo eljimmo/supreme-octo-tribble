@@ -1,5 +1,31 @@
 import styled,  { keyframes } from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
+
+
+
+
+export const TButton = styled(Link)`
+  border-radius: 50px;
+  background: ${({ primary }) => (primary ? '#76b8f4' : 'transparent')};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({ dark }) => (dark ? '#010606' : '#ffffff')};
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: '2px solid #76b8f4';
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? 'transparent' : '#76b8f4')};
+  }
+`;
 
 
 const gradientText = keyframes`
@@ -20,7 +46,7 @@ export const AnimatedGradientText = styled.h1`
   animation: ${gradientText} 5s ease-in-out infinite;
   padding: 2.4rem 4.2rem;
   padding-right: 4.1rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
   text-align: center;
@@ -90,6 +116,7 @@ export const HeroContent = styled.div`
   position: absolute;
   padding: 8px 24px;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   align-items: center;
 `;

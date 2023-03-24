@@ -9,10 +9,6 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
-// reactstrap components
-
-// import AnimatedCursor from "react-animated-cursor";
-
 
 function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,17 +18,7 @@ function Welcome() {
   };
   return (
     <>
-                 {/* <AnimatedCursor
-      innerSize={8}
-      outerSize={8}
-      color='	0, 102, 255'
-      outerAlpha={0.2}
-      innerScale={3.7}
-      outerScale={2}
-      trailingSpeed={9}
-      outerStyle={{
-        border: '3px outset #cc0000'
-      }} /> */}
+
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
