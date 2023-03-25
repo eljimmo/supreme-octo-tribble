@@ -10,8 +10,7 @@ import {
 
 } from '../components/InfoSection/Data';
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, SoftShadows, PerformanceMonitor, Html, Environment, Text, useTexture } from '@react-three/drei'
-import { EffectComposer, DepthOfField,  Bloom, Noise, Vignette } from '@react-three/postprocessing'
+import { Text } from '@react-three/drei'
 import * as THREE from 'three'
 
 export default function Welcome() {
