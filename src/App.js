@@ -20,11 +20,6 @@ import Welcome from "./pages/index";
 import React from "react";
 
 
-import AdminLayout from "../src/layouts/Admin/Admin";
-import RTLLayout from "../src/layouts/RTL/RTL";
-
-import ThemeContextWrapper from "../src/components/ThemeWrapper/ThemeWrapper";
-import BackgroundColorWrapper from "../src/components/BackgroundColorWrapper/BackgroundColorWrapper";
 
 
 export default function App() {
@@ -36,7 +31,6 @@ export default function App() {
         <AuthProvider>
           <Routes>
 
-          {/* <Route path="/dash" render={(props) => <AdminLayout {...props} />} /> */}
 
             <Route
               path="/Home"
