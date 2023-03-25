@@ -118,9 +118,7 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Welcome />} />
 
-            
-            {/* <Route path="/Muse_App/*" element={ <Muse_App /> } /> */}
-
+    
 
           </Routes>
         </AuthProvider>

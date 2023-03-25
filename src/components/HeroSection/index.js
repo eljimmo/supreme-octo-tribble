@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import {Link, Route, Routes} from 'react-router-dom';
-
-import { Button } from '../ButtonElements';
 import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
