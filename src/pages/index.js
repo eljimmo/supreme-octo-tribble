@@ -12,6 +12,8 @@ import {
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
 import * as THREE from 'three'
+import Model from '../components/3d_models/brain'
+import { OrbitControls } from "@react-three/drei";
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +49,15 @@ export default function Welcome() {
 
         <InfoSection {...homeObjTwo} />
         <InfoSection {...homeObjThree} />
+
+        <Canvas className="canvas">
+        <OrbitControls enableZoom={false} />
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <Suspense fallback={null}>
+          <Model />
+        </Suspense>
+      </Canvas>
 
 
 
