@@ -15,7 +15,9 @@ import { Text } from '@react-three/drei'
 import * as THREE from 'three'
 import Model from '../3d_models/brain'
 import { OrbitControls } from "@react-three/drei";
-
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -28,7 +30,29 @@ export default function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
+
+
       <Canvas
+    shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+<OrbitControls enableZoom={false} />
+<ambientLight intensity={0.5} />
+<directionalLight position={[-2, 5, 2]} intensity={1} />
+<Suspense fallback={null}>
+  <Model />
+</Suspense>
+</Canvas>
+</HeroContent>
+
+
+
+
+
+
+
+      {/* <Canvas
     shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
@@ -43,8 +67,8 @@ export default function HeroSection() {
         <directionalLight position={[-50, 0, -40]} intensity={0.7} />
         <Intro />
       </Suspense>
-    </Canvas>
-        <HeroP>
+    </Canvas> */}
+        {/* <HeroP>
           Artificial Intelligence.
         </HeroP>
         <HeroP>
@@ -52,10 +76,10 @@ export default function HeroSection() {
         </HeroP>
         <HeroP>
         Coming 2023.
-        </HeroP>
+        </HeroP> */}
 
 
-                    <HeroBtnWrapper>
+                    {/* <HeroBtnWrapper>
           <TButton
             to='signup'
             smooth={true}
@@ -108,9 +132,9 @@ export default function HeroSection() {
           >
             AI Simulations 
           </TButton>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       
-      </HeroContent>
+      {/* </HeroContent> */}
 
     </HeroContainer>
   );

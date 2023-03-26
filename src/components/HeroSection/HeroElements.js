@@ -115,6 +115,8 @@ export const HeroContent = styled.div`
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
+  height: 800px;
+  width: 100%;
   display: flex;
   overflow-x: hidden;
   flex-direction: column;

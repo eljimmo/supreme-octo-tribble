@@ -28,19 +28,7 @@ export default function Welcome() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      {/* <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
-      <color attach="background" args={['black']} />
-      <fog attach="fog" args={['black', 15, 20]} />
-      <Suspense fallback={null}>
-        <group position={[0, -1, 0]}>
-          <VideoText position={[0, 1.3, -2]} />
-        </group>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[0, 10, 0]} intensity={0.3} />
-        <directionalLight position={[-50, 0, -40]} intensity={0.7} />
-        <Intro />
-      </Suspense>
-    </Canvas> */}
+     
       <InfoSection {...homeObjOne} />
 
       
@@ -57,7 +45,12 @@ export default function Welcome() {
         </Suspense>
       </Canvas>
 
-
+      <div class="grid grid-cols-6 gap-4">
+  <div class="col-start-2 col-span-4 ...">01</div>
+  <div class="col-start-1 col-end-3 ...">02</div>
+  <div class="col-end-7 col-span-2 ...">03</div>
+  <div class="col-start-1 col-end-7 ...">04</div>
+</div>
 
 
 
