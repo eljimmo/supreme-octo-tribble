@@ -121,7 +121,7 @@ function VideoText(props) {
   const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/drei.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
   useEffect(() => void video.play(), [video])
   return (
-    <Text fontSize={3} letterSpacing={-0.06} {...props}>
+    <Text fontSize={8} letterSpacing={-0.06} {...props}>
       LEIBNIZ
       <meshBasicMaterial toneMapped={false}>
         <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
