@@ -1,4 +1,4 @@
-import React, { useState, Suspense, useEffect } from 'react';
+import React, { useState, Suspense, useEffect, useRef } from 'react';
 import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
@@ -11,10 +11,13 @@ import {
   TButton,
 } from './HeroElements';
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Text } from '@react-three/drei'
+import { Text, Loader, Line, Shadow, useTexture, meshBounds } from '@react-three/drei'
 import * as THREE from 'three'
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
+import state from '../GEO/state';
+import { Block, useBlock } from "../GEO/blocks";
+import { useDrag } from "@use-gesture/react"
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -39,6 +42,7 @@ export default function HeroSection() {
 <Suspense fallback={null}>
   <Model />
 </Suspense>
+
 </Canvas>
 <Overlay />
 
@@ -185,5 +189,43 @@ function Overlay({  }) {
         </text>
       </a.svg>
     </div>
+  )
+}
+
+
+function Marker() {
+  const ref = useRef()
+  const [active, setActive] = useState(false)
+  const [hovered, set] = useState(false)
+  const { sectionWidth } = useBlock()
+  useEffect(() => void (document.body.style.cursor = hovered ? "grab" : "auto"), [hovered])
+  useFrame(({ camera }) => {
+    ref.current.rotation.z = THREE.MathUtils.lerp(ref.current.rotation.z, (state.top.current / state.zoom / sectionWidth / state.pages) * -Math.PI * 2, 0.1)
+    const s = THREE.MathUtils.lerp(ref.current.scale.x, active || hovered ? 2 : 0.75, 0.1)
+    ref.current.scale.set(s, s, s)
+    camera.zoom = THREE.MathUtils.lerp(camera.zoom, active || hovered ? 40 : state.zoom, 0.1)
+    camera.updateProjectionMatrix()
+  })
+  const bind = useDrag(({ movement: [x], first, last }) => (setActive(!last), (state.ref.scrollLeft = x * 2 * state.pages)), {
+    initial: () => [(state.ref.scrollLeft * 0.5) / state.pages]
+  })
+  return (
+    <group ref={ref} position={[0, 0, 2]}>
+      <Rect {...bind()} onPointerOver={(e) => (e.stopPropagation(), set(true))} onPointerOut={() => set(false)} />
+    </group>
+  )
+}
+
+
+
+function Rect({ scale, ...props }) {
+  return (
+    <group scale={scale}>
+      <Line points={[-0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0]} color="white" linewidth={1} position={[0, 0, 0]} />
+      <mesh {...props} raycast={meshBounds}>
+        <planeGeometry />
+        <meshBasicMaterial transparent opacity={0.1} />
+      </mesh>
+    </group>
   )
 }

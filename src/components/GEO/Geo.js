@@ -34,7 +34,7 @@ export default function Model(props) {
           <meshBasicMaterial color="#cccccc" toneMapped={false} />
         </Text>
         <Text bold position={[-0.01, -0.1, 0]} fontSize={0.1} lineHeight={1} letterSpacing={-0.05} color="black">
-          {`Leibniz Analytica,\nA New Approach to\nFinancial Analysis`}
+          {`Leibniz Analytica,\nA New Approach to\nFinancial Analysis\n Releasing 2023  `}
         </Text>
       </group>
       <Shadow ref={shadow} opacity={0.3} rotation-x={-Math.PI / 2} position={[0, -1.51, 0]} />
