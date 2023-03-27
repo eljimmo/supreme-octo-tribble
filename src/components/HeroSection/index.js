@@ -13,10 +13,8 @@ import {
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
 import * as THREE from 'three'
-import { OrbitControls } from "@react-three/drei";
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
-import Effects from '../GEO/Effects'
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -36,7 +34,6 @@ export default function HeroSection() {
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [1, 5, 20], fov: 8.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-<OrbitControls enableZoom={false} />
 <ambientLight intensity={0.5} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
