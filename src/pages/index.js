@@ -30,6 +30,7 @@ export default function Welcome() {
       <Navbar toggle={toggle} />
       <HeroSection />
      
+     
       <InfoSection {...homeObjOne} />
 
       

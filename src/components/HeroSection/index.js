@@ -1,4 +1,4 @@
-import React, { useState, Suspense, useEffect, useRef } from 'react';
+import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
 import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
@@ -10,15 +10,15 @@ import {
   HeroBtnWrapper,
   TButton,
 } from './HeroElements';
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Text, Loader, Line, Shadow, useTexture, meshBounds } from '@react-three/drei'
+import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
+import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder } from '@react-three/drei'
 import * as THREE from 'three'
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
 import state from '../GEO/state';
 import { Block, useBlock } from "../GEO/blocks";
 import { useDrag } from "@use-gesture/react"
-
+import Effects from '../GEO/Effects'
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -37,16 +37,28 @@ export default function HeroSection() {
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [1, 5, 20], fov: 8.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-<ambientLight intensity={0.5} />
+<ambientLight intensity={1} />
+{/* <Marker/> */}
+
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
+
+<Suspense fallback={null}>\
+{/* <TextRing
+          // position={[-1, 3.5, 0]}
+          rotation={[0, 0, 0.15]}
+          color={'grey'}
+          fontSizing={370}
+          repeatCount={4}>
+          Leibniz
+        </TextRing> */}
   <Model />
+  {/* <Caption>{`THE\nUNDERPINNINGS\nOF\nCONSCIOUS AGENTS.`}</Caption> */}
+
 </Suspense>
 
 </Canvas>
-<Overlay />
-
 </HeroContent>
+
 
 
 
@@ -123,7 +135,43 @@ export default function HeroSection() {
       {/* </HeroContent> */}
 
     </HeroContainer>
+
+
+
+
   );
+}
+
+function Map() {
+  return new Array(6).fill().map((img, index) => (
+    <Block key={index} factor={1 / state.sections / 2} offset={index}>
+      <Dot />
+    </Block>
+  ))
+}
+
+function Caption({ children }) {
+  const { width } = useThree((state) => state.viewport)
+  return (
+    <Text
+      // position={[0, 0, -5]}
+      // lineHeight={0.8}
+      font="/Ki-Medium.ttf"
+      fontSize={width / 12}
+      material-toneMapped={false}
+      anchorX="center"
+      anchorY="middle">
+      {children}
+    </Text>
+  )
+}
+
+
+function Dot() {
+  const [hovered, set] = useState(false)
+  const { offset, sectionWidth } = useBlock()
+  useEffect(() => void (document.body.style.cursor = hovered ? "pointer" : "auto"), [hovered])
+  return <Rect scale={0.15} onPointerOver={() => set(true)} onPointerOut={() => set(false)} onClick={() => (state.ref.scrollLeft = offset * sectionWidth * state.zoom)} />
 }
 
 
@@ -148,6 +196,14 @@ function Intro() {
     state.camera.position.lerp(vec.set(state.mouse.x * 5, 3 + state.mouse.y * 2, 14), 0.05)
     state.camera.lookAt(0, 0, 0)
   })
+}
+
+
+function HeadsUpDisplay({ children }) {
+  const [scene] = useState(() => new THREE.Scene())
+  const { gl, camera } = useThree()
+  useFrame(() => ((gl.autoClear = false), gl.clearDepth(), gl.render(scene, camera)), 2)
+  return createPortal(children, scene)
 }
 
 
@@ -207,7 +263,7 @@ function Marker() {
     camera.updateProjectionMatrix()
   })
   const bind = useDrag(({ movement: [x], first, last }) => (setActive(!last), (state.ref.scrollLeft = x * 2 * state.pages)), {
-    initial: () => [(state.ref.scrollLeft * 0.5) / state.pages]
+    // initial: () => [(state.ref.scrollLeft * 0.5) / state.pages]
   })
   return (
     <group ref={ref} position={[0, 0, 2]}>
@@ -226,6 +282,132 @@ function Rect({ scale, ...props }) {
         <planeGeometry />
         <meshBasicMaterial transparent opacity={0.1} />
       </mesh>
+    </group>
+  )
+}
+
+
+const pointSize = 4
+
+function ccccc(children, color, fontSizing, uvWidth) {
+  const fontSize = fontSizing
+
+  if (uvWidth == null) {
+    uvWidth = 2048
+  }
+
+  const canvas = document.createElement('canvas')
+  canvas.width = uvWidth
+  canvas.height = uvWidth / pointSize
+  const context = canvas.getContext('2d')
+
+  context.fillStyle = 'transparent'
+  context.fillRect(0, 0, canvas.width, canvas.height)
+
+  context.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif`
+  context.textAlign = 'center'
+  context.textBaseline = 'middle'
+  context.fillStyle = color
+
+  context.lineWidth = 2
+
+  //////////////// LetterSpacing
+  // const ctext = children.split('').join(String.fromCharCode(8202))
+  const ctext = children
+
+  context.fillText(ctext, canvas.width / 2, canvas.height / 2)
+
+  return canvas
+}
+
+export const TextRing = ({ children, position, color, fontSizing, repeatCount, rotation, colorBack, setColor, uvWidth }) => {
+  const [hovered, setHover] = useState(false)
+
+  if (rotation == null) {
+    rotation = [0, 0, 0]
+  }
+
+  const canvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const backCanvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const texture = useRef()
+  const texture2 = useRef()
+  useFrame(({ clock }) => {
+    texture.current.offset.x = clock.getElapsedTime() / 2
+    texture2.current.offset.x = clock.getElapsedTime() / 2
+  })
+
+  const cylArgs = [1, 1, 1 / pointSize, 64, 1, true]
+
+  //////////// Click isMobile ///////////
+  // const MobileClicker = () => {
+  //   setColor(colorBack)
+  //   setHover(true)
+  //   setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+  //   return () => {
+  //     clearTimeout(timer)
+  //   }
+  // }, [])
+  // }
+  // <group
+  //     rotation-y={Math.PI / 4}
+  //     scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+  //     rotation={rotation}
+  //     position={position}
+  //     onPointerDown={(e) => MobileClicker()}>
+  ////////////////////////////////////////
+
+  return (
+    <group
+      rotation-y={Math.PI / 4}
+      scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+      rotation={rotation}
+      position={position}
+      onClick={(e) => setColor(colorBack)}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}>
+      <Cylinder args={cylArgs} side={THREE.FrontSide}>
+        <meshStandardMaterial transparent attach="material">
+          {/* <meshStandardMaterial attach="material"> */}
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount, 1]}
+            image={canvas}
+            premultiplyAlpha
+            ref={texture}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
+
+      <Cylinder args={cylArgs}>
+        <meshStandardMaterial transparent attach="material" side={THREE.BackSide}>
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount * 2, 1]}
+            image={backCanvas}
+            premultiplyAlpha
+            ref={texture2}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
     </group>
   )
 }
