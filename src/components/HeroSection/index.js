@@ -13,11 +13,7 @@ import {
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
 import * as THREE from 'three'
-// import Model from '../3d_models/brain'
 import { OrbitControls } from "@react-three/drei";
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
 import Effects from '../GEO/Effects'
@@ -57,22 +53,6 @@ export default function HeroSection() {
 
 
 
-      {/* <Canvas
-    shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>      
-      <fog attach="fog" args={['black', 15, 20]} />
-      <Suspense fallback={null}>
-        <group position={[0, -1, 0]}>
-          <VideoText position={[0, 1.3, -2]} />
-        </group>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[0, 10, 0]} intensity={0.3} />
-        <directionalLight position={[-50, 0, -40]} intensity={0.7} />
-        <Intro />
-      </Suspense>
-    </Canvas> */}
         {/* <HeroP>
           Artificial Intelligence.
         </HeroP>
