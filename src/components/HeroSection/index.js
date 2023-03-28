@@ -19,6 +19,10 @@ import state from '../GEO/state';
 import { Block, useBlock } from "../GEO/blocks";
 import { useDrag } from "@use-gesture/react"
 import Effects from '../GEO/Effects'
+
+
+
+
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -35,7 +39,7 @@ export default function HeroSection() {
       <Canvas
         shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [1, 5, 20], fov: 8.5, near: 1, far: 100 }}
+    camera={{ position: [3, 0, 20], fov: 13.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
 <ambientLight intensity={1} />
 {/* <Marker/> */}
@@ -43,16 +47,8 @@ export default function HeroSection() {
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 
 <Suspense fallback={null}>\
-{/* <TextRing
-          // position={[-1, 3.5, 0]}
-          rotation={[0, 0, 0.15]}
-          color={'grey'}
-          fontSizing={370}
-          repeatCount={4}>
-          Leibniz
-        </TextRing> */}
+
   <Model />
-  {/* <Caption>{`THE\nUNDERPINNINGS\nOF\nCONSCIOUS AGENTS.`}</Caption> */}
 
 </Suspense>
 
@@ -320,7 +316,7 @@ function ccccc(children, color, fontSizing, uvWidth) {
   return canvas
 }
 
-export const TextRing = ({ children, position, color, fontSizing, repeatCount, rotation, colorBack, setColor, uvWidth }) => {
+export const TextRing = ({ children, position, color, fontSizing, repeatCount, rotation, colorBack, uvWidth }) => {
   const [hovered, setHover] = useState(false)
 
   if (rotation == null) {
@@ -375,7 +371,6 @@ export const TextRing = ({ children, position, color, fontSizing, repeatCount, r
       scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
       rotation={rotation}
       position={position}
-      onClick={(e) => setColor(colorBack)}
       onPointerOver={(e) => setHover(true)}
       onPointerOut={(e) => setHover(false)}>
       <Cylinder args={cylArgs} side={THREE.FrontSide}>
