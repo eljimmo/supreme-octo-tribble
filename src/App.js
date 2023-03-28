@@ -114,10 +114,6 @@ export default function App() {
             <Route path="/verification" element={<Verification />} />
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Welcome />} />
-            <Route path="/B" element={<BApp />} />
-            <Route path="/RA" element={<ReactApp />} />
-            <Route path="/G" element={<GeoApp />} />
-
     
 
           </Routes>
