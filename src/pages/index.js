@@ -20,46 +20,12 @@ import state from '../components/GEO/state';
 import { Block, useBlock } from "../components/GEO/blocks";
 import { useDrag } from "@use-gesture/react"
 import Effects from '../components/GEO/Effects'
-import { RigidBody, BallCollider, CylinderCollider, Physics } from '@react-three/rapier';
 import {
   HeroContainer200,
   HeroContainer400,
 } from '../components/HeroSection/HeroElements';
 
 
-
-THREE.ColorManagement.legacyMode = false
-const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "red" })
-const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000", envMapIntensity: 20 })
-const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
-const baubles = [...Array(50)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
-
-function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
-  const { nodes } = useGLTF("cap.glb")
-  const api = useRef()
-  useFrame((state, delta) => {
-    delta = Math.min(0.1, delta)
-    api.current.applyImpulse(
-      vec
-        .copy(api.current.translation())
-        .normalize()
-        .multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
-    )
-  })
-  return (
-    <RigidBody linearDamping={0.75} angularDamping={0.15} friction={0.2} position={[r(20), r(20) - 25, r(20) - 10]} ref={api} colliders={false} dispose={null}>
-      <BallCollider args={[scale]} />
-      <CylinderCollider rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 1.2 * scale]} args={[0.15 * scale, 0.275 * scale]} />
-      <mesh castShadow receiveShadow scale={scale} geometry={sphereGeometry} material={baubleMaterial} />
-      <mesh castShadow scale={2.5 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Mesh_1.geometry} material={capMaterial} />
-    </RigidBody>
-  )
-}
-
-
-
-const DEFAULT_LAYER = 0
-const OCCLUSION_LAYER = 1
 
 
 
@@ -89,7 +55,6 @@ function FallbackMaterial({ url }) {
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
-  const [enabled, enable] = useState(true)
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -127,9 +92,7 @@ export default function Welcome() {
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 
 <Suspense fallback={null}>
-<Physics gravity={[0, 0, 0]}>
-      {baubles.map((props, i) => <Bauble key={i} {...props} />) /* prettier-ignore */}
-    </Physics>
+
         <Stage intensity={2}>
   <Model />
   </Stage>
@@ -151,7 +114,6 @@ export default function Welcome() {
 function Map() {
   return new Array(6).fill().map((img, index) => (
     <Block key={index} factor={1 / state.sections / 2} offset={index}>
-      {/* <Dot /> */}
     </Block>
   ))
 }
@@ -160,8 +122,7 @@ function Caption({ children }) {
   const { width } = useThree((state) => state.viewport)
   return (
     <Text
-      // position={[0, 0, -5]}
-      // lineHeight={0.8}
+
       font="/Ki-Medium.ttf"
       fontSize={width / 12}
       material-toneMapped={false}
