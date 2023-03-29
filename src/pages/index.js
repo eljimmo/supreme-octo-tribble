@@ -67,7 +67,7 @@ export default function Welcome() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />   
-      <HeroContainer200 >   
+      {/* <HeroContainer200 >   
 
       <Canvas orthographic
       width={window.innerWidth}
@@ -78,7 +78,7 @@ export default function Welcome() {
 
     </Canvas>
 
-    </HeroContainer200 >   
+    </HeroContainer200 >    */}
 
       <InfoSection {...homeObjOne} />
       {/* <HeroContent2 >    */}
