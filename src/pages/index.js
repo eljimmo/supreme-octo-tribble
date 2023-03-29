@@ -10,16 +10,80 @@ import {
 
 } from '../components/InfoSection/Data';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Cylinder, meshBounds, Line } from '@react-three/drei'
+import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
 // import Model from '../components/3d_models/brain'
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 import { a } from '@react-spring/web'
 import Model from '../components/GEO/Geo'
 import state from '../components/GEO/state';
 import { Block, useBlock } from "../components/GEO/blocks";
 import { useDrag } from "@use-gesture/react"
 import Effects from '../components/GEO/Effects'
+import { RigidBody, BallCollider, CylinderCollider, Physics } from '@react-three/rapier';
+import {
+  HeroContainer200,
+  HeroContainer400,
+} from '../components/HeroSection/HeroElements';
+
+
+
+THREE.ColorManagement.legacyMode = false
+const baubleMaterial = new THREE.MeshLambertMaterial({ color: "#c0a0a0", emissive: "red" })
+const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.75, roughness: 0.15, color: "#8a492f", emissive: "#600000", envMapIntensity: 20 })
+const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
+const baubles = [...Array(50)].map(() => ({ scale: [0.75, 0.75, 1, 1, 1.25][Math.floor(Math.random() * 5)] }))
+
+function Bauble({ vec = new THREE.Vector3(), scale, r = THREE.MathUtils.randFloatSpread }) {
+  const { nodes } = useGLTF("cap.glb")
+  const api = useRef()
+  useFrame((state, delta) => {
+    delta = Math.min(0.1, delta)
+    api.current.applyImpulse(
+      vec
+        .copy(api.current.translation())
+        .normalize()
+        .multiply({ x: -50 * delta * scale, y: -150 * delta * scale, z: -50 * delta * scale }),
+    )
+  })
+  return (
+    <RigidBody linearDamping={0.75} angularDamping={0.15} friction={0.2} position={[r(20), r(20) - 25, r(20) - 10]} ref={api} colliders={false} dispose={null}>
+      <BallCollider args={[scale]} />
+      <CylinderCollider rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 1.2 * scale]} args={[0.15 * scale, 0.275 * scale]} />
+      <mesh castShadow receiveShadow scale={scale} geometry={sphereGeometry} material={baubleMaterial} />
+      <mesh castShadow scale={2.5 * scale} position={[0, 0, -1.8 * scale]} geometry={nodes.Mesh_1.geometry} material={capMaterial} />
+    </RigidBody>
+  )
+}
+
+
+
+const DEFAULT_LAYER = 0
+const OCCLUSION_LAYER = 1
+
+
+
+function Scene() {
+  const size = useAspect(1800, 1000)
+  return (
+    <mesh scale={size}>
+      <planeGeometry />
+      <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
+        <VideoMaterial url="drei.mp4" />
+      </Suspense>
+    </mesh>
+  )
+}
+
+function VideoMaterial({ url }) {
+  const texture = useVideoTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+function FallbackMaterial({ url }) {
+  const texture = useTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
 
 
 
@@ -35,65 +99,59 @@ export default function Welcome() {
 
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <HeroSection />
-     
+      <HeroSection />   
+      <HeroContainer200 >   
+
+      <Canvas orthographic
+      width={window.innerWidth}
+      height={window.innerHeight}
+
+      >
+      <Scene />
+    </Canvas>
+    </HeroContainer200 >   
+
+      <InfoSection {...homeObjOne} />
+      <HeroContainer400 >   
+
       <Canvas
-        shadows
+    shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [1, 5, 20], fov: 8.5, near: 1, far: 100 }}
+    camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-<ambientLight intensity={1} />
-{/* <Marker/> */}
+    <ambientLight intensity={1} />
+    <spotLight position={[20, 20, 25]} penumbra={1} angle={0.2} color="white" castShadow shadow-mapSize={[512, 512]} />
+    <directionalLight position={[0, 5, -4]} intensity={4} />{/* <Marker/> */}
+    <directionalLight position={[0, -15, -0]} intensity={4} color="red" />
 
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 
-<Suspense fallback={null}>\
-<TextRing
-          // position={[-1, 3.5, 0]}
-          rotation={[0, 0, 0.15]}
-          color={'grey'}
-          fontSizing={370}
-          repeatCount={4}>
-          Leibniz
-        </TextRing>
+<Suspense fallback={null}>
+<Physics gravity={[0, 0, 0]}>
+      {baubles.map((props, i) => <Bauble key={i} {...props} />) /* prettier-ignore */}
+    </Physics>
+        <Stage intensity={2}>
   <Model />
-  {/* <Caption>{`THE\nUNDERPINNINGS\nOF\nCONSCIOUS AGENTS.`}</Caption> */}
-
+  </Stage>
 </Suspense>
-
-</Canvas>     
-      <InfoSection {...homeObjOne} />
-
-      
-
+</Canvas>  
+</HeroContainer400 >   
 
         <InfoSection {...homeObjTwo} />
+
+      
         <InfoSection {...homeObjThree} />
-
-        {/* <Canvas className="canvas">
-        <OrbitControls enableZoom={false} />
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={null}>
-          <Model />
-        </Suspense>
-      </Canvas> */}
-
-
-
-
-
-
 
     </>
   );
 }
 
 
+
 function Map() {
   return new Array(6).fill().map((img, index) => (
     <Block key={index} factor={1 / state.sections / 2} offset={index}>
-      <Dot />
+      {/* <Dot /> */}
     </Block>
   ))
 }
@@ -115,12 +173,6 @@ function Caption({ children }) {
 }
 
 
-function Dot() {
-  const [hovered, set] = useState(false)
-  const { offset, sectionWidth } = useBlock()
-  useEffect(() => void (document.body.style.cursor = hovered ? "pointer" : "auto"), [hovered])
-  return <Rect scale={0.15} onPointerOver={() => set(true)} onPointerOut={() => set(false)} onClick={() => (state.ref.scrollLeft = offset * sectionWidth * state.zoom)} />
-}
 
 
 function VideoText(props) {
@@ -291,31 +343,6 @@ export const TextRing = ({ children, position, color, fontSizing, repeatCount, r
   })
 
   const cylArgs = [1, 1, 1 / pointSize, 64, 1, true]
-
-  //////////// Click isMobile ///////////
-  // const MobileClicker = () => {
-  //   setColor(colorBack)
-  //   setHover(true)
-  //   setTimeout(() => {
-  //     setHover(false)
-  //   }, 100)
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setHover(false)
-  //   }, 100)
-  //   return () => {
-  //     clearTimeout(timer)
-  //   }
-  // }, [])
-  // }
-  // <group
-  //     rotation-y={Math.PI / 4}
-  //     scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
-  //     rotation={rotation}
-  //     position={position}
-  //     onPointerDown={(e) => MobileClicker()}>
-  ////////////////////////////////////////
 
   return (
     <group
