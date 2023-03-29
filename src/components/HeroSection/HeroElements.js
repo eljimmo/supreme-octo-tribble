@@ -198,6 +198,19 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
+export const HeroContent2 = styled.div`
+  z-index: 3;
+  max-width: 1200px;
+  position: relative;
+  padding: 8px 24px;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;

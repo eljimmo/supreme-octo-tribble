@@ -23,6 +23,8 @@ import Effects from '../components/GEO/Effects'
 import {
   HeroContainer200,
   HeroContainer400,
+  HeroContent,
+  HeroContent2
 } from '../components/HeroSection/HeroElements';
 
 
@@ -73,32 +75,30 @@ export default function Welcome() {
 
       >
       <Scene />
+
     </Canvas>
+
     </HeroContainer200 >   
 
       <InfoSection {...homeObjOne} />
-      <HeroContainer400 >   
+      {/* <HeroContent2 >    */}
 
       <Canvas
     shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-    <ambientLight intensity={1} />
-    <spotLight position={[20, 20, 25]} penumbra={1} angle={0.2} color="white" castShadow shadow-mapSize={[512, 512]} />
-    <directionalLight position={[0, 5, -4]} intensity={4} />{/* <Marker/> */}
-    <directionalLight position={[0, -15, -0]} intensity={4} color="red" />
-
-<directionalLight position={[-2, 5, 2]} intensity={1} />
+    <ambientLight intensity={2} />
+ 
 
 <Suspense fallback={null}>
 
         <Stage intensity={2}>
-  <Model />
+  <VideoText/>
   </Stage>
 </Suspense>
 </Canvas>  
-</HeroContainer400 >   
+{/* </HeroContent2 >    */}
 
         <InfoSection {...homeObjTwo} />
 
@@ -140,7 +140,7 @@ function VideoText(props) {
   const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/drei.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
   useEffect(() => void video.play(), [video])
   return (
-    <Text fontSize={8} letterSpacing={-0.06} {...props}>
+    <Text fontSize={18} letterSpacing={-0.06} {...props}>
       LEIBNIZ
       <meshBasicMaterial toneMapped={false}>
         <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
