@@ -83,7 +83,7 @@ export default function Welcome() {
       <InfoSection {...homeObjOne} />
       {/* <HeroContent2 >    */}
 
-      <Canvas
+      {/* <Canvas
     shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
@@ -97,7 +97,7 @@ export default function Welcome() {
   <VideoText/>
   </Stage>
 </Suspense>
-</Canvas>  
+</Canvas>   */}
 {/* </HeroContent2 >    */}
 
         <InfoSection {...homeObjTwo} />

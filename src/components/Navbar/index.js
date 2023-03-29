@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
@@ -36,6 +36,25 @@ import {
   ArrowForward,
   ArrowRight,
 } from '../HeroSection/HeroElements';
+import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture } from '@react-three/drei'
+import * as THREE from 'three'
+import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
+
+
+
+function VideoText(props) {
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/drei.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
+  useEffect(() => void video.play(), [video])
+  return (
+    <Text fontSize={18} letterSpacing={-0.06} {...props}>
+      LEIBNIZ
+      <meshBasicMaterial toneMapped={false}>
+        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+      </meshBasicMaterial>
+    </Text>
+  )
+}
+
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -63,7 +82,21 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/account'>
-              LEIBNIZ ANALYTICA
+            <Canvas
+    shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+    <ambientLight intensity={2} />
+ 
+
+<Suspense fallback={null}>
+
+        <Stage intensity={2}>
+  <VideoText/>
+  </Stage>
+</Suspense>
+</Canvas> 
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
