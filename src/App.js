@@ -15,9 +15,6 @@ import { Subscriptions } from "./pages/Subscriptions";
 import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
-import BApp from "./pages/Basic";
-import ReactApp from "./pages/RouterReact";
-import GeoApp from "./pages/GeoApp";
 // import { pathnames, AppTemplate, AuthProvider, AuthRoutes, MainMenu, PublicTemplate, ResetPassword, SignIn, SignUp, UserMenu, UserProfile, UserUpdateEmail, UserUpdateName, UserUpdatePassword, UserDelete, FireactProvider, ActionPages } from '@fireactjs/core';
 
 import React from "react";
@@ -114,12 +111,6 @@ export default function App() {
             <Route path="/verification" element={<Verification />} />
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Welcome />} />
-            {/* <Route path="/B" element={<BApp />} />
-            <Route path="/RA" element={<ReactApp />} />
-            <Route path="/G" element={<GeoApp />} /> */}
-
-    
-
           </Routes>
         </AuthProvider>
       </BrowserRouter>

@@ -83,22 +83,6 @@ export default function Welcome() {
       <InfoSection {...homeObjOne} />
       {/* <HeroContent2 >    */}
 
-      {/* <Canvas
-    shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-    <ambientLight intensity={2} />
- 
-
-<Suspense fallback={null}>
-
-        <Stage intensity={2}>
-  <VideoText/>
-  </Stage>
-</Suspense>
-</Canvas>   */}
-{/* </HeroContent2 >    */}
 
         <InfoSection {...homeObjTwo} />
 
