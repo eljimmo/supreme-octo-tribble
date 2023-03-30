@@ -20,13 +20,19 @@ import state from '../components/GEO/state';
 import { Block, useBlock } from "../components/GEO/blocks";
 import { useDrag } from "@use-gesture/react"
 import Effects from '../components/GEO/Effects'
+import Video from '../components/HeroSection/videos/iStock_optic.mp4';
 import {
-  HeroContainer200,
-  HeroContainer400,
+  HeroContainer,
+  HeroBg,
+  VideoBg,
   HeroContent,
-  HeroContent2
+  HeroContent2,
+  HeroContainer200,
+  HeroP,
+  AnimatedGradientText,
+  HeroBtnWrapper,
+  TButton,
 } from '../components/HeroSection/HeroElements';
-
 
 
 
@@ -85,7 +91,7 @@ export default function Welcome() {
 
 
         <InfoSection {...homeObjTwo} />
-
+    
       
         <InfoSection {...homeObjThree} />
 

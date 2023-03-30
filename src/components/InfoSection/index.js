@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, Suspense } from 'react';
 import { Button } from '../ButtonElements';
 import {
   InfoContainer,
@@ -14,6 +14,36 @@ import {
   ImgWrap,
   Img
 } from './InfoElements';
+import { Canvas } from '@react-three/fiber'
+import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
+import Model from '../GEO/Geo'
+
+
+
+function Scene() {
+  const size = useAspect(1800, 1000)
+  return (
+    <mesh scale={size}>
+      <planeGeometry />
+      <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
+        <VideoMaterial url="drei.mp4" />
+      </Suspense>
+    </mesh>
+  )
+}
+
+function VideoMaterial({ url }) {
+  const texture = useVideoTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+function FallbackMaterial({ url }) {
+  const texture = useTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+
+
 
 const InfoSection = ({
   lightBg,
@@ -60,9 +90,20 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+            <Canvas
+        shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+<ambientLight intensity={1} />
+<directionalLight position={[-2, 5, 2]} intensity={1} />
+<Suspense fallback={null}>\
+  <Model />
+</Suspense>
+</Canvas>
+              {/* <ImgWrap>
                 <Img src={img} alt={alt} />
-              </ImgWrap>
+              </ImgWrap> */}
             </Column2>
           </InfoRow>
         </InfoWrapper>

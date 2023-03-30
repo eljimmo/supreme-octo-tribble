@@ -35,24 +35,16 @@ export default function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-
-
       <Canvas
         shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [3, 0, 20], fov: 13.5, near: 1, far: 100 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
 <ambientLight intensity={1} />
-
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-
-
 <Suspense fallback={null}>\
-
   <Model />
-
 </Suspense>
-
 </Canvas>
 </HeroContent>
 
@@ -131,7 +123,7 @@ export default function HeroSection() {
       
       {/* </HeroContent> */}
 
-    </HeroContainer>
+   </HeroContainer>
 
 
 
