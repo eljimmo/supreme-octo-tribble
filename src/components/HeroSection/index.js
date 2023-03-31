@@ -16,6 +16,7 @@ import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder } from '@r
 import * as THREE from 'three'
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
+import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math'
 import state from '../GEO/state';
 import { Block, useBlock } from "../GEO/blocks";
 import { useDrag } from "@use-gesture/react"
