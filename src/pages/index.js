@@ -92,10 +92,10 @@ export default function Welcome() {
       {/* <HeroContent2 >    */}
 
 
-        <InfoSection {...homeObjTwo} />
+        {/* <InfoSection {...homeObjTwo} />
 
       
-        <InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjThree} /> */}
 
     </>
   );
