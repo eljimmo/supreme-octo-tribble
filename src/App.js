@@ -15,6 +15,9 @@ import { Subscriptions } from "./pages/Subscriptions";
 import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
+import MyProSidebarProvider from "./components/Sidebar/MyProSidebar";
+import Topbar from "./components/Topbar/Topbar";
+
 // import { pathnames, AppTemplate, AuthProvider, AuthRoutes, MainMenu, PublicTemplate, ResetPassword, SignIn, SignUp, UserMenu, UserProfile, UserUpdateEmail, UserUpdateName, UserUpdatePassword, UserDelete, FireactProvider, ActionPages } from '@fireactjs/core';
 
 import React from "react";
@@ -111,6 +114,29 @@ export default function App() {
             <Route path="/verification" element={<Verification />} />
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<Welcome />} />
+
+            {/* <MyProSidebarProvider> */}
+          {/* <div style={{ height: "100%", width: "100%" }}>
+            <main> */}
+              {/* <Topbar />
+              <Routes> */}
+                {/* <Route path="/" element={<Dashboard />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/form" element={<Form />} />
+                <Route path="/bar" element={<Bar />} />
+                <Route path="/pie" element={<Pie />} />
+                <Route path="/line" element={<Line />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/calendar" element={<Calendar />} />
+                <Route path="/geography" element={<Geography />} /> */}
+              {/* </Routes> */}
+            {/* </main>
+          </div> */}
+        {/* </MyProSidebarProvider> */}
+
+
           </Routes>
         </AuthProvider>
       </BrowserRouter>

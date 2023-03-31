@@ -42,8 +42,8 @@ export default function HeroSection() {
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>\
-  <Model />
+<Suspense fallback={null}>
+  <Model/>
 </Suspense>
 </Canvas>
 </HeroContent>
@@ -51,75 +51,6 @@ export default function HeroSection() {
 
 
 
-
-
-
-
-        {/* <HeroP>
-          Artificial Intelligence.
-        </HeroP>
-        <HeroP>
-        Machine Learning software for Finance.
-        </HeroP>
-        <HeroP>
-        Coming 2023.
-        </HeroP> */}
-
-
-                    {/* <HeroBtnWrapper>
-          <TButton
-            to='signup'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-            primary='true'
-            dark='true'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Get Started 
-          </TButton>
-        </HeroBtnWrapper>
-
-                    <div>
-        <HeroBtnWrapper>
-          <TButton
-            to='signup'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-            primary='true'
-            dark='true'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Financial Analysis 
-          </TButton>
-        </HeroBtnWrapper>
-        </div>
-
-
-
-        <HeroBtnWrapper>
-          <TButton
-            to='signup'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-            primary='true'
-            dark='true'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            AI Simulations 
-          </TButton>
-        </HeroBtnWrapper> */}
       
       {/* </HeroContent> */}
 

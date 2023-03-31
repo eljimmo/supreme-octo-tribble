@@ -12,7 +12,8 @@ import {
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
-// import Model from '../components/3d_models/brain'
+import Scenemodel from '../components/3d_models/Scene_draco'
+import Brainmodel from '../components/3d_models/brain'
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { a } from '@react-spring/web'
 import Model from '../components/GEO/Geo'
@@ -73,25 +74,26 @@ export default function Welcome() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />   
-      {/* <HeroContainer200 >   
+      {/* <HeroContent2 >    */}
 
-      <Canvas orthographic
-      width={window.innerWidth}
-      height={window.innerHeight}
+      {/* <Canvas shadows camera={{ position: [10, 10, 10], fov: 50 }}>
+      <color attach="background" args={["transparent"]} />
+<ambientLight intensity={1} />
+<directionalLight position={[-2, 5, 2]} intensity={1} />
+<Suspense fallback={null}>
+  <OrbitControls />
+  <Scenemodel/>
+</Suspense>
+</Canvas> */}
 
-      >
-      <Scene />
-
-    </Canvas>
-
-    </HeroContainer200 >    */}
+    {/* </HeroContent2 >    */}
 
       <InfoSection {...homeObjOne} />
       {/* <HeroContent2 >    */}
 
 
         <InfoSection {...homeObjTwo} />
-    
+
       
         <InfoSection {...homeObjThree} />
 
