@@ -15,7 +15,7 @@ import {
   Img
 } from './InfoElements';
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useAspect, useVideoTexture, useTexture, MeshTransmissionMaterial, ContactShadows, Environment } from '@react-three/drei'
+import { useAspect, useVideoTexture, useTexture, MeshTransmissionMaterial, ContactShadows, Environment, Float } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
@@ -124,24 +124,21 @@ const InfoSection3 = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            {/* <Column2> */}
             <Canvas dpr={[1.5, 2]} linear shadows>
-
-            {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}> */}
-
 
 <ambientLight intensity={1} />
 
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-{/* <Suspense fallback={null}> */}
 <Selector>
-  <Brainmodel position={[0, 0, 0]} />
+<Float>
+
+  <Brainmodel position={[0, -2, 0]} rotation={[0.3, Math.PI / 1.6, 0]} scale={0.75} />
+  </Float>
+
 </Selector>
-{/* </Suspense> */}
 
 </Canvas>
 
-            {/* </Column2> */}
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

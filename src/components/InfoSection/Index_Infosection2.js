@@ -58,7 +58,7 @@ function FallbackMaterial({ url }) {
 
 
 function Clump({ mat = new THREE.Matrix4(), vec = new THREE.Vector3(), ...props }) {
-    const texture = useTexture("/cross.jpeg")
+    const texture = useTexture("/crosshair.jpg")
     const [ref, api] = useSphere(() => ({ args: [1], mass: 1, angularDamping: 0.1, linearDamping: 0.65, position: [rfs(20), rfs(20), rfs(20)] }))
     useFrame((state) => {
       for (let i = 0; i < 40; i++) {
