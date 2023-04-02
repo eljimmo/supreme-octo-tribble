@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
+import InfoSection2 from '../components/InfoSection/Index_Infosection2';
+import InfoSection3 from '../components/InfoSection/Index_InfoSection3';
 import {
   homeObjOne,
   homeObjTwo,
@@ -34,6 +36,7 @@ import {
   HeroBtnWrapper,
   TButton,
 } from '../components/HeroSection/HeroElements';
+import SombreroSuperficieMath from '../components/3d_models/Sombrero_superficie_math';
 
 
 
@@ -74,28 +77,28 @@ export default function Welcome() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />   
-      {/* <HeroContent2 >    */}
+      {/* <HeroContent2 >   
 
-      {/* <Canvas shadows camera={{ position: [10, 10, 10], fov: 50 }}>
-      <color attach="background" args={["transparent"]} />
+      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 160, 160], fov: 20 }}>
+      <fog attach="fog" args={['lightpink', 60, 100]} />
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
+  <Suspense fallback={null}>
   <OrbitControls />
-  <Scenemodel/>
+  <SombreroSuperficieMath position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.006} />
 </Suspense>
-</Canvas> */}
+</Canvas>
 
-    {/* </HeroContent2 >    */}
+    </HeroContent2 >    */}
 
       <InfoSection {...homeObjOne} />
       {/* <HeroContent2 >    */}
 
 
-        {/* <InfoSection {...homeObjTwo} />
+       <InfoSection2 {...homeObjTwo} />
 
       
-        <InfoSection {...homeObjThree} /> */}
+        <InfoSection3 {...homeObjThree} /> 
 
     </>
   );

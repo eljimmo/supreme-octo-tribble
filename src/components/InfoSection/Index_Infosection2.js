@@ -48,7 +48,7 @@ function FallbackMaterial({ url }) {
 
 
 
-const InfoSection = ({
+const InfoSection2 = ({
   lightBg,
   imgStart,
   topLine,
@@ -101,9 +101,9 @@ const InfoSection = ({
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>\
-  <Model />
+  {/* <Model /> */}
   {/* <Scenemodel position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.006} /> */}
-  {/* <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} /> */}
+  <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} />
 
 </Suspense>
 </Canvas>
@@ -118,5 +118,5 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default InfoSection2;
 

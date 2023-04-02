@@ -19,6 +19,7 @@ import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
+import { OrbitControls } from 'three-stdlib';
 
 
 
@@ -48,7 +49,7 @@ function FallbackMaterial({ url }) {
 
 
 
-const InfoSection = ({
+const InfoSection3 = ({
   lightBg,
   imgStart,
   topLine,
@@ -98,14 +99,18 @@ const InfoSection = ({
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+
 <ambientLight intensity={1} />
+
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>\
-  <Model />
-  {/* <Scenemodel position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.006} /> */}
+<Suspense fallback={null}>
+  {/* <Model /> */}
+  <Scenemodel position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.0075} />
   {/* <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} /> */}
 
+
 </Suspense>
+
 </Canvas>
               {/* <ImgWrap>
                 <Img src={img} alt={alt} />
@@ -118,5 +123,5 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default InfoSection3;
 
