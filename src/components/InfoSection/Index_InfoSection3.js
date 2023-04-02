@@ -21,6 +21,7 @@ import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
 import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
+import { Physics, useSphere } from "@react-three/cannon"
 
 
 
