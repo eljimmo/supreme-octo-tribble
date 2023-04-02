@@ -1,4 +1,4 @@
-import { React, Suspense } from 'react';
+import { React, Suspense, useRef } from 'react';
 import { Button } from '../ButtonElements';
 import {
   InfoContainer,
@@ -14,15 +14,17 @@ import {
   ImgWrap,
   Img
 } from './InfoElements';
-import { Canvas } from '@react-three/fiber'
-import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useAspect, useVideoTexture, useTexture, MeshTransmissionMaterial, ContactShadows, Environment } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
 import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
 import { Physics, useSphere } from "@react-three/cannon"
-
+import { proxy } from 'valtio'
+import { useProxy } from 'valtio/utils'
+import { easing } from 'maath'
 
 
 
@@ -49,6 +51,35 @@ function FallbackMaterial({ url }) {
 }
 
 
+const store = proxy({ open: false })
+export const useStore = () => useProxy(store)
+
+
+function Selector({ children }) {
+  const ref = useRef()
+  const store = useStore()
+  useFrame(({ viewport, camera, pointer }, delta) => {
+    const { width, height } = viewport.getCurrentViewport(camera, [0, 0, 3])
+    easing.damp3(ref.current.position, [(pointer.x * width) / 2, (pointer.y * height) / 2, 3], store.open ? 0 : 0.1, delta)
+    easing.damp3(ref.current.scale, store.open ? 4 : 0.01, store.open ? 0.5 : 0.2, delta)
+    easing.dampC(ref.current.material.color, store.open ? '#f0f0f0' : '#ccc', 0.1, delta)
+  })
+  return (
+    <>
+      <mesh ref={ref}>
+        <circleGeometry args={[1, 64, 64]} />
+        <MeshTransmissionMaterial samples={16} resolution={512} anisotropy={1} thickness={0.1} roughness={0.4} toneMapped={true} />
+      </mesh>
+      <group
+        onPointerOver={() => (store.open = true)}
+        onPointerOut={() => (store.open = false)}
+        onPointerDown={() => (store.open = true)}
+        onPointerUp={() => (store.open = false)}>
+        {children}
+      </group>
+    </>
+  )
+}
 
 
 const InfoSection3 = ({
@@ -96,28 +127,23 @@ const InfoSection3 = ({
               </TextWrapper>
             </Column1>
             <Column2>
-            <Canvas
-        shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+            <Canvas dpr={[1.5, 2]} linear shadows>
+
+            {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}> */}
+
 
 <ambientLight intensity={1} />
 
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
-  {/* <Model /> */}
-  <Brainmodel position={[0, 0, 0]} rotation={[0, 2, 0]} scale={0.050} />
-  {/* <Brainmodel positionu */}
-  {/* <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} /> */}
+{/* <Suspense fallback={null}> */}
+<Selector>
 
-
-</Suspense>
+  <Brainmodel position={[0, 0, 0]} rotation={[0, 2, 0]} scale={1.90} />
+</Selector>
+{/* </Suspense> */}
 
 </Canvas>
-              {/* <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap> */}
+
             </Column2>
           </InfoRow>
         </InfoWrapper>

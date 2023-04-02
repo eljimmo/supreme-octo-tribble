@@ -21,6 +21,7 @@ import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
 import { useSphere, Physics } from '@react-three/cannon'
 import * as THREE from "three"
+import { OrbitControls } from '@react-three/drei'
 
 
 import { SSAOPass } from "three-stdlib"
@@ -131,40 +132,54 @@ const InfoSection2 = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2>
-            <Canvas
+            {/* <Column2> */}
+            <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
+
+            {/* <Canvas shadows dpr={[1,2]} camera={{ position: [0, 0, 20], fov: 35, near: 10, far: 400 }} gl={{ alpha: false, antialias: false }}> */}
+<ambientLight intensity={0.25} />
+<spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
+<directionalLight intensity={5} position={[-10, -10, -10]} color="purple" />
+<Physics gravity={[0, 2, 0]} iterations={10}>
+  <Pointer />
+
+  <Clump />
+</Physics>
+<Effects />
+<OrbitControls enablePan={false} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+
+</Canvas>
+            {/* <Canvas
         shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>\
-  {/* <Model /> */}
-  {/* <Scenemodel position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.006} /> */}
+<Suspense fallback={null}>
+<OrbitControls enablePan={false} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+
   <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} />
 
 </Suspense>
-</Canvas>
-              {/* <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap> */}
-            </Column2>
+</Canvas> */}
+    
+            {/* </Column2> */}
           </InfoRow>
         </InfoWrapper>
 
-        <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
+        {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}> */}
+        {/* <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
+
     <ambientLight intensity={0.25} />
     <spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
     <directionalLight intensity={5} position={[-10, -10, -10]} color="purple" />
     <Physics gravity={[0, 2, 0]} iterations={10}>
       <Pointer />
+
       <Clump />
     </Physics>
-    {/* <Environment files="/adamsbridge.hdr" /> */}
     <Effects />
-    {/* <Sky /> */}
-  </Canvas>
+  </Canvas> */}
       </InfoContainer>
     </>
   );
