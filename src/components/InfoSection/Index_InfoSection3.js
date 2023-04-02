@@ -25,6 +25,7 @@ import { Physics, useSphere } from "@react-three/cannon"
 import { proxy } from 'valtio'
 import { useProxy } from 'valtio/utils'
 import { easing } from 'maath'
+import { useStore } from './store'
 
 
 
@@ -50,9 +51,6 @@ function FallbackMaterial({ url }) {
   return <meshBasicMaterial map={texture} toneMapped={false} />
 }
 
-
-const store = proxy({ open: false })
-export const useStore = () => useProxy(store)
 
 
 function Selector({ children }) {
@@ -126,7 +124,7 @@ const InfoSection3 = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2>
+            {/* <Column2> */}
             <Canvas dpr={[1.5, 2]} linear shadows>
 
             {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}> */}
@@ -137,14 +135,13 @@ const InfoSection3 = ({
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 {/* <Suspense fallback={null}> */}
 <Selector>
-
-  <Brainmodel position={[0, 0, 0]} rotation={[0, 2, 0]} scale={1.90} />
+  <Brainmodel position={[0, 0, 0]} />
 </Selector>
 {/* </Suspense> */}
 
 </Canvas>
 
-            </Column2>
+            {/* </Column2> */}
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
