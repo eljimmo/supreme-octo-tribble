@@ -19,6 +19,7 @@ import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
+import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
 
 
@@ -105,7 +106,8 @@ const InfoSection3 = ({
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
   {/* <Model /> */}
-  <Scenemodel position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.0075} />
+  <Brainmodel position={[0, 0, 0]} rotation={[0, 2, 0]} scale={0.050} />
+  {/* <Brainmodel positionu */}
   {/* <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} /> */}
 
 
