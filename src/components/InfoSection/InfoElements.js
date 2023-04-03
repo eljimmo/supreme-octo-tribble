@@ -9,6 +9,18 @@ export const InfoContainer = styled.div`
   }
 `;
 
+
+export const InfoContainer2 = styled.div`
+  color: #fff;
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+    height: 860px;
+
+  }
+`;
+
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;

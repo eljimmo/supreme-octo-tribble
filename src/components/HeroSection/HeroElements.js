@@ -93,6 +93,17 @@ export const HeroContainer = styled.div`
 `;
 
 
+export const HeroContainerCanva = styled.div`
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+`;
+
+
 export const HeroContainer200 = styled.div`
   background: transparent;
   display: flex;
@@ -204,6 +215,21 @@ export const HeroContent2 = styled.div`
   position: relative;
   padding: 8px 24px;
   height: 800px;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+`;
+
+
+
+export const HeroContent3 = styled.div`
+  z-index: 3;
+  max-width: 1200px;
+  position: relative;
+  padding: 8px 24px;
+  height: 600px;
   width: 100%;
   display: flex;
   overflow-x: hidden;

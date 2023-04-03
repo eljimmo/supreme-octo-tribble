@@ -11,8 +11,8 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
-import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture } from '@react-three/drei'
+import { Canvas, useFrame, extend, useThree, createPortal } from '@react-three/fiber'
+import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture, useIntersect, Image, ScrollControls, Scroll, shaderMaterial } from '@react-three/drei'
 import * as THREE from 'three'
 import Scenemodel from '../components/3d_models/Scene_draco'
 import Brainmodel from '../components/3d_models/brain'
@@ -30,6 +30,8 @@ import {
   VideoBg,
   HeroContent,
   HeroContent2,
+  HeroContainerCanva,
+  HeroContent3,
   HeroContainer200,
   HeroP,
   AnimatedGradientText,
@@ -37,9 +39,60 @@ import {
   TButton,
 } from '../components/HeroSection/HeroElements';
 import SombreroSuperficieMath from '../components/3d_models/Sombrero_superficie_math';
+import { InfoWrapper, InfoContainer, InfoContainer2 } from '../components/InfoSection/InfoElements';
 
 
 
+export const ImageFadeMaterial = shaderMaterial(
+  {
+    effectFactor: 1.2,
+    dispFactor: 0,
+    tex: undefined,
+    tex2: undefined,
+    disp: undefined
+  },
+  ` varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }`,
+  ` varying vec2 vUv;
+    uniform sampler2D tex;
+    uniform sampler2D tex2;
+    uniform sampler2D disp;
+    uniform float _rot;
+    uniform float dispFactor;
+    uniform float effectFactor;
+    void main() {
+      vec2 uv = vUv;
+      vec4 disp = texture2D(disp, uv);
+      vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+      vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      vec4 _texture = texture2D(tex, distortedPosition);
+      vec4 _texture2 = texture2D(tex2, distortedPosition2);
+      vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      gl_FragColor = finalTexture;
+      #include <tonemapping_fragment>
+      #include <encodings_fragment>
+    }`
+)
+
+extend({ ImageFadeMaterial })
+
+function FadingImage() {
+  const ref = useRef()
+  const [texture1, texture2, dispTexture] = useTexture(["c4cA8UN.jpg", "crosshair.jpg", "Server.jpg"])
+  const [hovered, setHover] = useState(false)
+  useFrame(() => {
+    ref.current.dispFactor = THREE.MathUtils.lerp(ref.current.dispFactor, hovered ? 1 : 0, 0.075)
+  })
+  return (
+    <mesh onPointerOver={(e) => setHover(true)} onPointerOut={(e) => setHover(false)}>
+      <planeGeometry />
+      <imageFadeMaterial ref={ref} tex={texture1} tex2={texture2} disp={dispTexture} toneMapped={false} />
+    </mesh>
+  )
+}
 
 
 function Scene() {
@@ -53,6 +106,41 @@ function Scene() {
     </mesh>
   )
 }
+
+function Item({ url, scale, ...props }) {
+  const visible = useRef(false)
+  const [hovered, hover] = useState(false)
+  const ref = useIntersect((isVisible) => (visible.current = isVisible))
+  const { height } = useThree((state) => state.viewport)
+  useFrame((state, delta) => {
+    ref.current.position.y = THREE.MathUtils.damp(ref.current.position.y, visible.current ? 0 : -height / 2 + 1, 4, delta)
+    ref.current.material.zoom = THREE.MathUtils.damp(ref.current.material.zoom, visible.current ? 1 : 1.5, 4, delta)
+    ref.current.material.grayscale = THREE.MathUtils.damp(ref.current.material.grayscale, hovered ? 0 : 1, 4, delta)
+  })
+  return (
+    <group {...props}>
+      <Image ref={ref} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)} scale={scale} url={url} />
+    </group>
+  )
+}
+
+function Items() {
+  const { width: w, height: h } = useThree((state) => state.viewport)
+  return (
+    <Scroll>
+      <Item url="c4cA8UN.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 1, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 5, w / 5, 1]} position={[w / 10, -h * 1.75, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 4, -h * 2, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 2.6, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 2, w / 2, 1]} position={[w / 4, -h * 3.1, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[w / 2.5, w / 2, 1]} position={[-w / 6, -h * 4.1, 0]} />
+    </Scroll>
+  )
+}
+
+
 
 function VideoMaterial({ url }) {
   const texture = useVideoTexture(url)
@@ -78,28 +166,36 @@ export default function Welcome() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />   
-      {/* <HeroContent2 >   
-
-      <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 160, 160], fov: 20 }}>
-      <fog attach="fog" args={['lightpink', 60, 100]} />
-<ambientLight intensity={1} />
-<directionalLight position={[-2, 5, 2]} intensity={1} />
-  <Suspense fallback={null}>
-  <OrbitControls />
-  <SombreroSuperficieMath position={[-3, -0.39, 0.2]} rotation={[0, 2, 0]} scale={0.006} />
-</Suspense>
-</Canvas>
-
-    </HeroContent2 >    */}
 
       <InfoSection {...homeObjOne} />
-      {/* <HeroContent2 >    */}
-
 
        <InfoSection2 {...homeObjTwo} />
 
       
         <InfoSection3 {...homeObjThree} /> 
+        <HeroContainerCanva > 
+        <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
+
+        <color attach="background" args={['#181818']} />
+    <ScrollControls damping={6} pages={5}>
+      <Items />
+      <Scroll html style={{ width: '100%' }}>
+
+        {/* <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>all</h1>
+        <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>hail</h1>
+        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>thee,</h1>
+        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>thoth</h1>
+        <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
+          her
+          <br />
+          mes.
+        </h1> */}
+
+      </Scroll>
+    </ScrollControls>
+    </Canvas>
+
+    </HeroContainerCanva > 
 
     </>
   );

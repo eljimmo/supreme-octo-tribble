@@ -1,4 +1,4 @@
-import { React, Suspense, useRef } from 'react';
+import { React, Suspense, useRef, useState, useIntersect } from 'react';
 import { Button } from '../ButtonElements';
 import {
   InfoContainer,
@@ -15,7 +15,7 @@ import {
   Img
 } from './InfoElements';
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useAspect, useVideoTexture, useTexture, MeshTransmissionMaterial, ContactShadows, Environment, Float } from '@react-three/drei'
+import { useAspect, useVideoTexture, Scroll, Image, useTexture, MeshTransmissionMaterial, Float, ContactShadows, Environment, ScrollControls, Effects as EffectComposer } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
@@ -26,6 +26,7 @@ import { proxy } from 'valtio'
 import { useProxy } from 'valtio/utils'
 import { easing } from 'maath'
 import { useStore } from './store'
+
 
 
 
