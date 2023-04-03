@@ -1,4 +1,4 @@
-import { React, Suspense, useRef, useState, useIntersect } from 'react';
+import { React, Suspense, useRef, useState } from 'react';
 import { Button } from '../ButtonElements';
 import {
   InfoContainer,
