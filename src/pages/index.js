@@ -1,4 +1,4 @@
-import React, { useState, Suspense, useEffect, useMemo, useRef } from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
@@ -11,7 +11,6 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
-import DarkFooter from '../components/Footer/Dark_Footer';
 
 
 

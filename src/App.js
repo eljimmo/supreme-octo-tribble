@@ -15,10 +15,8 @@ import { Subscriptions } from "./pages/Subscriptions";
 import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
-import Sidebar from "./components/Sidebar";
 import React from "react";
 import Demo from "./pages/Demo_App";
-import { Outlet } from "react-router-dom";
 
 
 export default function App() {
