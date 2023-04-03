@@ -16,14 +16,9 @@ import {
 } from './InfoElements';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useAspect, useVideoTexture, Scroll, Image, useIntersect, useTexture, MeshTransmissionMaterial, Float, ContactShadows, Environment, ScrollControls, Effects as EffectComposer } from '@react-three/drei'
-import Model from '../GEO/Geo'
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import Scenemodel from '../3d_models/Scene_draco'
+
 import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
-import { Physics, useSphere } from "@react-three/cannon"
-import { proxy } from 'valtio'
-import { useProxy } from 'valtio/utils'
 import { easing } from 'maath'
 import { useStore } from './store'
 

@@ -33,7 +33,7 @@ export default function Model(props) {
           By Jim Morales
           <meshBasicMaterial color="#cccccc" toneMapped={false} />
         </Text>
-        <Text bold position={[-0.01, -0.1, 0]} fontSize={0.1} lineHeight={1} letterSpacing={-0.05} color="black">
+        <Text bold position={[-0.01, -0.1, 0]} fontSize={0.1} lineHeight={1} letterSpacing={-0.05} color="white">
           {`Leibniz Analytica,\nA New Approach to\nFinancial Analysis\n Releasing 2023  `}
         </Text>
       </group>

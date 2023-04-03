@@ -17,50 +17,9 @@ import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import Sidebar from "./components/Sidebar";
 import React from "react";
+import Demo from "./pages/Demo_App";
 import { Outlet } from "react-router-dom";
 
-
-function Dashboard() {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-
-      {/* This element will render either <DashboardMessages> when the URL is
-          "/messages", <DashboardTasks> at "/tasks", or null if it is "/"
-      */}
-      <Outlet />
-    </div>
-  );
-}
-
-
-function DashboardMessages() {
-  return (
-    <div>
-      <h1>DashboardMessages</h1>
-
-      {/* This element will render either <DashboardMessages> when the URL is
-          "/messages", <DashboardTasks> at "/tasks", or null if it is "/"
-      */}
-      <Outlet />
-    </div>
-  );
-}
-
-
-
-function DashboardTasks() {
-  return (
-    <div>
-      <h1>DashboardTasks</h1>
-
-      {/* This element will render either <DashboardMessages> when the URL is
-          "/messages", <DashboardTasks> at "/tasks", or null if it is "/"
-      */}
-      <Outlet />
-    </div>
-  );
-}
 
 export default function App() {
   return (
@@ -163,24 +122,12 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             
             <Route path="/" element={<Welcome />} />
-            
+
+
+            <Route path="/Demo" element={<Demo />} />
 
 
 
-          {/* <Route path="/Dashboard" element={
-          <Sidebar>
-          <Dashboard />
-          </Sidebar>
-          }>
-        
-          <Route
-          path="messages"
-          element={<DashboardMessages />}
-          />
-
-          <Route path="tasks" element={<DashboardTasks />} />
-      
-          </Route> */}
     
           
           
