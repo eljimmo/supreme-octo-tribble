@@ -11,6 +11,7 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
+import DarkFooter from '../components/Footer/Dark_Footer';
 
 
 
@@ -35,6 +36,7 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
+        <DarkFooter />
  
 
     </>

@@ -48,13 +48,6 @@ export default function HeroSection() {
 </Suspense>
 </Canvas>
 </HeroContent>
-
-
-
-
-      
-      {/* </HeroContent> */}
-
    </HeroContainer>
 
 
