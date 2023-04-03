@@ -16,7 +16,6 @@ import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
-import Demo from "./pages/Demo_App";
 
 
 export default function App() {
@@ -120,9 +119,6 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             
             <Route path="/" element={<Welcome />} />
-
-
-            {/* <Route path="/Demo" element={<Demo />} /> */}
 
 
 
