@@ -174,13 +174,13 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
-        <HeroContainerCanva > 
+        {/* <HeroContainerCanva > 
         <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
 
         <color attach="background" args={['#181818']} />
     <ScrollControls damping={6} pages={5}>
       <Items />
-      <Scroll html style={{ width: '100%' }}>
+      <Scroll html style={{ width: '100%' }}> */}
 
         {/* <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>all</h1>
         <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>hail</h1>
@@ -192,11 +192,11 @@ export default function Welcome() {
           mes.
         </h1> */}
 
-      </Scroll>
+      {/* </Scroll>
     </ScrollControls>
     </Canvas>
 
-    </HeroContainerCanva > 
+    </HeroContainerCanva >  */}
 
     </>
   );
