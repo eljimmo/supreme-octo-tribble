@@ -40,7 +40,7 @@ import {
 } from '../components/HeroSection/HeroElements';
 import SombreroSuperficieMath from '../components/3d_models/Sombrero_superficie_math';
 import { InfoWrapper, InfoContainer, InfoContainer2 } from '../components/InfoSection/InfoElements';
-
+import Footer from '../components/Footer/Footer';
 
 
 export const ImageFadeMaterial = shaderMaterial(
@@ -174,6 +174,7 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
+        <Footer/>
         {/* <HeroContainerCanva > 
         <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
 
