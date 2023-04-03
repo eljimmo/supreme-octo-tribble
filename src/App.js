@@ -122,7 +122,7 @@ export default function App() {
             <Route path="/" element={<Welcome />} />
 
 
-            <Route path="/Demo" element={<Demo />} />
+            {/* <Route path="/Demo" element={<Demo />} /> */}
 
 
 
