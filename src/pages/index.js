@@ -35,7 +35,6 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
-        {/* <DarkFooter /> */}
  
 
     </>
