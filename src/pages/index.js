@@ -129,6 +129,7 @@ function Items() {
   return (
     <Scroll>
       <Item url="c4cA8UN.jpg" scale={[w / 3, w / 3, 1]} position={[-w / 6, 0, 0]} />
+      <Item url="c4cA8UN.jpg" scale={[2, w / 3, 1]} position={[w / 30, -h, 0]} />
       <Item url="c4cA8UN.jpg" scale={[w / 3, w / 5, 1]} position={[-w / 4, -h * 1, 0]} />
       <Item url="c4cA8UN.jpg" scale={[w / 5, w / 5, 1]} position={[w / 4, -h * 1.2, 0]} />
       <Item url="c4cA8UN.jpg" scale={[w / 5, w / 5, 1]} position={[w / 10, -h * 1.75, 0]} />
