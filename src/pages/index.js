@@ -174,7 +174,7 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
-        <Footer/>
+        {/* <Footer/> */}
         {/* <HeroContainerCanva > 
         <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
 
