@@ -24,11 +24,11 @@ export default function App() {
 
 
       <BrowserRouter>
-        <AuthProvider>
+        {/* <AuthProvider> */}
           <Routes>
 
 
-            <Route
+            {/* <Route
               path="/Home"
               element={
                 <PrivateRoute>
@@ -113,12 +113,11 @@ export default function App() {
             <Route path="/signup" element={<Signup />} />
           
             <Route path="/auth-redirect" element={<Redirect />} />
-          
             <Route path="/verification" element={<Verification />} />
           
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} /> */}
             
-            <Route path="/" element={<Welcome />} />
+            <Route path="/" element={<Welcome />} /> 
 
 
 
@@ -128,7 +127,7 @@ export default function App() {
           </Routes>
 
         
-        </AuthProvider>
+        {/* </AuthProvider> */}
       </BrowserRouter>
 
     </div>
