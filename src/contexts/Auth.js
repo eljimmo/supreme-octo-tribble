@@ -28,12 +28,6 @@ export function AuthProvider({ children }) {
     setUser(session.user);
     setSession(session);
 
-
-    // setUser(u => u ?? null);
-    // setSession(s => s ?? null);
-
-    // setUser(user ?? null);
-    // setSession(session ?? null);
     setLoading(false);
   }, []);
 
