@@ -23,12 +23,17 @@ export function AuthProvider({ children }) {
     getUserFromDB();
 
     // do not set user and session if there is no session
-    if (!session) return;
+    // if (!session) return;
       
     // setUser(session.user);
     // setSession(session);
-    setUser(user ?? null);
-    setSession(session ?? null);
+    // setUser(user ?? null);
+    setUser(u => u ?? null);
+    setSession(s => s ?? null);
+    
+    // setSession(session ?? null);
+
+
     setLoading(false);
   }, []);
 
