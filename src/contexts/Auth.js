@@ -25,9 +25,10 @@ export function AuthProvider({ children }) {
     // do not set user and session if there is no session
     if (!session) return;
       
-    setUser(session.user);
-    setSession(session);
-
+    // setUser(session.user);
+    // setSession(session);
+    setUser(user ?? null);
+    setSession(session ?? null);
     setLoading(false);
   }, []);
 
