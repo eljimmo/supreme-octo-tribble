@@ -11,6 +11,7 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
+import { Grid } from '@mantine/core';
 
 
 
@@ -35,7 +36,7 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
- 
+
 
     </>
   );
