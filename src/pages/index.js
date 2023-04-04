@@ -9,6 +9,7 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
+import { Group, Button } from '@mantine/core';
 
 
 
@@ -33,7 +34,11 @@ export default function Welcome() {
 
       
         <InfoSection3 {...homeObjThree} /> 
-
+        <Group grow>
+      <Button variant="outline">1</Button>
+      <Button variant="outline">2</Button>
+      <Button variant="outline">3</Button>
+    </Group>
 
     </>
   );
