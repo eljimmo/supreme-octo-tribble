@@ -28,9 +28,9 @@ export function AuthProvider({ children }) {
     // setUser(session.user);
     // setSession(session);
     // setUser(user ?? null);
-    setUser(u => u ?? null);
-    setSession(s => s ?? null);
-    
+    setUser(user => user ?? null);
+    setSession(session => session ?? null);
+
     // setSession(session ?? null);
 
 
