@@ -16,7 +16,6 @@ import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
-import AppShellDemo from "./pages/AppDemo";
 
 
 export default function App() {
@@ -119,7 +118,6 @@ export default function App() {
             <Route path="/login" element={<Login />} /> */}
             
             <Route path="/" element={<Welcome />} /> 
-            <Route path="/Shell" element={<AppShellDemo />} /> 
 
 
 
