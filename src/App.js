@@ -15,7 +15,6 @@ import { Subscriptions } from "./pages/Subscriptions";
 import Redirect from "./pages/Redirect";
 import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
-import AppShellDemo from "./pages/AppDemo"
 import React from "react";
 
 
@@ -119,8 +118,6 @@ export default function App() {
             <Route path="/login" element={<Login />} /> */}
             
             <Route path="/" element={<Welcome />} />
-            
-             <Route path="/AppShellDemo" element={<AppShellDemo/>} />
 
 
 
