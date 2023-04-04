@@ -22,8 +22,18 @@ export function AuthProvider({ children }) {
     const session = altogic.auth.getSession();
     getUserFromDB();
 
-    setUser(user ?? null);
-    setSession(session ?? null);
+    // do not set user and session if there is no session
+    if (!session) return;
+      
+    setUser(session.user);
+    setSession(session);
+
+
+    // setUser(u => u ?? null);
+    // setSession(s => s ?? null);
+
+    // setUser(user ?? null);
+    // setSession(session ?? null);
     setLoading(false);
   }, []);
 
@@ -41,7 +51,9 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider value={value}>
+
       {!loading && children}
+
     </AuthContext.Provider>
   );
 }
