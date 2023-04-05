@@ -42,6 +42,7 @@
     "react-scroll": "^1.8.9",
     "reactstrap": "^9.1.6",
     "styled-components": "^5.3.9",
+    "tabler-icons-react": "^1.56.0",
     "three": "^0.150.1",
     "three-stdlib": "^2.21.8",
     "valtio": "^1.10.3",

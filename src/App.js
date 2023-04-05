@@ -16,6 +16,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
+import T_Demo from "./Tabs";
 
 
 export default function App() {
@@ -120,6 +121,7 @@ export default function App() {
             <Route path="/" element={<Welcome />} />
 
 
+            <Route path="/Tabs" element={<T_Demo />} />
 
     
           
