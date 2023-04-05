@@ -31,38 +31,7 @@ import { useEffect, useMemo, useLayoutEffect } from 'react'
 import { useControls, button } from 'leva'
 import Scenemodel from '../3d_models/Scene_draco';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import data from './store';
 
-
-function Shoes({ data }) {
-  const { nodes, materials } = useGLTF('/shoe.glb')
-  return (
-    <Instances material={materials.phong1SG} geometry={nodes.Shoe.geometry}>
-      <group position={[0, 0, 0]}>
-        {/* {data.map((props, i) => (
-          <Shoe key={i} {...props} />
-        ))} */}
-      </group>
-    </Instances>
-  )
-}
-
-function Shoe({ random, color = new THREE.Color(), ...props }) {
-  const ref = useRef()
-  const [hovered, setHover] = useState(false)
-  useFrame((state) => {
-    const t = state.clock.getElapsedTime() + random * 10000
-    ref.current.rotation.set(Math.cos(t / 4) / 2, Math.sin(t / 4) / 2, Math.cos(t / 1.5) / 2)
-    ref.current.position.y = Math.sin(t / 1.5) / 2
-    ref.current.scale.x = ref.current.scale.y = ref.current.scale.z = THREE.MathUtils.lerp(ref.current.scale.z, hovered ? 1.4 : 1, 0.1)
-    ref.current.color.lerp(color.set(hovered ? 'red' : 'white'), hovered ? 1 : 0.1)
-  })
-  return (
-    <group {...props}>
-      <Instance ref={ref} onPointerOver={(e) => (e.stopPropagation(), setHover(true))} onPointerOut={(e) => setHover(false)} />
-    </group>
-  )
-}
 
 
 function Torusknot(props) {
@@ -258,12 +227,7 @@ export default function Services () {
     gColor: '#ff7eb3',
     shadow: '#750d57',
     autoRotate: false,
-    // screenshot: button(() => {
-    //   const link = document.createElement('a')
-    //   link.setAttribute('download', 'canvas.png')
-    //   link.setAttribute('href', document.querySelector('canvas').toDataURL('image/png').replace('image/png', 'image/octet-stream'))
-    //   link.click()
-    // })
+ 
   })
   return (
     <ServicesContainer id='services'>

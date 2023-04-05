@@ -9,8 +9,7 @@ import {
   homeObjThree,
 
 } from '../components/InfoSection/Data';
-import { Group, Button } from '@mantine/core';
-import Services from '../components/Services';
+// import Services from '../components/Services';
 
 
 
