@@ -2,26 +2,14 @@ import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
 // import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
+
   HeroContent,
-  HeroContent2,
-  HeroP,
-  AnimatedGradientText,
-  HeroBtnWrapper,
-  TButton,
 } from './HeroElements';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Center } from '@react-three/drei'
 import * as THREE from 'three'
-import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math'
-import state from '../GEO/state';
-import { Block, useBlock } from "../GEO/blocks";
-import { useDrag } from "@use-gesture/react"
-import Effects from '../GEO/Effects'
-import Diamonds from "../diamonds/Diamonds";
+
 
 
 function Video() {
@@ -55,20 +43,10 @@ export default function HeroSection() {
 
       <color attach="background" args={['#151520']} />
       <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
-      {/* <Center top bottom position={[0, 2, 0]}> */}
-        {/* <Text3D >
-          Dynamic without Limits
-        </Text3D> */}
-      {/* </Center> */}
 
-      {/* <group position={[0, -0.75, 0]}> */}
-      {/* <Diamonds /> */}
-
-      {/* </group> */}
-      {/* <Diamonds/> */}
 
       <Video />
-      {/* <Diamonds/> */}
+
 
       <Model/>
       {/* <Diamonds/> */}
@@ -76,17 +54,7 @@ export default function HeroSection() {
       {/* <Effects /> */}
       {/* <OrbitControls /> */}
     </Canvas>
-      {/* <Canvas
-        shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 20], fov: 13.5, near: 1, far: 100 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}> */}
-{/* <ambientLight intensity={1} />
-<directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
-  <Model/>
-</Suspense> */}
-{/* </Canvas> */}
+      
 </HeroContent>
    </HeroContainer>
 
