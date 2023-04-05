@@ -1,5 +1,5 @@
 import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
-import Video from './videos/iStock_optic.mp4';
+// import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
   HeroBg,
@@ -12,7 +12,7 @@ import {
   TButton,
 } from './HeroElements';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder } from '@react-three/drei'
+import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Center } from '@react-three/drei'
 import * as THREE from 'three'
 import { a } from '@react-spring/web'
 import Model from '../GEO/Geo'
@@ -21,8 +21,25 @@ import state from '../GEO/state';
 import { Block, useBlock } from "../GEO/blocks";
 import { useDrag } from "@use-gesture/react"
 import Effects from '../GEO/Effects'
+import Diamonds from "../diamonds/Diamonds";
 
 
+function Video() {
+  const scale = useAspect(1920, 1080, 1)
+  // Video texture by: https://www.pexels.com/@rostislav/
+  const [video] = useState(() =>
+    Object.assign(document.createElement('video'), { src: '/iStock_optic.mp4', crossOrigin: 'Anonymous', loop: true, muted: true })
+  )
+  useEffect(() => void video.play(), [video])
+  return (
+    <mesh scale={scale}>
+      <planeGeometry />
+      <meshBasicMaterial toneMapped={true} side={THREE.DoubleSide}>
+        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+      </meshBasicMaterial>
+    </mesh>
+  )
+}
 
 
 export default function HeroSection() {
@@ -32,21 +49,44 @@ export default function HeroSection() {
   };
   return (
     <HeroContainer id='home'>
-      <HeroBg>
-        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-      </HeroBg>
-      <HeroContent>
-      <Canvas
+ 
+       <HeroContent>
+       <Canvas shadows camera={{ position: [0, 0, 8], fov: 40 }}>
+
+      <color attach="background" args={['#151520']} />
+      <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
+      {/* <Center top bottom position={[0, 2, 0]}> */}
+        {/* <Text3D >
+          Dynamic without Limits
+        </Text3D> */}
+      {/* </Center> */}
+
+      {/* <group position={[0, -0.75, 0]}> */}
+      {/* <Diamonds /> */}
+
+      {/* </group> */}
+      {/* <Diamonds/> */}
+
+      <Video />
+      {/* <Diamonds/> */}
+
+      <Model/>
+      {/* <Diamonds/> */}
+
+      {/* <Effects /> */}
+      {/* <OrbitControls /> */}
+    </Canvas>
+      {/* <Canvas
         shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [3, 0, 20], fov: 13.5, near: 1, far: 100 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-<ambientLight intensity={1} />
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}> */}
+{/* <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
   <Model/>
-</Suspense>
-</Canvas>
+</Suspense> */}
+{/* </Canvas> */}
 </HeroContent>
    </HeroContainer>
 
