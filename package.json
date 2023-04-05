@@ -30,6 +30,7 @@
     "framer-motion": "^10.10.0",
     "gltfjsx": "^6.1.4",
     "lerp": "^1.0.3",
+    "leva": "^0.9.34",
     "moment": "^2.29.4",
     "perfect-scrollbar": "^1.5.5",
     "raygun4js": "^2.25.6",

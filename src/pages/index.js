@@ -10,6 +10,7 @@ import {
 
 } from '../components/InfoSection/Data';
 import { Group, Button } from '@mantine/core';
+import Services from '../components/Services';
 
 
 
@@ -33,12 +34,15 @@ export default function Welcome() {
        <InfoSection2 {...homeObjTwo} />
 
       
-        <InfoSection3 {...homeObjThree} /> 
-        <Group grow>
+        <InfoSection3 {...homeObjThree} />
+        
+        {/* < Services />  */}
+
+        {/* <Group grow>
       <Button variant="outline">1</Button>
       <Button variant="outline">2</Button>
       <Button variant="outline">3</Button>
-    </Group>
+    </Group> */}
 
     </>
   );

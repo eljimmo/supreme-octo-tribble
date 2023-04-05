@@ -29,6 +29,21 @@ function Video() {
   )
 }
 
+function Caption({ children }) {
+  const { width } = useThree((state) => state.viewport)
+  return (
+    <Text
+      position={[0, 0, -5]}
+      lineHeight={0.8}
+      fontSize={width / 8}
+      material-toneMapped={false}
+      anchorX="center"
+      anchorY="middle">
+      {children}
+    </Text>
+  )
+}
+
 
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -49,10 +64,7 @@ export default function HeroSection() {
 
 
       <Model/>
-      {/* <Diamonds/> */}
 
-      {/* <Effects /> */}
-      {/* <OrbitControls /> */}
     </Canvas>
       
 </HeroContent>
