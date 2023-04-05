@@ -2,13 +2,16 @@ import { Tabs } from '@mantine/core';
 import Artificial_Layout from './views/Artificial_Int';
 // import { IconPhoto, IconMessageCircle, IconSettings } from '@tabler/icons-react';
 import Dashboard from './views/Dashboard';
+import Machine_Learning_Layout from './views/Machine_Learning_Index';
+
+
 export default function T_Demo() {
   return (
     <Tabs defaultValue="gallery">
       <Tabs.List>
-        <Tabs.Tab value="gallery" >Gallery</Tabs.Tab>
-        <Tabs.Tab value="messages" >Messages</Tabs.Tab>
-        <Tabs.Tab value="settings" >Settings</Tabs.Tab>
+        <Tabs.Tab value="gallery" >Artificial</Tabs.Tab>
+        <Tabs.Tab value="messages" >Dashboard</Tabs.Tab>
+        <Tabs.Tab value="settings" >Machine_Learning</Tabs.Tab>
       </Tabs.List>
 
       <Tabs.Panel value="gallery" pt="xs">
@@ -20,8 +23,8 @@ export default function T_Demo() {
       </Tabs.Panel>
 
       <Tabs.Panel value="settings" pt="xs">
-        Settings tab content
-      </Tabs.Panel>
+       <Machine_Learning_Layout/>
+     </Tabs.Panel>
     </Tabs>
   );
 }
