@@ -1,5 +1,5 @@
 import { React, Suspense } from 'react';
-import { Button } from '../ButtonElements';
+import { Button, HrefButton } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
@@ -76,8 +76,8 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to='home'
+                  <HrefButton
+                    to='/Demo'
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -88,7 +88,7 @@ const InfoSection = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </HrefButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

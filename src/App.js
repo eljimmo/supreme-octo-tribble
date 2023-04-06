@@ -121,7 +121,7 @@ export default function App() {
             <Route path="/" element={<Welcome />} />
 
 
-            <Route path="/Tabs" element={<T_Demo />} />
+            <Route path="/Demo" element={<T_Demo />} />
 
     
           

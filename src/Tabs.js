@@ -9,22 +9,22 @@ export default function T_Demo() {
   return (
     <Tabs defaultValue="gallery">
       <Tabs.List>
-        <Tabs.Tab value="gallery" >Artificial</Tabs.Tab>
+        {/* <Tabs.Tab value="gallery" >Artificial</Tabs.Tab> */}
         <Tabs.Tab value="messages" >Dashboard</Tabs.Tab>
-        <Tabs.Tab value="settings" >Machine_Learning</Tabs.Tab>
+        {/* <Tabs.Tab value="settings" >Machine_Learning</Tabs.Tab> */}
       </Tabs.List>
 
-      <Tabs.Panel value="gallery" pt="xs">
+      {/* <Tabs.Panel value="gallery" pt="xs">
         <Artificial_Layout/>
-      </Tabs.Panel>
+      </Tabs.Panel> */}
 
       <Tabs.Panel value="messages" pt="xs">
         <Dashboard/>
       </Tabs.Panel>
 
-      <Tabs.Panel value="settings" pt="xs">
+      {/* <Tabs.Panel value="settings" pt="xs">
        <Machine_Learning_Layout/>
-     </Tabs.Panel>
+     </Tabs.Panel> */}
     </Tabs>
   );
 }
