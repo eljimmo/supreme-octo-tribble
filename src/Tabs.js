@@ -7,7 +7,7 @@ import Machine_Learning_Layout from './views/Machine_Learning_Index';
 
 export default function T_Demo() {
   return (
-    <Tabs defaultValue="gallery">
+    <Tabs defaultValue="messages">
       <Tabs.List>
         {/* <Tabs.Tab value="gallery" >Artificial</Tabs.Tab> */}
         <Tabs.Tab value="messages" >Dashboard</Tabs.Tab>
