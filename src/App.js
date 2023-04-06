@@ -17,6 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./pages/index";
 import React from "react";
 import T_Demo from "./Tabs";
+import Dashboard from "./views/Dashboard";
 
 
 export default function App() {

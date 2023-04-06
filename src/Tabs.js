@@ -12,6 +12,7 @@ export default function T_Demo() {
         {/* <Tabs.Tab value="gallery" >Artificial</Tabs.Tab> */}
         <Tabs.Tab value="messages" >Dashboard</Tabs.Tab>
         {/* <Tabs.Tab value="settings" >Machine_Learning</Tabs.Tab> */}
+      
       </Tabs.List>
 
       {/* <Tabs.Panel value="gallery" pt="xs">

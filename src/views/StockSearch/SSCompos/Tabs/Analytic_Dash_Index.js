@@ -4,7 +4,8 @@
 import { Tabs } from '@mantine/core';
 // import Backtesting_Page from './Analytic_Dash/Backtesting_ST';
 // import Performance_page from './Analytic_Dash/Performance_Stren';
-
+// import StockSearch from '../../Stock_Search_Index';
+import StockSearch from '..//..//Stock_Search_Index';
 
 
 function Tabs_Demo() {
@@ -20,6 +21,7 @@ function Tabs_Demo() {
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
       {/* <Current_Daily_Indicators/> */}
+      <StockSearch/>
       </Tabs.Panel>
       <Tabs.Panel value="second" pt="xs">
       {/* <Series_Simulations_Modeling/> */}

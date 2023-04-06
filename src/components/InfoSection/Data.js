@@ -7,7 +7,7 @@ export const homeObjOne = {
   headline: 'What is Leibniz Analytica?',
   description:
     'Leibniz Analytica is an investment software tool for the fundamental analysis of stocks, stock derivatives & other types of commodities. Utilizing a variety of machine learning algorithms, Leibniz Analytica provides a comprehensive financial modeling framework in determining stock & commodity valuation and variable predictive analysis.',
-  buttonLabel: 'Get Started',
+  buttonLabel: 'Demo',
   imgStart: false,
   // img: require('./img/nodes.jpg'),
   alt: 'img',
