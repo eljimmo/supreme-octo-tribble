@@ -29,16 +29,14 @@ export default function Welcome() {
       <Navbar toggle={toggle} /> */}
       <HeroSection />   
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
-        {/* <Transition transition="slide-up" mounted={scroll.y > 0}> */}
-          {/* {(transitionStyles) => ( */}
+
             <Button
               variant="outline"
       
             >
               I am still in Development.
             </Button>
-          {/* )} */}
-        {/* </Transition> */}
+
       </Affix>
       <InfoSection {...homeObjOne} />
 
