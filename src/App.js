@@ -121,7 +121,6 @@ export default function App() {
             
             <Route path="/" element={<Welcome />} />
 
-            {/* <Route path="/Demo" element={<StockSearch />} /> */}
 
           
           
