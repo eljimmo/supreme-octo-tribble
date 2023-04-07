@@ -15,7 +15,7 @@ function Tabs_Demo() {
         <Tabs.Tab value="second" color="blue">Series Simulations & Modeling</Tabs.Tab>
         <Tabs.Tab value="third"  color="red"> Fundamental Analysis</Tabs.Tab>
         <Tabs.Tab value="fourth"  color="green"> Performance and Strength</Tabs.Tab>
-        <Tabs.Tab value="fifth"  color="pink"> Backtesting Strategies </Tabs.Tab>
+        <Tabs.Tab value="fifth"  color="pink"> Artificial Intelligence Agents </Tabs.Tab>
       </Tabs.List>
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
