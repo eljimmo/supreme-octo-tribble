@@ -122,7 +122,7 @@ export default function App() {
 
 
 
-            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/Demo" element={<Dashboard />} />
 
           
           
