@@ -1,4 +1,4 @@
-import Current_Daily_Indicators from '././Analytic_Dash/Curr_Ind';
+// import Current_Daily_Indicators from '././Analytic_Dash/Curr_Ind';
 // import Series_Simulations_Modeling from './Analytic_Dash/Time_Series';
 // import Demo_con from './Analytic_Dash/Funda_Analysis';
 import { Tabs } from '@mantine/core';
@@ -23,7 +23,7 @@ function Tabs_Demo() {
       <StockSearch/>
       </Tabs.Panel>
       <Tabs.Panel value="second" pt="xs">
-      <Current_Daily_Indicators/>
+      {/* <Current_Daily_Indicators/> */}
 
       {/* <Series_Simulations_Modeling/> */}
       </Tabs.Panel>
