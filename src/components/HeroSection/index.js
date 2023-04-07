@@ -9,6 +9,8 @@ import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Center } from '@react-three/drei'
 import * as THREE from 'three'
 import Model from '../GEO/Geo'
+import { Carousel } from 'antd';
+import { Experience } from '../3d_models/experience';
 
 
 
@@ -46,6 +48,13 @@ function Caption({ children }) {
 
 
 export default function HeroSection() {
+  const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: 'transparent',
+  };
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(!hover);
@@ -54,20 +63,36 @@ export default function HeroSection() {
     <HeroContainer id='home'>
  
        <HeroContent>
-       <Canvas shadows camera={{ position: [0, 0, 8], fov: 40 }}>
+       {/* <Canvas shadows camera={{ position: [0, 0, 8], fov: 40 }}> */}
+       <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
 
-      <color attach="background" args={['#151520']} />
+      {/* <color attach="background" args={['#151520']} /> */}
       <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
 
 
-      <Video />
-
-
-      <Model/>
-
+      {/* <Video /> */}
+      <Experience/>
     </Canvas>
-      
+
+
+    {/* <Carousel autoplay>
+    <div>
+      <h3 style={contentStyle}>1</h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}>2</h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}>3</h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}>4</h3>
+    </div>
+  </Carousel> */}
+
+
 </HeroContent>
+
    </HeroContainer>
 
 

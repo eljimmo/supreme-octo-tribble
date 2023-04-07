@@ -10,6 +10,7 @@ import {
 
 } from '../components/InfoSection/Data';
 // import Services from '../components/Services';
+import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 
 
 
@@ -27,14 +28,26 @@ export default function Welcome() {
       {/* <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} /> */}
       <HeroSection />   
-
+      <Affix position={{ bottom: rem(20), right: rem(20) }}>
+        {/* <Transition transition="slide-up" mounted={scroll.y > 0}> */}
+          {/* {(transitionStyles) => ( */}
+            <Button
+              variant="outline"
+      
+            >
+              I am still in Development.
+            </Button>
+          {/* )} */}
+        {/* </Transition> */}
+      </Affix>
       <InfoSection {...homeObjOne} />
 
        <InfoSection2 {...homeObjTwo} />
 
       
         <InfoSection3 {...homeObjThree} />
-        
+
+
         {/* < Services />  */}
 
         {/* <Group grow>
