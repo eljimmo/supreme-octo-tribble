@@ -16,7 +16,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
-import T_Demo from "./Tabs";
 import Dashboard from "./views/Dashboard";
 
 
@@ -122,9 +121,9 @@ export default function App() {
             <Route path="/" element={<Welcome />} />
 
 
-            <Route path="/Demo" element={<T_Demo />} />
 
-    
+            <Route path="/Dashboard" element={<Dashboard />} />
+
           
           
           </Routes>
