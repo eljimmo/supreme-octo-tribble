@@ -17,7 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./pages/index";
 import React from "react";
 // import Dashboard from "./views/Dashboard";
-import StockSearch from "./views/StockSearch/Stock_Search_Index";
+// import StockSearch from "./views/StockSearch/Stock_Search_Index";
 
 
 export default function App() {
