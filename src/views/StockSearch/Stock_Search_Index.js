@@ -1,9 +1,7 @@
 import useAppState from './hooks/useAppState';
 import Searchbar from './SSCompos/SearchBar/SE_Index';
-// import Content from '../SSCompos/Content/ContentIndex';
 import Content from './SSCompos/Content/Output/ContentIndex';
 import Spinner from './SSCompos/Spinner/Index';
-// import "./App.css";
 
 const StockSearch = () => {
   const { symbolData, isLoading, handleSearch } = useAppState();
