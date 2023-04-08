@@ -49,7 +49,7 @@ const Background = () => {
 export const Experience = () => {
   return (
     <>
-      {/* <OrbitControls /> */}
+      <OrbitControls />
 
       <ambientLight intensity={0.1} />
       <directionalLight position={[0, 20, 20]} intensity={1} />

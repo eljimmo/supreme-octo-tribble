@@ -31,7 +31,20 @@ import { useEffect, useMemo, useLayoutEffect } from 'react'
 import { useControls, button } from 'leva'
 import Scenemodel from '../3d_models/Scene_draco';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-
+import {
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  ImgWrap,
+  Img
+} from '../InfoSection/InfoElements';
 
 
 function Torusknot(props) {
@@ -49,7 +62,6 @@ function Torusknot(props) {
       onPointerOver={() => hover(true)}
       onPointerOut={() => hover(false)}>
       <torusKnotGeometry args={[1, 0.2, 128, 32]} />
-      <meshStandardMaterial color="orange" />
     </mesh>
   )
 }
@@ -205,34 +217,34 @@ function Text({ children, ...props }) {
 
 
 export default function Services () {
-  const { range } = useControls({ range: { value: 100, min: 0, max: 300, step: 10 } })
+  // const { range } = useControls({ range: { value: 100, min: 0, max: 300, step: 10 } })
 
-  const { autoRotate, text, shadow, ...config } = useControls({
-    text: 'Inter',
-    backside: false,
-    samples: { value: 16, min: 1, max: 32, step: 1 },
-    resolution: { value: 512, min: 64, max: 2048, step: 64 },
-    transmission: { value: 0.6, min: 0, max: 1 },
-    clearcoat: { value: 0, min: 0.1, max: 1 },
-    clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
-    thickness: { value: 0.55, min: 0, max: 5 },
-    chromaticAberration: { value: 5, min: 0, max: 5 },
-    anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
-    roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
-    distortion: { value: 1, min: 0, max: 4, step: 0.01 },
-    distortionScale: { value: 1, min: 0.01, max: 1, step: 0.01 },
-    temporalDistortion: { value: 0.4, min: 0, max: 1, step: 0.01 },
-    ior: { value: 0.83, min: 0, max: 2, step: 0.01 },
-    color: '#ff9cf5',
-    gColor: '#ff7eb3',
-    shadow: '#750d57',
-    autoRotate: false,
+  // const { autoRotate, text, shadow, ...config } = useControls({
+  //   text: 'Inter',
+  //   backside: false,
+  //   samples: { value: 16, min: 1, max: 32, step: 1 },
+  //   resolution: { value: 512, min: 64, max: 2048, step: 64 },
+  //   transmission: { value: 0.6, min: 0, max: 1 },
+  //   clearcoat: { value: 0, min: 0.1, max: 1 },
+  //   clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
+  //   thickness: { value: 0.55, min: 0, max: 5 },
+  //   chromaticAberration: { value: 5, min: 0, max: 5 },
+  //   anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
+  //   roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
+  //   distortion: { value: 1, min: 0, max: 4, step: 0.01 },
+  //   distortionScale: { value: 1, min: 0.01, max: 1, step: 0.01 },
+  //   temporalDistortion: { value: 0.4, min: 0, max: 1, step: 0.01 },
+  //   ior: { value: 0.83, min: 0, max: 2, step: 0.01 },
+  //   color: '#ff9cf5',
+  //   gColor: '#ff7eb3',
+  //   shadow: '#750d57',
+  //   autoRotate: false,
  
-  })
+  // })
   return (
     <ServicesContainer id='services'>
-      <Canvas shadows orthographic camera={{ position: [10, 20, 20], zoom: 80 }} gl={{ preserveDrawingBuffer: true }}>
-      <color attach="background" args={['#f2f2f5']} />
+      {/* <Canvas shadows orthographic camera={{ position: [10, 20, 20], zoom: 80 }} gl={{ preserveDrawingBuffer: true }}> */}
+      {/* <color attach="background" args={['#f2f2f5']} /> */}
       {/* <Torusknot /> */}
       {/* <FadingImage/> */}
       {/* <Torusknot /> */}
@@ -257,9 +269,9 @@ export default function Services () {
       /> */}
       {/** The environment is just a bunch of shapes emitting light. This is needed for the clear-coat */}
       
-      <Shoes data={data} />
+      {/* <Shoes data={data} /> */}
 
-      <Environment resolution={32}>
+      {/* <Environment resolution={32}>
         <group rotation={[-Math.PI / 4, -0.3, 0]}>
           <Lightformer intensity={20} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={[10, 10, 1]} />
           <Lightformer intensity={2} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={[10, 2, 1]} />
@@ -267,10 +279,10 @@ export default function Services () {
           <Lightformer intensity={2} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={[20, 2, 1]} />
           <Lightformer type="ring" intensity={2} rotation-y={Math.PI / 2} position={[-0.1, -1, -5]} scale={10} />
         </group>
-      </Environment>
+      </Environment> */}
 
       {/* * Soft shadows */}
-      <AccumulativeShadows
+      {/* <AccumulativeShadows
         temporal
         frames={100}
         color={shadow}
@@ -281,8 +293,8 @@ export default function Services () {
         scale={30}
         position={[0, -1.01, 0]}>
         <RandomizedLight amount={4} radius={10} ambient={0.5} intensity={1} position={[0, 10, -10]} size={15} mapSize={1024} bias={0.0001} />
-      </AccumulativeShadows>
-    </Canvas>
+      </AccumulativeShadows> */}
+    {/* </Canvas> */}
 
 
       {/* <ServicesH1>Algorithms and Methods</ServicesH1> */}
@@ -294,9 +306,13 @@ export default function Services () {
       <AsciiRenderer fgColor="white" bgColor="black" />
     </Canvas> */}
       <ServicesWrapper>
+      <Column1>
+      <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
+      <FadingImage />
+    </Canvas>
+      </Column1>
 
-
-        {/* <ServicesCard> */}
+        <ServicesCard>
 
         {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
       <FadingImage />
@@ -308,9 +324,17 @@ export default function Services () {
           {/* <ServicesP>
             A comprehensive financial modeling structure enables investors to capture a more holistic valuation towards determining navigation in volatile risk field.
           </ServicesP> */}
-        {/* </ServicesCard> */}
-
-        {/* <ServicesCard> */}
+        </ServicesCard>
+        <Column1>
+        <Canvas>
+      <color attach="background" args={['black']} />
+      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+      <pointLight position={[-10, -10, -10]} />
+      <Torusknot />
+      <AsciiRenderer fgColor="white" bgColor="black" />
+    </Canvas>
+      </Column1>
+        <ServicesCard>
 
         {/* <Canvas camera={{ position: [0, 0, 2], fov: 500 }}>
       <color attach="background" args={['black']} />
@@ -325,10 +349,11 @@ export default function Services () {
           <ServicesP>
             By minimizing the variable search space, & subsequent effect, a process of data optimization is created to find correlational traces in data. */}
           {/* </ServicesP> */}
-        {/* </ServicesCard> */}
+        </ServicesCard>
+        <Column1>
+      </Column1>
 
-
-        {/* <ServicesCard> */}
+        <ServicesCard>
 
         {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
       <FadingImage />
@@ -338,7 +363,7 @@ export default function Services () {
           {/* <ServicesP>
             Created by the Leibniz Analytica Team, data provided by IEX Cloud, graphing library provided by Plotly Dash.
           </ServicesP> */}
-        {/* </ServicesCard> */}
+        </ServicesCard>
 
 
 
