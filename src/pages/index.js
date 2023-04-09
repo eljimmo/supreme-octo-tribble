@@ -28,7 +28,7 @@ export default function Welcome() {
 
       {/* <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} /> */}
-      <HeroSection />   
+      {/* <HeroSection />    */}
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
 
             <Button
