@@ -297,7 +297,7 @@ export default function Services () {
     {/* </Canvas> */}
 
 
-      {/* <ServicesH1>Algorithms and Methods</ServicesH1> */}
+      <ServicesH1>Algorithms and Methods</ServicesH1>
       {/* <Canvas>
       <color attach="background" args={['black']} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -307,9 +307,9 @@ export default function Services () {
     </Canvas> */}
       <ServicesWrapper>
       <Column1>
-      <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
+      {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
       <FadingImage />
-    </Canvas>
+    </Canvas> */}
       </Column1>
 
         <ServicesCard>
@@ -320,19 +320,19 @@ export default function Services () {
 
 
 
-    {/* <ServicesH2>AI Assisted Analysis</ServicesH2> */}
-          {/* <ServicesP>
+    <ServicesH2>AI Assisted Analysis</ServicesH2>
+          <ServicesP>
             A comprehensive financial modeling structure enables investors to capture a more holistic valuation towards determining navigation in volatile risk field.
-          </ServicesP> */}
+          </ServicesP>
         </ServicesCard>
         <Column1>
-        <Canvas>
+        {/* <Canvas>
       <color attach="background" args={['black']} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
       <Torusknot />
       <AsciiRenderer fgColor="white" bgColor="black" />
-    </Canvas>
+    </Canvas> */}
       </Column1>
         <ServicesCard>
 
@@ -345,10 +345,10 @@ export default function Services () {
       <AsciiRenderer fgColor="white" bgColor="black" />
     </Canvas> */}
 
-          {/* <ServicesH2>Find Underlying Stock Trend Patterns Utilizing the most powerful modern day tools.</ServicesH2>
+          <ServicesH2>Find Underlying Stock Trend Patterns Utilizing the most powerful modern day tools.</ServicesH2>
           <ServicesP>
-            By minimizing the variable search space, & subsequent effect, a process of data optimization is created to find correlational traces in data. */}
-          {/* </ServicesP> */}
+            By minimizing the variable search space, & subsequent effect, a process of data optimization is created to find correlational traces in data.
+          </ServicesP>
         </ServicesCard>
         <Column1>
       </Column1>
@@ -359,10 +359,10 @@ export default function Services () {
       <FadingImage />
     </Canvas>  */}
 
-          {/* <ServicesH2>Unleash the power of Artificial Intelligence Algorithms to analyze financial data.</ServicesH2> */}
-          {/* <ServicesP>
+          <ServicesH2>Unleash the power of Artificial Intelligence Algorithms to analyze financial data.</ServicesH2>
+          <ServicesP>
             Created by the Leibniz Analytica Team, data provided by IEX Cloud, graphing library provided by Plotly Dash.
-          </ServicesP> */}
+          </ServicesP>
         </ServicesCard>
 
 
