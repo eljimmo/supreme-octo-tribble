@@ -41,13 +41,13 @@ export default function Welcome() {
       </Affix>
       <InfoSection {...homeObjOne} />
 
-       <InfoSection2 {...homeObjTwo} />
+       {/* <InfoSection2 {...homeObjTwo} /> */}
 
       
         <InfoSection3 {...homeObjThree} />
 
 
-        < Services /> 
+        {/* < Services />  */}
 
         {/* <Group grow>
       <Button variant="outline">1</Button>
