@@ -22,6 +22,7 @@ import Brainmodel from "./brain";
 import SombreroSuperficieMath from './Sombrero_superficie_math';
 import Model from '../GEO/Geo';
 import Scenemodel from './Scene_draco';
+import { Triumphe_Place } from "./Triumphe_nation";
 
 const STEP_DURATION = 5000;
 
@@ -170,6 +171,11 @@ export const Carousel = (props) => {
               scale={[0.005, 0.005, 0.005]}
               rotation-y={Math.PI / 2}
              />
+             {/* <Triumphe_Place
+              position={[4, 1, -7]}
+                scale={[1.6, 1.6, 1.6]}
+              rotation-y={-Math.PI / 8}
+            /> */}
           {/* <Scenemodel position={[3, 4, -3]} scale={[3, 3, 3]} /> */}
 
           {/* <Scenemodel position={[-8, 4, 8]} scale={[2, 2, 2]} /> */}
@@ -191,9 +197,9 @@ export const Carousel = (props) => {
               scale={[1, 1, 1]}
               rotation-y={Math.PI / 2}
             />
-            <HotDog
+            <Triumphe_Place
               position={[4, 1, -7]}
-              scale={[4, 4, 4]}
+                scale={[1.6, 1.6, 1.6]}
               rotation-y={-Math.PI / 8}
             /> */}
           </>
