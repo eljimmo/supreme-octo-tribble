@@ -38,7 +38,7 @@ export default function Welcome() {
               I am still in Development.
             </Button>
       </Affix>
-      <InfoSection {...homeObjOne} />
+      {/* <InfoSection {...homeObjOne} /> */}
       <HeroSection />   
 
        {/* <InfoSection2 {...homeObjTwo} /> */}
