@@ -25,7 +25,6 @@ export default function Welcome() {
   // };
   return (
     <>
-
       {/* <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} /> */}
       {/* <HeroSection />    */}
@@ -37,7 +36,6 @@ export default function Welcome() {
             >
               I am still in Development.
             </Button>
-
       </Affix>
       <InfoSection {...homeObjOne} />
       <HeroSection />   
