@@ -44,8 +44,18 @@ import {
   ImgWrap,
   Img
 } from '../InfoSection/InfoElements';
-import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem } from '@mantine/core';
+import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem,
+  SimpleGrid,
+Title,
+TextInput,
+Textarea,
+MantineProvider,
+Container,
+Accordion,
+getStylesRef,
+} from '@mantine/core';
 import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
+import { IconPlus } from '@tabler/icons-react';
 
 
 
@@ -53,6 +63,8 @@ import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler
 
 
 
+const placeholder =
+  'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.It was born from sludge on the ocean floor. In a sterile environment, the germs within its body can’t multiply, and it dies.It has no eyeballs, so it can’t see. It checks its surroundings via the ultrasonic waves it emits from its mouth.';
 
 
 
@@ -112,7 +124,10 @@ export function FeaturesCard() {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <Image src="https://i.imgur.com/ZL52Q2D.png" alt="Tesla Model S" />
+        {/* <Image src="https://i.imgur.com/ZL52Q2D.png" alt="Tesla Model S" /> */}
+                <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
+      <FadingImage />
+    </Canvas>  
       </Card.Section>
 
       <Group position="apart" mt="md">
@@ -160,6 +175,58 @@ export function FeaturesCard() {
 
 
 
+export function ContactUs() {
+  const { classes } = useStyles();
+
+  // const icons = social.map((Icon, index) => (
+  //   <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
+  //     <Icon size="1.4rem" stroke={1.5} />
+  //   </ActionIcon>
+  // ));
+
+  return (
+    <div className={classes.wrapper}>
+      <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <div>
+          <Title className={classes.title}>Contact us</Title>
+          <Text className={classes.description} mt="sm" mb={30}>
+            Leave your email and we will get back to you within 24 hours
+          </Text>
+
+          {/* <ContactIconsList variant="white" /> */}
+
+          {/* <Group mt="xl">{icons}</Group> */}
+        </div>
+        <div className={classes.form}>
+          <TextInput
+            label="Email"
+            placeholder="your@email.com"
+            required
+            classNames={{ input: classes.input, label: classes.inputLabel }}
+          />
+          <TextInput
+            label="Name"
+            placeholder="John Doe"
+            mt="md"
+            classNames={{ input: classes.input, label: classes.inputLabel }}
+          />
+          <Textarea
+            required
+            label="Your message"
+            placeholder="I want to order your goods"
+            minRows={4}
+            mt="md"
+            classNames={{ input: classes.input, label: classes.inputLabel }}
+          />
+
+          <Group position="right" mt="md">
+            <Button className={classes.control}>Send message</Button>
+          </Group>
+        </div>
+      </SimpleGrid>
+    </div>
+  );
+}
 
 
 
@@ -170,6 +237,58 @@ export function FeaturesCard() {
 
 
 
+export function FaqWithBg() {
+  const { classes } = useStyles();
+  return (
+    <MantineProvider inherit theme={{ colorScheme: 'light' }}>
+      <div className={classes.wrapper}>
+        <Container size="sm">
+          <Title align="center" className={classes.title}>
+            Frequently Asked Questions
+          </Title>
+
+          <Accordion
+            chevronPosition="right"
+            defaultValue="reset-password"
+            chevronSize={50}
+            variant="separated"
+            disableChevronRotation
+            // chevron={
+            //   <ThemeIcon radius="xl" className={classes.gradient} size={32}>
+            //     <IconPlus size="1.05rem" stroke={1.5} />
+            //   </ThemeIcon>
+            // }
+          >
+            <Accordion.Item className={classes.item} value="reset-password">
+              <Accordion.Control>How can I reset my password?</Accordion.Control>
+              <Accordion.Panel>{placeholder}</Accordion.Panel>
+            </Accordion.Item>
+
+            <Accordion.Item className={classes.item} value="another-account">
+              <Accordion.Control>Can I create more that one account?</Accordion.Control>
+              <Accordion.Panel>{placeholder}</Accordion.Panel>
+            </Accordion.Item>
+
+            <Accordion.Item className={classes.item} value="newsletter">
+              <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
+              <Accordion.Panel>{placeholder}</Accordion.Panel>
+            </Accordion.Item>
+
+            <Accordion.Item className={classes.item} value="credit-card">
+              <Accordion.Control>Do you store credit card information securely?</Accordion.Control>
+              <Accordion.Panel>{placeholder}</Accordion.Panel>
+            </Accordion.Item>
+
+            <Accordion.Item className={classes.item} value="payment">
+              <Accordion.Control>What payment systems to you work with?</Accordion.Control>
+              <Accordion.Panel>{placeholder}</Accordion.Panel>
+            </Accordion.Item>
+          </Accordion>
+        </Container>
+      </div>
+    </MantineProvider>
+  );
+}
 
 
 
@@ -249,56 +368,56 @@ export function FeaturesCard() {
 
 
 
-// export const ImageFadeMaterial = shaderMaterial(
-//   {
-//     effectFactor: 1.2,
-//     dispFactor: 0,
-//     tex: undefined,
-//     tex2: undefined,
-//     disp: undefined
-//   },
-//   ` varying vec2 vUv;
-//     void main() {
-//       vUv = uv;
-//       gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
-//     }`,
-//   ` varying vec2 vUv;
-//     uniform sampler2D tex;
-//     uniform sampler2D tex2;
-//     uniform sampler2D disp;
-//     uniform float _rot;
-//     uniform float dispFactor;
-//     uniform float effectFactor;
-//     void main() {
-//       vec2 uv = vUv;
-//       vec4 disp = texture2D(disp, uv);
-//       vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
-//       vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
-//       vec4 _texture = texture2D(tex, distortedPosition);
-//       vec4 _texture2 = texture2D(tex2, distortedPosition2);
-//       vec4 finalTexture = mix(_texture, _texture2, dispFactor);
-//       gl_FragColor = finalTexture;
-//       #include <tonemapping_fragment>
-//       #include <encodings_fragment>
-//     }`
-// )
+export const ImageFadeMaterial = shaderMaterial(
+  {
+    effectFactor: 1.2,
+    dispFactor: 0,
+    tex: undefined,
+    tex2: undefined,
+    disp: undefined
+  },
+  ` varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }`,
+  ` varying vec2 vUv;
+    uniform sampler2D tex;
+    uniform sampler2D tex2;
+    uniform sampler2D disp;
+    uniform float _rot;
+    uniform float dispFactor;
+    uniform float effectFactor;
+    void main() {
+      vec2 uv = vUv;
+      vec4 disp = texture2D(disp, uv);
+      vec2 distortedPosition = vec2(uv.x + dispFactor * (disp.r*effectFactor), uv.y);
+      vec2 distortedPosition2 = vec2(uv.x - (1.0 - dispFactor) * (disp.r*effectFactor), uv.y);
+      vec4 _texture = texture2D(tex, distortedPosition);
+      vec4 _texture2 = texture2D(tex2, distortedPosition2);
+      vec4 finalTexture = mix(_texture, _texture2, dispFactor);
+      gl_FragColor = finalTexture;
+      #include <tonemapping_fragment>
+      #include <encodings_fragment>
+    }`
+)
 
-// extend({ ImageFadeMaterial })
+extend({ ImageFadeMaterial })
 
-// function FadingImage() {
-//   const ref = useRef()
-//   const [texture1, texture2, dispTexture] = useTexture(["/bluesight.jpg", "/crosshair.jpg", "/10.jpg"])
-//   const [hovered, setHover] = useState(false)
-//   useFrame(() => {
-//     ref.current.dispFactor = THREE.MathUtils.lerp(ref.current.dispFactor, hovered ? 1 : 0, 0.075)
-//   })
-//   return (
-//     <mesh onPointerOver={(e) => setHover(true)} onPointerOut={(e) => setHover(false)}>
-//       <planeGeometry />
-//       <imageFadeMaterial ref={ref} tex={texture1} tex2={texture2} disp={dispTexture} toneMapped={false} />
-//     </mesh>
-//   )
-// }
+function FadingImage() {
+  const ref = useRef()
+  const [texture1, texture2, dispTexture] = useTexture(["/bluesight.jpg", "/crosshair.jpg", "/10.jpg"])
+  const [hovered, setHover] = useState(false)
+  useFrame(() => {
+    ref.current.dispFactor = THREE.MathUtils.lerp(ref.current.dispFactor, hovered ? 1 : 0, 0.075)
+  })
+  return (
+    <mesh onPointerOver={(e) => setHover(true)} onPointerOut={(e) => setHover(false)}>
+      <planeGeometry />
+      <imageFadeMaterial ref={ref} tex={texture1} tex2={texture2} disp={dispTexture} toneMapped={false} />
+    </mesh>
+  )
+}
 
 
 // const Grid = ({ number = 23, lineWidth = 0.026, height = 0.5 }) => (
@@ -438,8 +557,8 @@ export default function Services () {
       <ServicesWrapper>
       {/* <Column1> */}
       <FeaturesCard/>
-      <FeaturesCard/>
-      <FeaturesCard/>
+      <ContactUs/>
+      {/* <FaqWithBg/> */}
 
       {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
       <FadingImage />
