@@ -152,8 +152,19 @@ export const Carousel = (props) => {
           <>
             {/* <Podium position={[1, 0, 10]} rotation-y={Math.PI / 2} /> */}
             {/* <FerrisWheel position={[6, 0, 2]} scale={[3, 3, 3]} /> */}
+
+
             <Float speed={5} floatIntensity={0.3}>
                           {/* <Scenemodel position={[-8, 4, 8]} scale={[2, 2, 2]} /> */}
+
+                          <Model
+                // position={[-4, 3, -5]}
+
+                position={[4.5, 5, 5.5]}
+                scale={[1.6, 1.6, 1.6]}
+                rotation-y={Math.PI / 2}
+              /> 
+
 
               <SombreroSuperficieMath
                 position={[6, 2.2, 4]}
@@ -208,7 +219,7 @@ export const Carousel = (props) => {
             <Float speed={5} floatIntensity={0.1}>
 
               <Brainmodel
-                position={[-4, 3, -5]}
+                position={[-3, 2, -5]}
                 // position={[-7.5, 2, -7.5]}
 
                 scale={[1.6, 1.6, 1.6]}
@@ -219,13 +230,13 @@ export const Carousel = (props) => {
 
             <Float speed={3} floatIntensity={0.005}>
 
-              <Model
+              {/* <Model
                 // position={[-4, 3, -5]}
 
                 position={[-5.5, 2, -4.5]}
                 scale={[1.6, 1.6, 1.6]}
                 rotation-y={Math.PI / 2}
-              />
+              /> */}
 
             </Float>
 
