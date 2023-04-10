@@ -40,6 +40,7 @@ export default function Welcome() {
       </Affix>
       {/* <InfoSection {...homeObjOne} /> */}
       <HeroSection />   
+      <InfoSection {...homeObjOne} />
 
        {/* <InfoSection2 {...homeObjTwo} /> */}
 
