@@ -12,7 +12,7 @@ import {
 // import Services from '../components/Services';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import Services from '../components/Services/index';
-
+import HeroSection_2 from '../components/HeroSection/Hero_Vid';
 
 
 
@@ -47,7 +47,8 @@ export default function Welcome() {
 
        {/* <InfoSection2 {...homeObjTwo} /> */}
 
-        {/* < Services />  */}
+        < Services /> 
+        < HeroSection_2 /> 
 
         {/* <Group grow>
       <Button variant="outline">1</Button>

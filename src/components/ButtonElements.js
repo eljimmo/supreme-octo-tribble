@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 
+
+export const Button1 = styled(Link)`
+  
+`;
+
+
 export const Button = styled(Link)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? '#76b8f4' : '#010606')};

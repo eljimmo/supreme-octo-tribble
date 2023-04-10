@@ -145,13 +145,13 @@ export const Carousel = (props) => {
           <mesh scale={[1, 6, 24]} position-y={3}>
             <boxBufferGeometry />
             {/* <meshStandardMaterial color={"white"} /> */}
-            <meshStandardMaterial color={"black"} />
+            <meshStandardMaterial color={"green"} />
 
           </mesh>
           <mesh scale={[24, 6, 1]} position-y={3}>
             <boxBufferGeometry />
             {/* <meshStandardMaterial color={"white"} /> */}
-            <meshStandardMaterial color={"black"} />
+            <meshStandardMaterial color={"red"} />
 
           </mesh>
           {/* PARK */}
@@ -161,7 +161,6 @@ export const Carousel = (props) => {
 
 
             <Float speed={5} floatIntensity={0.3}>
-                          {/* <Scenemodel position={[-8, 4, 8]} scale={[2, 2, 2]} /> */}
 
                           <Model
                 // position={[-4, 3, -5]}
@@ -184,7 +183,7 @@ export const Carousel = (props) => {
           <>
 
            <Scenemodel
-              position={[3, 4, -3]}
+              position={[3, 4, -4]}
               scale={[0.005, 0.005, 0.005]}
               rotation-y={Math.PI / 2}
              />

@@ -1,5 +1,5 @@
 import { React, Suspense, useRef, useState } from 'react';
-import { Button } from '../ButtonElements';
+// import { Button } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
@@ -21,7 +21,8 @@ import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
 import { easing } from 'maath'
 import { useStore } from './store'
-// import { Button } from '@mantine/core';
+import { Group, Button, rem } from '@mantine/core';
+import { IconBrandTwitter } from '@tabler/icons-react';
 
 
 
@@ -105,11 +106,41 @@ const InfoSection3 = ({
                 <topLine>{topLine}</topLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                {/* <Group position="center">
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/mantinedev"
+        leftIcon={<IconBrandTwitter size={rem(18)} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: '#00acee',
+            border: 0,
+            height: rem(42),
+            paddingLeft: rem(20),
+            paddingRight: rem(20),
+            '&:not([data-disabled])': theme.fn.hover({
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            }),
+          },
+
+          leftIcon: {
+            marginRight: theme.spacing.md,
+          },
+        })}
+      >
+        Follow on Twitter
+      </Button>
+    </Group> */}
                 <Button
               variant="outline"
-              to='home'
-              smooth={true}
-
+              // to='home'
+              // smooth={true}
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="/Demo"
             >
               I am still in Development.
             </Button>

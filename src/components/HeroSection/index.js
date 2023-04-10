@@ -2,6 +2,8 @@ import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
 // import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
+  HeroBg,
+  VideoBg,
 
   HeroContent,
 } from './HeroElements';
@@ -62,6 +64,16 @@ export default function HeroSection() {
     <HeroContainer id='home'>
  
        <HeroContent>
+       
+{/*        
+       <HeroBg>
+
+
+        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+      </HeroBg> */}
+
+      
+
        {/* <Canvas shadows camera={{ position: [0, 0, 8], fov: 40 }}> */}
        <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
 
@@ -74,23 +86,14 @@ export default function HeroSection() {
     </Canvas>
 
 
-    {/* <Carousel autoplay>
-    <div>
-      <h3 style={contentStyle}>1</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
-    </div>
-  </Carousel> */}
+
+
 
 
 </HeroContent>
+
+
+
 
    </HeroContainer>
 
