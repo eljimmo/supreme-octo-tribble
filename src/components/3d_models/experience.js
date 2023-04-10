@@ -57,7 +57,7 @@ export const Experience = () => {
       <Carousel />
       <ContactShadows scale={30} opacity={0.32} />
 
-      <Background />
+      {/* <Background /> */}
     </>
   );
 };

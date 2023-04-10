@@ -137,16 +137,22 @@ export const Carousel = (props) => {
       <group rotation-y={-Math.PI / 4} position-y={-0.01}>
         <animated.group rotation-y={carouselRotation}>
           <mesh position={[0, -2, 0]}>
-            <meshStandardMaterial color={"white"} />
+            {/* <meshStandardMaterial color={"white"} /> */}
+            <meshStandardMaterial color={"black"} />
+
             <cylinderBufferGeometry args={[12, 12, 4, 64]} />
           </mesh>
           <mesh scale={[1, 6, 24]} position-y={3}>
             <boxBufferGeometry />
-            <meshStandardMaterial color={"white"} />
+            {/* <meshStandardMaterial color={"white"} /> */}
+            <meshStandardMaterial color={"black"} />
+
           </mesh>
           <mesh scale={[24, 6, 1]} position-y={3}>
             <boxBufferGeometry />
-            <meshStandardMaterial color={"white"} />
+            {/* <meshStandardMaterial color={"white"} /> */}
+            <meshStandardMaterial color={"black"} />
+
           </mesh>
           {/* PARK */}
           <>

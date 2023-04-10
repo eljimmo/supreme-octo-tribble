@@ -21,6 +21,7 @@ import Brainmodel from '../3d_models/brain';
 import { OrbitControls } from 'three-stdlib';
 import { easing } from 'maath'
 import { useStore } from './store'
+// import { Button } from '@mantine/core';
 
 
 
@@ -103,7 +104,15 @@ const InfoSection3 = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <Button
+              variant="outline"
+              to='home'
+              smooth={true}
+
+            >
+              I am still in Development.
+            </Button>
+                {/* <BtnWrap>
                   <Button
                     to='home'
                     smooth={true}
@@ -117,7 +126,7 @@ const InfoSection3 = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Canvas dpr={[1.5, 2]} linear shadows>

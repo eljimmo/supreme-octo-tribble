@@ -1,5 +1,5 @@
 import { React, Suspense, useRef, useState, useMemo, useEffect, useLayoutEffect } from 'react';
-import { Button } from '../ButtonElements';
+// import { Button } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
@@ -22,6 +22,7 @@ import Scenemodel from '../3d_models/Scene_draco'
 import { useSphere, Physics } from '@react-three/cannon'
 import * as THREE from "three"
 import { AsciiEffect } from 'three-stdlib'
+import { Button } from '@mantine/core';
 
 
 import { SSAOPass } from "three-stdlib"
@@ -223,6 +224,12 @@ const InfoSection2 = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                {/* <Button
+              variant="outline"
+      
+            >
+              I am still in Development.
+            </Button> */}
                 <BtnWrap>
                   <Button
                     to='Home'

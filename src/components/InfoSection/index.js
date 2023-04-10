@@ -19,6 +19,7 @@ import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
+// import { Button } from '@mantine/core';
 
 
 
@@ -75,7 +76,16 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <Button
+              variant="outline"
+              to='home'
+              smooth={true}
+      
+            >
+              I am still in Development.
+            </Button> 
+                
+                {/* <BtnWrap>
                   <HrefButton
                     to='/Demo'
                     smooth={true}
@@ -89,7 +99,7 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </HrefButton>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>
