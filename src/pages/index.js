@@ -13,20 +13,21 @@ import {
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import Services from '../components/Services/index';
 import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
+import Navbar from '../components/Navbar';
 
 
 
 
 export default function Welcome() {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const toggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} /> */}
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      <Navbar toggle={toggle} />
       {/* <HeroSection />    */}
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
 
