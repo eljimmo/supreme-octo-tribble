@@ -16,7 +16,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
-import Dashboard from "../src/views/Dashboard";
+// import Dashboard from "../src/views/Dashboard";
 
 export default function App() {
   return (
