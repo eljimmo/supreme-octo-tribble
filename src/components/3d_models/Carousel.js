@@ -222,13 +222,13 @@ export const Carousel = (props) => {
           </>
           {/* HAUNTED */}
           <>
-            <Float speed={5} floatIntensity={0.1}>
+            <Float speed={3} floatIntensity={0.001}>
 
               <Brainmodel
-                position={[-3, 2, -5]}
+                position={[-3, 2, -3]}
                 // position={[-7.5, 2, -7.5]}
 
-                scale={[1.6, 1.6, 1.6]}
+                scale={[1.0, 1.0, 1.0]}
                 rotation-y={Math.PI * 1.25}
               />
 

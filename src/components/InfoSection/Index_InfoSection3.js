@@ -80,6 +80,7 @@ function Selector({ children }) {
 const InfoSection3 = ({
   lightBg,
   imgStart,
+  WhiteTopLine,
   topLine,
   lightText,
   headline,
@@ -101,7 +102,7 @@ const InfoSection3 = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <topLine>{topLine}</topLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <Button

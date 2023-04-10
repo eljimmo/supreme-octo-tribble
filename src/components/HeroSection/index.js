@@ -9,7 +9,6 @@ import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Center } from '@react-three/drei'
 import * as THREE from 'three'
 import Model from '../GEO/Geo'
-import { Carousel } from 'antd';
 import { Experience } from '../3d_models/experience';
 
 

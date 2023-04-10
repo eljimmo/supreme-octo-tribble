@@ -45,6 +45,7 @@ export default function Welcome() {
       
         <InfoSection3 {...homeObjThree} />
 
+       <InfoSection2 {...homeObjTwo} />
 
         {/* < Services />  */}
 
