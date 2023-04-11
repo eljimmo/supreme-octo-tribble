@@ -16,10 +16,28 @@ import { useTexture,
   shaderMaterial,
   useAspect, 
   useVideoTexture,
+  OrbitControls,
+  Effects,
+  Environment,
   Html
  } from "@react-three/drei"
 import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
+import { LUTPass, LUTCubeLoader } from 'three-stdlib'
+
+
+extend({ LUTPass })
+
+
+
+function Grading() {
+  const { texture3D } = useLoader(LUTCubeLoader, '/cubicle-99.CUBE')
+  return (
+    <Effects>
+      <lUTPass lut={texture3D} intensity={0.75} />
+    </Effects>
+  )
+}
 
 
 export const ImageFadeMaterial = shaderMaterial(
@@ -209,6 +227,16 @@ const useStyles = createStyles((theme) => ({
   
 
 
+  function Sphere(props) {
+    const texture = useTexture('/10.jpg')
+    return (
+      <mesh {...props}>
+        <sphereGeometry args={[1, 64, 64]} />
+        <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
+      </mesh>
+    )
+  }
+  
 
 
 function HeroSection_2() {
@@ -223,14 +251,23 @@ function HeroSection_2() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-      <Canvas linear dpr={[1, 2]} orthographic >
+      {/* <Canvas linear dpr={[1, 2]} orthographic > */}
+      <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
+
+      <ambientLight />
+      <spotLight intensity={0.5} angle={0.2} penumbra={1} position={[5, 15, 10]} />
+
         <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-          <SombreroSuperficieMath 
-            scale={[0.5, 0.5, 0.5]}
+          <Sphere 
+            // scale={[0.5, 0.5, 0.5]}
             rotation-y={Math.PI / 2}
           
           />
        </Suspense>
+       <Environment preset="dawn" background blur={0.0} />
+
+       <OrbitControls />
+
       </Canvas>
 
       </HeroContent>
