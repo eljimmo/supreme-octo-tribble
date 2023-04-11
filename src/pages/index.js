@@ -50,7 +50,7 @@ export default function Welcome() {
        {/* <InfoSection2 {...homeObjTwo} /> */}
 
         {/* < Services />  */}
-        {/* < HeroSection_2 />  */}
+        < HeroSection_2 /> 
 
         {/* <Group grow>
       <Button variant="outline">1</Button>

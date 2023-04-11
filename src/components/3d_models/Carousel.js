@@ -1,6 +1,8 @@
 import { animated, useSpring } from "@react-spring/three";
-import { Float, useCursor } from "@react-three/drei";
-import { useEffect, useMemo, useLayoutEffect, useRef, useState } from 'react'
+import { Float, useCursor,
+  useAspect, useVideoTexture, useTexture
+ } from "@react-three/drei";
+import { useEffect, useMemo, useLayoutEffect, useRef, useState, Suspense } from 'react'
 import { Canvas, extend, useFrame, useThree, useLoader } from "@react-three/fiber"
 import { AsciiEffect } from 'three-stdlib'
 
@@ -23,6 +25,48 @@ import SombreroSuperficieMath from './Sombrero_superficie_math';
 import Model from '../GEO/Geo';
 import Scenemodel from './Scene_draco';
 import { Triumphe_Place } from "./Triumphe_nation";
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Scene() {
+  const size = useAspect(1800, 1000)
+  return (
+    <mesh scale={size}>
+      <planeGeometry />
+      <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
+        <VideoMaterial url="drei.mp4" />
+      </Suspense>
+    </mesh>
+  )
+}
+
+function VideoMaterial({ url }) {
+  const texture = useVideoTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+function FallbackMaterial({ url }) {
+  const texture = useTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+
+
+
+
+
+
+
 
 const STEP_DURATION = 5000;
 

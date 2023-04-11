@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 // import { Button } from '../ButtonElements';
 
 import Video from './videos/iStock_optic.mp4';
@@ -26,6 +26,7 @@ import { useTexture, shaderMaterial, useCursor, OrbitControls,
   Instances,
   Environment,
   Lightformer,
+  useAspect, useVideoTexture,
   RandomizedLight,
   AccumulativeShadows,
   MeshTransmissionMaterial } from "@react-three/drei"
@@ -195,6 +196,30 @@ const useStyles = createStyles((theme) => ({
 
 
 
+  function Scene() {
+    const size = useAspect(1800, 1000)
+    return (
+      <mesh scale={size}>
+        <planeGeometry />
+        <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
+          <VideoMaterial url="drei.mp4" />
+        </Suspense>
+      </mesh>
+    )
+  }
+  
+  function VideoMaterial({ url }) {
+    const texture = useVideoTexture(url)
+    return <meshBasicMaterial map={texture} toneMapped={false} />
+  }
+  
+  function FallbackMaterial({ url }) {
+    const texture = useTexture(url)
+    return <meshBasicMaterial map={texture} toneMapped={false} />
+  }
+  
+  
+
 
 
 
@@ -210,32 +235,7 @@ function HeroSection_2() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-      <FeaturesCard/>
-
-      {/* <FeaturesCard/>
-      <FeaturesCard/>
-      <FeaturesCard/> */}
-        {/* <HeroH1>Virtual Banking Made Easy</HeroH1> */}
-        {/* <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment.
-        </HeroP> */}
-        {/* <HeroBtnWrapper> */}
-          {/* <Button
-            to='signup'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-            primary='true'
-            dark='true'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button> */}
-        {/* </HeroBtnWrapper> */}
+  
       </HeroContent>
     </HeroContainer>
   );

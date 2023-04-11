@@ -5,14 +5,12 @@ import {
   InfoWrapper,
   InfoRow,
   Column1,
-  Column2,
   TextWrapper,
   TopLine,
   Heading,
   Subtitle,
   BtnWrap,
-  ImgWrap,
-  Img
+
 } from './InfoElements';
 import { Canvas, useThree, extend, useFrame } from '@react-three/fiber'
 import { useAspect, useVideoTexture, Scroll, Image, ScrollControls, useIntersect, useTexture, useCursor, Effects as EffectComposer } from '@react-three/drei'
@@ -205,8 +203,6 @@ const InfoSection2 = ({
   headline,
   description,
   buttonLabel,
-  img,
-  alt,
   id,
   primary,
   darkText,
@@ -220,17 +216,12 @@ const InfoSection2 = ({
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-              <TextWrapper>
+              {/* <TextWrapper> */}
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                {/* <Button
-              variant="outline"
-      
-            >
-              I am still in Development.
-            </Button> */}
-                <BtnWrap>
+           
+                {/* <BtnWrap>
                   <Button
                     to='Home'
                     smooth={true}
@@ -244,98 +235,29 @@ const InfoSection2 = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
-              </TextWrapper>
+                </BtnWrap> */}
+              {/* </TextWrapper> */}
             </Column1>
             <Canvas>
       <color attach="background" args={['black']} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Torusknot />
-      <AsciiRenderer fgColor="white" bgColor="black" />
+     
+      <Suspense fallback={null}>
+        <Scene />
+      </Suspense>
+
     </Canvas>
-            {/* <Column2> */}
-            {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}>
 
-<ambientLight intensity={0.25} />
-<spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
-<directionalLight intensity={5} position={[-10, -10, -10]} color="purple" />
-<Physics gravity={[0, 2, 0]} iterations={10}>
-  <Pointer />
 
-  <Clump />
-</Physics>
-<Effects />
-<OrbitControls enablePan={false} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-
-</Canvas> */}
-            {/* <Canvas
-        shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-<ambientLight intensity={1} />
-<directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
-<OrbitControls enablePan={false} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-
-  <SombreroSuperficieMath rotation={[0, Math.PI / 1.5, 0]} scale={0.00025} />
-
-</Suspense>
-</Canvas> */}
     
-            {/* </Column2> */}
-            {/* <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
-    <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
-      <Items />
-      <Scroll html style={{ width: '100%' }}>
-        <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>all</h1>
-        <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>hail</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>thee,</h1>
-        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>thoth</h1>
-        <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
-          her
-          <br />
-          mes.
-        </h1>
-      </Scroll>
-    </ScrollControls>
-  </Canvas> */}
+
           </InfoRow>
 
         </InfoWrapper>
 
-        {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 40 }}> */}
-        {/* <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
 
-    <ambientLight intensity={0.25} />
-    <spotLight intensity={1} angle={0.2} penumbra={1} position={[30, 30, 30]} castShadow shadow-mapSize={[512, 512]} />
-    <directionalLight intensity={5} position={[-10, -10, -10]} color="purple" />
-    <Physics gravity={[0, 2, 0]} iterations={10}>
-      <Pointer />
 
-      <Clump />
-    </Physics>
-    <Effects />
-  </Canvas> */}
-    {/* <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
-    <color attach="background" args={['#f0f0f0']} />
-    <ScrollControls damping={6} pages={5}>
-      <Items />
-      <Scroll html style={{ width: '100%' }}>
-        <h1 style={{ position: 'absolute', top: `100vh`, right: '20vw', fontSize: '25em', transform: `translate3d(0,-100%,0)` }}>all</h1>
-        <h1 style={{ position: 'absolute', top: '180vh', left: '10vw' }}>hail</h1>
-        <h1 style={{ position: 'absolute', top: '260vh', right: '10vw' }}>thee,</h1>
-        <h1 style={{ position: 'absolute', top: '350vh', left: '10vw' }}>thoth</h1>
-        <h1 style={{ position: 'absolute', top: '450vh', right: '10vw' }}>
-          her
-          <br />
-          mes.
-        </h1>
-      </Scroll>
-    </ScrollControls>
-  </Canvas> */}
 
       </InfoContainer>
     </>

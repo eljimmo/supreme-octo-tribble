@@ -1,11 +1,51 @@
-import { ContactShadows, OrbitControls } from "@react-three/drei";
+import { ContactShadows, OrbitControls,
+  useAspect, useVideoTexture, useTexture
+ } from "@react-three/drei";
 
 import { Carousel } from "./Carousel";
 
 import { useFrame } from "@react-three/fiber";
 import { Depth, LayerMaterial, Noise } from "lamina";
-import { useRef } from "react";
+import { useRef, Suspense } from "react";
 import * as THREE from "three";
+
+
+
+
+
+
+
+
+
+function Scene() {
+  const size = useAspect(1800, 1000)
+  return (
+    <mesh scale={size}>
+      <planeGeometry />
+      <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
+        <VideoMaterial url="10.mp4" />
+      </Suspense>
+    </mesh>
+  )
+}
+
+function VideoMaterial({ url }) {
+  const texture = useVideoTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+function FallbackMaterial({ url }) {
+  const texture = useTexture(url)
+  return <meshBasicMaterial map={texture} toneMapped={false} />
+}
+
+
+
+
+
+
+
+
 
 const BG_SPEED = 0.3;
 
@@ -51,6 +91,17 @@ export const Experience = () => {
     <>
       {/* <OrbitControls /> */}
 
+
+
+      <color attach="background" args={['black']} />
+      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+      <pointLight position={[-10, -10, -10]} />
+     
+      <Suspense fallback={null}>
+        <Scene />
+      </Suspense>
+
+ 
       <ambientLight intensity={0.1} />
       <directionalLight position={[0, 20, 20]} intensity={1} />
 
