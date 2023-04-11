@@ -8,7 +8,7 @@ import {
   HeroContent,
 } from './HeroElements';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Center } from '@react-three/drei'
+import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import Model from '../GEO/Geo'
 import { Experience } from '../3d_models/experience';
@@ -79,10 +79,9 @@ export default function HeroSection() {
 
       {/* <color attach="background" args={['#151520']} /> */}
       <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
-
-
-      {/* <Video /> */}
+      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
       <Experience/>
+      </Suspense>
     </Canvas>
 
 

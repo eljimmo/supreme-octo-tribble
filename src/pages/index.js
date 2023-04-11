@@ -14,7 +14,7 @@ import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import Services from '../components/Services/index';
 import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
-
+import Diamonds from '../components/diamonds/Diamonds';
 
 
 
@@ -42,14 +42,7 @@ export default function Welcome() {
       <HeroSection />   
       <InfoSection {...homeObjOne} />
 
-       {/* <InfoSection2 {...homeObjTwo} /> */}
-
-      
-        {/* <InfoSection3 {...homeObjThree} /> */}
-
-       {/* <InfoSection2 {...homeObjTwo} /> */}
-
-        {/* < Services />  */}
+ 
         < HeroSection_2 /> 
 
         {/* <Group grow>
@@ -57,7 +50,7 @@ export default function Welcome() {
       <Button variant="outline">2</Button>
       <Button variant="outline">3</Button>
     </Group> */}
-
+{/* <Footer/> */}
     </>
   );
 }

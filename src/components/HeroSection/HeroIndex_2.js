@@ -29,8 +29,10 @@ import { useTexture, shaderMaterial, useCursor, OrbitControls,
   useAspect, useVideoTexture,
   RandomizedLight,
   AccumulativeShadows,
+  Html,
   MeshTransmissionMaterial } from "@react-three/drei"
 
+import Diamonds from '../diamonds/Diamonds';
 
 
 
@@ -235,7 +237,16 @@ function HeroSection_2() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-  
+      <Canvas linear dpr={[1, 2]} orthographic >
+        <Suspense fallback={<Html center className="loading" children="Loading..." />}>
+          <Diamonds 
+            scale={[1.0, 1.0, 1.0]}
+            rotation-y={Math.PI / 2}
+          
+          />
+       </Suspense>
+      </Canvas>
+
       </HeroContent>
     </HeroContainer>
   );
