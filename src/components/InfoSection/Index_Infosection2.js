@@ -14,9 +14,7 @@ import {
 } from './InfoElements';
 import { Canvas, useThree, extend, useFrame } from '@react-three/fiber'
 import { useAspect, useVideoTexture, Scroll, Image, ScrollControls, useIntersect, useTexture, useCursor, Effects as EffectComposer } from '@react-three/drei'
-  import Model from '../GEO/Geo'
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import Scenemodel from '../3d_models/Scene_draco'
+
 import { useSphere, Physics } from '@react-three/cannon'
 import * as THREE from "three"
 import { AsciiEffect } from 'three-stdlib'

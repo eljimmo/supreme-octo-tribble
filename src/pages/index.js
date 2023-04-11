@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import InfoSection2 from '../components/InfoSection/Index_Infosection2';
-import InfoSection3 from '../components/InfoSection/Index_InfoSection3';
+
 import {
   homeObjOne,
-  homeObjTwo,
-  homeObjThree,
+
 
 } from '../components/InfoSection/Data';
 // import Services from '../components/Services';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
-import Services from '../components/Services/index';
 import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
-import Diamonds from '../components/diamonds/Diamonds';
+import Footer from '../components/Footer/index';
 
 
 
@@ -50,7 +47,7 @@ export default function Welcome() {
       <Button variant="outline">2</Button>
       <Button variant="outline">3</Button>
     </Group> */}
-{/* <Footer/> */}
+<Footer/>
     </>
   );
 }

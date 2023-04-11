@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-// import { Button } from '../ButtonElements';
 
 import Video from './videos/iStock_optic.mp4';
 import {
@@ -7,33 +6,20 @@ import {
   HeroBg,
   VideoBg,
   HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
 } from './HeroElements';
 import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem } from '@mantine/core';
 import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
 import * as THREE from "three"
 import { useRef, useState } from "react"
-import { RGBELoader } from 'three-stdlib'
 import { Canvas, extend, useFrame, useThree, useLoader } from "@react-three/fiber"
-import { useTexture, shaderMaterial, useCursor, OrbitControls,
-  Text3D,
-  Instance,
-  useGLTF,
-  Instances,
-  Environment,
-  Lightformer,
-  useAspect, useVideoTexture,
-  RandomizedLight,
-  AccumulativeShadows,
-  Html,
-  MeshTransmissionMaterial } from "@react-three/drei"
-
-import Diamonds from '../diamonds/Diamonds';
-
+import { useTexture,
+  shaderMaterial,
+  useAspect, 
+  useVideoTexture,
+  Html
+ } from "@react-three/drei"
+import Triumphe_Place from '../3d_models/Triumphe_nation';
+import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 
 
 export const ImageFadeMaterial = shaderMaterial(
@@ -239,8 +225,8 @@ function HeroSection_2() {
       <HeroContent>
       <Canvas linear dpr={[1, 2]} orthographic >
         <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-          <Diamonds 
-            scale={[1.0, 1.0, 1.0]}
+          <SombreroSuperficieMath 
+            scale={[0.5, 0.5, 0.5]}
             rotation-y={Math.PI / 2}
           
           />

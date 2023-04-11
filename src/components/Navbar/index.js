@@ -11,8 +11,6 @@ import {
   NavLinks2,
   NavLogo,
   NavMenu,
-  NavBtn,
-  NavBtnLink
 } from './NavbarElements';
 import {
   SidebarContainer,
@@ -111,6 +109,8 @@ const Navbar = ({ toggle }) => {
                          {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
                          </NavLinks2>
 
+
+
                 {/* <NavLinks
                   to='discover'
                   smooth={true}
@@ -123,6 +123,9 @@ const Navbar = ({ toggle }) => {
                 </NavLinks> */}
               </NavItem>
               <NavItem>
+              <NavLinks2 to='/signup'>Demo Dash
+                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+                         </NavLinks2>
               </NavItem>
               <NavItem>
 
@@ -140,6 +143,11 @@ const Navbar = ({ toggle }) => {
                   Sign Up
                 </NavLinks>  */}
               </NavItem>
+         
+              <NavLinks2 to='/signup'>heee Up
+                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+                         </NavLinks2>
+             
             </NavMenu>
             {/* <NavBtn>  */}
           {/* <NavItem> */}
