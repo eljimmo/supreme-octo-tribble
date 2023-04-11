@@ -80,17 +80,14 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/account'>
-              LEIBNIZ
+              Project Leibniz
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-{/* 
-              <NavLinks2 to='/signup'>Sign Up
-                         {hover ? <ArrowForward /> : <ArrowRight />}
-                         </NavLinks2> */}
+
 
                 <NavLinks
                   to='about'
@@ -106,55 +103,47 @@ const Navbar = ({ toggle }) => {
               <NavItem>
 
               <NavLinks2 to='/signup'>Sign Up
-                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
                          </NavLinks2>
 
-
-
-                {/* <NavLinks
-                  to='discover'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  Discover
-                </NavLinks> */}
+         
               </NavItem>
               <NavItem>
-              <NavLinks2 to='/signup'>Demo Dash
-                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+              <NavLinks2 to='/signup'>Analytic Dashboard
                          </NavLinks2>
               </NavItem>
               <NavItem>
 
               <NavLinks2 to='/login'>Log In
-                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
                          </NavLinks2>
-                 {/* <NavLinks
-                  to='signup'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  Sign Up
-                </NavLinks>  */}
+         
               </NavItem>
          
-              <NavLinks2 to='/signup'>heee Up
-                         {/* {hover ? <ArrowForward /> : <ArrowRight />} */}
+              <NavLinks2 to='/signup'>
+                AI Models
                          </NavLinks2>
              
+                         <NavItem>
+              <NavLinks2 to='/signup'>Reinforcement Learning
+                         </NavLinks2>
+              </NavItem>
+
+
+
+
+              <NavItem>
+              <NavLinks2 to='/signup'>Neuroevolution
+                         </NavLinks2>
+              </NavItem>
+
+
+
+              <NavItem>
+              <NavLinks2 to='/signup'>Neural Networks
+                         </NavLinks2>
+              </NavItem>
+
             </NavMenu>
-            {/* <NavBtn>  */}
-          {/* <NavItem> */}
-                         {/* <NavLinks2 to='/signup'>Sign Up
-                         {hover ? <ArrowForward /> : <ArrowRight />}
-                         </NavLinks2> */}
-                         {/* </NavBtn>  */}
+        
 
             
           </NavbarContainer>
