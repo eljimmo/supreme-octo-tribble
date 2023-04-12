@@ -265,7 +265,7 @@ function HeroSection_2() {
                 <Grading />
        </Suspense>
        <Environment preset="forest" background blur={0.0} />
-       <OrbitControls />
+       {/* <OrbitControls /> */}
       </Canvas>
       </HeroContent>
     </HeroContainer>

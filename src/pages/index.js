@@ -36,9 +36,10 @@ export default function Welcome() {
       </Affix>
       <HeroSection />   
       <InfoSection {...homeObjOne} />
+      <CameraSection/>
+
       <DesignSection/>
         <HeroSection_2 /> 
-        <CameraSection/>
         {/* <Services/> */}
         <Footer/>
     </>
