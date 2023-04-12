@@ -228,7 +228,7 @@ const useStyles = createStyles((theme) => ({
 
 
   function Sphere(props) {
-    const texture = useTexture('/10.jpg')
+    const texture = useTexture('/Nebula.jpg')
     return (
       <mesh {...props}>
         <sphereGeometry args={[1, 64, 64]} />
@@ -247,29 +247,26 @@ function HeroSection_2() {
   };
   return (
     <HeroContainer id='home'>
-      <HeroBg>
+      {/* <HeroBg>
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-      </HeroBg>
+      </HeroBg> */}
       <HeroContent>
       {/* <Canvas linear dpr={[1, 2]} orthographic > */}
       <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
 
       <ambientLight />
-      <spotLight intensity={0.5} angle={0.2} penumbra={1} position={[5, 15, 10]} />
+      <spotLight intensity={1.5} angle={4.2} penumbra={1} position={[5, 15, 10]} />
 
         <Suspense fallback={<Html center className="loading" children="Loading..." />}>
           <Sphere 
-            // scale={[0.5, 0.5, 0.5]}
-            rotation-y={Math.PI / 2}
-          
+            scale={[2.1, 2.1, 2.1]}
+            rotation-y={Math.PI / 4}
           />
+                <Grading />
        </Suspense>
-       <Environment preset="dawn" background blur={0.0} />
-
+       <Environment preset="forest" background blur={0.0} />
        <OrbitControls />
-
       </Canvas>
-
       </HeroContent>
     </HeroContainer>
   );

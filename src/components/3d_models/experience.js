@@ -1,5 +1,5 @@
 import { ContactShadows, OrbitControls,
-  useAspect, useVideoTexture, useTexture
+  useAspect, useVideoTexture, useTexture, Html,
  } from "@react-three/drei";
 
 import { Carousel } from "./Carousel";
@@ -93,22 +93,22 @@ export const Experience = () => {
 
 
 
-      <color attach="background" args={['black']} />
+      <color attach="background" args={['white']} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
      
-      <Suspense fallback={null}>
+      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <Scene />
-      </Suspense>
 
  
       <ambientLight intensity={0.1} />
       <directionalLight position={[0, 20, 20]} intensity={1} />
 
       <Carousel />
+      </Suspense>
+
       <ContactShadows scale={30} opacity={0.32} />
 
-      {/* <Background /> */}
     </>
   );
 };

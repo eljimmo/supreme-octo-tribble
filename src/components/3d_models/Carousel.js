@@ -66,6 +66,16 @@ function FallbackMaterial({ url }) {
 
 
 
+function Sphere(props) {
+  const texture = useTexture('/Nebula.jpg')
+  return (
+    <mesh {...props}>
+      <sphereGeometry args={[1, 64, 64]} />
+      <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
+    </mesh>
+  )
+}
+
 
 
 const STEP_DURATION = 5000;
@@ -231,7 +241,7 @@ export const Carousel = (props) => {
               scale={[0.005, 0.005, 0.005]}
               rotation-y={Math.PI / 2}
              />
-             {/* <Triumphe_Place
+             {/* <Sphere
               position={[4, 1, -7]}
                 scale={[1.6, 1.6, 1.6]}
               rotation-y={-Math.PI / 8}
@@ -289,17 +299,23 @@ export const Carousel = (props) => {
 
             </Float>
 
-            <Float speed={-1} floatIntensity={0.01}>
+            {/* <Float speed={-1} floatIntensity={0.01}> */}
                   {/* <Torusknot /> */}
       {/* <AsciiRenderer fgColor="white" bgColor="black" />
               {/* <Cauldron position={[-2.8, 1, -8]} scale={[1.9, 1.9, 1.9]} /> */}
-            </Float>
+            {/* </Float> */}
           </>
           {/* BEACH */}
           <>
 
           <Torusknot position={[-10, 4, 3]} scale={[3, 3, 3]}  />
-          <Torusknot position={[-8, 4, 8]} scale={[3, 3, 3]} />
+
+          <Float speed={-1} floatIntensity={0.01}>
+
+                      <Sphere position={[-8, 4, 8]} scale={[1, 1, 1]} />
+
+                      </Float>
+
           <Torusknot position={[-3, 4, 10]} scale={[3, 3, 3]} />
           {/* <AsciiRenderer fgColor="white" bgColor="black" /> */}
 

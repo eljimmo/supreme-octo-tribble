@@ -12,6 +12,9 @@ import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
+import DesignSection from '../components/DesignSection';
+import CameraSection from '../components/Videos_Section';
+import Services from '../components/Services';
 
 
 
@@ -23,31 +26,21 @@ export default function Welcome() {
   };
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
-      {/* <HeroSection />    */}
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
-
             <Button
               variant="outline"
-      
             >
               I am still in Development.
             </Button>
       </Affix>
-      {/* <InfoSection {...homeObjOne} /> */}
       <HeroSection />   
       <InfoSection {...homeObjOne} />
-
- 
-        < HeroSection_2 /> 
-
-        {/* <Group grow>
-      <Button variant="outline">1</Button>
-      <Button variant="outline">2</Button>
-      <Button variant="outline">3</Button>
-    </Group> */}
-<Footer/>
+      <DesignSection/>
+        <HeroSection_2 /> 
+        <CameraSection/>
+        {/* <Services/> */}
+        <Footer/>
     </>
   );
 }
