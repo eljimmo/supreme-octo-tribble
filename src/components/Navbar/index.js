@@ -111,12 +111,12 @@ const Navbar = ({ toggle }) => {
               <NavLinks2 to='/signup'>Analytic Dashboard
                          </NavLinks2>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
 
               <NavLinks2 to='/login'>Log In
                          </NavLinks2>
          
-              </NavItem>
+              </NavItem> */}
          
               <NavLinks2 to='/signup'>
                 AI Models
@@ -137,10 +137,10 @@ const Navbar = ({ toggle }) => {
 
 
 
-              <NavItem>
+              {/* <NavItem>
               <NavLinks2 to='/signup'>Neural Networks
                          </NavLinks2>
-              </NavItem>
+              </NavItem> */}
 
             </NavMenu>
         
