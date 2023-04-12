@@ -87,7 +87,7 @@ const Title = styled.h6`
   }
 `;
 
-const CameraSection = () => {
+const VideoSection = () => {
   const sectionRef = useRef(null);
 
   const videoRef1 = useRef(null);
@@ -158,10 +158,10 @@ const CameraSection = () => {
       <TitleContainer ref={titleRef}>
         <Title>Intelligence.</Title>
         <Title>Evolutionary.</Title>
-        <Title>Capability.</Title>
+        <Title>Neuroevolution.</Title>
       </TitleContainer>
     </Section>
   );
 };
 
-export default CameraSection;
+export default VideoSection;

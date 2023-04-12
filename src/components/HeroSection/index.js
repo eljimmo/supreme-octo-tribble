@@ -61,11 +61,11 @@ export default function HeroSection() {
   return (
     <HeroContainer id='home'>
  
- <HeroBg>
+ {/* <HeroBg>
 
 
 <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-</HeroBg> 
+</HeroBg>  */}
 
 
        <HeroContent>

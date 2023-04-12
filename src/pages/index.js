@@ -4,6 +4,8 @@ import InfoSection from '../components/InfoSection';
 
 import {
   homeObjOne,
+  homeObjTwo,
+  homeObjThree,
 
 
 } from '../components/InfoSection/Data';
@@ -13,7 +15,7 @@ import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
-import CameraSection from '../components/Videos_Section';
+import VideoSection from '../components/Videos_Section';
 import Services from '../components/Services';
 
 
@@ -36,10 +38,13 @@ export default function Welcome() {
       </Affix>
       <HeroSection />   
       <InfoSection {...homeObjOne} />
-      <CameraSection/>
+      <VideoSection/>
       {/* <DesignSection/> */}
         <HeroSection_2 /> 
         {/* <Services/> */}
+        <InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjTwo} />
+
         <Footer/>
     </>
   );

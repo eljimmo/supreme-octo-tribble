@@ -18,9 +18,9 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
   id: 'discover',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   topLine: 'Stock Market Derivative Modeling, Machine Learning for Predictive Analysis',
   headline: 'A comprehensive financial modeling structure enables investors to capture a holistic valuation towards determining navigation in a changing volatile risk field.',
   description:
@@ -29,16 +29,16 @@ export const homeObjTwo = {
   imgStart: true,
   // img: require('./img/math_graph.png'),
   alt: 'img',
-  dark: false,
+  dark: true,
   primary: false,
   darkText: true
 };
 
 export const homeObjThree = {
   id: 'signup',
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
   WhiteTopLine: 'Modeling Statistical properties as distribution variables to quantify the effect of variables as features in a set.',
   // headline: 'From Value at Risk, Portfolio vs Benchmark Strategy, Genetic Algorithms, LSTMs, Recurrent Neural Networks, Leibniz provides the tools you need to better your financial asset portfolio.',
   headline: 'Create your own custom financial trading agent to better assist you when trading.',
@@ -49,7 +49,7 @@ export const homeObjThree = {
   imgStart: false,
   // img: require('./img/iexcloud_pic.png'),
   alt: 'img',
-  dark: false,
-  primary: false,
+  dark: true,
+  primary: true,
   darkText: true
 };

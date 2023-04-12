@@ -252,7 +252,6 @@ function HeroSection_2() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg> */}
       <HeroContent>
-      {/* <Canvas linear dpr={[1, 2]} orthographic > */}
       <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
 
       <ambientLight />
