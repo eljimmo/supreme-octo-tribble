@@ -115,11 +115,11 @@ const DesignSection = () => {
   return (
     <Section ref={container}>
       <TextContainer ref={textOne}>
-        <span>Flaw-less design with strong durability.</span>
+        <span>Intelligent Artificial NeuroEvolution.</span>
       </TextContainer>
 
       <TextContainer2 ref={textTwo}>
-        <span>Flat-edge design with toughest smartphone glass.</span>
+        <span>Genetic Algorithms.</span>
       </TextContainer2>
     </Section>
   );

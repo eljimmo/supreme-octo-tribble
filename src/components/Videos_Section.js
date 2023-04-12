@@ -156,9 +156,9 @@ const CameraSection = () => {
       <V1 ref={videoRef1} src={v1} type="video/mp4" autoPlay muted loop />
       <V2 ref={videoRef2} src={v2} type="video/mp4" autoPlay muted loop />
       <TitleContainer ref={titleRef}>
-        <Title>Ready.</Title>
-        <Title>Steady.</Title>
-        <Title>Action.</Title>
+        <Title>Intelligence.</Title>
+        <Title>Evolutionary.</Title>
+        <Title>Capability.</Title>
       </TitleContainer>
     </Section>
   );
