@@ -74,8 +74,8 @@ const TitleContainer = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: var(--fontBig);
+const Title = styled.h6`
+  font-size: 7em;
   z-index: 5;
   text-transform: capitalize;
 

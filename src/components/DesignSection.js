@@ -21,6 +21,7 @@ const TextContainer = styled.p`
   width: 100%;
   height: 50vh;
   z-index: 1;
+  font-size: 7em;
 
   display: flex;
   flex-direction: column;
@@ -54,6 +55,7 @@ const TextContainer = styled.p`
 const TextContainer2 = styled.p`
   width: 100%;
   height: 50vh;
+  font-size: 7em;
 
   display: flex;
   flex-direction: column;
