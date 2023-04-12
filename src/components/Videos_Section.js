@@ -12,7 +12,7 @@ const Section = styled.section`
   min-height: 100vh;
   position: relative;
   z-index: 1;
-  background-color: var(--white);
+  background-color: black;
   overflow: hidden;
 `;
 
@@ -78,6 +78,8 @@ const Title = styled.h6`
   font-size: 7em;
   z-index: 5;
   text-transform: capitalize;
+  color: white;
+
 
   @media screen and (max-width: 70em) {
     font-size: var(--fontxxxl);
