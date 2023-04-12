@@ -41,6 +41,7 @@ export default function Welcome() {
       <VideoSection/>
       {/* <App/> */}
         <HeroSection_2 /> 
+        <DesignSection />
         {/* <Services/> */}
         <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />

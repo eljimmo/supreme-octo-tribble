@@ -14,7 +14,7 @@ const Section = styled.section`
   justify-content: flex-end;
   align-items: center;
 
-  background-color: var(--white);
+  background-color: black;
   overflow: hidden;
 `;
 const TextContainer = styled.p`
@@ -22,12 +22,14 @@ const TextContainer = styled.p`
   height: 50vh;
   z-index: 1;
   font-size: 7em;
+  color: white;
+
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: var(--dark);
+
 
   span {
     font-size: var(--fontBig);
@@ -56,12 +58,12 @@ const TextContainer2 = styled.p`
   width: 100%;
   height: 50vh;
   font-size: 7em;
+  color: white;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  color: var(--dark);
 
   span {
     font-size: var(--fontxxxl);
