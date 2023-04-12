@@ -19,7 +19,8 @@ import { useTexture,
   OrbitControls,
   Effects,
   Environment,
-  Html
+  Html,
+  Stage
  } from "@react-three/drei"
 import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
@@ -256,17 +257,23 @@ function HeroSection_2() {
 
       <ambientLight />
       <spotLight intensity={1.5} angle={4.2} penumbra={1} position={[5, 15, 10]} />
+      <Environment preset="forest" />
 
         <Suspense fallback={<Html center className="loading" children="Loading..." />}>
+
           <Sphere 
             scale={[2.1, 2.1, 2.1]}
-            rotation-y={Math.PI / 4}
-          />
+            rotation={[0, -0.2, 0]} />
                 <Grading />
+
        </Suspense>
-       <Environment preset="forest" background blur={0.0} />
-       {/* <OrbitControls /> */}
+
+       <OrbitControls makeDefault autoRotate />
+       <Environment preset="forest" background blur={0.0}/>
+
       </Canvas>
+      
+
       </HeroContent>
     </HeroContainer>
   );
