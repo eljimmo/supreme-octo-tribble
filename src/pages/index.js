@@ -37,7 +37,7 @@ export default function Welcome() {
       <HeroSection />   
       <InfoSection {...homeObjOne} />
       <CameraSection/>
-      <DesignSection/>
+      {/* <DesignSection/> */}
         <HeroSection_2 /> 
         {/* <Services/> */}
         <Footer/>
