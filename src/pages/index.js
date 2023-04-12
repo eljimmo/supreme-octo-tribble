@@ -17,7 +17,7 @@ import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import Services from '../components/Services';
-
+import App from '../components/flex_pages/src/App';
 
 
 export default function Welcome() {
@@ -39,7 +39,7 @@ export default function Welcome() {
       <HeroSection />   
       <InfoSection {...homeObjOne} />
       <VideoSection/>
-      {/* <DesignSection/> */}
+      {/* <App/> */}
         <HeroSection_2 /> 
         {/* <Services/> */}
         <InfoSection {...homeObjThree} />

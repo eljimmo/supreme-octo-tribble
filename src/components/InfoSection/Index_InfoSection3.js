@@ -103,7 +103,7 @@ const InfoSection3 = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <topLine>{topLine}</topLine>
+                <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 {/* <Group position="center">
