@@ -19,6 +19,7 @@ import VideoSection from '../components/Videos_Section';
 import Services from '../components/Services';
 import App from '../components/flex_pages/src/App';
 import ScApp from '../components/ScrollControl/src/App';
+import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,8 +42,9 @@ export default function Welcome() {
       <VideoSection/>
       {/* <App/> */}
         <HeroSection_2 /> 
+        <HeroSection_3 />
         <DesignSection />
-        {/* <ScApp/> */}
+        <ScApp/>
         <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
 

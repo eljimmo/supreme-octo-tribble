@@ -6,6 +6,7 @@ import { easing } from 'maath'
 
 export default function ScApp() {
   return (
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
     <Canvas camera={{ position: [0, 0, 20], fov: 15 }}>
       <ScrollControls damping={0.2} pages={3} distance={0.5}>
         {/* <Lens> */}
@@ -30,6 +31,7 @@ export default function ScApp() {
         {/* </Lens> */}
       </ScrollControls>
     </Canvas>
+    </div>
   )
 }
 
