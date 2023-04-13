@@ -6,8 +6,13 @@ import { easing } from 'maath'
 
 export default function ScApp() {
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
-    <Canvas camera={{ position: [0, 0, 20], fov: 15 }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
+    <Canvas camera={{ position: [0, 0, 20], fov: 15
+    // set the background color of the scene to black
+    , background: new THREE.Color(0x000000)
+    
+    
+    }}>
       <ScrollControls damping={0.2} pages={3} distance={0.5}>
         {/* <Lens> */}
           <Scroll>
@@ -105,7 +110,7 @@ function Images() {
 function Typography() {
   const state = useThree()
   const { width, height } = state.viewport.getCurrentViewport(state.cameta, [0, 0, 12])
-  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'black' }
+  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'white' }
   return (
     <>
       <Text children="to" anchorX="left" position={[-width / 2.5, -height / 10, 12]} {...shared} />
