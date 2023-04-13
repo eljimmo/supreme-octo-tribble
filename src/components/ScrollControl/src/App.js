@@ -58,7 +58,7 @@ function Images() {
       <Image position={[2, 0, 3]} scale={3} url="/bluesight.jpg" />
       <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/crosshair.jpg" />
       <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/math_graph.png" />
+      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/10.jpg" />
       <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/10.jpg" />
       <Image position={[0, -height * 2 - height / 4, 0]} scale={[width, height / 1.1, 1]} url="/10.jpg" />
     </group>
