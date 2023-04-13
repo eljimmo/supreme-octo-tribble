@@ -25,7 +25,7 @@ import { useTexture,
 import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import { LUTPass, LUTCubeLoader } from 'three-stdlib'
-import a15 from "./10.jpg";
+import a15 from "./Blue.jpg";
 
 
 extend({ LUTPass })
@@ -139,106 +139,9 @@ const useStyles = createStyles((theme) => ({
     { label: 'Electric', icon: IconGasStation },
   ];
   
-  export function FeaturesCard() {
-    const { classes } = useStyles();
-    const features = mockdata.map((feature) => (
-      <Center key={feature.label}>
-        <feature.icon size="1.05rem" className={classes.icon} stroke={1.5} />
-        <Text size="xs">{feature.label}</Text>
-      </Center>
-    ));
-  
-    return (
-      <Card withBorder radius="md" className={classes.card}>
-        <Card.Section className={classes.imageSection}>
-          <Image src="https://i.imgur.com/ZL52Q2D.png" alt="Tesla Model S" />
-          {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
-      <FadingImage />
-    </Canvas>   */}
-        </Card.Section>
-  
-        <Group position="apart" mt="md">
-          <div>
-            <Text fw={500}>Tesla Model S</Text>
-            <Text fz="xs" c="dimmed">
-              Free recharge at any station
-            </Text>
-          </div>
-          <Badge variant="outline">25% off</Badge>
-        </Group>
-  
-        <Card.Section className={classes.section} mt="md">
-          <Text fz="sm" c="dimmed" className={classes.label}>
-            Basic configuration
-          </Text>
-  
-          <Group spacing={8} mb={-8}>
-            {features}
-          </Group>
-        </Card.Section>
-  
-        <Card.Section className={classes.section}>
-          <Group spacing={30}>
-            <div>
-              <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-                $168.00
-              </Text>
-              <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
-                per day
-              </Text>
-            </div>
-  
-            <Button radius="xl" style={{ flex: 1 }}>
-              Rent now
-            </Button>
-          </Group>
-        </Card.Section>
-      </Card>
-    );
-  }
-  
   
   
 
-
-
-
-
-  function Scene() {
-    const size = useAspect(1800, 1000)
-    return (
-      <mesh scale={size}>
-        <planeGeometry />
-        <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
-          <VideoMaterial url="drei.mp4" />
-        </Suspense>
-      </mesh>
-    )
-  }
-  
-  function VideoMaterial({ url }) {
-    const texture = useVideoTexture(url)
-    return <meshBasicMaterial map={texture} toneMapped={false} />
-  }
-  
-  function FallbackMaterial({ url }) {
-    const texture = useTexture(url)
-    return <meshBasicMaterial map={texture} toneMapped={false} />
-  }
-  
-  
-
-
-  function Sphere(props) {
-    const texture = useTexture('/Nebula.jpg')
-    return (
-      <mesh {...props}>
-        <sphereGeometry args={[1, 64, 64]} />
-        <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
-      </mesh>
-    )
-  }
-  
 
 
   const Title = styled.h1`
@@ -394,6 +297,9 @@ function HeroSection_2() {
 
       <Processor>
         <img src={a15} alt="A15 processor" />
+        {/* < Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
+        <FadingImage/>
+      </Canvas> */}
       </Processor>
 
 
@@ -414,28 +320,7 @@ function HeroSection_2() {
         </span>
       </TText>
 
-      {/* <TText2>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut omnis,
-          quaerat aliquid optio veniam.
-        </span>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut.
-        </span>
-      </TText2> */}
 
-
-      {/* <TextBlockRight>
-        <Title>Super Ratine XDR Display</Title>
-        <TText>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus dignissimos ipsam.
-        </TText>
-      </TextBlockRight> */}
 
 
 
