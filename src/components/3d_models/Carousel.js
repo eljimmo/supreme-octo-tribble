@@ -1,6 +1,7 @@
 import { animated, useSpring } from "@react-spring/three";
 import { Float, useCursor,
-  useAspect, useVideoTexture, useTexture
+  useAspect, useVideoTexture, useTexture, Text, RenderTexture, 
+  PerspectiveCamera
  } from "@react-three/drei";
 import { useEffect, useMemo, useLayoutEffect, useRef, useState, Suspense } from 'react'
 import { Canvas, extend, useFrame, useThree, useLoader } from "@react-three/fiber"
@@ -31,6 +32,26 @@ import { Triumphe_Place } from "./Triumphe_nation";
 
 
 
+
+function Dodecahedron(props) {
+  const meshRef = useRef()
+  const [hovered, hover] = useState(false)
+  const [clicked, click] = useState(false)
+  useFrame(() => (meshRef.current.rotation.x += 0.01))
+  return (
+    <group {...props}>
+      <mesh
+        ref={meshRef}
+        scale={clicked ? 1.5 : 1}
+        onClick={() => click(!clicked)}
+        onPointerOver={() => hover(true)}
+        onPointerOut={() => hover(false)}>
+        <dodecahedronGeometry args={[0.75]} />
+        <meshStandardMaterial color={hovered ? 'hotpink' : '#5de4c7'} />
+      </mesh>
+    </group>
+  )
+}
 
 
 
@@ -154,6 +175,31 @@ function AsciiRenderer({
 }
 
 
+
+function Cube() {
+  const textRef = useRef()
+  useFrame((state) => (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2))
+  return (
+    <mesh>
+      <boxGeometry />
+      <meshStandardMaterial>
+        <RenderTexture attach="map" anisotropy={16}>
+          <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
+          <color attach="background" args={['orange']} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 5]} />
+          <Text ref={textRef} fontSize={4} color="#555">
+            hello
+          </Text>
+          <Dodecahedron />
+        </RenderTexture>
+      </meshStandardMaterial>
+    </mesh>
+  )
+}
+
+
+
 export const Carousel = (props) => {
   const { carouselRotation } = useSpring({
     from: {
@@ -199,19 +245,20 @@ export const Carousel = (props) => {
           <mesh scale={[1, 6, 24]} position-y={3}>
             <boxBufferGeometry />
             {/* <meshStandardMaterial color={"white"} /> */}
-            <meshStandardMaterial color={"green"} />
+            <meshStandardMaterial color={"black"} />
 
           </mesh>
           <mesh scale={[24, 6, 1]} position-y={3}>
             <boxBufferGeometry />
             {/* <meshStandardMaterial color={"white"} /> */}
-            <meshStandardMaterial color={"red"} />
+            <meshStandardMaterial color={"black"} />
 
           </mesh>
           {/* PARK */}
           <>
-            {/* <Podium position={[1, 0, 10]} rotation-y={Math.PI / 2} /> */}
-            {/* <FerrisWheel position={[6, 0, 2]} scale={[3, 3, 3]} /> */}
+            {/* <Cube position={[1, 0, 10]} rotation-y={Math.PI / 2} /> */}
+            {/* <Cube position={[6, 0, 2]} scale={[1, 1, 1]} /> */}
+          
 
 
             <Float speed={5} floatIntensity={0.3}>
@@ -308,7 +355,7 @@ export const Carousel = (props) => {
           {/* BEACH */}
           <>
 
-          <Torusknot position={[-10, 4, 3]} scale={[3, 3, 3]}  />
+          {/* <Cube position={[-10, 4, 3]} scale={[0.5, 0.5, 0.5]}  /> */}
 
           <Float speed={-1} floatIntensity={0.01}>
 
@@ -316,7 +363,11 @@ export const Carousel = (props) => {
 
                       </Float>
 
-          <Torusknot position={[-3, 4, 10]} scale={[3, 3, 3]} />
+                      <Float speed={-1} floatIntensity={0.01}>
+          {/* <Cube position={[-8, 4, 8]} scale={[1.5, 1.5, 1.5]} /> */}
+          
+          </Float>
+          
           {/* <AsciiRenderer fgColor="white" bgColor="black" /> */}
 
             {/* <Torusknot scale={[3, 3, 3]} position={[-1, 0, 1]} /> */}

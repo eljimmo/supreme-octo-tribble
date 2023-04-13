@@ -387,7 +387,7 @@ function HeroSection_2() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-      <Title>Fastest Processor</Title>
+      {/* <Title>Fastest Processor</Title> */}
 
         {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
 
@@ -397,15 +397,17 @@ function HeroSection_2() {
       </Processor>
       <TText>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut omnis,
-          quaerat aliquid optio veniam.
+        In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation,[1] a generic population-based metaheuristic optimization algorithm.
+        From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
+           k an improvement of the fitness function is guaranteed.
+           An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.               
         </span>
         <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut.
+        Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
+        Deep learning is an important element of data science, which includes statistics and predictive modeling.
+        The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.
+
+
         </span>
       </TText>
 
