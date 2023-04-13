@@ -283,10 +283,10 @@ const glow = keyframes`
 
 const TText = styled.div`
   font-size: var(--fontxs);
-  color: white;
-  width: 30%;
-  height: 40vh;
-  display: flex;
+  color: green;
+  width: 50%;
+  height: 60vh;
+  display: flex-grow;
   flex-direction: column;
   justify-content: center;
   span {
@@ -305,7 +305,7 @@ const TText = styled.div`
     }
     & > *:last-child {
       align-self: flex-end;
-      padding-left: 0;
+      padding-left: 10;
       padding-right: 1rem;
       text-align: right;
     }
@@ -395,6 +395,9 @@ function HeroSection_2() {
       <Processor>
         <img src={a15} alt="A15 processor" />
       </Processor>
+
+
+
       <TText>
         <span>
         In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation,[1] a generic population-based metaheuristic optimization algorithm.
@@ -411,7 +414,7 @@ function HeroSection_2() {
         </span>
       </TText>
 
-      <TText2>
+      {/* <TText2>
         <span>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
@@ -423,7 +426,7 @@ function HeroSection_2() {
           Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
           consequuntur necessitatibus iste fuga assumenda deserunt aut.
         </span>
-      </TText2>
+      </TText2> */}
 
 
       {/* <TextBlockRight>

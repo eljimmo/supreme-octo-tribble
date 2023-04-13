@@ -387,7 +387,7 @@ function HeroSection_3() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-      <Title>Fastest Processor</Title>
+      {/* <Title>Fastest Processor</Title> */}
 
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
 

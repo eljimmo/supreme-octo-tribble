@@ -78,7 +78,7 @@ const Title = styled.h6`
   font-size: 7em;
   z-index: 5;
   text-transform: capitalize;
-  color: white;
+  color: green;
 
 
   @media screen and (max-width: 70em) {

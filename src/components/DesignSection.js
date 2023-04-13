@@ -152,7 +152,7 @@ const TextContainer2 = styled.p`
   width: 100%;
   height: 50vh;
   font-size: 7em;
-  color: white;
+  color: green;
 
   display: flex;
   flex-direction: column;
