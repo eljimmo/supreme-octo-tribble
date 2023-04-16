@@ -16,10 +16,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
-import Services from '../components/Services';
-import App from '../components/flex_pages/src/App';
+// import Services from '../components/Services';
+// import App from '../components/flex_pages/src/App';
 import ScApp from '../components/ScrollControl/src/App';
-import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
+// import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
+// import Moksha from '../components/Moksha';
+// import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
+
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +45,12 @@ export default function Welcome() {
       <VideoSection/>
       {/* <App/> */}
         <HeroSection_2 /> 
-        <HeroSection_3 />
+        {/* <HeroSection_3 /> */}
         <DesignSection />
         <ScApp/>
+        {/* <HeroContainerTransparent> */}
+        {/* <Moksha/> */}
+        {/* </HeroContainerTransparent> */}
         <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
 

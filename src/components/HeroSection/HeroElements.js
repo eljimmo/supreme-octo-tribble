@@ -92,6 +92,18 @@ export const HeroContainer = styled.div`
   }
 `;
 
+export const HeroContainerTransparent = styled.div`
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+`;
+
+
+
 
 export const HeroContainerCanva = styled.div`
   background: #0c0c0c;

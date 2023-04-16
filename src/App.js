@@ -16,6 +16,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
+import Moksha from "./components/Moksha";
 // import Dashboard from "../src/views/Dashboard";
 
 export default function App() {
@@ -118,6 +119,9 @@ export default function App() {
             <Route path="/login" element={<Login />} /> */}
             
             <Route path="/" element={<Welcome />} />
+
+            <Route path="/Moksha" element={<Moksha />} />
+
 
             {/* <Route path="/Demo" element={<Dashboard />} /> */}
 
