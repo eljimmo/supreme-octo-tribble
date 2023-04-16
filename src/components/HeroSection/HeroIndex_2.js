@@ -186,7 +186,7 @@ const glow = keyframes`
 
 const TText = styled.div`
   font-size: var(--fontxs);
-  color: green;
+  color: white;
   width: 50%;
   height: 60vh;
   display: flex-grow;
