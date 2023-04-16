@@ -20,7 +20,7 @@ export default function ScApp() {
             <Images />
           </Scroll>
           <Scroll html>
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)' }}>
+            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
             artificial Neurons or Nodes
                           <br />
                           predictive modeling, adaptive control

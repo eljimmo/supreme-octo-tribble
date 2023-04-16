@@ -7,19 +7,20 @@ import RTApp from "..//../Router_Transit/App";
 import "./styles.css"
 import Navbar from '../../Navbar'
 import styled, { keyframes } from "styled-components";
+import { HeroContainer, HeroContainer400, HeroContainerCanva, HeroContainerTransparent } from '../../HeroSection/HeroElements'
 
 
 
 const TText = styled.div`
   font-size: var(--fontxs);
   color: white;
-  width: 75%;
+  width: 25%;
   height: 60vh;
   display: inline-block;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: start;
   span {
-    margin: 0.2rem 0;
+    margin: 0.2rem 15px;
     padding-left: 2rem;
   }
   @media screen and (max-width: 64em) {
@@ -71,26 +72,17 @@ export default function Neuro_page() {
                By default threejs will only process objects if they are "seen" by the camera leading 
                to jank as you scroll down. With <Preload> that's solved.  */}
           <Preload />
+
+
+
+
           <Scroll html>
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)' }}>
+
+
+            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
 
 
 
-            <TText>
-        <span>
-        In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm.
-        From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
-           k an improvement of the fitness function is guaranteed.
-           An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.               
-        </span>
-        <span>
-        Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
-        Deep learning is an important element of data science, which includes statistics and predictive modeling.
-        The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.
-
-
-        </span>
-      </TText>
 
 
 
@@ -104,8 +96,22 @@ export default function Neuro_page() {
                                                       <br />
             </div>
           </Scroll>
+
+
+
+
+
       </ScrollControls>
+
+  
+
+
     </Canvas>
+
+
+
+
+
         {/* <div style={{ width: '100vw', height: '100vh' }}>
 
     <RTApp/>

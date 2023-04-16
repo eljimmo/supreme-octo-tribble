@@ -192,6 +192,7 @@ const TText = styled.div`
   display: flex-grow;
   flex-direction: column;
   justify-content: center;
+
   span {
     margin: 0.2rem 0;
     padding-left: 2rem;
