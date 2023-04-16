@@ -13,9 +13,12 @@ import { useTexture,
   useVideoTexture,
   OrbitControls,
   Effects,
+  RenderTexture,
+  PerspectiveCamera,
   Environment,
   Html,
-  Stage
+  Stage,
+  Text
  } from "@react-three/drei";
  import { LUTPass, LUTCubeLoader } from 'three-stdlib';
 
@@ -89,10 +92,35 @@ function FadingImage() {
 
 function Sphere(props) {
   const texture = useTexture('/Nebula.jpg')
+
+  const textRef = useRef()
+  useFrame((state) => (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2))
   return (
     <mesh {...props}>
       <sphereGeometry args={[1, 64, 64]} />
-      <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
+
+      <meshStandardMaterial>
+        
+        <RenderTexture attach="map" anisotropy={1}>
+          
+          <PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
+
+
+          <color attach="background" args={['transparent']} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 5]} />
+
+      <Text ref={textRef} fontSize={1} color="#fafafc">
+            Leibniz
+          </Text>
+
+
+        </RenderTexture>
+      </meshStandardMaterial>
+
+
+
+      <meshPhysicalMaterial map={texture} clearcoat={0} clearcoatRoughness={0} roughness={0} metalness={0} />
     </mesh>
   )
 }
@@ -224,12 +252,15 @@ const DesignSection = () => {
           <Sphere 
             scale={[2.1, 2.1, 2.1]}
             rotation={[0, -0.2, 0]} />
+
+
+
                 <Grading />
 
        </Suspense>
 
        <OrbitControls makeDefault autoRotate />
-       <Environment preset="forest" background blur={0.0}/>
+       <Environment preset="dawn" background blur={0.0}/>
 
       </Canvas>
       <TextContainer2 ref={textTwo}>

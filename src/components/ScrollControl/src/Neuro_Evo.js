@@ -86,38 +86,55 @@ export default function Neuro_page() {
 
 
 
-            artificial Neurons or Nodes
-                          <br />
-                          predictive modeling, adaptive control
+            structure are inspired by the human brain, mimicking the way biological neurons signal.
+            
+                                      <br />
+                                      Learning can be supervised, semi-supervised or unsupervised
                                         <br />
 
 
-                                        cognitive modelling
+                                        inspired by information processing and distributed communication nodes
                                                       <br />
+
+
+                                                      Function approximation, or regression analysis, including time series prediction.
+                                                      <br/>
+
+                                                      Classification, including pattern and sequence recognition, and sequential decision making.
+                                                      <br/>
+
+                                                      Data processing, including filtering, clustering, blind signal separation and compression.
+                                                      <br/>
             </div>
           </Scroll>
 
 
 
-
-
       </ScrollControls>
-
-  
 
 
     </Canvas>
 
+    {/* <HeroContainerCanva>
+    heellloo3333
+
+    </HeroContainerCanva> */}
 
 
 
 
-        {/* <div style={{ width: '100vw', height: '100vh' }}>
 
-    <RTApp/>
 
-    </div> */}
+    {/* <div style={{ width: '100vw', height: '500px', color: 'white' }}>
+
+    heellloo3333
+    </div>  */}
+
     </div>
+
+  
+
+
   )
 }
 
