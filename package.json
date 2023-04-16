@@ -55,7 +55,8 @@
     "three": "^0.150.1",
     "three-stdlib": "^2.21.8",
     "valtio": "^1.10.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "wouter": "^2.10.0"
   },
   "scripts": {
     "start": "react-scripts start",

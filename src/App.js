@@ -16,7 +16,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Account } from "./pages/Account";
 import Welcome from "./pages/index";
 import React from "react";
-import Moksha from "./components/Moksha";
+// import Moksha from "./components/Moksha";
+import Neuro_page from "./components/ScrollControl/src/Neuro_Evo";
 // import Dashboard from "../src/views/Dashboard";
 
 export default function App() {
@@ -120,7 +121,7 @@ export default function App() {
             
             <Route path="/" element={<Welcome />} />
 
-            <Route path="/Moksha" element={<Moksha />} />
+            <Route path="/neuroevolution" element={<Neuro_page />} />
 
 
             {/* <Route path="/Demo" element={<Dashboard />} /> */}

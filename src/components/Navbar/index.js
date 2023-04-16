@@ -131,7 +131,7 @@ const Navbar = ({ toggle }) => {
 
 
               <NavItem>
-              <NavLinks2 to='/signup'>Neuroevolution
+              <NavLinks2 to='/neuroevolution'>Neuroevolution
                          </NavLinks2>
               </NavItem>
 
