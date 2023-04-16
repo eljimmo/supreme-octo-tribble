@@ -28,7 +28,13 @@ export default function Neuro_page() {
 
             <Typography />
             <Images />
+
           </Scroll>
+
+          {/** This is a helper that pre-emptively makes threejs aware of all geometries, textures etc
+               By default threejs will only process objects if they are "seen" by the camera leading 
+               to jank as you scroll down. With <Preload> that's solved.  */}
+          <Preload />
           <Scroll html>
             <div style={{ transform: 'translate3d(65vw, 192vh, 0)' }}>
             artificial Neurons or Nodes
@@ -41,13 +47,13 @@ export default function Neuro_page() {
                                                       <br />
             </div>
           </Scroll>
-          {/** This is a helper that pre-emptively makes threejs aware of all geometries, textures etc
-               By default threejs will only process objects if they are "seen" by the camera leading 
-               to jank as you scroll down. With <Preload> that's solved.  */}
-          <Preload />
       </ScrollControls>
     </Canvas>
+        {/* <div style={{ width: '100vw', height: '100vh' }}>
+
     <RTApp/>
+
+    </div> */}
     </div>
   )
 }
@@ -69,11 +75,11 @@ function Images() {
   return (
     <group ref={group}>
       <Image position={[-2, 0, 0]} scale={[4, height, 1]} url="/invest.jpg" />
-      <Image position={[2, 0, 3]} scale={3} url="/nodes.jpg" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/crosshair.jpg" />
-      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
+      <Image position={[2, -1, 3]} scale={3} url="/nodes.jpg" />
+      <Image position={[-1.05, -height, 6]} scale={[1, 3, 1]} url="/crosshair.jpg" />
+      <Image position={[1.6, -height, 1.5, 7.5]} scale={[1, 2, 1]} url="/Server.jpg" />
       <Image position={[0.75, -height, 10.5]} scale={1.5} url="/Blue.jpg" />
-      <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/board.jpg" />
+      <Image position={[0, -height * 1.5, 5.5]} scale={[1.5, 3, 1]} url="/board.jpg" />
       <Image position={[0, -height * 2 - height / 4, 0]} scale={[width, height / 1.1, 1]} url="/ComputingAbstract.jpg" />
     </group>
   )
@@ -85,10 +91,11 @@ function Typography() {
   const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'white' }
   return (
     <>
-      <Text children="Neuro evolution" anchorX="left" position={[-width / 2.5, -height / 10, 12]} {...shared} />
-      <Text children="generic population-based " anchorX="right" position={[width / 2.5, -height * 2, 12]} {...shared} />
-      <Text children="metaheuristic optimization algorithm" position={[0, -height * 4.624, 12]} {...shared} />
-      <Text children="inspired by biological evolution" position={[0, -height * 1.624, 10]} {...shared} />
+      {/* <Text children="Neuro evolution" anchorX="left" position={[-width / 2.5, -height / 1, 2]} {...shared} /> */}
+      <Text children="generic population-based " anchorX="right" position={[width / 1, -height * 2, 1]} {...shared} />
+      <Text children="metaheuristic optimization algorithm" position={[0, -height * 4, 1]} {...shared} />
+      <Text children="inspired by biological evolution" position={[0, -height * 1, 1]} {...shared} />
+      <Text children="Leibniz" position={[0, 0, 0]} {...shared} />
 
     </>
   )

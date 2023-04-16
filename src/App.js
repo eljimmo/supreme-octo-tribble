@@ -18,6 +18,7 @@ import Welcome from "./pages/index";
 import React from "react";
 // import Moksha from "./components/Moksha";
 import Neuro_page from "./components/ScrollControl/src/Neuro_Evo";
+// import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
 
 export default function App() {
@@ -123,6 +124,7 @@ export default function App() {
 
             <Route path="/neuroevolution" element={<Neuro_page />} />
 
+            {/* <Route path="/RTApp" element={<RTApp />} /> */}
 
             {/* <Route path="/Demo" element={<Dashboard />} /> */}
 
