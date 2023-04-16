@@ -5,10 +5,18 @@ import { useFBO, useGLTF, useScroll, Text, Image, Scroll, Preload, ScrollControl
 import { easing } from 'maath'
 import RTApp from "..//../Router_Transit/App";
 import "./styles.css"
+import Navbar from '../../Navbar'
 
 export default function Neuro_page() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
+              <Navbar toggle={toggle} />
+
     <Canvas camera={{ position: [0, 0, 20], fov: 15
     // set the background color of the scene to black
     , background: new THREE.Color(0x000000)

@@ -103,6 +103,7 @@ export default function RTApp() {
     leave: { position: [0, 0, -10], rotation: [0, -Math.PI, 0], scale: [0, 0, 0], opacity: 0 },
     config: () => (n) => n === "opacity" && { friction: 60 },
   })
+
   return (
     <>
       <Container>
