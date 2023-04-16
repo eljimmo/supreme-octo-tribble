@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo onClick={toggleHome} to='/account'>
+            <NavLogo onClick={toggleHome} to='/'>
               Project Leibniz
             </NavLogo>
             <MobileIcon onClick={toggle}>
