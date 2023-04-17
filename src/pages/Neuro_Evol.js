@@ -51,7 +51,7 @@ export default function Neuro_Index() {
         {/* <DesignSection /> */}
         {/* <ScApp/> */}
         {/* <HeroContainerTransparent> */}
-        <Moksha/>
+        {/* <Moksha/> */}
         {/* </HeroContainerTransparent> */}
         {/* <Neuro_page/> */}
         {/* <InfoSection {...homeObjThree} />

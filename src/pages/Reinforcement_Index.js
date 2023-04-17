@@ -51,7 +51,7 @@ export default function Reinforc_page() {
         {/* <DesignSection /> */}
         {/* <ScApp/> */}
         {/* <HeroContainerTransparent> */}
-        <Moksha/>
+        {/* <Moksha/> */}
         {/* </HeroContainerTransparent> */}
         {/* <Neuro_page/> */}
         {/* <InfoSection {...homeObjThree} />
