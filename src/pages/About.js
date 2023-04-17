@@ -22,6 +22,8 @@ import ScApp from '../components/ScrollControl/src/App';
 // import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
 import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
+import './pages.css'
+
 
 export default function About_Index() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +36,11 @@ export default function About_Index() {
       <Navbar toggle={toggle} />
 
 
+
+
+      <div class="wrapper">
+  <div class="thing">I am placed in an area named content.</div>
+</div>
 
       <div style={{ color: 'white' }}>
             About Page
