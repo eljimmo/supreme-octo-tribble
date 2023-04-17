@@ -10,7 +10,7 @@ const state = {
       offset: 1,
       factor: 1.75,
       header: "District 4",
-      image: "/Nebula.jpg",
+      image: "/nodes.jpg",
       aspect: 1.51,
       text: "Two thousand pharmacologists and bio-chemists were subsidized. Six years later it was being produced commercially."
     },
@@ -18,7 +18,7 @@ const state = {
       offset: 2,
       factor: 2.0,
       header: "Diamond Road",
-      image: "/10.jpg",
+      image: "/nodes.jpg",
       aspect: 1.5,
       text:
         "The man who comes back through the Door in the Wall will never be quite the same as the man who went out. He will be wiser but less sure, happier but less self-satisfied, humbler in acknowledging his ignorance yet better equipped to understand the relationship of words to things, of systematic reasoning to the unfathomable mystery which it tries, forever vainly, to comprehend."

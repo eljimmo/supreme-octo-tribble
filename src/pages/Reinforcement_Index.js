@@ -24,7 +24,7 @@ import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 
-export default function Neuro_Index() {
+export default function Reinforc_page() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {

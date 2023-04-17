@@ -21,7 +21,7 @@ import React from "react";
 // import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
 import Neuro_Index from '../src/pages/Neuro_Evol';
-
+import Reinforc_page from '../src/pages/Reinforcement_Index';
 
 export default function App() {
   return (
@@ -126,7 +126,7 @@ export default function App() {
 
             <Route path="/neuroevolution" element={<Neuro_Index />} />
 
-            {/* <Route path="/rt" element={<RTApp />} /> */}
+            <Route path="/Reinforcement" element={<Reinforc_page />} />
 
 
 

@@ -94,7 +94,7 @@ export default function Moksha() {
   useEffect(() => void onScroll({ target: scrollArea.current }), [])
   return (
     <>
-    {/* <div style={{ width: '100vw', height: '100vh' }}> */}
+    {/* <div style={{ width: '100vw', height: '100vh', background: 'transparent' }}> */}
       <Canvas linear dpr={[1, 2]} orthographic camera={{ zoom: state.zoom, position: [0, 0, 500] }}>
         <Suspense fallback={<Html center className="loading" children="Loading..." />}>
           <Content />

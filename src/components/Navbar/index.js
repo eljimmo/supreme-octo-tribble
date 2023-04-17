@@ -123,7 +123,7 @@ const Navbar = ({ toggle }) => {
                          </NavLinks2>
              
                          <NavItem>
-              <NavLinks2 to='/signup'>Reinforcement Learning
+              <NavLinks2 to='/Reinforcement'>Reinforcement Learning
                          </NavLinks2>
               </NavItem>
 
@@ -137,10 +137,7 @@ const Navbar = ({ toggle }) => {
 
 
 
-              {/* <NavItem>
-              <NavLinks2 to='/signup'>Neural Networks
-                         </NavLinks2>
-              </NavItem> */}
+    
 
             </NavMenu>
         
