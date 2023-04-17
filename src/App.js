@@ -23,6 +23,7 @@ import React from "react";
 import Neuro_Index from '../src/pages/Neuro_Evol';
 import Reinforc_page from '../src/pages/Reinforcement_Index';
 import AI_page from '../src/pages/AI_Models';
+import About_Index from "./pages/About";
 
 export default function App() {
   return (
@@ -131,6 +132,7 @@ export default function App() {
 
             <Route path="/AImodels" element={<AI_page />} />
 
+            <Route path="/About" element={<About_Index />} />
 
             {/* <Route path="/RTApp" element={<RTApp />} /> */}
 

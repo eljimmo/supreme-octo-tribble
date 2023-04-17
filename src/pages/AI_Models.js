@@ -33,6 +33,19 @@ export default function AI_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+
+
+      <div style={{ color: 'white' }}>
+AI Models                          
+<br />
+AI Models                          
+                                        <br />
+
+
+                                        AI Models                          
+                                                      <br />
+            </div>
+
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"

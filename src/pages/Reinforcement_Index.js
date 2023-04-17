@@ -33,6 +33,20 @@ export default function Reinforc_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+
+
+      <div style={{ color: 'white' }}>
+Reinforcement Page
+                          <br />
+                          Reinforcement Page
+                                        <br />
+
+
+                                        Reinforcement Page
+                                                      <br />
+            </div>
+
+
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
