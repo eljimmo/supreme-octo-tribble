@@ -118,7 +118,7 @@ const Navbar = ({ toggle }) => {
          
               </NavItem> */}
          
-              <NavLinks2 to='/signup'>
+              <NavLinks2 to='/AImodels'>
                 AI Models
                          </NavLinks2>
              

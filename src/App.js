@@ -22,6 +22,7 @@ import React from "react";
 // import Dashboard from "../src/views/Dashboard";
 import Neuro_Index from '../src/pages/Neuro_Evol';
 import Reinforc_page from '../src/pages/Reinforcement_Index';
+import AI_page from '../src/pages/AI_Models';
 
 export default function App() {
   return (
@@ -128,6 +129,7 @@ export default function App() {
 
             <Route path="/Reinforcement" element={<Reinforc_page />} />
 
+            <Route path="/AImodels" element={<AI_page />} />
 
 
             {/* <Route path="/RTApp" element={<RTApp />} /> */}
