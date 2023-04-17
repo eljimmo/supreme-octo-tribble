@@ -44,15 +44,15 @@ const TText = styled.div`
 
 
 
-export default function Neuro_page() {
-    const [isOpen, setIsOpen] = useState(false);
+export default function Neuro_scroll() {
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-      setIsOpen(!isOpen);
-    };
+    // const toggle = () => {
+    //   setIsOpen(!isOpen);
+    // };
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
-              <Navbar toggle={toggle} />
+              {/* <Navbar toggle={toggle} /> */}
 
     <Canvas camera={{ position: [0, 0, 20], fov: 15
     // set the background color of the scene to black

@@ -1,5 +1,5 @@
 import * as THREE from "three"
-import { Suspense, Children, useLayoutEffect, useMemo, useRef } from "react"
+import { Suspense, Children, useLayoutEffect, useMemo, useRef, useState } from "react"
 import { Canvas, useThree, useFrame } from "@react-three/fiber"
 import { ContactShadows, Loader, useTexture, useGLTF, Shadow } from "@react-three/drei"
 import { useTransition } from "@react-spring/core"
@@ -7,6 +7,17 @@ import { a } from "@react-spring/three"
 import { useLocation, Switch, Route } from "wouter"
 import DistortionMaterial from "./DistortionMaterial"
 import { Container, Jumbo, Nav, Box, Line, Cover } from "./Styles"
+import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+} from '../HeroSection/HeroElements';
+import Video from './iStock_optic.mp4';
+import Navbar from '../../components/Navbar';
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 
 const torus = new THREE.TorusBufferGeometry(4, 1.2, 128, 128)
 const torusknot = new THREE.TorusKnotBufferGeometry(3, 0.8, 256, 16)
@@ -103,10 +114,23 @@ export default function RTApp() {
     leave: { position: [0, 0, -10], rotation: [0, -Math.PI, 0], scale: [0, 0, 0], opacity: 0 },
     config: () => (n) => n === "opacity" && { friction: 60 },
   })
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Container>
+      <Navbar toggle={toggle} />
+
+<HeroContainer id='home'>
+ 
+ <HeroBg>
+
+
+<VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+
+<Container>
         <Jumbo>
           {transition((style, location) => (
             <Text open={true} t={style.t} opacity={style.opacity} children={jumbo[location]} />
@@ -123,6 +147,29 @@ export default function RTApp() {
       </Canvas>
       <Nav />
       <Loader />
+
+</HeroBg> 
+
+
+       </HeroContainer>
+
+      {/* <Container>
+        <Jumbo>
+          {transition((style, location) => (
+            <Text open={true} t={style.t} opacity={style.opacity} children={jumbo[location]} />
+          ))}
+        </Jumbo>
+      </Container>
+      <Canvas camera={{ position: [0, 0, 20], fov: 50 }}>
+        <spotLight position={[0, 30, 40]} />
+        <spotLight position={[-50, 30, 40]} />
+        <Suspense fallback={null}>
+          <Shapes transition={transition} />
+          <ContactShadows scale={25} position={[0, -7.5, 0]} blur={5} opacity={1} />
+        </Suspense>
+      </Canvas>
+      <Nav />
+      <Loader /> */}
     </>
   )
 }

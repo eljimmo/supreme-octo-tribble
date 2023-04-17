@@ -17,9 +17,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./pages/index";
 import React from "react";
 // import Moksha from "./components/Moksha";
-import Neuro_page from "./components/ScrollControl/src/Neuro_Evo";
+// import Neuro_scroll from "./components/ScrollControl/src/Neuro_Evo";
 // import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
+import Neuro_Index from '../src/pages/Neuro_Evol';
+
 
 export default function App() {
   return (
@@ -122,7 +124,11 @@ export default function App() {
             
             <Route path="/" element={<Welcome />} />
 
-            <Route path="/neuroevolution" element={<Neuro_page />} />
+            <Route path="/neuroevolution" element={<Neuro_Index />} />
+
+            {/* <Route path="/rt" element={<RTApp />} /> */}
+
+
 
             {/* <Route path="/RTApp" element={<RTApp />} /> */}
 

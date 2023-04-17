@@ -22,7 +22,7 @@ import ScApp from '../components/ScrollControl/src/App';
 // import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
 // import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
-
+import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +51,7 @@ export default function Welcome() {
         {/* <HeroContainerTransparent> */}
         {/* <Moksha/> */}
         {/* </HeroContainerTransparent> */}
+        {/* <Neuro_page/> */}
         <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
 
