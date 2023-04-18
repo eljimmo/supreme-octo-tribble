@@ -20,7 +20,6 @@ import VideoSection from '../components/Videos_Section';
 // import App from '../components/flex_pages/src/App';
 import ScApp from '../components/ScrollControl/src/App';
 // import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
-import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
