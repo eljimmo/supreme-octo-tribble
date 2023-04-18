@@ -23,7 +23,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
-
+import './pages.css'
 export default function Reinforc_page() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,6 +33,27 @@ export default function Reinforc_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+
+
+
+
+
+      <div class="wrapper">
+  <div class="thing">                          Reinforcement Page.</div>
+</div>
+
+      <div style={{ color: 'white' }}>
+      Reinforcement Page.
+                                <br />
+                                Reinforcement Page.
+                                                                        <br />
+
+
+                                                                        Reinforcement Page.
+                                                                                                                              <br />
+            </div>
+
+
 
 
       <div style={{ color: 'white' }}>

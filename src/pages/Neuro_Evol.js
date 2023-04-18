@@ -23,6 +23,9 @@ import ScApp from '../components/ScrollControl/src/App';
 import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+import './pages.css'
+
+
 
 export default function Neuro_Index() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,14 +38,32 @@ export default function Neuro_Index() {
       <Navbar toggle={toggle} />
 
 
+
+      <div class="wrapper">
+  <div class="thing">Neuro-evolution.</div>
+</div>
+
       <div style={{ color: 'white' }}>
-      Neuro_Index
+      Neuro-evolution.
                           <br />
-                          Neuro_Index
+                          Neuro-evolution.
                                         <br />
 
 
-                                        Neuro_Index
+                                        Neuro-evolution.
+                                                      <br />
+            </div>
+
+
+
+      <div style={{ color: 'white' }}>
+      Neuro-evolution.
+                          <br />
+                          Neuro-evolution.
+                                        <br />
+
+
+                                        Neuro-evolution.
                                                       <br />
             </div>
 

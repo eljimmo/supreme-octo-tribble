@@ -39,7 +39,7 @@ export default function About_Index() {
 
 
       <div class="wrapper">
-  <div class="thing">I am placed in an area named content.</div>
+  <div class="thing">About Page.</div>
 </div>
 
       <div style={{ color: 'white' }}>

@@ -23,6 +23,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+import './pages.css'
 
 export default function AI_page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,22 @@ export default function AI_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+
+
+      <div class="wrapper">
+  <div class="thing">AI MODELS.</div>
+</div>
+
+      <div style={{ color: 'white' }}>
+      AI MODELS.
+                          <br />
+                          AI MODELS.
+                                        <br />
+
+
+                                        AI MODELS.
+                                                      <br />
+            </div>
 
 
       <div style={{ color: 'white' }}>
