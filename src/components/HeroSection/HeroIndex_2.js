@@ -25,7 +25,7 @@ import { useTexture,
 import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import { LUTPass, LUTCubeLoader } from 'three-stdlib'
-import a15 from "./Blue.jpg";
+import a15 from "./pexels_engineering.jpg";
 
 
 extend({ LUTPass })

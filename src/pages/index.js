@@ -47,7 +47,7 @@ export default function Welcome() {
       {/* <App/> */}
         <HeroSection_2 /> 
         {/* <HeroSection_3 /> */}
-        <DesignSection />
+        {/* <DesignSection /> */}
         <ScApp/>
         {/* <HeroContainerTransparent> */}
         {/* <Moksha/> */}

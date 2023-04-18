@@ -4,8 +4,8 @@ import React from "react";
 import { useLayoutEffect } from "react";
 import { useRef } from "react";
 import styled from "styled-components";
-import v1 from "./Scuba Diving - 699.mp4";
-import v2 from "./Skate - 49791.mp4";
+import v1 from "./pexels_oleg.mp4";
+import v2 from "./pexels.mp4";
 
 const Section = styled.section`
   width: 100vw;
