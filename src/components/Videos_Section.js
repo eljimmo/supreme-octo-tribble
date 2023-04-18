@@ -78,7 +78,7 @@ const Title = styled.h6`
   font-size: 7em;
   z-index: 5;
   text-transform: capitalize;
-  color: green;
+  color: white;
 
 
   @media screen and (max-width: 70em) {
@@ -158,9 +158,12 @@ const VideoSection = () => {
       <V1 ref={videoRef1} src={v1} type="video/mp4" autoPlay muted loop />
       <V2 ref={videoRef2} src={v2} type="video/mp4" autoPlay muted loop />
       <TitleContainer ref={titleRef}>
-        <Title>Intelligence.</Title>
-        <Title>Evolutionary.</Title>
+        <Title>Intelligent.</Title>
         <Title>Neuroevolution.</Title>
+
+        <Title>Financial.</Title>
+        <Title>Algorithms.</Title>
+
       </TitleContainer>
     </Section>
   );
