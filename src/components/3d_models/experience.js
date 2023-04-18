@@ -23,7 +23,7 @@ function Scene() {
     <mesh scale={size}>
       <planeGeometry />
       <Suspense fallback={<FallbackMaterial url="c4cA8UN.jpg" />}>
-        <VideoMaterial url="10.mp4" />
+        <VideoMaterial url="iStock_optic.mp4" />
       </Suspense>
     </mesh>
   )
@@ -93,12 +93,12 @@ export const Experience = () => {
 
 
 
-      <color attach="background" args={['white']} />
+      {/* <color attach="background" args={['transparent']} /> */}
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
      
       <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-        <Scene />
+        {/* <Scene /> */}
 
  
       <ambientLight intensity={0.1} />

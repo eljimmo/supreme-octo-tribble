@@ -1,5 +1,5 @@
 import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
-// import Video from './videos/iStock_optic.mp4';
+import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
   HeroBg,
@@ -13,22 +13,22 @@ import { Experience } from '../3d_models/experience';
 
 
 
-function Video() {
-  const scale = useAspect(1920, 1080, 1)
-  // Video texture by: https://www.pexels.com/@rostislav/
-  const [video] = useState(() =>
-    Object.assign(document.createElement('video'), { src: '/iStock_optic.mp4', crossOrigin: 'Anonymous', loop: true, muted: true })
-  )
-  useEffect(() => void video.play(), [video])
-  return (
-    <mesh scale={scale}>
-      <planeGeometry />
-      <meshBasicMaterial toneMapped={true} side={THREE.DoubleSide}>
-        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
-      </meshBasicMaterial>
-    </mesh>
-  )
-}
+// function Video() {
+//   const scale = useAspect(1920, 1080, 1)
+//   // Video texture by: https://www.pexels.com/@rostislav/
+//   const [video] = useState(() =>
+//     Object.assign(document.createElement('video'), { src: '/iStock_optic.mp4', crossOrigin: 'Anonymous', loop: true, muted: true })
+//   )
+//   useEffect(() => void video.play(), [video])
+//   return (
+//     <mesh scale={scale}>
+//       <planeGeometry />
+//       <meshBasicMaterial toneMapped={true} side={THREE.DoubleSide}>
+//         <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+//       </meshBasicMaterial>
+//     </mesh>
+//   )
+// }
 
 function Caption({ children }) {
   const { width } = useThree((state) => state.viewport)
@@ -61,23 +61,22 @@ export default function HeroSection() {
   return (
     <HeroContainer id='home'>
  
- {/* <HeroBg>
+ <HeroBg>
 
 
 <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-</HeroBg>  */}
 
+</HeroBg> 
 
        <HeroContent>
        
-       
+
   
 
       
 
        <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
 
-      {/* <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} /> */}
       <Suspense fallback={<Html center className="loading" children="Loading..." />}>
       <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
       <Experience/>
