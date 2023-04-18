@@ -83,7 +83,15 @@ function FallbackMaterial({ url }) {
 
 
 
-
+function Sphere333(props) {
+  const texture = useTexture('/Blue.jpg')
+  return (
+    <mesh {...props}>
+      <sphereGeometry args={[1, 64, 64]} />
+      <meshPhysicalMaterial map={texture} clearcoat={1} clearcoatRoughness={0} roughness={0} metalness={0.5} />
+    </mesh>
+  )
+}
 
 
 
@@ -364,7 +372,7 @@ export const Carousel = (props) => {
                       </Float>
 
                       <Float speed={-1} floatIntensity={0.01}>
-          {/* <Cube position={[-8, 4, 8]} scale={[1.5, 1.5, 1.5]} /> */}
+          <Sphere333 position={[-4, 4, 4]} scale={[1.5, 1.5, 1.5]} />
           
           </Float>
           

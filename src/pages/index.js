@@ -41,8 +41,9 @@ export default function Welcome() {
             </Button>
       </Affix>
       <HeroSection />   
-      <InfoSection {...homeObjOne} />
       <VideoSection/>
+
+      <InfoSection {...homeObjOne} />
       {/* <App/> */}
         <HeroSection_2 /> 
         {/* <HeroSection_3 /> */}
