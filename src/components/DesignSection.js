@@ -27,6 +27,14 @@ import { useTexture,
  import { LUTPass, LUTCubeLoader } from 'three-stdlib';
  import { easing, geometry } from 'maath'
  import './components.css'
+ import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+} from '../components/HeroSection/HeroElements';
+
+
 
  extend(geometry)
 
@@ -365,12 +373,6 @@ const DesignSection = () => {
   const [enabled, enable] = useState(true)
 
 
-  // useFrame((state, delta) => {
-  //   easing.dampE(group.current.rotation, [0, -state.pointer.x * (Math.PI / 10), 0], 1.5, delta)
-  //   easing.damp3(group.current.position, [0, -5.5, 1 - Math.abs(state.pointer.x)], 1, delta)
-  //   easing.damp3(light.current.position, [state.pointer.x * 12, 0, 8 + state.pointer.y * 4], 0.2, delta)
-  // })
-
   return (
     <Section ref={container}>
       <TextContainer ref={textOne}>
@@ -380,7 +382,7 @@ const DesignSection = () => {
 
       </TextContainer>
 
-      <Thaliaia/>
+      {/* <Thaliaia/> */}
 
 
       {/* <Canvas shadows="basic" camera={{ position: [0, 1.5, 14], fov: 65  }}>
@@ -414,6 +416,24 @@ const DesignSection = () => {
       </TextContainer2>
 
 
+      {/* <HeroContainer> */}
+      <HeroContent>
+
+<Canvas shadows="basic"  camera={{ position: [0, 1.5, 14], fov: 45 }}>
+<fog attach="fog" args={['black', 0, 20]} />
+<pointLight position={[10, -10, -20]} intensity={10} />
+<pointLight position={[-10, -10, -20]} intensity={10} />
+<Model position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
+{enabled && <SoftShadows />}
+{/** If PerfMon detects a low framerate it will switch back to harsh shadows */}
+<PerformanceMonitor onDecline={() => enable(false)} />
+</Canvas>
+
+
+</HeroContent>
+
+
+{/* </HeroContainer> */}
     </Section>
 
 
