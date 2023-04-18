@@ -44,15 +44,10 @@ export default function Welcome() {
       <VideoSection/>
 
       <InfoSection {...homeObjOne} />
-      {/* <App/> */}
         <HeroSection_2 /> 
-        {/* <HeroSection_3 /> */}
-        {/* <DesignSection /> */}
+
         <ScApp/>
-        {/* <HeroContainerTransparent> */}
-        {/* <Moksha/> */}
-        {/* </HeroContainerTransparent> */}
-        {/* <Neuro_page/> */}
+    
         <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
 

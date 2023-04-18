@@ -16,11 +16,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
-// import Services from '../components/Services';
-// import App from '../components/flex_pages/src/App';
-import ScApp from '../components/ScrollControl/src/App';
-// import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
-// import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
+
 import './pages.css'
 
 
@@ -35,22 +31,13 @@ export default function About_Index() {
       <Navbar toggle={toggle} />
 
 
-
+<DesignSection/>
 
       <div class="wrapper">
   <div class="thing">About Page.</div>
 </div>
 
-      <div style={{ color: 'white' }}>
-            About Page
-                          <br />
-                          About Page
-                                        <br />
 
-
-                                        About Page
-                                                      <br />
-            </div>
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
