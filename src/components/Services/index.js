@@ -90,7 +90,6 @@ const mockdata = [
   { label: 'Dashboard for Stock Analysis', icon: IconGasStation },
 ];
 
-
 const mockdata2 = [
   { label: 'Unlimited AI Models', icon: IconUsers },
   { label: 'All Data Sources + custom data', icon: IconGauge },
