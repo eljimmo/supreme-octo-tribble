@@ -99,9 +99,6 @@ export default function About_Index() {
 
 <DesignSection/>
 
-
-
-
       <div class="wrapper">
   <div class="thing_1" >
 
