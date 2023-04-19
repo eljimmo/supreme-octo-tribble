@@ -47,7 +47,7 @@ export const homeObjThree = {
     "Releasing 2023.",
   buttonLabel: 'Start Now',
   imgStart: false,
-  img: require('./img/iexcloud_pic.png'),
+  img: require('./img/Server.jpg'),
   alt: 'img',
   dark: true,
   primary: true,

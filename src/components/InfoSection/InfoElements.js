@@ -131,9 +131,9 @@ export const Subtitle = styled.p`
 
 
 export const Subtitle2 = styled.p`
-  max-width: 440px;
+  max-width: 300px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? '#010606' : '#010606')};
 `;

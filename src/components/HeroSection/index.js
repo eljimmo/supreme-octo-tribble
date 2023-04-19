@@ -47,13 +47,7 @@ function Caption({ children }) {
 
 
 export default function HeroSection() {
-  const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: 'transparent',
-  };
+
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(!hover);
