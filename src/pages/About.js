@@ -15,14 +15,14 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
-import styled from "styled-components";
-import { TopLine, Heading, WhiteTopLine, Heading2 } from '../components/InfoSection/InfoElements';
+import { TopLine, Heading, WhiteTopLine, Heading2, Subtitle2, Column1 } from '../components/InfoSection/InfoElements';
 import Sidebar from '../components/Sidebar/index';
-
+import styled, { keyframes } from "styled-components";
 
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
 import * as THREE from 'three'
+import a15 from "./pexels_engineering.jpg";
 
 import './pages.css'
 
@@ -31,7 +31,7 @@ import './pages.css'
 
 
 const Title = styled.h6`
-  font-size: 7em;
+  font-size: 80%;
   z-index: 5;
   text-transform: capitalize;
   color: black;
@@ -45,6 +45,39 @@ const Title = styled.h6`
   }
 `;
 
+const glow = keyframes`
+0%{
+    box-shadow: 1px 1px 10px var(--white);
+}
+50%{
+    box-shadow: 2px 2px 25px var(--white);
+}
+100%{
+    box-shadow: 1px 1px 10px var(--white);
+}
+`;
+
+
+const Processor = styled.div`
+  width: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ${glow} 3s ease infinite;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 48em) {
+    display: none;
+  }
+`;
+
 
 
 export default function About_Index() {
@@ -54,35 +87,45 @@ export default function About_Index() {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'black' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
-
+{/* 
+      <Processor>
+        <img src={a15} alt="A15 processor" />
+     
+      </Processor> */}
 
 <DesignSection/>
 
-<WhiteTopLine>
-About The Leibniz Analytica Project:
-</WhiteTopLine>
+
+
 
       <div class="wrapper">
-  <div class="thing" font='white'>
+  <div class="thing_1" >
 
+{/* 
+  <Processor>
+        <img src={a15} alt="A15 processor" />
+     
+      </Processor> */}
 
+  {/* <Subtitle2>
 
   In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm.
         From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
            k an improvement of the fitness function is guaranteed.
            An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.    
     
-    
+    </Subtitle2> */}
     </div>
-  <Heading2>Understanding the Math based approach utilized</Heading2>
+  <Heading>Understanding Computational Intelligence & Evolutionary Algorithms. </Heading>
 
 </div>  
 
-
+<InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjTwo} />
 
 
 
