@@ -54,7 +54,7 @@ export default function About_Index() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
@@ -96,7 +96,7 @@ About The Leibniz Analytica Project:
 
 
         <Footer/>
-    </>
+    </div>
   );
 }
 
