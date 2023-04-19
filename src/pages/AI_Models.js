@@ -23,6 +23,9 @@ import ScApp from '../components/ScrollControl/src/App';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
+import Sidebar from '../components/Sidebar/index';
+
+
 
 export default function AI_page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +36,7 @@ export default function AI_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
 
 
       <div class="wrapper">

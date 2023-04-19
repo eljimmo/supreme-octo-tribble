@@ -16,7 +16,13 @@ import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+
+import Sidebar from '../components/Sidebar/index';
+
 import './pages.css'
+
+
+
 export default function Reinforc_page() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,6 +32,7 @@ export default function Reinforc_page() {
   return (
     <>
       <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
 
 
 

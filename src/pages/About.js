@@ -16,7 +16,7 @@ import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import styled from "styled-components";
-import { TopLine, Heading } from '../components/InfoSection/InfoElements';
+import { TopLine, Heading, WhiteTopLine, Heading2 } from '../components/InfoSection/InfoElements';
 import Sidebar from '../components/Sidebar/index';
 
 
@@ -54,7 +54,7 @@ export default function About_Index() {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'black' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
@@ -62,12 +62,12 @@ export default function About_Index() {
 
 <DesignSection/>
 
-<TopLine>
+<WhiteTopLine>
 About The Leibniz Analytica Project:
-</TopLine>
+</WhiteTopLine>
 
       <div class="wrapper">
-  <div class="thing">
+  <div class="thing" font='white'>
 
 
 
@@ -78,7 +78,7 @@ About The Leibniz Analytica Project:
     
     
     </div>
-  <Heading>Understanding the Math based approach utilized</Heading>
+  <Heading2>Understanding the Math based approach utilized</Heading2>
 
 </div>  
 
