@@ -46,7 +46,7 @@ export default function Welcome() {
       <VideoSection/>
 
       <InfoSection {...homeObjOne} />
-        <HeroSection_2 /> 
+        {/* <HeroSection_2 />  */}
 
         <ScApp/>
     

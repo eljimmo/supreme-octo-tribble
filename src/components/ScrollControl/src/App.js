@@ -74,9 +74,9 @@ function Typography() {
   const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'white' }
   return (
     <>
-      <Text children="metaheuristic" anchorX="left" position={[-width / 2.5, -height / 10, 12]} {...shared} />
-      <Text children="populations of candidate solutions " anchorX="right" position={[width / 2.5, -height * 2, 12]} {...shared} />
-      <Text children="generation" position={[0, -height * 4.624, 12]} {...shared} />
+      <Text children="metaheuristic" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
+      <Text children="populations of candidate solutions " anchorX="right" position={[width / 2.5, -height * 2, 6]} {...shared} />
+      <Text children="generation" position={[0, -height * 4.624, 6]} {...shared} />
     </>
   )
 }

@@ -26,6 +26,9 @@ import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import { LUTPass, LUTCubeLoader } from 'three-stdlib'
 import a15 from "./pexels_engineering.jpg";
+import '../components.css';
+import { TopLine, Heading } from '../../components/InfoSection/InfoElements';
+
 
 
 extend({ LUTPass })
@@ -263,7 +266,7 @@ const TText2 = styled.div`
 
 
 const Processor = styled.div`
-  width: 25%;
+  width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -282,30 +285,68 @@ const Processor = styled.div`
   }
 `;
 
+
+const Processor222 = styled.div`
+  width: 30%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 48em) {
+    display: none;
+  }
+`;
+
+
+const Section = styled.section`
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+  overflow: hidden;
+`;
+
+
 function HeroSection_2() {
   const [hover, setHover] = useState(false);
+  const sectionRef = useRef(null);
 
   const onHover = () => {
     setHover(!hover);
   };
   return (
-    <HeroContainer id='home'>
+    // <HeroContainer id='home'>
+    <Section ref={sectionRef}>
+        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+
       <HeroBg>
       {/* <Title>Fastest Processor</Title> */}
+      In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm.
+        From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
+           k an improvement of the fitness function is guaranteed.
+           An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.
+      <div class="wrapper">
+  <div class="thing2">
+    
+  {/* <Processor222>
+        <img src={a15} alt="A15 processor" />
+
+      </Processor222> */}
+    
+    </div>
+  <Heading>Understanding the Math based approach utilized</Heading>
+
+</div> 
 
         {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
 
 
-      <Processor>
-        <img src={a15} alt="A15 processor" />
-        {/* < Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
-        <FadingImage/>
-      </Canvas> */}
-      </Processor>
 
 
 
-      <TText>
+
+      {/* <TText>
         <span>
         In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm.
         From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
@@ -319,7 +360,7 @@ function HeroSection_2() {
 
 
         </span>
-      </TText>
+      </TText> */}
 
 
 
@@ -349,7 +390,9 @@ function HeroSection_2() {
       
 
       </HeroContent>
-    </HeroContainer>
+      </Section>
+
+    // {/* // </HeroContainer> */}
   );
 }
 

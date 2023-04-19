@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 
@@ -19,6 +19,10 @@ import styled from "styled-components";
 import { TopLine, Heading } from '../components/InfoSection/InfoElements';
 import Sidebar from '../components/Sidebar/index';
 
+
+import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
+import { Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
+import * as THREE from 'three'
 
 import './pages.css'
 
@@ -64,7 +68,16 @@ About The Leibniz Analytica Project:
 
       <div class="wrapper">
   <div class="thing">
-    About Leibniz</div>
+
+
+
+  In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm.
+        From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
+           k an improvement of the fitness function is guaranteed.
+           An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.    
+    
+    
+    </div>
   <Heading>Understanding the Math based approach utilized</Heading>
 
 </div>  
@@ -87,3 +100,129 @@ About The Leibniz Analytica Project:
   );
 }
 
+
+
+
+const pointSize = 4
+
+function ccccc(children, color, fontSizing, uvWidth) {
+  const fontSize = fontSizing
+
+  if (uvWidth == null) {
+    uvWidth = 2048
+  }
+
+  const canvas = document.createElement('canvas')
+  canvas.width = uvWidth
+  canvas.height = uvWidth / pointSize
+  const context = canvas.getContext('2d')
+
+  context.fillStyle = 'transparent'
+  context.fillRect(0, 0, canvas.width, canvas.height)
+
+  context.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif`
+  context.textAlign = 'center'
+  context.textBaseline = 'middle'
+  context.fillStyle = color
+
+  context.lineWidth = 2
+
+  //////////////// LetterSpacing
+  // const ctext = children.split('').join(String.fromCharCode(8202))
+  const ctext = children
+
+  context.fillText(ctext, canvas.width / 2, canvas.height / 2)
+
+  return canvas
+}
+
+export const TextRing = ({ children, position, color, fontSizing, repeatCount, rotation, colorBack, uvWidth }) => {
+  const [hovered, setHover] = useState(false)
+
+  if (rotation == null) {
+    rotation = [0, 0, 0]
+  }
+
+  const canvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const backCanvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const texture = useRef()
+  const texture2 = useRef()
+  useFrame(({ clock }) => {
+    texture.current.offset.x = clock.getElapsedTime() / 2
+    texture2.current.offset.x = clock.getElapsedTime() / 2
+  })
+
+  const cylArgs = [1, 1, 1 / pointSize, 64, 1, true]
+
+  //////////// Click isMobile ///////////
+  // const MobileClicker = () => {
+  //   setColor(colorBack)
+  //   setHover(true)
+  //   setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+  //   return () => {
+  //     clearTimeout(timer)
+  //   }
+  // }, [])
+  // }
+  // <group
+  //     rotation-y={Math.PI / 4}
+  //     scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+  //     rotation={rotation}
+  //     position={position}
+  //     onPointerDown={(e) => MobileClicker()}>
+  ////////////////////////////////////////
+
+  return (
+    <group
+      rotation-y={Math.PI / 4}
+      scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+      rotation={rotation}
+      position={position}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}>
+      <Cylinder args={cylArgs} side={THREE.FrontSide}>
+        <meshStandardMaterial transparent attach="material">
+          {/* <meshStandardMaterial attach="material"> */}
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount, 1]}
+            image={canvas}
+            premultiplyAlpha
+            ref={texture}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
+
+      <Cylinder args={cylArgs}>
+        <meshStandardMaterial transparent attach="material" side={THREE.BackSide}>
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount * 2, 1]}
+            image={backCanvas}
+            premultiplyAlpha
+            ref={texture2}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
+    </group>
+  )
+}
