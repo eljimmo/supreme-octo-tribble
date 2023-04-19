@@ -40,7 +40,7 @@ export default function Neuro_Index() {
 
 
 
-      <div class="wrapper">
+      <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
   <div class="thing">Neuro-evolution.</div>
 </div>
 

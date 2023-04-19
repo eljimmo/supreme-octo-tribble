@@ -1,7 +1,4 @@
 import React from 'react';
-// import Icon1 from '../../images/svg-1.svg';
-// import Icon2 from '../../images/svg-3.svg';
-// import Icon3 from '../../images/svg-5.svg';
 import {
   ServicesContainer,
   ServicesH1,
@@ -25,25 +22,6 @@ import { useTexture, shaderMaterial, useCursor, OrbitControls,
   RandomizedLight,
   AccumulativeShadows,
   MeshTransmissionMaterial } from "@react-three/drei"
-import { AsciiEffect } from 'three-stdlib'
-import { useEffect, useMemo, useLayoutEffect } from 'react'
-import { useControls, button } from 'leva'
-import Scenemodel from '../3d_models/Scene_draco';
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
-  Column2,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img
-} from '../InfoSection/InfoElements';
 import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem,
   SimpleGrid,
 Title,
@@ -106,11 +84,20 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const mockdata = [
-  { label: '4 passengers', icon: IconUsers },
-  { label: '100 km/h in 4 seconds', icon: IconGauge },
-  { label: 'Automatic gearbox', icon: IconManualGearbox },
-  { label: 'Electric', icon: IconGasStation },
+  { label: '4 AI Models', icon: IconUsers },
+  { label: 'All Data Sources', icon: IconGauge },
+  { label: 'Lagged Data Modeling', icon: IconManualGearbox },
+  { label: 'Dashboard for Stock Analysis', icon: IconGasStation },
 ];
+
+
+const mockdata2 = [
+  { label: 'Unlimited AI Models', icon: IconUsers },
+  { label: 'All Data Sources + custom data', icon: IconGauge },
+  { label: 'Live Data Modeling', icon: IconManualGearbox },
+  { label: 'Dashboard for Stock Analysis + AI Analysis', icon: IconGasStation },
+];
+
 
 export function FeaturesCard() {
   const { classes } = useStyles();
@@ -124,7 +111,6 @@ export function FeaturesCard() {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        {/* <Image src="https://i.imgur.com/ZL52Q2D.png" alt="Tesla Model S" /> */}
                 <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
       <FadingImage />
     </Canvas>  
@@ -132,12 +118,71 @@ export function FeaturesCard() {
 
       <Group position="apart" mt="md">
         <div>
-          <Text fw={500}>Leibniz Analytica </Text>
+          <Text fw={500}>Leibniz Analytica Modeling </Text>
           <Text fz="xs" c="dimmed">
             Over 100+ Algorithms
           </Text>
         </div>
-        <Badge variant="outline">25% off</Badge>
+        <Badge variant="outline">25% off for Annual Subscription</Badge>
+      </Group>
+
+      <Card.Section className={classes.section} mt="md">
+        <Text fz="sm" c="dimmed" className={classes.label}>
+          Basic configuration
+        </Text>
+
+        <Group spacing={8} mb={-8}>
+          {features}
+        </Group>
+      </Card.Section>
+
+      <Card.Section className={classes.section}>
+        <Group spacing={30}>
+          <div>
+            <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
+              $50.00
+            </Text>
+            <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
+              Per Month
+            </Text>
+          </div>
+
+          <Button radius="xl" style={{ flex: 1 }}>
+            subscribe Now
+          </Button>
+        </Group>
+      </Card.Section>
+    </Card>
+  );
+}
+
+
+
+export function FeaturesCard2() {
+  const { classes } = useStyles();
+  const features = mockdata2.map((feature) => (
+    <Center key={feature.label}>
+      <feature.icon size="1.05rem" className={classes.icon} stroke={1.5} />
+      <Text size="xs">{feature.label}</Text>
+    </Center>
+  ));
+
+  return (
+    <Card withBorder radius="md" className={classes.card}>
+      <Card.Section className={classes.imageSection}>
+                <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
+      <FadingImage />
+    </Canvas>  
+      </Card.Section>
+
+      <Group position="apart" mt="md">
+        <div>
+          <Text fw={500}>Leibniz Analytica AI & Modeling </Text>
+          <Text fz="xs" c="dimmed">
+            Over 100+ Algorithms & 25 AI Models
+          </Text>
+        </div>
+        <Badge variant="outline">25% off for Annual Subscription</Badge>
       </Group>
 
       <Card.Section className={classes.section} mt="md">
@@ -174,15 +219,9 @@ export function FeaturesCard() {
 
 
 
-
 export function ContactUs() {
   const { classes } = useStyles();
 
-  // const icons = social.map((Icon, index) => (
-  //   <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-  //     <Icon size="1.4rem" stroke={1.5} />
-  //   </ActionIcon>
-  // ));
 
   return (
     <div className={classes.wrapper}>
@@ -193,9 +232,7 @@ export function ContactUs() {
             Leave your email and we will get back to you within 24 hours
           </Text>
 
-          {/* <ContactIconsList variant="white" /> */}
-
-          {/* <Group mt="xl">{icons}</Group> */}
+  
         </div>
         <div className={classes.form}>
           <TextInput
@@ -213,7 +250,7 @@ export function ContactUs() {
           <Textarea
             required
             label="Your message"
-            placeholder="I want to order your goods"
+            placeholder="I want AI to help my trading."
             minRows={4}
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
@@ -253,11 +290,7 @@ export function FaqWithBg() {
             chevronSize={50}
             variant="separated"
             disableChevronRotation
-            // chevron={
-            //   <ThemeIcon radius="xl" className={classes.gradient} size={32}>
-            //     <IconPlus size="1.05rem" stroke={1.5} />
-            //   </ThemeIcon>
-            // }
+   
           >
             <Accordion.Item className={classes.item} value="reset-password">
               <Accordion.Control>How can I reset my password?</Accordion.Control>
@@ -291,80 +324,6 @@ export function FaqWithBg() {
 }
 
 
-
-
-
-
-// function Torusknot(props) {
-//   const ref = useRef()
-//   const [clicked, click] = useState(false)
-//   const [hovered, hover] = useState(false)
-//   useCursor(hovered)
-//   useFrame((state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta / 2))
-//   return (
-//     <mesh
-//       {...props}
-//       ref={ref}
-//       scale={clicked ? 1.5 : 1.25}
-//       onClick={() => click(!clicked)}
-//       onPointerOver={() => hover(true)}
-//       onPointerOut={() => hover(false)}>
-//       <torusKnotGeometry args={[1, 0.2, 128, 32]} />
-//     </mesh>
-//   )
-// }
-
-
-
-
-// function AsciiRenderer({
-//   renderIndex = 1,
-//   bgColor = 'black',
-//   fgColor = 'white',
-//   characters = ' .:-+*=%@#',
-//   invert = true,
-//   color = false,
-//   resolution = 0.15
-// }) {
-//   const { size, gl, scene, camera } = useThree()
-
-//   const effect = useMemo(() => {
-//     const effect = new AsciiEffect(gl, characters, { invert, color, resolution })
-//     effect.domElement.style.position = 'absolute'
-//     effect.domElement.style.top = '0px'
-//     effect.domElement.style.left = '0px'
-//     effect.domElement.style.pointerEvents = 'none'
-//     return effect
-//   }, [characters, invert, color, resolution])
-
-//   // Styling
-//   useLayoutEffect(() => {
-//     effect.domElement.style.color = fgColor
-//     effect.domElement.style.backgroundColor = bgColor
-//   }, [fgColor, bgColor])
-
-//   // Append on mount, remove on unmount
-//   useEffect(() => {
-//     gl.domElement.style.opacity = '0'
-//     gl.domElement.parentNode.appendChild(effect.domElement)
-//     return () => {
-//       gl.domElement.style.opacity = '1'
-//       gl.domElement.parentNode.removeChild(effect.domElement)
-//     }
-//   }, [effect])
-
-//   // Set size
-//   useEffect(() => {
-//     effect.setSize(size.width, size.height)
-//   }, [effect, size])
-
-//   // Take over render-loop (that is what the index is for)
-//   useFrame((state) => {
-//     effect.render(scene, camera)
-//   }, renderIndex)
-
-//   // This component returns nothing, it is a purely logical
-// }
 
 
 
@@ -420,206 +379,45 @@ function FadingImage() {
 }
 
 
-// const Grid = ({ number = 23, lineWidth = 0.026, height = 0.5 }) => (
-//   // Renders a grid and crosses as instances
-//   <Instances position={[0, -1.02, 0]}>
-//     <planeGeometry args={[lineWidth, height]} />
-//     <meshBasicMaterial color="#999" />
-//     {Array.from({ length: number }, (_, y) =>
-//       Array.from({ length: number }, (_, x) => (
-//         <group key={x + ':' + y} position={[x * 2 - Math.floor(number / 2) * 2, -0.01, y * 2 - Math.floor(number / 2) * 2]}>
-//           <Instance rotation={[-Math.PI / 2, 0, 0]} />
-//           <Instance rotation={[-Math.PI / 2, 0, Math.PI / 2]} />
-//         </group>
-//       ))
-//     )}
-//     <gridHelper args={[100, 100, '#bbb', '#bbb']} position={[0, -0.01, 0]} />
-//   </Instances>
-// )
-
-// function Text({ children, ...props }) {
-//   const texture = useLoader(RGBELoader, 'https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr')
-//   return (
-//     <>
-//       <group>
-//         <Center scale={[0.8, 1, 1]} front top {...props}>
-//           <Text3D
-//             castShadow
-//             bevelEnabled
-//             scale={5}
-//             letterSpacing={-0.03}
-//             height={0.25}
-//             bevelSize={0.01}
-//             bevelSegments={10}
-//             curveSegments={128}
-//             bevelThickness={0.01}>
-//             {children}
-//             <MeshTransmissionMaterial reflectivity={0.5} background={texture} />
-//           </Text3D>
-//         </Center>
-//         <Grid />
-//       </group>
-//     </>
-//   )
-// }
-
 
 
 export default function Services () {
-  // const { range } = useControls({ range: { value: 100, min: 0, max: 300, step: 10 } })
 
-  // const { autoRotate, text, shadow, ...config } = useControls({
-  //   text: 'Inter',
-  //   backside: false,
-  //   samples: { value: 16, min: 1, max: 32, step: 1 },
-  //   resolution: { value: 512, min: 64, max: 2048, step: 64 },
-  //   transmission: { value: 0.6, min: 0, max: 1 },
-  //   clearcoat: { value: 0, min: 0.1, max: 1 },
-  //   clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
-  //   thickness: { value: 0.55, min: 0, max: 5 },
-  //   chromaticAberration: { value: 5, min: 0, max: 5 },
-  //   anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
-  //   roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
-  //   distortion: { value: 1, min: 0, max: 4, step: 0.01 },
-  //   distortionScale: { value: 1, min: 0.01, max: 1, step: 0.01 },
-  //   temporalDistortion: { value: 0.4, min: 0, max: 1, step: 0.01 },
-  //   ior: { value: 0.83, min: 0, max: 2, step: 0.01 },
-  //   color: '#ff9cf5',
-  //   gColor: '#ff7eb3',
-  //   shadow: '#750d57',
-  //   autoRotate: false,
- 
-  // })
-  return (
+   return (
     <ServicesContainer id='services'>
-      {/* <Canvas shadows orthographic camera={{ position: [10, 20, 20], zoom: 80 }} gl={{ preserveDrawingBuffer: true }}> */}
-      {/* <color attach="background" args={['#f2f2f5']} /> */}
-      {/* <Torusknot /> */}
-      {/* <FadingImage/> */}
-      {/* <Torusknot /> */}
-      {/* <AsciiRenderer fgColor="white" bgColor="black" /> */}
+     
 
-      {/* <SombreroSuperficieMath/> */}
-      {/** The text and the grid */}
-      {/* <Text>
-      </Text> */}
-      {/** Controls */}
 
-      {/* <OrbitControls
-        autoRotate={autoRotate}
-        autoRotateSpeed={-0.1}
-        zoomSpeed={0.25}
-        minZoom={40}
-        maxZoom={140}
-        enablePan={false}
-        dampingFactor={0.05}
-        minPolarAngle={Math.PI / 3}
-        maxPolarAngle={Math.PI / 3}
-      /> */}
-      {/** The environment is just a bunch of shapes emitting light. This is needed for the clear-coat */}
-      
-      {/* <Shoes data={data} /> */}
-
-      {/* <Environment resolution={32}>
-        <group rotation={[-Math.PI / 4, -0.3, 0]}>
-          <Lightformer intensity={20} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={[10, 10, 1]} />
-          <Lightformer intensity={2} rotation-y={Math.PI / 2} position={[-5, 1, -1]} scale={[10, 2, 1]} />
-          <Lightformer intensity={2} rotation-y={Math.PI / 2} position={[-5, -1, -1]} scale={[10, 2, 1]} />
-          <Lightformer intensity={2} rotation-y={-Math.PI / 2} position={[10, 1, 0]} scale={[20, 2, 1]} />
-          <Lightformer type="ring" intensity={2} rotation-y={Math.PI / 2} position={[-0.1, -1, -5]} scale={10} />
-        </group>
-      </Environment> */}
-
-      {/* * Soft shadows */}
-      {/* <AccumulativeShadows
-        temporal
-        frames={100}
-        color={shadow}
-        colorBlend={5}
-        toneMapped={true}
-        alphaTest={0.9}
-        opacity={1}
-        scale={30}
-        position={[0, -1.01, 0]}>
-        <RandomizedLight amount={4} radius={10} ambient={0.5} intensity={1} position={[0, 10, -10]} size={15} mapSize={1024} bias={0.0001} />
-      </AccumulativeShadows> */}
-    {/* </Canvas> */}
 
 
       <ServicesH1>Algorithms and Methods</ServicesH1>
-      {/* <Canvas>
-      <color attach="background" args={['black']} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <pointLight position={[-10, -10, -10]} />
-      <Torusknot />
-      <AsciiRenderer fgColor="white" bgColor="black" />
-    </Canvas> */}
+      
       <ServicesWrapper>
-      {/* <Column1> */}
       <FeaturesCard/>
       <ContactUs/>
-      {/* <FaqWithBg/> */}
 
-      {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
-      <FadingImage />
-    </Canvas> */}
-      {/* </Column1> */}
-
-        {/* <ServicesCard> */}
-
-        {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
-      <FadingImage />
-    </Canvas>   */}
+      <FeaturesCard2/>
 
 
 
-    {/* <ServicesH2>AI Assisted Analysis</ServicesH2> */}
-          {/* <ServicesP>
+
+          <ServicesP>
             A comprehensive financial modeling structure enables investors to capture a more holistic valuation towards determining navigation in volatile risk field.
-          </ServicesP> */}
-        {/* </ServicesCard> */}
-        {/* <Column1> */}
-        {/* <FeaturesCard/> */}
+          </ServicesP>
 
-        {/* <Canvas>
-      <color attach="background" args={['black']} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <pointLight position={[-10, -10, -10]} />
-      <Torusknot />
-      <AsciiRenderer fgColor="white" bgColor="black" />
-    </Canvas> */}
-      {/* </Column1> */}
-        {/* <ServicesCard> */}
 
-        {/* <Canvas camera={{ position: [0, 0, 2], fov: 500 }}>
-      <color attach="background" args={['black']} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-      <pointLight position={[-10, -10, -10]} />
-      <Torusknot />
-      <OrbitControls />
-      <AsciiRenderer fgColor="white" bgColor="black" />
-    </Canvas> */}
+   
 
-          {/* <ServicesH2>Find Underlying Stock Trend Patterns Utilizing the most powerful modern day tools.</ServicesH2> */}
-          {/* <ServicesP>
+
+          <ServicesP>
             By minimizing the variable search space, & subsequent effect, a process of data optimization is created to find correlational traces in data.
-          </ServicesP> */}
-        {/* </ServicesCard> */}
-        {/* <Column1> */}
-        {/* <FeaturesCard/> */}
-
-      {/* </Column1> */}
-
-        {/* <ServicesCard> */}
-
-        {/* <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
-      <FadingImage />
-    </Canvas>  */}
+          </ServicesP>
+  
 
           {/* <ServicesH2>Unleash the power of Artificial Intelligence Algorithms to analyze financial data.</ServicesH2> */}
-          {/* <ServicesP>
+          <ServicesP>
             Created by the Leibniz Analytica Team, data provided by IEX Cloud, graphing library provided by Plotly Dash.
-          </ServicesP> */}
+          </ServicesP>
         {/* </ServicesCard> */}
 
 

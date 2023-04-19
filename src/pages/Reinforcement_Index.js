@@ -16,7 +16,7 @@ import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
-
+import { HeroContainer } from '../components/HeroSection/HeroElements';
 import Sidebar from '../components/Sidebar/index';
 
 import './pages.css'
@@ -30,7 +30,8 @@ export default function Reinforc_page() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <HeroContainer >
+
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
@@ -38,8 +39,10 @@ export default function Reinforc_page() {
 
 
 
-      <div class="wrapper">
-  <div class="thing">                          Reinforcement Page.</div>
+      <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
+  <div class="thing">                      
+      Reinforcement Page.
+      </div>
 </div>
 
       <div style={{ color: 'white' }}>
@@ -75,25 +78,10 @@ Reinforcement Page
               I am still in Development.
             </Button>
       </Affix>
-      {/* <HeroSection />    */}
-      {/* <InfoSection {...homeObjOne} /> */}
-      {/* <VideoSection/> */}
-      {/* <App/> */}
-      {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjOne}/> */}
-        {/* <HeroSection_2 />  */}
-        {/* <HeroSection_3 /> */}
-        {/* <DesignSection /> */}
-        {/* <ScApp/> */}
-        {/* <HeroContainerTransparent> */}
-        {/* <Moksha/> */}
-        {/* </HeroContainerTransparent> */}
-        {/* <Neuro_page/> */}
-        {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjTwo} /> */}
+
 
         <Footer/>
-    </>
+        </HeroContainer >
   );
 }
 

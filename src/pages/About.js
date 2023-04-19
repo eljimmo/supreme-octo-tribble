@@ -9,12 +9,10 @@ import {
 
 
 } from '../components/InfoSection/Data';
-// import Services from '../components/Services';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
-import VideoSection from '../components/Videos_Section';
 import { TopLine, Heading, WhiteTopLine, Heading2, Subtitle2, Column1 } from '../components/InfoSection/InfoElements';
 import Sidebar from '../components/Sidebar/index';
 import styled, { keyframes } from "styled-components";
@@ -88,42 +86,20 @@ export default function About_Index() {
   };
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
-      <Navbar toggle={toggle} />
+    <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
-{/* 
-      <Processor>
-        <img src={a15} alt="A15 processor" />
-     
-      </Processor> */}
+
 
 <DesignSection/>
+  
 
-      {/* <div class="wrapper"> */}
-  {/* <div class="thing" > */}
 
-{/* 
-  <Processor>
-        <img src={a15} alt="A15 processor" />
-     
-      </Processor> */}
 
-  {/* <Subtitle2> */}
-
-  {/* In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation, a generic population-based metaheuristic optimization algorithm. */}
-        {/* From the property of elitist offspring acceptance and the existence of the optimum it follows that per generation
-           k an improvement of the fitness function is guaranteed.
-           An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.     */}
-    
-    {/* </Subtitle2> */}
-    {/* </div> */}
-  {/* <Heading>Understanding Computational Intelligence & Evolutionary Algorithms. </Heading> */}
-
-{/* </div>   */}
+ 
 
 <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
-
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
