@@ -73,22 +73,8 @@ AI Models
               I am still in Development.
             </Button>
       </Affix>
-      {/* <HeroSection />    */}
-      {/* <InfoSection {...homeObjOne} /> */}
-      {/* <VideoSection/> */}
-      {/* <App/> */}
-      {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjOne}/> */}
-        {/* <HeroSection_2 />  */}
-        {/* <HeroSection_3 /> */}
-        {/* <DesignSection /> */}
-        {/* <ScApp/> */}
-        {/* <HeroContainerTransparent> */}
-        {/* <Moksha/> */}
-        {/* </HeroContainerTransparent> */}
-        {/* <Neuro_page/> */}
-        {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjTwo} /> */}
+
+
 
         <Footer/>
     </>

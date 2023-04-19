@@ -30,8 +30,7 @@ export default function Reinforc_page() {
     setIsOpen(!isOpen);
   };
   return (
-    <HeroContainer >
-
+    <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
@@ -81,7 +80,7 @@ Reinforcement Page
 
 
         <Footer/>
-        </HeroContainer >
+    </>
   );
 }
 
