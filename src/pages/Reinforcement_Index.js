@@ -30,17 +30,25 @@ export default function Reinforc_page() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <HeroContainer>
 
+        helloooo
+      </HeroContainer>
 
 
 
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
   <div class="thing">                      
-      Reinforcement Page.
+      Reinforcement Page. 
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, arcu non iaculis fringilla, mauris leo pretium velit, at consectetur ante magna sed ante. In lacinia et dolor sed tincidunt. Vestibulum ut leo lacus. Nulla iaculis porttitor mi, vel pellentesque turpis sollicitudin et. Vivamus mollis condimentum lacus, id aliquet elit dictum nec. Donec elementum quis nulla vel malesuada. Curabitur arcu risus, pulvinar quis convallis quis, imperdiet vitae ipsum. Pellentesque interdum pellentesque elit, id eleifend ante molestie sed.
+
+
+
       </div>
 </div>
 
@@ -58,7 +66,7 @@ export default function Reinforc_page() {
 
 
 
-      <div style={{ color: 'white' }}>
+      <div style={{ color: 'black' }}>
 Reinforcement Page
                           <br />
                           Reinforcement Page
@@ -80,7 +88,7 @@ Reinforcement Page
 
 
         <Footer/>
-    </>
+    </div>
   );
 }
 
