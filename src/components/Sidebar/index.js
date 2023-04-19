@@ -34,7 +34,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       {/* <Icon onClick={toggle}>
         <CloseIcon />
       </Icon> */}
-      <Canvas
+      {/* <Canvas
     shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
@@ -48,7 +48,7 @@ const Sidebar = ({ isOpen, toggle }) => {
   <VideoText/>
   </Stage>
 </Suspense>
-</Canvas> 
+</Canvas>  */}
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink

@@ -23,6 +23,7 @@ import ScApp from '../components/ScrollControl/src/App';
 // import Moksha from '../components/Moksha';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+import Sidebar from '../components/Sidebar/index';
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,7 @@ export default function Welcome() {
   return (
     <>
       <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"

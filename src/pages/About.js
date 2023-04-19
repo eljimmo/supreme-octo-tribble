@@ -11,13 +11,36 @@ import {
 } from '../components/InfoSection/Data';
 // import Services from '../components/Services';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
-import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
+import styled from "styled-components";
+import { TopLine, Heading } from '../components/InfoSection/InfoElements';
+import Sidebar from '../components/Sidebar/index';
+
 
 import './pages.css'
+
+
+
+
+
+const Title = styled.h6`
+  font-size: 7em;
+  z-index: 5;
+  text-transform: capitalize;
+  color: black;
+
+
+  @media screen and (max-width: 70em) {
+    font-size: var(--fontxxxl);
+  }
+  @media screen and (max-width: 48em) {
+    font-size: var(--fontxxl);
+  }
+`;
+
 
 
 export default function About_Index() {
@@ -29,13 +52,23 @@ export default function About_Index() {
   return (
     <>
       <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+
 
 
 <DesignSection/>
 
+<TopLine>
+About The Leibniz Analytica Project:
+</TopLine>
+
       <div class="wrapper">
-  <div class="thing">About Page.</div>
-</div>
+  <div class="thing">
+    About Leibniz</div>
+  <Heading>Understanding the Math based approach utilized</Heading>
+
+</div>  
+
 
 
 
@@ -48,23 +81,6 @@ export default function About_Index() {
             </Button>
       </Affix>
 
-
-      {/* <HeroSection />    */}
-      {/* <InfoSection {...homeObjOne} /> */}
-      {/* <VideoSection/> */}
-      {/* <App/> */}
-      {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjOne}/> */}
-        {/* <HeroSection_2 />  */}
-        {/* <HeroSection_3 /> */}
-        {/* <DesignSection /> */}
-        {/* <ScApp/> */}
-        {/* <HeroContainerTransparent> */}
-        {/* <Moksha/> */}
-        {/* </HeroContainerTransparent> */}
-        {/* <Neuro_page/> */}
-        {/* <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjTwo} /> */}
 
         <Footer/>
     </>
