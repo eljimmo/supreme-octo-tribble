@@ -1,5 +1,4 @@
 import { React, Suspense, useRef, useState } from 'react';
-// import { Button } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
@@ -81,19 +80,14 @@ function Selector({ children }) {
 const InfoSection3 = ({
   lightBg,
   imgStart,
-  WhiteTopLine,
   topLine,
   lightText,
   headline,
   description,
-  buttonLabel,
-  img,
-  alt,
   id,
   primary,
   darkText,
-  dark,
-  dark2
+
 }) => {
   console.log(primary);
   return (
@@ -106,37 +100,9 @@ const InfoSection3 = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                {/* <Group position="center">
-      <Button
-        component="a"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/mantinedev"
-        leftIcon={<IconBrandTwitter size={rem(18)} />}
-        styles={(theme) => ({
-          root: {
-            backgroundColor: '#00acee',
-            border: 0,
-            height: rem(42),
-            paddingLeft: rem(20),
-            paddingRight: rem(20),
-            '&:not([data-disabled])': theme.fn.hover({
-              backgroundColor: theme.fn.darken('#00acee', 0.05),
-            }),
-          },
-
-          leftIcon: {
-            marginRight: theme.spacing.md,
-          },
-        })}
-      >
-        Follow on Twitter
-      </Button>
-    </Group> */}
+ 
                 <Button
               variant="outline"
-              // to='home'
-              // smooth={true}
               component="a"
               target="_blank"
               rel="noopener noreferrer"
@@ -144,21 +110,7 @@ const InfoSection3 = ({
             >
               I am still in Development.
             </Button>
-                {/* <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap> */}
+      
               </TextWrapper>
             </Column1>
             <Canvas dpr={[1.5, 2]} linear shadows>

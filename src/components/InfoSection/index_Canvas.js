@@ -49,7 +49,7 @@ function FallbackMaterial({ url }) {
 
 
 
-const InfoSection = ({
+const InfoSectionCanva = ({
   lightBg,
   imgStart,
   topLine,
@@ -79,9 +79,18 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-            <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
+            <Canvas
+        shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [3, 0, 2], fov: 6.5, near: 1, far: 10 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+<ambientLight intensity={1} />
+<directionalLight position={[-2, 5, 2]} intensity={1} />
+<Suspense fallback={null}>
+  <Model />
+
+</Suspense>
+</Canvas>
 
             </Column2>
           </InfoRow>
@@ -91,5 +100,5 @@ const InfoSection = ({
   );
 };
 
-export default InfoSection;
+export default InfoSectionCanva;
 

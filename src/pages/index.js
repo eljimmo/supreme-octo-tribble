@@ -9,21 +9,18 @@ import {
 
 
 } from '../components/InfoSection/Data';
-// import Services from '../components/Services';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
-// import Services from '../components/Services';
-// import App from '../components/flex_pages/src/App';
 import ScApp from '../components/ScrollControl/src/App';
-// import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
-// import Moksha from '../components/Moksha';
-// import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import Sidebar from '../components/Sidebar/index';
+
+
+
 
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,8 +47,8 @@ export default function Welcome() {
 
         <ScApp/>
     
-        <InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjTwo} />
+        {/* <InfoSection {...homeObjThree} />
+        <InfoSection {...homeObjTwo} /> */}
 
         <Footer/>
     </>
