@@ -23,7 +23,7 @@ import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import a15 from "./pexels_engineering.jpg";
-
+import Services from '../components/Services';
 import './pages.css'
 
 
@@ -133,7 +133,7 @@ export default function About_Index() {
               I am still in Development.
             </Button>
       </Affix>
-
+<Services/>
 
         <Footer/>
     </div>

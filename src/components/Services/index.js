@@ -132,9 +132,9 @@ export function FeaturesCard() {
 
       <Group position="apart" mt="md">
         <div>
-          <Text fw={500}>Tesla Model S</Text>
+          <Text fw={500}>Leibniz Analytica </Text>
           <Text fz="xs" c="dimmed">
-            Free recharge at any station
+            Over 100+ Algorithms
           </Text>
         </div>
         <Badge variant="outline">25% off</Badge>
@@ -154,15 +154,15 @@ export function FeaturesCard() {
         <Group spacing={30}>
           <div>
             <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-              $168.00
+              $100.00
             </Text>
             <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
-              per day
+              Per Month
             </Text>
           </div>
 
           <Button radius="xl" style={{ flex: 1 }}>
-            Rent now
+            subscribe Now
           </Button>
         </Group>
       </Card.Section>
@@ -546,7 +546,7 @@ export default function Services () {
     {/* </Canvas> */}
 
 
-      {/* <ServicesH1>Algorithms and Methods</ServicesH1> */}
+      <ServicesH1>Algorithms and Methods</ServicesH1>
       {/* <Canvas>
       <color attach="background" args={['black']} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
