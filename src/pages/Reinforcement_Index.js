@@ -18,6 +18,8 @@ import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import { HeroContainer } from '../components/HeroSection/HeroElements';
 import Sidebar from '../components/Sidebar/index';
+import M_App from '../components/Merged/App';
+
 
 import './pages.css'
 
@@ -33,10 +35,10 @@ export default function Reinforc_page() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainer>
+      {/* <HeroContainer> */}
 
-        helloooo
-      </HeroContainer>
+      <M_App/>
+      {/* </HeroContainer> */}
 
 
 

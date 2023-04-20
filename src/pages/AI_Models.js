@@ -41,7 +41,6 @@ export default function AI_page() {
       <HeroContainerTransparent>
       <P_App/>
 
-      {/* <P_App/> */}
 </HeroContainerTransparent>
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
