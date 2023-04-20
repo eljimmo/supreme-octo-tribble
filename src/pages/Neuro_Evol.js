@@ -21,9 +21,9 @@ import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
 import Sidebar from '../components/Sidebar/index';
-import { HeroContainer } from '../components/HeroSection/HeroElements';
-import App from '../components/flex_pages/src/App';
-import P_App from '../components/Perfomance/index';
+import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
+// import Kamdo_App from '../components/Kamdo/index';
+import K_App from '../components/Kamdo/App';
 
 export default function Neuro_Index() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,39 +35,21 @@ export default function Neuro_Index() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainer>
-
-      {/* <P_App /> */}
-</HeroContainer>
+      {/* <HeroContainerTransparent> */}
+      {/* <K_App/> */}
+      {/* <Kamdo_App /> */}
+{/* </HeroContainerTransparent> */}
 
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
   <div class="thing">Neuro-evolution.</div>
 </div>
 
-      <div style={{ color: 'white' }}>
-      Neuro-evolution.
-                          <br />
-                          Neuro-evolution.
-                                        <br />
-
-
-                                        Neuro-evolution.
-                                                      <br />
-            </div>
 
 
 
-      <div style={{ color: 'white' }}>
-      Neuro-evolution.
-                          <br />
-                          Neuro-evolution.
-                                        <br />
 
 
-                                        Neuro-evolution.
-                                                      <br />
-            </div>
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>

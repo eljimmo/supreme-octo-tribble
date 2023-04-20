@@ -16,7 +16,7 @@ import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
-import { HeroContainer } from '../components/HeroSection/HeroElements';
+import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
 
@@ -35,10 +35,12 @@ export default function Reinforc_page() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <HeroContainer> */}
+      <HeroContainerTransparent>
+
 
       <M_App/>
-      {/* </HeroContainer> */}
+      </HeroContainerTransparent>
+
 
 
 
@@ -54,30 +56,12 @@ export default function Reinforc_page() {
       </div>
 </div>
 
-      <div style={{ color: 'white' }}>
-      Reinforcement Page.
-                                <br />
-                                Reinforcement Page.
-                                                                        <br />
-
-
-                                                                        Reinforcement Page.
-                                                                                                                              <br />
-            </div>
 
 
 
 
-      <div style={{ color: 'black' }}>
-Reinforcement Page
-                          <br />
-                          Reinforcement Page
-                                        <br />
 
 
-                                        Reinforcement Page
-                                                      <br />
-            </div>
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
