@@ -24,6 +24,9 @@ import Sidebar from '../components/Sidebar/index';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 // import Kamdo_App from '../components/Kamdo/index';
 import K_App from '../components/Kamdo/App';
+import Frosted_App from '../components/FrostedGlass/index';
+
+
 
 export default function Neuro_Index() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,17 +41,22 @@ export default function Neuro_Index() {
 
 
       <HeroContainerTransparent>
-      <K_App/>
+      {/* <K_App/> */}
+      <Frosted_App/>
+
 </HeroContainerTransparent>
 
 
 
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
-  <div class="thing">Neuro-evolution.</div>
+  <div class="thing">Neuro-evolution.
+  {/* <Frosted_App/> */}
+
+  </div>
 </div>
 
-
+{/* <Frosted_App/> */}
 
 
 
