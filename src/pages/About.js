@@ -176,30 +176,7 @@ export const TextRing = ({ children, position, color, fontSizing, repeatCount, r
 
   const cylArgs = [1, 1, 1 / pointSize, 64, 1, true]
 
-  //////////// Click isMobile ///////////
-  // const MobileClicker = () => {
-  //   setColor(colorBack)
-  //   setHover(true)
-  //   setTimeout(() => {
-  //     setHover(false)
-  //   }, 100)
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setHover(false)
-  //   }, 100)
-  //   return () => {
-  //     clearTimeout(timer)
-  //   }
-  // }, [])
-  // }
-  // <group
-  //     rotation-y={Math.PI / 4}
-  //     scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
-  //     rotation={rotation}
-  //     position={position}
-  //     onPointerDown={(e) => MobileClicker()}>
-  ////////////////////////////////////////
 
   return (
     <group
