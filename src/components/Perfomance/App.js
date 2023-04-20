@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Text, useGLTF, AdaptiveDpr } from '@react-three/drei'
+import { Text, useGLTF, AdaptiveDpr, Html } from '@react-three/drei'
 import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
 import { KernelSize, BlendFunction } from 'postprocessing'
 import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
@@ -97,7 +97,7 @@ export default function App() {
       <color attach="background" args={['lightblue']} />
       <fog attach="fog" args={['#000', 0.8, 1]} />
       <Lights />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <YBot position={[0, -1.3, 0]} />
         <Text position={[0, 0, -0.2]} fontSize={0.6} color="white" font="/noto.woff" material-fog={false} letterSpacing={0}>
           hello

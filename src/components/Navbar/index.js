@@ -106,6 +106,9 @@ const Navbar = ({ toggle }) => {
               <NavLinks2 to='/signup'>Analytic Dashboard
                          </NavLinks2>
               </NavItem>
+
+
+              
               {/* <NavItem>
 
               <NavLinks2 to='/login'>Log In

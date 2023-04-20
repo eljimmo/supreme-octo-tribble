@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { BakeShadows, CameraControls, ContactShadows, Environment } from '@react-three/drei'
+import { BakeShadows, CameraControls, ContactShadows, Environment, Html } from '@react-three/drei'
 import Model from './Model'
 import './styles.css'
 
@@ -12,7 +12,7 @@ export default function M_App() {
       <ambientLight intensity={4} />
       <spotLight position={[1, 5, 3]} angle={0.2} penumbra={1} intensity={3} castShadow shadow-mapSize={2048} />
       <spotLight position={[0, 10, -10]} intensity={2} angle={0.04} penumbra={2} castShadow shadow-mapSize={1024} />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <Model limit={50} position={[0, -0.0005, 0]} castShadow receiveShadow />
         <ContactShadows frames={1} rotation-x={[Math.PI / 2]} position={[0, -0.4, 0]} far={1} width={1.5} height={1.5} blur={0.2} />
         <Environment preset="night" />
