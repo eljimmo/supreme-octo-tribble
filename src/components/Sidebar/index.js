@@ -56,6 +56,20 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             Reinforcement
           </SidebarRoute>
+
+          <SidebarRoute
+            to='/AImodels'
+            // onClick={toggle}
+            // smooth={true}
+            // duration={500}
+            // spy={true}
+            // exact='true'
+            // offset={-80}
+          >
+            AI Models
+          </SidebarRoute>
+
+
           <SidebarRoute
             to='/signup'
             // onClick={toggle}
