@@ -357,6 +357,10 @@ const DesignSection = () => {
       <HeroContent>
 
 <Canvas shadows="basic"  camera={{ position: [0, 1.5, 14], fov: 45 }}>
+
+<Suspense fallback={<Html center className="loading" children="Loading..." />}>
+
+
 <fog attach="fog" args={['black', 0, 20]} />
 <pointLight position={[10, -10, -20]} intensity={10} />
 <pointLight position={[-10, -10, -20]} intensity={10} />
@@ -364,6 +368,9 @@ const DesignSection = () => {
 {enabled && <SoftShadows />}
 {/** If PerfMon detects a low framerate it will switch back to harsh shadows */}
 <PerformanceMonitor onDecline={() => enable(false)} />
+
+</Suspense>
+
 </Canvas>
 
 
