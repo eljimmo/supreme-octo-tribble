@@ -28,10 +28,12 @@ function Overlay() {
 
 
 export default function Kamdo_App() {
-  <>
+  return (
+  <div>
     <K_App />
     <Overlay />
-  </>
+  </div>
+  )
 } 
 
 
