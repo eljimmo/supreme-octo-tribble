@@ -118,7 +118,7 @@ const Navbar = ({ toggle }) => {
                          </NavLinks2>
              
                          <NavItem>
-              <NavLinks2 to='/Reinforcement'>Reinforcement Learning
+              <NavLinks2 to='/MachineLearning'>Machine Learning
                          </NavLinks2>
               </NavItem>
 

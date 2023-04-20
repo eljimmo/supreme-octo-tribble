@@ -128,7 +128,7 @@ export default function App() {
 
             <Route path="/neuroevolution" element={<Neuro_Index />} />
 
-            <Route path="/Reinforcement" element={<Reinforc_page />} />
+            <Route path="/MachineLearning" element={<Reinforc_page />} />
 
             <Route path="/AImodels" element={<AI_page />} />
 

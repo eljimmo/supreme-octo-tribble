@@ -34,9 +34,9 @@ const Sidebar = ({ isOpen, toggle }) => {
             Neuroevolution
           </SidebarRoute>
           <SidebarRoute
-            to='/Reinforcement'
+            to='/MachineLearning'
           >
-            Reinforcement
+            Machine Learning
           </SidebarRoute>
 
           <SidebarRoute
