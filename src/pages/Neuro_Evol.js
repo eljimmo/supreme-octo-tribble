@@ -37,7 +37,7 @@ export default function Neuro_Index() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainer>
 
-      <P_App />
+      {/* <P_App /> */}
 </HeroContainer>
 
 

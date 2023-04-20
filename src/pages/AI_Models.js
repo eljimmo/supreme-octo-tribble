@@ -24,7 +24,8 @@ import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
 import Sidebar from '../components/Sidebar/index';
-import { HeroContainer } from '../components/HeroSection/HeroElements';
+import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
+import P_App from '../components/Perfomance/index';
 
 
 export default function AI_page() {
@@ -37,13 +38,20 @@ export default function AI_page() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainer>
+      <HeroContainerTransparent>
+      <P_App/>
 
-helloooo
-</HeroContainer>
+      {/* <P_App/> */}
+</HeroContainerTransparent>
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
-  <div class="thing">AI MODELS.</div>
+  
+
+  <div class="thing">
+    
+  {/* <P_App/> */}
+
+    AI MODELS.</div>
 </div>
 
       <div style={{ color: 'white' }}>
