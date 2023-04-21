@@ -5,7 +5,6 @@ import Model from './Model'
 import './styles.css'
 
 
-
 export default function M_App() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0.5, 1], fov: 50, near: 0.001 }} onCreated={(state) => (state.gl.shadowMap.autoUpdate = false)}>
