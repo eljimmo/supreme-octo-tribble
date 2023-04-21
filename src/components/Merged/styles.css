@@ -7,11 +7,12 @@ body,
 #root {
   width: 100%;
   height: 100%;
+  background: lightblue;
+
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #252525;
-  background: linear-gradient(15deg, #101010 0%, #252525 100%);
+  background: lightblue;
 }

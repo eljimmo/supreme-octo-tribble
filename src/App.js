@@ -21,7 +21,7 @@ import React from "react";
 // import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
 import Neuro_Index from '../src/pages/Neuro_Evol';
-import Reinforc_page from '../src/pages/Reinforcement_Index';
+import Machine_page from './pages/Machine_Index';
 import AI_page from '../src/pages/AI_Models';
 import About_Index from "./pages/About";
 
@@ -128,7 +128,7 @@ export default function App() {
 
             <Route path="/neuroevolution" element={<Neuro_Index />} />
 
-            <Route path="/MachineLearning" element={<Reinforc_page />} />
+            <Route path="/MachineLearning" element={<Machine_page />} />
 
             <Route path="/AImodels" element={<AI_page />} />
 

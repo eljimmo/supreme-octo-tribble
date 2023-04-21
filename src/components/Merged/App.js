@@ -9,6 +9,7 @@ import './styles.css'
 export default function M_App() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0.5, 1], fov: 50, near: 0.001 }} onCreated={(state) => (state.gl.shadowMap.autoUpdate = false)}>
+      <color attach="background" args={['#171717']} />
       <ambientLight intensity={4} />
       <spotLight position={[1, 5, 3]} angle={0.2} penumbra={1} intensity={3} castShadow shadow-mapSize={2048} />
       <spotLight position={[0, 10, -10]} intensity={2} angle={0.04} penumbra={2} castShadow shadow-mapSize={1024} />

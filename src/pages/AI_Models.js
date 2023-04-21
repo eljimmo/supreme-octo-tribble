@@ -48,8 +48,6 @@ export default function AI_page() {
 
   <div class="thing">
     
-  {/* <P_App/> */}
-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, arcu non iaculis fringilla, mauris leo pretium velit, at consectetur ante magna sed ante. In lacinia et dolor sed tincidunt. Vestibulum ut leo lacus. Nulla iaculis porttitor mi, vel pellentesque turpis sollicitudin et. Vivamus mollis condimentum lacus, id aliquet elit dictum nec. Donec elementum quis nulla vel malesuada. Curabitur arcu risus, pulvinar quis convallis quis, imperdiet vitae ipsum. Pellentesque interdum pellentesque elit, id eleifend ante molestie sed.
     
     </div>

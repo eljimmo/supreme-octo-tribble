@@ -15,7 +15,7 @@ import Footer from '../components/Footer/index';
 import DesignSection from '../components/DesignSection';
 import VideoSection from '../components/Videos_Section';
 import ScApp from '../components/ScrollControl/src/App';
-import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+import Neuro_page from '../components/ScrollControl/src/Neuro_Evo';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
@@ -25,7 +25,7 @@ import './pages.css'
 
 
 
-export default function Reinforc_page() {
+export default function Machine_page() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
