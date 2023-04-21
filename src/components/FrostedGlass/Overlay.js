@@ -35,9 +35,9 @@ export function Overlay() {
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
         <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '13px' }}>
-          PMND.RS
+        LOREM IPSUM 
           <br />
-          DEV COLLECTIVE
+          LOREM IPSUM 
         </a>
         <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>02/02/2023</div>
       </div>
@@ -45,16 +45,15 @@ export function Overlay() {
       <div className="info">
         <h1>36</h1>
         <List open={state.open}>
-          <h3>NIKE AIR</h3>
-          <h3>“ZOOM”</h3>
+          <h3>Lorem ipsum</h3>
+          <h3>Lorem ipsum</h3>
           <h3>
-            <span className="accent">PEGASUS</span>
+            <span className="accent">Lorem ipsum</span>
           </h3>
-          <h4>Running Shoes</h4>
-          <p className="price">$98.97</p>
+          <h4>Lorem ipsum</h4>
+          <p className="price">$Lorem ipsum</p>
           <p>
-            Year after year Pegasus has proven itself on the feet of runners everywhere. Now our most trusted style returns with new
-            innovations that make it more itself than ever. Meet the reliable, comfortable, always ready-to-run Nike Air Zoom Pegasus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </List>
       </div>
