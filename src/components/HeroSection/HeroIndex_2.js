@@ -28,6 +28,7 @@ import { LUTPass, LUTCubeLoader } from 'three-stdlib'
 import a15 from "./pexels_engineering.jpg";
 import '../components.css';
 import Model from '../GEO/Geo';
+import { Experience } from '../3d_models/experience';
 
 
 
@@ -56,7 +57,7 @@ function HeroSection_2() {
   return (
     <HeroContainer id='home'>
     {/* <Section ref={sectionRef}> */}
-        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+        {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
 
       <HeroBg>
 
@@ -64,24 +65,14 @@ function HeroSection_2() {
 
       </HeroBg>
       <HeroContent>
-      <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
+      <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
 
-      <ambientLight />
-      <spotLight intensity={1.5} angle={4.2} penumbra={1} position={[5, 15, 10]} />
-      <Environment preset="forest" />
-
-        <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-
-        <Model
-        position={[0, -0.0005, 0]}
-        
-        />
-
-       </Suspense>
-
-       {/* <OrbitControls makeDefault autoRotate /> */}
-
-      </Canvas>
+{/* <color attach="background" args={['#151520']} /> */}
+<directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
+<Suspense fallback={<Html center className="loading" children="Loading..." />}>
+<Experience/>
+</Suspense>
+</Canvas>
       
 
       </HeroContent>

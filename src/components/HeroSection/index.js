@@ -10,6 +10,7 @@ import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { Experience } from '../3d_models/experience';
+import Model from '../GEO/Geo';
 
 
 
@@ -54,36 +55,25 @@ export default function HeroSection() {
   };
   return (
     <HeroContainer id='home'>
- 
- <HeroBg>
+      <HeroBg>
+        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+      </HeroBg>
+      <HeroContent>
+     
 
+      <Canvas
+        shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 10 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+<ambientLight intensity={1} />
+<directionalLight position={[-2, 5, 2]} intensity={1} />
+<Suspense fallback={null}>
+  <Model />
 
-<VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-
-</HeroBg> 
-
-       <HeroContent>
-       
-
-  
-
-      
-
-       <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
-
-      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-      <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
-      <Experience/>
-      </Suspense>
-    </Canvas>
-
-
-
-
-
-
+</Suspense>
+</Canvas>
 </HeroContent>
-
 
 
 
