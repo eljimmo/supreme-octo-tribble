@@ -6,6 +6,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjSix,
 
 
 } from '../components/InfoSection/Data';
@@ -41,6 +42,8 @@ export default function AI_page() {
       <HeroContainerTransparent>
       <P_App/>
 </HeroContainerTransparent>
+<InfoSection {...homeObjSix} />
+
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
   

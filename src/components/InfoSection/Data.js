@@ -93,3 +93,21 @@ export const homeObjFive = {
   primary: true,
   darkText: true
 };
+
+export const homeObjSix = {
+  id: 'discover',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Creating idiosyncratic Agents.',
+  headline: 'A comprehensive financial modeling structure enables investors to capture a holistic valuation towards determining navigation in a changing volatile risk field.',
+  description:
+      'The foundation of Leibniz Analytica is to build AI models to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once.',
+  buttonLabel: 'Learn More',
+  imgStart: true,
+  img: require('./img/invest.jpg'),
+  alt: 'img',
+  dark: true,
+  primary: false,
+  darkText: true
+};
