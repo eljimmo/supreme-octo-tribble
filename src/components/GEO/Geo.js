@@ -30,7 +30,7 @@ export default function Model(props) {
       </group>
       <group position={[1.25, -0.5, 0]}>
         <Text position={[0, 0, 0]} fontSize={0.07} lineHeight={1} letterSpacing={-0.05}>
-          By Jim Morales
+        Releasing 2024
           <meshBasicMaterial color="#cccccc" toneMapped={false} />
         </Text>
         <Text bold position={[-0.01, -0.1, 0]} fontSize={0.1} lineHeight={1} letterSpacing={-0.05} color="white">
