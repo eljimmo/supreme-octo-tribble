@@ -6,6 +6,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFour,
 
 
 } from '../components/InfoSection/Data';

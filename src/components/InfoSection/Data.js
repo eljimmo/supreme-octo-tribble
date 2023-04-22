@@ -53,3 +53,43 @@ export const homeObjThree = {
   primary: true,
   darkText: true
 };
+
+
+export const homeObjFour = {
+  id: 'machinelearning',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Understanding What is Machine Learning.',
+  headline: 'Machine Learning is a vast field of study dedicated to the research of algorithimic methods that utilize data to better performance for a given problem.',
+
+  description:
+    "learn and improve from experience.",
+  buttonLabel: 'Start Now',
+  imgStart: false,
+  img: require('./img/Server.jpg'),
+  alt: 'img',
+  dark: true,
+  primary: true,
+  darkText: true
+};
+
+
+export const homeObjFive = {
+  id: 'NeuroEvolution',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Understanding What is Neuro Evolution in Algorithms.',
+  headline: 'Evolutionary algorithms inspired by biological processes found in nature, creating populations of solutions and then eliminating non fitting candidates.',
+
+  description:
+    "learn and improve from experience.",
+  buttonLabel: 'Start Now',
+  imgStart: false,
+  img: require('./img/Server.jpg'),
+  alt: 'img',
+  dark: true,
+  primary: true,
+  darkText: true
+};

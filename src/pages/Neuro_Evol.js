@@ -6,6 +6,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFive,
 
 
 } from '../components/InfoSection/Data';
@@ -44,6 +45,8 @@ export default function Neuro_Index() {
       <Frosted_App/>
 
 </HeroContainerTransparent>
+<InfoSection {...homeObjFive} />
+
 
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>

@@ -5,6 +5,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFour,
 
 
 } from '../components/InfoSection/Data';
@@ -40,6 +41,7 @@ export default function Machine_page() {
 
       <M_App/>
       </HeroContainerTransparent>
+      <InfoSection {...homeObjFour} />
 
 
 
