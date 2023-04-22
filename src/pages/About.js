@@ -23,6 +23,7 @@ import * as THREE from 'three'
 import a15 from "./pexels_engineering.jpg";
 import Services from '../components/Services';
 import './pages.css'
+import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 
 
 
@@ -100,6 +101,7 @@ export default function About_Index() {
 
 <InfoSection {...homeObjThree} />
         <InfoSection {...homeObjTwo} />
+        {/* <InfoSectionCanva {...homeObjOne} /> */}
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
@@ -109,7 +111,7 @@ export default function About_Index() {
               I am still in Development.
             </Button>
       </Affix>
-<Services/>
+{/* <Services/> */}
 
         <Footer/>
     </div>

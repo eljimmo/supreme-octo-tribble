@@ -18,6 +18,7 @@ import VideoSection from '../components/Videos_Section';
 import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import Sidebar from '../components/Sidebar/index';
+import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 
 
 
@@ -42,7 +43,7 @@ export default function Welcome() {
       <HeroSection />   
       <VideoSection/>
 
-      <InfoSection {...homeObjOne} />
+      <InfoSectionCanva {...homeObjOne} />
 
         <ScApp/>
   
