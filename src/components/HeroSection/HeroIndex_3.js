@@ -387,56 +387,16 @@ function HeroSection_3() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-      {/* <Title>Fastest Processor</Title> */}
 
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
 
-{/* 
-      <Processor>
-        <img src={a15} alt="A15 processor" />
-      </Processor>
-      <TText>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut omnis,
-          quaerat aliquid optio veniam.
-        </span>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut.
-        </span>
-      </TText>
 
-      <TText2>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut omnis,
-          quaerat aliquid optio veniam.
-        </span>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut.
-        </span>
-      </TText2> */}
-
-
-      {/* <TextBlockRight>
-        <Title>Super Ratine XDR Display</Title>
-        <TText>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus dignissimos ipsam.
-        </TText>
-      </TextBlockRight> */}
 
 
 
       </HeroBg>
       <HeroContent>
-      {/* <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
+      <Canvas frameloop="demand" camera={{ position: [0, 0, 5], fov: 45 }}>
 
       <ambientLight />
       <spotLight intensity={1.5} angle={4.2} penumbra={1} position={[5, 15, 10]} />
@@ -454,7 +414,7 @@ function HeroSection_3() {
 
        <OrbitControls makeDefault autoRotate />
 
-      </Canvas> */}
+      </Canvas>
       
 
       </HeroContent>

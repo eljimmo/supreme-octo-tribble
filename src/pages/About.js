@@ -24,6 +24,7 @@ import a15 from "./pexels_engineering.jpg";
 import Services from '../components/Services';
 import './pages.css'
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
+import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
 
 
 
@@ -89,7 +90,7 @@ export default function About_Index() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
     <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-
+<HeroSection_3/>
 
 
 <DesignSection/>
