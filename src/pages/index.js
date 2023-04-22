@@ -44,7 +44,7 @@ export default function Welcome() {
       {/* <HeroSection />    */}
       <VideoSection/>
 
-      <InfoSectionCanva {...homeObjOne} />
+      <InfoSection {...homeObjOne} />
 
         <ScApp/>
   
