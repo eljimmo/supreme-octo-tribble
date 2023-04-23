@@ -43,18 +43,37 @@ export default function HeroSection() {
   };
   return (
     <HeroContainer id='home'>
+
+
+
       <HeroBg>
+
+
+
 
 
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
 
 
+
+
       </HeroBg>
 
-
+ 
 
       <HeroContent>
      
+      <div style={{ color: 'white', position: [0, 0, 0] }}>
+
+<Typewriter
+options={{
+strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
+autoStart: true,
+loop: true,
+}}
+/>
+
+</div>
 
       <Canvas
         shadows
@@ -72,9 +91,11 @@ export default function HeroSection() {
 <Suspense fallback={null}>
   <Model />
 
+
 </Suspense>
 </Canvas>
 </HeroContent>
+
 
 
 
