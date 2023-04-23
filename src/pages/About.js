@@ -47,10 +47,9 @@ export default function About_Index() {
   };
   return (
 
-    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
 
 
- {/* // <HeroContainer>  */}
   
        
     <Navbar toggle={toggle} />
