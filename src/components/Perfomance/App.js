@@ -5,6 +5,7 @@ import { Text, useGLTF, AdaptiveDpr, Html } from '@react-three/drei'
 import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
 import { KernelSize, BlendFunction } from 'postprocessing'
 import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
+import Typewriter from 'typewriter-effect';
 
 // This demo shows how to use react-three-fibers regression system
 // When call call state.regress() nothing really will happen, all it
@@ -100,8 +101,15 @@ export default function App() {
       <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <YBot position={[0, -1.3, 0]} />
         <Text position={[0, 0, -0.2]} fontSize={0.6} color="white" font="/noto.woff" material-fog={false} letterSpacing={0}>
-          hello
-        </Text>
+Leibniz
+        {/* <Typewriter
+options={{
+strings: ['Created by the Project Leibniz Analytica Team', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+autoStart: true,
+loop: true,
+}}
+/>          */}
+</Text>
       </Suspense>
       <mesh scale={4} position={[0, 1, -0.2]}>
         <planeGeometry />

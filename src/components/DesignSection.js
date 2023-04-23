@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import React from "react";
-import { useState, Suspense } from "react";
+import { useState, Suspense, useMemo } from "react";
 import * as THREE from "three";
 
 import { useLayoutEffect } from "react";
@@ -22,7 +22,8 @@ import { useTexture,
   useGLTF,
   SoftShadows,
   Text,
-  RoundedBox
+  RoundedBox,
+  Cylinder
  } from "@react-three/drei";
  import { LUTPass, LUTCubeLoader } from 'three-stdlib';
  import { easing, geometry } from 'maath'
@@ -63,6 +64,7 @@ function Model(props) {
       <Annotation position={[-4.5, 3.6, -3]}>
         Markov Chains <span style={{ fontSize: '1.5em' }}></span>
       </Annotation>
+      {/* <TextRing position={[2, 0.5, 8]} > LEIBNIZ ANALYTICA </TextRing> */}
       <Annotation position={[1.5, 8, -3]}>
         <span style={{ fontSize: '1.5em' }}></span> Long Short-Term Memory
       </Annotation>
@@ -221,6 +223,136 @@ function Sphere(props) {
 
       <meshPhysicalMaterial map={texture} clearcoat={0} clearcoatRoughness={0} roughness={0} metalness={0} />
     </mesh>
+  )
+}
+
+
+
+
+
+
+
+const pointSize = 4
+
+function ccccc(children, color, fontSizing, uvWidth) {
+  const fontSize = fontSizing
+
+  if (uvWidth == null) {
+    uvWidth = 2048
+  }
+
+  const canvas = document.createElement('canvas')
+  canvas.width = uvWidth
+  canvas.height = uvWidth / pointSize
+  const context = canvas.getContext('2d')
+
+  context.fillStyle = 'transparent'
+  context.fillRect(0, 0, canvas.width, canvas.height)
+
+  context.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif`
+  context.textAlign = 'center'
+  context.textBaseline = 'middle'
+  context.fillStyle = color
+
+  context.lineWidth = 2
+
+  //////////////// LetterSpacing
+  // const ctext = children.split('').join(String.fromCharCode(8202))
+  const ctext = children
+
+  context.fillText(ctext, canvas.width / 2, canvas.height / 2)
+
+  return canvas
+}
+
+export const TextRing = ({ children, position, color, fontSizing, repeatCount, rotation, colorBack, uvWidth }) => {
+  const [hovered, setHover] = useState(false)
+
+  if (rotation == null) {
+    rotation = [0, 0, 0]
+  }
+
+  const canvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const backCanvas = useMemo(() => {
+    return ccccc(children, color, fontSizing, uvWidth)
+  }, [children, color, fontSizing, uvWidth])
+
+  const texture = useRef()
+  const texture2 = useRef()
+  useFrame(({ clock }) => {
+    texture.current.offset.x = clock.getElapsedTime() / 2
+    texture2.current.offset.x = clock.getElapsedTime() / 2
+  })
+
+  const cylArgs = [1, 1, 1 / pointSize, 64, 1, true]
+
+  //////////// Click isMobile ///////////
+  // const MobileClicker = () => {
+  //   setColor(colorBack)
+  //   setHover(true)
+  //   setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setHover(false)
+  //   }, 100)
+  //   return () => {
+  //     clearTimeout(timer)
+  //   }
+  // }, [])
+  // }
+  // <group
+  //     rotation-y={Math.PI / 4}
+  //     scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+  //     rotation={rotation}
+  //     position={position}
+  //     onPointerDown={(e) => MobileClicker()}>
+  ////////////////////////////////////////
+
+  return (
+    <group
+      rotation-y={Math.PI / 4}
+      scale={hovered ? [1.15, 1.15, 1.15] : [1, 1, 1]}
+      rotation={rotation}
+      position={position}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}>
+      <Cylinder args={cylArgs} side={THREE.FrontSide}>
+        <meshStandardMaterial transparent attach="material">
+          {/* <meshStandardMaterial attach="material"> */}
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount, 1]}
+            image={canvas}
+            premultiplyAlpha
+            ref={texture}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
+
+      <Cylinder args={cylArgs}>
+        <meshStandardMaterial transparent attach="material" side={THREE.BackSide}>
+          <canvasTexture
+            attach="map"
+            repeat={[repeatCount * 2, 1]}
+            image={backCanvas}
+            premultiplyAlpha
+            ref={texture2}
+            wrapS={THREE.RepeatWrapping}
+            wrapT={THREE.RepeatWrapping}
+            onUpdate={(s) => (s.needsUpdate = true)}
+          />
+        </meshStandardMaterial>
+      </Cylinder>
+    </group>
   )
 }
 
