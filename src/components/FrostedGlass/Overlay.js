@@ -51,14 +51,8 @@ export function Overlay() {
 
         </h1>
         <List open={state.open}>
-          {/* <h3>Lorem ipsum</h3>
-          <h3>Lorem ipsum</h3> */}
-          <h3>
-            {/* <span className="accent">Lorem ipsum</span> */}
-          </h3>
-          {/* <h4>Lorem ipsum</h4> */}
-          {/* <p className="price">$Lorem ipsum</p> */}
           <p>
+            Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis.
             Neuro Evolution Algorithms are a type of Artificial Intelligence Process that is founded on the concept of biology and evolution.
             By mimicking the natural selection processes found in the biological evolution found of animals, we can create a system that can learn and adapt to its environment by creating individuals in a population.
             Subsequently the traits that are found to be beneficial towards optiumium are favored, and the traits that are found to be detrimental towards optiumium are removed in the next generation of individuals.
