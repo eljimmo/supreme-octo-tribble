@@ -110,7 +110,7 @@ const glow = keyframes`
 
 
 const Processor = styled.div`
-  width: 55%;
+  width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -204,13 +204,13 @@ const VideoSection = () => {
       {/* <V1 ref={videoRef1} src={v1} type="video/mp4" autoPlay muted loop />
       <V2 ref={videoRef2} src={v2} type="video/mp4" autoPlay muted loop /> */}
       <TitleContainer ref={titleRef}>
-      <Typewriter
+      {/* <Typewriter
   options={{
     strings: ['Intelligent', 'Agency', 'Consciousness', 'Neuroevolution', 'Financial', 'Algorithms', 'Agents'],
     autoStart: true,
     loop: true,
   }}
-/>
+/> */}
         <Title>Intelligent.</Title>
         <Title>Neuroevolution.</Title>
 

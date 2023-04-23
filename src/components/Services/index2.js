@@ -85,8 +85,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const mockdata = [
-  { label: '4 AI Models', icon: IconUsers },
-  { label: 'All Data Sources', icon: IconGauge },
+  { label: 'Text Preprocessing  ', icon: IconUsers },
+  { label: 'Tokenizes data', icon: IconGauge },
   { label: 'Lagged Data Modeling', icon: IconManualGearbox },
   { label: 'Dashboard for Stock Analysis', icon: IconGasStation },
 ];
@@ -99,7 +99,7 @@ const mockdata2 = [
 ];
 
 
-export function FeaturesCard() {
+export function RNN_Card() {
   const { classes } = useStyles();
   const features = mockdata.map((feature) => (
     <Center key={feature.label}>
@@ -118,18 +118,18 @@ export function FeaturesCard() {
 
       <Group position="apart" mt="md">
         <div>
-          <Text fw={500}>Leibniz Analytica Modeling </Text>
+          <Text fw={500}>Text generation with an RNN </Text>
           <Text fz="xs" c="dimmed">
-            Over 100+ Algorithms
+          A language model captures the statistical structure of the text.
           </Text>
         </div>
-        <Badge variant="outline">25% off for Annual Subscription</Badge>
+        <Badge variant="outline">Probability distriubutions in text.</Badge>
       </Group>
 
       <Card.Section className={classes.section} mt="md">
         <Text fz="sm" c="dimmed" className={classes.label}>
-          Basic configuration
-        </Text>
+        Probability distriubutions in text Sequences.
+                </Text>
 
         <Group spacing={8} mb={-8}>
           {features}
@@ -158,7 +158,7 @@ export function FeaturesCard() {
 
 
 
-export function FeaturesCard2() {
+export function Stock_LSTM_card() {
   const { classes } = useStyles();
   const features = mockdata2.map((feature) => (
     <Center key={feature.label}>
@@ -177,12 +177,12 @@ export function FeaturesCard2() {
 
       <Group position="apart" mt="md">
         <div>
-          <Text fw={500}>Leibniz Analytica AI & Modeling </Text>
+          <Text fw={500}> Stock Market Predictions </Text>
           <Text fz="xs" c="dimmed">
-            Over 100+ Algorithms & 25 AI Models
-          </Text>
+          Tensorflow Sequential Recurrant Neural Network with Long Term Short Memory layers.
+                    </Text>
         </div>
-        <Badge variant="outline">25% off for Annual Subscription</Badge>
+        <Badge variant="outline">Time Series Modeling</Badge>
       </Group>
 
       <Card.Section className={classes.section} mt="md">
@@ -390,14 +390,18 @@ export default function Services2 () {
 
 
 
-      <ServicesH1>Creating Artificial Intelligence</ServicesH1>
+      <ServicesH1>
+
+      Machine Learning Models
+
+      </ServicesH1>
       
       <ServicesWrapper>
-      <FeaturesCard/>
+      <RNN_Card/>
       {/* <ContactUs/> */}
 
-      <FeaturesCard2/>
-      <FeaturesCard/>
+      <Stock_LSTM_card/>
+      <RNN_Card/>
 
 
 
