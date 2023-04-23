@@ -28,6 +28,7 @@ import Sidebar from '../components/Sidebar/index';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
 import P_App from '../components/Perfomance/index';
 import InfoSection6 from '../components/InfoSection/index_Infosection4';
+import Services from '../components/Services';
 
 
 export default function AI_page() {
@@ -57,7 +58,7 @@ export default function AI_page() {
 </div>
 
 
-
+<Services/>
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>

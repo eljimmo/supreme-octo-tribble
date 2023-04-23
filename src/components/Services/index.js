@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ServicesContainer,
+  ServicesContainer2,
   ServicesH1,
   ServicesWrapper,
   ServicesCard,
@@ -383,7 +384,7 @@ function FadingImage() {
 export default function Services () {
 
    return (
-    <ServicesContainer id='services'>
+    <ServicesContainer2 id='services'>
      
 
 
@@ -393,9 +394,10 @@ export default function Services () {
       
       <ServicesWrapper>
       <FeaturesCard/>
-      <ContactUs/>
+      {/* <ContactUs/> */}
 
       <FeaturesCard2/>
+      <FeaturesCard/>
 
 
 
@@ -427,7 +429,7 @@ export default function Services () {
 
 
       </ServicesWrapper>
-    </ServicesContainer>
+    </ServicesContainer2>
   );
 };
 
