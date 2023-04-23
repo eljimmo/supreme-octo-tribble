@@ -31,6 +31,7 @@ import {
   VideoBg,
   HeroContent,
 } from '../components/HeroSection/HeroElements';
+import InfoSection6 from '../components/InfoSection/index_Infosection4';
 
 
 
@@ -64,8 +65,8 @@ export default function About_Index() {
 
  
 
-<InfoSection {...homeObjThree} />
-        <InfoSection {...homeObjTwo} />
+<InfoSection6 {...homeObjThree} />
+        <InfoSection6 {...homeObjTwo} />
         {/* <InfoSectionCanva {...homeObjOne} /> */}
 
 
