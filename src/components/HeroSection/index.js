@@ -2,6 +2,7 @@ import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
 import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
+  HeroContainerexportd0d0d0,
   HeroBg,
   VideoBg,
   HeroContent,
@@ -12,6 +13,7 @@ import * as THREE from 'three'
 import { Experience } from '../3d_models/experience';
 import Model from '../GEO/Geo';
 import Typewriter from 'typewriter-effect';
+import Frosted_App from '../FrostedGlass';
 
 
 
@@ -62,7 +64,7 @@ loop: true,
 </div>
 
 
-        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+        {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
 
 
 
@@ -73,6 +75,7 @@ loop: true,
 
       <HeroContent>
      
+      {/* <Frosted_App/> */}
 
 
       <Canvas

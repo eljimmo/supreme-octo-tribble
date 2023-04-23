@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, MeshTransmissionMaterial, ContactShadows, Environment } from '@react-three/drei'
 import { easing } from 'maath'
 import { useStore } from './store'
+import Model from '../GEO/Geo'
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
       <Environment preset="city" background blur={1} />
       <ContactShadows resolution={512} position={[0, -0.8, 0]} opacity={1} scale={10} blur={2} far={0.8} />
       <Selector>
-        <Shoe rotation={[0.3, Math.PI / 1.6, 0]} />
+        <Model rotation={[0.3, Math.PI / 1.6, 0]} />
       </Selector>
     </Canvas>
   )

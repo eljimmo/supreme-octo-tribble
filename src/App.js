@@ -124,12 +124,12 @@ export default function App() {
           
             <Route path="/login" element={<Login />} /> */}
             
-            <Route path="/" element={<Welcome />} />
+            <Route path="/" element={<Neuro_Index />} />
 
 
             
 
-            <Route path="/neuroevolution" element={<Neuro_Index />} />
+            <Route path="/neuroevolution" element={<Welcome />} />
 
             <Route path="/MachineLearning" element={<Machine_page />} />
 
