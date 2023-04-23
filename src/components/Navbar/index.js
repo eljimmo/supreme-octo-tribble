@@ -95,17 +95,20 @@ const Navbar = ({ toggle }) => {
                   About
                 </NavLinks2>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
 
               <NavLinks2 to='/signup'>Sign Up
                          </NavLinks2>
 
          
-              </NavItem>
-              <NavItem>
+              </NavItem> */}
+
+
+
+              {/* <NavItem>
               <NavLinks2 to='/signup'>Analytic Dashboard
                          </NavLinks2>
-              </NavItem>
+              </NavItem> */}
 
 
               

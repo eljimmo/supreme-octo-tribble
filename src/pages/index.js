@@ -20,6 +20,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import Sidebar from '../components/Sidebar/index';
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
+import Services2 from '../components/Services/index2';
 
 
 
@@ -49,7 +50,7 @@ export default function Welcome() {
       <InfoSection {...homeObjOne} />
 
         <ScApp/>
-  
+        <Services2/>
 
         <Footer/>
     </>

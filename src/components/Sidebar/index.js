@@ -46,11 +46,14 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarRoute>
 
 
-          <SidebarRoute
+          {/* <SidebarRoute
             to='/signup'
           >
             Sign Up
-          </SidebarRoute>
+          </SidebarRoute> */}
+
+
+          
         </SidebarMenu>
   
       </SidebarWrapper>

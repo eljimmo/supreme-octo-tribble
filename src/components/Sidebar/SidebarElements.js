@@ -73,11 +73,9 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SidebarRoute = styled(LinkR)`
-  border-radius: 50px;
-  background: #76b8f4;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #21262b;
+  color: #d3dbe3;
   font-size: 16px;
   outline: none;
   border: none;
