@@ -49,7 +49,17 @@ export default function HeroSection() {
       <HeroBg>
 
 
+      <div style={{ color: 'white', position: [0, 0, 0] }}>
 
+<Typewriter
+options={{
+strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
+autoStart: true,
+loop: true,
+}}
+/>
+
+</div>
 
 
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
@@ -63,17 +73,7 @@ export default function HeroSection() {
 
       <HeroContent>
      
-      <div style={{ color: 'white', position: [0, 0, 0] }}>
 
-<Typewriter
-options={{
-strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
-autoStart: true,
-loop: true,
-}}
-/>
-
-</div>
 
       <Canvas
         shadows
