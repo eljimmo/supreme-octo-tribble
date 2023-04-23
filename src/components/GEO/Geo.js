@@ -5,6 +5,9 @@ import { useGLTF, MeshDistortMaterial, Shadow } from '@react-three/drei'
 import Text from './Text'
 import state from './state'
 
+
+
+
 export default function Model(props) {
   const group = useRef()
   const shadow = useRef()
@@ -29,6 +32,9 @@ export default function Model(props) {
         </mesh>
       </group>
       <group position={[1.25, -0.5, 0]}>
+
+
+
         <Text position={[0, 0, 0]} fontSize={0.07} lineHeight={1} letterSpacing={-0.05}>
         Releasing 2024
           <meshBasicMaterial color="#cccccc" toneMapped={false} />

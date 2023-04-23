@@ -3,6 +3,9 @@ import { useRef, useState } from 'react'
 import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber'
 import { useFBO, useGLTF, useScroll, Text, Image, Scroll, Preload, ScrollControls, MeshTransmissionMaterial } from '@react-three/drei'
 import { easing } from 'maath'
+import Typewriter from 'typewriter-effect';
+
+
 
 export default function ScApp() {
   return (
@@ -30,6 +33,18 @@ export default function ScApp() {
                                         cognitive modelling
                                                       <br />
             </div>
+
+
+            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
+            <Typewriter
+  options={{
+    strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+            </div>
+
           </Scroll>
           {/** This is a helper that pre-emptively makes threejs aware of all geometries, textures etc
                By default threejs will only process objects if they are "seen" by the camera leading 

@@ -7,10 +7,11 @@ import {
   HeroContent,
 } from './HeroElements';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
+import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html, Scroll, useScroll } from '@react-three/drei'
 import * as THREE from 'three'
 import { Experience } from '../3d_models/experience';
 import Model from '../GEO/Geo';
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -18,7 +19,7 @@ function Caption({ children }) {
   const { width } = useThree((state) => state.viewport)
   return (
     <Text
-      position={[0, 0, -5]}
+      position={[0, 0, 0]}
       lineHeight={0.8}
       fontSize={width / 8}
       material-toneMapped={false}
@@ -30,6 +31,10 @@ function Caption({ children }) {
 }
 
 
+
+
+
+
 export default function HeroSection() {
 
   const [hover, setHover] = useState(false);
@@ -39,8 +44,15 @@ export default function HeroSection() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
+
+
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+
+
       </HeroBg>
+
+
+
       <HeroContent>
      
 
@@ -49,6 +61,12 @@ export default function HeroSection() {
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
     camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 10 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+
+<Caption>LEIBNIZ</Caption>
+
+
+
+
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
