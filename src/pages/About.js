@@ -90,7 +90,7 @@ export default function About_Index() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
     <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-<HeroSection_3/>
+{/* <HeroSection_3/> */}
 
 
 <DesignSection/>
