@@ -53,7 +53,7 @@ export default function HeroSection() {
 
 <Typewriter
 options={{
-strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
+strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
 autoStart: true,
 loop: true,
 }}

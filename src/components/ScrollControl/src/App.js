@@ -38,7 +38,7 @@ export default function ScApp() {
             <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
             <Typewriter
   options={{
-    strings: ['Creating Intelligence', 'Creatting Agency', 'Creating Consciousness'],
+    strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
     autoStart: true,
     loop: true,
   }}
