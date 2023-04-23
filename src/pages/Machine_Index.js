@@ -20,6 +20,7 @@ import Neuro_page from '../components/ScrollControl/src/Neuro_Evo';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
+import Machine_Services from '../components/Services/Machine_Service';
 
 
 import './pages.css'
@@ -45,7 +46,7 @@ export default function Machine_page() {
 
 
 
-
+      <Machine_Services/>
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
   <div class="thing">                      

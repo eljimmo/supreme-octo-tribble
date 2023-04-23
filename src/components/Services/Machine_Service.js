@@ -380,7 +380,7 @@ function FadingImage() {
 
 
 
-export default function Reinforce_Services () {
+export default function Machine_Services () {
 
    return (
     <ServicesContainer id='services'>
