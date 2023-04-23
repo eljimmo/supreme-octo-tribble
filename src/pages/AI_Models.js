@@ -27,6 +27,7 @@ import './pages.css'
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
 import P_App from '../components/Perfomance/index';
+import InfoSection6 from '../components/InfoSection/index_Infosection4';
 
 
 export default function AI_page() {
@@ -42,7 +43,7 @@ export default function AI_page() {
       <HeroContainerTransparent>
       <P_App/>
 </HeroContainerTransparent>
-<InfoSection {...homeObjSix} />
+<InfoSection6 {...homeObjSix} />
 
 
       <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
