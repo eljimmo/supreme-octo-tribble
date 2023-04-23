@@ -15,7 +15,7 @@ const Section = styled.section`
   min-height: 100vh;
   position: relative;
   z-index: 1;
-  background-color: black;
+  background-color: lightblue;
   overflow: hidden;
 `;
 

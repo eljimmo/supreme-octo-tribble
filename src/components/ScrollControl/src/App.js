@@ -6,7 +6,7 @@ import { easing } from 'maath'
 
 export default function ScApp() {
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'lightblue' }}>
     <Canvas camera={{ position: [0, 0, 20], fov: 15
     // set the background color of the scene to black
     , background: new THREE.Color(0x000000)
@@ -75,7 +75,7 @@ function Typography() {
   return (
     <>
       <Text children="metaheuristic" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
-      <Text children="populations of candidate solutions " anchorX="right" position={[width / 2.5, -height * 2, 6]} {...shared} />
+      <Text children="candidate solutions " anchorX="right" position={[width / 1.2, -height * 2, 6]} {...shared} />
       <Text children="generation" position={[0, -height * 4.624, 6]} {...shared} />
     </>
   )

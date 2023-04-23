@@ -5,6 +5,7 @@ import {
   HeroContainer,
   HeroBg,
   VideoBg,
+  HeroContainerTransparent,
   HeroContent,
 } from './HeroElements';
 import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem } from '@mantine/core';
@@ -37,16 +38,6 @@ import { Experience } from '../3d_models/experience';
 
 
 
-const Section = styled.section`
-  width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-  background-color: black;
-  overflow: hidden;
-`;
-
-
 function HeroSection_2() {
   const [hover, setHover] = useState(false);
   const sectionRef = useRef(null);
@@ -55,9 +46,7 @@ function HeroSection_2() {
     setHover(!hover);
   };
   return (
-    <HeroContainer id='home'>
-    {/* <Section ref={sectionRef}> */}
-        {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
+    <HeroContainerTransparent id='home'>
 
       <HeroBg>
 
@@ -78,7 +67,7 @@ function HeroSection_2() {
       </HeroContent>
       {/* </Section> */}
 
-    </HeroContainer>
+    </HeroContainerTransparent>
   );
 }
 
