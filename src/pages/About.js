@@ -25,58 +25,16 @@ import Services from '../components/Services';
 import './pages.css'
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
+import {
+  HeroContainer,
+  HeroBg,
+  VideoBg,
+  HeroContent,
+} from '../components/HeroSection/HeroElements';
 
 
 
 
-
-const Title = styled.h6`
-  font-size: 80%;
-  z-index: 5;
-  text-transform: capitalize;
-  color: black;
-
-
-  @media screen and (max-width: 70em) {
-    font-size: var(--fontxxxl);
-  }
-  @media screen and (max-width: 48em) {
-    font-size: var(--fontxxl);
-  }
-`;
-
-const glow = keyframes`
-0%{
-    box-shadow: 1px 1px 10px var(--white);
-}
-50%{
-    box-shadow: 2px 2px 25px var(--white);
-}
-100%{
-    box-shadow: 1px 1px 10px var(--white);
-}
-`;
-
-
-const Processor = styled.div`
-  width: 55%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ${glow} 3s ease infinite;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  @media screen and (max-width: 48em) {
-    display: none;
-  }
-`;
 
 
 
@@ -87,7 +45,13 @@ export default function About_Index() {
     setIsOpen(!isOpen);
   };
   return (
+
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
+
+
+ {/* // <HeroContainer>  */}
+  
+       
     <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 {/* <HeroSection_3/> */}
@@ -115,7 +79,9 @@ export default function About_Index() {
 {/* <Services/> */}
 
         <Footer/>
-    </div>
+        {/* // </HeroContainer>  */}
+        </div>
+        
   );
 }
 

@@ -26,6 +26,7 @@ import { HeroContainer, HeroContainerTransparent } from '../components/HeroSecti
 // import Kamdo_App from '../components/Kamdo/index';
 import K_App from '../components/Kamdo/App';
 import Frosted_App from '../components/FrostedGlass/index';
+import InfoSection6 from '../components/InfoSection/index_Infosection4';
 
 
 
@@ -45,7 +46,7 @@ export default function Neuro_Index() {
       <Frosted_App/>
 
 </HeroContainerTransparent>
-<InfoSection {...homeObjFive} />
+<InfoSection6 {...homeObjFive} />
 
 
 
