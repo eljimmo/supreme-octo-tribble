@@ -21,6 +21,7 @@ import { HeroContainer, HeroContainerTransparent } from '../components/HeroSecti
 import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
 import Machine_Services from '../components/Services/Machine_Service';
+import InfoSection6 from '../components/InfoSection/index_Infosection4';
 
 
 import './pages.css'
@@ -34,7 +35,7 @@ export default function Machine_page() {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'white' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainerTransparent>
@@ -42,7 +43,7 @@ export default function Machine_page() {
 
       <M_App/>
       </HeroContainerTransparent>
-      <InfoSection {...homeObjFour} />
+      <InfoSection6 {...homeObjFour} />
 
 
 
