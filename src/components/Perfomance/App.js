@@ -1,11 +1,19 @@
 import * as THREE from 'three'
-import { Suspense, useRef, useState } from 'react'
+import { Suspense, useRef, useState, useMemo } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Text, useGLTF, AdaptiveDpr, Html } from '@react-three/drei'
+import { Text, useGLTF, AdaptiveDpr, Html, Cylinder } from '@react-three/drei'
 import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
 import { KernelSize, BlendFunction } from 'postprocessing'
 import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
 import Typewriter from 'typewriter-effect';
+
+
+
+
+
+
+
+
 
 // This demo shows how to use react-three-fibers regression system
 // When call call state.regress() nothing really will happen, all it
@@ -100,10 +108,43 @@ export default function App() {
       <Lights />
       <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <YBot position={[0, -1.3, 0]} />
+
+
+
+
         <Text position={[0, 0, -0.2]} fontSize={0.6} color="white" font="/noto.woff" material-fog={false} letterSpacing={0}>
 Leibniz
 
 </Text>
+
+
+
+
+{/* <TextRing
+          position={[9, 7.5, 0]}
+          rotation={[0, 0, 0.15]}
+          color={'red'}
+          fontSizing={700}
+          repeatCount={4}>
+          AGENCY
+        </TextRing>
+        <TextRing
+          position={[-.50, 9.0, 9]}
+          rotation={[0, 0, 0.15]}
+          color={'pink'}
+          fontSizing={390}
+          repeatCount={4}>
+          EVOLUTION
+        </TextRing>
+        <TextRing
+          position={[-3.0, 7.50, 1]}
+          rotation={[0, 0, 0.15]}
+          color={'green'}
+          fontSizing={390}
+          repeatCount={7}>
+          MEMORY
+        </TextRing> */}
+
       </Suspense>
       <mesh scale={4} position={[0, 1, -0.2]}>
         <planeGeometry />

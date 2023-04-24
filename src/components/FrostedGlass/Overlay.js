@@ -60,7 +60,13 @@ loop: true,
       <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} />
       <div className="info">
         <h1>
-        Project Leibniz Analytica
+        <Typewriter
+options={{
+strings: ['Project Leibniz', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+autoStart: true,
+loop: true,
+}}
+/> 
 
 
         </h1>
@@ -117,13 +123,28 @@ loop: true,
       <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} />
       <div className="info">
         <h1>
-        Project Leibniz Analytica
+
+        <Typewriter
+options={{
+strings: ['Created by the Project Leibniz Analytica Team', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+autoStart: true,
+loop: true,
+}}
+/> 
+        {/* Project Leibniz Analytica */}
 
 
         </h1>
         <List open={state.open}>
      
           <h3>
+          {/* <Typewriter
+options={{
+strings: ['Created by the Project Leibniz Analytica Team', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+autoStart: true,
+loop: true,
+}}
+/>  */}
           </h3>
   
           <p>
