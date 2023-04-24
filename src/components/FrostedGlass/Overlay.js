@@ -98,7 +98,7 @@ export function Overlay2() {
   return (
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-        <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '13px' }}>
+        <a href="https://pmnd.rs/" style={{ position: 'relative', bottom: 40, left: 40, fontSize: '13px' }}>
         Project Leibniz Analytica
           <br />
           <Typewriter

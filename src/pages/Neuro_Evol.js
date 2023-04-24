@@ -57,7 +57,7 @@ export default function Neuro_Index() {
       <DesignSection/>
 </HeroContainerTransparent>
 
-<InfoSection6 {...homeObjFive} />
+<InfoSection6 {...homeObjOne} />
 
 
 
