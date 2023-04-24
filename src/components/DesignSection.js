@@ -58,16 +58,39 @@ function Model(props) {
       <mesh castShadow receiveShadow geometry={nodes.Node_3.geometry} rotation={[-Math.PI / 2, 0, 0]} scale={0.2} dispose={null}>
         <meshLambertMaterial color="#404044" />
       </mesh>
-      <Annotation position={[1.75, 3, 2.5]}>
+      {/* <Annotation position={[1.75, 3, 2.5]}>
         NeuroEvolution <span style={{ fontSize: '1.5em' }}></span>
-      </Annotation>
-      <Annotation position={[-4.5, 3.6, -3]}>
+      </Annotation> */}
+      {/* <Annotation position={[-4.5, 3.6, -3]}>
         Markov Chains <span style={{ fontSize: '1.5em' }}></span>
-      </Annotation>
-      {/* <TextRing position={[2, 0.5, 8]} > LEIBNIZ ANALYTICA </TextRing> */}
-      <Annotation position={[1.5, 8, -3]}>
+      </Annotation> */}
+<TextRing
+          position={[3, 7.5, 0]}
+          rotation={[0, 0, 0.15]}
+          color={'red'}
+          fontSizing={390}
+          repeatCount={4}>
+          AGENCY
+        </TextRing>
+        <TextRing
+          position={[-.50, 9.0, 0]}
+          rotation={[0, 0, 0.15]}
+          color={'pink'}
+          fontSizing={390}
+          repeatCount={4}>
+          EVOLUTION
+        </TextRing>
+        <TextRing
+          position={[-3.0, 7.50, 1]}
+          rotation={[0, 0, 0.15]}
+          color={'green'}
+          fontSizing={390}
+          repeatCount={7}>
+          MEMORY
+        </TextRing>
+      {/* <Annotation position={[1.5, 8, -3]}>
         <span style={{ fontSize: '1.5em' }}></span> Long Short-Term Memory
-      </Annotation>
+      </Annotation> */}
       <spotLight angle={0.5} penumbra={0.5} ref={light} castShadow intensity={10} shadow-mapSize={1024} shadow-bias={-0.001}>
         <orthographicCamera attach="shadow-camera" args={[-10, 10, -10, 10, 0.1, 50]} />
       </spotLight>
