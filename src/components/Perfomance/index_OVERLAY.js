@@ -4,11 +4,12 @@ import './styles.css'
 import App from './App'
 import { Overlay2 } from '../FrostedGlass/Overlay';
 
-export default function P_App_1() {
+export default function P_App() {
   return (
   <>
     <App />
-    <Footer date="22. June" year="2021" />
+    <Overlay2 />
+    {/* <Footer date="22. June" year="2021" /> */}
   </>
   )
 }

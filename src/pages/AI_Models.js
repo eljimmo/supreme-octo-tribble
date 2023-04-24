@@ -26,7 +26,7 @@ import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
-import P_App from '../components/Perfomance/index';
+import P_App_1 from '../components/Perfomance/index';
 import InfoSection6 from '../components/InfoSection/index_Infosection4';
 import Services from '../components/Services';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
@@ -42,7 +42,7 @@ export default function AI_page() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainerTransparent>
-      <P_App/>
+      <P_App_1/>
 </HeroContainerTransparent>
 {/* <InfoSection6 {...homeObjSix} /> */}
 
