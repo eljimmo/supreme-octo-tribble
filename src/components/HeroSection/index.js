@@ -71,9 +71,18 @@ loop: true,
 
       </HeroBg>
 
- 
+
 
       <HeroContent>
+
+        {/* <Canvas 
+        shadows
+    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 10 }}
+    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
+      <Experience />
+      </Canvas> */}
+
      
       {/* <Frosted_App/> */}
 
@@ -81,7 +90,7 @@ loop: true,
       <Canvas
         shadows
     gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 10 }}
+    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 40 }}
     onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
 
 <Caption>LEIBNIZ</Caption>
@@ -92,11 +101,13 @@ loop: true,
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
-  <Model />
+  {/* <Model /> */}
 
+  {/* <Experience /> */}
 
 </Suspense>
 </Canvas>
+
 </HeroContent>
 
 

@@ -43,11 +43,8 @@ export default function Welcome() {
               I am still in Development.
             </Button>
       </Affix>
-      {/* <HeroSection_2/> */}
-      <HeroSection />   
-      {/* <Frosted_App/> */}
+      {/* <HeroSection />    */}
 
-      {/* <VideoSection/> */}
       <HeroSection_2/>
 
       <InfoSection {...homeObjOne} />
