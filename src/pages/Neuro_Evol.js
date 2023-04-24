@@ -28,7 +28,6 @@ import K_App from '../components/Kamdo/App';
 import Frosted_App from '../components/FrostedGlass/index';
 import InfoSection6 from '../components/InfoSection/index_Infosection4';
 import P_App from '../components/Perfomance/index';
-import ScApp from '../components/ScrollControl/src/App';
 
 
 
