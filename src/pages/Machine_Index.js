@@ -22,6 +22,7 @@ import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
 import Machine_Services from '../components/Services/Machine_Service';
 import InfoSection6 from '../components/InfoSection/index_Infosection4';
+import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
 import './pages.css'
@@ -43,22 +44,13 @@ export default function Machine_page() {
 
       <M_App/>
       </HeroContainerTransparent>
-      <InfoSection6 {...homeObjFour} />
+      {/* <InfoSection6 {...homeObjFour} /> */}
+
+<StockSearch/>
+
+      {/* <Machine_Services/> */}
 
 
-
-      <Machine_Services/>
-
-      <div class="wrapper" style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
-  <div class="thing">                      
-      Reinforcement Page. 
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur, arcu non iaculis fringilla, mauris leo pretium velit, at consectetur ante magna sed ante. In lacinia et dolor sed tincidunt. Vestibulum ut leo lacus. Nulla iaculis porttitor mi, vel pellentesque turpis sollicitudin et. Vivamus mollis condimentum lacus, id aliquet elit dictum nec. Donec elementum quis nulla vel malesuada. Curabitur arcu risus, pulvinar quis convallis quis, imperdiet vitae ipsum. Pellentesque interdum pellentesque elit, id eleifend ante molestie sed.
-
-
-
-      </div>
-</div>
 
 
 

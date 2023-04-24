@@ -101,9 +101,7 @@ loop: true,
 <ambientLight intensity={1} />
 <directionalLight position={[-2, 5, 2]} intensity={1} />
 <Suspense fallback={null}>
-  {/* <Model /> */}
 
-  {/* <Experience /> */}
 
 </Suspense>
 </Canvas>
