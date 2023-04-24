@@ -36,10 +36,11 @@ export default function Machine_page() {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
+    <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainerTransparent>
+      {/* <StockSearch/> */}
 
 
       <M_App/>
@@ -70,7 +71,7 @@ export default function Machine_page() {
 
 
         <Footer/>
-    </div>
+        </>
   );
 }
 

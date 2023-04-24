@@ -18,7 +18,7 @@ export default function M_App() {
         <Environment preset="night" />
         <BakeShadows />
       </Suspense>
-      <CameraControls />
+      {/* <CameraControls /> */}
     </Canvas>
   )
 }
