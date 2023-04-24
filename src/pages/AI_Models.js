@@ -58,7 +58,7 @@ export default function AI_page() {
 </div> */}
 <StockSearch/>
 
-<Services/>
+{/* <Services/> */}
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>

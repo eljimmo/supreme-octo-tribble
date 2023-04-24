@@ -12,8 +12,8 @@ const StockSearch = () => {
     <div style={{padding: 20}} >
       <Searchbar searchSubmit={handleSearch} />
       <main>{isLoading ? <Spinner /> : <Content data={symbolData} />}</main>
-      {/* <main>{isLoading ? <Spinner /> : <Content3 data={symbolData} />}</main>
-      <main>{isLoading ? <Spinner /> : <Content2 data={symbolData} />}</main> */}
+      <main>{isLoading ? <Spinner /> : <Content3 data={symbolData} />}</main>
+      <main>{isLoading ? <Spinner /> : <Content2 data={symbolData} />}</main>
 
     </div>
   );
