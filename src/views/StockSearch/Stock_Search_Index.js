@@ -9,7 +9,7 @@ const StockSearch = () => {
   const { symbolData, isLoading, handleSearch } = useAppState();
 
   return (
-    <div style={{padding: 20}} >
+    <div style={{padding: 10}} >
       <Searchbar searchSubmit={handleSearch} />
       <main>{isLoading ? <Spinner /> : <Content data={symbolData} />}</main>
       <main>{isLoading ? <Spinner /> : <Content3 data={symbolData} />}</main>

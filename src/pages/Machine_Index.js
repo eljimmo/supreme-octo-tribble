@@ -22,7 +22,7 @@ import Sidebar from '../components/Sidebar/index';
 import M_App from '../components/Merged/App';
 import Machine_Services from '../components/Services/Machine_Service';
 import InfoSection6 from '../components/InfoSection/index_Infosection4';
-import StockSearch from '../views/StockSearch/Stock_Search_Index';
+// import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
 import './pages.css'
@@ -47,7 +47,7 @@ export default function Machine_page() {
       </HeroContainerTransparent>
       {/* <InfoSection6 {...homeObjFour} /> */}
 
-<StockSearch/>
+{/* <StockSearch/> */}
 
       {/* <Machine_Services/> */}
 

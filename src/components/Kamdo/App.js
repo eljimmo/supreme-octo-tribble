@@ -6,7 +6,7 @@ import { easing } from 'maath'
 
 export default function K_App() {
   return (
-    <Canvas gl={{ logarithmicDepthBuffer: true }} shadows camera={{ position: [-15, 0, 10], fov: 35 }}>
+    <Canvas eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 4], fov: 40 }}>
       <fog attach="fog" args={['black', 15, 21.5]} />
       {/* <Stage intensity={0.5} environment="city" shadows={{ type: 'accumulative', bias: -0.001 }} adjustCamera={false}> */}
             {/* <Stage  > */}
