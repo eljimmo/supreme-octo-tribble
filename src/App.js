@@ -23,6 +23,7 @@ import React from "react";
 import Neuro_Index from '../src/pages/Neuro_Evol';
 import Machine_page from './pages/Machine_Index';
 import AI_page from '../src/pages/AI_Models';
+// import StockSearch from "./views/StockSearch/Stock_Search_Index";
 import About_Index from "./pages/About";
 
 export default function App() {
@@ -137,7 +138,7 @@ export default function App() {
 
             <Route path="/About" element={<About_Index />} />
 
-            {/* <Route path="/RTApp" element={<RTApp />} /> */}
+            {/* <Route path="/stock" element={<StockSearch />} /> */}
 
             {/* <Route path="/Demo" element={<Dashboard />} /> */}
 

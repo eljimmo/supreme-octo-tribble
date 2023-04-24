@@ -7,7 +7,7 @@ import News from '../News/NewsIndex';
 import Error from '../Error/E_Index';
 import Company from "../Company/C_Index";
 
-import '../style.css';
+// import '../style.css';
 import { Row, Col } from 'reactstrap';
 import { Grid } from '@mantine/core';
 

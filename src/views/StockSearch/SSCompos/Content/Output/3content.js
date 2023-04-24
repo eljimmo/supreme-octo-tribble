@@ -1,6 +1,6 @@
 import MarketVolume_Chart from '../DataChart/MarketVolume_Index';
 import Error from '../Error/E_Index';
-import '../style.css';
+// import '../style.css';
 
 
 

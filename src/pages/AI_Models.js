@@ -42,7 +42,7 @@ export default function AI_page() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainerTransparent>
-      <P_App_1/>
+      {/* <P_App_1/> */}
 </HeroContainerTransparent>
 
 
