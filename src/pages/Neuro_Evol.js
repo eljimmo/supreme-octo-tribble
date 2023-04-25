@@ -44,10 +44,10 @@ export default function Neuro_Index() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
 
-      <HeroContainerTransparent>
+      {/* <HeroContainerTransparent>
       <Frosted_App/>
 
-</HeroContainerTransparent>
+</HeroContainerTransparent> */}
 
 
 <HeroContainerTransparent>
@@ -63,10 +63,10 @@ export default function Neuro_Index() {
 
 <InfoSection6 {...homeObjOne} />
 
-
+{/* 
 <HeroContainerTransparent>
       <DesignSection/>
-</HeroContainerTransparent>
+</HeroContainerTransparent> */}
 
 
 <ScApp/>
