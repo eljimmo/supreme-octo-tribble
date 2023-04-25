@@ -9,7 +9,7 @@ import Company from "../Company/C_Index";
 // import { Carousel } from '@mantine/carousel';
 import MyCharts from "../DataChart/EXamples";
 
-// import '../style.css';
+import '../style.css';
 import { Row, Col } from 'reactstrap';
 import { Grid } from '@mantine/core';
 

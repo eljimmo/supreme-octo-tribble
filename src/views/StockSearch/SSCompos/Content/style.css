@@ -7,14 +7,14 @@
   
   .main-header > div {
     display: flex;
-    padding: 10px;
+    padding: 5px;
 
     flex-direction: column;
   }
   
   .main-header > div p {
     display: flex;
-    padding: 10px;
+    padding: 5px;
     align-items: flex-end;
     color: var(--color-secondary);
   }
