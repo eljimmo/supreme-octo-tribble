@@ -54,14 +54,14 @@ export default function Neuro_Index() {
       <Kamdo_App/>
 </HeroContainerTransparent>
 
-<StockSearch/>
+{/* <StockSearch/> */}
 
 
 
 
 
 
-<InfoSection6 {...homeObjOne} />
+<InfoSection {...homeObjOne} />
 
 {/* 
 <HeroContainerTransparent>
