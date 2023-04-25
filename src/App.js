@@ -130,13 +130,13 @@ export default function App() {
 
             
 
-            <Route path="/neuroevolution" element={<Welcome />} />
+            {/* <Route path="/neuroevolution" element={<Welcome />} /> */}
 
-            <Route path="/MachineLearning" element={<Machine_page />} />
+            {/* <Route path="/MachineLearning" element={<Machine_page />} /> */}
 
-            <Route path="/AImodels" element={<AI_page />} />
+            {/* <Route path="/AImodels" element={<AI_page />} /> */}
 
-            <Route path="/About" element={<About_Index />} />
+            {/* <Route path="/About" element={<About_Index />} /> */}
 
             {/* <Route path="/stock" element={<StockSearch />} /> */}
 
