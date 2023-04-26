@@ -1,4 +1,4 @@
-html,
+/* html,
 body,
 #root {
   margin: 0;
@@ -10,15 +10,12 @@ body,
 }
 
 body {
-  /* cursor: url('../public/images/ballerina.svg'), pointer; */
-  /* cursor: -webkit-image-set(url('../public/images/ballerina.svg') 1x, url('../public/images/ballerina.svg') 2x), pointer; */
   background: #272727;
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Roboto,
     Ubuntu, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .scrollArea {
-  /* position: relative; */
   top: 0;
   left: 0;
   width: 100vw;
@@ -57,4 +54,4 @@ body {
   margin-top: 0.8em;
   color: #f0f0f0;
   font-size: 0.6em;
-}
+} */

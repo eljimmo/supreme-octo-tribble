@@ -44,17 +44,17 @@ export default function Neuro_Index() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
 
-      {/* <HeroContainerTransparent>
+      <HeroContainerTransparent>
       <Frosted_App/>
 
-</HeroContainerTransparent> */}
+</HeroContainerTransparent>
 
 
 <HeroContainerTransparent>
       <Kamdo_App/>
 </HeroContainerTransparent>
 
-{/* <StockSearch/> */}
+<StockSearch/>
 
 
 
