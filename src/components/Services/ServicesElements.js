@@ -21,7 +21,7 @@ export const ServicesContainer = styled.div`
 
 export const ServicesContainer2 = styled.div`
   height: 900px;
-  display: flex;
+  display: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -80,9 +80,11 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #050505;
+  font-size: 3.5rem;
+  color: #f9f9f9;
   margin-bottom: 64px;
+  justify-content: center;
+  padding: 0 20px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

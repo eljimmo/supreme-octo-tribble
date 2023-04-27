@@ -24,7 +24,7 @@ import Home_Page from './pages/Home_page_index';
 // import Machine_page from './pages/Machine_Index';
 // import AI_page from '../src/pages/AI_Models';
 // import StockSearch from "./views/StockSearch/Stock_Search_Index";
-// import About_Index from "./pages/About";
+import About_Index from "./pages/About";
 
 export default function App() {
   return (
@@ -136,7 +136,7 @@ export default function App() {
 
             {/* <Route path="/AImodels" element={<AI_page />} /> */}
 
-            {/* <Route path="/About" element={<About_Index />} /> */}
+            <Route path="/About" element={<About_Index />} />
 
             {/* <Route path="/s" element={<StockSearch />} /> */}
 

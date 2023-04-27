@@ -390,7 +390,7 @@ export default function Services () {
 
 
 
-      <ServicesH1>Algorithms and Methods</ServicesH1>
+      <ServicesH1>Algorithmic Stock Trading Architexture</ServicesH1>
       
       <ServicesWrapper>
       <FeaturesCard/>

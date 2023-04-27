@@ -1,14 +1,4 @@
 import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
-import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
-
-import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree,
-
-
-} from '../components/InfoSection/Data';
 import { Affix, Button, Text, Transition, rem } from '@mantine/core';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
@@ -17,21 +7,22 @@ import { TopLine, Heading, WhiteTopLine, Heading2, Subtitle2, Column1 } from '..
 import Sidebar from '../components/Sidebar/index';
 import styled, { keyframes } from "styled-components";
 
-import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import { Cylinder } from '@react-three/drei'
 import * as THREE from 'three'
-import a15 from "./pexels_engineering.jpg";
 import Services from '../components/Services';
-import './pages.css'
+import { HeroBg, VideoBg } from '../components/HeroSection/HeroElements';
+import InfoSection from '../components/InfoSection';
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
-import HeroSection_3 from '../components/HeroSection/HeroIndex_3';
+
 import {
-  HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-} from '../components/HeroSection/HeroElements';
-import InfoSection6 from '../components/InfoSection/index_Infosection4';
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+
+
+} from '../components/InfoSection/Data';
+
 
 
 
@@ -47,27 +38,30 @@ export default function About_Index() {
   };
   return (
 
-    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#525252' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#040404' }}>
 
 
   
        
     <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-{/* <HeroSection_3/> */}
 
 
 <DesignSection/>
+
+{/* <HeroBg>
+        <VideoBg autoPlay loop muted src={require('../Assets/videos/iStock_optic.mp4').default} type='video/mp4' />
+
+      </HeroBg> */}
   
+      <Services/>
 
 
+< InfoSection {...homeObjOne} />
+< InfoSectionCanva {...homeObjTwo} />
+< InfoSection {...homeObjThree} />
 
  
-
-<InfoSection6 {...homeObjThree} />
-        <InfoSection6 {...homeObjTwo} />
-        {/* <InfoSectionCanva {...homeObjOne} /> */}
-
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
@@ -76,7 +70,6 @@ export default function About_Index() {
               I am still in Development.
             </Button>
       </Affix>
-{/* <Services/> */}
 
         <Footer/>
         {/* // </HeroContainer>  */}

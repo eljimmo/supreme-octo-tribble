@@ -22,7 +22,6 @@ import { useTexture,
   Html,
   Stage
  } from "@react-three/drei"
-import Triumphe_Place from '../3d_models/Triumphe_nation';
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import { LUTPass, LUTCubeLoader } from 'three-stdlib'
 import a15 from "./10.jpg";
