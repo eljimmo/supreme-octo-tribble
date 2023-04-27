@@ -1,33 +1,18 @@
 import React, { Suspense } from 'react';
 import styled, { keyframes } from "styled-components";
-import Video from './videos/iStock_optic.mp4';
+// import Video from './videos/iStock_optic.mp4';
 import {
-  HeroContainer,
   HeroBg,
   VideoBg,
   HeroContainerTransparent,
   HeroContent,
 } from './HeroElements';
-import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem } from '@mantine/core';
-import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
-import * as THREE from "three"
 import { useRef, useState } from "react"
-import { Canvas, extend, useFrame, useThree, useLoader } from "@react-three/fiber"
-import { useTexture,
-  shaderMaterial,
-  useAspect, 
-  useVideoTexture,
-  OrbitControls,
-  Effects,
-  Environment,
+import { Canvas} from "@react-three/fiber"
+import {
   Html,
-  Stage
  } from "@react-three/drei"
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import { LUTPass, LUTCubeLoader } from 'three-stdlib'
-import a15 from "./pexels_engineering.jpg";
 import '../components.css';
-import Model from '../GEO/Geo';
 import { Experience } from '../3d_models/experience';
 
 

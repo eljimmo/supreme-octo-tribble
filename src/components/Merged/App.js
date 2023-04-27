@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { BakeShadows, CameraControls, ContactShadows, Environment, Html } from '@react-three/drei'
+import { BakeShadows, ContactShadows, Environment, Html } from '@react-three/drei'
 import Model from './Model'
 import './styles.css'
 
