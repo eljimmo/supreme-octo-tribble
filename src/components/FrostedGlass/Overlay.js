@@ -36,15 +36,16 @@ export function Overlay() {
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
         <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '13px' }}>
-        Project Leibniz Analytica
+        {/* Project Leibniz Analytica */}
           <br />
-          <Typewriter
+          {/* <Typewriter
 options={{
 strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness', 'Creating Solutions'],
 autoStart: true,
 loop: true,
 }}
-/>        </a>
+/>         */}
+</a>
         <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>
 
         <Typewriter
@@ -80,9 +81,7 @@ loop: true,
           {/* <p className="price">$Lorem ipsum</p> */}
           <p>
             Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis.
-            Neuro Evolution Algorithms are a type of Artificial Intelligence Process that is founded on the concept of biology and evolution.
-            By mimicking the natural selection processes found in the biological evolution found of animals, we can create a system that can learn and adapt to its environment by creating individuals in a population.
-            Subsequently the traits that are found to be beneficial towards optiumium are favored, and the traits that are found to be detrimental towards optiumium are removed in the next generation of individuals.
+            
 
                       </p>
         </List>
@@ -101,13 +100,14 @@ export function Overlay2() {
         <a href="https://pmnd.rs/" style={{ position: 'relative', bottom: 40, left: 40, fontSize: '13px' }}>
         Project Leibniz Analytica
           <br />
-          <Typewriter
+          {/* <Typewriter
 options={{
 strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness', 'Creating Solutions'],
 autoStart: true,
 loop: true,
 }}
-/>        </a>
+/>         */}
+</a>
         <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>
 
         <Typewriter
@@ -148,7 +148,6 @@ loop: true,
           </h3>
   
           <p>
-            Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis.
             Neuro Evolution Algorithms are a type of Artificial Intelligence Process that is founded on the concept of biology and evolution.
             By mimicking the natural selection processes found in the biological evolution found of animals, we can create a system that can learn and adapt to its environment by creating individuals in a population.
             Subsequently the traits that are found to be beneficial towards optiumium are favored, and the traits that are found to be detrimental towards optiumium are removed in the next generation of individuals.
