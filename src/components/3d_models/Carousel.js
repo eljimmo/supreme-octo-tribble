@@ -272,8 +272,6 @@ export const Carousel = (props) => {
             <Float speed={5} floatIntensity={0.3}>
 
                           <Model
-                // position={[-4, 3, -5]}
-
                 position={[4.5, 5, 5.5]}
                 scale={[1.6, 1.6, 1.6]}
                 rotation-y={Math.PI / 2}
