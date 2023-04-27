@@ -25,7 +25,7 @@ import Brainmodel from "./brain";
 import SombreroSuperficieMath from './Sombrero_superficie_math';
 import Model from '../GEO/Geo';
 import Scenemodel from './Scene_draco';
-import { Triumphe_Place } from "./Triumphe_nation";
+// import { Triumphe_Place } from "./Triumphe_nation";
 
 
 

@@ -199,7 +199,7 @@ export default function K_App() {
       <fog attach="fog" args={['black', 15, 21.5]} />
 
 
-      {/* <Grace_Model rotation={[0, Math.PI, 0]} position={[-2.0, 0, -3]} scale={[0.5, 0.5, 0.5]} /> */}
+      {/* <Triumphe_Place rotation={[0, Math.PI, 0]} position={[-2.0, 0, -3]} scale={[0.5, 0.5, 0.5]} /> */}
 
 
 
