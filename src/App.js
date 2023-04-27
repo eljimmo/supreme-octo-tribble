@@ -20,7 +20,7 @@ import React from "react";
 // import Neuro_scroll from "./components/ScrollControl/src/Neuro_Evo";
 // import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
-import Neuro_Index from '../src/pages/Neuro_Evol';
+import Home_Page from './pages/Home_page_index';
 // import Machine_page from './pages/Machine_Index';
 // import AI_page from '../src/pages/AI_Models';
 // import StockSearch from "./views/StockSearch/Stock_Search_Index";
@@ -125,7 +125,7 @@ export default function App() {
           
             <Route path="/login" element={<Login />} /> */}
             
-            <Route path="/" element={<Neuro_Index />} />
+            <Route path="/" element={<Home_Page />} />
 
 
             

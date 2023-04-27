@@ -19,7 +19,7 @@ import VideoSection from '../components/Videos_Section';
 
 import ScApp from '../components/ScrollControl/src/App';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
-import Neuro_page from '../../src/components/ScrollControl/src/Neuro_Evo';
+import Neuro_page from '../components/ScrollControl/src/Neuro_Evo';
 import './pages.css'
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
@@ -32,7 +32,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
 
-export default function Neuro_Index() {
+export default function Home_Page() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {

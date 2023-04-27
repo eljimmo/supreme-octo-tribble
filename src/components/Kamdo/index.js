@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './styles.css'
 import K_App from './App'
 import { Logo } from '@pmndrs/branding'
-import { Overlay2 } from '../FrostedGlass/Overlay'
+import { Overlay3 } from '../FrostedGlass/Overlay'
 
 // function Overlay() {
 //   return (
@@ -32,7 +32,7 @@ export default function Kamdo_App() {
   return (
   <>
     <K_App />
-    <Overlay2 />
+    <Overlay3/>
   </>
   )
 } 
