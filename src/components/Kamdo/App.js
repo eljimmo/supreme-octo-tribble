@@ -4,18 +4,27 @@ import { useGLTF, Stage, Grid, OrbitControls, Environment } from '@react-three/d
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { easing } from 'maath'
 import Model from '../GEO/Geo'
+import Ybot from '../Perfomance/ybot';
+// import InstancedModel from '../Merged/Model';
 
 
 export default function K_App() {
   return (
     <Canvas eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 4], fov: 40 }}>
       <fog attach="fog" args={['black', 15, 21.5]} />
+
+
+      {/* <InstancedModel rotation={[0, Math.PI, 0]} position={[-4.9, -0.85, -2]} scale={[]} /> */}
+
+
+
+      <Ybot rotation={[0, Math.PI, 0]} position={[2.0, -2, -3]} />
+
+
         <Kamdo rotation={[0, Math.PI, 0]} position={[-2.5, -1.85, 0]} />
 
 
-        <Model rotation={[0, Math.PI, 0]} position={[4, 0.50, -3]} 
-      
-      />
+        <Model rotation={[0, Math.PI, 0]} position={[4, 0.50, -3]} />
 
       <Grid renderOrder={-1} position={[2, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} sectionColor={[0.5, 0.5, 10]} fadeDistance={30} />
       {/* <OrbitControls autoRotate autoRotateSpeed={0.05} enableZoom={false} makeDefault minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} /> */}
