@@ -1,28 +1,16 @@
 import React, { useState } from 'react';
 import InfoSection from '../components/InfoSection';
-
 import {
   homeObjOne,
-  // homeObjTwo,
-  // homeObjThree,
-  // homeObjFive,
-
-
 } from '../components/InfoSection/Data';
 import { Affix, Button, rem } from '@mantine/core';
-// import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
-// import DesignSection from '../components/DesignSection';
-// import VideoSection from '../components/Videos_Section';
 
 import ScApp from '../components/ScrollControl/src/App';
-// import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
-// import KamdoApp from '../components/Kamdo/index';
 import FrostedApp from '../components/FrostedGlass/index';
-// import InfoSection6 from '../components/InfoSection/index_Infosection4';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 

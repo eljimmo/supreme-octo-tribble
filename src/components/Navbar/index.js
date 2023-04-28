@@ -53,7 +53,7 @@ const Navbar = ({ toggle }) => {
 
 
                 <NavLinks2
-                  to='/about'
+                  to='/About'
                 >
                   About
                 </NavLinks2>

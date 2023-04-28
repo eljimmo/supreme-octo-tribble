@@ -1,4 +1,4 @@
-import { React, Suspense } from 'react';
+import { React } from 'react';
 // import { Button, HrefButton, Button1 } from '../ButtonElements';
 import {
   InfoContainer,

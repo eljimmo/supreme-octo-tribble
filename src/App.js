@@ -22,9 +22,9 @@ import React from "react";
 // import Dashboard from "../src/views/Dashboard";
 import HomePage from './pages/Home_page_index';
 // import Machine_page from './pages/Machine_Index';
-// import AI_page from '../src/pages/AI_Models';
+import AIPage from '../src/pages/AI_Models';
 // import StockSearch from "./views/StockSearch/Stock_Search_Index";
-// import About_Index from "./pages/About";
+// import AboutIndex  from "../src/pages/About";
 
 export default function App() {
   return (
@@ -134,9 +134,9 @@ export default function App() {
 
             {/* <Route path="/MachineLearning" element={<Machine_page />} /> */}
 
-            {/* <Route path="/AImodels" element={<AI_page />} /> */}
+            <Route path="/AImodels" element={<AIPage />} />
 
-            {/* <Route path="/About" element={<About_Index />} /> */}
+            {/* <Route path="/About" element={<AboutIndex />} /> */}
 
             {/* <Route path="/s" element={<StockSearch />} /> */}
 
