@@ -20,7 +20,7 @@ import ScApp from '../components/ScrollControl/src/App';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
-import KamdoApp from '../components/Kamdo/index';
+// import KamdoApp from '../components/Kamdo/index';
 import FrostedApp from '../components/FrostedGlass/index';
 // import InfoSection6 from '../components/InfoSection/index_Infosection4';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
