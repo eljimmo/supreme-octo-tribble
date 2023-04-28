@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
@@ -7,56 +7,19 @@ import {
   Nav,
   NavbarContainer,
   NavItem,
-  NavLinks,
   NavLinks2,
   NavLogo,
   NavMenu,
 } from './NavbarElements';
-import {
-  SidebarContainer,
-  Icon,
-  CloseIcon,
-  SidebarWrapper,
-  SidebarMenu,
-  SidebarLink,
-  SidebarRoute,
-  SidebarLink2,
-  SideBtnWrap
-} from '../Sidebar/SidebarElements';
-import {
-  HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  HeroP,
-  AnimatedGradientText,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
-} from '../HeroSection/HeroElements';
-import { Text, Cylinder, meshBounds, Line, Stage, useFBO, useVideoTexture, useAspect, useTexture } from '@react-three/drei'
-import * as THREE from 'three'
-import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
 
 
 
-function VideoText(props) {
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/drei.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
-  useEffect(() => void video.play(), [video])
-  return (
-    <Text fontSize={5} letterSpacing={-0.06} {...props}>
-      LEIBNIZ
-      <meshBasicMaterial toneMapped={false}>
-        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
-      </meshBasicMaterial>
-    </Text>
-  )
-}
+
+
 
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [hover, setHover] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
