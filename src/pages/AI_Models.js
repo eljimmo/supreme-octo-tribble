@@ -29,6 +29,7 @@ import { HeroContainerTransparent } from '../components/HeroSection/HeroElements
 // import InfoSection6 from '../components/InfoSection/index_Infosection4';
 // import Services from '../components/Services';
 // import StockSearch from '../views/StockSearch/Stock_Search_Index';
+import KamdoApp from '../components/Kamdo/index';
 
 export default function AIPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function AIPage() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContainerTransparent>
-      {/* <P_App_1/> */}
+      <KamdoApp/>
 </HeroContainerTransparent>
 
 
