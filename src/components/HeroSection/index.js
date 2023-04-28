@@ -1,19 +1,14 @@
 import React, { useState, Suspense, useEffect, useRef, useMemo } from 'react';
-import Video from './videos/iStock_optic.mp4';
+// import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
-  HeroContainerexportd0d0d0,
   HeroBg,
-  VideoBg,
   HeroContent,
 } from './HeroElements';
 import { Canvas, useFrame, useThree, createPortal } from '@react-three/fiber'
-import { Text, Loader, Line, Shadow, useTexture, meshBounds, Cylinder, useAspect, OrbitControls, Text3D, Html, Scroll, useScroll } from '@react-three/drei'
+import { Text, Cylinder } from '@react-three/drei'
 import * as THREE from 'three'
-import { Experience } from '../3d_models/experience';
-import Model from '../GEO/Geo';
 import Typewriter from 'typewriter-effect';
-import Frosted_App from '../FrostedGlass';
 
 
 

@@ -1,41 +1,39 @@
-import React, { useState } from 'react';
-import { Affix, Button, Text, Transition, rem } from '@mantine/core';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer/index';
-import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
-import Sidebar from '../components/Sidebar/index';
-import M_App from '../components/Merged/App';
+// import React, { useState } from 'react';
+// import { Affix, Button, Text, Transition, rem } from '@mantine/core';
+// import Navbar from '../components/Navbar';
+// import Footer from '../components/Footer/index';
+// import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
+// import Sidebar from '../components/Sidebar/index';
+// import M_App from '../components/Merged/App';
 
-// import StockSearch from '../views/StockSearch/Stock_Search_Index';
-
-
-import './pages.css'
+// // import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
-
-export default function Machine_page() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-  return (
-    <>
-      <Navbar toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainerTransparent>
-      {/* <StockSearch/> */}
+// import './pages.css'
 
 
-      <M_App/>
-      </HeroContainerTransparent>
-      {/* <InfoSection6 {...homeObjFour} /> */}
 
-{/* <StockSearch/> */}
+// export default function Machine_page() {
+//   const [isOpen, setIsOpen] = useState(false);
 
-      {/* <Machine_Services/> */}
+//   const toggle = () => {
+//     setIsOpen(!isOpen);
+//   };
+//   return (
+//     <>
+//       <Navbar toggle={toggle} />
+//       <Sidebar isOpen={isOpen} toggle={toggle} />
+//       <HeroContainerTransparent>
+//       {/* <StockSearch/> */}
 
 
+//       <M_App/>
+//       </HeroContainerTransparent>
+//       {/* <InfoSection6 {...homeObjFour} /> */}
+
+// {/* <StockSearch/> */}
+
+//       {/* <Machine_Services/> */}
 
 
 
@@ -45,17 +43,19 @@ export default function Machine_page() {
 
 
 
-      <Affix position={{ bottom: rem(20), right: rem(20) }}>
-            <Button
-              variant="outline"
-            >
-              I am still in Development.
-            </Button>
-      </Affix>
 
 
-        <Footer/>
-        </>
-  );
-}
+//       <Affix position={{ bottom: rem(20), right: rem(20) }}>
+//             <Button
+//               variant="outline"
+//             >
+//               I am still in Development.
+//             </Button>
+//       </Affix>
+
+
+//         <Footer/>
+//         </>
+//   );
+// }
 

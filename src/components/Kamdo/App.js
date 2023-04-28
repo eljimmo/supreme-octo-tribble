@@ -1,12 +1,11 @@
 import { useRef, useState, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, Stage, Grid, OrbitControls, Environment, Cylinder
+import { useGLTF, Grid, Environment, Cylinder
 } from '@react-three/drei'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { easing } from 'maath'
-import Model from '../GEO/Geo'
+// import Model from '../GEO/Geo'
 import Ybot from '../Perfomance/ybot';
-import InstancedModel from '../Merged/Model';
 import * as THREE from "three";
 
 
