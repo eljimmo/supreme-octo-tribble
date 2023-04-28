@@ -18,7 +18,6 @@ import Footer from '../components/Footer/index';
 
 import ScApp from '../components/ScrollControl/src/App';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
-// import './pages.css'
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import Kamdo_App from '../components/Kamdo/index';
@@ -41,7 +40,7 @@ export default function Home_Page() {
 
 
       <HeroContainerTransparent>
-      <Frosted_App/>
+      {/* <Frosted_App/> */}
 
 </HeroContainerTransparent>
 
