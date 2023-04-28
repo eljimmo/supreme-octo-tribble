@@ -27,7 +27,7 @@ import FrostedApp from '../components/FrostedGlass/index';
 
 
 
-export default function Home_Page() {
+export default function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {

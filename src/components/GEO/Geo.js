@@ -2,7 +2,6 @@ import * as THREE from 'three'
 import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useGLTF, MeshDistortMaterial, Shadow } from '@react-three/drei'
-import Text from './Text'
 import state from './state'
 
 

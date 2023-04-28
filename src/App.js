@@ -14,17 +14,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { Subscriptions } from "./pages/Subscriptions";
 // import Redirect from "./pages/Redirect";
 // import { Account } from "./pages/Account";
-import Welcome from "./pages/index";
+// import Welcome from "./pages/index";
 import React from "react";
 // import Moksha from "./components/Moksha";
 // import Neuro_scroll from "./components/ScrollControl/src/Neuro_Evo";
 // import RTApp from "./components/Router_Transit/App";
 // import Dashboard from "../src/views/Dashboard";
-import Home_Page from './pages/Home_page_index';
+import HomePage from './pages/Home_page_index';
 // import Machine_page from './pages/Machine_Index';
 // import AI_page from '../src/pages/AI_Models';
 // import StockSearch from "./views/StockSearch/Stock_Search_Index";
-import About_Index from "./pages/About";
+// import About_Index from "./pages/About";
 
 export default function App() {
   return (
@@ -125,7 +125,7 @@ export default function App() {
           
             <Route path="/login" element={<Login />} /> */}
             
-            <Route path="/" element={<Home_Page />} />
+            <Route path="/" element={<HomePage />} />
 
 
             
