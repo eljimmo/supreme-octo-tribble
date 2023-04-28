@@ -1,14 +1,14 @@
 import Quote from '../Quote/QuoteIndex';
 import DataChart from '../DataChart/DC_Index';
-import MarketNotional_Chart from '../DataChart/MarketNotional_Chart_Index';
+// import MarketNotional_Chart from '../DataChart/MarketNotional_Chart_Index';
 import Error from '../Error/E_Index';
 import Company from "../Company/C_Index";
-import MyCharts from "../DataChart/EXamples";
+// import MyCharts from "../DataChart/EXamples";
 import '../style.css';
 import { Row, Col } from 'reactstrap';
 import { Grid, Container, Text } from '@mantine/core';
 import MarketChangeOverTimeChart from '../DataChart/MarketChangeOverTime_Index';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 
 const Content = ({ data }) => {

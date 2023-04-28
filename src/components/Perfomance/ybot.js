@@ -1,11 +1,11 @@
 import * as THREE from 'three'
-import { Suspense, useRef, useState, useMemo } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Text, useGLTF, AdaptiveDpr, Html, Cylinder } from '@react-three/drei'
-import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
-import { KernelSize, BlendFunction } from 'postprocessing'
+import { useRef, useState } from 'react'
+import { useFrame, useThree } from '@react-three/fiber'
+import { useGLTF} from '@react-three/drei'
+// import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
+// import { KernelSize, BlendFunction } from 'postprocessing'
 import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 
 
 

@@ -1,13 +1,13 @@
 import { React, useState, useEffect, Suspense } from 'react';
 import {
   SidebarContainer,
-  Icon,
-  CloseIcon,
+  // Icon,
+  // CloseIcon,
   SidebarWrapper,
   SidebarMenu,
-  SidebarLink,
+  // SidebarLink,
   SidebarRoute,
-  SideBtnWrap
+  // SideBtnWrap
 } from './SidebarElements';
 
 

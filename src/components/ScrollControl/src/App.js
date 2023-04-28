@@ -1,8 +1,8 @@
 import * as THREE from 'three'
-import { useRef, useState } from 'react'
-import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber'
-import { useFBO, useGLTF, useScroll, Text, Image, Scroll, Preload, ScrollControls, MeshTransmissionMaterial } from '@react-three/drei'
-import { easing } from 'maath'
+import { useRef } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { useScroll, Text, Image, Scroll, Preload, ScrollControls } from '@react-three/drei'
+// import { easing } from 'maath'
 import Typewriter from 'typewriter-effect';
 
 
