@@ -136,63 +136,63 @@ export const TextRing = ({ children, position, color, fontSizing, repeatCount, r
 }
 
 
-function Grace_Model(props) {
-  const group = useRef()
-  const light = useRef()
-  const { nodes } = useGLTF('/graces-draco.glb')
-  useFrame((state, delta) => {
-    easing.dampE(group.current.rotation, [0, -state.pointer.x * (Math.PI / 10), 0], 1.5, delta)
-    easing.damp3(group.current.position, [0, -5.5, 1 - Math.abs(state.pointer.x)], 1, delta)
-    easing.damp3(light.current.position, [state.pointer.x * 12, 0, 8 + state.pointer.y * 4], 0.2, delta)
-  })
-  return (
-    <group ref={group} {...props}>
-      <mesh castShadow receiveShadow geometry={nodes.Node_3.geometry} rotation={[-Math.PI / 2, 0, 0]} scale={0.2} dispose={null}>
-        <meshLambertMaterial color="#404044" />
-      </mesh>
-      {/* <Annotation position={[1.75, 3, 2.5]}>
-        NeuroEvolution <span style={{ fontSize: '1.5em' }}></span>
-      </Annotation> */}
-      {/* <Annotation position={[-4.5, 3.6, -3]}>
-        Markov Chains <span style={{ fontSize: '1.5em' }}></span>
-      </Annotation> */}
-<TextRing
-          position={[3, 7.5, 0]}
-          rotation={[0, 0, 0.15]}
-          color={'red'}
-          fontSizing={390}
-          repeatCount={4}>
-          AGENCY
-        </TextRing>
-        <TextRing
-          position={[-.50, 9.0, 0]}
-          rotation={[0, 0, 0.15]}
-          color={'pink'}
-          fontSizing={390}
-          repeatCount={4}>
-          EVOLUTION
-        </TextRing>
-        <TextRing
-          position={[-3.0, 7.50, 1]}
-          rotation={[0, 0, 0.15]}
-          color={'green'}
-          fontSizing={390}
-          repeatCount={7}>
-          MEMORY
-        </TextRing>
-      {/* <Annotation position={[1.5, 8, -3]}>
-        <span style={{ fontSize: '1.5em' }}></span> Long Short-Term Memory
-      </Annotation> */}
-      <spotLight angle={0.5} penumbra={0.5} ref={light} castShadow intensity={10} shadow-mapSize={1024} shadow-bias={-0.001}>
-        <orthographicCamera attach="shadow-camera" args={[-10, 10, -10, 10, 0.1, 50]} />
-      </spotLight>
-    </group>
-  )
-}
+// function Grace_Model(props) {
+//   const group = useRef()
+//   const light = useRef()
+//   const { nodes } = useGLTF('/graces-draco.glb')
+//   useFrame((state, delta) => {
+//     easing.dampE(group.current.rotation, [0, -state.pointer.x * (Math.PI / 10), 0], 1.5, delta)
+//     easing.damp3(group.current.position, [0, -5.5, 1 - Math.abs(state.pointer.x)], 1, delta)
+//     easing.damp3(light.current.position, [state.pointer.x * 12, 0, 8 + state.pointer.y * 4], 0.2, delta)
+//   })
+//   return (
+//     <group ref={group} {...props}>
+//       <mesh castShadow receiveShadow geometry={nodes.Node_3.geometry} rotation={[-Math.PI / 2, 0, 0]} scale={0.2} dispose={null}>
+//         <meshLambertMaterial color="#404044" />
+//       </mesh>
+//       {/* <Annotation position={[1.75, 3, 2.5]}>
+//         NeuroEvolution <span style={{ fontSize: '1.5em' }}></span>
+//       </Annotation> */}
+//       {/* <Annotation position={[-4.5, 3.6, -3]}>
+//         Markov Chains <span style={{ fontSize: '1.5em' }}></span>
+//       </Annotation> */}
+// <TextRing
+//           position={[3, 7.5, 0]}
+//           rotation={[0, 0, 0.15]}
+//           color={'red'}
+//           fontSizing={390}
+//           repeatCount={4}>
+//           AGENCY
+//         </TextRing>
+//         <TextRing
+//           position={[-.50, 9.0, 0]}
+//           rotation={[0, 0, 0.15]}
+//           color={'pink'}
+//           fontSizing={390}
+//           repeatCount={4}>
+//           EVOLUTION
+//         </TextRing>
+//         <TextRing
+//           position={[-3.0, 7.50, 1]}
+//           rotation={[0, 0, 0.15]}
+//           color={'green'}
+//           fontSizing={390}
+//           repeatCount={7}>
+//           MEMORY
+//         </TextRing>
+//       {/* <Annotation position={[1.5, 8, -3]}>
+//         <span style={{ fontSize: '1.5em' }}></span> Long Short-Term Memory
+//       </Annotation> */}
+//       <spotLight angle={0.5} penumbra={0.5} ref={light} castShadow intensity={10} shadow-mapSize={1024} shadow-bias={-0.001}>
+//         <orthographicCamera attach="shadow-camera" args={[-10, 10, -10, 10, 0.1, 50]} />
+//       </spotLight>
+//     </group>
+//   )
+// }
 
 
 
-export default function K_App() {
+export default function KApp() {
   return (
     <Canvas eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 4], fov: 40 }}>
       <fog attach="fog" args={['black', 15, 21.5]} />

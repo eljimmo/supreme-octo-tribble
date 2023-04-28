@@ -1,6 +1,6 @@
 // import { createRoot } from 'react-dom/client'
 import './styles.css'
-import K_App from './App'
+import KApp from './App'
 // import { Logo } from '@pmndrs/branding'
 import { Overlay3 } from '../FrostedGlass/Overlay'
 
@@ -28,10 +28,10 @@ import { Overlay3 } from '../FrostedGlass/Overlay'
 // }
 
 
-export default function Kamdo_App() {
+export default function KamdoApp() {
   return (
   <>
-    <K_App />
+    <KApp />
     <Overlay3/>
   </>
   )
