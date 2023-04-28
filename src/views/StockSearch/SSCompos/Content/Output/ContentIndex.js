@@ -6,7 +6,7 @@ import Company from "../Company/C_Index";
 // import MyCharts from "../DataChart/EXamples";
 import '../style.css';
 import { Row, Col } from 'reactstrap';
-import { Grid, Container, Text } from '@mantine/core';
+import { Grid, Text } from '@mantine/core';
 import MarketChangeOverTimeChart from '../DataChart/MarketChangeOverTime_Index';
 // import {Link} from "react-router-dom";
 
@@ -14,10 +14,10 @@ import MarketChangeOverTimeChart from '../DataChart/MarketChangeOverTime_Index';
 const Content = ({ data }) => {
   const { quote, company } = data;
 
-  const hideMissingLogo = () => {
-    const logo = document.querySelector(".company-logo");
-    logo.style.display = "none";
-  };
+  // const hideMissingLogo = () => {
+  //   const logo = document.querySelector(".company-logo");
+  //   logo.style.display = "none";
+  // };
 
   if (data.error) return <Error data={data} />;
 

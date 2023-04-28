@@ -1,4 +1,4 @@
-import { unixToDateString } from "../../../utils/date";
+// import { unixToDateString } from "../../../utils/date";
 import moment from "moment";
 
 const setSeries = (data) => {
@@ -36,9 +36,9 @@ const setSeries = (data) => {
       text: 'Day Market Change Over Time Chart',
       align: 'center'
     },
-    stroke: {
-      width: [3, 1]
-    },
+    // stroke: {
+    //   width: [3, 1]
+    // },
     // tooltip: {
     //   shared: true,
     //   custom: [function({seriesIndex, dataPointIndex, w}) {
