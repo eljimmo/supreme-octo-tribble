@@ -1,5 +1,5 @@
 import { React, Suspense } from 'react';
-import { Button, HrefButton, Button1 } from '../ButtonElements';
+// import { Button, HrefButton, Button1 } from '../ButtonElements';
 import {
   InfoContainer,
   InfoWrapper,
@@ -10,15 +10,15 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
+  // BtnWrap,
   ImgWrap,
   Img
 } from './InfoElements';
-import { Canvas } from '@react-three/fiber'
+// import { Canvas } from '@react-three/fiber'
 import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
-import Model from '../GEO/Geo'
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import Scenemodel from '../3d_models/Scene_draco'
+// import Model from '../GEO/Geo'
+// import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
+// import Scenemodel from '../3d_models/Scene_draco'
 // import { Button } from '@mantine/core';
 
 

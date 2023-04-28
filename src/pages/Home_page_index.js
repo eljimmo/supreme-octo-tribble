@@ -64,7 +64,7 @@ export default function HomePage() {
 </HeroContainerTransparent> */}
 
 
-<ScApp/>
+{/* <ScApp/> */}
 
 
 
