@@ -16,7 +16,7 @@ import Footer from '../components/Footer/index';
 // import DesignSection from '../components/DesignSection';
 // import VideoSection from '../components/Videos_Section';
 
-// import ScApp from '../components/ScrollControl/src/App';
+import ScApp from '../components/ScrollControl/src/App';
 // import { HeroContainerCanva, HeroContainer, HeroContainer200, HeroContainerTransparent, HeroContainer400, HeroContent2, HeroContent3, HeroContent }  from "../components/HeroSection/HeroElements";
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
@@ -64,7 +64,7 @@ export default function HomePage() {
 </HeroContainerTransparent> */}
 
 
-{/* <ScApp/> */}
+<ScApp/>
 
 
 
