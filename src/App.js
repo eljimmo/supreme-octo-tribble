@@ -136,7 +136,7 @@ export default function App() {
 
             {/* <Route path="/AImodels" element={<AI_page />} /> */}
 
-            <Route path="/About" element={<About_Index />} />
+            {/* <Route path="/About" element={<About_Index />} /> */}
 
             {/* <Route path="/s" element={<StockSearch />} /> */}
 

@@ -46,18 +46,18 @@ export default function Home_Page() {
 </HeroContainerTransparent>
 
 
-<HeroContainerTransparent>
+{/* <HeroContainerTransparent>
       <Kamdo_App/>
-</HeroContainerTransparent>
+</HeroContainerTransparent> */}
 
-<StockSearch/>
-
-
+{/* <StockSearch/> */}
 
 
 
 
-<InfoSection {...homeObjOne} />
+
+
+{/* <InfoSection {...homeObjOne} /> */}
 
 {/* 
 <HeroContainerTransparent>
