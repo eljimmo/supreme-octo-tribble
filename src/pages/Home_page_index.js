@@ -45,9 +45,9 @@ export default function HomePage() {
 </HeroContainerTransparent>
 
 
-<HeroContainerTransparent>
+{/* <HeroContainerTransparent>
       <KamdoApp/>
-</HeroContainerTransparent>
+</HeroContainerTransparent> */}
 
 <StockSearch/>
 
