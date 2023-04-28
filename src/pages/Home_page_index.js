@@ -21,7 +21,7 @@ import Footer from '../components/Footer/index';
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 // import Kamdo_App from '../components/Kamdo/index';
-// import Frosted_App from '../components/FrostedGlass/index';
+import FrostedApp from '../components/FrostedGlass/index';
 // import InfoSection6 from '../components/InfoSection/index_Infosection4';
 // import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
@@ -40,7 +40,7 @@ export default function Home_Page() {
 
 
       <HeroContainerTransparent>
-      {/* <Frosted_App/> */}
+      <FrostedApp/>
 
 </HeroContainerTransparent>
 

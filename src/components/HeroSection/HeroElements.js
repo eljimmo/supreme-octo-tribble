@@ -1,7 +1,7 @@
 import styled,  { keyframes } from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import { Link as LinkR } from 'react-router-dom';
+// import { Link as LinkR } from 'react-router-dom';
 
 
 
