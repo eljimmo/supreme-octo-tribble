@@ -20,7 +20,6 @@ import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
 import Model from '../GEO/Geo'
 import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
 import Scenemodel from '../3d_models/Scene_draco'
-// import { Button } from '@mantine/core';
 
 
 
@@ -28,25 +27,20 @@ import Scenemodel from '../3d_models/Scene_draco'
 
 
 const InfoSection6 = ({
-  lightBg,
   imgStart,
   topLine,
   lightText,
   headline,
   description,
-  buttonLabel,
   img,
   alt,
-  id,
   primary,
   darkText,
-  dark,
-  dark2
+
 }) => {
   console.log(primary);
   return (
     <>
-      {/* <InfoContainer lightBg={lightBg} id={id}> */}
       <InfoContainer3>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
