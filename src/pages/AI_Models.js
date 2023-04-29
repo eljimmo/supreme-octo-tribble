@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 // import HeroSection from '../components/HeroSection';
-// import InfoSection from '../components/InfoSection';
+import InfoSection from '../components/InfoSection';
 
-// import {
-//   homeObjOne,
-//   homeObjTwo,
-//   homeObjThree,
-//   homeObjSix,
+import {
+  // homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+  // homeObjSix,
 
 
-// } from '../components/InfoSection/Data';
+} from '../components/InfoSection/Data';
+import InfoSectionCanva from '../components/InfoSection/index_Canvas';
+
 // import Services from '../components/Services';
 import { Affix, Button, rem } from '@mantine/core';
 // import HeroSection_2 from '../components/HeroSection/HeroIndex_2';
@@ -44,6 +46,10 @@ export default function AIPage() {
       <HeroContainerTransparent>
       <KamdoApp/>
 </HeroContainerTransparent>
+{/* <InfoSection {...homeObjOne} /> */}
+  <InfoSectionCanva {...homeObjTwo} />
+<InfoSection {...homeObjThree} /> 
+{/* <InfoSection {...homeObjSix} /> */}
 
 
 
