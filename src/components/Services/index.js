@@ -1,29 +1,43 @@
 import React from 'react';
 import {
-  ServicesContainer,
+  // ServicesContainer,
   ServicesContainer2,
   ServicesH1,
   ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
-  ServicesH2,
-  ServicesP
+  // ServicesCard,
+  // ServicesIcon,
+  // ServicesH2,
+  // ServicesP
 } from './ServicesElements';
 import * as THREE from "three"
 import { useRef, useState } from "react"
-import { RGBELoader } from 'three-stdlib'
-import { Canvas, extend, useFrame, useThree, useLoader } from "@react-three/fiber"
-import { useTexture, shaderMaterial, useCursor, OrbitControls,
-  Text3D,
-  Instance,
-  useGLTF,
-  Instances,
-  Environment,
-  Lightformer,
-  RandomizedLight,
-  AccumulativeShadows,
-  MeshTransmissionMaterial } from "@react-three/drei"
-import { Card, Image, Group, Badge, Text, createStyles, Center, Button, rem,
+// import { RGBELoader } from 'three-stdlib'
+import { Canvas, extend,
+  useFrame, 
+  // useThree, 
+  // useLoader 
+} from "@react-three/fiber"
+import { useTexture, shaderMaterial, 
+  // useCursor, 
+  // OrbitControls,
+  // Text3D,
+  // Instance,
+  // useGLTF,
+  // Instances,
+  // Environment,
+  // Lightformer,
+  // RandomizedLight,
+  // AccumulativeShadows,
+  // MeshTransmissionMaterial 
+} from "@react-three/drei"
+import { Card, 
+  // Image, 
+  Group,
+  Badge, 
+  Text, 
+  createStyles, Center, 
+  Button, 
+  rem,
   SimpleGrid,
 Title,
 TextInput,
@@ -31,10 +45,10 @@ Textarea,
 MantineProvider,
 Container,
 Accordion,
-getStylesRef,
+// getStylesRef,
 } from '@mantine/core';
 import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
-import { IconPlus } from '@tabler/icons-react';
+// import { IconPlus } from '@tabler/icons-react';
 
 
 
@@ -118,7 +132,9 @@ export function FeaturesCard() {
 
       <Group position="apart" mt="md">
         <div>
-          <Text fw={500}>Leibniz Analytica Modeling </Text>
+          <Text fw={500}>
+            Leibniz Analytica Modeling
+           </Text>
           <Text fz="xs" c="dimmed">
             Over 100+ Algorithms
           </Text>
@@ -140,7 +156,7 @@ export function FeaturesCard() {
         <Group spacing={30}>
           <div>
             <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-              $50.00
+LOREUM IPSUM
             </Text>
             <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
               Per Month
@@ -199,7 +215,7 @@ export function FeaturesCard2() {
         <Group spacing={30}>
           <div>
             <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-              $100.00
+            LOREUM IPSUM
             </Text>
             <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
               Per Month
@@ -394,7 +410,6 @@ export default function Services () {
       
       <ServicesWrapper>
       <FeaturesCard/>
-      {/* <ContactUs/> */}
 
       <FeaturesCard2/>
       <FeaturesCard/>

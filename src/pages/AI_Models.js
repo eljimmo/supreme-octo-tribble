@@ -29,7 +29,7 @@ import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
 // import P_App_1 from '../components/Perfomance/index';
 // import InfoSection6 from '../components/InfoSection/index_Infosection4';
-// import Services from '../components/Services';
+import Services from '../components/Services';
 // import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import KamdoApp from '../components/Kamdo/index';
 
@@ -61,7 +61,7 @@ export default function AIPage() {
             </Button>
       </Affix>
 
-
+      <Services/>
 
         <Footer/>
     </>
