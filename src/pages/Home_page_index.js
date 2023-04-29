@@ -6,14 +6,12 @@ import {
 import { Affix, Button, rem } from '@mantine/core';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
-
 import ScApp from '../components/ScrollControl/src/App';
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
-// import Experience from '../components/3d_models/experience';
-// import { Scene } from 'three';
+
 
 
 
@@ -32,22 +30,6 @@ export default function HomePage() {
       <HeroContainerTransparent>
       <FrostedApp/>
 
-{/* </HeroContainerTransparent> */}
-
-
-{/* <HeroContainerTransparent>
-      <KamdoApp/>
-</HeroContainerTransparent> */}
-
-
-{/* <HeroContainerTransparent> */}
-
-
-
-  {/* <Scene>
-
-  <Experience/>
-  </Scene> */}
       
 </HeroContainerTransparent>
 
@@ -59,12 +41,6 @@ export default function HomePage() {
 
 
 <InfoSection {...homeObjOne} />
-
-{/* 
-<HeroContainerTransparent>
-      <DesignSection/>
-</HeroContainerTransparent> */}
-
 
 <ScApp/>
 
