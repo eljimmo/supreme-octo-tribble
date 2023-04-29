@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  // ServicesContainer,
-  ServicesContainer2,
+  ServicesContainer,
+  // ServicesContainer2,
   ServicesH1,
   ServicesWrapper,
   // ServicesCard,
@@ -11,27 +11,14 @@ import {
 } from './ServicesElements';
 import * as THREE from "three"
 import { useRef, useState } from "react"
-// import { RGBELoader } from 'three-stdlib'
 import { Canvas, extend,
   useFrame, 
-  // useThree, 
-  // useLoader 
+
 } from "@react-three/fiber"
 import { useTexture, shaderMaterial, 
-  // useCursor, 
-  // OrbitControls,
-  // Text3D,
-  // Instance,
-  // useGLTF,
-  // Instances,
-  // Environment,
-  // Lightformer,
-  // RandomizedLight,
-  // AccumulativeShadows,
-  // MeshTransmissionMaterial 
+
 } from "@react-three/drei"
 import { Card, 
-  // Image, 
   Group,
   Badge, 
   Text, 
@@ -45,10 +32,8 @@ Textarea,
 MantineProvider,
 Container,
 Accordion,
-// getStylesRef,
 } from '@mantine/core';
 import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
-// import { IconPlus } from '@tabler/icons-react';
 
 
 
@@ -400,7 +385,7 @@ function FadingImage() {
 export default function Services () {
 
    return (
-    <ServicesContainer2 id='services'>
+    <ServicesContainer id='services'>
      
 
 
@@ -444,7 +429,7 @@ export default function Services () {
 
 
       </ServicesWrapper>
-    </ServicesContainer2>
+    </ServicesContainer>
   );
 };
 
