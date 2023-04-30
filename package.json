@@ -32,6 +32,7 @@
     "altogic": "^2.3.9",
     "antd": "^5.3.2",
     "apexcharts": "^3.37.3",
+    "axios": "^1.4.0",
     "framer-motion": "^10.10.0",
     "gltfjsx": "^6.1.4",
     "gsap": "^3.11.5",
