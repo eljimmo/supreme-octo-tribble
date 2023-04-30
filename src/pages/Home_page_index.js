@@ -12,6 +12,7 @@ import { HeroContainerTransparent } from '../components/HeroSection/HeroElements
 import FrostedApp from '../components/FrostedGlass/index';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 // import Services from '../components/Services';
+// import TOXApp from '../components/Toxicity_Sent/App';
 
 
 
@@ -38,7 +39,9 @@ export default function HomePage() {
 
 
 
+      {/* <TOXApp/> */}
 
+      
 
 
 <InfoSection {...homeObjOne} />

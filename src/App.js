@@ -25,7 +25,7 @@ import HomePage from './pages/Home_page_index';
 // import AIPage from '../src/pages/AI_Models';
 // import StockSearch from "./views/StockSearch/Stock_Search_Index";
 // import AboutIndex  from "../src/pages/About";
-import TOXApp from "./components/Toxicity_Sent/App";
+// import TOXApp from "./components/Toxicity_Sent/App";
 
 export default function App() {
   return (
@@ -129,7 +129,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
 
 
-            <Route path="/T" element={<TOXApp />} />
+            {/* <Route path="/T" element={<TOXApp />} /> */}
 
 
             {/* <Route path="/neuroevolution" element={<Welcome />} /> */}
