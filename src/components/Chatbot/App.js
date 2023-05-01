@@ -4,7 +4,6 @@ import Chatbot from "react-chatbot-kit";
 import config from "./chatbotConfig";
 import ActionProvider from "./ActionProvider";
 import MessageParser from "./MessageParser";
-
 import { ActionIcon } from '@mantine/core';
 import { IconRobot } from '@tabler/icons-react';
 
@@ -33,7 +32,7 @@ class ChatApp extends Component {
 
 
 <ActionIcon>
-      <IconRobot size="350px" onClick={this.handleShowBot}/>
+      <IconRobot size="3.125rem" onClick={this.handleShowBot}/>
     </ActionIcon>
       </div>
     );
