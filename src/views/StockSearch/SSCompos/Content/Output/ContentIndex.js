@@ -6,7 +6,7 @@ import Company from "../Company/C_Index";
 // import MyCharts from "../DataChart/EXamples";
 import '../style.css';
 import { Row, Col } from 'reactstrap';
-import { Grid, Text } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import MarketChangeOverTimeChart from '../DataChart/MarketChangeOverTime_Index';
 // import {Link} from "react-router-dom";
 
@@ -23,7 +23,7 @@ const Content = ({ data }) => {
 
   return (
     <>
-<Text fz="md" c="green">Stock Valuation & Analysis </Text>
+{/* <Text fz="md" c="green">Stock Valuation & Analysis </Text> */}
   <Row xs="10">
     <Col className="bg-light border">
       <h1 className="main-title">{quote.companyName}</h1>

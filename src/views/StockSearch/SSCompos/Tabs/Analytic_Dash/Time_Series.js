@@ -1273,7 +1273,7 @@ onChange={handleEpochsChange}
 
 
 
-function Series_Simulations_Modeling() {
+function SeriesSimulationsModeling() {
   return (
     <div my="md" >
     <Grid>
@@ -1288,4 +1288,4 @@ function Series_Simulations_Modeling() {
 
 }
 
-export default Series_Simulations_Modeling;
+export default SeriesSimulationsModeling;

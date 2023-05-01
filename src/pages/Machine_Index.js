@@ -1,15 +1,14 @@
 // import React, { useState } from 'react';
-// import { Affix, Button, Text, Transition, rem } from '@mantine/core';
+// import { Affix, Button, rem } from '@mantine/core';
 // import Navbar from '../components/Navbar';
 // import Footer from '../components/Footer/index';
-// import { HeroContainer, HeroContainerTransparent } from '../components/HeroSection/HeroElements';
+// import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 // import Sidebar from '../components/Sidebar/index';
 // import M_App from '../components/Merged/App';
+// import Series_Simulations_Modeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
 
-// // import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
-// import './pages.css'
 
 
 
@@ -24,7 +23,6 @@
 //       <Navbar toggle={toggle} />
 //       <Sidebar isOpen={isOpen} toggle={toggle} />
 //       <HeroContainerTransparent>
-//       {/* <StockSearch/> */}
 
 
 //       <M_App/>
@@ -36,6 +34,7 @@
 //       {/* <Machine_Services/> */}
 
 
+//       <Series_Simulations_Modeling/>
 
 
 
