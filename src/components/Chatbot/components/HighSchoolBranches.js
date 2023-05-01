@@ -9,7 +9,7 @@ const HighSchoolBranches = (props) => {
       handler: props.actionProvider.handleCareerList,
       id: 1
     },
-    { text: "Nueral Networks", handler: () => {}, id: 2 },
+    { text: "Neural Networks", handler: () => {}, id: 2 },
     { text: "Neuro Evolution", handler: () => {}, id: 3 }
   ];
 
