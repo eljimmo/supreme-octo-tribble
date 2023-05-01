@@ -10,7 +10,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-import StockSearch from '../views/StockSearch/Stock_Search_Index';
+// import StockSearch from '../views/StockSearch/Stock_Search_Index';
 // import Services from '../components/Services';
 // import TOXApp from '../components/Toxicity_Sent/App';
 // import Series_Simulations_Modeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
@@ -37,7 +37,7 @@ export default function HomePage() {
       
 </HeroContainerTransparent>
 
-<StockSearch/>
+{/* <StockSearch/> */}
 
 
 
