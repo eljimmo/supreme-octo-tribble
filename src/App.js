@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  NavLink
 } from 'react-router-dom';
 
 
@@ -17,11 +16,9 @@ function App() {
   return (
 <div className="App">
 <Router>
-    {/* <Navbar /> */}
     <Routes>
     <Route exact path='/' element={<HomePage />} />
     <Route path='/AImodels' element={<AIPage />} />
-    {/* <Route path='/Login' element={<Login />} /> */}
     </Routes>
 </Router>
 </div>
@@ -30,37 +27,6 @@ function App() {
 }
 
 export default App;
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Router>
-//         <nav>
-//           <ul>
-//             <li><NavLink exact to="/" activeClassName="selected">Home</NavLink></li>
-//             <li><NavLink to="/AImodels" activeClassName="selected">Contact</NavLink></li>
-//           </ul>
-//         </nav>
-//         <Routes>
-//           <Route path="/AImodels">
-//             <AIPage />
-//           </Route>
-//           <Route path="/" element={<HomePage />} /> 
-//           <Route path="/AImodels" element={<AIPage />} />
-
-
-//             {/* <HomePage /> */}
-//           {/* </Route> */}
-//         </Routes>
-//       </Router>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 
 
 // export default function App() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import { Affix, Button, rem } from '@mantine/core';
+import { Affix, Button, rem } from '@mantine/core';
 // import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer/index';
+import Footer from '../components/Footer/index';
 // import Sidebar from '../components/Sidebar/index';
 
 
@@ -39,6 +39,18 @@ class AIPage extends Component {
     return (
       <div className="Contact">
         This is the contact page.
+
+        <Affix position={{ bottom: rem(20), right: rem(20) }}>
+           <Button
+              variant="outline"
+            >
+              I am still in Development.
+            </Button>
+      </Affix>
+
+        <Footer/>
+
+
       </div>
     )
   }
