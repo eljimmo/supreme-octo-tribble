@@ -5,12 +5,12 @@ import "./HighSchoolBranches.css";
 const HighSchoolBranches = (props) => {
   const options = [
     {
-      text: "Science",
+      text: "AI Agents",
       handler: props.actionProvider.handleCareerList,
       id: 1
     },
-    { text: "Commerce", handler: () => {}, id: 2 },
-    { text: "Arts", handler: () => {}, id: 3 }
+    { text: "Nueral Networks", handler: () => {}, id: 2 },
+    { text: "Neuro Evolution", handler: () => {}, id: 3 }
   ];
 
   const optionsMarkup = options.map((option) => (
