@@ -4,16 +4,16 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import HighSchoolBranches from "./components/HighSchoolBranches";
 import List from "./components/List";
 
-const botName = "Career Guidance Bot";
+const botName = "Guidance Bot";
 
 const config = {
   botName: botName,
   initialMessages: [
     createChatBotMessage(
-      `Hi There! I am ${botName}. I am here to help you in making a better choice for your Career.`
+      `Hi There! I am ${botName}. I am here to guide you through your journey here.`
     ),
     createChatBotMessage(
-      "May I know in which stream from the below you are enrolled in?",
+      "May I know what brings you here today?",
       {
         withAvatar: true,
         widget: "highSchoolBranches"

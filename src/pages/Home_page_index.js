@@ -14,6 +14,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services';
 // import TOXApp from '../components/Toxicity_Sent/App';
 // import Series_Simulations_Modeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
+import ChatApp from '../components/Chatbot/App';
 
 
 
@@ -58,9 +59,16 @@ export default function HomePage() {
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
+              fullWidth="true"
             >
-              I am still in Development.
+              Click on the Robot to chat with our Guidance Bot
             </Button>
+
+<ChatApp/>
+
+
+
+
       </Affix>
 
 

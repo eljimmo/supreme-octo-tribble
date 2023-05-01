@@ -5,7 +5,10 @@ import config from "./chatbotConfig";
 import ActionProvider from "./ActionProvider";
 import MessageParser from "./MessageParser";
 
-class App extends Component {
+import { ActionIcon } from '@mantine/core';
+import { IconRobot } from '@tabler/icons-react';
+
+class ChatApp extends Component {
   state = {
     showBot: false
   };
@@ -27,14 +30,14 @@ class App extends Component {
             className="app_Chatbot"
           />
         )}
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMSTcf9vxteFLXwKOVebZMuNkDh7PkAvwe7w&usqp=CAU"
-          alt="Career Guidance Bot"
-          onClick={this.handleShowBot}
-        />
+
+
+<ActionIcon>
+      <IconRobot size="56.125rem" onClick={this.handleShowBot}/>
+    </ActionIcon>
       </div>
     );
   }
 }
 
-export default App;
+export default ChatApp;
