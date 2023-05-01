@@ -14,7 +14,7 @@ import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements'; 
 import Services from '../components/Services';
 import KamdoApp from '../components/Kamdo/index';
-// import SeriesSimulationsModeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
+import SeriesSimulationsModeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
 
 
 
@@ -34,7 +34,7 @@ export default function AIPage() {
   <InfoSectionCanva {...homeObjTwo} />
 <InfoSection {...homeObjThree} /> 
 
-{/* <SeriesSimulationsModeling/> */}
+<SeriesSimulationsModeling/>
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button

@@ -1,0 +1,21 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app img {
+  width: 100px;
+}
+
+.react-chatbot-kit-chat-container {
+  margin-left: 100px;
+  border-radius: 150px;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  background-color: rgb(204, 208, 211);
+}
+
+.react-chatbot-kit-chat-input {
+  background-color: #dde6fa;
+}
