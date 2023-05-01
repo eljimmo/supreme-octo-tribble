@@ -33,7 +33,7 @@ class ChatApp extends Component {
 
 
 <ActionIcon>
-      <IconRobot size="56.125rem" onClick={this.handleShowBot}/>
+      <IconRobot size="350px" onClick={this.handleShowBot}/>
     </ActionIcon>
       </div>
     );
