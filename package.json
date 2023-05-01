@@ -36,6 +36,7 @@
     "framer-motion": "^10.10.0",
     "gltfjsx": "^6.1.4",
     "gsap": "^3.11.5",
+    "heroku": "^8.1.1",
     "highcharts": "^10.3.3",
     "highcharts-react-official": "^3.2.0",
     "immutability-helper": "^3.1.1",

@@ -14,7 +14,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services';
 // import TOXApp from '../components/Toxicity_Sent/App';
 // import Series_Simulations_Modeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
-import ChatApp from '../components/Chatbot/App';
+// import ChatApp from '../components/Chatbot/App';
 
 
 
@@ -64,7 +64,7 @@ export default function HomePage() {
               Click on the Robot to chat with our Guidance Bot
             </Button>
 
-<ChatApp/>
+{/* <ChatApp/> */}
 
 
 
