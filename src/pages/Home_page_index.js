@@ -10,7 +10,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Sidebar from '../components/Sidebar/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-import ChatApp from '../components/Chatbot/App';
+// import ChatApp from '../components/Chatbot/App';
 
 
 
@@ -50,7 +50,7 @@ export default function HomePage() {
              Guidance Bot
             </Button>
 
-            <ChatApp/>
+            {/* <ChatApp/> */}
 
       </Affix>
 
