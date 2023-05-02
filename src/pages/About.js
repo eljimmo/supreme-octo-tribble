@@ -1,10 +1,10 @@
 // import React, { useState } from 'react';
 // import { Affix, Button, rem } from '@mantine/core';
-// import Navbar from '../components/Navbar';
+// // import Navbar from '../components/Navbar';
 // import Footer from '../components/Footer/index';
 // import DesignSection from '../components/DesignSection';
 // // import { TopLine, Heading, WhiteTopLine, Heading2, Subtitle2, Column1 } from '../components/InfoSection/InfoElements';
-// import Sidebar from '../components/Sidebar/index';
+// // import Sidebar from '../components/Sidebar/index';
 // // import styled, { keyframes } from "styled-components";
 
 // // import Services from '../components/Services';
@@ -28,11 +28,11 @@
 
 
 // export default function AboutIndex() {
-//   const [isOpen, setIsOpen] = useState(false);
+// //   const [isOpen, setIsOpen] = useState(false);
 
-//   const toggle = () => {
-//     setIsOpen(!isOpen);
-//   };
+// //   const toggle = () => {
+// //     setIsOpen(!isOpen);
+// //   };
 //   return (
 
 //     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#040404' }}>
@@ -40,8 +40,8 @@
 
   
        
-//     <Navbar toggle={toggle} />
-//       <Sidebar isOpen={isOpen} toggle={toggle} />
+//     {/* <Navbar toggle={toggle} />
+//       <Sidebar isOpen={isOpen} toggle={toggle} /> */}
 
 
 // <DesignSection/>

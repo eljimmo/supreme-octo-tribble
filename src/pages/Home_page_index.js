@@ -8,6 +8,7 @@ import Footer from '../components/Footer/index';
 import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
+import ChatApp from '../components/Chatbot/App';
 
 
 export default function HomePage() {
@@ -16,8 +17,13 @@ export default function HomePage() {
       <HeroContainerTransparent>
       <FrostedApp/>
 </HeroContainerTransparent>
+
 <InfoSection {...homeObjOne} />
+
 <ScApp/>
+
+
+
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
@@ -25,6 +31,7 @@ export default function HomePage() {
             >
              Guidance Bot
             </Button>
+            <ChatApp/>
       </Affix>
         <Footer/>
     </>

@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
 import AIPage from './pages/AI_Models';
+// import AboutIndex from './pages/About';
 
 
 
