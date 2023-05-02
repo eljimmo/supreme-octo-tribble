@@ -32,7 +32,10 @@ import Footer from '../components/Footer/index';
 
 
 class AIPage extends Component {
+  // const [isOpen, setIsOpen] = useState(false);
 
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
   render() 
   
   {
