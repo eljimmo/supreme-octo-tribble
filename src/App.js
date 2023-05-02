@@ -11,7 +11,8 @@ import {
   Navigate
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
-// import AIPage from './pages/AI_Models';
+import AIPage from './pages/AI_Models';
+// import AboutIndex from './pages/About'; 
 
 
 
@@ -32,16 +33,21 @@ export default function App() {
           {/* index specifies default element */}
           <Route index element={<HomePage />} />
 
+
           {/* app */}
           <Route path="/app" element={<AppPage />}>
-            <Route index element={<AppHome />} />
+            <Route index element={<AppAbout />} />
+
+
+            {/* <Route path="/AImodel" element={<AppPage />}>
+            <Route index element={<AIPage />} /> */}
 
             {/* displays below with best match of path; not based on sequence;
             so following will render only if other paths aren't matched */}
             <Route path=":slug" element={<Other />} />
 
             {/* relative path doesn't start with / */}
-            <Route path="about" element={<AppAbout />} />
+            <Route path="about" element={<AIPage />} />
             {/* absolute path starts with /; if you want to pass full path */}
             <Route path="/app/contact" element={<AppContact />} />
 
@@ -128,7 +134,7 @@ const AppPage = () => {
   );
 };
 
-const AppHome = () => <div>App: Default Home</div>;
+// const AppHome = () => <div>App: Default Home</div>;
 
 const AppAbout = () => <div>App: About</div>;
 
