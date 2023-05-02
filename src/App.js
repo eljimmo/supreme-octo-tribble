@@ -12,7 +12,6 @@ import {
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
 import AIPage from './pages/AI_Models';
-// import AboutIndex from './pages/About'; 
 
 
 
@@ -39,8 +38,6 @@ export default function App() {
             <Route index element={<AppAbout />} />
 
 
-            {/* <Route path="/AImodel" element={<AppPage />}>
-            <Route index element={<AIPage />} /> */}
 
             {/* displays below with best match of path; not based on sequence;
             so following will render only if other paths aren't matched */}
