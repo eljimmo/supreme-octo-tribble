@@ -10,6 +10,11 @@ import {
   useSearchParams,
   Navigate
 } from "react-router-dom";
+import HomePage from './pages/Home_page_index';
+import AIPage from './pages/AI_Models';
+
+
+
 
 /**
  * New to React router v6 from v5:
@@ -25,7 +30,7 @@ export default function App() {
         {/* In Home, use <Outlet /> to show children */}
         <Route path="/" element={<Layout />}>
           {/* index specifies default element */}
-          <Route index element={<Welcome />} />
+          <Route index element={<HomePage />} />
 
           {/* app */}
           <Route path="/app" element={<AppPage />}>
