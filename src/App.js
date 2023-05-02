@@ -11,7 +11,7 @@ import {
   Navigate
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
-import AIPage from './pages/AI_Models';
+// import AIPage from './pages/AI_Models';
 
 
 
@@ -81,12 +81,7 @@ const Layout = () => {
   );
 };
 
-const Welcome = () => (
-  <div>
-    <h4>Welcome</h4>
-    (added as index route so outlet won't be empty)
-  </div>
-);
+
 
 const AppPage = () => {
   const navigate = useNavigate();
