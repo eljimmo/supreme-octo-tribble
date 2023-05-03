@@ -3,7 +3,7 @@ import InfoSection from '../components/InfoSection';
 import {
   homeObjOne,
 } from '../components/InfoSection/Data';
-import { Affix, Button, rem } from '@mantine/core';
+import { Affix, rem } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
@@ -25,12 +25,11 @@ export default function HomePage() {
 
 
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
-            <Button
+            {/* <Button
               variant="outline"
-              fullWidth="true"
             >
              Guidance Bot
-            </Button>
+            </Button> */}
             <ChatApp/>
       </Affix>
         <Footer/>

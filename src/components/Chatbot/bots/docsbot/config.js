@@ -7,7 +7,7 @@ import ActionProviderDocs from "./widgets/docs/ActionProviderDocs/ActionProvider
 import Config from "./widgets/docs/Config/Config";
 import WidgetDocs from "./widgets/docs/WidgetDocs/WidgetDocs";
 
-const botName = "DocsBot";
+const botName = "Leibniz Bot";
 
 const config = {
   botName: botName,
@@ -22,10 +22,10 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi I'm ${botName}. I’m here to help you explain how I work.`
+      `Hi I'm ${botName}. I’m here to help you explain how our Artificial Intelligent Agents work.`
     ),
     createChatBotMessage(
-      "Here's a quick overview over what I need to function. ask me about the different parts to dive deeper.",
+      "Here's a quick overview over what they need to function. Ask me about the different configurations to dive deeper.",
       {
         withAvatar: false,
         delay: 500,
