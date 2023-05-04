@@ -19,7 +19,6 @@ function ChatApp() {
 
   return (
     <div className="App">
-      {/* <GradientBackground> */}
         <Logo style={{ paddingTop: "40px", height: "150px", width: "150px" }} />
         <h1 className="app-header">Project Leibniz Analytica</h1>
 
@@ -64,7 +63,6 @@ function ChatApp() {
             Github
           </a>
         </div>
-      {/* </GradientBackground> */}
 
     </div>
   );

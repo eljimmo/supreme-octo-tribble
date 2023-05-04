@@ -219,31 +219,6 @@ export default function Services () {
 
 
 
-      {/* <ServicesCard>
-
-          <ServicesP>
-            A comprehensive financial modeling structure enables investors to capture a more holistic valuation towards determining navigation in volatile risk field.
-          </ServicesP>
-          </ServicesCard> */}
-
-
-   
-
-          {/* <ServicesCard>
-
-          <ServicesP>
-            By minimizing the variable search space, & subsequent effect, a process of data optimization is created to find correlational traces in data.
-          </ServicesP>
-          </ServicesCard> */}
-
-
-          {/* <ServicesH2>Unleash the power of Artificial Intelligence Algorithms to analyze financial data.</ServicesH2> */}
-          {/* <ServicesCard>
-          <ServicesP>
-            Created by the Leibniz Analytica Team, data provided by IEX Cloud, graphing library provided by Plotly Dash.
-          </ServicesP>
-        </ServicesCard> */}
-
 
 
       </ServicesWrapper>
