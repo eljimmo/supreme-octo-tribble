@@ -5,7 +5,6 @@ import { ConditionallyRender } from "react-util-kit";
 
 import { ReactComponent as Logo } from "./assets/icons/logo.svg";
 import { ReactComponent as ButtonIcon } from "./assets/icons/robot.svg";
-// import GradientBackground from "./components/GradientBackground/GradientBackground";
 import { Button } from '@mantine/core';
 
 
@@ -24,12 +23,7 @@ function ChatApp() {
         <Logo style={{ paddingTop: "40px", height: "150px", width: "150px" }} />
         <h1 className="app-header">Project Leibniz Analytica</h1>
 
-               {/* <Button
-              variant="outline"
-              fullWidth="true"
-            >
-            Leibniz Guidance Bot
-            </Button> */}
+
 
         <div className="app-chatbot-container">
           <ConditionallyRender
@@ -60,11 +54,7 @@ function ChatApp() {
           </div>
 
           <h2 className="app-header">Contact Creator</h2>
-          {/* <Button
-              variant="outline"
-            >
-             Guidance Bot
-            </Button> */}
+
           <a
             href="https://github.com/eljimmo"
             className="app-quickstart-button"

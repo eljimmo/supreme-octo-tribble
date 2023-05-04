@@ -25,13 +25,6 @@ import { Card,
   createStyles, Center, 
   Button, 
   rem,
-  SimpleGrid,
-Title,
-TextInput,
-Textarea,
-MantineProvider,
-Container,
-Accordion,
 } from '@mantine/core';
 import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler/icons-react';
 
@@ -40,9 +33,6 @@ import { IconGasStation, IconGauge, IconManualGearbox, IconUsers } from '@tabler
 
 
 
-
-const placeholder =
-  'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.It was born from sludge on the ocean floor. In a sterile environment, the germs within its body can’t multiply, and it dies.It has no eyeballs, so it can’t see. It checks its surroundings via the ultrasonic waves it emits from its mouth.';
 
 
 
@@ -90,12 +80,6 @@ const mockdata = [
   { label: 'Dashboard for Stock Analysis', icon: IconGasStation },
 ];
 
-const mockdata2 = [
-  { label: 'Unlimited AI Models', icon: IconUsers },
-  { label: 'All Data Sources + custom data', icon: IconGauge },
-  { label: 'Live Data Modeling', icon: IconManualGearbox },
-  { label: 'Dashboard for Stock Analysis + AI Analysis', icon: IconGasStation },
-];
 
 
 export function FeaturesCard() {
@@ -158,171 +142,6 @@ LOREUM IPSUM
 }
 
 
-
-export function FeaturesCard2() {
-  const { classes } = useStyles();
-  const features = mockdata2.map((feature) => (
-    <Center key={feature.label}>
-      <feature.icon size="1.05rem" className={classes.icon} stroke={1.5} />
-      <Text size="xs">{feature.label}</Text>
-    </Center>
-  ));
-
-  return (
-    <Card withBorder radius="md" className={classes.card}>
-      <Card.Section className={classes.imageSection}>
-                <Canvas camera={{ position: [0, 0, 2], fov: 5 }}>
-      <FadingImage />
-    </Canvas>  
-      </Card.Section>
-
-      <Group position="apart" mt="md">
-        <div>
-          <Text fw={500}>Leibniz Analytica AI & Modeling </Text>
-          <Text fz="xs" c="dimmed">
-            Over 100+ Algorithms & 25 AI Models
-          </Text>
-        </div>
-        <Badge variant="outline">25% off for Annual Subscription</Badge>
-      </Group>
-
-      <Card.Section className={classes.section} mt="md">
-        <Text fz="sm" c="dimmed" className={classes.label}>
-          Basic configuration
-        </Text>
-
-        <Group spacing={8} mb={-8}>
-          {features}
-        </Group>
-      </Card.Section>
-
-      <Card.Section className={classes.section}>
-        <Group spacing={30}>
-          <div>
-            <Text fz="xl" fw={700} sx={{ lineHeight: 1 }}>
-            LOREUM IPSUM
-            </Text>
-            <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
-              Per Month
-            </Text>
-          </div>
-
-          <Button radius="xl" style={{ flex: 1 }}>
-            subscribe Now
-          </Button>
-        </Group>
-      </Card.Section>
-    </Card>
-  );
-}
-
-
-
-
-
-export function ContactUs() {
-  const { classes } = useStyles();
-
-
-  return (
-    <div className={classes.wrapper}>
-      <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-        <div>
-          <Title className={classes.title}>Contact us</Title>
-          <Text className={classes.description} mt="sm" mb={30}>
-            Leave your email and we will get back to you within 24 hours
-          </Text>
-
-  
-        </div>
-        <div className={classes.form}>
-          <TextInput
-            label="Email"
-            placeholder="your@email.com"
-            required
-            classNames={{ input: classes.input, label: classes.inputLabel }}
-          />
-          <TextInput
-            label="Name"
-            placeholder="John Doe"
-            mt="md"
-            classNames={{ input: classes.input, label: classes.inputLabel }}
-          />
-          <Textarea
-            required
-            label="Your message"
-            placeholder="I want AI to help my trading."
-            minRows={4}
-            mt="md"
-            classNames={{ input: classes.input, label: classes.inputLabel }}
-          />
-
-          <Group position="right" mt="md">
-            <Button className={classes.control}>Send message</Button>
-          </Group>
-        </div>
-      </SimpleGrid>
-    </div>
-  );
-}
-
-
-
-
-
-
-
-
-
-
-export function FaqWithBg() {
-  const { classes } = useStyles();
-  return (
-    <MantineProvider inherit theme={{ colorScheme: 'light' }}>
-      <div className={classes.wrapper}>
-        <Container size="sm">
-          <Title align="center" className={classes.title}>
-            Frequently Asked Questions
-          </Title>
-
-          <Accordion
-            chevronPosition="right"
-            defaultValue="reset-password"
-            chevronSize={50}
-            variant="separated"
-            disableChevronRotation
-   
-          >
-            <Accordion.Item className={classes.item} value="reset-password">
-              <Accordion.Control>How can I reset my password?</Accordion.Control>
-              <Accordion.Panel>{placeholder}</Accordion.Panel>
-            </Accordion.Item>
-
-            <Accordion.Item className={classes.item} value="another-account">
-              <Accordion.Control>Can I create more that one account?</Accordion.Control>
-              <Accordion.Panel>{placeholder}</Accordion.Panel>
-            </Accordion.Item>
-
-            <Accordion.Item className={classes.item} value="newsletter">
-              <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
-              <Accordion.Panel>{placeholder}</Accordion.Panel>
-            </Accordion.Item>
-
-            <Accordion.Item className={classes.item} value="credit-card">
-              <Accordion.Control>Do you store credit card information securely?</Accordion.Control>
-              <Accordion.Panel>{placeholder}</Accordion.Panel>
-            </Accordion.Item>
-
-            <Accordion.Item className={classes.item} value="payment">
-              <Accordion.Control>What payment systems to you work with?</Accordion.Control>
-              <Accordion.Panel>{placeholder}</Accordion.Panel>
-            </Accordion.Item>
-          </Accordion>
-        </Container>
-      </div>
-    </MantineProvider>
-  );
-}
 
 
 
@@ -396,7 +215,6 @@ export default function Services () {
       <ServicesWrapper>
       <FeaturesCard/>
 
-      <FeaturesCard2/>
       <FeaturesCard/>
 
 
