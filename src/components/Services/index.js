@@ -205,22 +205,10 @@ export default function Services () {
 
    return (
     <ServicesContainer id='services'>
-     
-
-
-
-
       <ServicesH1>Algorithmic Stock Trading Architexture</ServicesH1>
-      
       <ServicesWrapper>
       <FeaturesCard/>
-
       <FeaturesCard/>
-
-
-
-
-
       </ServicesWrapper>
     </ServicesContainer>
   );
