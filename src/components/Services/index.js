@@ -1,13 +1,8 @@
 import React from 'react';
 import {
   ServicesContainer,
-  // ServicesContainer2,
   ServicesH1,
   ServicesWrapper,
-  // ServicesCard,
-  // ServicesIcon,
-  // ServicesH2,
-  // ServicesP
 } from './ServicesElements';
 import * as THREE from "three"
 import { useRef, useState } from "react"
@@ -18,11 +13,13 @@ import { Canvas, extend,
 import { useTexture, shaderMaterial, 
 
 } from "@react-three/drei"
-import { Card, 
+import { 
+  Card, 
   Group,
   Badge, 
   Text, 
-  createStyles, Center, 
+  createStyles, 
+  Center, 
   Button, 
   rem,
 } from '@mantine/core';
