@@ -1,5 +1,7 @@
 .app-examples-docsbot {
-  background-color: rgb(24, 44, 57);
+  /* background-color: rgb(24, 44, 57); */
+  background-color: white;
+
   padding: 25px;
 }
 

@@ -15,11 +15,6 @@ import {
 
 
 
-
-
-
-
-
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
 

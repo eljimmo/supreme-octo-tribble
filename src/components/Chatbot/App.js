@@ -17,7 +17,7 @@ function ChatApp() {
   return (
     <div className="App">
         <Logo style={{ paddingTop: "40px", height: "150px", width: "150px" }} />
-        <h1 className="app-header">Project Leibniz Analytica</h1>
+        <h1 className="app-header">Still in Development</h1>
 
 
 

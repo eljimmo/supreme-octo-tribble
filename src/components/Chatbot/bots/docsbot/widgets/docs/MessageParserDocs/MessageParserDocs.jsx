@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { FadeIn } from "react-anim-kit";
 import { ConditionallyRender } from "react-util-kit";
 
-import { ReactComponent as MessageParserOverview } from "../../../../../assets/img/message-parser-overview.svg";
+// import { ReactComponent as MessageParserOverview } from "../../../../../assets/img/message-parser-overview.svg";
 
 import styles from "./MessageParserDocs.module.css";
 import InformationBox from "../../InformationBox/InformationBox";
@@ -20,7 +20,7 @@ const MessageParserDocs = ({ infoBox, setState }) => {
   return (
     <div className={styles.overview}>
       <FadeIn left by={250}>
-        <MessageParserOverview className={styles.overviewSVG} />
+        {/* <MessageParserOverview className={styles.overviewSVG} /> */}
       </FadeIn>
 
       <ConditionallyRender

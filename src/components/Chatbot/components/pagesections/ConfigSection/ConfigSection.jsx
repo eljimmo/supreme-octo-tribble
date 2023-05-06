@@ -3,7 +3,7 @@ import React from "react";
 
 import DocsContainer from "../../DocsContainer/DocsContainer";
 
-import { ReactComponent as CogsIcon } from "../../../assets/icons/cogs.svg";
+// import { ReactComponent as CogsIcon } from "../../../assets/icons/cogs.svg";
 
 import "./ConfigSection.css";
 
@@ -18,7 +18,7 @@ const ConfigSection = () => {
         <div className="app-config-section-docs-inner-container">
           <DocsContainer
             title="Configuration"
-            icon={<CogsIcon className="app-config-section-icon" />}
+            // icon={<CogsIcon className="app-config-section-icon" />}
           >
             <p>
               The configuration controls all configurable elements of the

@@ -1,5 +1,4 @@
 import Chart from "react-apexcharts";
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button,  } from 'reactstrap';
 import { setSeries, setOptions } from './MarketVolume_Settings';
 import "./style.css";
 

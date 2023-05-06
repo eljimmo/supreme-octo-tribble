@@ -3,7 +3,7 @@ import React from "react";
 
 import DocsContainer from "../../DocsContainer/DocsContainer";
 
-import { ReactComponent as MessagesIcon } from "../../../assets/icons/comment-alt-dots.svg";
+// import { ReactComponent as MessagesIcon } from "../../../assets/icons/comment-alt-dots.svg";
 
 import "./MessageParserSection.css";
 
@@ -14,7 +14,7 @@ const MessageParserSection = () => {
         <div className="app-messageparser-section-docs-inner-container">
           <DocsContainer
             title="MessageParser"
-            icon={<MessagesIcon className="app-messageparser-section-icon" />}
+            // icon={<MessagesIcon className="app-messageparser-section-icon" />}
           >
             <p>
               The message parser controls what happens when the user sends a

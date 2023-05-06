@@ -3,7 +3,7 @@ import React from "react";
 
 import DocsContainer from "../../DocsContainer/DocsContainer";
 
-import { ReactComponent as BoltIcon } from "../../../assets/icons/bolt.svg";
+// import { ReactComponent as BoltIcon } from "../../../assets/icons/bolt.svg";
 
 import "./ActionProviderSection.css";
 
@@ -18,7 +18,7 @@ const ActionProviderSection = () => {
         <div className="app-actionprovider-section-docs-inner-container">
           <DocsContainer
             title="ActionProvider"
-            icon={<BoltIcon className="app-actionprovider-section-icon" />}
+            // icon={<BoltIcon className="app-actionprovider-section-icon" />}
           >
             <p>
               The actionprovider controls what kind of action that the chatbot

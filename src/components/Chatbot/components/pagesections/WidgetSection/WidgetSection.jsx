@@ -3,7 +3,7 @@ import React from "react";
 
 import DocsContainer from "../../DocsContainer/DocsContainer";
 
-import { ReactComponent as MessagesIcon } from "../../../assets/icons/comment-alt-dots.svg";
+// import { ReactComponent as MessagesIcon } from "../../../assets/icons/comment-alt-dots.svg";
 
 import "./WidgetSection.css";
 
@@ -14,7 +14,7 @@ const WidgetSection = () => {
         <div className="app-widget-section-docs-inner-container">
           <DocsContainer
             title="Widgets"
-            icon={<MessagesIcon className="app-widget-section-icon" />}
+            // icon={<MessagesIcon className="app-widget-section-icon" />}
           >
             <p>
               Widgets are custom components that you can render with chatbot
