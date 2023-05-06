@@ -14,10 +14,11 @@ const useAppState = () => {
     initialSearch();
   }, []);
 
-  useEffect(() => {
-    // Scroll to top of the page after every search
-    window.scrollTo(0, 0);
-  }, [symbolData]);
+  // useEffect(() => {
+  //   // Scroll to top of the page after every search
+  //   window.scrollTo(0, 0);
+  // }, 
+  // [symbolData]);
 
   const handleSearch = async (query) => {
     setIsLoading(true);
