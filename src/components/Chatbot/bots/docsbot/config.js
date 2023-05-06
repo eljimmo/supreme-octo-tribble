@@ -4,7 +4,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview/Overview";
 import MessageParserDocs from "./widgets/docs/MessageParserDocs/MessageParserDocs";
 import ActionProviderDocs from "./widgets/docs/ActionProviderDocs/ActionProviderDocs";
-import Config from "./widgets/docs/Config/Config";
+// import Config from "./widgets/docs/Config/Config";
 import WidgetDocs from "./widgets/docs/WidgetDocs/WidgetDocs";
 
 const botName = "Leibniz Bot";
@@ -54,11 +54,11 @@ const config = {
       widgetFunc: (props) => <ActionProviderDocs {...props} />,
       mapStateToProps: ["gist", "infoBox"],
     },
-    {
-      widgetName: "config",
-      widgetFunc: (props) => <Config {...props} />,
-      mapStateToProps: ["gist", "infoBox"],
-    },
+    // {
+    //   widgetName: "config",
+    //   widgetFunc: (props) => <Config {...props} />,
+    //   mapStateToProps: ["gist", "infoBox"],
+    // },
     {
       widgetName: "widget",
       widgetFunc: (props) => <WidgetDocs {...props} />,
