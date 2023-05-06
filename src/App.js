@@ -17,12 +17,6 @@ import AIPage from './pages/AI_Models';
 
 
 
-/**
- * New to React router v6 from v5:
- * Upgraded all Switch to Routes
- * Removed <Redirect /> inside switch in v6
- * https://reactrouter.com/docs/en/v6/upgrading/v5 */
-
 export default function App() {
   return (
     <BrowserRouter>
