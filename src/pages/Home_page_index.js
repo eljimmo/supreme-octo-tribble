@@ -10,6 +10,7 @@ import { HeroContainerTransparent } from '../components/HeroSection/HeroElements
 import FrostedApp from '../components/FrostedGlass/index';
 import ChatApp from '../components/Chatbot/App';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
+import Services from '../components/Services/index2';
 
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
+<Services/>
 <StockSearch/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
