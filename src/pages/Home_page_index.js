@@ -22,7 +22,6 @@ export default function HomePage() {
 <StockSearch/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
-
             <ChatApp/>
       </Affix>
         <Footer/>

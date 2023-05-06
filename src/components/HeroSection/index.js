@@ -1,34 +1,19 @@
-import React, { Suspense } from 'react';
+import React, { useState } from 'react';
+import { Button } from '../ButtonElements';
 import Video from './videos/iStock_optic.mp4';
 import {
   HeroContainer,
   HeroBg,
-  HeroContent,
   VideoBg,
-  
-
-  
+  HeroContent,
+  HeroH1,
+  HeroP,
+  HeroBtnWrapper,
+  ArrowForward,
+  ArrowRight
 } from './HeroElements';
-import { Canvas, useThree } from '@react-three/fiber'
-import { Text } from '@react-three/drei'
 
 
-
-
-function Caption({ children }) {
-  const { width } = useThree((state) => state.viewport)
-  return (
-    <Text
-      position={[0, 0, 0]}
-      lineHeight={0.8}
-      fontSize={width / 8}
-      material-toneMapped={false}
-      anchorX="center"
-      anchorY="middle">
-      {children}
-    </Text>
-  )
-}
 
 
 
@@ -36,73 +21,40 @@ function Caption({ children }) {
 
 
 export default function HeroSection() {
+  const [hover, setHover] = useState(false);
 
+  const onHover = () => {
+    setHover(!hover);
+  };
   return (
     <HeroContainer id='home'>
-
-
-
       <HeroBg>
-
-
-      <div style={{ color: 'white', position: [0, 0, 0] }}>
-
-
-</div>
-
-
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
-
-
-
-
       </HeroBg>
-
-
-
       <HeroContent>
-
-        {/* <Canvas 
-        shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 10 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-      <Experience />
-      </Canvas> */}
-
-     
-      {/* <Frosted_App/> */}
-
-
-      <Canvas
-        shadows
-    gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-    camera={{ position: [3, 0, 2], fov: 53.5, near: 1, far: 40 }}
-    onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}>
-
-<Caption>LEIBNIZ</Caption>
-
-
-
-
-<ambientLight intensity={1} />
-<directionalLight position={[-2, 5, 2]} intensity={1} />
-<Suspense fallback={null}>
-
-
-</Suspense>
-</Canvas>
-
-</HeroContent>
-
-
-
-
-   </HeroContainer>
-
-
-
-
+        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroP>
+          Sign up for a new account today and receive $250 in credit towards
+          your next payment.
+        </HeroP>
+        <HeroBtnWrapper>
+          <Button
+            to='signup'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            primary='true'
+            dark='true'
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
+        </HeroBtnWrapper>
+      </HeroContent>
+    </HeroContainer>
   );
 }
 
