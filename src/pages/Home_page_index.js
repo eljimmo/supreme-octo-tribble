@@ -9,6 +9,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
 import ChatApp from '../components/Chatbot/App';
+import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
 export default function HomePage() {
@@ -19,8 +20,9 @@ export default function HomePage() {
 </HeroContainerTransparent>
 
 <InfoSection {...homeObjOne} />
-<ScApp/>
+<StockSearch/>
 
+<ScApp/>
 
 
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
