@@ -3,16 +3,10 @@ import {
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
   Link,
-  // NavLink,
   Outlet,
-  // useParams,
-  // useNavigate,
-  // useSearchParams,
-  // Navigate
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
 import AIPage from './pages/AI_Models';
-// import AboutIndex from './pages/About';
 
 
 
@@ -64,12 +58,6 @@ const Layout = () => {
         <li>
           <Link to="/About">About (/)</Link>
         </li>
-        {/* <li>
-          <Link to="app">App (/app)</Link>
-        </li> */}
-        {/* <li>
-          <Link to="no-match">404</Link>
-        </li> */}
       </ol>
       {/* <h4>Home (/)</h4> */}
       <fieldset>
@@ -83,39 +71,11 @@ const Layout = () => {
 
 
 const AppPage = () => {
-  // const navigate = useNavigate();
   return (
     <div>
-      {/* <h4>App Home (/app)</h4> */}
       <ol>
         <li>
-          {/* absolute path starts with "/" */}
-          {/* navlink to get active link;
-          it auto adds "active" unless pass as below fn or add style using style */}
-          {/* <NavLink
-            style={({ isActive }) => ({ color: isActive ? "green" : "" })}
-            className={({ isActive }) => (isActive ? "i-am-active" : "normal")}
-            to="/app/about"
-          >
-            About (/app/about)
-          </NavLink> */}
         </li>
-        {/* <li>
-          <button
-            onClick={() =>
-              navigate("contact", { replace: false, state: { foo: "sent" } })
-            }
-            to="/app"
-          >
-            Contact (/app/contact)
-          </button>
-        </li> */}
-        {/* <li>
-          <Link to="some-params">Params (/app/:slug)</Link>
-        </li> */}
-        {/* <li>
-          <Link to="redirect-me">Redirect to home (/app)</Link>
-        </li> */}
       </ol>
       <fieldset>
         <legend>Children routes (Outlets) </legend>
@@ -124,31 +84,4 @@ const AppPage = () => {
     </div>
   );
 };
-
-// const AppHome = () => <div>App: Default Home</div>;
-
-// const AppAbout = () => <div>App: About</div>;
-
-// const AppContact = () => <div>App: Contact</div>;
-
-// const NotFound = () => <div>404</div>;
-
-// const Other = () => {
-//   const params = useParams();
-//   const [searchParams, setSearchParams] = useSearchParams();
-
-//   return (
-//     <div>
-//       <p>params object:</p>
-//       <pre>{JSON.stringify(params, 4, null)}</pre>
-//       <p> search params value:</p>
-//       <button onClick={() => setSearchParams({ page: 2 })}>
-//         Set search params{" "}
-//       </button>
-//       <pre>Page: {searchParams.get("page")}</pre>
-//     </div>
-//   );
-// };
-
-
 

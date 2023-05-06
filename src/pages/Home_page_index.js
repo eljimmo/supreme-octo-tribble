@@ -18,13 +18,9 @@ export default function HomePage() {
       <HeroContainerTransparent>
       <FrostedApp/>
 </HeroContainerTransparent>
-
 <InfoSection {...homeObjOne} />
 <StockSearch/>
-
 <ScApp/>
-
-
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
 
             <ChatApp/>
