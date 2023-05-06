@@ -5,10 +5,10 @@ import {
   Link,
   NavLink,
   Outlet,
-  useParams,
-  useNavigate,
-  useSearchParams,
-  Navigate
+  // useParams,
+  // useNavigate,
+  // useSearchParams,
+  // Navigate
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
 import AIPage from './pages/AI_Models';
@@ -30,25 +30,25 @@ export default function App() {
 
           {/* app */}
           <Route path="/app" element={<AppPage />}>
-            <Route index element={<AppAbout />} />
+            {/* <Route index element={<AppAbout />} /> */}
 
 
 
             {/* displays below with best match of path; not based on sequence;
             so following will render only if other paths aren't matched */}
-            <Route path=":slug" element={<Other />} />
+            {/* <Route path=":slug" element={<Other />} /> */}
 
             {/* relative path doesn't start with / */}
             <Route path="about" element={<AIPage />} />
             {/* absolute path starts with /; if you want to pass full path */}
-            <Route path="/app/contact" element={<AppContact />} />
+            {/* <Route path="/app/contact" element={<AppContact />} /> */}
 
-            <Route
+            {/* <Route
               path="redirect-me"
               element={<Navigate replace to="/app/about" />}
-            />
+            /> */}
           </Route>
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
@@ -61,6 +61,9 @@ const Layout = () => {
       <ol>
         <li>
           <Link to="/">Home (/)</Link>
+        </li>
+        <li>
+          <Link to="/About">About (/)</Link>
         </li>
         {/* <li>
           <Link to="app">App (/app)</Link>
@@ -81,7 +84,7 @@ const Layout = () => {
 
 
 const AppPage = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div>
       <h4>App Home (/app)</h4>
@@ -98,8 +101,7 @@ const AppPage = () => {
             About (/app/about)
           </NavLink>
         </li>
-        <li>
-          {/* relative path (can be used for route path, link or navigate) */}
+        {/* <li>
           <button
             onClick={() =>
               navigate("contact", { replace: false, state: { foo: "sent" } })
@@ -108,14 +110,13 @@ const AppPage = () => {
           >
             Contact (/app/contact)
           </button>
-        </li>
-        <li>
-          {/* relative path (no / in start) */}
+        </li> */}
+        {/* <li>
           <Link to="some-params">Params (/app/:slug)</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="redirect-me">Redirect to home (/app)</Link>
-        </li>
+        </li> */}
       </ol>
       <fieldset>
         <legend>Children routes (Outlets) </legend>
@@ -127,28 +128,28 @@ const AppPage = () => {
 
 // const AppHome = () => <div>App: Default Home</div>;
 
-const AppAbout = () => <div>App: About</div>;
+// const AppAbout = () => <div>App: About</div>;
 
-const AppContact = () => <div>App: Contact</div>;
+// const AppContact = () => <div>App: Contact</div>;
 
-const NotFound = () => <div>404</div>;
+// const NotFound = () => <div>404</div>;
 
-const Other = () => {
-  const params = useParams();
-  const [searchParams, setSearchParams] = useSearchParams();
+// const Other = () => {
+//   const params = useParams();
+//   const [searchParams, setSearchParams] = useSearchParams();
 
-  return (
-    <div>
-      <p>params object:</p>
-      <pre>{JSON.stringify(params, 4, null)}</pre>
-      <p> search params value:</p>
-      <button onClick={() => setSearchParams({ page: 2 })}>
-        Set search params{" "}
-      </button>
-      <pre>Page: {searchParams.get("page")}</pre>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <p>params object:</p>
+//       <pre>{JSON.stringify(params, 4, null)}</pre>
+//       <p> search params value:</p>
+//       <button onClick={() => setSearchParams({ page: 2 })}>
+//         Set search params{" "}
+//       </button>
+//       <pre>Page: {searchParams.get("page")}</pre>
+//     </div>
+//   );
+// };
 
 
 

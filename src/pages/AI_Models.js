@@ -5,8 +5,6 @@ import InfoSection from '../components/InfoSection';
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 import {
   homeObjOne,
-  // homeObjFive,
-  // homeObjFour,
   homeObjThree,
 } from '../components/InfoSection/Data';
 import HeroSection from '../components/HeroSection';
