@@ -1,4 +1,3 @@
-// import { unixToDateString } from "../../../utils/date";
 import moment from "moment";
 
 const setSeries = (data) => {
@@ -36,23 +35,6 @@ const setSeries = (data) => {
       text: 'Day Market Change Over Time Chart',
       align: 'center'
     },
-    // stroke: {
-    //   width: [3, 1]
-    // },
-    // tooltip: {
-    //   shared: true,
-    //   custom: [function({seriesIndex, dataPointIndex, w}) {
-    //     return w.globals.series[seriesIndex][dataPointIndex]
-    //   }, function({ seriesIndex, dataPointIndex, w }) {
-    //     var o = w.globals.seriesCandleO[seriesIndex][dataPointIndex]
-    //     var h = w.globals.seriesCandleH[seriesIndex][dataPointIndex]
-    //     var l = w.globals.seriesCandleL[seriesIndex][dataPointIndex]
-    //     var c = w.globals.seriesCandleC[seriesIndex][dataPointIndex]
-    //     return (
-    //       ''
-    //     )
-    //   }]
-    // },
     xaxis: {
       type: 'datetime'
     },

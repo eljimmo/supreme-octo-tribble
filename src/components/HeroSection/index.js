@@ -32,7 +32,7 @@ export default function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>Virtual Artificial Assistants in Finance</HeroH1>
         <HeroP>
           Sign up for a new account today and receive $250 in credit towards
           your next payment.

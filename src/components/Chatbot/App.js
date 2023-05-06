@@ -12,7 +12,7 @@ import ActionProvider from "./bots/docsbot/ActionProvider";
 import "./App.css";
 
 function ChatApp() {
-  const [showChatbot, toggleChatbot] = useState(true);
+  const [showChatbot, toggleChatbot] = useState(false);
 
   return (
     <div className="App">
@@ -41,15 +41,15 @@ function ChatApp() {
           <ButtonIcon className="app-chatbot-button-icon" />
         </button>
 
-        <div className="app-overview">
-          <h2 className="app-header">Overview</h2>
-          <p className="app-paragraph">
+        {/* <div className="app-overview"> */}
+          {/* <h2 className="app-header">Overview</h2> */}
+          {/* <p className="app-paragraph">
             The AI bots work under the parameters given by the creator and with the data choosen. Utilizing the data and the parameters, the AI bots will be able to make predictions and give suggestions. 
-          </p>
-          <div className="app-overview-gist-container">
-          </div>
+          </p> */}
+          {/* <div className="app-overview-gist-container"> */}
+          {/* </div> */}
 
-          <h2 className="app-header">Contact Creator</h2>
+          {/* <h2 className="app-header">Contact Creator</h2>
 
           <a
             href="https://github.com/eljimmo"
@@ -58,8 +58,8 @@ function ChatApp() {
             rel="noopener noreferrer"
           >
             Github
-          </a>
-        </div>
+          </a> */}
+        {/* </div> */}
 
     </div>
   );
