@@ -3,7 +3,7 @@ import {
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
   Link,
-  NavLink,
+  // NavLink,
   Outlet,
   // useParams,
   // useNavigate,
@@ -20,7 +20,7 @@ import AIPage from './pages/AI_Models';
 export default function App() {
   return (
     <BrowserRouter>
-      <h1>React router v6</h1>
+      {/* <h1>React router v6</h1> */}
       <Routes>
         {/* In Home, use <Outlet /> to show children */}
         <Route path="/" element={<Layout />}>
@@ -87,19 +87,19 @@ const AppPage = () => {
   // const navigate = useNavigate();
   return (
     <div>
-      <h4>App Home (/app)</h4>
+      {/* <h4>App Home (/app)</h4> */}
       <ol>
         <li>
           {/* absolute path starts with "/" */}
           {/* navlink to get active link;
           it auto adds "active" unless pass as below fn or add style using style */}
-          <NavLink
+          {/* <NavLink
             style={({ isActive }) => ({ color: isActive ? "green" : "" })}
             className={({ isActive }) => (isActive ? "i-am-active" : "normal")}
             to="/app/about"
           >
             About (/app/about)
-          </NavLink>
+          </NavLink> */}
         </li>
         {/* <li>
           <button

@@ -11,8 +11,7 @@ import {
 } from './HeroElements';
 import { Canvas, useThree } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
-// import * as THREE from 'three'
-import Typewriter from 'typewriter-effect';
+
 
 
 
@@ -38,10 +37,6 @@ function Caption({ children }) {
 
 export default function HeroSection() {
 
-  // const [hover, setHover] = useState(false);
-  // const onHover = () => {
-  //   setHover(!hover);
-  // };
   return (
     <HeroContainer id='home'>
 
@@ -52,13 +47,6 @@ export default function HeroSection() {
 
       <div style={{ color: 'white', position: [0, 0, 0] }}>
 
-<Typewriter
-options={{
-strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
-autoStart: true,
-loop: true,
-}}
-/>
 
 </div>
 
