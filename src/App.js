@@ -29,7 +29,7 @@ export default function App() {
 
 
           {/* app */}
-          <Route path="/app" element={<AppPage />}>
+          <Route path="/" element={<AppPage />}>
             {/* <Route index element={<AppAbout />} /> */}
 
 
