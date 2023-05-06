@@ -18,7 +18,6 @@ const MarketChangeOverTimeChart  = ({ data, priceChange }) => {
         width="100%"
       />
       </div>
-
     </section>
 
       

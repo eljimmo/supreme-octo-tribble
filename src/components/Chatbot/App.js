@@ -5,9 +5,6 @@ import { ConditionallyRender } from "react-util-kit";
 
 import { ReactComponent as Logo } from "./assets/icons/logo.svg";
 import { ReactComponent as ButtonIcon } from "./assets/icons/robot.svg";
-import { Button } from '@mantine/core';
-
-
 import config from "./bots/docsbot/config";
 import MessageParser from "./bots/docsbot/MessageParser";
 import ActionProvider from "./bots/docsbot/ActionProvider";
@@ -69,8 +66,3 @@ function ChatApp() {
 }
 
 export default ChatApp;
- <Button
-              variant="outline"
-            >
-             Guidance Bot
-            </Button>

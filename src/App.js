@@ -20,7 +20,6 @@ import AIPage from './pages/AI_Models';
 export default function App() {
   return (
     <BrowserRouter>
-      {/* <h1>React router v6</h1> */}
       <Routes>
         {/* In Home, use <Outlet /> to show children */}
         <Route path="/" element={<Layout />}>
