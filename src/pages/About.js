@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 // import { Affix, Button, rem } from '@mantine/core';
 // import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
-import DesignSection from '../components/DesignSection';
 // import { TopLine, Heading, WhiteTopLine, Heading2, Subtitle2, Column1 } from '../components/InfoSection/InfoElements';
 // import Sidebar from '../components/Sidebar/index';
 // import styled, { keyframes } from "styled-components";
@@ -41,7 +40,6 @@ export default function AboutIndex() {
   {/* <ChatApp/> */}
               {/* </Button> */}
         {/* </Affix> */}
-        <DesignSection/>
           <Footer/>
       </>
     );
