@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { Affix, Button, rem } from '@mantine/core';
 // import Navbar from '../components/Navbar';
 import Footer from '../components/Footer/index';
@@ -18,9 +18,6 @@ import Footer from '../components/Footer/index';
 
 
 // } from '../components/InfoSection/Data';
-
-
-
 
 
 
