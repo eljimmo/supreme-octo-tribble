@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Affix, Button, rem } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import InfoSection from '../components/InfoSection';
 import InfoSectionCanva from '../components/InfoSection/index_Canvas';
@@ -20,13 +19,7 @@ export default function AIPage() {
 <InfoSectionCanva {...homeObjOne} />
 <InfoSection {...homeObjThree} />
 <Services/>
-      {/* <Affix position={{ bottom: rem(20), right: rem(20) }}> */}
-            {/* <Button
-              variant="outline"
-            > */}
 <ChatApp/>
-            {/* </Button> */}
-      {/* </Affix> */}
         <Footer/>
     </>
   );
