@@ -11,24 +11,28 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id='services'>
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>Artificial Intelligence</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesH2>Reduce Expenses</ServicesH2>
+          <ServicesH2>
+            AI Chatbots
+          </ServicesH2>
           <ServicesP>
-            We help reduce your fees and increase your overall revenue.
+Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
+Create your own bots and change the way the internal model for the AI works.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesH2>Virtual Offices</ServicesH2>
+          <ServicesH2>Sequential machine learning model</ServicesH2>
           <ServicesP>
-            You can access our platform online anywhere in the world.
+Create & Alter the parmeters of the model to see how it affects the predictions.
+
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesH2>Premium Benefits</ServicesH2>
+          <ServicesH2>Natural Language Processing (NLP) </ServicesH2>
           <ServicesP>
-            Unlock our special membership card that returns 5% cash back.
+Utilizing the most powerful libraries, Project Liebniz Analytica aims to create idiosyncratic AI chatbots that help you better understand the financial position of an individual commodity or stock.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
