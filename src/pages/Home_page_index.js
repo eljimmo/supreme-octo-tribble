@@ -1,7 +1,9 @@
 import React from 'react';
 import InfoSection from '../components/InfoSection';
+import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 import {
   homeObjOne,
+  homeObjThree,
 } from '../components/InfoSection/Data';
 import { Affix, rem } from '@mantine/core';
 import Footer from '../components/Footer/index';
@@ -20,12 +22,15 @@ export default function HomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
+
 <StockSearch/>
 <Services/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
             <ChatApp/>
       </Affix>
+      <InfoSectionCanva {...homeObjThree} />
+
         <Footer/>
     </>
   );
