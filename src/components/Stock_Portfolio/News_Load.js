@@ -4,6 +4,7 @@ import axios from "axios";
 import NewsCard from "../Stock_Portfolio/News_Card";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import './styles.css'
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -68,24 +69,18 @@ export default function News(props) {
   let final1 =[];
   for(let i=0;i<news.length && i<10;i++ )
   {
-    final1.push(
-    <Grid item xs={12} md={6} lg={4} key={i}>
-      {/* <Paper
+    final1.push(<Grid item xs={12} md={6} lg={4} key={i}>
+      <Paper
         sx={{
           p: 2,
-          display: "inline-block",
+          display: "flex",
           flexDirection: "column",
-
+          height: 450,
         }}
-      > */}
-
-      <div style={{display:"flex",justifyContent:"center"}}>
-        <NewsCard data={news[i]} />
-        </div>
-
-      {/* </Paper> */}
-    </Grid>
-    )
+      >
+         <NewsCard data={news[i]} />
+      </Paper>
+    </Grid>)
   }
   
   return <>{final1}</>;

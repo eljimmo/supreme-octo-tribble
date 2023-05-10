@@ -26,7 +26,7 @@ export default function NewsCard(props) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary" href={props.data.url}>
-          Know more
+          Article Link
         </Button>
       </CardActions>
     </Card>
