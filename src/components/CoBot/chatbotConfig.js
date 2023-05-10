@@ -6,9 +6,14 @@ import Contact from "./widgets/Contact";
 import MedicineDelivery from "./widgets/MedicineDelivery";
 import CoBotAvatar from "./CoBotAvatar";
 
+const botName = "Leibniz Bot";
+
+
+
 const config = {
+
   lang: "no",
-  botName: "CoBot",
+  botName: botName,
   customStyles: {
     botMessageBox: {
       backgroundColor: "#04668a"
@@ -19,7 +24,7 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi, I'm here to provide you with latest COVID 19 data to keep you safe!`
+      `Hi I'm ${botName}. I’m here to help you explain how our Artificial Intelligent Agents work.`
     ),
     createChatBotMessage(
       "Here's a quick overview of what I can help you with. You can also type in.",

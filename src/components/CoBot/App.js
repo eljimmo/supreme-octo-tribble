@@ -15,12 +15,12 @@ export default function CApp() {
   return (
     <div className="App">
       {/* <MetaTags> */}
-        <title> COVID-19-Chatbot </title>
+        <title> Leibniz Bot </title>
         <meta name="description" content="COVID 19 assistance chatbot." />
       {/* </MetaTags> */}
       {/* <Fade bottom cascade> */}
-        <h1>COVID-19-Chatbot</h1>
-        <h2>Start chatting with the COVID-19-Chatbot!</h2>
+        <h1> Leibniz Bot</h1>
+        <h2>Start chatting with the Leibniz Bot!</h2>
       {/* </Fade> */}
       <TypedReact />
       {showBot && (
