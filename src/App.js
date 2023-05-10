@@ -6,8 +6,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
-import AIPage from './pages/AI_Models';
-import AboutIndex from './pages/About';
+// import AIPage from './pages/AI_Models';
+// import AboutIndex from './pages/About';
 
 
 
@@ -33,10 +33,10 @@ export default function App() {
             {/* <Route path=":slug" element={<Other />} /> */}
 
             {/* relative path doesn't start with / */}
-            <Route path="AI" element={<AIPage />} />
+            {/* <Route path="AI" element={<AIPage />} /> */}
             {/* absolute path starts with /; if you want to pass full path */}
             {/* <Route path="/app/contact" element={<AppContact />} /> */}
-            <Route path="about" element={<AboutIndex />} />
+            {/* <Route path="about" element={<AboutIndex />} /> */}
 
             {/* <Route
               path="redirect-me"
@@ -57,12 +57,12 @@ const Layout = () => {
         <li>
           <Link to="/">Home (/)</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/About">About (/)</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/AI">AI (/)</Link>
-        </li>
+        </li> */}
       </ol>
       {/* <h4>Home (/)</h4> */}
       <fieldset>

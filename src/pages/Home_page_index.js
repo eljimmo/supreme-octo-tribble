@@ -30,7 +30,6 @@ export default function HomePage() {
             <ChatApp/>
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
-
         <Footer/>
     </>
   );
