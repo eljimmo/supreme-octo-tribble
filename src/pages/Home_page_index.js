@@ -10,9 +10,10 @@ import Footer from '../components/Footer/index';
 import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-import ChatApp from '../components/Chatbot/App';
+// import ChatApp from '../components/Chatbot/App';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
+import CoBotAvatar from '../components/CoBot/App';
 
 
 export default function HomePage() {
@@ -27,7 +28,8 @@ export default function HomePage() {
 <Services/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            <ChatApp/>
+            {/* <ChatApp/> */}
+            <CoBotAvatar/>
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
         <Footer/>
