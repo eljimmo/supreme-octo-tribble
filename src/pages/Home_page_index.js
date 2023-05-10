@@ -14,6 +14,7 @@ import FrostedApp from '../components/FrostedGlass/index';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
 import CoBotAvatar from '../components/CoBot/App';
+import DashboardContent from '../components/Stock_Portfolio/Market_News';
 
 
 export default function HomePage() {
@@ -26,6 +27,7 @@ export default function HomePage() {
 
 <StockSearch/>
 <Services/>
+<DashboardContent/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
             {/* <ChatApp/> */}
