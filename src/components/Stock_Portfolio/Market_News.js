@@ -4,6 +4,7 @@ import NewsLoad from "../Stock_Portfolio/News_Load";
 // import Quotes from "../Stock_Portfolio/Gauge";
 // import FeaturedPost from "../Stock_Portfolio/Intro";
 // import Stocks from "./Stocks";
+// import Index from '../Stock_Portfolio/Stock_Sec';
 
 
 
@@ -11,6 +12,7 @@ import NewsLoad from "../Stock_Portfolio/News_Load";
 function DashboardContent() {
 
   return (<>
+              {/* <Index/> */}
               {/* <FeaturedPost/> */}
               {/* <br/> */}
               {/* <Quotes/> */}

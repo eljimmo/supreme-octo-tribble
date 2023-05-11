@@ -33,11 +33,6 @@ var options = {
     point: {
       radius: 0,
     },
-    // line: {
-    //   borderCapStyle: "round",
-    //   borderJoinStyle: "round",
-    //   tension: 1,
-    // },
   },
 };
 
