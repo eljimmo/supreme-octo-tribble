@@ -52,7 +52,7 @@ const config = {
       widgetFunc: (props) => <LocalStatistics />
     },
     {
-      widgetName: "emergencyContact",
+      widgetName: "creatorContact",
       widgetFunc: (props) => <Contact />
     },
     {

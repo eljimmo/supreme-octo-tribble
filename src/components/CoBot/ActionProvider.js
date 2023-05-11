@@ -48,9 +48,9 @@ class ActionProvider {
 
   handleContact = () => {
     const message = this.createChatBotMessage(
-      "Call 1999 for Trilingual Health Assistance.",
+      "Email the creator!",
       {
-        widget: "emergencyContact",
+        widget: "creatorContact",
         loading: true,
         terminateLoading: true,
         withAvatar: true

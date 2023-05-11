@@ -69,12 +69,16 @@ export default function News(props) {
   let final1 =[];
   for(let i=0;i<news.length && i<10;i++ )
   {
-    final1.push(<Grid item xs={12} md={6} lg={4} key={i}>
+    final1.push(<Grid 
+      // item xs={12} 
+      // md={6} 
+      // lg={4} 
+    key={i}>
       <Paper
         sx={{
           p: 2,
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           height: 450,
         }}
       >

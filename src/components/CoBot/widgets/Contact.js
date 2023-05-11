@@ -1,12 +1,12 @@
 import React from "react";
 
-import UrlIcon from "../icons/call.svg";
+import UrlIcon from "../icons/email.svg";
 
 const ContactLink = () => {
   return (
-    <a href="tel:1999" className="tel-link">
+    <a href="jimm" className="tel-link">
       <img className="url-icon" alt="CallIcon" src={UrlIcon} />
-      <h1 className="tel-header"> Call 1999 </h1>
+      <h1 className="tel-header"> Contact the Creator at jsmov@proton.me </h1>
     </a>
   );
 };

@@ -1,4 +1,4 @@
-/* html,
+html,
 body,
 #root,
 .App {
@@ -10,8 +10,8 @@ body,
   display: flex;
   flex-direction: column;
   flex: 1;
-} */
+} 
 
-/* .chart-container {
+.chart-container {
   flex: 1;
-} */
+}
