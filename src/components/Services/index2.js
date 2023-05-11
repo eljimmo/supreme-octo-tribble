@@ -28,7 +28,6 @@ Create your own bots and change the way the internal model for the AI works.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          {/* <ServicesH2>Sequential machine learning model</ServicesH2> */}
           <Typewriter
   options={{
     strings: ['Sequential machine learning model', 'Bidirectional RNN encoder and decoder', 'DNN (Deep Neural Networks)'],

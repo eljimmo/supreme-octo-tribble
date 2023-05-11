@@ -2,9 +2,17 @@ import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import NewsCard from "../Stock_Portfolio/News_Card";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import './styles.css'
+// import Grid from "@mui/material/Grid";
+// import Paper from "@mui/material/Paper";
+// import './styles.css'
+import {
+  ServicesContainer2,
+  // ServicesH1,
+  // ServicesWrapper,
+  ServicesCard,
+  ServicesH2,
+  ServicesP
+} from '../Services/ServicesElements';
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -69,22 +77,21 @@ export default function News(props) {
   let final1 =[];
   for(let i=0;i<news.length && i<10;i++ )
   {
-    final1.push(<Grid 
-      // item xs={12} 
-      // md={6} 
-      // lg={4} 
-    key={i}>
-      <Paper
-        sx={{
-          p: 2,
-          display: "flex",
-          flexDirection: "row",
-          height: 450,
-        }}
-      >
-         <NewsCard data={news[i]} />
-      </Paper>
-    </Grid>)
+    final1.push(
+
+
+      <ServicesContainer2 id="services">
+      <ServicesCard>
+             <NewsCard data={news[i]} />
+
+        <ServicesH2>{news[i].headline}</ServicesH2>
+        <ServicesP>{news[i].summary}</ServicesP>
+        <ServicesP>{news[i].source}</ServicesP>
+        <ServicesP>{news[i].url}</ServicesP>
+      </ServicesCard>
+
+      </ServicesContainer2>
+    )
   }
   
   return <>{final1}</>;

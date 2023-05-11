@@ -24,7 +24,6 @@ export default function HomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
-
 <StockSearch/>
 <Services/>
 <DashboardContent/>

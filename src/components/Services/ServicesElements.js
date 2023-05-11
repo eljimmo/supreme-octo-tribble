@@ -20,7 +20,6 @@ export const ServicesContainer = styled.div`
 
 
 export const ServicesContainer2 = styled.div`
-  height: 900px;
   display: relative;
   flex-direction: column;
   justify-content: center;
