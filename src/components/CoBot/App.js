@@ -7,7 +7,7 @@ import ActionProvider from "./ActionProvider";
 import TypedReact from "./TypedReact";
 
 export default function CApp() {
-  const [showBot, toggleBot] = useState(false);
+  const [showBot, toggleBot] = useState(true);
 
   return (
     <div className="App">

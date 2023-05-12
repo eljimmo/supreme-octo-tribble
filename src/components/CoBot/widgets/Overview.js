@@ -3,12 +3,12 @@ import Options from "./Options";
 const GeneralOptions = (props) => {
   const options = [
     {
-      name: "Show me recommended stocks!",
+      name: "Show me recommended stocks.",
       handler: props.actionProvider.handleGlobalStats,
       id: 1
     },
     {
-      name: "Show me what stocks to avoid!",
+      name: "Show me what stocks to avoid.",
       handler: props.actionProvider.handleLocalStats,
       id: 2
     },
@@ -17,11 +17,11 @@ const GeneralOptions = (props) => {
       handler: props.actionProvider.handleContact,
       id: 3
     },
-    // {
-    //   name: "Clinical medicine delivery",
-    //   handler: props.actionProvider.handleMedicine,
-    //   id: 4
-    // }
+    {
+      name: "Show me my portfolio.",
+      handler: props.actionProvider.handleMedicine,
+      id: 4
+    }
   ];
   return <Options options={options} title="Options" {...props} />;
 };

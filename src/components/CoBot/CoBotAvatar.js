@@ -10,7 +10,6 @@ const CoBotAvatar = () => {
         style={{ background: "none" }}
       >
         <App/>
-
       </div>
     </div>
   );
