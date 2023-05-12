@@ -2,13 +2,8 @@ import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import NewsCard from "../Stock_Portfolio/News_Card";
-// import Grid from "@mui/material/Grid";
-// import Paper from "@mui/material/Paper";
-// import './styles.css'
 import {
   ServicesContainer2,
-  // ServicesH1,
-  // ServicesWrapper,
   ServicesCard,
   ServicesH2,
   ServicesP
@@ -83,13 +78,11 @@ export default function News(props) {
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
-
         <ServicesH2>{news[i].headline}</ServicesH2>
         <ServicesP>{news[i].summary}</ServicesP>
         <ServicesP>{news[i].source}</ServicesP>
         <ServicesP>{news[i].url}</ServicesP>
       </ServicesCard>
-
       </ServicesContainer2>
     )
   }
