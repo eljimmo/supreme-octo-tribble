@@ -37,7 +37,7 @@ Utilizing the most powerful libraries, Project Liebniz Analytica aims to create 
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
-    </ServicesContainer>
+  </ServicesContainer> 
   );
 };
 

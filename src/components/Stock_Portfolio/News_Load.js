@@ -73,8 +73,6 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
-
-
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
