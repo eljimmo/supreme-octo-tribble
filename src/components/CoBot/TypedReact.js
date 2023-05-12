@@ -12,8 +12,10 @@ const TypedReact = () => {
       const options = {
         showCursor: true,
         strings: [
-          "Click on the Bot icon to get started",
-          "Type in tell a joke and see what happens..."
+          "Click on the Bot icon to talk to Leibniz Bot",
+          "Type in tell a joke, Leibniz Bot will tell you a joke.",
+          "Created by the Leibniz Team."
+
         ],
         typeSpeed: 50,
         backSpeed: 50,
