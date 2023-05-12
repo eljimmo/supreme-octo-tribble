@@ -100,14 +100,13 @@ export default function App() {
       <Suspense fallback={null}>
         <YBot position={[0, -1.3, 0]} />
         <Text position={[0, 0, -0.2]} fontSize={0.6} color="white" font="/noto.woff" material-fog={false} letterSpacing={0}>
-          hello
+          Project Leibniz
         </Text>
       </Suspense>
       <mesh scale={4} position={[0, 1, -0.2]}>
         <planeGeometry />
         <meshStandardMaterial color="lightblue" toneMapped={false} fog={false} envMapIntensity={0} />
       </mesh>
-      {/* <AdaptiveDpr pixelated /> */}
       <Effects />
     </Canvas>
   )
