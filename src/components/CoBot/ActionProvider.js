@@ -76,12 +76,12 @@ class ActionProvider {
 
   handleJoke = () => {
     var jokes = [
-      "So many coronavirus jokes out there, it’s a pundemic!",
-      "I’ll tell you a coronavirus joke now, but you’ll have to wait two weeks to see if you got it!",
-      "Did you hear the joke about coronavirus? Never mind, I don’t want to spread it around!",
-      "What should you do if you don’t understand a coronavirus joke? Be patient!",
-      "Why do they call it the novel coronavirus? It’s a long story...",
-      "Since we’re all in quarantine I guess we’ll be making only inside jokes from now on!"
+      "The Covid 19 Toilet Paper craze was a lot like the Stock Market Crash of 1929 But this time, instead of everyone dumping their stocks, they're stocking for dumps",
+      "What's the difference between me and the stock market? 1) My parents are actually invested in the stock market 2) The stock market still has some value 3) People care that the stock market is currently depressed",
+      "Secretly found that I can manipulate stock market Whatever I bought, it went red.",
+      "I purchased $1,000 in Bose stock today. My accountant said it would be a sound investment.",
+      "My friend is an honourable, courteous and chivalrous guy. But he hates the stock market. When I asked him why, he said, “Gentlemen prefer bonds.”",
+      "The stock market is down 30%... Yo mama must have skipped a meal."
     ];
 
     var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
