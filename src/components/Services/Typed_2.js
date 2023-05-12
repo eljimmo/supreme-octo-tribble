@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
+import { WhiteServicesH2 } from "./ServicesElements";
 
-const TypedReact = () => {
+const TypedReact2 = () => {
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
   // Create reference to store the Typed instance itself
@@ -12,8 +13,8 @@ const TypedReact = () => {
       const options = {
         showCursor: true,
         strings: [
-          "Click on the Bot icon to talk to Leibniz Bot",
-          "Type in tell a joke, Leibniz Bot will tell you a joke.",
+          "Artificial Intelligence as a Service",
+          "Create your own AI Agent, get stock recommendations and predictions.",
           "Created by the Project Leibniz Team."
 
         ],
@@ -34,12 +35,12 @@ const TypedReact = () => {
   }, []);
 
   return (
-    <div>
-      <h3>
+    <div color="white">
+      <WhiteServicesH2>
         <span ref={el} />
-      </h3>
+      </WhiteServicesH2>
     </div>
   );
 };
 
-export default TypedReact;
+export default TypedReact2;

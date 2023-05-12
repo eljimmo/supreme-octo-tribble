@@ -95,6 +95,12 @@ export const ServicesH2 = styled.h2`
   margin-bottom: 10px;
 `;
 
+export const WhiteServicesH2 = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color : white;
+`;
+
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
