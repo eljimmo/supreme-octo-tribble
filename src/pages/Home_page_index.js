@@ -28,7 +28,6 @@ export default function HomePage() {
 <DashboardContent/>
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            {/* <ChatApp/> */}
             <CoBotAvatar/>
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
