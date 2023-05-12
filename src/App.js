@@ -2,7 +2,7 @@ import {
   BrowserRouter, // should be single
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
-  Link,
+  // Link,
   Outlet,
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
@@ -55,7 +55,7 @@ const Layout = () => {
     <div>
       <ol>
         <li>
-          <Link to="/">Home (/)</Link>
+          {/* <Link to="/">Home (/)</Link> */}
         </li>
         {/* <li>
           <Link to="/About">About (/)</Link>
@@ -66,7 +66,7 @@ const Layout = () => {
       </ol>
       {/* <h4>Home (/)</h4> */}
       <fieldset>
-        <legend>Selected page: (using &lt;Outlet /&gt;)</legend>
+        {/* <legend>Selected page: (using &lt;Outlet /&gt;)</legend> */}
         <Outlet />
       </fieldset>
     </div>
