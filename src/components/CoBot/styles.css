@@ -40,7 +40,7 @@
   font-size: 0.9rem;
   background-color: rgba(45, 159, 253, 0.589);
   display: flex;
-  background: linear-gradient(to top right, rgb(15, 146, 221), #a6a6a6);
+  /* background: linear-gradient(to top right, rgb(15, 146, 221), #a6a6a6); */
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,7 @@
   left: 40px;
   bottom: 55px;
   z-index: 9999;
-  box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
+  /* box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4); */
   border-radius: 5px;
 }
 .app-chatbot-button-icon {
