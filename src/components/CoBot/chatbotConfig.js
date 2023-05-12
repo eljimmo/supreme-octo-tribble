@@ -24,10 +24,12 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi I'm ${botName}. I’m here to help you explain how our Artificial Intelligent Agents work.`
+      `Hi I'm ${botName}. I’m here to help you show you how our Artificial Intelligent Agents can help with investment decisions.`
+      // `Hi I'm ${botName}. I’m here to help you explain how our Artificial Intelligent Agents work.`
+
     ),
     createChatBotMessage(
-      "Here's a quick overview of what I can help you with. You can also type in.",
+      "Here's a quick overview of what I can help you with. You can also type a stock name or industry sector in & I will give you some info on it.",
       {
         withAvatar: false,
         delay: 400,

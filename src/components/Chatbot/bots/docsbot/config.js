@@ -22,7 +22,7 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi I'm ${botName}. I’m here to help you explain how our Artificial Intelligent Agents work.`
+      `Hi I'm ${botName}. I’m here to help you show you how our Artificial Intelligent Agents can help with investment decisions.`
     ),
     createChatBotMessage(
       "Here's a quick overview over what they need to function. Ask me about the different configurations to dive deeper.",
