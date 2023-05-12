@@ -3,11 +3,8 @@ import gsap from "gsap";
 import React from "react";
 import { useLayoutEffect } from "react";
 import { useRef } from "react";
-// import v1 from "./pexels_oleg.mp4";
-// import v2 from "./pexels.mp4";
 import styled, { keyframes } from "styled-components";
 import a15 from "./pexels_engineering.jpg";
-import Typewriter from 'typewriter-effect';
 
 
 
