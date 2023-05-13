@@ -5,7 +5,7 @@ import {
   homeObjOne,
   homeObjThree,
 } from '../components/InfoSection/Data';
-import { Affix, rem } from '@mantine/core';
+import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
@@ -29,6 +29,13 @@ export default function HomePage() {
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
             <CoBotAvatar/>
+      </Affix>
+      <Affix position={{ bottom: rem(20), right: rem(20) }}>
+            <Button
+              variant="outline"
+            >
+              I am still in Development.
+            </Button>
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
         <Footer/>
