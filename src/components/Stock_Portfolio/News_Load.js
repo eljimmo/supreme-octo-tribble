@@ -79,7 +79,7 @@ export default function News(props) {
         <ServicesH2>{news[i].headline}</ServicesH2>
         <ServicesP>{news[i].summary}</ServicesP>
         <ServicesP>{news[i].source}</ServicesP>
-        <ServicesP>{news[i].url}</ServicesP>
+        {/* <ServicesP>{news[i].url}</ServicesP> */}
       </ServicesCard>
       </ServicesContainer2>
     )
