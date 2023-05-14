@@ -38,7 +38,10 @@ class MessageParser {
       ];
     }
 
-    if (message.includes("medicine") || message.includes("delivery")) {
+    if (message.includes("portfolio") || 
+    message.includes("delivery")
+    
+    ) {
       return this.actionProvider.handleMedicine();
     }
 

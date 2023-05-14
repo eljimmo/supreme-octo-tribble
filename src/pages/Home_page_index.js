@@ -14,6 +14,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
 import CoBotAvatar from '../components/CoBot/App';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
+// import ChatApp from '../components/Chatbot/App'
 
 
 export default function HomePage() {
@@ -31,6 +32,7 @@ export default function HomePage() {
             <CoBotAvatar/>
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
+        {/* <ChatApp/> */}
             <Button
               variant="outline"
             >

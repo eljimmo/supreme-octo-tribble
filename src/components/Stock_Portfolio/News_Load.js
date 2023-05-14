@@ -8,6 +8,8 @@ import {
   ServicesH2,
   ServicesP
 } from '../Services/ServicesElements';
+// import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -73,6 +75,8 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
+      <div style={{ overflow: 'hidden', background: 'black' }}>
+      <Paper sx={{ p: 2, margin: 'auto', maxWidth: 850, flexGrow: 1 }}>
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
@@ -82,6 +86,8 @@ export default function News(props) {
         {/* <ServicesP>{news[i].url}</ServicesP> */}
       </ServicesCard>
       </ServicesContainer2>
+      </Paper>
+    </div>
     )
   }
   
