@@ -6,9 +6,9 @@ import {
   ServicesContainer2,
   ServicesCard,
   ServicesH2,
-  ServicesP
+  ServicesP,
+  WhiteServicesH2
 } from '../Services/ServicesElements';
-// import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
 export default function News(props) {
@@ -76,14 +76,19 @@ export default function News(props) {
   {
     final1.push(
       <div style={{ overflow: 'hidden', background: 'black' }}>
-      <Paper sx={{ p: 2, margin: 'auto', maxWidth: 850, flexGrow: 1 }}>
+        <br></br>
+        
+
+      <Paper sx={{ p: 2, margin: 'auto', maxWidth: 1250, flexGrow: 1 }}>
+
+
+          
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
         <ServicesH2>{news[i].headline}</ServicesH2>
         <ServicesP>{news[i].summary}</ServicesP>
         <ServicesP>{news[i].source}</ServicesP>
-        {/* <ServicesP>{news[i].url}</ServicesP> */}
       </ServicesCard>
       </ServicesContainer2>
       </Paper>

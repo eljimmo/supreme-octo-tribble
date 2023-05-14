@@ -89,7 +89,11 @@ export const ServicesH2 = styled.h2`
 `;
 
 export const WhiteServicesH2 = styled.h2`
-  font-size: 2rem;
+font-size: 3.5rem;
+justify-content: center;
+padding: 0 20px;
+text-align: center;
+
   margin-bottom: 20px;
   color : white;
 `;
