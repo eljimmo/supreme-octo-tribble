@@ -21,8 +21,6 @@ export default function MarketNews(async) {
   
   return (
     <Suspense fallback={<h1>Loading profile...</h1>}>
-      
-
       <DashboardContent />
     </Suspense>
   );

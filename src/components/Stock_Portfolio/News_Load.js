@@ -7,7 +7,6 @@ import {
   ServicesCard,
   ServicesH2,
   ServicesP,
-  WhiteServicesH2
 } from '../Services/ServicesElements';
 import Paper from "@mui/material/Paper";
 
@@ -77,7 +76,7 @@ export default function News(props) {
     final1.push(
       <div style={{ overflow: 'hidden', background: 'black' }}>
         <br></br>
-        
+
 
       <Paper sx={{ p: 2, margin: 'auto', maxWidth: 1250, flexGrow: 1 }}>
 
