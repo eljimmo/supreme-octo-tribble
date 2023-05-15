@@ -1,63 +1,61 @@
-// import * as React from "react";
-// import { useEffect } from "react";
-// import axios from "axios";
-// import NewsCard from "../Stock_Portfolio/News_Card";
-// import {
-//   ServicesContainer2,
-//   ServicesCard,
-//   ServicesH2,
-//   ServicesP
-// } from '../Services/ServicesElements';
-// // import Grid from "@mui/material/Grid";
-// import Paper from "@mui/material/Paper";
-// // import Quote from '../../views/StockSearch/SSCompos/Content/Quote/QuoteIndex';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Data_App.css';
+import Coin from './Data_Stock';
 
-// export default function Stock_Load(props) {
-//   const [data, setData] = React.useState([]);
+function ACpp() {
+  const [coins, setCoins] = useState([]);
+  const [search, setSearch] = useState('');
 
-//   const fetchData = () => {
-    
-//     let url = "";
-//     if (props.basic === "news?category=general") {
-//       url =
-//         "https://cloud.iexapis.com/v1/stock/market/batch?&types=quote&symbols=aapl,fb,tsla,spy,amd,nvda,amzn,goog,bac&token=sk_09c6971dee1a4d28801956d73a114c5a";
-//     } 
-//     axios.get(url).then((res) => {
-//       const pData = res.data;
-//       console.log(pData);
-//       setData(pData);
-//     });
-//   };
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
-//   let final1 =[];
-//   for(let i=0;i<data.length && i<10;i++ )
-//   {
-//     final1.push(
+  useEffect(() => {
+    axios
+      .get(
+        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
+      )
+      .then(res => {
+        setCoins(res.data);
+        console.log(res.data);
+      })
+      .catch(error => console.log(error));
+  }, []);
 
+  const handleChange = e => {
+    setSearch(e.target.value);
+  };
 
-//       <div style={{ overflow: 'hidden', background: 'white' }}>
-//       <Paper sx={{ p: 2, margin: 'auto', maxWidth: 850, flexGrow: 1 }}>
-//       <ServicesContainer2 id="services">
-//       <ServicesCard>
+  const filteredCoins = coins.filter(coin =>
+    coin.name.toLowerCase().includes(search.toLowerCase())
+  );
 
+  return (
+    <div className='coin-app'>
+      <div className='coin-search'>
+        <h1 className='coin-text'>Search a currency</h1>
+        <form>
+          <input
+            className='coin-input'
+            type='text'
+            onChange={handleChange}
+            placeholder='Search'
+          />
+        </form>
+      </div>
+      {filteredCoins.map(coin => {
+        return (
+          <Coin
+            key={coin.id}
+            name={coin.name}
+            price={coin.current_price}
+            symbol={coin.symbol}
+            marketcap={coin.total_volume}
+            volume={coin.market_cap}
+            image={coin.image}
+            priceChange={coin.price_change_percentage_24h}
+          />
+        );
+      })}
+    </div>
+  );
+}
 
-//         <ServicesH2>{data[i].companyName}</ServicesH2>
-//         <ServicesP>{data[i].symbol}</ServicesP>
-//         <ServicesP>{data[i].latestPrice}</ServicesP>
-//         <ServicesP>{data[i].change}</ServicesP>
-//         <ServicesP>{data[i].changePercent}</ServicesP>
-
-
-//       </ServicesCard>
-//       </ServicesContainer2>
-//       </Paper>
-//     </div>
-
-
-//     )
-//   }
-  
-//   return <>{final1}</>;
-// }
+export default ACpp;

@@ -23,6 +23,8 @@ const Searchbar = ({ searchSubmit }) => {
         <form action="" onSubmit={(e) => handleSubmit(e)}>
           <div>
             <input
+                        className='coin-input'
+
               type="text"
               placeholder="Search Symbol"
               title=""
