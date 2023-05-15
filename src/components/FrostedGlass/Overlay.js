@@ -50,7 +50,7 @@ loop: true,
 
         <Typewriter
 options={{
-strings: ['Created by the Project Leibniz Analytica Team', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+strings: ['The man who loves walking will walk further than the man who loves the destination.', 'The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela', 'Do not go where the path may lead, go instead where there is no path and leave a trail. -Ralph Waldo Emerson', 'It is during our darkest moments that we must focus to see the light. -Aristotle', 'Whoever is happy will make others happy too. -Anne Frank', 'You will face many defeats in life, but never let yourself be defeated. -Maya Angelou', 'In the end, it is not the years in your life that count. Its the life in your years. -Abraham Lincoln', 'Life is either a daring adventure or nothing at all. -Helen Keller', 'Many of lifes failures are people who did not realize how close they were to success when they gave up. -Thomas A. Edison'],
 autoStart: true,
 loop: true,
 }}
