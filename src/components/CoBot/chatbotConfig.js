@@ -24,7 +24,7 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi I'm ${botName}. I’m here to help you show you how Artificial Intelligent Agents can help with investment decisions.`
+      `Hi I'm ${botName}. I’m here to help you show you how Artificial Intelligent Agents can help with financial investment decisions.`
 
     ),
     // createChatBotMessage(
