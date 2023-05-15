@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Data_App.css';
-import Coin from './Data_Stock';
+import Coin from './Data_Coin';
 
 function ACpp() {
   const [coins, setCoins] = useState([]);

@@ -28,7 +28,7 @@ const config = {
 
     ),
     createChatBotMessage(
-      "Ask me about anything, stocks, cryptocurrency, or I can tell you a joke.",
+      "Ask me about a specific stock, cryptocurrency, or anything. I can also tell you jokes.",
 
       {
         withAvatar: false,
