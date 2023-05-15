@@ -4,14 +4,12 @@ import Chatbot from "react-chatbot-kit";
 import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
-// import TypedReact from "./TypedReact";
 
 export default function CApp() {
   const [showBot, toggleBot] = useState(true);
 
   return (
     <div className="App">
-      {/* <TypedReact /> */}
       {showBot && (
           <div className="app-chatbot-container">
             <Chatbot

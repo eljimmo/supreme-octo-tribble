@@ -36,11 +36,10 @@ export default function HomePage() {
             <CoBotAvatar/>
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
-        {/* <ChatApp/> */}
             <Button
               variant="outline"
             >
-              I am still in Development.
+              Financial AI Agents
             </Button>
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
