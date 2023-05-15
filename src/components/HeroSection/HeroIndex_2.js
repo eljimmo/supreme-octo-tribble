@@ -40,7 +40,6 @@ function HeroSection_2() {
       <HeroContent>
       <Canvas shadows camera={{ position: [0, 16, 42], fov: 30 }}>
 
-{/* <color attach="background" args={['#151520']} /> */}
 <directionalLight position={[-2.5, 4, 5]} castShadow intensity={1} shadow-bias={-0.00001} shadow-mapSize={[1024, 1024]} />
 <Suspense fallback={<Html center className="loading" children="Loading..." />}>
 <Experience/>
@@ -49,7 +48,6 @@ function HeroSection_2() {
       
 
       </HeroContent>
-      {/* </Section> */}
 
     </HeroContainerTransparent>
   );

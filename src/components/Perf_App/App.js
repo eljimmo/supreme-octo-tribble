@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, Html } from '@react-three/drei'
 import { EffectComposer, SSAO, Bloom } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'
 import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
@@ -12,10 +12,13 @@ import { RectAreaLightUniformsLib, FlakesTexture } from 'three-stdlib'
 // to it in whatever way the want. Here we cause regression on mouse-move
 // and scale the pixel ratio as well as skipping some post-processing effects.
 
+
 RectAreaLightUniformsLib.init()
 THREE.Vector2.prototype.equals = function (v, epsilon = 0.001) {
   return Math.abs(v.x - this.x) < epsilon && Math.abs(v.y - this.y) < epsilon
 }
+
+
 
 function useLerpedMouse() {
   const mouse = useThree((state) => state.mouse)
@@ -95,7 +98,7 @@ export default function App() {
   return (
     <Canvas shadows performance={{ min: 0.1 }} gl={{ antialias: false }} camera={{ position: [0, 0, 0.8], fov: 75, near: 0.5, far: 1 }}>
       <Lights />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
         <YBot position={[0, -1.3, 0]} />
       </Suspense>
       <mesh scale={4} position={[0, 1, -0.2]}>
@@ -103,5 +106,6 @@ export default function App() {
       </mesh>
       <Effects />
     </Canvas>
+
   )
 }

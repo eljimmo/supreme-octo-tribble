@@ -13,15 +13,15 @@ const GeneralOptions = (props) => {
       id: 2
     },
     {
+      name: "Show me my portfolio.",
+      handler: props.actionProvider.handleMedicine,
+      id: 4
+    },
+    {
       name: "Creator contact",
       handler: props.actionProvider.handleContact,
       id: 3
     },
-    {
-      name: "Show me my portfolio.",
-      handler: props.actionProvider.handleMedicine,
-      id: 4
-    }
   ];
   return <Options options={options} title="Options" {...props} />;
 };

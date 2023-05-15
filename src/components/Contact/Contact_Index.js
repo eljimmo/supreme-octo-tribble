@@ -95,12 +95,16 @@ export default function Contact() {
                 placeholder="Write your message"
               ></textarea>
               <br />
+
               <Button 
                             variant="outline"
+
+                            
 
               >
                 Send Message Now
               </Button>
+              
             </form>
           </div>
         </Col>

@@ -53,13 +53,13 @@ const config = {
       widgetFunc: (props) => <LocalStatistics />
     },
     {
+      widgetName: "medicineDelivery",
+      widgetFunc: (props) => <MedicineDelivery />
+    },
+    {
       widgetName: "creatorContact",
       widgetFunc: (props) => <Contact />
     },
-    {
-      widgetName: "medicineDelivery",
-      widgetFunc: (props) => <MedicineDelivery />
-    }
   ]
 };
 
