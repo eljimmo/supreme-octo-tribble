@@ -4,9 +4,9 @@ import App from '../Perf_App/App';
 
 const CoBotAvatar = () => {
   return (
-    <div className="react-chatbot-kit-chat-bot-avatar">
+    <div >
       <div
-        className="react-chatbot-kit-chat-bot-avatar-container"
+        // className="react-chatbot-kit-chat-bot-avatar-container"
         style={{ background: "none" }}
       >
         <App/>

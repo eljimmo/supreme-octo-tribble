@@ -72,13 +72,6 @@ loop: true,
 
         </h1>
         <List open={state.open}>
-          {/* <h3>Lorem ipsum</h3>
-          <h3>Lorem ipsum</h3> */}
-          <h3>
-            {/* <span className="accent">Lorem ipsum</span> */}
-          </h3>
-          {/* <h4>Lorem ipsum</h4> */}
-          {/* <p className="price">$Lorem ipsum</p> */}
           <p>
             Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis. We utilize a variety of technologies that include Machine Learning, Deep Learning, and Natural Language Processing to create a powerful tool. 
             

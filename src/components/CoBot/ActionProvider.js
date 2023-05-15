@@ -91,6 +91,25 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
+
+
+  handleQuotes = () => {
+    var quotes = [
+      "Being a successful person is not necessarily defined by what you have achieved, but by what you have overcome. — Fannie Flagg",      
+      "You'll miss the best things if you keep your eyes shut. — Dr. Seuss",
+      "You cannot swim for new horizons until you have courage to lose sight of the shore. — William Faulkner",
+      "The only impossible journey is the one you never begin. — Tony Robbins",
+      "It is never too late to be what you might have been. — George Eliot",
+        "The only person you are destined to become is the person you decide to be. — Ralph Waldo Emerson",
+        "The best way to predict the future is to invent it. — Alan Kay",    ];
+
+    var randomQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+
+    const message = this.createChatBotMessage(randomQuotes);
+
+    this.addMessageToState(message);
+  };
+
   handleThanks = () => {
     const message = this.createChatBotMessage("You're welcome, and stay safe!");
 

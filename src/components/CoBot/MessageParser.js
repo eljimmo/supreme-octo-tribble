@@ -52,6 +52,12 @@ class MessageParser {
     ) {
       return this.actionProvider.handleJoke();
     }
+    if (
+      message.includes("quotes") ||
+      message.includes("quote") 
+          ) {
+      return this.actionProvider.handleQuotes();
+    }
 
     if (message.includes("thanks") || message.includes("thank you")) {
       return this.actionProvider.handleThanks();

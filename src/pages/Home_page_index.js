@@ -14,9 +14,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
 import CoBotAvatar from '../components/CoBot/App';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
-// import ChatApp from '../components/Chatbot/App'
 import ACpp from '../components/Stock_Portfolio/Coin_Load';
-// import Stock_Load from '../components/Stock_Portfolio/Stock_Load';
 
 
 export default function HomePage() {
@@ -28,7 +26,6 @@ export default function HomePage() {
 <InfoSection {...homeObjOne} />
 <StockSearch/>
 <ACpp/>
-
 <Services/>
 <DashboardContent/>
 <ScApp/>
