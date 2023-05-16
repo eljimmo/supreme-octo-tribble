@@ -18,6 +18,17 @@ export const ServicesContainer = styled.div`
 `;
 
 
+export const TopLine = styled.div`
+  color: #7918f2;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+
 
 export const ServicesContainer2 = styled.div`
   display: relative;

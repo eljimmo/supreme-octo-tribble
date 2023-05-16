@@ -15,6 +15,7 @@ import Services from '../components/Services/index2';
 import CApp from '../components/CoBot/App';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
 import ACpp from '../components/Stock_Portfolio/Coin_Load';
+// import ServiceList from '../components/Services/ServiceThree';
 
 
 export default function HomePage() {
