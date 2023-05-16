@@ -1,9 +1,9 @@
 import React from 'react';
 import InfoSection from '../components/InfoSection';
-import InfoSectionCanva from '../components/InfoSection/index_Canvas';
+// import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 import {
   homeObjOne,
-  homeObjThree,
+  // homeObjThree,
 } from '../components/InfoSection/Data';
 import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
@@ -15,6 +15,7 @@ import Services from '../components/Services/index2';
 import CApp from '../components/CoBot/App';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
 import ACpp from '../components/Stock_Portfolio/Coin_Load';
+// import Contact_Components from '../components/Contact/Component';
 // import Cover from '../components/Particle_Cover/Index_Cover';
 // import Cover_App from '../components/Particle_Cover/Cover';
 // import ServiceList from '../components/Services/ServiceThree';
@@ -43,7 +44,8 @@ export default function HomePage() {
               Financial AI Agents
             </Button>
       </Affix>
-      <InfoSectionCanva {...homeObjThree} />
+      {/* <Contact_Components/> */}
+      {/* <InfoSectionCanva {...homeObjThree} /> */}
         <Footer/>
         {/* <Cover_App/> */}
     </>
