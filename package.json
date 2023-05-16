@@ -69,6 +69,7 @@
     "tabler-icons-react": "^1.56.0",
     "three": "^0.150.1",
     "three-stdlib": "^2.21.8",
+    "tsparticles": "^2.9.3",
     "typed.js": "^2.0.16",
     "typewriter-effect": "^2.19.0",
     "valtio": "^1.10.3",

@@ -5,7 +5,7 @@ import NewsCard from "../Stock_Portfolio/News_Card";
 import {
   ServicesContainer2,
   ServicesCard,
-  ServicesH2,
+  TopLine,
   ServicesP,
 } from '../Services/ServicesElements';
 import Paper from "@mui/material/Paper";
@@ -85,7 +85,8 @@ export default function News(props) {
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
-        <ServicesH2>{news[i].headline}</ServicesH2>
+             <br/>
+        <TopLine>{news[i].headline}</TopLine>
         <ServicesP>{news[i].summary}</ServicesP>
         <ServicesP>{news[i].source}</ServicesP>
       </ServicesCard>

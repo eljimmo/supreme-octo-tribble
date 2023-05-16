@@ -28,14 +28,14 @@ Create your own bots and change the way the internal model for the AI works.
         </ServicesCard>
         <ServicesCard>
         <TopLine>
-        DNN (Deep Neural Networks)
+        Intelligent Smart Networks
           </TopLine>
           <ServicesP>
 Create & Alter the parmeters of the model to see how it affects the predictions.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <TopLine>Natural Language Processing (NLP) </TopLine>
+          <TopLine>Machine Learning Analytics Processing </TopLine>
           <ServicesP>
 Utilizing the most powerful libraries, Project Liebniz Analytica aims to create idiosyncratic AI chatbots that help you better understand the financial position of an individual commodity or stock.
           </ServicesP>

@@ -15,6 +15,8 @@ import Services from '../components/Services/index2';
 import CApp from '../components/CoBot/App';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
 import ACpp from '../components/Stock_Portfolio/Coin_Load';
+// import Cover from '../components/Particle_Cover/Index_Cover';
+// import Cover_App from '../components/Particle_Cover/Cover';
 // import ServiceList from '../components/Services/ServiceThree';
 
 
@@ -43,6 +45,7 @@ export default function HomePage() {
       </Affix>
       <InfoSectionCanva {...homeObjThree} />
         <Footer/>
+        {/* <Cover_App/> */}
     </>
   );
 }
