@@ -6,7 +6,6 @@ const CoBotAvatar = () => {
   return (
     <div >
       <div
-        // className="react-chatbot-kit-chat-bot-avatar-container"
         style={{ background: "none" }}
       >
         <App/>

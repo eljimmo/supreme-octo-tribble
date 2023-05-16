@@ -70,7 +70,7 @@ const Lights = () => {
   })
   return (
     <>
-      <directionalLight intensity={1} position={[2, 2, 0]} color="red" distance={5} />
+      <directionalLight intensity={1} position={[2, 2, 0]} color="purple" distance={5} />
       <spotLight intensity={2} position={[-5, 10, 2]} angle={0.2} penumbra={1} castShadow shadow-mapSize={[2048, 2048]} />
       <group ref={lights}>
         <rectAreaLight intensity={2} position={[4.5, 0, -3]} width={40} height={4} onUpdate={(self) => self.lookAt(0, 0, 0)} />

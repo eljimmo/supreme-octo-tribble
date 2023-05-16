@@ -1,7 +1,0 @@
-.app-gradient {
-  /* background-image: linear-gradient(to bottom right, #67d596, #33607c); */
-  background-image: black;
-
-  min-height: 100vh;
-  padding: 40px 25px 80px 25px;
-}

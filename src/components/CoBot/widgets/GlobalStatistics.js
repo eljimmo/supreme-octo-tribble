@@ -10,9 +10,6 @@ const Statistics = () => {
   useEffect(() => {
     const getStats = async () => {
       const stats = await getData();
-
-      // const filteredFlights = flights.filter((item) => item.Status === null);
-
       setStats(stats);
       setLoading(false);
     };
