@@ -35,6 +35,7 @@ export default function HomePage() {
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
+              color="violet"
             >
               Financial AI Agents
             </Button>
