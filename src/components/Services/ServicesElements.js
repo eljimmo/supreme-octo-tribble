@@ -109,6 +109,17 @@ text-align: center;
   color : white;
 `;
 
+
+export const PurpleServicesH2 = styled.h2`
+font-size: 3.5rem;
+justify-content: center;
+padding: 0 20px;
+text-align: center;
+
+  margin-bottom: 20px;
+  color : #7918f2;
+`;
+
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;

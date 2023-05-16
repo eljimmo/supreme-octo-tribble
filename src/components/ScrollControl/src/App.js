@@ -23,7 +23,7 @@ export default function ScApp() {
             <Images />
           </Scroll>
           <Scroll html>
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
+            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: '#7918f2' }}>
             artificial Neurons or Nodes
                           <br />
                           predictive modeling, adaptive control
@@ -89,9 +89,9 @@ function Typography() {
   const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'white' }
   return (
     <>
-      <Text children="metaheuristic" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
-      <Text children="candidate solutions " anchorX="right" position={[width / 1.2, -height * 2, 6]} {...shared} />
-      <Text children="generation" position={[0, -height * 4.624, 6]} {...shared} />
+      <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
+      <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, -height * 2, 6]} {...shared} />
+      <Text children="Smart Generation" position={[0, -height * 4.624, 6]} {...shared} />
     </>
   )
 }

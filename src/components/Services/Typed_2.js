@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
-import { WhiteServicesH2 } from "./ServicesElements";
+import { PurpleServicesH2 } from "./ServicesElements";
 
 const TypedReact2 = () => {
   // Create reference to store the DOM element containing the animation
@@ -36,9 +36,9 @@ const TypedReact2 = () => {
 
   return (
     <div color="white">
-      <WhiteServicesH2>
+      <PurpleServicesH2>
         <span ref={el} />
-      </WhiteServicesH2>
+      </PurpleServicesH2>
     </div>
   );
 };

@@ -2,14 +2,14 @@ import * as React from "react";
 import { Suspense } from "react";
 import NewsLoad from "../Stock_Portfolio/News_Load";
 import {
-  WhiteServicesH2
+  PurpleServicesH2
 } from '../Services/ServicesElements';
 
 function DashboardContent() {
 
   return (<>
           <div style={{ overflow: 'hidden', background: 'black', alignContent: 'center' }}>
-        <WhiteServicesH2>Market News</WhiteServicesH2>
+        <PurpleServicesH2>Market News</PurpleServicesH2>
         </div>
 
               <NewsLoad basic="news?category=general"/>
