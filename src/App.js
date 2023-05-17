@@ -22,28 +22,13 @@ export default function App() {
           <Route index element={<HomePage />} />
 
 
-          {/* app */}
           <Route path="/" element={<AppPage />}>
-            {/* <Route index element={<AppAbout />} /> */}
-
-
-
-            {/* displays below with best match of path; not based on sequence;
-            so following will render only if other paths aren't matched */}
-            {/* <Route path=":slug" element={<Other />} /> */}
-
-            {/* relative path doesn't start with / */}
-            {/* <Route path="AI" element={<AIPage />} /> */}
-            {/* absolute path starts with /; if you want to pass full path */}
-            {/* <Route path="/app/contact" element={<AppContact />} /> */}
+           
+          
             <Route path="about" element={<AboutIndex />} />
 
-            {/* <Route
-              path="redirect-me"
-              element={<Navigate replace to="/app/about" />}
-            /> */}
+           
           </Route>
-          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
