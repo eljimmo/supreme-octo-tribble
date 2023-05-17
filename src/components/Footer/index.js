@@ -63,7 +63,7 @@ const Footer = () => {
             <SocialLogo to='/' onClick={toggleHome}>
               Project Leibniz Analytica
             </SocialLogo>
-            <WebsiteRights>Project Leibniz Analytica © 2023 All rights reserved.</WebsiteRights>
+            <WebsiteRights>Project Leibniz Analytica © 2023 All rights reserved. (Galatians 6:7–9).</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
