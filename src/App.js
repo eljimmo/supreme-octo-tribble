@@ -68,7 +68,7 @@ const AppPage = () => {
         </li>
       </ol>
       <fieldset>
-        <legend>Children routes (Outlets) </legend>
+        {/* <legend>Children routes (Outlets) </legend> */}
         <Outlet />
       </fieldset>
     </div>

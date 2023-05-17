@@ -34,8 +34,8 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/sign-up'>How it works</FooterLink>
-              <FooterLink to='/'>Testimonials</FooterLink>
+              <FooterLink to='/about'>How it works</FooterLink>
+              <FooterLink to='/'>Why Choose Project Leibniz</FooterLink>
               <FooterLink to='/'>Careers</FooterLink>
               <FooterLink to='/'>Investors</FooterLink>
               <FooterLink to='/'>Terms of Service</FooterLink>
@@ -63,7 +63,7 @@ const Footer = () => {
             <SocialLogo to='/' onClick={toggleHome}>
               Project Leibniz Analytica
             </SocialLogo>
-            <WebsiteRights>Project Leibniz Analytica © 2023 All rights reserved. (Galatians 6:7–9).</WebsiteRights>
+            <WebsiteRights>Project Leibniz Analytica © 2023 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />

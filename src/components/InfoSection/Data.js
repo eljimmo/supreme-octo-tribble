@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'Project Leibniz Analytica',
   headline: 'What is Project Leibniz Analytica?',
   description:
-  'Project Leibniz Analytica aims to create Artificial Intelligence Agents to better assist in the trading of stocks and other commodities. These agents can be calibrated to the investor’s risk tolerance and can be used to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once.',
+  'Project Liebniz Analytica is a Machine Learning App that offers an electronic platform for the creation of financial Artificial Agents to better understand market value assets including common stocks, preferred stocks, futures contracts, exchange-traded funds, crypto-currency, options, mutual funds, & fixed income investments.',
   buttonLabel: 'Demo',
   imgStart: false,
   img: require('./img/nodes.jpg'),

@@ -3,7 +3,10 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
-import { Button } from '@mantine/core';
+// import { Affix, rem, Button } from '@mantine/core';
+// import CApp from '../CoBot/App';
+// import DashboardContent from '../components/Stock_Portfolio/Market_News';
+// import ACpp from '../components/Stock_Portfolio/Coin_Load';
 
 
 const container = {
@@ -68,12 +71,11 @@ loop: true,
         <List open={state.open}>
           <p>
             Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis. We utilize a variety of technologies that include Machine Learning, Deep Learning, and Natural Language Processing to create a powerful tool. 
-            <Button
+            {/* <Button
               variant="outline"
               color="violet"
             >
-              Financial AI Agents
-            </Button>
+            </Button> */}
 
                       </p>
         </List>
