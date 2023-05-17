@@ -51,17 +51,17 @@ export default function App() {
 const Layout = () => {
   return (
     <div>
-      <ol>
-        <li>
+      {/* <ol> */}
+        {/* <li> */}
           {/* <Link to="/">Home (/)</Link> */}
-        </li>
-        <li>
+        {/* </li> */}
+        {/* <li>
           <Link to="/About">About (/)</Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link to="/AI">AI (/)</Link>
         </li> */}
-      </ol>
+      {/* </ol> */}
       {/* <h4>Home (/)</h4> */}
       <fieldset>
         {/* <legend>Selected page: (using &lt;Outlet /&gt;)</legend> */}
