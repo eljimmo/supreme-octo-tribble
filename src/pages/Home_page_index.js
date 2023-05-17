@@ -10,7 +10,7 @@ import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
 // import CApp from '../components/CoBot/App';
 // import DashboardContent from '../components/Stock_Portfolio/Market_News';
-import ACpp from '../components/Stock_Portfolio/Coin_Load';
+// import ACpp from '../components/Stock_Portfolio/Coin_Load';
 
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
 <StockSearch/>
-<ACpp/>
+{/* <ACpp/> */}
 <Services/>
 {/* <DashboardContent/> */}
 <ScApp/>
