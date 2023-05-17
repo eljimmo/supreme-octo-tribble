@@ -6,7 +6,7 @@ import Footer from '../components/Footer/index';
 import ScApp from '../components/ScrollControl/src/App';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-import StockSearch from '../views/StockSearch/Stock_Search_Index';
+// import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
 // import CApp from '../components/CoBot/App';
 // import DashboardContent from '../components/Stock_Portfolio/Market_News';
@@ -20,7 +20,7 @@ export default function HomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
-<StockSearch/>
+{/* <StockSearch/> */}
 {/* <ACpp/> */}
 <Services/>
 {/* <DashboardContent/> */}
