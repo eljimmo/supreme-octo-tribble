@@ -82,12 +82,12 @@ const Navbar = ({ toggle }) => {
          
               </NavItem> */}
          
-              <NavLinks2 to='/AImodels'>
+              {/* <NavLinks2 to='/AImodels'>
                 AI Models
-                         </NavLinks2>
+                         </NavLinks2> */}
              
                          <NavItem>
-              <NavLinks2 to='/MachineLearning'>Machine Learning
+              <NavLinks2 to='/home'>Home
                          </NavLinks2>
               </NavItem>
 
@@ -95,8 +95,8 @@ const Navbar = ({ toggle }) => {
 
 
               <NavItem>
-              <NavLinks2 to='/neuroevolution'>Neuroevolution
-                         </NavLinks2>
+              {/* <NavLinks2 to='/neuroevolution'>Neuroevolution
+                         </NavLinks2> */}
               </NavItem>
 
 
