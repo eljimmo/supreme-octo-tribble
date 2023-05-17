@@ -50,8 +50,8 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to='/'>Submit Video</FooterLink>
+              <FooterLinkTitle>Terms</FooterLinkTitle>
+              <FooterLink to='/accessibility'>Accessibility</FooterLink>
               <FooterLink to='/'>Ambassadors</FooterLink>
               <FooterLink to='/'>Agency</FooterLink>
               <FooterLink to='/'>Influencer</FooterLink>

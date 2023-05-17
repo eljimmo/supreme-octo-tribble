@@ -8,6 +8,7 @@ import {
 import HomePage from './pages/Home_page_index';
 // import AIPage from './pages/AI_Models';
 import AboutIndex from './pages/About';
+import AccessibilityIndex from "./pages/Accessibility";
 // import Home from "./components/portfolio_react/views/HomePage";
 
 
@@ -27,6 +28,8 @@ export default function App() {
            
           
             <Route path="about" element={<AboutIndex />} />
+
+            <Route path="accessibility" element={<AccessibilityIndex />} />
 
            
           </Route>
