@@ -86,12 +86,12 @@ function Images() {
 function Typography() {
   const state = useThree()
   const { width, height } = state.viewport.getCurrentViewport(state.cameta, [0, 0, 12])
-  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'white' }
+  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'purple' }
   return (
     <>
       <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
       <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, -height * 2, 6]} {...shared} />
-      <Text children="Smart Generation" position={[0, -height * 4.624, 6]} {...shared} />
+      <Text children="Smart Analysis" position={[0, -height * 4.624, 6]} {...shared} />
     </>
   )
 }

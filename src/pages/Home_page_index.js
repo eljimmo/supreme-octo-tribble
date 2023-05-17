@@ -18,7 +18,6 @@ import ACpp from '../components/Stock_Portfolio/Coin_Load';
 // import Contact_Components from '../components/Contact/Component';
 // import Cover from '../components/Particle_Cover/Index_Cover';
 // import Cover_App from '../components/Particle_Cover/Cover';
-// import ServiceList from '../components/Services/ServiceThree';
 
 
 export default function HomePage() {

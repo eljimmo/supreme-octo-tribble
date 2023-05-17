@@ -96,21 +96,12 @@ export default function Cover() {
 
       <div className="header">
         <h1>
-          <span className="site-title">MUHAMMAD ZAKARIA</span>
           <div className="site-description">
-            <p id="typed" className="typed">
-              Dotnet Developer
-            </p>
+    
           </div>
         </h1>
 
         <div className="header-links">
-          <a className="link" href="#about" data-scroll>
-            About Me
-          </a>
-          <a className="link" href="#skills" data-scroll>
-            Skills
-          </a>
         </div>
       </div>
       <a className="down" href="#about" data-scroll>

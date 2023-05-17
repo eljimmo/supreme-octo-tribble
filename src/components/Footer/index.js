@@ -56,13 +56,6 @@ const Footer = () => {
               <FooterLink to='/'>Agency</FooterLink>
               <FooterLink to='/'>Influencer</FooterLink>
             </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to='/'>Instagram</FooterLink>
-              <FooterLink to='/'>Facebook</FooterLink>
-              <FooterLink to='/'>Youtube</FooterLink>
-              <FooterLink to='/'>Twitter</FooterLink>
-            </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
