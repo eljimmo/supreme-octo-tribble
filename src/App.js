@@ -5,7 +5,7 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import WelcomePage from './pages/Home_page_index';
+import WelcomePage from './pages/Welcome_page_index';
 import AboutIndex from './pages/About';
 import AccessibilityIndex from "./pages/Accessibility";
 import PrivacyPoliciesIndex from "./pages/Privacypolicies";
