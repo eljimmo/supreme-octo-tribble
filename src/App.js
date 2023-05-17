@@ -6,11 +6,11 @@ import {
   Outlet,
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
-// import AIPage from './pages/AI_Models';
 import AboutIndex from './pages/About';
 import AccessibilityIndex from "./pages/Accessibility";
-// import Home from "./components/portfolio_react/views/HomePage";
-
+import PrivacyPoliciesIndex from "./pages/Privacypolicies";
+import GeneralTermsIndex from "./pages/Generalterms";
+import DataCollectionIndex from "./pages/DataCollection";
 
 
 
@@ -30,6 +30,13 @@ export default function App() {
             <Route path="about" element={<AboutIndex />} />
 
             <Route path="accessibility" element={<AccessibilityIndex />} />
+
+            <Route path="privacypolicies" element={<PrivacyPoliciesIndex />} />
+
+            <Route path="generalterms" element={<GeneralTermsIndex />} />
+
+            <Route path="datacollection" element={<DataCollectionIndex />} />
+
 
            
           </Route>
