@@ -30,7 +30,7 @@ const config = {
 
     ),
     createChatBotMessage(
-      "Ask me about a specific stock, cryptocurrency, or anything. I can also tell you jokes.",
+      "Ask me about a specific stock, by saying stock followed by the ticker or a cryptocurrency by saying crypto, followed by the cryptocurrency name.",
 
       {
         withAvatar: false,
