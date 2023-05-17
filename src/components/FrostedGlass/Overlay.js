@@ -3,10 +3,7 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
-// import { Affix, rem, Button } from '@mantine/core';
-// import CApp from '../CoBot/App';
-// import DashboardContent from '../components/Stock_Portfolio/Market_News';
-// import ACpp from '../components/Stock_Portfolio/Coin_Load';
+
 
 
 const container = {
@@ -40,6 +37,8 @@ export function Overlay() {
   return (
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
+
+
         <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '13px' }}>
           <br />
 </a>
@@ -71,11 +70,7 @@ loop: true,
         <List open={state.open}>
           <p>
             Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build AI models and Agents for Financial Analysis. We utilize a variety of technologies that include Machine Learning, Deep Learning, and Natural Language Processing to create a powerful tool. 
-            {/* <Button
-              variant="outline"
-              color="violet"
-            >
-            </Button> */}
+
 
                       </p>
         </List>

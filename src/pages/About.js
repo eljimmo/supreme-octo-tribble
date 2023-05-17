@@ -11,7 +11,6 @@ export default function AboutIndex() {
       <>
           <Hero/>
           <About/>
-
       <Testimonial/>
           <Footer/>
       </>
