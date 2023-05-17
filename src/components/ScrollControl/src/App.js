@@ -2,7 +2,6 @@ import * as THREE from 'three'
 import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls } from '@react-three/drei'
-// import { easing } from 'maath'
 import Typewriter from 'typewriter-effect';
 
 

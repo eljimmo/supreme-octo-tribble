@@ -1,4 +1,3 @@
-// import "../styles.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -86,13 +85,6 @@ export default function Cover() {
           detectRetina: true
         }}
       />
-
-      {/* <a
-        id="js-download"
-        className="download"
-        href={ExampleDoc}
-        target="_blank"
-      ></a> */}
 
       <div className="header">
         <h1>

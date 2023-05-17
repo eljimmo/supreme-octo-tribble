@@ -5,7 +5,6 @@ import { Overlay } from './Overlay'
 export default function FrostedApp() {
   return (
   <>
-  
     <App />
     <Overlay />
   </>
