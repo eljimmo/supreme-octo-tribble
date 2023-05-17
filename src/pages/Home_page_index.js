@@ -5,10 +5,11 @@ import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
+// import CApp from '../components/Chatbot/index';
 
 
 
-export default function HomePage() {
+export default function WelcomePage() {
   return (
     <>
       <HeroContainerTransparent>

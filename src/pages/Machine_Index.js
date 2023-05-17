@@ -1,60 +1,39 @@
-// import React, { useState } from 'react';
-// import { Affix, Button, rem } from '@mantine/core';
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer/index';
-// import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
-// import Sidebar from '../components/Sidebar/index';
-// import M_App from '../components/Merged/App';
-// import Series_Simulations_Modeling from '../views/StockSearch/SSCompos/Tabs/Analytic_Dash/Time_Series';
+import React, { useState } from 'react';
+import { Affix, Button, rem } from '@mantine/core';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer/index';
+import Sidebar from '../components/Sidebar/index';
+// import CApp from '../components/CoBot/App';
+import StockSearch from '../views/StockSearch/Stock_Search_Index';
 
 
 
 
 
+export default function MachinePage() {
+  const [isOpen, setIsOpen] = useState(false);
 
-// export default function Machine_page() {
-//   const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Affix position={{ bottom: rem(20), left: rem(20) }}>
+            <CApp/>
+      </Affix> */}
 
-//   const toggle = () => {
-//     setIsOpen(!isOpen);
-//   };
-//   return (
-//     <>
-//       <Navbar toggle={toggle} />
-//       <Sidebar isOpen={isOpen} toggle={toggle} />
-//       <HeroContainerTransparent>
-
-
-//       <M_App/>
-//       </HeroContainerTransparent>
-//       {/* <InfoSection6 {...homeObjFour} /> */}
-
-// {/* <StockSearch/> */}
-
-//       {/* <Machine_Services/> */}
-
-
-//       <Series_Simulations_Modeling/>
-
-
-
-
-
-
-
-
-
-//       <Affix position={{ bottom: rem(20), right: rem(20) }}>
-//             <Button
-//               variant="outline"
-//             >
-//               I am still in Development.
-//             </Button>
-//       </Affix>
-
-
-//         <Footer/>
-//         </>
-//   );
-// }
+<StockSearch/>
+      <Affix position={{ bottom: rem(20), right: rem(20) }}>
+            <Button
+              variant="outline"
+            >
+              I am still in Development.
+            </Button>
+      </Affix>
+        <Footer/>
+        </>
+  );
+}
 

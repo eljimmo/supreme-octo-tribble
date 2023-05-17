@@ -535,12 +535,12 @@ h3 > a {
   width: 100%;
 }
 
-label {
+/* label {
   color: #ededed;
   font-size: 1.25rem;
-}
+} */
 
-form input[type] {
+/* form input[type] {
   background: #0b1e2e;
   border: 1px solid #87929b;
   width: calc(100% - 2rem);
@@ -549,11 +549,11 @@ form input[type] {
   outline: none;
   color: #ededed;
   margin-bottom: 0.5rem;
-}
+} */
 
-form input[type]:focus {
+/* form input[type]:focus {
   border: 1px solid #ededed;
-}
+} */
 
 /* textarea {
   background: #0b1e2e;

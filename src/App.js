@@ -5,12 +5,13 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import HomePage from './pages/Home_page_index';
+import WelcomePage from './pages/Home_page_index';
 import AboutIndex from './pages/About';
 import AccessibilityIndex from "./pages/Accessibility";
 import PrivacyPoliciesIndex from "./pages/Privacypolicies";
 import GeneralTermsIndex from "./pages/Generalterms";
 import DataCollectionIndex from "./pages/DataCollection";
+import MachinePage from "./pages/Machine_Index";
 
 
 
@@ -21,7 +22,7 @@ export default function App() {
         {/* In Home, use <Outlet /> to show children */}
         <Route path="/" element={<Layout />}>
           {/* index specifies default element */}
-          <Route index element={<HomePage />} />
+          <Route index element={<WelcomePage />} />
 
 
           <Route path="/" element={<AppPage />}>
@@ -37,6 +38,7 @@ export default function App() {
 
             <Route path="datacollection" element={<DataCollectionIndex />} />
 
+            <Route path="home" element={<MachinePage />} />
 
            
           </Route>
