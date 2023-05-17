@@ -2,12 +2,13 @@ import {
   BrowserRouter, // should be single
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
-  // Link,
+  Link,
   Outlet,
 } from "react-router-dom";
 import HomePage from './pages/Home_page_index';
 // import AIPage from './pages/AI_Models';
 import AboutIndex from './pages/About';
+// import Home from "./components/portfolio_react/views/HomePage";
 
 
 
@@ -42,9 +43,9 @@ const Layout = () => {
         <li>
           {/* <Link to="/">Home (/)</Link> */}
         </li>
-        {/* <li>
+        <li>
           <Link to="/About">About (/)</Link>
-        </li> */}
+        </li>
         {/* <li>
           <Link to="/AI">AI (/)</Link>
         </li> */}
@@ -65,6 +66,8 @@ const AppPage = () => {
     <div>
       <ol>
         <li>
+        <Link to="/About">About (/)</Link>
+
         </li>
       </ol>
       <fieldset>
