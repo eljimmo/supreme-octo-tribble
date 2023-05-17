@@ -52,9 +52,9 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle>Terms</FooterLinkTitle>
               <FooterLink to='/accessibility'>Accessibility</FooterLink>
-              <FooterLink to='/'>Ambassadors</FooterLink>
-              <FooterLink to='/'>Agency</FooterLink>
-              <FooterLink to='/'>Influencer</FooterLink>
+              <FooterLink to='/'>Privacy policies</FooterLink>
+              <FooterLink to='/'>General terms of use</FooterLink>
+              <FooterLink to='/'>Data Collection Notice</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
