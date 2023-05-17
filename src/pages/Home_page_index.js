@@ -23,7 +23,7 @@ export default function HomePage() {
               variant="outline"
               color="violet"
             >
-              Financial AI Agents
+               Galatians 6:7–9
             </Button>
       </Affix>
         <Footer/>
