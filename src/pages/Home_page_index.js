@@ -8,7 +8,7 @@ import { HeroContainerTransparent } from '../components/HeroSection/HeroElements
 import FrostedApp from '../components/FrostedGlass/index';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import Services from '../components/Services/index2';
-import CApp from '../components/CoBot/App';
+// import CApp from '../components/CoBot/App';
 // import DashboardContent from '../components/Stock_Portfolio/Market_News';
 // import ACpp from '../components/Stock_Portfolio/Coin_Load';
 
@@ -26,7 +26,7 @@ export default function HomePage() {
 {/* <DashboardContent/> */}
 <ScApp/>
       <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            <CApp/>
+            {/* <CApp/> */}
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
