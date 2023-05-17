@@ -76,12 +76,7 @@ export default function News(props) {
     final1.push(
       <div style={{ overflow: 'hidden', background: 'black' }}>
         <br></br>
-
-
       <Paper sx={{ p: 2, margin: 'auto', maxWidth: 1250, flexGrow: 1 }}>
-
-
-          
       <ServicesContainer2 id="services">
       <ServicesCard>
              <NewsCard data={news[i]} />
