@@ -11,9 +11,8 @@ import AccessibilityIndex from "./pages/Accessibility";
 import PrivacyPoliciesIndex from "./pages/Privacypolicies";
 import GeneralTermsIndex from "./pages/Generalterms";
 import DataCollectionIndex from "./pages/DataCollection";
-// import MachinePage from "./pages/Machine_Index";
-
-
+import NeuroevolutionIndex from "./pages/Neuroevolution";
+import MachinelearningIndex from "./pages/MachineLearning";
 
 export default function App() {
   return (
@@ -37,6 +36,10 @@ export default function App() {
             <Route path="generalterms" element={<GeneralTermsIndex />} />
 
             <Route path="datacollection" element={<DataCollectionIndex />} />
+
+            <Route path="neuroevolution" element={<NeuroevolutionIndex />} />
+
+            <Route path="machinelearning" element={<MachinelearningIndex />} />
 
             {/* <Route path="home" element={<MachinePage />} /> */}
 
