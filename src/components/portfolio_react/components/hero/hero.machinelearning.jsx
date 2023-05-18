@@ -1,20 +1,8 @@
 import React from "react";
-// import { TopLine, Subtitle, TextWrapper, Heading, Heading2 } from "../../../InfoSection/InfoElements";
-// import InfoSectionCanva from "../../../InfoSection/index_Canvas";
-// import { InfoContainer } from "../../../InfoSection/InfoElements";
 import {
-  // InfoContainer,
-  // InfoWrapper,
   InfoWrapper2,
-  // InfoRow,
-  // Column1,
-  // Column2,
-  // TextWrapper,
-  // TextWrapper2,
   TopLine,
   Heading,
-  // Heading2,
-  // Subtitle,
 } from "../../../InfoSection/InfoElements";
 
 const HeroMachineLearning = () => {

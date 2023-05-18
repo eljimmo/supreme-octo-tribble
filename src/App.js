@@ -18,9 +18,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* In Home, use <Outlet /> to show children */}
         <Route path="/" element={<Layout />}>
-          {/* index specifies default element */}
           <Route index element={<WelcomePage />} />
 
 
@@ -41,7 +39,6 @@ export default function App() {
 
             <Route path="machinelearning" element={<MachinelearningIndex />} />
 
-            {/* <Route path="home" element={<MachinePage />} /> */}
 
            
           </Route>
@@ -54,42 +51,12 @@ export default function App() {
 const Layout = () => {
   return (
     <div>
-      {/* <ol> */}
-        {/* <li> */}
-          {/* <Link to="/">Home (/)</Link> */}
-        {/* </li> */}
-        {/* <li>
-          <Link to="/About">About (/)</Link>
-        </li> */}
-        {/* <li>
-          <Link to="/AI">AI (/)</Link>
-        </li> */}
-      {/* </ol> */}
-      {/* <h4>Home (/)</h4> */}
+
       <fieldset>
-        {/* <legend>Selected page: (using &lt;Outlet /&gt;)</legend> */}
         <Outlet />
       </fieldset>
     </div>
   );
 };
 
-
-
-// const AppPage = () => {
-//   return (
-//     <div>
-//       <ol>
-//         <li>
-//         <Link to="/About">About (/)</Link>
-
-//         </li>
-//       </ol>
-//       <fieldset>
-//         {/* <legend>Children routes (Outlets) </legend> */}
-//         <Outlet />
-//       </fieldset>
-//     </div>
-//   );
-// };
 
