@@ -9,9 +9,6 @@ import DashboardContent from '../components/Stock_Portfolio/Market_News';
 import ACpp from '../components/Stock_Portfolio/Coin_Load';
 
 
-
-
-
 export default function MachinePage() {
   const [isOpen, setIsOpen] = useState(false);
 

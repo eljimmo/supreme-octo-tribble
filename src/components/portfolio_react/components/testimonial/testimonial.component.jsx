@@ -1,6 +1,6 @@
 import React from "react";
 import salon from "../../assets/salon.png";
-import { ServicesP } from "../../../Services/ServicesElements";
+import { TopLine, Subtitle } from "../../../InfoSection/InfoElements";
 
 const Testimonial = () => {
   return (
@@ -12,19 +12,19 @@ const Testimonial = () => {
         </div>
         <div>
 
-          <ServicesP>
+          <TopLine>
 Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
 Create your own bots and change the way the internal model for the AI works.
-          </ServicesP>
-          <ServicesP>
+          </TopLine>
+          <Subtitle>
           Artificial Neurons or Nodes
-          </ServicesP>
-          <ServicesP>
+          </Subtitle>
+          <Subtitle>
           Predictive Modeling, & Adaptive Control
-          </ServicesP>
-          <ServicesP>
+          </Subtitle>
+          <Subtitle>
           Cognitive Modeling
-          </ServicesP>
+          </Subtitle>
         </div>
       </div>
     </div>
