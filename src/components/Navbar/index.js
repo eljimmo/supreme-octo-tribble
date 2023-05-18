@@ -49,15 +49,43 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
+
+
               <NavItem>
-
-
                 <NavLinks2
                   to='/About'
                 >
                   About
                 </NavLinks2>
               </NavItem>
+
+
+              <NavItem>
+                <NavLinks2
+                  to='/About'
+                >
+                  Neuro Evolution
+                </NavLinks2>
+              </NavItem>
+
+
+              <NavItem>
+                <NavLinks2
+                  to='/About'
+                >
+                  Machine Learning
+                </NavLinks2>
+              </NavItem>
+
+
+              <NavItem>
+                <NavLinks2
+                  to='/About'
+                >
+                  AI Models
+                </NavLinks2>
+              </NavItem>
+
               {/* <NavItem>
 
               <NavLinks2 to='/signup'>Sign Up
@@ -86,10 +114,10 @@ const Navbar = ({ toggle }) => {
                 AI Models
                          </NavLinks2> */}
              
-                         <NavItem>
+                         {/* <NavItem>
               <NavLinks2 to='/home'>Home
                          </NavLinks2>
-              </NavItem>
+              </NavItem> */}
 
 
 

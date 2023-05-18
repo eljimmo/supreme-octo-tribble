@@ -20,7 +20,7 @@ const About = () => {
     <div>
       <Heading>About the Creator</Heading>
       <Subtitle>
-      My name is Jim Morales and I am a self taught developer whoi started my programming journey while at the Univeristy of Texas A&M.
+      My name is Jim Morales and I am a self taught developer who started my programming journey while at the Univeristy of Texas A&M.
       </Subtitle>
       <Subtitle>
       Machine Learning is a vast field of study dedicated to the research of algorithimic methods that utilize data to better performance for a given problem. 

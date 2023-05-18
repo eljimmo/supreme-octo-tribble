@@ -11,7 +11,7 @@ import AccessibilityIndex from "./pages/Accessibility";
 import PrivacyPoliciesIndex from "./pages/Privacypolicies";
 import GeneralTermsIndex from "./pages/Generalterms";
 import DataCollectionIndex from "./pages/DataCollection";
-import MachinePage from "./pages/Machine_Index";
+// import MachinePage from "./pages/Machine_Index";
 
 
 
@@ -38,7 +38,7 @@ export default function App() {
 
             <Route path="datacollection" element={<DataCollectionIndex />} />
 
-            <Route path="home" element={<MachinePage />} />
+            {/* <Route path="home" element={<MachinePage />} /> */}
 
            
           </Route>
