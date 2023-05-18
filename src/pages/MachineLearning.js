@@ -4,7 +4,8 @@ import HeroMachineLearning from "../components/portfolio_react/components/hero/h
 import '../components/portfolio_react/styles.css';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
-import MLApp from "../components/MachineLearning/src/App";
+import Experience from "../components/MachineLearning/src/components/experience/Expreience";
+import Services from "../components/MachineLearning/src/components/services/Services";
 
 export default function MachinelearningIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,8 @@ export default function MachinelearningIndex() {
         <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
           <HeroMachineLearning/>
-          <MLApp/>
+          <Services/>
+          <Experience/>
           <Footer/>
       </>
     );
