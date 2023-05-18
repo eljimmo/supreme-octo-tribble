@@ -19,12 +19,12 @@ export default function NeuroevolutionIndex() {
   };
     return (
       <>
-            <Navbar toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Navbar toggle={toggle} />
+          <Sidebar isOpen={isOpen} toggle={toggle} />
           <HeroNeuroevolution/>
           <InfoSectionCanva {...homeObjFour} />
           <About/>
-      <Testimonial/>
+          <Testimonial/>
           <Footer/>
       </>
     );

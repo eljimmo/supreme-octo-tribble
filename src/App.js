@@ -2,7 +2,6 @@ import {
   BrowserRouter, // should be single
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
-  // Link,
   Outlet,
 } from "react-router-dom";
 import WelcomePage from './pages/Welcome_page_index';
@@ -38,8 +37,6 @@ export default function App() {
             <Route path="neuroevolution" element={<NeuroevolutionIndex />} />
 
             <Route path="machinelearning" element={<MachinelearningIndex />} />
-
-
            
           </Route>
         </Route>
@@ -51,7 +48,6 @@ export default function App() {
 const Layout = () => {
   return (
     <div>
-
       <fieldset>
         <Outlet />
       </fieldset>
