@@ -21,10 +21,6 @@ export default function MachinePage() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            <CApp/>
-      </Affix> */}
-
 <StockSearch/>
 <DashboardContent/>
 

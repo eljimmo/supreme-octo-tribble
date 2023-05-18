@@ -25,9 +25,6 @@ export default function WelcomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
-      {/* <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            <CApp/>
-      </Affix> */}
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
