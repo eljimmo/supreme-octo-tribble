@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer/index';
-import Testimonial from "../components/portfolio_react/components/testimonial/testimonial.component";
 import HeroMachineLearning from "../components/portfolio_react/components/hero/hero.machinelearning";
-import About from '../components/portfolio_react/components/about/about.component';
 import '../components/portfolio_react/styles.css';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
-import InfoSectionCanva from '../components/InfoSection/index_Canvas';
-import {
-  homeObjFour
-} from '../components/InfoSection/Data';
+import MLApp from "../components/MachineLearning/src/App";
 
 export default function MachinelearningIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +14,10 @@ export default function MachinelearningIndex() {
   };
     return (
       <>
-            <Navbar toggle={toggle} />
+        <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
           <HeroMachineLearning/>
-          <InfoSectionCanva {...homeObjFour} />
-          <About/>
-      <Testimonial/>
+          <MLApp/>
           <Footer/>
       </>
     );
