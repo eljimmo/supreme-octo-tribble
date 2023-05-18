@@ -18,19 +18,18 @@ const About = () => {
 
     <div id="about">
     <div>
-      <h2>About</h2>
+      <h2>About the Creator</h2>
       <p>
-        Hello! My name is Maverick and I am a self taught frontend developer.
+      My name is Jim Morales and I am a self taught developer whoi started my programming journey while at the Univeristy of Texas A&M.
       </p>
       <p>
-        The scope of my work is mostly includes responsive design, design to
-        html css js, CSS/JS annimations, jquery, react, firebase, REST APIs
-        and other works based on web development and javascript.
+      Machine Learning is a vast field of study dedicated to the research of algorithimic methods that utilize data to better performance for a given problem. 
+      learn and improve from experience.
       </p>
       <p>
-        That being said, I like learning all aspects of web development and
-        take pride in my fullstack work. Because of this, I am always open to
-        new projects in new development environments.
+      UNDERSTANDING WHAT IS NEURO EVOLUTION IN ALGORITHMS. 
+      EVOLUTIONARY ALGORITHMS INSPIRED BY BIOLOGICAL PROCESSES FOUND IN NATURE, CREATING POPULATIONS OF SOLUTIONS AND THEN ELIMINATING NON FITTING CANDIDATES. 
+      CREATING IDIOSYNCRATIC AGENTS, A COMPREHENSIVE FINANCIAL MODELING STRUCTURE ENABLES INVESTORS TO CAPTURE A HOLISTIC VALUATION TOWARDS DETERMINING NAVIGATION IN A CHANGING VOLATILE RISK FIELD.
       </p>
     </div>
     <div>

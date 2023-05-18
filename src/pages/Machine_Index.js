@@ -22,6 +22,7 @@ export default function MachinePage() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <br/>
 <StockSearch/>
 <ACpp/>
 <DashboardContent/>
