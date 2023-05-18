@@ -1,15 +1,29 @@
 import React from "react";
 import salon from "../../assets/salon.png";
 import salonowner from "../../assets/salonowner.png";
+import { 
+  InfoContainer,
+  // InfoWrapper,
+  // InfoRow,
+  // Column1,
+  // Column2,
+  // TextWrapper,
+  TopLine,
+  Heading2,
+  // Subtitle,
+  // ImgWrap,
+  // Img 
+} from "../../../InfoSection/InfoElements";
+import { ServicesP } from "../../../Services/ServicesElements";
 
 const Testimonial = () => {
   return (
     <div id="testimonial">
-      <h2>Client Testimonial</h2>
-      <p>
-        Online project testimonial and feedback for web development project
-        delivery.
-      </p>
+      <InfoContainer>
+      <Heading2>Intelligent Smart Networks</Heading2>
+      <TopLine>Machine Learning Analytics Processing </TopLine>
+
+      </InfoContainer>
       <div className="gridlayout1">
         <div>
           <img src={salon} alt="Mockup of Darling Salon Website" />
@@ -22,29 +36,21 @@ const Testimonial = () => {
               alt="Wendy Darling, the owner of Darling Salon"
             />
           </div>
-          <h3>
-            <a
-              href="https://codepen.io/maverickcer/pen/KKmPLxB"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fiverr.com
-            </a>
-          </h3>
+          <ServicesP>
+Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
+Create your own bots and change the way the internal model for the AI works.
+          </ServicesP>
           <p>
-            Maverick is a talented developer with very good design skills which
-            surprised me with super professional communication skills and a
-            strong marketing sense that enables him to see the big picture of
-            projects.
+          artificial Neurons or Nodes
           </p>
           <p>
-            He will get the job done on time, suggest improvements, and will
-            leave you with an overall feeling that you received a lot more then
-            you paid for it.
+          predictive modeling, adaptive control
+
           </p>
+
           <p>
-            He goes the extra mile to create long-term partnerships, not just
-            one-time jobs. A pleasure to work with.
+          cognitive modeling
+
           </p>
         </div>
       </div>

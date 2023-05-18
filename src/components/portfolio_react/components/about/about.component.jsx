@@ -11,7 +11,7 @@ import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
 import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
-import { TopLine, Subtitle, TextWrapper, Heading } from "../../../InfoSection/InfoElements";
+import { InfoContainer, TopLine, Subtitle, TextWrapper, Heading2, Heading } from "../../../InfoSection/InfoElements";
 
 const About = () => {
   return (
@@ -36,7 +36,7 @@ const About = () => {
         </TopLine>
       </div>
       <div>
-        <h3 style={{ marginTop: "2rem" }}>Current Skills</h3>
+        <h3 style={{ marginTop: "2rem" }}>Current Tech Stack</h3>
         <div className="skillgrid">
           <div>
             <div className="skillemblem">
@@ -113,7 +113,8 @@ const About = () => {
         </div>
       </div>
       <div>
-        <TopLine>Programming Directive</TopLine>
+      <InfoContainer>
+        <Heading2>Programming Directive</Heading2>
         <Subtitle>Consume, as in to consume knowledge to serve the end user.</Subtitle>
         <Subtitle>
           Enhance, as in to share solutions in order to enhance the problem.
@@ -122,6 +123,8 @@ const About = () => {
           Replicate, as in to replicate the process to consistently solve
           problems.
         </Subtitle>
+        </InfoContainer>
+
       </div>
     </div>
   );
