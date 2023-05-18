@@ -11,7 +11,7 @@ import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
 import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
-import { Subtitle, Heading } from "../../../InfoSection/InfoElements";
+import { Subtitle, Heading, TopLine } from "../../../InfoSection/InfoElements";
 
 const About = () => {
   return (
@@ -33,7 +33,7 @@ const About = () => {
       </p> */}
     </div>
     <div>
-      <h3 style={{ marginTop: "2rem" }}>Current Skills</h3>
+      <TopLine style={{ marginTop: "2rem" }}>Technology</TopLine>
       <div className="skillgrid">
         <div>
           <div className="skillemblem">
