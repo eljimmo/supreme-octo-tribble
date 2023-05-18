@@ -14,10 +14,6 @@ import {
 
 
 
-
-
-
-
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -85,51 +81,6 @@ const Navbar = ({ toggle }) => {
                   AI Models
                 </NavLinks2>
               </NavItem>
-
-              {/* <NavItem>
-
-              <NavLinks2 to='/signup'>Sign Up
-                         </NavLinks2>
-
-         
-              </NavItem> */}
-
-
-
-              {/* <NavItem>
-              <NavLinks2 to='/signup'>Analytic Dashboard
-                         </NavLinks2>
-              </NavItem> */}
-
-
-              
-              {/* <NavItem>
-
-              <NavLinks2 to='/login'>Log In
-                         </NavLinks2>
-         
-              </NavItem> */}
-         
-              {/* <NavLinks2 to='/AImodels'>
-                AI Models
-                         </NavLinks2> */}
-             
-                         {/* <NavItem>
-              <NavLinks2 to='/home'>Home
-                         </NavLinks2>
-              </NavItem> */}
-
-
-
-
-              <NavItem>
-              {/* <NavLinks2 to='/neuroevolution'>Neuroevolution
-                         </NavLinks2> */}
-              </NavItem>
-
-
-
-    
 
             </NavMenu>
         
