@@ -1,5 +1,4 @@
-import { React, Suspense } from 'react';
-import { Button, HrefButton, Button1 } from '../ButtonElements';
+import { React } from 'react';
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,11 +14,7 @@ import {
   ImgWrap,
   Img
 } from './InfoElements';
-import { Canvas } from '@react-three/fiber'
-import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
-import Model from '../GEO/Geo'
-import SombreroSuperficieMath from '../3d_models/Sombrero_superficie_math';
-import Scenemodel from '../3d_models/Scene_draco'
+
 
 
 
