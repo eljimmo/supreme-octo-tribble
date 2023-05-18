@@ -1,22 +1,11 @@
 import React from "react";
 import salon from "../../assets/salon.png";
-// import salonowner from "../../assets/salonowner.png";
-// import { 
-//   InfoContainer,
-//   TopLine,
-//   Heading2,
-//   Subtitle,
-// } from "../../../InfoSection/InfoElements";
 import { ServicesP } from "../../../Services/ServicesElements";
 
 const Testimonial = () => {
   return (
-    <div id="testimonial">
-      {/* <InfoContainer>
-      <Heading2>Intelligent Smart Networks</Heading2>
-      <TopLine>Machine Learning Analytics Processing </TopLine>
 
-      </InfoContainer> */}
+    <div id="testimonial">
       <div className="gridlayout1">
         <div>
           <img src={salon} alt="Mockup of Darling Salon Website" />
@@ -28,16 +17,13 @@ Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able t
 Create your own bots and change the way the internal model for the AI works.
           </ServicesP>
           <ServicesP>
-          artificial Neurons or Nodes
+          Artificial Neurons or Nodes
           </ServicesP>
           <ServicesP>
-          predictive modeling, adaptive control
-
+          Predictive Modeling, & Adaptive Control
           </ServicesP>
-
           <ServicesP>
-          cognitive modeling
-
+          Cognitive Modeling
           </ServicesP>
         </div>
       </div>
