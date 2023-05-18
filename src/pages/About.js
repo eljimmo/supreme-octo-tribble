@@ -6,7 +6,10 @@ import About from '../components/portfolio_react/components/about/about.componen
 import '../components/portfolio_react/styles.css';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
-
+import InfoSectionCanva from '../components/InfoSection/index_Canvas';
+import {
+  homeObjFour
+} from '../components/InfoSection/Data';
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +22,7 @@ export default function AboutIndex() {
             <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
           <Hero/>
+          <InfoSectionCanva {...homeObjFour} />
           <About/>
       <Testimonial/>
           <Footer/>

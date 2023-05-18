@@ -45,6 +45,19 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
+
+
+export const InfoWrapper2 = styled.div`
+  display: grid;
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
+
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
