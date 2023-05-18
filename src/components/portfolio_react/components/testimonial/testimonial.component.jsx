@@ -10,11 +10,11 @@ import {
   // TextWrapper,
   TopLine,
   Heading2,
-  // Subtitle,
+  Subtitle,
   // ImgWrap,
   // Img 
 } from "../../../InfoSection/InfoElements";
-import { ServicesP } from "../../../Services/ServicesElements";
+// import { ServicesP } from "../../../Services/ServicesElements";
 
 const Testimonial = () => {
   return (
@@ -36,22 +36,19 @@ const Testimonial = () => {
               alt="Wendy Darling, the owner of Darling Salon"
             />
           </div>
-          <ServicesP>
+          <Subtitle>
 Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
 Create your own bots and change the way the internal model for the AI works.
-          </ServicesP>
-          <p>
-          artificial Neurons or Nodes
-          </p>
-          <p>
-          predictive modeling, adaptive control
-
-          </p>
-
-          <p>
-          cognitive modeling
-
-          </p>
+          </Subtitle>
+          <Heading2>
+          Artificial Neurons or Nodes
+          </Heading2>
+          <Heading2>
+          Predictive Modeling, Adaptive Control
+          </Heading2>
+          <Heading2>
+          Cognitive Modeling
+          </Heading2>
         </div>
       </div>
     </div>

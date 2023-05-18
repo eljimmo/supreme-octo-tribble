@@ -2,7 +2,7 @@ import {
   BrowserRouter, // should be single
   Routes, // can have multiple; even inside component but append "/*" in path of that compoent
   Route,
-  Link,
+  // Link,
   Outlet,
 } from "react-router-dom";
 import WelcomePage from './pages/Welcome_page_index';
@@ -25,7 +25,7 @@ export default function App() {
           <Route index element={<WelcomePage />} />
 
 
-          <Route path="/" element={<AppPage />}>
+          <Route path="/" element={<Layout />}>
            
           
             <Route path="about" element={<AboutIndex />} />
@@ -73,20 +73,20 @@ const Layout = () => {
 
 
 
-const AppPage = () => {
-  return (
-    <div>
-      <ol>
-        <li>
-        <Link to="/About">About (/)</Link>
+// const AppPage = () => {
+//   return (
+//     <div>
+//       <ol>
+//         <li>
+//         <Link to="/About">About (/)</Link>
 
-        </li>
-      </ol>
-      <fieldset>
-        {/* <legend>Children routes (Outlets) </legend> */}
-        <Outlet />
-      </fieldset>
-    </div>
-  );
-};
+//         </li>
+//       </ol>
+//       <fieldset>
+//         {/* <legend>Children routes (Outlets) </legend> */}
+//         <Outlet />
+//       </fieldset>
+//     </div>
+//   );
+// };
 
