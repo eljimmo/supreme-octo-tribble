@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar/index';
 // import CApp from '../components/CoBot/App';
 import StockSearch from '../views/StockSearch/Stock_Search_Index';
 import DashboardContent from '../components/Stock_Portfolio/Market_News';
+import ACpp from '../components/Stock_Portfolio/Coin_Load';
 
 
 
@@ -22,8 +23,8 @@ export default function MachinePage() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
 <StockSearch/>
+<ACpp/>
 <DashboardContent/>
-
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
