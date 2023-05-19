@@ -8,6 +8,7 @@ import FrostedApp from '../components/FrostedGlass/index';
 // import CApp from '../components/Chatbot/index';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
+import Services from '../components/Services/index2';
 
 
 
@@ -25,6 +26,7 @@ export default function WelcomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
+<Services/>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
