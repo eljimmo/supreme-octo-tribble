@@ -49,7 +49,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks2
-                  to='/About'
+                  to='/about'
                 >
                   About
                 </NavLinks2>
@@ -76,7 +76,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks2
-                  to='/About'
+                  to='/about'
                 >
                   Artificial Intelligence
                 </NavLinks2>
