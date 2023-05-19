@@ -6,10 +6,7 @@ import Artificialintelligenceabout from "../components/portfolio_react/component
 import '../components/portfolio_react/styles.css';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
-import InfoSectionCanva from '../components/InfoSection/index_Canvas';
-import {
-  homeObjSix
-} from '../components/InfoSection/Data';
+
 
 export default function ArtificialIntelligenceIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +19,6 @@ export default function ArtificialIntelligenceIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Heroartificialintelligence/>
-          <InfoSectionCanva {...homeObjSix} />
           <Artificialintelligenceabout/>
           <Testimonial/>
           <Footer/>
