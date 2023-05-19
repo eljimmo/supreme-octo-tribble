@@ -76,7 +76,7 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks2
-                  to='/about'
+                  to='/artificialintelligence'
                 >
                   Artificial Intelligence
                 </NavLinks2>

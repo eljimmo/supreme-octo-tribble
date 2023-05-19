@@ -12,6 +12,7 @@ import GeneralTermsIndex from "./pages/Generalterms";
 import DataCollectionIndex from "./pages/DataCollection";
 import NeuroevolutionIndex from "./pages/Neuroevolution";
 import MachinelearningIndex from "./pages/MachineLearning";
+import ArtificialIntelligenceIndex from "./pages/ArtificialIntelligence";
 
 export default function App() {
   return (
@@ -38,6 +39,9 @@ export default function App() {
 
             <Route path="machinelearning" element={<MachinelearningIndex />} />
            
+            <Route path="artificialintelligence" element={<ArtificialIntelligenceIndex />} />
+
+
           </Route>
         </Route>
       </Routes>

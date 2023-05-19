@@ -12,9 +12,9 @@ const HeroMachineLearning = () => {
               <InfoWrapper2>
       <TopLine> Created by Jim Morales </TopLine>
       <p>
-      Modeling Statistical properties as distribution variables to quantify the effect of variables as features in a set.
-      From Value at Risk, Portfolio vs Benchmark Strategy, Genetic Algorithms, LSTMs, Recurrent Neural Networks, Leibniz provides the tools you need to better your financial asset portfolio.
+      Machine learning (ML) is the subset of artificial intelligence (AI) that focuses on building systems that learn—or improve performance—based on the data they consume.
       Create your own custom financial trading agent to better assist you when trading.
+      Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so
       </p>
       </InfoWrapper2>
       <br/>
