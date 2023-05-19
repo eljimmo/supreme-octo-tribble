@@ -21,19 +21,7 @@ const Heroartificialintelligence = () => {
   return (
     <div id="hero">
       <Heading>Artificial Intelligence</Heading>
-      {/* <TextWrapper> */}
-                {/* <TopLine> Stock Market Derivative Modeling, Machine Learning for Predictive Analysis</TopLine> */}
-                {/* <Subtitle> The foundation of Leibniz Analytica is to build AI models to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once. </Subtitle> */}
-              {/* </TextWrapper> */}
               <InfoWrapper2>
-              {/* <InfoRow>
-
-<Column2>
-<InfoContainer>
-</InfoContainer>
-</Column2>
-</InfoRow> */}
-
       <TopLine> Created by Jim Morales </TopLine>
 
       <p>

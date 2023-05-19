@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../components/Footer/index';
 import Testimonial from "../components/portfolio_react/components/testimonial/testimonial.component";
 import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
-import NeuroevolutionAbout from '../components/portfolio_react/components/about/about.neuroevol';
+import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
 import '../components/portfolio_react/styles.css';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
@@ -23,7 +23,7 @@ export default function ArtificialIntelligenceIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Heroartificialintelligence/>
           <InfoSectionCanva {...homeObjSix} />
-          <NeuroevolutionAbout/>
+          <Artificialintelligenceabout/>
           <Testimonial/>
           <Footer/>
       </>
