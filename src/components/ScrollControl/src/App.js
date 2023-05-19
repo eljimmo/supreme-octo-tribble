@@ -22,7 +22,7 @@ export default function ScApp() {
             <Images />
           </Scroll>
           <Scroll html>
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: '#7918f2' }}>
+            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'whitesmoke' }}>
             artificial Neurons or Nodes
                           <br />
                           predictive modeling, adaptive control
@@ -85,7 +85,7 @@ function Images() {
 function Typography() {
   const state = useThree()
   const { width, height } = state.viewport.getCurrentViewport(state.cameta, [0, 0, 12])
-  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'purple' }
+  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'whitesmoke' }
   return (
     <>
       <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
