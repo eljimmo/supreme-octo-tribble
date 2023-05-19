@@ -1,16 +1,29 @@
 import { Component } from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
+
+import {
+  InfoWrapper2,
+  TopLine,
+  Heading,
+  InfoRow,
+  TopLine2
+} from "./Services_Elements";
+
 class Services extends Component {
   render() {
     return (
-      <section id="services">
-        <h5>What I Offer</h5>
-        <h2>Services</h2>
+      <section id="services" >
+        {/* <h5>What I Offer</h5>
+        <h2>Services</h2> */}
+        {/* <InfoWrapper2> */}
         <div className="container services__container">
+          {/* <div> */}
           <article className="service">
             <div className="service__head">
-              <h3>UI/UX Design</h3>
+            {/* <InfoRow> */}
+              <h3 style={{ marginTop: "2rem", color: "#7918f2" }}>Computational Statistics</h3>
+              {/* </InfoRow> */}
             </div>
             <ul className="service__list">
               <li>
@@ -45,56 +58,9 @@ class Services extends Component {
           </article>
           <article className="service">
             <div className="service__head">
-              <h3>Web Development</h3>
+            <h3 style={{ marginTop: "2rem", color: "#7918f2" }}>Neural networks</h3>
             </div>
             <ul className="service__list">
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-            </ul>
-          </article>
-          <article className="service">
-            <div className="service__head">
-              <h3>Content Creation</h3>
-            </div>
-            <ul className="service__list">
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
-              <li>
-                <BiCheck className="service__list-icon" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              </li>
               <li>
                 <BiCheck className="service__list-icon" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -126,6 +92,7 @@ class Services extends Component {
             </ul>
           </article>
         </div>
+        {/* </InfoWrapper2> */}
       </section>
     );
   }
