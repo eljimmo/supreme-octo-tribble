@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarRoute
             to='/AImodels'
           >
-            AI Models
+            Artificial Intelligence
           </SidebarRoute>
 
 

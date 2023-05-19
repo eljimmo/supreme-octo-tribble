@@ -78,7 +78,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks2
                   to='/About'
                 >
-                  AI Models
+                  Artificial Intelligence
                 </NavLinks2>
               </NavItem>
 
