@@ -21,8 +21,6 @@ export default function NeuroevolutionIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <HeroNeuroevolution/>
           <InfoSectionCanva {...homeObjSix} />
-          {/* <NeuroevolutionAbout/> */}
-          {/* <Testimonial/> */}
           <Footer/>
       </>
     );
