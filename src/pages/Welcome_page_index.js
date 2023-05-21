@@ -5,7 +5,7 @@ import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-// import CApp from '../components/Chatbot/index';
+import CoBOTApp from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
 import ScApp from '../components/ScrollControl/src/App';
@@ -28,6 +28,9 @@ export default function WelcomePage() {
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
 <ScApp/>
+<Affix position={{ bottom: rem(20), left: rem(20) }}>
+            <CoBOTApp/>
+      </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"

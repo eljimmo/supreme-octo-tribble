@@ -5,7 +5,7 @@ import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
 
-export default function CApp() {
+export default function CoBOTApp() {
   const [showBot, toggleBot] = useState(true);
 
   return (
