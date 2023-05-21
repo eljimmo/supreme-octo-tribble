@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 import WelcomePage from './pages/Welcome_page_index';
 import AboutIndex from './pages/About';
-import AccessibilityIndex from "./pages/Accessibility";
-import PrivacyPoliciesIndex from "./pages/Privacypolicies";
-import GeneralTermsIndex from "./pages/Generalterms";
-import DataCollectionIndex from "./pages/DataCollection";
+// import AccessibilityIndex from "./pages/Accessibility";
+// import PrivacyPoliciesIndex from "./pages/Privacypolicies";
+// import GeneralTermsIndex from "./pages/Generalterms";
+// import DataCollectionIndex from "./pages/DataCollection";
 import NeuroevolutionIndex from "./pages/Neuroevolution";
 import MachinelearningIndex from "./pages/MachineLearning";
 import ArtificialIntelligenceIndex from "./pages/ArtificialIntelligence";
@@ -27,13 +27,13 @@ export default function App() {
           
             <Route path="about" element={<AboutIndex />} />
 
-            <Route path="accessibility" element={<AccessibilityIndex />} />
+            {/* <Route path="accessibility" element={<AccessibilityIndex />} /> */}
 
-            <Route path="privacypolicies" element={<PrivacyPoliciesIndex />} />
+            {/* <Route path="privacypolicies" element={<PrivacyPoliciesIndex />} /> */}
 
-            <Route path="generalterms" element={<GeneralTermsIndex />} />
+            {/* <Route path="generalterms" element={<GeneralTermsIndex />} /> */}
 
-            <Route path="datacollection" element={<DataCollectionIndex />} />
+            {/* <Route path="datacollection" element={<DataCollectionIndex />} /> */}
 
             <Route path="neuroevolution" element={<NeuroevolutionIndex />} />
 
