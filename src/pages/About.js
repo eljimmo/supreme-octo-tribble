@@ -8,6 +8,10 @@ import InfoSectionCanva from '../components/InfoSection/index_Canvas';
 import {
   homeObjFour
 } from '../components/InfoSection/Data';
+import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
+import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
+import Experience from "../components/MachineLearning/src/components/experience/Expreience";
+
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +25,9 @@ export default function AboutIndex() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
           <Hero/>
           <InfoSectionCanva {...homeObjFour} />
+          <Heroartificialintelligence/>
+          <Artificialintelligenceabout/>
+          <Experience/>
           <Footer/>
       </>
     );
