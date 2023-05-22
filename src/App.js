@@ -5,7 +5,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import WelcomePage from './pages/Welcome_page_index';
-import AboutIndex from './pages/About';
+// import AboutIndex from './pages/About';
 // import AccessibilityIndex from "./pages/Accessibility";
 // import PrivacyPoliciesIndex from "./pages/Privacypolicies";
 // import GeneralTermsIndex from "./pages/Generalterms";
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/" element={<Layout />}>
            
           
-            <Route path="about" element={<AboutIndex />} />
+            {/* <Route path="about" element={<AboutIndex />} /> */}
 
             {/* <Route path="accessibility" element={<AccessibilityIndex />} /> */}
 
