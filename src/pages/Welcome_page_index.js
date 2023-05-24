@@ -9,7 +9,8 @@ import CoBOTApp from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
 import ScApp from '../components/ScrollControl/src/App';
-import DashboardContent from '../components/Stock_Portfolio/Market_News';
+// import DashboardContent from '../components/Stock_Portfolio/Market_News';
+// import SectorData from "../components/Stock_Portfolio/Sector_Data";
 
 
 
@@ -28,7 +29,8 @@ export default function WelcomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
-<DashboardContent/>
+{/* <SectorData/> */}
+{/* <DashboardContent/> */}
 <ScApp/>
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
             <CoBOTApp/>

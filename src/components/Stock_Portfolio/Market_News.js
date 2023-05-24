@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import NewsLoad from "../Stock_Portfolio/News_Load";
 import { PurpleServicesH2 } from '../Services/ServicesElements';
 
+
 function DashboardContent() {
 
   return (<>
