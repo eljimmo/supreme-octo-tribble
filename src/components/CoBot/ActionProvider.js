@@ -18,19 +18,19 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
-  handleGlobalStats = () => {
-    const message = this.createChatBotMessage(
-      "Here's the latest global stats.",
-      {
-        widget: "globalStatistics",
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true
-      }
-    );
+  // handleGlobalStats = () => {
+  //   const message = this.createChatBotMessage(
+  //     "Here's the latest global stats.",
+  //     {
+  //       widget: "globalStatistics",
+  //       loading: true,
+  //       terminateLoading: true,
+  //       withAvatar: true
+  //     }
+  //   );
 
-    this.addMessageToState(message);
-  };
+  //   this.addMessageToState(message);
+  // };
 
 
   handleCryptoCoins = () => {
@@ -47,47 +47,47 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
-  handleLocalStats = () => {
-    const message = this.createChatBotMessage(
-      "Here's the latest stats in Sri Lanka.",
-      {
-        widget: "localStatistics",
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true
-      }
-    );
+  // handleLocalStats = () => {
+  //   const message = this.createChatBotMessage(
+  //     "Here's the latest stats in Sri Lanka.",
+  //     {
+  //       widget: "localStatistics",
+  //       loading: true,
+  //       terminateLoading: true,
+  //       withAvatar: true
+  //     }
+  //   );
 
-    this.addMessageToState(message);
-  };
+  //   this.addMessageToState(message);
+  // };
 
-  handleContact = () => {
-    const message = this.createChatBotMessage(
-      "Email the creator!",
-      {
-        widget: "creatorContact",
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true
-      }
-    );
+  // handleContact = () => {
+  //   const message = this.createChatBotMessage(
+  //     "Email the creator!",
+  //     {
+  //       widget: "creatorContact",
+  //       loading: true,
+  //       terminateLoading: true,
+  //       withAvatar: true
+  //     }
+  //   );
 
-    this.addMessageToState(message);
-  };
+  //   this.addMessageToState(message);
+  // };
 
-  handleMedicine = () => {
-    const message = this.createChatBotMessage(
-      "To have clinical medicine safely delivered to your home, please refer to the link below.",
-      {
-        widget: "medicineDelivery",
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true
-      }
-    );
+  // handleMedicine = () => {
+  //   const message = this.createChatBotMessage(
+  //     "To have clinical medicine safely delivered to your home, please refer to the link below.",
+  //     {
+  //       widget: "medicineDelivery",
+  //       loading: true,
+  //       terminateLoading: true,
+  //       withAvatar: true
+  //     }
+  //   );
 
-    this.addMessageToState(message);
-  };
+  //   this.addMessageToState(message);
+  // };
 
   handleJoke = () => {
     var jokes = [

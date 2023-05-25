@@ -50,7 +50,7 @@ function ACpp() {
             symbol={coin.symbol}
             marketcap={coin.total_volume}
             volume={coin.market_cap}
-            image={coin.image}
+            // image={coin.image}
             priceChange={coin.price_change_percentage_24h}
           />
         );

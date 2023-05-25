@@ -1,9 +1,9 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview";
-import GlobalStatistics from "./widgets/GlobalStatistics";
-import LocalStatistics from "./widgets/LocalStatistics";
+// import GlobalStatistics from "./widgets/GlobalStatistics";
+// import LocalStatistics from "./widgets/LocalStatistics";
 import Contact from "./widgets/Contact";
-import MedicineDelivery from "./widgets/MedicineDelivery";
+// import MedicineDelivery from "./widgets/MedicineDelivery";
 import CoinData from "./widgets/CryptoCoins";
 import CoBotAvatar from "./CoBotAvatar";
 
@@ -48,18 +48,18 @@ const config = {
       widgetFunc: (props) => <Overview {...props} />,
       mapStateToProps: ["messages"]
     },
-    {
-      widgetName: "globalStatistics",
-      widgetFunc: (props) => <GlobalStatistics />
-    },
-    {
-      widgetName: "localStatistics",
-      widgetFunc: (props) => <LocalStatistics />
-    },
-    {
-      widgetName: "medicineDelivery",
-      widgetFunc: (props) => <MedicineDelivery />
-    },
+    // {
+    //   widgetName: "globalStatistics",
+    //   widgetFunc: (props) => <GlobalStatistics />
+    // },
+    // {
+    //   widgetName: "localStatistics",
+    //   widgetFunc: (props) => <LocalStatistics />
+    // },
+    // {
+    //   widgetName: "medicineDelivery",
+    //   widgetFunc: (props) => <MedicineDelivery />
+    // },
     {
       widgetName: "creatorContact",
       widgetFunc: (props) => <Contact />
