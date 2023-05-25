@@ -61,19 +61,19 @@ class ActionProvider {
   //   this.addMessageToState(message);
   // };
 
-  // handleContact = () => {
-  //   const message = this.createChatBotMessage(
-  //     "Email the creator!",
-  //     {
-  //       widget: "creatorContact",
-  //       loading: true,
-  //       terminateLoading: true,
-  //       withAvatar: true
-  //     }
-  //   );
+  handleContact = () => {
+    const message = this.createChatBotMessage(
+      "US Market Sector Index.",
+      {
+        widget: "creatorContact",
+        loading: true,
+        terminateLoading: true,
+        withAvatar: true
+      }
+    );
 
-  //   this.addMessageToState(message);
-  // };
+    this.addMessageToState(message);
+  };
 
   // handleMedicine = () => {
   //   const message = this.createChatBotMessage(

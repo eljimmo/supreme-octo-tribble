@@ -17,11 +17,11 @@ const GeneralOptions = (props) => {
     //   handler: props.actionProvider.handleMedicine,
     //   id: 4
     // },
-    // {
-    //   name: "Creator contact",
-    //   handler: props.actionProvider.handleContact,
-    //   id: 3
-    // },
+    {
+      name: "US Market Sector Index",
+      handler: props.actionProvider.handleContact,
+      id: 3
+    },
     {
       name: "Crypto Coins",
       handler: props.actionProvider.handleCryptoCoins,
