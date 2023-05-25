@@ -32,6 +32,21 @@ class ActionProvider {
     this.addMessageToState(message);
   };
 
+
+  handleCryptoCoins = () => {
+    const message = this.createChatBotMessage(
+      "Here's the latest Crypto Coins.",
+      {
+        widget: "cryptoCoinage",
+        loading: true,
+        terminateLoading: true,
+        withAvatar: true
+      }
+    );
+
+    this.addMessageToState(message);
+  };
+
   handleLocalStats = () => {
     const message = this.createChatBotMessage(
       "Here's the latest stats in Sri Lanka.",

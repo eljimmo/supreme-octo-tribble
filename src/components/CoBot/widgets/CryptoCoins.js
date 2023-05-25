@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Data_App.css';
+import './Coins.css';
 import Coin from './Data_Coin';
 
-function ACpp() {
+function Coin_Data() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
@@ -29,7 +29,6 @@ function ACpp() {
 
   return (
     <div className='coin-app'>
-
       <div className='coin-search'>
         <h1 className='coin-text'>Crypto-Currency Search</h1>
         <form>
@@ -59,4 +58,4 @@ function ACpp() {
   );
 }
 
-export default ACpp;
+export default Coin_Data;

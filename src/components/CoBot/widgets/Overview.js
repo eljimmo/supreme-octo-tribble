@@ -22,6 +22,11 @@ const GeneralOptions = (props) => {
       handler: props.actionProvider.handleContact,
       id: 3
     },
+    {
+      name: "Crypto Coins",
+      handler: props.actionProvider.handleCryptoCoins,
+      id: 5
+    },
   ];
   return <Options options={options} title="Options" {...props} />;
 };

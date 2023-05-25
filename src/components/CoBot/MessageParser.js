@@ -59,6 +59,15 @@ class MessageParser {
       return this.actionProvider.handleQuotes();
     }
 
+    if (
+      message.includes("coins") ||
+      message.includes("coin") ||
+      message.includes("bitcoin") ||
+      message.includes("crypto") 
+          ) {
+      return this.actionProvider.handleCryptoCoins();
+    }
+
     if (message.includes("thanks") || message.includes("thank you")) {
       return this.actionProvider.handleThanks();
     }

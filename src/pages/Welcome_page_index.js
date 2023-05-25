@@ -29,8 +29,7 @@ export default function WelcomePage() {
       <FrostedApp/>
 </HeroContainerTransparent>
 <InfoSection {...homeObjOne} />
-{/* <SectorData/> */}
-{/* <DashboardContent/> */}
+
 <ScApp/>
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
             <CoBOTApp/>
