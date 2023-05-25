@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Data_Stock.css';
+import './Data_Stock.css';
 
 const Coin = ({
   name,

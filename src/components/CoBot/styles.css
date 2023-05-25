@@ -1,5 +1,4 @@
 .App {
-  /* font-family: sans-serif; */
   text-align: center;
 }
 .options {
@@ -20,7 +19,6 @@
 
 .option-item {
   padding: 8px 15px;
-  /* border: 1px solid #2898ec; */
   border: 1px solid #7918f2;
 
   border-radius: 25px;
@@ -33,7 +31,6 @@
 }
 
 .option-item:hover {
-  /* box-shadow: inset 195px 0px 0px #2898ec; */
   box-shadow: inset 195px 0px 0px #7918f2;
 
   color: #ffffff;
@@ -44,7 +41,6 @@
   font-size: 0.9rem;
   background-color: rgba(45, 159, 253, 0.589);
   display: flex;
-  /* background: linear-gradient(to top right, rgb(15, 146, 221), #a6a6a6); */
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -94,7 +90,6 @@
   border-radius: 30px;
   padding: 10px;
   color: #fff;
-  /* background-color: #a6a6a6; */
   border: none;
   position: fixed;
   bottom: 25px;
