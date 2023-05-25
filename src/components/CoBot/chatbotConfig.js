@@ -2,7 +2,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview";
 // import GlobalStatistics from "./widgets/GlobalStatistics";
 // import LocalStatistics from "./widgets/LocalStatistics";
-import Contact from "./widgets/Contact";
+// import Contact from "./widgets/Contact";
 // import MedicineDelivery from "./widgets/MedicineDelivery";
 import CoinData from "./widgets/CryptoCoins";
 import CoBotAvatar from "./CoBotAvatar";
@@ -60,10 +60,10 @@ const config = {
     //   widgetName: "medicineDelivery",
     //   widgetFunc: (props) => <MedicineDelivery />
     // },
-    {
-      widgetName: "creatorContact",
-      widgetFunc: (props) => <Contact />
-    },
+    // {
+    //   widgetName: "creatorContact",
+    //   widgetFunc: (props) => <Contact />
+    // },
     {
       widgetName: "cryptoCoinage",
       widgetFunc: (props) => <CoinData />
