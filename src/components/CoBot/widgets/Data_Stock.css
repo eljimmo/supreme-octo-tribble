@@ -27,7 +27,7 @@
     transition: transform .25s;
   }
   .glass:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 
   .coin {
