@@ -18,7 +18,7 @@ const GeneralOptions = (props) => {
     //   id: 4
     // },
     {
-      name: "US Market Sector Index",
+      name: "US Market News",
       handler: props.actionProvider.handleContact,
       id: 3
     },

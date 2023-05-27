@@ -63,9 +63,9 @@ class ActionProvider {
 
   handleContact = () => {
     const message = this.createChatBotMessage(
-      "US Market Sector Index.",
+      "US Market Stock News.",
       {
-        widget: "creatorContact",
+        widget: "marketNews",
         loading: true,
         terminateLoading: true,
         withAvatar: true
