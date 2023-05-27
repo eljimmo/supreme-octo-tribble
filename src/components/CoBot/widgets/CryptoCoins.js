@@ -19,9 +19,9 @@ function Coin_Data() {
       .catch(error => console.log(error));
   }, []);
 
-  const handleChange = e => {
-    setSearch(e.target.value);
-  };
+  // const handleChange = e => {
+  //   setSearch(e.target.value);
+  // };
 
   const filteredCoins = coins.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase())
@@ -30,15 +30,7 @@ function Coin_Data() {
   return (
     <div className='coin-app'>
       <div className='coin-search'>
-        <h1 className='coin-text'>Crypto-Currency Search</h1>
-        <form>
-          <input
-            className='coin-input'
-            type='text'
-            onChange={handleChange}
-            placeholder='Search'
-          />
-        </form>
+        <h1 className='coin-text'>Crypto-Currency </h1>
       </div>
       {filteredCoins.map(coin => {
         return (

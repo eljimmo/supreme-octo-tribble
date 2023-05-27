@@ -1,12 +1,12 @@
 import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import NewsCard from "../Stock_Portfolio/News_Card";
-import {
-  ServicesCard2,
-  TopLine2,
-  Coincontainer
-} from '../Services/ServicesElements';
+import NewsCard from "../widgets/NewsCard";
+// import {
+//   ServicesCard2,
+//   TopLine2,
+//   Coincontainer
+// } from '../Services/ServicesElements';
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -72,15 +72,17 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
-      <Coincontainer>
-      <ServicesCard2>
+        <div>
+     {/* <Coincontainer> */}
+      {/* <ServicesCard2> */}
              <NewsCard data={news[i]} />
              <br/>
-        <TopLine2>{news[i].headline}</TopLine2>
+        <p>{news[i].headline}</p>
         <p>{news[i].summary}</p>
         <p>{news[i].source}</p>
-      </ServicesCard2>
-      </Coincontainer>
+      {/* </ServicesCard2> */}
+    {/* //   </Coincontainer> */}
+    </div>
     )
   }
   
