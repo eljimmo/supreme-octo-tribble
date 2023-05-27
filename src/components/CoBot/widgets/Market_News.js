@@ -2,17 +2,17 @@ import * as React from "react";
 import { Suspense } from "react";
 import News from "../widgets/News";
 import './Data_Stock.css';
-// import { PurpleServicesH2 } from '../Services/ServicesElements';
 
 
 function DashboardContent() {
 
   return (<>
-          <div style={{ overflow: 'hidden', background: 'black', alignContent: 'center' }}>
-        <p>Market News</p>
-        </div>
+      <div className='glass'>
 
+          {/* <div style={{ overflow: 'hidden', background: 'smokewhite', alignContent: 'center' }}> */}
               <News basic="news?category=general"/>
+              </div>
+
               </>
   );
 }

@@ -11,7 +11,7 @@ export default function NewsCard(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="25"
           image={props.data.image}
           alt="green iguana"
         />

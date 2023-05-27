@@ -17,14 +17,14 @@ class MessageParser {
     }
 
     if (
-      message.includes("talk") ||
-      message.includes("speak") ||
-      message.includes("real person") ||
-      message.includes("call") ||
-      message.includes("emergency") ||
-      message.includes("contact")
+      message.includes("News") ||
+      message.includes("Market News") ||
+      message.includes("latest") ||
+      message.includes("noticias") ||
+      message.includes("report") ||
+      message.includes("story")
     ) {
-      return this.actionProvider.handleContact();
+      return this.actionProvider.handleMarket();
     }
 
     if (

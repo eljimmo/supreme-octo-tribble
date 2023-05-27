@@ -11,7 +11,7 @@ const Coin = ({
   priceChange
 }) => {
   return (
-    <div className='coin-container'>
+    <div className='coin-container glass'>
       <div className='coin-row'>
         <div className='coin'>
           <img src={image} alt='crypto' />

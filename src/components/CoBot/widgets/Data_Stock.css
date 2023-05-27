@@ -11,6 +11,25 @@
     border-bottom: 1px solid #d7d7d7;
   }
   
+
+  .glass {
+  
+    background: radial-gradient(#fff2 30%, #fff4);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: transform .25s;
+  }
+  .glass:hover {
+    transform: scale(1.1);
+  }
+
   .coin {
     display: flex;
     align-items: center;

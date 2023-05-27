@@ -61,7 +61,7 @@ class ActionProvider {
   //   this.addMessageToState(message);
   // };
 
-  handleContact = () => {
+  handleMarket = () => {
     const message = this.createChatBotMessage(
       "US Market Stock News.",
       {

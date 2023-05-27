@@ -19,7 +19,7 @@ const GeneralOptions = (props) => {
     // },
     {
       name: "US Market News",
-      handler: props.actionProvider.handleContact,
+      handler: props.actionProvider.handleMarket,
       id: 3
     },
     {
