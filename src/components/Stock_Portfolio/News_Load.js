@@ -3,12 +3,13 @@ import { useEffect } from "react";
 import axios from "axios";
 import NewsCard from "../Stock_Portfolio/News_Card";
 import {
-  ServicesContainer2,
-  ServicesCard,
-  TopLine,
-  ServicesP,
+  // ServicesContainer2,
+  ServicesCard2,
+  TopLine2,
+  // ServicesP,
+  Coincontainer
 } from '../Services/ServicesElements';
-import Paper from "@mui/material/Paper";
+// import Paper from "@mui/material/Paper";
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -74,20 +75,15 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
-      <div style={{ overflow: 'hidden', background: 'black' }}>
-        <br></br>
-      <Paper sx={{ p: 2, margin: 'auto', maxWidth: 1250, flexGrow: 1, color: 'black' }}>
-      <ServicesContainer2 id="services">
-      <ServicesCard>
+      <Coincontainer>
+      <ServicesCard2>
              <NewsCard data={news[i]} />
              <br/>
-        <TopLine>{news[i].headline}</TopLine>
-        <ServicesP>{news[i].summary}</ServicesP>
-        <ServicesP>{news[i].source}</ServicesP>
-      </ServicesCard>
-      </ServicesContainer2>
-      </Paper>
-    </div>
+        <TopLine2>{news[i].headline}</TopLine2>
+        <p>{news[i].summary}</p>
+        <p>{news[i].source}</p>
+      </ServicesCard2>
+      </Coincontainer>
     )
   }
   
