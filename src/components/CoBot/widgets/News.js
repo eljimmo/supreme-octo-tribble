@@ -8,7 +8,7 @@ import {
   // Coincontainer
 } from '../widgets/Elements';
 // import NewsCard from "../widgets/NewsCard";
-import { Button } from '@mantine/core';
+// import { Button } from '@mantine/core';
 
 
 export default function News(props) {
@@ -75,25 +75,27 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
-      <div className='coin-container'>
-      {/* <div> */}
-      <div className='coin-row'>
+      <div className='glass'>
 
 
              {/* <NewsCard data={news[i]} /> */}
+             <br/>
+
         <TopLine3>{news[i].headline}</TopLine3>
+        <br/>
         <p>{news[i].summary}</p>
-        <Button
+        <br/>
+
+        {/* <Button
               variant="outline"
               color="violet"
               href={news[i].url}>
                           Article Link
 
-              </Button>
+              </Button> */}
         
         {/* <p>{news[i].source}</p> */}
-    </div>
-    </div>
+     </div>
     )
   }
   
