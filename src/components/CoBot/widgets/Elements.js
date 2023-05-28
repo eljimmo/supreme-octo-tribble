@@ -34,6 +34,10 @@ export const TopLine2 = styled.div`
   text-transform: uppercase;
 `;
 
+export const TopLine3 = styled.div`
+  color: #7918f2;
+`;
+
 
 export const ServicesContainer2 = styled.div`
   display: relative;
