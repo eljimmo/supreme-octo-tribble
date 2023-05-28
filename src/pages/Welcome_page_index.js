@@ -11,7 +11,7 @@ import Sidebar from '../components/Sidebar/index';
 import ScApp from '../components/ScrollControl/src/App';
 import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
 import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
-// import Experience from "../components/MachineLearning/src/components/experience/Expreience";
+import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 
 
 
@@ -43,7 +43,7 @@ export default function WelcomePage() {
             </Button>
       </Affix>
           <Artificialintelligenceabout/>
-          {/* <Experience/> */}
+          <Experience/>
         <Footer/>
     </>
   );

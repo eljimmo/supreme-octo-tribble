@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 .experience__container > div {
   background: var(--color-bg-variant);
