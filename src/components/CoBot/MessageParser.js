@@ -18,6 +18,7 @@ class MessageParser {
 
     if (
       message.includes("News") ||
+      message.includes("news") ||
       message.includes("Market News") ||
       message.includes("latest") ||
       message.includes("noticias") ||
