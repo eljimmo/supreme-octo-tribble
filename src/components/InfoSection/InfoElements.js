@@ -133,6 +133,20 @@ export const Heading = styled.h1`
 `;
 
 
+export const Heading1 = styled.h1`
+  margin-bottom: 24px;
+  font-size: 48px;
+  padding: 0 15px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
+
 export const Heading2 = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
@@ -157,6 +171,16 @@ export const Subtitle = styled.p`
 
 export const Subtitle2 = styled.p`
   max-width: 300px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? '#010606' : '#010606')};
+`;
+
+
+export const Subtitle3 = styled.p`
+  max-width: 300px;
+  padding: 0 15px;
   margin-bottom: 35px;
   font-size: 14px;
   line-height: 24px;

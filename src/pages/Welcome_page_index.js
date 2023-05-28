@@ -5,10 +5,13 @@ import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
 import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
-import CoBOTApp from '../components/CoBot/App';
+import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
 import ScApp from '../components/ScrollControl/src/App';
+import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
+import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
+// import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 
 
 
@@ -25,10 +28,11 @@ export default function WelcomePage() {
       <HeroContainerTransparent>
       <FrostedApp/>
 </HeroContainerTransparent>
+<Heroartificialintelligence/>
 <InfoSection {...homeObjOne} />
 <ScApp/>
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
-            <CoBOTApp/>
+            <BOTA/>
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
@@ -38,6 +42,8 @@ export default function WelcomePage() {
                Galatians 6:7–9
             </Button>
       </Affix>
+          <Artificialintelligenceabout/>
+          {/* <Experience/> */}
         <Footer/>
     </>
   );

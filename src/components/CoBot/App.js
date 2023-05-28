@@ -4,8 +4,9 @@ import Chatbot from "react-chatbot-kit";
 import config from "./chatbotConfig";
 import MessageParser from "./MessageParser";
 import ActionProvider from "./ActionProvider";
+import './widgets/Coins.css';
 
-export default function CoBOTApp() {
+export default function BOTA() {
   const [showBot, toggleBot] = useState(true);
 
   return (

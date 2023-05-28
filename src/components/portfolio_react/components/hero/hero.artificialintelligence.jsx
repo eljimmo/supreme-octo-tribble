@@ -12,15 +12,15 @@ import {
   // TextWrapper,
   // TextWrapper2,
   TopLine,
-  Heading,
+  Heading1,
   // Heading2,
   // Subtitle,
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
   return (
-    <div id="hero">
-      <Heading>Artificial Intelligence</Heading>
+    <div id="hero" color="black">
+      <Heading1>Artificial Intelligence</Heading1>
               <InfoWrapper2>
       <TopLine> Created by Jim Morales </TopLine>
 

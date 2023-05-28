@@ -11,19 +11,21 @@ import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
 import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
-import { Subtitle, Heading, TopLine } from "../../../InfoSection/InfoElements";
+import { Subtitle3, Heading1, TopLine } from "../../../InfoSection/InfoElements";
+import '../../styles.css';
 
 const Artificialintelligenceabout = () => {
   return (
 
     <div id="about">
     <div>
-      <Heading>Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.</Heading>
-      <Subtitle>
-      The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.      </Subtitle>
-      <Subtitle>
+      <Heading1>Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.</Heading1>
+      <Subtitle3>
+      The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.      
+      </Subtitle3>
+      <Subtitle3>
       Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
-      </Subtitle>
+      </Subtitle3>
       {/* <p>
       UNDERSTANDING WHAT IS NEURO EVOLUTION IN ALGORITHMS. 
       EVOLUTIONARY ALGORITHMS INSPIRED BY BIOLOGICAL PROCESSES FOUND IN NATURE, CREATING POPULATIONS OF SOLUTIONS AND THEN ELIMINATING NON FITTING CANDIDATES. 
@@ -108,15 +110,15 @@ const Artificialintelligenceabout = () => {
       </div>
     </div>
     <div>
-      <Heading>Programming Meta-learning and Architecture Search</Heading>
-      <Subtitle>AI applications in finance may create or intensify financial and non-financial risks, and give rise to potential financial consumer and investor protection considerations. The use of AI amplifies risks that could affect a financial institution’s safety and soundness, given the lack of explainability or interpretability of AI model processes, with potential for pro-cyclicality and systemic risk in the markets.</Subtitle>
-      <Subtitle>
+      <Heading1>Programming Meta-learning and Architecture Search</Heading1>
+      <Subtitle3>AI applications in finance may create or intensify financial and non-financial risks, and give rise to potential financial consumer and investor protection considerations. The use of AI amplifies risks that could affect a financial institution’s safety and soundness, given the lack of explainability or interpretability of AI model processes, with potential for pro-cyclicality and systemic risk in the markets.</Subtitle3>
+      <Subtitle3>
         Enhance, as in to share solutions in order to enhance the problem.
-      </Subtitle>
-      <Subtitle>
+      </Subtitle3>
+      <Subtitle3>
         Replicate, as in to replicate the process to consistently solve
         problems.
-      </Subtitle>
+      </Subtitle3>
     </div>
   </div>
 
