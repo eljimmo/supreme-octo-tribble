@@ -7,7 +7,7 @@ import './Data_Stock.css';
 function DashboardContent() {
 
   return (<>
-      <div className='glass'>
+      <div className='glass scrollingDiv'>
 
           {/* <div style={{ overflow: 'hidden', background: 'smokewhite', alignContent: 'center' }}> */}
               <News basic="news?category=general"/>
