@@ -28,43 +28,43 @@ class Experience extends Component {
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>HTML</h4>
-                  <small className="text-light">Experienced</small>
+                  <h4>Supervised learning</h4>
+                  <small className="text-light">Training Data</small>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>CSS</h4>
-                  <small className="text-light">Advandced</small>
+                  <h4>Unsupervised learning</h4>
+                  <small className="text-light">Learn Patterns from unlabeled data.</small>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Javascript</h4>
-                  <small className="text-light">LoveIt</small>
+                  <h4>Reinforcement learning</h4>
+                  <small className="text-light">Take Actions in Environments</small>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Tailwind</h4>
-                  <small className="text-light">Intermediate</small>
+                  <h4>Dimensionality Reduction</h4>
+                  <small className="text-light">reducing variables & set of principal variables</small>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Bootstrap</h4>
-                  <small className="text-light">Begginer</small>
+                  <h4>Feature Learning</h4>
+                  <small className="text-light">Representative Elements</small>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>React</h4>
-                  <small className="text-light">Senior</small>
+                  <h4>Statistical Model</h4>
+                  <small className="text-light">Embodies a set of statistical Assumptions</small>
                 </div>
               </article>
             </div>
