@@ -32,7 +32,14 @@ export default function WelcomePage() {
 <InfoSection {...homeObjOne} />
 <ScApp/>
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
+  <Button
+              variant="outline"
+              color="violet"
+            >
             <BOTA/>
+            BOTA BOT
+            </Button>
+
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
