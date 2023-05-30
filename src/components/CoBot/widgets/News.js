@@ -1,14 +1,12 @@
 import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import './Data_Stock.css';
+// import './Data_Stock.css';
 import {
-  // ServicesCard2,
-  TopLine3,
-  // Coincontainer
+  TopLine3
 } from '../widgets/Elements';
-// import NewsCard from "../widgets/NewsCard";
-// import { Button } from '@mantine/core';
+import './Coins.css';
+
 
 
 export default function News(props) {
@@ -75,27 +73,21 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(
-      <div className='glass'>
-
-
-             {/* <NewsCard data={news[i]} /> */}
-             <br/>
+    <>
+      
+      
+      <div className='coin-container'>
+      {/* <div className='coin-row'> */}
+        {/* <div className='coin'> */}
 
         <TopLine3>{news[i].headline}</TopLine3>
         <br/>
         <p>{news[i].summary}</p>
         <br/>
+        {/* </div> */}
+        </div>
+        </>
 
-        {/* <Button
-              variant="outline"
-              color="violet"
-              href={news[i].url}>
-                          Article Link
-
-              </Button> */}
-        
-        {/* <p>{news[i].source}</p> */}
-     </div>
     )
   }
   
