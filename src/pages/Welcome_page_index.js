@@ -12,7 +12,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
 import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
-
+import SectorData from "../components/CoBot/widgets/SectorData";
 
 
 export default function WelcomePage() {
