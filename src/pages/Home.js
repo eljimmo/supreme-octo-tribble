@@ -165,13 +165,7 @@ const Home = () => {
                     (
                         <section className="flex justify-center items-center text-center">
                             <div>
-                                <Text className="font-bold text-2xl">
-                                    Stay focused
-                                </Text>
-
-                                <Text className="pt-2 pb-6 text-sm">
-                                    Add tasks and assign them to your focus sessions
-                                </Text>
+                         
 
                                 {/* <button 
                                     className="rounded-lg py-2 px-8 text-white bg-secondary"
