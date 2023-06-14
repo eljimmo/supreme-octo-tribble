@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Card from '../elements/Card';
 import Text from '../elements/Text';
-import Button from '../elements/Button';
+// import Button from '../elements/Button';
 // import Time from '../widgets/Time';
 // import Settings from '../widgets/Settings';
 import { onAuthStateChanged } from "firebase/auth";
@@ -13,21 +13,21 @@ const Home = () => {
     // const [workMin, setWorkMin] = useState(45);
     // const [breakMin, setBreakMin] = useState(15);
     const inputRef = useRef(null);
-    const [remainingTime, setRemainingTime] = useState({
-        seconds: '00',
-        minutes: '00',
-        hours: '00',
-        days: '00'
-    })
+    // const [remainingTime, setRemainingTime] = useState({
+    //     seconds: '00',
+    //     minutes: '00',
+    //     hours: '00',
+    //     days: '00'
+    // })
 
-    const handleTaskButton = () => {
-        setOpenTaskInput(true);
-        inputRef.current.focus();
-    }
+    // const handleTaskButton = () => {
+    //     setOpenTaskInput(true);
+    //     inputRef.current.focus();
+    // }
 
-    const handleSettings = () => {
-        setOpen(true);
-    }
+    // const handleSettings = () => {
+    //     setOpen(true);
+    // }
 
     useEffect(()=>{
         onAuthStateChanged(auth, (user) => {
@@ -56,16 +56,16 @@ const Home = () => {
 
         <section className="grid grid-cols-2 gap-4">
             <Card className="text-center pb-16">
-                <Text className="font-semibold text-xl">
+                {/* <Text className="font-semibold text-xl">
                     Ready, set, focus!
                 </Text>
 
                 <Text className="text-sm pt-2">
                     Achieve your daily goals and get more
                     done using the Pomodoro Technique
-                </Text>
+                </Text> */}
 
-                <div className="flex justify-center items-center mt-8">
+                {/* <div className="flex justify-center items-center mt-8">
                     <div className="py-2 px-4 rounded-md border-b border-x-0 border-x-white border-t-0 border-t-white border-white ">
                         <div className='px-4 flex space-x-4 rounded-md'>
                             <div className='flex flex-col'>
@@ -87,19 +87,19 @@ const Home = () => {
                             </div>
                         </div>                        
                     </div>                    
-                </div>
+                </div> */}
 
-                <Text className="text-sm mt-6">
+                {/* <Text className="text-sm mt-6">
                     You will have 3 breaks
-                </Text>
-
+                </Text> */}
+{/* 
                 <Button className="mt-6">
                     Start focus session
-                </Button>
+                </Button> */}
             </Card>
 
             <Card className="py-4">
-                <div>
+                {/* <div>
                     <p>
                         {remainingTime.days} days
                     </p>
@@ -112,20 +112,20 @@ const Home = () => {
                     <p>
                         {remainingTime.seconds} seconds
                     </p>
-                </div>
+                </div> */}
 
                 <div>
                     <div className="flex justify-between">
-                        <Text className="text-sm font-semibold">
+                        {/* <Text className="text-sm font-semibold">
                             Daily progress
-                        </Text>
+                        </Text> */}
 
-                        <Button 
+                        {/* <Button 
                             onClick={handleSettings} 
                             className="py-1 px-6"
                         >
                             Settings
-                        </Button>
+                        </Button> */}
                     </div>
 
                     {/* {open? <Settings 
@@ -149,16 +149,16 @@ const Home = () => {
 
             <Card className="py-4 col-span-2">
                 <div className="flex justify-between">
-                    <Text className="text-lg font-semibold mb-10">
+                    {/* <Text className="text-lg font-semibold mb-10">
                         Tasks
-                    </Text>
+                    </Text> */}
 
-                    <div 
+                    {/* <div 
                         className="text-2xl cursor-pointer"
                         onClick={handleTaskButton}    
                     >
                         +
-                    </div>
+                    </div> */}
                 </div>
                 {
                     !openTaskInput?
@@ -173,23 +173,23 @@ const Home = () => {
                                     Add tasks and assign them to your focus sessions
                                 </Text>
 
-                                <button 
+                                {/* <button 
                                     className="rounded-lg py-2 px-8 text-white bg-secondary"
                                     onClick={handleTaskButton}
                                 >
                                     + Add a task
-                                </button>
+                                </button> */}
                             </div>
                         </section>
                     )
                     :
                     (
                         <section className="">                            
-                            <Text className="text-sm pt-1 mb-6">
+                            {/* <Text className="text-sm pt-1 mb-6">
                                 Select a task for your session
-                            </Text>
+                            </Text> */}
 
-                            <form>
+                            {/* <form>
                                 <input 
                                     type="text"
                                     placeholder="Add a task"
@@ -198,7 +198,7 @@ const Home = () => {
                                     focus:border-b-tertiary "
                                     ref={inputRef}
                                 />
-                            </form>
+                            </form> */}
                         </section>
                     )
                 }
