@@ -11,6 +11,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import LayoutView from './widgets/Layout';
 import AboutIndex from './pages/About';
+import Home from "./pages/Home";
 
 
 
@@ -37,7 +38,7 @@ export default function App() {
                 path="/home"
                 element={
                   <LayoutView>
-                    < AboutIndex />
+                    < Home />
                   </LayoutView>
                 
                 }

@@ -82,6 +82,15 @@ const Navbar = ({ toggle }) => {
                 </NavLinks2>
               </NavItem>
 
+
+              <NavItem>
+                <NavLinks2
+                  to='/login'
+                >
+                  Login
+                </NavLinks2>
+              </NavItem>
+
             </NavMenu>
         
 
