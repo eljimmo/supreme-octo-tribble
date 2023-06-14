@@ -1,17 +1,17 @@
 import React from 'react';
-import Text from '../elements/Text';
-import {NavLink} from 'react-router-dom';
+// import Text from '../elements/Text';
+// import {NavLink} from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <aside className="text-white">
         <ul>
-            <Text className="text-lg pl-4 mt-6 font-bold mb-12">
+            {/* <Text className="text-lg pl-4 mt-6 font-bold mb-12">
                 Focus <span className="text-tertiary">App</span>
-            </Text>
+            </Text> */}
 
           
-                <NavLink 
+                {/* <NavLink 
                     to="/home"
                     className={({isActive}) => 
                         isActive? "bg-secondary w-full block border-l-2 border-l-tertiary mr-2 py-3  text-sm"
@@ -22,9 +22,9 @@ const Sidebar = () => {
                     <li className="p-4 ">
                         Home
                     </li>
-                </NavLink>
+                </NavLink> */}
             
-                <NavLink 
+                {/* <NavLink 
                     to="/notes"
                     className={({isActive}) => 
                         isActive? "bg-secondary w-full block border-l-2 border-l-tertiary mr-2 py-3  text-sm"
@@ -35,10 +35,10 @@ const Sidebar = () => {
                     <li className="p-4">
                         Notes
                     </li>                    
-                </NavLink>
+                </NavLink> */}
            
 
-                <NavLink 
+                {/* <NavLink 
                     to="/stopwatch"
                     className={({isActive}) => 
                         isActive? "bg-secondary w-full block border-l-2 border-l-tertiary mr-2 py-3  text-sm"
@@ -50,10 +50,10 @@ const Sidebar = () => {
                         Stopwatch
                     </li>
                     
-                </NavLink>
+                </NavLink> */}
            
             
-                <NavLink 
+                {/* <NavLink 
                     to="/timer"
                     className={({isActive}) => 
                         isActive? "bg-secondary w-full block border-l-2 border-l-tertiary mr-2 py-3  text-sm"
@@ -64,7 +64,7 @@ const Sidebar = () => {
                     <li className="p-4">
                         Timer
                     </li>                    
-                </NavLink>
+                </NavLink> */}
          
         </ul>
     </aside>

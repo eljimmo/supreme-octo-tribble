@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
-const Layout = ({children}) => {
+const LayoutView = ({children}) => {
     return(
         <section className="relative">
             <div className="fixed top-0 left-0 h-screen bg-sidebar w-72">
@@ -16,4 +16,4 @@ const Layout = ({children}) => {
     )
 }
 
-export default Layout
+export default LayoutView

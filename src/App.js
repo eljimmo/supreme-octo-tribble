@@ -9,7 +9,8 @@ import {
 import WelcomePage from './pages/Welcome_page_index';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-// import Layout from './widgets/Layout';
+import LayoutView from './widgets/Layout';
+import AboutIndex from './pages/About';
 
 
 
@@ -26,19 +27,18 @@ export default function App() {
               <Route 
                 path="/"
                 element={
-                  // <Layout>
                     <WelcomePage/>
-                  // </Layout>
                 
                 }
               />
 
+
               <Route 
-                path="/notes"
+                path="/home"
                 element={
-                  <Layout>
-                    {/* < Notes /> */}
-                  </Layout>
+                  <LayoutView>
+                    < AboutIndex />
+                  </LayoutView>
                 
                 }
               />
