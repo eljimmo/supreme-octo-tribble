@@ -9,9 +9,9 @@ import {
 import WelcomePage from './pages/Welcome_page_index';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import LayoutView from './widgets/Layout';
+// import LayoutView from './widgets/Layout';
 import AboutIndex from './pages/About';
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import PrivateRoute from './PrivateRoute';
 // import SignInSide from './components/Registration/signin';
 import { AuthProvider } from '../src/contexts/AuthContext';
@@ -31,8 +31,8 @@ export default function App() {
         <div>            
           <Routes>
 
-                         <Route exact path='/MarketNews' element={<PrivateRoute/>}>
-                <Route exact path='/MarketNews' element={<AboutIndex/>} />
+              <Route exact path='/home' element={<PrivateRoute/>}>
+                <Route exact path='/home' element={<AboutIndex/>} />
              </Route>
          
               <Route 
@@ -45,7 +45,7 @@ export default function App() {
 
 
 
-              <Route 
+              {/* <Route 
                 path="/home"
                 element={
                   <LayoutView>
@@ -53,7 +53,7 @@ export default function App() {
                   </LayoutView>
                 
                 }
-              />
+              /> */}
 
 
               <Route 
