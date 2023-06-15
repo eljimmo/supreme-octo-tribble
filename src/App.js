@@ -12,6 +12,10 @@ import Login from './pages/Login';
 import LayoutView from './widgets/Layout';
 import AboutIndex from './pages/About';
 import Home from "./pages/Home";
+import PrivateRoute from './PrivateRoute';
+// import SignInSide from './components/Registration/signin';
+import { AuthProvider } from '../src/contexts/AuthContext';
+// import MarketNews from './pages/MarketNews';
 
 
 
@@ -20,10 +24,16 @@ export default function App() {
 
 
     <BrowserRouter>
+    <AuthProvider> 
+
     <div className="App bg-primary">
       <section>          
         <div>            
           <Routes>
+
+                         <Route exact path='/MarketNews' element={<PrivateRoute/>}>
+                <Route exact path='/MarketNews' element={<AboutIndex/>} />
+             </Route>
          
               <Route 
                 path="/"
@@ -32,6 +42,7 @@ export default function App() {
                 
                 }
               />
+
 
 
               <Route 
@@ -43,6 +54,7 @@ export default function App() {
                 
                 }
               />
+
 
               <Route 
                 path="/timer"
@@ -71,6 +83,8 @@ export default function App() {
       </section>
 
     </div>
+    </AuthProvider> 
+
   </BrowserRouter>
   );
 }

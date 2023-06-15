@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Card from '../elements/Card';
-// import Text from '../elements/Text';
-// import Button from '../elements/Button';
-// import Time from '../widgets/Time';
-// import Settings from '../widgets/Settings';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '../firebase'; 
 
