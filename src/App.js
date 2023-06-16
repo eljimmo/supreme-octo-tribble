@@ -4,7 +4,7 @@ import {
   BrowserRouter,
   // Link,
   // Navigate,
-  Outlet
+  // Outlet
 } from "react-router-dom";
 import WelcomePage from './pages/Welcome_page_index';
 import Signup from './pages/Signup';
@@ -31,10 +31,6 @@ export default function App() {
         <div>            
           <Routes>
 
-              <Route exact path='/home' element={<PrivateRoute/>}>
-                <Route exact path='/home' element={<AboutIndex/>} />
-             </Route>
-         
               <Route 
                 path="/"
                 element={
@@ -42,62 +38,34 @@ export default function App() {
                 
                 }
               />
-
-
-
-              {/* <Route 
-                path="/home"
-                element={
-                  <LayoutView>
-                    < Home />
-                  </LayoutView>
-                
-                }
-              /> */}
-
-
-              <Route 
-                path="/timer"
-                element={
-                  <Layout>
-                    {/* < Timer /> */}
-                  </Layout>
-                
-                }
-              />
-              
-              <Route 
-                path="/stopwatch"
-                element={
-                  <Layout>
-                    {/* < Stopwatch /> */}
-                  </Layout>
-                
-                }
-              />              
+           
+            <Route exact path='/home' element={<PrivateRoute/>}>
+                <Route exact path='/home' element={<AboutIndex/>} />
+            </Route>
             
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>
+
           </Routes>          
         </div>
       </section>
 
     </div>
+    
     </AuthProvider> 
-
   </BrowserRouter>
   );
 }
 
-const Layout = () => {
-  return (
-    <div>
-      <fieldset>
-        <Outlet />
-      </fieldset>
-    </div>
-  );
-};
+// const Layout = () => {
+//   return (
+//     <div>
+//       <fieldset>
+//         <Outlet />
+//       </fieldset>
+//     </div>
+//   );
+// };
 
 
 // const Public = () => <div>public</div>;
