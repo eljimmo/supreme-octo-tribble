@@ -34,11 +34,11 @@ const Login = () => {
                         <div className="w-full max-w-md space-y-8">
                             <div>
                                 <Text className="text-4xl text-white text-center font-bold mb-2">
-                                    Leibniz<span className="text-tertiary">Analytica</span>
+                                    Leibniz <span className="text-tertiary">Analytica</span>
                                 </Text>
 
                                 <h2 className="text-white text-center text-base  tracking-tight text-gray-900">
-                                    Welcome, Name Name
+                                    Welcome, to the future of financial analysis
                                 </h2>                        
                             </div>
                             
