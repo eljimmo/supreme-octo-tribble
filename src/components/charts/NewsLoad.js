@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import NewsCard from "../widgets/NewsCard";
+import NewsCard from "../Cards/NewsCard";
 import Grid from "@mui/material/Grid";
-// import Paper from "@mui/material/Paper";
+import Paper from "@mui/material/Paper";
 
 export default function News(props) {
   const [news, setNews] = React.useState([]);
@@ -69,16 +69,16 @@ export default function News(props) {
   for(let i=0;i<news.length && i<10;i++ )
   {
     final1.push(<Grid item xs={12} md={6} lg={4} key={i}>
-      {/* <Paper
+      <Paper
         sx={{
           p: 2,
           display: "flex",
           flexDirection: "column",
           height: 450,
         }}
-      > */}
+      >
         <NewsCard data={news[i]} />
-      {/* </Paper> */}
+      </Paper>
     </Grid>)
   }
   

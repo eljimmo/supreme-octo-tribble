@@ -9,13 +9,10 @@ import {
 import WelcomePage from './pages/Welcome_page_index';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-// import LayoutView from './widgets/Layout';
 import AboutIndex from './pages/About';
-// import Home from "./pages/Home";
 import PrivateRoute from './PrivateRoute';
-// import SignInSide from './components/Registration/signin';
 import { AuthProvider } from '../src/contexts/AuthContext';
-// import MarketNews from './pages/MarketNews';
+
 
 
 
@@ -35,13 +32,16 @@ export default function App() {
                 path="/"
                 element={
                     <WelcomePage/>
-                
                 }
               />
            
             <Route exact path='/home' element={<PrivateRoute/>}>
                 <Route exact path='/home' element={<AboutIndex/>} />
             </Route>
+
+            {/* <Route exact path='/MarketNews' element={<PrivateRoute/>}>
+                <Route exact path='/MarketNews' element={<MarketNews/>} />
+            </Route> */}
             
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>
@@ -57,45 +57,3 @@ export default function App() {
   );
 }
 
-// const Layout = () => {
-//   return (
-//     <div>
-//       <fieldset>
-//         <Outlet />
-//       </fieldset>
-//     </div>
-//   );
-// };
-
-
-// const Public = () => <div>public</div>;
-// const Private = () => <div>private</div>;
-// const Login = () => <div>login</div>;
-
-
-// function PrivateOutlet() {
-//   const auth = useAuth();
-//   return auth ? <Outlet /> : <Navigate to="/login" />;
-// }
-
-// function PrivateRoute({ children }) {
-//   const auth = useAuth();
-//   return auth ? children : <Navigate to="/login" />;
-// }
-
-// function useAuth() {
-//   return true;
-// }
-
-
-// function MyMenu() {
-//   return (
-//     <nav>
-//       <Link to="/">Public</Link>
-//       {" | "}
-//       <Link to="/private-nested">Private Using Nested</Link>
-//       {" | "}
-//       <Link to="/private-outlet">Private Using Outlet</Link>
-//     </nav>
-//   );
-// }
