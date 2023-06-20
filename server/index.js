@@ -16,6 +16,6 @@ app.use((req, res, next) => {
 });
 
 // start express server on port 5000
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log('Server is running on port: ' + PORT);
 });
