@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 
 app.use(express.static("public"));
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 // const PORT = process.env.PORT || 5001
 
 
@@ -17,5 +17,5 @@ app.use((req, res, next) => {
 
 // start express server on port 5000
 app.listen(port, () => {
-  console.log('Server is running on port: ' + port);
+  console.log('Server is running on port: ' + PORT);
 });
