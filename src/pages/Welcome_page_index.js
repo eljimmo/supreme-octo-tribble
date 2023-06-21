@@ -3,7 +3,7 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne } from '../components/InfoSection/Data';
 import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
-import { HeroContainerTransparent } from '../components/HeroSection/HeroElements';
+import { HeroContainerTransparent, HeroContainerCanva } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
 import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
@@ -25,9 +25,9 @@ export default function WelcomePage() {
     <>
           <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainerTransparent>
+      <HeroContainerCanva>
       <FrostedApp/>
-</HeroContainerTransparent>
+</HeroContainerCanva>
 <Heroartificialintelligence/>
 <InfoSection {...homeObjOne} />
 <ScApp/>
