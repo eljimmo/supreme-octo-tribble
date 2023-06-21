@@ -13,7 +13,10 @@ import AboutIndex from './pages/About';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from '../src/contexts/AuthContext';
 import ArtificialIntelligenceIndex from './pages/ArtificialIntelligence';
-
+// import AboutIndex from "./pages/About";
+// import MachinePage from "./pages/Machine_Index";
+import MachinelearningIndex from "./pages/MachineLearning";
+import NeuroevolutionIndex from "./pages/Neuroevolution";
 
 
 
@@ -36,6 +39,22 @@ export default function App() {
                 }
               />
               
+
+              <Route 
+                path="/neuroevolution"
+                element={
+                    <NeuroevolutionIndex/>
+                }
+              />
+
+
+              <Route 
+                path="/machinelearning"
+                element={
+                    <MachinelearningIndex/>
+                }
+              />
+              
               <Route 
                 path="/artificialintelligence"
                 element={
@@ -46,14 +65,9 @@ export default function App() {
             <Route exact path='/home' element={<PrivateRoute/>}>
                 <Route exact path='/home' element={<AboutIndex/>} />
             </Route>
-
-            {/* <Route exact path='/MarketNews' element={<PrivateRoute/>}>
-                <Route exact path='/MarketNews' element={<MarketNews/>} />
-            </Route> */}
             
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>
-            {/* <Route path="/artificialintelligence" element={<ArtificialIntelligenceIndex/>}/> */}
 
           </Routes>          
         </div>
