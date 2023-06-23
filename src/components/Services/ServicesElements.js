@@ -19,7 +19,7 @@ export const ServicesContainer = styled.div`
 
 
 export const TopLine = styled.div`
-  color: #7918f2;
+  color: #00b100;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -30,7 +30,7 @@ export const TopLine = styled.div`
 
 
 export const TopLine2 = styled.div`
-  color: #7918f2;
+  color: #00b100;
   text-transform: uppercase;
 `;
 
@@ -154,7 +154,7 @@ padding: 0 20px;
 text-align: center;
 
   margin-bottom: 20px;
-  color : #7918f2;
+  color : #00b100;
 `;
 
 export const ServicesP = styled.p`
