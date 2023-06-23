@@ -19,7 +19,7 @@
 
 .option-item {
   padding: 8px 15px;
-  border: 1px solid #7918f2;
+  border: 1px solid #00b100;
 
   border-radius: 25px;
   color: #1f91e7;
@@ -31,7 +31,7 @@
 }
 
 .option-item:hover {
-  box-shadow: inset 195px 0px 0px #7918f2;
+  box-shadow: inset 195px 0px 0px #00b100;
 
   color: #ffffff;
 }

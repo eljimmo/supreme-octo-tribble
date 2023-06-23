@@ -12,7 +12,7 @@ import ScApp from '../components/ScrollControl/src/App';
 import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
 import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
-import SectorData from "../components/CoBot/widgets/SectorData";
+// import SectorData from "../components/CoBot/widgets/SectorData";
 
 
 export default function WelcomePage() {
@@ -44,7 +44,7 @@ export default function WelcomePage() {
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
-              color="violet"
+              color="green"
             >
                Galatians 6:7–9
             </Button>
