@@ -36,7 +36,7 @@ export default function WelcomePage() {
               {/* variant="outline"
               color="violet"
             > */}
-            <BOTA/>
+            {/* <BOTA/> */}
             BOTA BOT
             {/* </Button> */}
 
