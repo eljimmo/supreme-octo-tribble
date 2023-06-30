@@ -11,6 +11,7 @@ import Artificialintelligenceabout from "../components/portfolio_react/component
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
+import ScApp from '../components/ScrollControl/src/App';
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ export default function AboutIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Hero/>
+          <ScApp/>
           <InfoSectionCanva {...homeObjFour} />
           <Heroartificialintelligence/>
           <Artificialintelligenceabout/>
