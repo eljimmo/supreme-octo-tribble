@@ -23,9 +23,9 @@ const Artificialintelligenceabout = () => {
       <Subtitle3>
       The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.      
       </Subtitle3>
-      <Subtitle3>
+      {/* <Subtitle3>
       Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
-      </Subtitle3>
+      </Subtitle3> */}
       {/* <p>
       UNDERSTANDING WHAT IS NEURO EVOLUTION IN ALGORITHMS. 
       EVOLUTIONARY ALGORITHMS INSPIRED BY BIOLOGICAL PROCESSES FOUND IN NATURE, CREATING POPULATIONS OF SOLUTIONS AND THEN ELIMINATING NON FITTING CANDIDATES. 

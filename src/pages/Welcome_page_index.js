@@ -51,10 +51,11 @@ export default function WelcomePage() {
             </Button>
       </Affix>
           <Artificialintelligenceabout/>
-          <Experience/>
           <HeroContainerCanva>
           <Videoapp/>
         </HeroContainerCanva>
+          <Experience/>
+
 
           <HeroContainer>
           <Rootapp/>
