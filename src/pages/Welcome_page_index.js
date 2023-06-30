@@ -13,7 +13,7 @@ import Heroartificialintelligence from "../components/portfolio_react/components
 import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 // import SectorData from "../components/CoBot/widgets/SectorData";
-
+import Videoapp from '../components/VideoTexture/App';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +51,7 @@ export default function WelcomePage() {
       </Affix>
           <Artificialintelligenceabout/>
           <Experience/>
+          <Videoapp/>
         <Footer/>
     </>
   );
