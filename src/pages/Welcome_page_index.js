@@ -14,6 +14,7 @@ import Artificialintelligenceabout from "../components/portfolio_react/component
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 // import SectorData from "../components/CoBot/widgets/SectorData";
 import Videoapp from '../components/VideoTexture/App';
+import Portalapp from '../components/Portals/App';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +53,11 @@ export default function WelcomePage() {
           <Artificialintelligenceabout/>
           <Experience/>
           <Videoapp/>
+          <HeroContainerCanva>
+
+          <Portalapp/>
+          </HeroContainerCanva>
+
         <Footer/>
     </>
   );
