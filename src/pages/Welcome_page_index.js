@@ -3,7 +3,7 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne } from '../components/InfoSection/Data';
 import { Affix, rem, Button } from '@mantine/core';
 import Footer from '../components/Footer/index';
-import { HeroContainerTransparent, HeroContainerCanva } from '../components/HeroSection/HeroElements';
+import { HeroContainerTransparent, HeroContainerCanva, HeroContainer } from '../components/HeroSection/HeroElements';
 import FrostedApp from '../components/FrostedGlass/index';
 import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
@@ -14,7 +14,7 @@ import Artificialintelligenceabout from "../components/portfolio_react/component
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 // import SectorData from "../components/CoBot/widgets/SectorData";
 import Videoapp from '../components/VideoTexture/App';
-import Portalapp from '../components/Portals/App';
+import Rootapp from '../components/Portals/index';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,12 +52,13 @@ export default function WelcomePage() {
       </Affix>
           <Artificialintelligenceabout/>
           <Experience/>
-          <Videoapp/>
           <HeroContainerCanva>
+          <Videoapp/>
+        </HeroContainerCanva>
 
-          <Portalapp/>
-          </HeroContainerCanva>
-
+          <HeroContainer>
+          <Rootapp/>
+          </HeroContainer>
         <Footer/>
     </>
   );
