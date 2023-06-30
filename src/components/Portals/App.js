@@ -10,7 +10,8 @@ extend(geometry)
 const regular = import('@pmndrs/assets/fonts/inter_regular.woff')
 const medium = import('@pmndrs/assets/fonts/inter_medium.woff')
 
-export const Portalapp = () => (
+export default function Portalapp () {
+  return (
   <Canvas camera={{ fov: 75, position: [0, 0, 20] }} eventSource={document.getElementById('root')} eventPrefix="client">
     <color attach="background" args={['#f0f0f0']} />
     <Frame id="01" name={`pick\nles`} author="Omar Faruq Tawsif" bg="#e4cdac" position={[-1.15, 0, 0]} rotation={[0, 0.5, 0]}>
@@ -25,6 +26,7 @@ export const Portalapp = () => (
     <Rig />
   </Canvas>
   )
+}
 
 function Frame({ id, name, author, bg, width = 1, height = 1.61803398875, children, ...props }) {
   const portal = useRef()

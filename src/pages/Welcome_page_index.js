@@ -8,13 +8,14 @@ import FrostedApp from '../components/FrostedGlass/index';
 import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
-import ScApp from '../components/ScrollControl/src/App';
+// import ScApp from '../components/ScrollControl/src/App';
 import Heroartificialintelligence from "../components/portfolio_react/components/hero/hero.artificialintelligence";
 import Artificialintelligenceabout from "../components/portfolio_react/components/about/about.artificialintelligence";
 import Experience from "../components/MachineLearning/src/components/experience/Expreience";
 // import SectorData from "../components/CoBot/widgets/SectorData";
 import Videoapp from '../components/VideoTexture/App';
-import Rootapp from '../components/Portals/index';
+// import Rootapp from '../components/Portals/index';
+import Portalapp from '../components/Portals/App';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function WelcomePage() {
 </HeroContainerCanva>
 <Heroartificialintelligence/>
 <InfoSection {...homeObjOne} />
-<ScApp/>
+{/* <ScApp/> */}
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
   {/* <Button */}
               {/* variant="outline"
@@ -51,15 +52,16 @@ export default function WelcomePage() {
             </Button>
       </Affix>
           <Artificialintelligenceabout/>
-          <HeroContainerCanva>
-          <Videoapp/>
-        </HeroContainerCanva>
+          {/* <HeroContainerCanva> */}
+          {/* <Videoapp/> */}
+        {/* </HeroContainerCanva> */}
           <Experience/>
+          <HeroContainerCanva>
+                      <Videoapp/>
 
-
-          <HeroContainer>
-          <Rootapp/>
-          </HeroContainer>
+          {/* <Rootapp/> */}
+          <Portalapp/>
+          </HeroContainerCanva>
         <Footer/>
     </>
   );

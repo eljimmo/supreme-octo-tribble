@@ -13,6 +13,7 @@ import AboutIndex from './pages/About';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from '../src/contexts/AuthContext';
 import ArtificialIntelligenceIndex from './pages/ArtificialIntelligence';
+import Home from './pages/Home';
 // import AboutIndex from "./pages/About";
 // import MachinePage from "./pages/Machine_Index";
 import MachinelearningIndex from "./pages/MachineLearning";
@@ -60,10 +61,17 @@ export default function App() {
                 element={
                     <ArtificialIntelligenceIndex/>
                 }
+              /> 
+              
+              <Route 
+                path="/about"
+                element={
+                    <AboutIndex/>
+                }
               />
            
             <Route exact path='/home' element={<PrivateRoute/>}>
-                <Route exact path='/home' element={<AboutIndex/>} />
+                <Route exact path='/home' element={<Home/>} />
             </Route>
             
             <Route path="/signup" element={<Signup/>}/>
