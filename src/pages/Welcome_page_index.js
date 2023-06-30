@@ -30,7 +30,10 @@ export default function WelcomePage() {
       <HeroContainerCanva>
       <FrostedApp/>
 </HeroContainerCanva>
+<Videoapp/>
+
 <Heroartificialintelligence/>
+
 <InfoSection {...homeObjOne} />
 {/* <ScApp/> */}
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
@@ -53,11 +56,10 @@ export default function WelcomePage() {
       </Affix>
           <Artificialintelligenceabout/>
           {/* <HeroContainerCanva> */}
-          {/* <Videoapp/> */}
-        {/* </HeroContainerCanva> */}
+/        {/* </HeroContainerCanva> */}
           <Experience/>
           <HeroContainerCanva>
-                      <Videoapp/>
+                      {/* <Videoapp/> */}
 
           {/* <Rootapp/> */}
           <Portalapp/>
