@@ -13,7 +13,7 @@ const medium = import('@pmndrs/assets/fonts/inter_medium.woff')
 export default function Portalapp () {
   return (
   <Canvas camera={{ fov: 75, position: [0, 0, 20] }} eventSource={document.getElementById('root')} eventPrefix="client">
-    <color attach="background" args={['#f0f0f0']} />
+    <color attach="background" args={['#5b5b5b']} />
     <Frame id="01" name={`pick\nles`} author="Omar Faruq Tawsif" bg="#e4cdac" position={[-1.15, 0, 0]} rotation={[0, 0.5, 0]}>
       <Gltf src="pickles_3d_version_of_hyuna_lees_illustration-transformed.glb" scale={8} position={[0, -0.7, -2]} />
     </Frame>
