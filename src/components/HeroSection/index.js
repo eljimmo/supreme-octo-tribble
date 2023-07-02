@@ -12,6 +12,7 @@ import {
   ArrowForward,
   ArrowRight
 } from './HeroElements';
+import FrostedApp from '../../components/FrostedGlass/index';
 
 
 
@@ -27,8 +28,12 @@ export default function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Artificial Assistants in Finance</HeroH1>
-        <HeroP>
+
+      <FrostedApp/>
+
+
+        {/* <HeroH1>Virtual Artificial Assistants in Finance</HeroH1> */}
+        {/* <HeroP>
           Sign up for a new account today and receive $250 in credit towards
           your next payment.
         </HeroP>
@@ -47,7 +52,7 @@ export default function HeroSection() {
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
-        </HeroBtnWrapper>
+        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   );

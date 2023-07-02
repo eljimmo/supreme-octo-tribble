@@ -16,6 +16,7 @@ import Experience from "../components/MachineLearning/src/components/experience/
 import Videoapp from '../components/VideoTexture/App';
 // import Rootapp from '../components/Portals/index';
 import Portalapp from '../components/Portals/App';
+import HeroSection from '../components/HeroSection/index';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +28,10 @@ export default function WelcomePage() {
     <>
           <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <HeroContainerCanva>
+      {/* <HeroContainerCanva>
       <FrostedApp/>
-</HeroContainerCanva>
+</HeroContainerCanva> */}
+<HeroSection/>
 <Videoapp/>
 
 <Heroartificialintelligence/>
@@ -64,6 +66,9 @@ export default function WelcomePage() {
           {/* <Rootapp/> */}
           <Portalapp/>
           </HeroContainerCanva>
+
+
+
         <Footer/>
     </>
   );
