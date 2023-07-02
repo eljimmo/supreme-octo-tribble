@@ -23,8 +23,8 @@ export default function AboutIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Hero/>
           <ScApp/>
+          <Hero/>
           <InfoSectionCanva {...homeObjFour} />
           <Heroartificialintelligence/>
           <Artificialintelligenceabout/>
