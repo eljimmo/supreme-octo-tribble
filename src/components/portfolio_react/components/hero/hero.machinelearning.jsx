@@ -10,7 +10,7 @@ const HeroMachineLearning = () => {
     <div id="hero">
       <Heading>Machine Learning</Heading>
               <InfoWrapper2>
-      <TopLine> Created by Jim Morales </TopLine>
+      <TopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </TopLine>
       <p>
       Machine learning (ML) is the subset of artificial intelligence (AI) that focuses on building systems that learn—or improve performance—based on the data they consume.
       Create your own custom financial trading agent to better assist you when trading.
