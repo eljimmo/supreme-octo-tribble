@@ -10,7 +10,7 @@ const Heroartificialintelligence = () => {
     <div id="hero" color="black">
       <Heading1>Artificial Intelligence</Heading1>
               <InfoWrapper2>
-      <TopLine> Created by Jim Morales </TopLine>
+      <TopLine> Created by The Leibniz Analytica Team </TopLine>
 
       <p>
       “The term ‘artificial intelligence’ means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments.” 

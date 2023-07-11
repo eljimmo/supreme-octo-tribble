@@ -58,7 +58,7 @@ export default function WelcomePage() {
       </Affix>
           <Artificialintelligenceabout/>
           {/* <HeroContainerCanva> */}
-/        {/* </HeroContainerCanva> */}
+           {/* </HeroContainerCanva> */}
           <Experience/>
           {/* <HeroContainerCanva> */}
                       {/* <Videoapp/> */}
