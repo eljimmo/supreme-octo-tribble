@@ -8,7 +8,7 @@ import {
 const HeroMachineLearning = () => {
   return (
     <div id="hero">
-      <Heading>Machine Learning</Heading>
+      <Heading>Machine Learning in Financial Applications</Heading>
               <InfoWrapper2>
       <TopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </TopLine>
       <p>

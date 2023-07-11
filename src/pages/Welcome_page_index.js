@@ -56,10 +56,10 @@ export default function WelcomePage() {
                Galatians 6:7–9
             </Button>
       </Affix>
-          <Artificialintelligenceabout/>
+          {/* <Artificialintelligenceabout/> */}
           {/* <HeroContainerCanva> */}
            {/* </HeroContainerCanva> */}
-          <Experience/>
+          {/* <Experience/> */}
           {/* <HeroContainerCanva> */}
                       {/* <Videoapp/> */}
 

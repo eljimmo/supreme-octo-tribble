@@ -8,7 +8,7 @@ import {
 const Heroartificialintelligence = () => {
   return (
     <div id="hero" color="black">
-      <Heading1>Artificial Intelligence</Heading1>
+      <Heading1>Artificial Intelligence & Commericial Investments</Heading1>
               <InfoWrapper2>
       <TopLine> Created by The Leibniz Analytica Team </TopLine>
 
