@@ -39,13 +39,13 @@ export default function WelcomePage() {
 <InfoSection {...homeObjOne} />
 {/* <ScApp/> */}
 <Affix position={{ bottom: rem(20), left: rem(20) }}>
-  {/* <Button */}
-              {/* variant="outline"
+  <Button
+              variant="outline"
               color="violet"
-            > */}
-            {/* <BOTA/> */}
+            >
+            <BOTA/>
             BOTA BOT
-            {/* </Button> */}
+            </Button>
 
       </Affix>
       <Affix position={{ bottom: rem(20), right: rem(20) }}>
