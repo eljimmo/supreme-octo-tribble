@@ -34,7 +34,7 @@ const Hero = () => {
 </Column2>
 </InfoRow> */}
 
-      <TopLine> Created by Jim Morales </TopLine>
+      <TopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </TopLine>
 
       <p>
       Modeling Statistical properties as distribution variables to quantify the effect of variables as features in a set.

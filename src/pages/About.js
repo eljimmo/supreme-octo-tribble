@@ -24,11 +24,11 @@ export default function AboutIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <ScApp/>
-          <Hero/>
+          {/* <Hero/> */}
           <InfoSectionCanva {...homeObjFour} />
-          <Heroartificialintelligence/>
-          <Artificialintelligenceabout/>
-          <Experience/>
+          {/* <Heroartificialintelligence/> */}
+          {/* <Artificialintelligenceabout/> */}
+          {/* <Experience/> */}
           <Footer/>
       </>
     );
