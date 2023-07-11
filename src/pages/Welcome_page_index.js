@@ -34,7 +34,7 @@ export default function WelcomePage() {
 <HeroSection/>
 <Videoapp/>
 
-<Heroartificialintelligence/>
+{/* <Heroartificialintelligence/> */}
 
 <InfoSection {...homeObjOne} />
 {/* <ScApp/> */}
@@ -60,12 +60,12 @@ export default function WelcomePage() {
           {/* <HeroContainerCanva> */}
 /        {/* </HeroContainerCanva> */}
           <Experience/>
-          <HeroContainerCanva>
+          {/* <HeroContainerCanva> */}
                       {/* <Videoapp/> */}
 
           {/* <Rootapp/> */}
-          <Portalapp/>
-          </HeroContainerCanva>
+          {/* <Portalapp/> */}
+          {/* </HeroContainerCanva> */}
 
 
 

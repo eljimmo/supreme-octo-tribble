@@ -17,7 +17,7 @@ function Scene() {
     <mesh scale={size}>
       <planeGeometry />
       <Suspense fallback={<FallbackMaterial url="board.jpg" />}>
-        <VideoMaterial url="125.mp4" />
+        <VideoMaterial url="1616.mp4" />
       </Suspense>
     </mesh>
   )
