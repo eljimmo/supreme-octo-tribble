@@ -108,6 +108,16 @@ export const TopLine = styled.div`
 `;
 
 
+export const BTopLine = styled.div`
+  color: #4485c9;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 export const WhiteTopLine = styled.div`
   color: #ffffff ;
   font-size: 16px;

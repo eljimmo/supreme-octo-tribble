@@ -11,7 +11,7 @@ import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
 import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
-import { Subtitle3, Heading1, TopLine } from "../../../InfoSection/InfoElements";
+import { Subtitle3, Heading1, TopLine,BlueTopLine } from "../../../InfoSection/InfoElements";
 import '../../styles.css';
 
 const Artificialintelligenceabout = () => {
@@ -33,7 +33,7 @@ const Artificialintelligenceabout = () => {
       </p> */}
     </div>
     <div>
-      <TopLine style={{ marginTop: "2rem" }}>The agent, The environment, The reward function, The action space, The state space...</TopLine>
+      <BlueTopLine style={{ marginTop: "2rem" }}>The agent, The environment, The reward function, The action space, The state space...</BlueTopLine>
       <div className="skillgrid">
         <div>
           <div className="skillemblem">

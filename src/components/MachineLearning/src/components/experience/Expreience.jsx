@@ -10,7 +10,7 @@ import {
   // Column2,
   // TextWrapper,
   // TextWrapper2,
-  TopLine,
+  BTopLine,
   // Heading1,
   // Heading2,
   // Subtitle,
@@ -23,7 +23,7 @@ class Experience extends Component {
 
         <div className="container experience__container">
           <div className="experience__frontend">
-            <TopLine>Machine learning Algorithm Development</TopLine>
+            <BTopLine>Machine learning Algorithm Development</BTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
@@ -70,7 +70,7 @@ class Experience extends Component {
             </div>
           </div>
           <div className="experience__backend">
-            <TopLine>Foundational Development of Chatbots and Virtual Assistants</TopLine>
+            <BTopLine>Foundational Development of Chatbots and Virtual Assistants</BTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
