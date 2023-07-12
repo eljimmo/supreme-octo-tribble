@@ -38,24 +38,24 @@ export default function WelcomePage() {
 
 <InfoSection {...homeObjOne} />
 {/* <ScApp/> */}
-<Affix position={{ bottom: rem(20), left: rem(20) }}>
-  <Button
+{/* <Affix position={{ bottom: rem(20), left: rem(20) }}> */}
+  {/* <Button
               variant="outline"
               color="violet"
-            >
+            > */}
             <BOTA/>
             BOTA BOT
-            </Button>
+            {/* </Button> */}
 
-      </Affix>
-      <Affix position={{ bottom: rem(20), right: rem(20) }}>
+      {/* </Affix> */}
+      {/* <Affix position={{ bottom: rem(20), right: rem(20) }}>
             <Button
               variant="outline"
               color="green"
             >
                Galatians 6:7–9
             </Button>
-      </Affix>
+      </Affix> */}
           {/* <Artificialintelligenceabout/> */}
           {/* <HeroContainerCanva> */}
            {/* </HeroContainerCanva> */}
