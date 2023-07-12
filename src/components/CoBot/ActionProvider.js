@@ -61,19 +61,19 @@ class ActionProvider {
   //   this.addMessageToState(message);
   // };
 
-  handleMarket = () => {
-    const message = this.createChatBotMessage(
-      "US Market Stock News.",
-      {
-        widget: "marketNews",
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true
-      }
-    );
+  // handleMarket = () => {
+  //   const message = this.createChatBotMessage(
+  //     "US Market Stock News.",
+  //     {
+  //       widget: "marketNews",
+  //       loading: true,
+  //       terminateLoading: true,
+  //       withAvatar: true
+  //     }
+  //   );
 
-    this.addMessageToState(message);
-  };
+  //   this.addMessageToState(message);
+  // };
 
   // handleMedicine = () => {
   //   const message = this.createChatBotMessage(

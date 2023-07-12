@@ -2,7 +2,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import Overview from "./widgets/Overview";
 // import GlobalStatistics from "./widgets/GlobalStatistics";
 // import LocalStatistics from "./widgets/LocalStatistics";
-import MarketNewsIndex from "./widgets/MarketNews";
+// import MarketNewsIndex from "./widgets/MarketNews";
 // import MedicineDelivery from "./widgets/MedicineDelivery";
 // import Index from "./widgets/Sector_Index";
 import CoinData from "./widgets/CryptoCoins";
@@ -61,10 +61,10 @@ const config = {
     //   widgetName: "medicineDelivery",
     //   widgetFunc: (props) => <MedicineDelivery />
     // },
-    {
-      widgetName: "marketNews",
-      widgetFunc: (props) => <MarketNewsIndex />
-    },
+    // {
+    //   widgetName: "marketNews",
+    //   widgetFunc: (props) => <MarketNewsIndex />
+    // },
     {
       widgetName: "cryptoCoinage",
       widgetFunc: (props) => <CoinData />
