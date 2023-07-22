@@ -44,7 +44,7 @@ export default function WelcomePage() {
               color="violet"
             > */}
             <BOTA/>
-            BOTA BOT
+            {/* BOTA BOT */}
             {/* </Button> */}
 
       {/* </Affix> */}
