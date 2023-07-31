@@ -18,6 +18,8 @@ import Home from './pages/Home';
 // import MachinePage from "./pages/Machine_Index";
 import MachinelearningIndex from "./pages/MachineLearning";
 import NeuroevolutionIndex from "./pages/Neuroevolution";
+// import MarketNews from "./pages/Coins_Data";
+import MarketNews from "./pages/MarketNews";
 
 
 
@@ -69,13 +71,25 @@ export default function App() {
                     <AboutIndex/>
                 }
               />
-           
-            <Route exact path='/home' element={<PrivateRoute/>}>
-                <Route exact path='/home' element={<Home/>} />
-            </Route>
-            
+
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>
+
+            <Route exact path='/home' element={<PrivateRoute/>}>
+                {/* <Route exact path='/home' element={<Home/>} /> */}
+                <Route exact path='/home' element={<MarketNews/>} />
+
+            </Route>
+
+            {/* <Route exact path='/' element={<PrivateRoute/>}>
+                <Route exact path='/' element={<MarketNews/>} />
+             </Route> */}
+            
+
+
+            {/* <Route exact path='/MarketNews' element={<PrivateRoute/>}>
+                <Route exact path='/MarketNews' element={<MarketNews/>} />
+             </Route> */}
 
           </Routes>          
         </div>

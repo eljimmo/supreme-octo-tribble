@@ -204,7 +204,7 @@ if(currentUser===null)
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Analytical Modeling
             </Typography>
             <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}
