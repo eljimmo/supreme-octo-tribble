@@ -12,9 +12,11 @@ function DashboardContent() {
   return (<>
               {/* <Stocks/> */}
               <br/>
+              <br/>
+
               <Tabs_Demo/> 
               <br/>
-              <NewsLoad basic="news?category=general"/>
+              {/* <NewsLoad basic="news?category=general"/> */}
               </>
   );
 }
