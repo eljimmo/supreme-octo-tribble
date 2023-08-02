@@ -19,7 +19,7 @@ import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+// import NotificationsIcon from "@mui/icons-material/Notifications";
 import { deepPurple } from "@mui/material/colors";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -210,11 +210,11 @@ if(currentUser===null)
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}
         
       />
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            {/* <IconButton color="inherit"> */}
+              {/* <Badge badgeContent={4} color="secondary"> */}
+                {/* <NotificationsIcon /> */}
+              {/* </Badge> */}
+            {/* </IconButton> */}
             
             <IconButton color="inherit">
               <Avatar sx={{ bgcolor: deepPurple[500] }}>{currentUser.email[0].toUpperCase()}</Avatar>
