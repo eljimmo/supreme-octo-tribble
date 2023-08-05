@@ -5,7 +5,7 @@ import { homeObjOne } from '../components/InfoSection/Data';
 import Footer from '../components/Footer/index';
 // import { HeroContainerTransparent, HeroContainerCanva, HeroContainer } from '../components/HeroSection/HeroElements';
 // import FrostedApp from '../components/FrostedGlass/index';
-// import BOTA from '../components/CoBot/App';
+import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
 // import ScApp from '../components/ScrollControl/src/App';
@@ -43,7 +43,7 @@ export default function WelcomePage() {
               variant="outline"
               color="violet"
             > */}
-            {/* <BOTA/> */}
+            <BOTA/>
             {/* BOTA BOT */}
             {/* </Button> */}
 
