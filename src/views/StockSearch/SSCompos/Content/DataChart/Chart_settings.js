@@ -18,19 +18,6 @@ const setSeries = (data) => {
       }
       ),
     },
-    // {
-    //   name: "marketChangeOverTime",
-    //   data: data.map((minutebar, index) => {
-    //     // If the minutebar's closing value is null, use the previous non-null closing value
-    //     if (minutebar.marketChangeOverTime === null && index !== 0) {
-    //       minutebar.marketChangeOverTime = data[index - 1].marketChangeOverTime;
-    //     }
-    //     const datetime =
-    //       Number(moment(`${minutebar.date} ${minutebar.minute}`).format("x")) -
-    //       3 * 60 * 60 * 1000; // Subtract 3 hours in milliseconds to get Pacific time from Eastern time
-    //     return [datetime, minutebar.marketChangeOverTime];
-    //   }),
-    // },
   ];
   return series;
 };
