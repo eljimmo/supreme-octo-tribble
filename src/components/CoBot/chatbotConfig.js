@@ -31,15 +31,6 @@ const config = {
       `Hi I'm ${botName}. I’m here to help you show you how Artificial Intelligent Agents can help with financial investment decisions.`
 
     ),
-    createChatBotMessage(
-      "Ask me about a specific stock, by saying stock followed by the ticker or a cryptocurrency by saying crypto, followed by the cryptocurrency name.",
-
-      {
-        withAvatar: false,
-        delay: 400,
-        widget: "overview"
-      }
-    )
   ],
   state: {},
   customComponents: { botAvatar: (props) => <CoBotAvatar {...props} /> },
