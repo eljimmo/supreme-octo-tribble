@@ -12,10 +12,10 @@ function Tabs_Demo() {
     <Tabs color="yellow" defaultValue="first">
       <Tabs.List>
         <Tabs.Tab value="first"> Current Daily Indicators</Tabs.Tab>
-        <Tabs.Tab value="second" color="blue">Series Simulations & Modeling</Tabs.Tab>
-        <Tabs.Tab value="third"  color="red"> Fundamental Analysis</Tabs.Tab>
-        <Tabs.Tab value="fourth"  color="green"> Performance and Strength</Tabs.Tab>
-        <Tabs.Tab value="fifth"  color="pink"> Artificial Intelligence Agents </Tabs.Tab>
+        <Tabs.Tab value="second" color="purple">Series Simulations & Modeling</Tabs.Tab>
+        <Tabs.Tab value="third"  color="purple"> Fundamental Analysis</Tabs.Tab>
+        <Tabs.Tab value="fourth"  color="purple"> Performance and Strength</Tabs.Tab>
+        <Tabs.Tab value="fifth"  color="purple"> Artificial Intelligence Agents </Tabs.Tab>
       </Tabs.List>
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
