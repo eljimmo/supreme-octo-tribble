@@ -19,13 +19,9 @@ function Tabs_Demo() {
       </Tabs.List>
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
-      {/* <Current_Daily_Indicators/> */}
       <StockSearch/>
       </Tabs.Panel>
       <Tabs.Panel value="second" pt="xs">
-      {/* <Current_Daily_Indicators/> */}
-
-      {/* <Series_Simulations_Modeling/> */}
       </Tabs.Panel>
       <Tabs.Panel value="third" pt="xs">
       {/* <Demo_con/> */}
