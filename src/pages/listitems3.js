@@ -5,41 +5,41 @@ import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 
-export default function SecondaryListItems ()
+export default function ThirdListItems ()
 {
     return <React.Fragment>
     <ListSubheader component="div" inset>
-      Bot Creation & Modeling
+    Training, Tuning, Fitting 
     </ListSubheader>
+    <ListItemButton>
+      <ListItemIcon>
+        <AssignmentIcon />
+      </ListItemIcon>
+      <ListItemText primary="Dynamic Calculus" />
+    </ListItemButton>
 
 
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Live Bots" />
+      <ListItemText primary="Static Calculus" />
     </ListItemButton>
-
-    <ListItemButton>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Bot Creation" />
-    </ListItemButton>
-
 
 
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Modeling Bots" />
+      <ListItemText primary="Stochastic Calculus" />
     </ListItemButton>
+
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Saved Bots" />
+      <ListItemText primary="Deductive Calculus" />
     </ListItemButton>
+
   </React.Fragment>
 }

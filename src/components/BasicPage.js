@@ -29,6 +29,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import MainListItems from "../pages/listitems";
 import SecondaryListItems from "../pages/listitems2";
+import ThirdListItems from "../pages/listitems3";
 
 
 const drawerWidth = 240;
@@ -248,6 +249,8 @@ if(currentUser===null)
             <MainListItems/>
             <Divider sx={{ my: 1 }} />
             <SecondaryListItems/>
+            <Divider sx={{ my: 1 }} />
+            <ThirdListItems/>
           </List>
         </Drawer>
 
