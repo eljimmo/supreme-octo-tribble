@@ -9,25 +9,25 @@ export default function SecondaryListItems ()
 {
     return <React.Fragment>
     <ListSubheader component="div" inset>
-      Saved reports
+      Bot Creation & Modeling
     </ListSubheader>
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Current month" />
+      <ListItemText primary="Bot Creation" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Last quarter" />
+      <ListItemText primary="Modeling Bots" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
+      <ListItemText primary="Saved Bots" />
     </ListItemButton>
   </React.Fragment>
 }

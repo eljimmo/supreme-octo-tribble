@@ -42,20 +42,20 @@ function Advchart(){
     <ListItemIcon>
       <AccountBalanceIcon />
     </ListItemIcon>
-    <ListItemText primary="Watch List" />
+    <ListItemText primary="Monitor List" />
   </ListItemButton>
   <ListItemButton onClick={Dashboard}>
     <ListItemIcon>
       <DashboardIcon />
     </ListItemIcon>
-    <ListItemText primary="Tesla Dashboard" />
+    <ListItemText primary="Saved Dashboard" />
   </ListItemButton>
   <ListItemButton onClick={Advchart}> 
     
     <ListItemIcon>
       <LayersIcon />
     </ListItemIcon>
-    <ListItemText primary="Tesla Advance Chart" />
+    <ListItemText primary="Advance Charting" />
   </ListItemButton>
 </React.Fragment>
 }
