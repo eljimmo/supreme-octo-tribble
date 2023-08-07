@@ -27,6 +27,10 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import MainListItems from "../pages/listitems";
+import SecondaryListItems from "../pages/listitems2";
+
+
 const drawerWidth = 240;
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -119,7 +123,7 @@ const Drawer = styled(MuiDrawer, {
     })
   }
 }));
-//
+
 
 
 function DashboardContent() {
@@ -210,11 +214,11 @@ if(currentUser===null)
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}
         
       />
-            {/* <IconButton color="inherit"> */}
-              {/* <Badge badgeContent={4} color="secondary"> */}
-                {/* <NotificationsIcon /> */}
-              {/* </Badge> */}
-            {/* </IconButton> */}
+            {/* <IconButton color="inherit">
+              <Badge badgeContent={4} color="secondary">
+                <NotificationsIcon />
+              </Badge>
+            </IconButton> */}
             
             <IconButton color="inherit">
               <Avatar sx={{ bgcolor: deepPurple[500] }}>{currentUser.email[0].toUpperCase()}</Avatar>
@@ -241,9 +245,9 @@ if(currentUser===null)
           </Toolbar>
           <Divider />
           <List component="nav">
-            {/* <MainListItems/> */}
+            <MainListItems/>
             <Divider sx={{ my: 1 }} />
-            {/* <SecondaryListItems/> */}
+            <SecondaryListItems/>
           </List>
         </Drawer>
 

@@ -13,13 +13,15 @@ import AboutIndex from './pages/About';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from '../src/contexts/AuthContext';
 import ArtificialIntelligenceIndex from './pages/ArtificialIntelligence';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 // import AboutIndex from "./pages/About";
 // import MachinePage from "./pages/Machine_Index";
 import MachinelearningIndex from "./pages/MachineLearning";
 import NeuroevolutionIndex from "./pages/Neuroevolution";
 // import MarketNews from "./pages/Coins_Data";
 import MarketNews from "./pages/MarketNews";
+// import Adv from "./pages/Advchart";
+// import NewDashboard from "./pages/NewDashboard";
 
 
 
@@ -76,20 +78,16 @@ export default function App() {
             <Route path="/login" element={<Login/>}/>
 
             <Route exact path='/home' element={<PrivateRoute/>}>
-                {/* <Route exact path='/home' element={<Home/>} /> */}
                 <Route exact path='/home' element={<MarketNews/>} />
 
             </Route>
 
-            {/* <Route exact path='/' element={<PrivateRoute/>}>
-                <Route exact path='/' element={<MarketNews/>} />
-             </Route> */}
-            
+            {/* <Route exact path='/dashboard' element={<PrivateRoute/>}>
+                <Route exact path='/dashboard' element={<NewDashboard/>} />
+
+            </Route> */}
 
 
-            {/* <Route exact path='/MarketNews' element={<PrivateRoute/>}>
-                <Route exact path='/MarketNews' element={<MarketNews/>} />
-             </Route> */}
 
           </Routes>          
         </div>
