@@ -11,11 +11,11 @@ function DashboardContent() {
 
   return (<>
               {/* <Stocks/> */}
-              <br/>
-              <br/>
+              {/* <br/> */}
+              {/* <br/> */}
 
               <Tabs_Demo/> 
-              <br/>
+              {/* <br/> */}
               {/* <NewsLoad basic="news?category=general"/> */}
               </>
   );

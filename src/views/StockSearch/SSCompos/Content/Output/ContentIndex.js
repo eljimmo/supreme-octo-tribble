@@ -23,7 +23,7 @@ const Content = ({ data }) => {
     <p>{`${quote.symbol} | ${quote.primaryExchange}`}</p>
     </Col>
     <Col className="bg-light border">
-    <Quote data={quote} />
+    {/* <Quote data={quote} /> */}
     </Col>
   </Row>
   <Col className="">
@@ -39,7 +39,7 @@ const Content = ({ data }) => {
     </Grid>
       </div>
       <div className="bg-light border" >
-      <Company general={company} quote={quote} />
+      {/* <Company general={company} quote={quote} /> */}
       </div>
     </>
   );

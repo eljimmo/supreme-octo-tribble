@@ -37,6 +37,20 @@ function Advchart(){
   history('/lightWeight',{state:{Symbol:"TSLA"}});
 }
   return  <React.Fragment>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+
   <ListItemButton onClick={Home}>
     <ListItemIcon>
       <CottageIcon />
