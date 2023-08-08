@@ -24,6 +24,8 @@ import { deepPurple } from "@mui/material/colors";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import ClearIcon from '@mui/icons-material/Clear';
+
 import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
@@ -226,7 +228,7 @@ if(currentUser===null)
             </IconButton>
             <IconButton color="inherit"  onClick={handleLogout}>
               <Badge color="secondary">
-                <ExitToAppIcon />
+                <ClearIcon />
               </Badge>
             </IconButton>
           </Toolbar>
