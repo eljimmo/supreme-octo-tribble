@@ -4,6 +4,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import DynamicFormIcon from '@mui/icons-material/DynamicForm';
+import EqualizerIcon from '@mui/icons-material/Equalizer';
+import WaterfallChartIcon from '@mui/icons-material/WaterfallChart';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
 
 export default function ThirdListItems ()
 {
@@ -13,7 +17,7 @@ export default function ThirdListItems ()
     </ListSubheader>
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <DynamicFormIcon />
       </ListItemIcon>
       <ListItemText primary="Dynamic Calculus" />
     </ListItemButton>
@@ -21,7 +25,7 @@ export default function ThirdListItems ()
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <EqualizerIcon />
       </ListItemIcon>
       <ListItemText primary="Static Calculus" />
     </ListItemButton>
@@ -29,14 +33,14 @@ export default function ThirdListItems ()
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <WaterfallChartIcon />
       </ListItemIcon>
       <ListItemText primary="Stochastic Calculus" />
     </ListItemButton>
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <ArchitectureIcon />
       </ListItemIcon>
       <ListItemText primary="Deductive Calculus" />
     </ListItemButton>

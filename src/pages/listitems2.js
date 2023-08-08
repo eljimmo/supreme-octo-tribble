@@ -4,7 +4,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
+import BorderBottomIcon from '@mui/icons-material/BorderBottom';
+import DataSaverOnIcon from '@mui/icons-material/DataSaverOn';
 export default function SecondaryListItems ()
 {
     return <React.Fragment>
@@ -15,14 +18,14 @@ export default function SecondaryListItems ()
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <SmartToyIcon />
       </ListItemIcon>
       <ListItemText primary="Live Bots" />
     </ListItemButton>
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <PrecisionManufacturingIcon />
       </ListItemIcon>
       <ListItemText primary="Bot Creation" />
     </ListItemButton>
@@ -31,13 +34,13 @@ export default function SecondaryListItems ()
 
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <BorderBottomIcon />
       </ListItemIcon>
       <ListItemText primary="Modeling Bots" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
-        <AssignmentIcon />
+        <DataSaverOnIcon />
       </ListItemIcon>
       <ListItemText primary="Saved Bots" />
     </ListItemButton>

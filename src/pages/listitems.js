@@ -6,6 +6,11 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import LayersIcon from '@mui/icons-material/Layers';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import HomeIcon from '@mui/icons-material/Home';
+import ListIcon from '@mui/icons-material/List';
+import CottageIcon from '@mui/icons-material/Cottage';
+import LineAxisIcon from '@mui/icons-material/LineAxis';
+import DonutSmallIcon from '@mui/icons-material/DonutSmall';
+
 import { useNavigate } from 'react-router-dom';
 
 
@@ -34,26 +39,26 @@ function Advchart(){
   return  <React.Fragment>
   <ListItemButton onClick={Home}>
     <ListItemIcon>
-      <HomeIcon />
+      <CottageIcon />
     </ListItemIcon>
     <ListItemText primary="Home" />
   </ListItemButton>
   <ListItemButton  onClick={WatchList}>
     <ListItemIcon>
-      <AccountBalanceIcon />
+      < ListIcon />
     </ListItemIcon>
     <ListItemText primary="Monitor List" />
   </ListItemButton>
   <ListItemButton onClick={Dashboard}>
     <ListItemIcon>
-      <DashboardIcon />
+      <LineAxisIcon />
     </ListItemIcon>
     <ListItemText primary="Saved Dashboard" />
   </ListItemButton>
   <ListItemButton onClick={Advchart}> 
     
     <ListItemIcon>
-      <LayersIcon />
+      <DonutSmallIcon />
     </ListItemIcon>
     <ListItemText primary="Advance Charting" />
   </ListItemButton>
