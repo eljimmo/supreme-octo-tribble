@@ -23,8 +23,9 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { deepPurple } from "@mui/material/colors";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+// import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ClearIcon from '@mui/icons-material/Clear';
+import Typewriter from 'typewriter-effect';
 
 import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -204,6 +205,17 @@ if(currentUser===null)
             >
               <MenuIcon />
             </IconButton>
+
+
+                    {/* <Typewriter
+        options={{
+        strings: ['Analytical Modeling', ' Main Dashboard', 'Data Bots'],
+        autoStart: true,
+        loop: true,
+        }}
+        />  */}
+
+
             <Typography
               component="h1"
               variant="h6"
@@ -211,7 +223,11 @@ if(currentUser===null)
               noWrap
               sx={{ flexGrow: 1 }}
             >
+
+
               Analytical Modeling
+
+
             </Typography>
             <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}

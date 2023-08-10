@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar/index';
 import Videoapp from '../components/VideoTexture/App';
 import HeroSection from '../components/HeroSection/index';
+import ScApp from '../components/ScrollControl/src/App';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,8 @@ export default function WelcomePage() {
 
 <InfoSection {...homeObjOne} />
             <BOTA/>
+            <ScApp/>
+
         <Footer/>
     </>
   );
