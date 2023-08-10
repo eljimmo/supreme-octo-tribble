@@ -9,7 +9,9 @@ import StockSearch from '../StockSearch/Stock_Search_Index';
 
 function Tabs_Demo() {
   return (
+    
     <Tabs color="yellow" defaultValue="first">
+      <br/>
       <Tabs.List>
         <Tabs.Tab value="first"> Current Daily Indicators</Tabs.Tab>
         <Tabs.Tab value="second" color="purple">Series Simulations & Modeling</Tabs.Tab>

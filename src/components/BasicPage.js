@@ -25,9 +25,9 @@ import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 // import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ClearIcon from '@mui/icons-material/Clear';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import MainListItems from "../pages/listitems";

@@ -37,6 +37,10 @@ function Advchart(){
   history('/lightWeight',{state:{Symbol:"TSLA"}});
 }
   return  <React.Fragment>
+
+
+    <br/>
+    {/* <hr/>
     <hr/>
     <hr/>
     <hr/>
@@ -48,8 +52,7 @@ function Advchart(){
     <hr/>
     <hr/>
     <hr/>
-    <hr/>
-    <hr/>
+    <hr/> */}
 
   <ListItemButton onClick={Home}>
     <ListItemIcon>

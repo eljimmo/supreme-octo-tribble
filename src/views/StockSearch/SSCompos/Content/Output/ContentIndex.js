@@ -1,7 +1,7 @@
-import Quote from '../Quote/QuoteIndex';
+// import Quote from '../Quote/QuoteIndex';
 import DataChart from '../DataChart/DC_Index';
 import Error from '../Error/E_Index';
-import Company from "../Company/C_Index";
+// import Company from "../Company/C_Index";
 import '../style.css';
 import { Row, Col } from 'reactstrap';
 import { Grid } from '@mantine/core';
@@ -15,7 +15,7 @@ const Content = ({ data }) => {
 
   return (
     <>
-  <Row xs="10">
+  <Row xs="12">
     <Col className="bg-light border">
       <h1 className="main-title">{quote.companyName}</h1>
     </Col>
