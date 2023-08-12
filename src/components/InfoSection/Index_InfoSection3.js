@@ -16,7 +16,9 @@ import {
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useAspect, useVideoTexture, Scroll, Image, useIntersect, useTexture, MeshTransmissionMaterial, Float, ContactShadows, Environment, ScrollControls, Effects as EffectComposer } from '@react-three/drei'
 
-import Brainmodel from '../3d_models/brain';
+// import Brainmodel from '../3d_models/brain';
+
+
 import { OrbitControls } from 'three-stdlib';
 import { easing } from 'maath'
 import { useStore } from './store'
@@ -121,7 +123,7 @@ const InfoSection3 = ({
 <Selector>
 <Float>
 
-  <Brainmodel position={[0, -2, 0]} rotation={[0.3, Math.PI / 1.6, 0]} scale={0.75} />
+  {/* <Brainmodel position={[0, -2, 0]} rotation={[0.3, Math.PI / 1.6, 0]} scale={0.75} /> */}
   </Float>
 
 </Selector>

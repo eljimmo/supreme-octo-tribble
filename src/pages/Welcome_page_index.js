@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import InfoSection from '../components/InfoSection';
+// import InfoSection3 from '../components/InfoSection/Index_InfoSection3';
 import { homeObjOne } from '../components/InfoSection/Data';
+import { homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
+
 import Footer from '../components/Footer/index';
 import BOTA from '../components/CoBot/App';
 import Navbar from '../components/Navbar';
