@@ -13,7 +13,7 @@ function Tabs_Demo() {
     <Tabs color="yellow" defaultValue="first">
       <br/>
       <Tabs.List>
-        <Tabs.Tab value="first"> Current Daily Indicators</Tabs.Tab>
+        <Tabs.Tab value="first"> Current Indicators & Movement</Tabs.Tab>
         <Tabs.Tab value="second" color="purple">Simple Series Simulations & Modeling</Tabs.Tab>
         <Tabs.Tab value="third"  color="purple"> Advanced Fundamental Analysis</Tabs.Tab>
         <Tabs.Tab value="fourth"  color="purple"> Regressive Performance and Strength</Tabs.Tab>
