@@ -14,10 +14,10 @@ function Tabs_Demo() {
       <br/>
       <Tabs.List>
         <Tabs.Tab value="first"> Current Daily Indicators</Tabs.Tab>
-        <Tabs.Tab value="second" color="purple">Series Simulations & Modeling</Tabs.Tab>
-        <Tabs.Tab value="third"  color="purple"> Fundamental Analysis</Tabs.Tab>
-        <Tabs.Tab value="fourth"  color="purple"> Performance and Strength</Tabs.Tab>
-        {/* <Tabs.Tab value="fifth"  color="purple"> Artificial Intelligence Agents </Tabs.Tab> */}
+        <Tabs.Tab value="second" color="purple">Simple Series Simulations & Modeling</Tabs.Tab>
+        <Tabs.Tab value="third"  color="purple"> Advanced Fundamental Analysis</Tabs.Tab>
+        <Tabs.Tab value="fourth"  color="purple"> Regressive Performance and Strength</Tabs.Tab>
+        <Tabs.Tab value="fifth"  color="purple"> Variable Time Series Modeling </Tabs.Tab>
       </Tabs.List>
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
@@ -31,9 +31,9 @@ function Tabs_Demo() {
       <Tabs.Panel value="fourth" pt="xs">
       {/* <Performance_page/> */}
     </Tabs.Panel>
-    {/* <Tabs.Panel value="fifth" pt="xs"> */}
+    <Tabs.Panel value="fifth" pt="xs">
     {/* <Backtesting_Page/> */}
-    {/* </Tabs.Panel> */}
+    </Tabs.Panel>
       </div>
     </Tabs>
   );
