@@ -6,18 +6,18 @@ import {
   // Navigate,
   // Outlet
 } from "react-router-dom";
-import WelcomePage from './pages/Welcome_page_index';
+import WelcomePage from './pages/Service_Index/Welcome_page_index';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import AboutIndex from './pages/About';
+import AboutIndex from './pages/Service_Index/About';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from '../src/contexts/AuthContext';
-import ArtificialIntelligenceIndex from './pages/ArtificialIntelligence';
+import ArtificialIntelligenceIndex from './pages/Service_Index/ArtificialIntelligence';
 // import Home from './pages/Home';
 // import AboutIndex from "./pages/About";
 // import MachinePage from "./pages/Machine_Index";
-import MachinelearningIndex from "./pages/MachineLearning";
-import NeuroevolutionIndex from "./pages/Neuroevolution";
+import MachinelearningIndex from "./pages/Service_Index/MachineLearning";
+import NeuroevolutionIndex from "./pages/Service_Index/Neuroevolution";
 // import MarketNews from "./pages/Coins_Data";
 import MarketNews from "./pages/Market_Index";
 // import Adv from "./pages/Advchart";
