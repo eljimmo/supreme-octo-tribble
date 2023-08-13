@@ -1,7 +1,7 @@
-// import Quote from '../Quote/QuoteIndex';
+import Quote from '../Quote/QuoteIndex';
 import DataChart from '../DataChart/DC_Index';
 import Error from '../Error/E_Index';
-// import Company from "../Company/C_Index";
+import Company from "../Company/C_Index";
 import '../style.css';
 import { Row, Col } from 'reactstrap';
 import { Grid } from '@mantine/core';
@@ -23,7 +23,6 @@ const Content = ({ data }) => {
     <p>{`${quote.symbol} | ${quote.primaryExchange}`}</p>
     </Col>
     <Col className="bg-light border">
-    {/* <Quote data={quote} /> */}
     </Col>
   </Row>
   <Col className="">
@@ -39,7 +38,9 @@ const Content = ({ data }) => {
     </Grid>
       </div>
       <div className="bg-light border" >
-      {/* <Company general={company} quote={quote} /> */}
+      <Company general={company} quote={quote} />
+          <Quote data={quote} />
+
       </div>
     </>
   );
