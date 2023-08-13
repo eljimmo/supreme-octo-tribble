@@ -28,7 +28,7 @@ const setSeries = (data) => {
     
       return {
     chart: {
-      height: 350,
+      height: 450,
       type: 'area',
     },
     title: {
@@ -57,17 +57,24 @@ const setSeries = (data) => {
       opacity: 0.3,
     },
     markers: {
-      size: 0,
-      colors: ["black"],
+      size: 1,
+      colors: ["yellow"],
       strokeWidth: 0,
-      showNullDataPoints: false,
+      showNullDataPoints: true,
       hover: {
         size: 4,
       },
       
       tooltip: {
-        enabled: false,
-        colors: ["red"],
+        enabled: true,
+        colors: ["green", "red"],
+        y: {
+          formatter: function (val) {
+            return val.toFixed(2);
+          }
+        }
+
+        
       },
     },
   }

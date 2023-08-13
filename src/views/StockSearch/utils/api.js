@@ -18,7 +18,9 @@ const fetchSymbolData = async (query) => {
 
       );
       const datachart = await fetch(
-        `https://cloud.iexapis.com/stable/stock/${query}/chart/max?&token=pk_0e682b29c77d48f9804e3dd05453bf0e`,
+        `https://cloud.iexapis.com/stable/stock/${query}/chart/1m?token=sk_09c6971dee1a4d28801956d73a114c5a`
+
+        // `https://cloud.iexapis.com/stable/stock/${query}/chart/max?&token=pk_0e682b29c77d48f9804e3dd05453bf0e`,
       );
     
     if (!response.ok) return handleAPIError(response, query);

@@ -30,10 +30,10 @@ const Content = ({ data }) => {
     </Col>
     <div className="main-item">
     <Grid>
-      <Grid.Col span={6}>
+      <Grid.Col span={12}>
       <DataChart data={data["intraday-prices"]} priceChange={quote.change} />
       </Grid.Col>
-      <Grid.Col span={6}>
+      <Grid.Col span={12}>
       <MarketChangeOverTimeChart data={data["intraday-prices"]} priceChange={quote.change} />
       </Grid.Col>
     </Grid>
