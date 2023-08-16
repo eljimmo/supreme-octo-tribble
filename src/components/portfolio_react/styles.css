@@ -11,20 +11,22 @@ body {
   /* font-family: Poppins; */
 }
 
-/* h1,
+
+
+h1,
 h2,
 h3 {
   color: #ededed;
   font-weight: 600;
-} */
+} 
 
-/* h2 {
+h2 {
   text-transform: uppercase;
-} */
+} 
 
-/* h4 {
+h4 {
   color: #29b8ff;
-} */
+} 
 
 a {
   text-decoration: none;

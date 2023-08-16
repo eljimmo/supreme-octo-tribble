@@ -108,6 +108,25 @@ export const TopLine = styled.div`
 `;
 
 
+export const TopLine1 = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+export const TopLine2a = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
 
 export const BlueTopLine = styled.div`
   color: #4485c9;
@@ -150,7 +169,8 @@ export const Heading1 = styled.h1`
   padding: 0 15px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+
+  color: ${({ lightText }) => (lightText ? '#010606' : '#010606')};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -160,13 +180,13 @@ export const Heading1 = styled.h1`
 
 export const Heading2 = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 60px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#F7F8FA')};
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 48px;
   }
 `;
 

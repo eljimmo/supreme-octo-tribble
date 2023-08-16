@@ -20,14 +20,31 @@ const fetchSymbolData = async (query) => {
       const datachart = await fetch(
         `https://cloud.iexapis.com/stable/stock/${query}/chart/1m?token=sk_09c6971dee1a4d28801956d73a114c5a`
 
-        // `https://cloud.iexapis.com/stable/stock/${query}/chart/max?&token=pk_0e682b29c77d48f9804e3dd05453bf0e`,
+        // `https://cloud.iexapis.com/stable/stock/spy/chart/max?&token=pk_0e682b29c77d48f9804e3dd05453bf0e`,
       );
+
+      const response2 = await fetch(
+        `https://cloud.iexapis.com/stable/stock/${query}/chart/1m?token=sk_09c6971dee1a4d28801956d73a114c5a`
+      );
+
+      //         `https://cloud.iexapis.com/stable/stock/BAC/chart/1m?token=sk_09c6971dee1a4d28801956d73a114c5a`
+
+
+
     
     if (!response.ok) return handleAPIError(response, query);
     if (!datachart.ok) return handleAPIError(datachart, query);
 
     const data = await response.json();
+    
     const data2 = await datachart.json();
+    
+    const data3 = await response2.json();
+
+
+    // setChartData(data3.map((d) => ({ date: d.date, close: d.close })));
+
+
     console.log(data2);
 
     /* Edge case for IEX API in which the data is not in
@@ -41,8 +58,15 @@ const fetchSymbolData = async (query) => {
     return {
       ...data,
       ...data2,
+      ...data3,
+      
       quote: extractQuoteData(data.quote),
+      
       company: extractCompanyData(data.company),
+
+
+    
+
     };
   } catch (error) {
     const customError = { status: 500 };

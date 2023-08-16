@@ -11,18 +11,21 @@ import { ReactComponent as Figma } from "../../assets/figma.svg";
 import { ReactComponent as Git } from "../../assets/git.svg";
 import { ReactComponent as Gulp } from "../../assets/gulp.svg";
 import { ReactComponent as Post } from "../../assets/post.svg";
-import { Subtitle3, Heading1, TopLine,BlueTopLine } from "../../../InfoSection/InfoElements";
+import { Subtitle3, Heading1, TopLine2a, BlueTopLine, InfoContainer3, InfoWrapper, InfoRow } from "../../../InfoSection/InfoElements";
 import '../../styles.css';
+
+
 
 const Artificialintelligenceabout = () => {
   return (
 
-    <div id="about">
+    // <div id="about" color="white">
+    <InfoContainer3>
     <div>
       <Heading1>Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.</Heading1>
-      <Subtitle3>
+      {/* <Subtitle3>
       The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.      
-      </Subtitle3>
+      </Subtitle3> */}
       {/* <Subtitle3>
       Deep learning is a type of machine learning and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge.
       </Subtitle3> */}
@@ -32,26 +35,30 @@ const Artificialintelligenceabout = () => {
       CREATING IDIOSYNCRATIC AGENTS, A COMPREHENSIVE FINANCIAL MODELING STRUCTURE ENABLES INVESTORS TO CAPTURE A HOLISTIC VALUATION TOWARDS DETERMINING NAVIGATION IN A CHANGING VOLATILE RISK FIELD.
       </p> */}
     </div>
-    <div>
+    <InfoWrapper>
+    {/* <Subtitle3>
+      The adjective "deep" in deep learning refers to the use of multiple layers in the network. The universal approximation theorem for deep neural networks concerns the capacity of networks with bounded width but the depth is allowed to grow.      
+      </Subtitle3> */}
+
       <BlueTopLine style={{ marginTop: "2rem" }}>The agent, The environment, The reward function, The action space, The state space...</BlueTopLine>
-      <div className="skillgrid">
+      <div className="hero">
         <div>
           <div className="skillemblem">
             <Html />
           </div>
-          <p>Turtle Agent</p>
+          <p >Turtle Agent</p>
         </div>
         <div>
           <div className="skillemblem">
             <Css />
           </div>
-          <p>Duel-Q-Learning Agent</p>
+          <p >Duel-Q-Learning Agent</p>
         </div>
         <div>
           <div className="skillemblem">
             <Js />
           </div>
-          <p>Actor-Critic-Agent</p>
+          <p >Actor-Critic-Agent</p>
         </div>
         <div>
           <div className="skillemblem">
@@ -108,9 +115,9 @@ const Artificialintelligenceabout = () => {
           <p>Actor-Critic-Recurrent Agent</p>
         </div>
       </div>
-    </div>
-    <div>
-      <Heading1>Programming Meta-learning and Architecture Search</Heading1>
+    </InfoWrapper>
+    {/* <div> */}
+      {/* <Heading1>Programming Meta-learning and Architecture Search</Heading1>
       <Subtitle3>AI applications in finance may create or intensify financial and non-financial risks, and give rise to potential financial consumer and investor protection considerations. The use of AI amplifies risks that could affect a financial institution’s safety and soundness, given the lack of explainability or interpretability of AI model processes, with potential for pro-cyclicality and systemic risk in the markets.</Subtitle3>
       <Subtitle3>
         Enhance, as in to share solutions in order to enhance the problem.
@@ -118,9 +125,10 @@ const Artificialintelligenceabout = () => {
       <Subtitle3>
         Replicate, as in to replicate the process to consistently solve
         problems.
-      </Subtitle3>
-    </div>
-  </div>
+      </Subtitle3> */}
+    {/* </div> */}
+  {/* </div> */}
+  </InfoContainer3>
 
   );
 };
