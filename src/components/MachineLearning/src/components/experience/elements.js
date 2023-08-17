@@ -118,6 +118,17 @@ export const BTopLine = styled.div`
   margin-bottom: 16px;
 `;
 
+
+export const ZTopLine = styled.div`
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 export const WhiteTopLine = styled.div`
   color: #ffffff ;
   font-size: 16px;

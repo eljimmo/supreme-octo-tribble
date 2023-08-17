@@ -11,6 +11,7 @@ import {
   // TextWrapper,
   // TextWrapper2,
   BTopLine,
+  ZTopLine
   // Heading1,
   // Heading2,
   // Subtitle,
@@ -28,43 +29,43 @@ class Experience extends Component {
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Supervised learning</h4>
-                  <small className="text-light">Training Data</small>
+                  <BTopLine>Supervised learning</BTopLine>
+                  <ZTopLine>Training Data</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Unsupervised learning</h4>
-                  <small className="text-light">Learn Patterns from unlabeled data.</small>
+                  <BTopLine>Unsupervised learning</BTopLine>
+                  <ZTopLine>Learn Patterns from unlabeled data.</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Reinforcement learning</h4>
-                  <small className="text-light">Take Actions in Environments</small>
+                  <BTopLine >Reinforcement learning</BTopLine>
+                  <ZTopLine>Take Actions in Environments</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Dimensionality Reduction</h4>
-                  <small className="text-light">reducing variables & set of principal variables</small>
+                  <BTopLine>Dimensionality Reduction</BTopLine>
+                  <ZTopLine>reducing variables & set of principal variables</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Feature Learning</h4>
-                  <small className="text-light">Representative Elements</small>
+                  <BTopLine>Feature Learning</BTopLine>
+                  <ZTopLine>Representative Elements</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Statistical Model</h4>
-                  <small className="text-light">Embodies a set of statistical Assumptions</small>
+                  <BTopLine>Statistical Model</BTopLine>
+                  <ZTopLine>Embodies a set of statistical Assumptions</ZTopLine>
                 </div>
               </article>
             </div>
@@ -75,43 +76,43 @@ class Experience extends Component {
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Input Sequences</h4>
-                  <small className="text-light">Tokens</small>
+                  <BTopLine>Input Sequences</BTopLine>
+                  <ZTopLine>each vector represents a single time step in the sequence</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Embeddings</h4>
-                  <small className="text-light">Matrix of Vectors</small>
+                  <BTopLine>Embeddings</BTopLine>
+                  <ZTopLine>Matrix of Vectors</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Self Attention Mechanism</h4>
-                  <small className="text-light">Attention Computation</small>
+                  <BTopLine>Self Attention Mechanism</BTopLine>
+                  <ZTopLine>Attention Computation</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Multi-Head Self-Attention</h4>
-                  <small className="text-light">Transformer Architecture</small>
+                  <BTopLine>Multi-Head Self-Attention</BTopLine>
+                  <ZTopLine>Transformer Architecture</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Feedforward Network</h4>
-                  <small className="text-light">Connected Layers and Activation Functions</small>
+                  <BTopLine>Feedforward Network</BTopLine>
+                  <ZTopLine>Connected Layers and Activation Functions</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <h4>Layer Normalization</h4>
-                  <small className="text-light"> stabilize the training process and prevent the model from overfitting</small>
+                  <BTopLine>Layer Normalization</BTopLine>
+                  <ZTopLine> stabilize the training process and prevent the model from overfitting</ZTopLine>
                 </div>
               </article>
             </div>
