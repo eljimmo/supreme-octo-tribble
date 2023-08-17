@@ -10,6 +10,9 @@ import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
+// import App from '../../components/Chatbot/App';
+import TilesApp from '../../components/tiles/App';
+
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +30,9 @@ export default function WelcomePage() {
 
 
 <InfoSection {...homeObjOne} />
-            <BOTA/>
+            {/* <BOTA/> */}
             <ScApp/>
+            <TilesApp/>
 
         <Footer/>
     </>
