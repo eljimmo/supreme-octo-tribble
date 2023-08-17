@@ -5,12 +5,7 @@ import {
   HeroContainer,
   HeroBg,
   VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
+  HeroContent
 } from './HeroElements';
 import Artificialintelligenceabout from "../portfolio_react/components/about/about.artificialintelligence";
 
