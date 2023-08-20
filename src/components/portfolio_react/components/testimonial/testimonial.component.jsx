@@ -1,6 +1,6 @@
 import React from "react";
 import salon from "../../assets/salon.png";
-import { TopLine, Subtitle, InfoContainer } from "../../../InfoSection/InfoElements";
+import { TopLine, Subtitle, InfoContainer, YTopLine } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
 
 
@@ -16,8 +16,12 @@ const Testimonial = () => {
 
           <TopLine>
 Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
+</TopLine>
+
+
+<YTopLine>
 Create your own bots and change the way the internal model for the AI works.
-          </TopLine>
+          </YTopLine>
 
 
 

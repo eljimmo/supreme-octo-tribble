@@ -22,8 +22,6 @@ export default function MachinelearningIndex() {
         <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Videoapp/>
-
-      {/* <br/> */}
           <HeroMachineLearning/>
           <Experience/>
           {/* <App/> */}
