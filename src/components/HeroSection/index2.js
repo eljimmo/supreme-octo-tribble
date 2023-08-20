@@ -20,12 +20,14 @@ export default function HeroSection2() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+      <App/>
+
+        {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
       </HeroBg>
       <HeroContent>
       {/* <Artificialintelligenceabout/> */}
       {/* <FrostedApp/> */}
-      <App/>
+      {/* <App/> */}
 
         {/* <HeroH1>Virtual Artificial Assistants in Finance</HeroH1>
         <HeroP>

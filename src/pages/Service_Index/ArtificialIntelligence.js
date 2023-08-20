@@ -7,7 +7,9 @@ import Heroartificialintelligence from "../../components/portfolio_react/compone
 import '../../components/portfolio_react/styles.css';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
-import HeroSection2 from '../../components/HeroSection/index2';
+// import HeroSection2 from '../../components/HeroSection/index2';
+// import App from '../../components/Dbismut/App';
+import Videoapp from '../../components/VideoTexture/App';
 
 
 export default function ArtificialIntelligenceIndex() {
@@ -20,7 +22,9 @@ export default function ArtificialIntelligenceIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          {/* <HeroSection2/> */}
+          <Videoapp/>
+
+          {/* <App/> */}
           <Heroartificialintelligence/>
           {/* <Artificialintelligenceabout/> */}
           <Testimonial/>

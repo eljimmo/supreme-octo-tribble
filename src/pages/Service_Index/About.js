@@ -3,7 +3,7 @@ import Footer from '../../components/Footer/index';
 import Hero from '../../components/portfolio_react/components/hero/hero.component';
 // import '../components/portfolio_react/styles.css';
 import '../../components/portfolio_react/styles.css';
-
+import Videoapp from '../../components/VideoTexture/App';
 import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
 import {
   homeObjFour
@@ -25,6 +25,8 @@ export default function AboutIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
+          <Videoapp/>
+
           {/* <ScApp/> */}
           {/* <Hero/> */}
           <InfoSectionCanva {...homeObjFour} />

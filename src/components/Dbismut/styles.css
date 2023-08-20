@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -21,18 +21,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+
+/* body { */
+  /* background: #d6d5cf; */
+  /* font-family: system-ui, sans-serif; */
+/* } */
+
 
 .container {
   position: relative;
+  background: #d6d5cf;
+
   z-index: 10;
   font-weight: 600;
   font-size: 2.5em;
-  width: 90%;
+  width: 100%;
 }
 
 .scene {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

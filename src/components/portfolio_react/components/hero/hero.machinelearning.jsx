@@ -1,7 +1,7 @@
 import React from "react";
 import {
   InfoWrapper2,
-  TopLine,
+  // TopLine,
   Heading,
   TopLine2a,
   BlueTopLine

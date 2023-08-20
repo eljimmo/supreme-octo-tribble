@@ -7,6 +7,9 @@ import '../../components/portfolio_react/styles.css';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
+// import App from '../../components/Dbismut/App';
+import Videoapp from '../../components/VideoTexture/App';
+
 
 export default function MachinelearningIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +21,12 @@ export default function MachinelearningIndex() {
       <>
         <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Videoapp/>
+
+      {/* <br/> */}
           <HeroMachineLearning/>
           <Experience/>
+          {/* <App/> */}
           <Footer/>
       </>
     );

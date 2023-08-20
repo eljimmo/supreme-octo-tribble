@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useRef } from 'react'
 import { Scene } from './Scene'
+import './styles.css'
 
 const objects = ['Stool', 'Table', 'Bench']
 const models = objects.map((k) => './' + k.toLowerCase() + '.glb')

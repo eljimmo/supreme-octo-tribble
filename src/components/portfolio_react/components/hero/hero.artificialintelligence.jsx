@@ -1,8 +1,8 @@
 import React from "react";
 import {
   InfoWrapper2,
-  TopLine,
-  Heading1,
+  // TopLine,
+  // Heading1,
   TopLine1,
   Heading2,
   BlueTopLine
@@ -14,7 +14,6 @@ const Heroartificialintelligence = () => {
       <Heading2>Artificial Intelligence & Commericial Investments</Heading2>
               <InfoWrapper2>
       <BlueTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
-
       <TopLine1>
       “The term ‘artificial intelligence’ means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments.” 
       The term is often used interchangeably with its subfields, which include machine learning (ML) and deep learning.
@@ -22,7 +21,6 @@ const Heroartificialintelligence = () => {
       </TopLine1>
       </InfoWrapper2>
       <br/>
-
   </div>
 
   );
