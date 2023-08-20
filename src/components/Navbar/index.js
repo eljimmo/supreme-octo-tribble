@@ -56,13 +56,13 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2
                   to='/neuroevolution'
                 >
                   Neuro Evolution
                 </NavLinks2>
-              </NavItem>
+              </NavItem> */}
 
 
               <NavItem>

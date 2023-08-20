@@ -20,7 +20,7 @@ export default function ArtificialIntelligenceIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <HeroSection2/>
+          {/* <HeroSection2/> */}
           <Heroartificialintelligence/>
           {/* <Artificialintelligenceabout/> */}
           <Testimonial/>

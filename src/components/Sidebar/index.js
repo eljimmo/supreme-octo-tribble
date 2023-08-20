@@ -27,12 +27,16 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             About
           </SidebarRoute>
-          <SidebarRoute
+
+
+          {/* <SidebarRoute
             to='/neuroevolution'
 
           >
             Neuroevolution
-          </SidebarRoute>
+          </SidebarRoute> */}
+
+
           <SidebarRoute
             to='/MachineLearning'
           >
