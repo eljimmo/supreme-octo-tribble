@@ -1,6 +1,6 @@
 import React from "react";
 import salon from "../../assets/salon.png";
-import { TopLine, Subtitle, InfoContainer, YTopLine } from "../../../InfoSection/InfoElements";
+import { TopLine, Subtitle, InfoContainer, YTopLine, RTopLine } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
 
 
@@ -25,9 +25,9 @@ Create your own bots and change the way the internal model for the AI works.
 
 
 
-          <Subtitle>
+          <RTopLine>
           Create and Alter Intelligence Parameters
-          </Subtitle>
+          </RTopLine>
 
 
           <Typewriter

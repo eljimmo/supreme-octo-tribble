@@ -118,6 +118,16 @@ export const YTopLine = styled.div`
   margin-bottom: 16px;
 `;
 
+export const RTopLine = styled.div`
+  color: #ff0900;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 export const TopLine1 = styled.div`
   color: #00b100;
   font-size: 12px;
