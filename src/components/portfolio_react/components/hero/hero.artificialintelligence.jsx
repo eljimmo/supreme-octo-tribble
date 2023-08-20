@@ -4,7 +4,8 @@ import {
   TopLine,
   Heading1,
   TopLine1,
-  Heading2
+  Heading2,
+  BlueTopLine
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
@@ -12,7 +13,7 @@ const Heroartificialintelligence = () => {
     <div id="hero" color="white">
       <Heading2>Artificial Intelligence & Commericial Investments</Heading2>
               <InfoWrapper2>
-      <TopLine> Created by The Leibniz Analytica Team </TopLine>
+      <BlueTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
 
       <TopLine1>
       “The term ‘artificial intelligence’ means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments.” 

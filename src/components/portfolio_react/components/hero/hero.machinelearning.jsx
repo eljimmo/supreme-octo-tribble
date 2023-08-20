@@ -3,7 +3,9 @@ import {
   InfoWrapper2,
   TopLine,
   Heading,
-  TopLine2a
+  TopLine2a,
+  BlueTopLine
+
 } from "../../../InfoSection/InfoElements";
 
 const HeroMachineLearning = () => {
@@ -11,7 +13,7 @@ const HeroMachineLearning = () => {
     <div id="hero">
       <Heading>Machine Learning in Financial Applications</Heading>
               <InfoWrapper2>
-      <TopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </TopLine>
+      <BlueTopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
       <TopLine2a>
       Machine learning (ML) is the subset of artificial intelligence (AI) that focuses on building systems that learn—or improve performance—based on the data they consume.
       Create your own custom financial trading agent to better assist you when trading.
