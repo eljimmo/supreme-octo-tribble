@@ -4,15 +4,14 @@ import InfoSection from '../../components/InfoSection';
 import { homeObjOne } from '../../components/InfoSection/Data';
 // import { homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Footer from '../../components/Footer/index';
-import BOTA from '../../components/CoBot/App';
+// import BOTA from '../../components/CoBot/App';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
-// import App from '../../components/Chatbot/App';
-// import TilesApp from '../../components/tiles/App';
-// import App from '../../components/shader/App';
+// import App from '../../components/Dbismut/App';
+// import HeroSection2 from '../../components/HeroSection/index2';
 
 
 export default function WelcomePage() {
@@ -33,6 +32,7 @@ export default function WelcomePage() {
 <InfoSection {...homeObjOne} />
             {/* <BOTA/> */}
             <ScApp/>
+            {/* <HeroSection2/> */}
             {/* <App/> */}
             {/* <TilesApp/> */}
 

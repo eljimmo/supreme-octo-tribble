@@ -8,6 +8,7 @@ import {
   HeroContent
 } from './HeroElements';
 import Artificialintelligenceabout from "../portfolio_react/components/about/about.artificialintelligence";
+import App from '../../components/Dbismut/App';
 
 
 export default function HeroSection2() {
@@ -22,9 +23,9 @@ export default function HeroSection2() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-      <Artificialintelligenceabout/>
+      {/* <Artificialintelligenceabout/> */}
       {/* <FrostedApp/> */}
-
+      <App/>
 
         {/* <HeroH1>Virtual Artificial Assistants in Finance</HeroH1>
         <HeroP>
