@@ -11,7 +11,8 @@ import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
 // import App from '../../components/Chatbot/App';
-import TilesApp from '../../components/tiles/App';
+// import TilesApp from '../../components/tiles/App';
+// import App from '../../components/shader/App';
 
 
 export default function WelcomePage() {
@@ -32,7 +33,8 @@ export default function WelcomePage() {
 <InfoSection {...homeObjOne} />
             {/* <BOTA/> */}
             <ScApp/>
-            <TilesApp/>
+            {/* <App/> */}
+            {/* <TilesApp/> */}
 
         <Footer/>
     </>
