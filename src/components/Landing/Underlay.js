@@ -4,6 +4,7 @@ import {
   HeroContainer252525,
   AnimatedGradientText
 } from "../../components/HeroSection/HeroElements";
+import App2 from '../../components/FrostedGlass/App2';
 
 
 const Grid = styled.div`
@@ -45,7 +46,7 @@ const Right = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background: #d9d9d9;
+  background: #252525;
   color: #252525;
 `
 
@@ -113,7 +114,8 @@ export default function Underlay() {
         <Sub />
       </Left>
       <Right>
-        <Jumbo>M1</Jumbo>
+      <App2/>
+        {/* <Jumbo>M1</Jumbo> */}
       </Right>
     </Grid>
   )

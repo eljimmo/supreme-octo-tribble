@@ -37,7 +37,7 @@ export default function App() {
   const texture = useLoader(LUTCubeLoader, '/F-6800-STD.cube')
   return (
     <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>
-      <color attach="background" args={['#151520']} />
+      <color attach="background" args={['#ffffff']} />
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />

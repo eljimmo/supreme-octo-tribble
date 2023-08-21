@@ -1,5 +1,4 @@
 import React from "react";
-import salon from "../../assets/salon.png";
 import { TopLine, Subtitle, InfoContainer, YTopLine, RTopLine } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
 import App from "../../../Flower/App";
@@ -12,7 +11,6 @@ const Testimonial = () => {
         <div>
 
         <App />
-          {/* <img src={salon} alt="Mockup of Darling Salon Website" /> */}
         
         </div>
         <InfoContainer>
@@ -22,9 +20,7 @@ Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able t
 </TopLine>
 
 
-{/* <YTopLine> */}
 Create your own bots and change the way the internal model for the AI works.
-          {/* </YTopLine> */}
 
 
 
