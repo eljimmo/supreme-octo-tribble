@@ -14,7 +14,7 @@ export default function App() {
       <Environment preset="warehouse" background blur={1} />
       <ContactShadows resolution={512} position={[0, -0.8, 0]} opacity={1} scale={10} blur={2} far={0.8} />
       {/* <Selector> */}
-        <YBot position={[0, -4, -1]} rotation={[0, -0.2, 0]} scale={[2.99, 2.99, 2.99]} />
+        <YBot position={[0, -4, -1]} rotation={[0, -0.2, 0]} scale={[2.0, 2.0, 2.0]} />
       {/* </Selector> */}
     </Canvas>
   )
