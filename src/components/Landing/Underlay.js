@@ -12,7 +12,7 @@ const Grid = styled.div`
   font-family: 'ThunderBlack';
   font-size: 4em;
   line-height: 0.74em;
-  color: #f7f4af;
+  color: #00b100;
 
   @media (max-width: 425px) {
     grid-template-columns: 1fr;
@@ -39,7 +39,7 @@ const Right = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background: #f7f4af;
+  background: #4485c9;
   color: #252525;
 `
 
