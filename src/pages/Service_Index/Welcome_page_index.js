@@ -24,10 +24,10 @@ export default function WelcomePage() {
     <>
           <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Videoapp/>
+      {/* <Videoapp/> */}
 
 <HeroSection/>
-
+<Videoapp/>
 
 <InfoSection {...homeObjOne} />
             {/* <BOTA/> */}

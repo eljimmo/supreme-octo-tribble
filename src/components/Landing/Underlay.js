@@ -90,7 +90,7 @@ export default function Underlay() {
     <Grid>
       <Left>
         <div>
-        <AnimatedGradientText>
+        {/* <AnimatedGradientText>
 
         Modeling Statistical properties
         </AnimatedGradientText>
@@ -103,7 +103,7 @@ export default function Underlay() {
           <AnimatedGradientText>
 
           optimum architecture.
-          </AnimatedGradientText>
+          </AnimatedGradientText> */}
 
 
           <br />
