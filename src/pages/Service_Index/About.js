@@ -12,7 +12,9 @@ import {
   HeroContainer252525
 } from "../../components/HeroSection/HeroElements";
 // import App from '../../components/Perf_App/App';
-import App2 from '../../components/FrostedGlass/App2';
+// import App2 from '../../components/FrostedGlass/App2';
+import App from '../../components/Flower/App';
+
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +28,7 @@ export default function AboutIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Videoapp/>
           <HeroContainerTransparent>
-          {/* <App2/> */}
+          <App/>
           <Underlay/>
             </HeroContainerTransparent>
           <Footer/>
