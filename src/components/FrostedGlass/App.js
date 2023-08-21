@@ -28,6 +28,8 @@ function Selector({ children }) {
     easing.damp3(ref.current.position, [(pointer.x * width) / 2, (pointer.y * height) / 2, 3], store.open ? 0 : 0.1, delta)
     easing.damp3(ref.current.scale, store.open ? 4 : 0.01, store.open ? 0.5 : 0.2, delta)
     easing.dampC(ref.current.material.color, store.open ? '#f0f0f0' : '#ccc', 0.1, delta)
+    // easing.dampC(ref.current.material.color, store.open ? '#000000' : '#ccc', 0.1, delta)
+
   })
   return (
     <>

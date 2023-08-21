@@ -177,6 +177,25 @@ export const HeroContainerTransparent = styled.div`
 
 
 
+export const HeroContainerWhite = styled.div`
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+`;
+
+export const HeroContainerWhite2 = styled.div`
+  background: #ffffff;
+  display: relative;
+
+  height: 800px;
+  position: relative;
+}
+`;
+
 
 export const HeroContainerCanva = styled.div`
   background: #0c0c0c;

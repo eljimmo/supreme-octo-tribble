@@ -9,7 +9,11 @@ import Sidebar from '../../components/Sidebar/index';
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
 // import App from '../../components/Dbismut/App';
 import Videoapp from '../../components/VideoTexture/App';
-
+import {
+  HeroContainerTransparent,
+  HeroContainer252525,
+  HeroContainerWhite
+} from "../../components/HeroSection/HeroElements";
 
 export default function MachinelearningIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +25,14 @@ export default function MachinelearningIndex() {
       <>
         <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Videoapp/>
+      {/* <HeroContainerWhite> */}
+
           <HeroMachineLearning/>
+
           <Experience/>
+          {/* </HeroContainerWhite> */}
+          <Videoapp/>
+
           {/* <App/> */}
           <Footer/>
       </>

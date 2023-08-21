@@ -9,7 +9,10 @@ import Underlay from '../../components/Landing/Underlay';
 
 import {
   HeroContainerTransparent,
-  HeroContainer252525
+  HeroContainer252525,
+  HeroContainerWhite,
+  HeroContainerWhite2
+
 } from "../../components/HeroSection/HeroElements";
 // import App from '../../components/Perf_App/App';
 // import App2 from '../../components/FrostedGlass/App2';
@@ -27,13 +30,13 @@ export default function AboutIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Videoapp/>
-          <HeroContainerTransparent>
-          <Videoapp/>
-
+          < HeroContainerTransparent>
+          {/* <Videoapp/> */}
           {/* <App/> */}
           <Underlay/>
-            </HeroContainerTransparent>
+          </HeroContainerTransparent>
+          <Videoapp/>
+
           <Footer/>
       </>
     );

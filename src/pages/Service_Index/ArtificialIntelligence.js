@@ -10,7 +10,12 @@ import Sidebar from '../../components/Sidebar/index';
 // import HeroSection2 from '../../components/HeroSection/index2';
 // import App from '../../components/Dbismut/App';
 import Videoapp from '../../components/VideoTexture/App';
-
+import {
+  HeroContainerTransparent,
+  HeroContainer252525,
+  HeroContainerWhite,
+  HeroContainerWhite2
+} from "../../components/HeroSection/HeroElements";
 
 export default function ArtificialIntelligenceIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +27,13 @@ export default function ArtificialIntelligenceIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Videoapp/>
+          {/* <HeroContainerWhite2> */}
           <Heroartificialintelligence/>
+
           <Testimonial/>
+          <Videoapp/>
+
+          {/* </HeroContainerWhite2> */}
           <Footer/>
       </>
     );
