@@ -108,7 +108,7 @@ export default function Underlay() {
           <br />
           changes model properties
           <br />
-          prediction controls.
+          identify prediction controls.
         </div>
         <Sub />
       </Left>

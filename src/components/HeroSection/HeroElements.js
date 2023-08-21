@@ -43,7 +43,7 @@ export const AnimatedGradientText = styled.h1`
   animation: ${gradientText} 5s ease-in-out infinite;
   padding: 2.4rem 3.2rem;
   padding-right: 1.8rem;
-  font-size: 3.0rem;
+  font-size: 2.5rem;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
   text-align: center;

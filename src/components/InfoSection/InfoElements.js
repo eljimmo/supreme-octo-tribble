@@ -299,3 +299,15 @@ export const Img = styled.img`
   margin-left: 10px;
   padding-right: 0;
 `;
+
+
+
+export const HeroContainerTransparent = styled.div`
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+`;
