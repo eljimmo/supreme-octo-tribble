@@ -14,6 +14,7 @@ import {
 // import App from '../../components/Perf_App/App';
 // import App2 from '../../components/FrostedGlass/App2';
 import App from '../../components/Flower/App';
+// import Videoapp from '../../components/VideoTexture/App';
 
 
 export default function AboutIndex() {
@@ -28,7 +29,9 @@ export default function AboutIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Videoapp/>
           <HeroContainerTransparent>
-          <App/>
+          <Videoapp/>
+
+          {/* <App/> */}
           <Underlay/>
             </HeroContainerTransparent>
           <Footer/>
