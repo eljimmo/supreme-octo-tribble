@@ -2,7 +2,7 @@ import React from "react";
 import salon from "../../assets/salon.png";
 import { TopLine, Subtitle, InfoContainer, YTopLine, RTopLine } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
-
+import App from "../../../Flower/App";
 
 const Testimonial = () => {
   return (
@@ -10,7 +10,10 @@ const Testimonial = () => {
     <div id="testimonial">
       <div className="gridlayout1">
         <div>
-          <img src={salon} alt="Mockup of Darling Salon Website" />
+
+        <App />
+          {/* <img src={salon} alt="Mockup of Darling Salon Website" /> */}
+        
         </div>
         <InfoContainer>
 

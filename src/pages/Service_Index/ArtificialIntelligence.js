@@ -23,10 +23,7 @@ export default function ArtificialIntelligenceIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Videoapp/>
-
-          {/* <App/> */}
           <Heroartificialintelligence/>
-          {/* <Artificialintelligenceabout/> */}
           <Testimonial/>
           <Footer/>
       </>
