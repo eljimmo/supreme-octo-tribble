@@ -33,7 +33,7 @@ function useLerpedMouse() {
   return lerped
 }
 
-function YBot(props) {
+export default function YBot(props) {
   const ref = useRef()
   const [texture] = useState(() => new THREE.CanvasTexture(new FlakesTexture(), THREE.UVMapping, THREE.RepeatWrapping, THREE.RepeatWrapping))
   const { nodes, materials } = useGLTF('/untitled-draco2.glb')
@@ -94,18 +94,18 @@ function Effects() {
   )
 }
 
-export default function App() {
-  return (
-    <Canvas shadows performance={{ min: 0.1 }} gl={{ antialias: false }} camera={{ position: [0, 0, 0.8], fov: 75, near: 0.5, far: 1 }}>
-      <Lights />
-      <Suspense fallback={<Html center className="loading" children="Loading..." />}>
-        <YBot position={[0, -1.3, 0]} />
-      </Suspense>
-      <mesh scale={4} position={[0, 1, -0.2]}>
-        <planeGeometry />
-      </mesh>
-      <Effects />
-    </Canvas>
+// export default function App() {
+//   return (
+//     <Canvas shadows performance={{ min: 0.1 }} gl={{ antialias: false }} camera={{ position: [0, 0, 0.8], fov: 75, near: 0.5, far: 1 }}>
+//       <Lights />
+//       <Suspense fallback={<Html center className="loading" children="Loading..." />}>
+//         <YBot position={[0, -1.3, 0]} />
+//       </Suspense>
+//       <mesh scale={4} position={[0, 1, -0.2]}>
+//         <planeGeometry />
+//       </mesh>
+//       <Effects />
+//     </Canvas>
 
-  )
-}
+//   )
+// }

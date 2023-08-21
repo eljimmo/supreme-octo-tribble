@@ -8,10 +8,11 @@ import Sidebar from '../../components/Sidebar/index';
 import Underlay from '../../components/Landing/Underlay';
 
 import {
-  // HeroContainer,
+  HeroContainerTransparent,
   HeroContainer252525
 } from "../../components/HeroSection/HeroElements";
-import App from '../../components/Perf_App/App';
+// import App from '../../components/Perf_App/App';
+import App2 from '../../components/FrostedGlass/App2';
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,10 @@ export default function AboutIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Videoapp/>
-          <HeroContainer252525>
-          <App/>
+          <HeroContainerTransparent>
+          <App2/>
           <Underlay/>
-            </HeroContainer252525>
+            </HeroContainerTransparent>
           <Footer/>
       </>
     );
