@@ -1,4 +1,10 @@
 import styled from 'styled-components'
+import {
+  HeroContainerTransparent,
+  HeroContainer252525,
+  AnimatedGradientText
+} from "../../components/HeroSection/HeroElements";
+
 
 const Grid = styled.div`
   position: absolute;
@@ -39,7 +45,7 @@ const Right = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background: #4485c9;
+  background: #d9d9d9;
   color: #252525;
 `
 
@@ -81,15 +87,28 @@ export default function Underlay() {
     <Grid>
       <Left>
         <div>
-        Machine Learning 
+        <AnimatedGradientText>
+
+        Modeling Statistical properties
+        </AnimatedGradientText>
+
           <br />
-          Artificial Intelligence
-          <br />
+          <AnimatedGradientText>
           Higher Order Solutions
-          <br />
-          Modeling Statistical properties
-          <br />
+          </AnimatedGradientText>
+
+          <AnimatedGradientText>
+
           optimum architecture.
+          </AnimatedGradientText>
+
+
+          <br />
+          Define the model state
+          <br />
+          changes model properties
+          <br />
+          prediction controls.
         </div>
         <Sub />
       </Left>

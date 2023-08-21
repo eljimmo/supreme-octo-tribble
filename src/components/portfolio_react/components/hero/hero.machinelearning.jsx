@@ -4,13 +4,16 @@ import {
   // TopLine,
   Heading,
   TopLine2a,
-  BlueTopLine
+  BlueTopLine,
+  HeroContainer1
+  
 
 } from "../../../InfoSection/InfoElements";
 
 const HeroMachineLearning = () => {
   return (
-    <div id="hero">
+    // <div id="hero">
+    <HeroContainer1>
       <Heading>Machine Learning in Financial Applications</Heading>
               <InfoWrapper2>
       <BlueTopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
@@ -21,8 +24,7 @@ const HeroMachineLearning = () => {
       </TopLine2a>
       </InfoWrapper2>
       <br/>
-
-  </div>
+      </HeroContainer1>
 
   );
 };

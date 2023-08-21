@@ -41,14 +41,14 @@ const gradientText = keyframes`
 
 export const AnimatedGradientText = styled.h1`
   animation: ${gradientText} 5s ease-in-out infinite;
-  padding: 2.4rem 4.2rem;
-  padding-right: 4.1rem;
-  font-size: 3.5rem;
+  padding: 2.4rem 3.2rem;
+  padding-right: 1.8rem;
+  font-size: 3.0rem;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
   text-align: center;
   background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
-  background-size: 300%;
+  background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

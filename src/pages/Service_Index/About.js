@@ -26,7 +26,7 @@ export default function AboutIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Videoapp/>
           <HeroContainerTransparent>
-          <App2/>
+          {/* <App2/> */}
           <Underlay/>
             </HeroContainerTransparent>
           <Footer/>
