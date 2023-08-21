@@ -61,7 +61,7 @@ const Jumbo = styled.div`
   align-self: center;
   padding: 100px;
   font-size: 3.5em;
-  color: #252525;
+  color: #f3f3f3;
 `
 
 const Label = styled.div`
@@ -114,8 +114,8 @@ export default function Underlay() {
         <Sub />
       </Left>
       <Right>
-      <App2/>
-        {/* <Jumbo>M1</Jumbo> */}
+      {/* <App2/> */}
+        <Jumbo>M1</Jumbo>
       </Right>
     </Grid>
   )
