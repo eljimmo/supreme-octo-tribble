@@ -1,7 +1,6 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
-// import Video from '../../Assets/videos/iStock_optic.mp4';
 
 export default function Videoapp() {
   return (

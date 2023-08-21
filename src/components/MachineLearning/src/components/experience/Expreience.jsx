@@ -25,7 +25,7 @@ class Experience extends Component {
 
         <div className="container experience__container">
           <div className="experience__frontend">
-            <RTopLine>Machine learning Algorithm Development</RTopLine>
+            <BTopLine>Machine learning Algorithm Development</BTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
@@ -72,7 +72,7 @@ class Experience extends Component {
             </div>
           </div>
           <div className="experience__backend">
-            <RTopLine>Foundational Development of Chatbots and Virtual Assistants</RTopLine>
+            <BTopLine>Foundational Development of Chatbots and Virtual Assistants</BTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />

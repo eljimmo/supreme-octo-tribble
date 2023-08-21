@@ -19,15 +19,15 @@ Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able t
 </TopLine>
 
 
-<YTopLine>
+{/* <YTopLine> */}
 Create your own bots and change the way the internal model for the AI works.
-          </YTopLine>
+          {/* </YTopLine> */}
 
 
 
-          <RTopLine>
+          <TopLine>
           Create and Alter Intelligence Parameters
-          </RTopLine>
+          </TopLine>
 
 
           <Typewriter
