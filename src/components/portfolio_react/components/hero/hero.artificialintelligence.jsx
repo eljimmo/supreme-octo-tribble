@@ -6,7 +6,7 @@ import {
   TopLine1,
   Heading2,
   Heading3,
-  BlueTopLine
+  BlackTopLine
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
@@ -14,7 +14,7 @@ const Heroartificialintelligence = () => {
     <div id="hero" color="white">
       <Heading3>Artificial Intelligence & Commericial Investments</Heading3>
               <InfoWrapper2>
-      <BlueTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
+      <BlackTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine>
       <TopLine1>
       “The term ‘artificial intelligence’ means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments.” 
       The term is often used interchangeably with its subfields, which include machine learning (ML) and deep learning.

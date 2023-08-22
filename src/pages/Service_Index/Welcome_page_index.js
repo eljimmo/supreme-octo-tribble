@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import InfoSection from '../../components/InfoSection';
+import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
 // import InfoSection3 from '../components/InfoSection/Index_InfoSection3';
-import { homeObjOne } from '../../components/InfoSection/Data';
+import { homeObjOne, homeObjFive, homeObjSix, homeObjTwo } from '../../components/InfoSection/Data';
 // import { homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Footer from '../../components/Footer/index';
 // import BOTA from '../../components/CoBot/App';
@@ -30,6 +31,8 @@ export default function WelcomePage() {
 <Videoapp/>
 
 <InfoSection {...homeObjOne} />
+<InfoSectionCanva {...homeObjTwo} />
+
             {/* <BOTA/> */}
             <ScApp/>
             {/* <HeroSection2/> */}

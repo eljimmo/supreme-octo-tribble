@@ -6,7 +6,10 @@ import {
   HeroContainer252525,
   AnimatedGradientText
 } from "../../components/HeroSection/HeroElements";
-import App2 from '../../components/FrostedGlass/App2';
+// import App2 from '../../components/FrostedGlass/App2';
+import Videoapp from '../../components/VideoTexture/App';
+import App from '../../components/Curl_Noise/App';
+import Videoapp2 from '../../components/VideoTexture/VApp_2';
 
 
 const Grid = styled.div`
@@ -89,21 +92,10 @@ export default function Underlay() {
   return (
     <Grid>
       <Left>
-        <div>
-        {/* <AnimatedGradientText>
+        {/* <div>
 
-        Modeling Statistical properties
-        </AnimatedGradientText>
 
-          <br />
-          <AnimatedGradientText>
-          Higher Order Solutions
-          </AnimatedGradientText>
 
-          <AnimatedGradientText>
-
-          optimum architecture.
-          </AnimatedGradientText> */}
 
 
           <br />
@@ -112,10 +104,14 @@ export default function Underlay() {
           changes model properties
           <br />
           identify prediction controls.
-        </div>
-        <Sub />
+        </div> */}
+        {/* <Sub /> */}
+        
+        <Videoapp2/> 
       </Left>
       <Right>
+      {/* <Videoapp2/> */}
+
       {/* <App2/> */}
         <Jumbo>M1</Jumbo>
       </Right>

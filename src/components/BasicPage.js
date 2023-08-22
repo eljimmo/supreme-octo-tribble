@@ -207,13 +207,6 @@ if(currentUser===null)
             </IconButton>
 
 
-                    {/* <Typewriter
-        options={{
-        strings: ['Analytical Modeling', ' Main Dashboard', 'Data Bots'],
-        autoStart: true,
-        loop: true,
-        }}
-        />  */}
 
 
             <Typography

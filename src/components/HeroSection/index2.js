@@ -25,31 +25,7 @@ export default function HeroSection2() {
         {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
       </HeroBg>
       <HeroContent>
-      {/* <Artificialintelligenceabout/> */}
-      {/* <FrostedApp/> */}
-      {/* <App/> */}
 
-        {/* <HeroH1>Virtual Artificial Assistants in Finance</HeroH1>
-        <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment.
-        </HeroP>
-        <HeroBtnWrapper>
-          <Button
-            to='signup'
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-            primary='true'
-            dark='true'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-          >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper> */}
       </HeroContent>
     </HeroContainer>
   );

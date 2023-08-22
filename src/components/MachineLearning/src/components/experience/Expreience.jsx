@@ -12,7 +12,8 @@ import {
   // TextWrapper2,
   BTopLine,
   ZTopLine,
-  RTopLine
+  RTopLine,
+  BlackTopLine
   // Heading1,
   // Heading2,
   // Subtitle,
@@ -115,94 +116,94 @@ class Experience extends Component {
           <div className="experience__frontend">
           {/* <div class="svg-wrapper"> */}
 
-            <BTopLine>Machine learning Algorithm Development</BTopLine>
+            <BlackTopLine>Machine learning Algorithm Development</BlackTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Supervised learning</BTopLine>
+                  <BlackTopLine>Supervised learning</BlackTopLine>
                   <ZTopLine>Training Data</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Unsupervised learning</BTopLine>
+                  <BlackTopLine>Unsupervised learning</BlackTopLine>
                   <ZTopLine>Learn Patterns from unlabeled data.</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine >Reinforcement learning</BTopLine>
+                  <BlackTopLine >Reinforcement learning</BlackTopLine>
                   <ZTopLine>Take Actions in Environments</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Dimensionality Reduction</BTopLine>
+                  <BlackTopLine>Dimensionality Reduction</BlackTopLine>
                   <ZTopLine>reducing variables & set of principal variables</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Feature Learning</BTopLine>
+                  <BlackTopLine>Feature Learning</BlackTopLine>
                   <ZTopLine>Representative Elements</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Statistical Model</BTopLine>
+                  <BlackTopLine>Statistical Model</BlackTopLine>
                   <ZTopLine>Embodies a set of statistical Assumptions</ZTopLine>
                 </div>
               </article>
             </div>
           </div>
           <div className="experience__backend">
-            <BTopLine>Foundational Development of Chatbots and Virtual Assistants</BTopLine>
+            <BlackTopLine>Foundational Development of Chatbots and Virtual Assistants</BlackTopLine>
             <div className="experience__content">
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Input Sequences</BTopLine>
+                  <BlackTopLine>Input Sequences</BlackTopLine>
                   <ZTopLine>each vector represents a single time step in the sequence</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Embeddings</BTopLine>
+                  <BlackTopLine>Embeddings</BlackTopLine>
                   <ZTopLine>Matrix of Vectors</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Self Attention Mechanism</BTopLine>
+                  <BlackTopLine>Self Attention Mechanism</BlackTopLine>
                   <ZTopLine>Attention Computation</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Multi-Head Self-Attention</BTopLine>
+                  <BlackTopLine>Multi-Head Self-Attention</BlackTopLine>
                   <ZTopLine>Transformer Architecture</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Feedforward Network</BTopLine>
+                  <BlackTopLine>Feedforward Network</BlackTopLine>
                   <ZTopLine>Connected Layers and Activation Functions</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
-                  <BTopLine>Layer Normalization</BTopLine>
+                  <BlackTopLine>Layer Normalization</BlackTopLine>
                   <ZTopLine> stabilize the training process and prevent the model from overfitting</ZTopLine>
                 </div>
               </article>

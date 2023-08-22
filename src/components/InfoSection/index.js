@@ -1,6 +1,7 @@
 import { React } from 'react';
 import {
   InfoContainer,
+  InfoContainer3,
   InfoWrapper,
   InfoRow,
   Column1,
@@ -35,7 +36,7 @@ const InfoSection = ({
   console.log(primary);
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer3 lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -53,7 +54,7 @@ const InfoSection = ({
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </InfoContainer>
+      </InfoContainer3>
     </>
   );
 };

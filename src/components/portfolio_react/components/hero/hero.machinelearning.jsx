@@ -6,6 +6,7 @@ import {
   TopLine2a,
   Heading3,
   BlueTopLine,
+  BlackTopLine,
   HeroContainer1,
   HeroContainerTransparent
   
@@ -19,7 +20,7 @@ const HeroMachineLearning = () => {
       <Heading3>Machine Learning in Financial Applications</Heading3>
               <InfoWrapper2>
       
-      <BlueTopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
+      <BlackTopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine>
       
       <TopLine2a>
       Machine learning (ML) is the subset of artificial intelligence (AI) that focuses on building systems that learn—or improve performance—based on the data they consume.

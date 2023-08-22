@@ -17,8 +17,7 @@ import {
 // import App from '../../components/Perf_App/App';
 // import App2 from '../../components/FrostedGlass/App2';
 import App from '../../components/Flower/App';
-// import Videoapp from '../../components/VideoTexture/App';
-
+import Videoapp2 from '../../components/VideoTexture/VApp_2';
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
