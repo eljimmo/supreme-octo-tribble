@@ -1,5 +1,5 @@
 import React from "react";
-import { TopLine, Subtitle, InfoContainer, YTopLine, RTopLine } from "../../../InfoSection/InfoElements";
+import { TopLine, Subtitle, InfoContainer3, YTopLine, RTopLine } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
 // import App from "../../../Flower/App";
 
@@ -13,7 +13,7 @@ const Testimonial = () => {
         {/* <App /> */}
         
         </div>
-        <InfoContainer>
+        <InfoContainer3>
 
           <TopLine>
 Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
@@ -44,7 +44,7 @@ loop: true,
           <Subtitle>
           Cognitive Modeling
           </Subtitle> */}
-        </InfoContainer>
+        </InfoContainer3>
       </div>
     </div>
   );
