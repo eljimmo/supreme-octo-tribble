@@ -13,8 +13,8 @@ import {
 
 const HeroMachineLearning = () => {
   return (
-    // <div id="hero">
-    <HeroContainerTransparent>
+    <div id="hero">
+  {/* <HeroContainerTransparent> */}
       <Heading>Machine Learning in Financial Applications</Heading>
               <InfoWrapper2>
       <BlueTopLine> CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
@@ -25,7 +25,7 @@ const HeroMachineLearning = () => {
       </TopLine2a>
       </InfoWrapper2>
       <br/>
-      </HeroContainerTransparent>
+      </div>
 
   );
 };
