@@ -113,6 +113,8 @@ class Experience extends Component {
 
         <div className="container experience__container">
           <div className="experience__frontend">
+          {/* <div class="svg-wrapper"> */}
+
             <BTopLine>Machine learning Algorithm Development</BTopLine>
             <div className="experience__content">
               <article className="experience__details">

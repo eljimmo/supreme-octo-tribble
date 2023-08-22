@@ -5,13 +5,14 @@ import {
   // Heading1,
   TopLine1,
   Heading2,
+  Heading3,
   BlueTopLine
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
   return (
     <div id="hero" color="white">
-      <Heading2>Artificial Intelligence & Commericial Investments</Heading2>
+      <Heading3>Artificial Intelligence & Commericial Investments</Heading3>
               <InfoWrapper2>
       <BlueTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlueTopLine>
       <TopLine1>

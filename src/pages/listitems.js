@@ -3,9 +3,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-// import LayersIcon from '@mui/icons-material/Layers';
-// import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-// import HomeIcon from '@mui/icons-material/Home';
+
 import ListIcon from '@mui/icons-material/List';
 import CottageIcon from '@mui/icons-material/Cottage';
 import LineAxisIcon from '@mui/icons-material/LineAxis';
@@ -40,19 +38,7 @@ function Advchart(){
 
 
     <br/>
-    {/* <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/>
-    <hr/> */}
+
 
   <ListItemButton onClick={Home}>
     <ListItemIcon>

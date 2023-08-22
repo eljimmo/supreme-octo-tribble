@@ -250,6 +250,19 @@ export const Heading2 = styled.h1`
 `;
 
 
+export const Heading3 = styled.h1`
+  margin-bottom: 24px;
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? '#0a0c10' : '#0a0c10')};
+
+  @media screen and (max-width: 480px) {
+    font-size: 48px;
+  }
+`;
+
+
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
