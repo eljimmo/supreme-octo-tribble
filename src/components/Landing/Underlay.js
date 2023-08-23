@@ -12,7 +12,7 @@ import {
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
 // import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
 // import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
-import App from "../../components/Flower/App";
+// import App from "../../components/Flower/App";
 
 
 const Grid = styled.div`
@@ -96,8 +96,8 @@ export default function Underlay() {
     <Grid>
       <Left>
 
-      <App/>
-        {/* <div>
+      {/* <App/> */}
+        <div>
 
          
 
@@ -109,7 +109,7 @@ export default function Underlay() {
           changes model properties
           <br />
           identify prediction controls.
-        </div> */}
+        </div>
         {/* <Sub /> */}
         
         <Videoapp2/> 

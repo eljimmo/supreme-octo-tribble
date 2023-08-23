@@ -10,7 +10,8 @@ import {
   Heading3,
   BlackTopLine,
   HeroContainer1,
-  InfoContainer3
+  InfoContainer3,
+  AnimatedGradientText1
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
@@ -19,9 +20,10 @@ const Heroartificialintelligence = () => {
 
       <InfoContainer3>
       {/* <Wrapper> */}
-      <Heading3>Artificial Intelligence & Commericial Investments</Heading3>
+      <AnimatedGradientText1>Artificial Intelligence & Commericial Investments</AnimatedGradientText1>
               <InfoWrapper2>
-      <BlackTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine>
+                <br/>
+      {/* <BlackTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine> */}
       <TopLine1>
       “The term ‘artificial intelligence’ means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations or decisions influencing real or virtual environments.” 
       The term is often used interchangeably with its subfields, which include machine learning (ML) and deep learning.

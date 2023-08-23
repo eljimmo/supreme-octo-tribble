@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled,  { keyframes } from 'styled-components';
 
 
 export const Wrapper = styled.div`
@@ -129,14 +129,15 @@ export const InfoContainer2 = styled.div`
 `;
 
 export const InfoContainer3 = styled.div`
+
   color: #fff;
   background: transparent;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
     height: 860px;
 
-  }
-`;
+        }
+  `;
 
 
 
@@ -163,6 +164,41 @@ export const InfoWrapper2 = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+`;
+
+
+
+
+const gradientText = keyframes`
+{
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}}
+`;
+
+export const AnimatedGradientText1 = styled.h1`
+  animation: ${gradientText} 5s ease-in-out infinite;
+  font-size: 50px;
+
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+
 `;
 
 export const InfoRow = styled.div`

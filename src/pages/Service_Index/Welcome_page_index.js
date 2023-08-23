@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import InfoSection from '../../components/InfoSection';
 import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
-// import InfoSection3 from '../components/InfoSection/Index_InfoSection3';
-import { homeObjOne, homeObjFive, homeObjSix, homeObjTwo } from '../../components/InfoSection/Data';
-// import { homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
 import Footer from '../../components/Footer/index';
-// import BOTA from '../../components/CoBot/App';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
-// import App from '../../components/Dbismut/App';
-// import HeroSection2 from '../../components/HeroSection/index2';
+
 
 
 export default function WelcomePage() {

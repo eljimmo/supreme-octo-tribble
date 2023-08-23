@@ -22,14 +22,35 @@ export const InfoContainer2 = styled.div`
 `;
 
 export const InfoContainer3 = styled.div`
+  border: 1px solid #ccc;
   color: #fff;
   background: transparent;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
     height: 860px;
 
-  }
-`;
+    &:after,
+    &:before {
+      content: '';
+      color: #ccc;
+      position: absolute;
+      width: 0.5rem; height: 0.5rem;
+    }
+  
+    &:before {
+      bottom: -0.5rem;
+      right: -0.5rem;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  
+    &:after {
+      top: -0.5rem;
+      left: -0.5rem;
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+  `;
 
 
 
@@ -113,11 +134,21 @@ export const BTopLine = styled.div`
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 16px;
 `;
 
+
+export const RTopLine = styled.div`
+  color: #ff0900;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
 
 export const ZTopLine = styled.div`
   color: #ffffff;
@@ -142,15 +173,6 @@ export const BlackTopLine = styled.div`
 `;
 
 
-export const RTopLine = styled.div`
-  color: #ff0900;
-  font-size: 18px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-`;
 
 
 export const WhiteTopLine = styled.div`
