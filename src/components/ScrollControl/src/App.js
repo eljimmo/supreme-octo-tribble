@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { useScroll, Text, Image, Scroll, Preload, ScrollControls } from '@react-three/drei'
+import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
 import Typewriter from 'typewriter-effect';
 
 
@@ -10,6 +10,7 @@ export default function ScApp() {
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'transparent' }}>
     <Canvas camera={{ position: [0, 0, 20], fov: 15
+
     // set the background color of the scene to black
     , background: new THREE.Color(0x000000)
     
@@ -50,6 +51,11 @@ export default function ScApp() {
                to jank as you scroll down. With <Preload> that's solved.  */}
           <Preload />
       </ScrollControls>
+      <Environment background preset="sunset" blur={0.8} />
+
+      <Grid renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} sectionColor={[0.5, 0.5, 10]} fadeDistance={30} />
+
+
     </Canvas>
     </div>
   )
