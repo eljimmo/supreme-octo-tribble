@@ -112,13 +112,13 @@ export default function Underlay() {
         </div>
         <Sub />
         
-        <Videoapp2/> 
+        {/* <Videoapp2/>  */}
       </Left>
       <Right>
       {/* <Videoapp2/> */}
 
       {/* <App2/> */}
-        {/* <Jumbo>M1</Jumbo> */}
+        <Jumbo>M1</Jumbo>
       
       {/* <Heroartificialintelligence/> */}
       </Right>

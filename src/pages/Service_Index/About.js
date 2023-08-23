@@ -17,7 +17,7 @@ import {
 // import App from '../../components/Perf_App/App';
 // import App2 from '../../components/FrostedGlass/App2';
 // import App from '../../components/Flower/App';
-// import Videoapp2 from '../../components/VideoTexture/VApp_2';
+import Videoapp2 from '../../components/VideoTexture/VApp_2';
 
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function AboutIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           < HeroContainerTransparent>
-          {/* <Videoapp/> */}
+          <Videoapp2/>
           {/* <App/> */}
           <Underlay/>
           </HeroContainerTransparent>

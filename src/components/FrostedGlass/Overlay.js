@@ -59,7 +59,7 @@ loop: true,
         <h1>
         <Typewriter
 options={{
-strings: ['Project Leibniz', 'Releasing 2024', 'Creating Solutions', 'Creating Intelligence'],
+strings: ['Project Leibniz', 'Releasing 2024', 'Creating Intelligent Solutions', 'Discovering Artificial Reasoning'],
 autoStart: true,
 loop: true,
 }}
