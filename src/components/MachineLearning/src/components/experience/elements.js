@@ -137,6 +137,11 @@ export const BTopLine = styled.div`
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+
 `;
 
 
@@ -148,6 +153,11 @@ export const RTopLine = styled.div`
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+
 `;
 
 export const ZTopLine = styled.div`
