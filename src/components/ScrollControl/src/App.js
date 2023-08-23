@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function ScApp() {
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'transparent' }}>
     <Canvas camera={{ position: [0, 0, 20], fov: 15
     // set the background color of the scene to black
     , background: new THREE.Color(0x000000)
