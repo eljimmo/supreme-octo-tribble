@@ -15,10 +15,10 @@ import {
 
 const Heroartificialintelligence = () => {
   return (
-    <div id="hero" color="white">
+    <div id="hero">
 
       <InfoContainer3>
-      <Wrapper>
+      {/* <Wrapper> */}
       <Heading3>Artificial Intelligence & Commericial Investments</Heading3>
               <InfoWrapper2>
       <BlackTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine>
@@ -30,7 +30,7 @@ const Heroartificialintelligence = () => {
       </InfoWrapper2>
       <br/>
 
-     </Wrapper>
+     {/* </Wrapper> */}
 
      </InfoContainer3>
   </div>

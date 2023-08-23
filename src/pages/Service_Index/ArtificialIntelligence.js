@@ -43,7 +43,6 @@ export default function ArtificialIntelligenceIndex() {
           {/* <HeroContainerWhite2> */}
           {/* <Wrapper2> */}
           <Heroartificialintelligence/>
-
           <Testimonial/>
           {/* </Wrapper2> */}
 
