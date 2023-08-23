@@ -16,6 +16,19 @@ import Videoapp from '../../components/VideoTexture/App';
 //   HeroContainerWhite,
 //   HeroContainerWhite2
 // } from "../../components/HeroSection/HeroElements";
+import {
+  InfoWrapper2,
+  // TopLine,
+  // Heading1,
+  TopLine1,
+  Heading2,
+  Wrapper,
+  Wrapper2,
+  Heading3,
+  BlackTopLine
+} from "../../../src/components/InfoSection/InfoElements";
+
+
 
 export default function ArtificialIntelligenceIndex() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +41,13 @@ export default function ArtificialIntelligenceIndex() {
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           {/* <HeroContainerWhite2> */}
+          {/* <Wrapper2> */}
           <Heroartificialintelligence/>
 
           <Testimonial/>
+          {/* </Wrapper2> */}
+
+
           <Videoapp/>
 
           {/* </HeroContainerWhite2> */}

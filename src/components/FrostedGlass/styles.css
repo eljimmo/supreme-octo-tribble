@@ -10,12 +10,17 @@ body,
 
 
 body {
-  font-family: 'Inter', sans-serif;
-  /* background: #d0d0d0; */
-  background: #747474;
-  /* background: black; */
 
+  background: #191919;
+	background-image:
+		linear-gradient(90deg, #111 1rem, transparent 1rem),
+		linear-gradient(#111 1rem, transparent 1rem);
+	background-size: 1.2rem 1.2rem;
 }
+  /* font-family: 'Inter', sans-serif;
+  background: #747474;
+
+} */
 
 a {
   color: black;

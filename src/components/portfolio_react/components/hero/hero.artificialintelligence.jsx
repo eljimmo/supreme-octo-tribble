@@ -5,13 +5,20 @@ import {
   // Heading1,
   TopLine1,
   Heading2,
+  Wrapper,
+  Wrapper2,
   Heading3,
-  BlackTopLine
+  BlackTopLine,
+  HeroContainer1,
+  InfoContainer3
 } from "../../../InfoSection/InfoElements";
 
 const Heroartificialintelligence = () => {
   return (
     <div id="hero" color="white">
+
+      <InfoContainer3>
+      <Wrapper>
       <Heading3>Artificial Intelligence & Commericial Investments</Heading3>
               <InfoWrapper2>
       <BlackTopLine>  CREATED BY THE LEIBNIZ ANALYTICA TEAM </BlackTopLine>
@@ -22,6 +29,10 @@ const Heroartificialintelligence = () => {
       </TopLine1>
       </InfoWrapper2>
       <br/>
+
+     </Wrapper>
+
+     </InfoContainer3>
   </div>
 
   );

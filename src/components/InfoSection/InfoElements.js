@@ -1,7 +1,75 @@
 import styled from 'styled-components';
 
 
+export const Wrapper = styled.div`
+	border: 1px solid #ccc;
+	color: #ddd;
+	width: 100%; min-width: 10rem; max-width: 30rem;
+	min-height: 15rem;
+	padding: 1rem;
+	position: fixed;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+		
+	&:after,
+	&:before {
+		content: '';
+		color: #ccc;
+		position: absolute;
+		width: 0.5rem; height: 0.5rem;
+	}
 
+	&:before {
+		bottom: -0.5rem;
+		right: -0.5rem;
+		border-bottom: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
+
+	&:after {
+		top: -0.5rem;
+		left: -0.5rem;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+`;
+
+
+
+export const Wrapper2 = styled.div`
+
+	border: 1px solid #ccc;
+	color: #ddd;
+	width: 100%; min-width: 10rem; max-width: 30rem;
+	min-height: 15rem;
+	padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;	
+  top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+		
+	&:after,
+	&:before {
+		content: '';
+		color: #ccc;
+		width: 0.5rem; height: 0.5rem;
+	}
+
+	&:before {
+		bottom: -0.5rem;
+		right: -0.5rem;
+		border-bottom: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	}
+
+	&:after {
+		top: -0.5rem;
+		left: -0.5rem;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+`;
 
 export const HeroContainer1 = styled.div`
 

@@ -7,9 +7,12 @@ import {
   AnimatedGradientText
 } from "../../components/HeroSection/HeroElements";
 // import App2 from '../../components/FrostedGlass/App2';
-import Videoapp from '../../components/VideoTexture/App';
-import App from '../../components/Curl_Noise/App';
+// import Videoapp from '../../components/VideoTexture/App';
+// import App from '../../components/Curl_Noise/App';
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
+// import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
+// import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
+import App from "../../components/Flower/App";
 
 
 const Grid = styled.div`
@@ -92,9 +95,11 @@ export default function Underlay() {
   return (
     <Grid>
       <Left>
+
+      <App/>
         {/* <div>
 
-
+         
 
 
 
@@ -113,8 +118,12 @@ export default function Underlay() {
       {/* <Videoapp2/> */}
 
       {/* <App2/> */}
-        <Jumbo>M1</Jumbo>
+        {/* <Jumbo>M1</Jumbo> */}
+      
+      {/* <Heroartificialintelligence/> */}
       </Right>
+
+
     </Grid>
   )
 }
