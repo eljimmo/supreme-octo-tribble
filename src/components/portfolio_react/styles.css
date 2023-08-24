@@ -28,6 +28,50 @@ h4 {
   color: #29b8ff;
 }  */ 
 
+
+/* .education{
+  margin:3% 5% 30px 4%;
+}
+
+.education:first-child{
+  margin-top:8%;
+}
+
+.education:last-child{
+  margin-bottom: 4%;
+}
+
+.education-map{
+  border-left: 2px solid #404242;
+  padding-left: 18px;
+  position:relative;
+}
+
+.point{
+  width:10px;
+  height: 10px;
+  background-color:#E0A80D;
+  position:absolute;
+  top:-22px;
+  left:-6px;
+  border-radius: 50%;
+}
+
+.ed-year{
+  font-size: 12px;
+  position:absolute;
+  top:-30px;
+  color:#595A5B;
+}
+
+.ed-location{
+  font-size: 12px;
+  color:#595A5B;
+  margin-top: 2px;
+  padding-bottom: 8px;
+} */
+
+
 a {
   text-decoration: none;
 }

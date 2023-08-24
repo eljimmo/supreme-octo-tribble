@@ -170,7 +170,7 @@ export const HeroContainerTransparent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 850px;
   position: relative;
 }
 `;

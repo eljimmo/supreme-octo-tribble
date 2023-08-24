@@ -11,13 +11,18 @@ import {
   HeroContainerTransparent,
   HeroContainer252525,
   HeroContainerWhite,
-  HeroContainerWhite2
+  HeroContainerWhite2,
+  HeroP,
+  HeroH1,
+  HeroContainer,
+  HeroContent
 
 } from "../../components/HeroSection/HeroElements";
 // import App from '../../components/Perf_App/App';
 // import App2 from '../../components/FrostedGlass/App2';
 // import App from '../../components/Flower/App';
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
+import TimeClock from '../../components/TimeClock/Index';
 
 
 export default function AboutIndex() {
@@ -32,7 +37,7 @@ export default function AboutIndex() {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           < HeroContainerTransparent>
           <Videoapp2/>
-          {/* <App/> */}
+          <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
           <Videoapp/>

@@ -6,7 +6,11 @@ import {
   HeroContainer252525,
   AnimatedGradientText,
   HeroContent2,
-  HeroH1
+  HeroH1,
+  HeroP,
+  HeroContainer,
+  HeroContent
+
 } from "../../components/HeroSection/HeroElements";
 // import App2 from '../../components/FrostedGlass/App2';
 // import Videoapp from '../../components/VideoTexture/App';
@@ -17,6 +21,8 @@ import Videoapp2 from '../../components/VideoTexture/VApp_2';
 // import App from "../../components/Flower/App";
 import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
 import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
+// import TimeClock from '../../components/TimeClock/Index';
+// import '../../components/TimeClock/styles.css'; 
 
 
 const Grid = styled.div`
@@ -66,7 +72,7 @@ const Sub = styled.div`
   align-self: end;
   width: 200px;
   height: 2px;
-  background: #f7f4af;
+  background: #00b100;
 `
 
 const Jumbo = styled.div`
@@ -108,17 +114,39 @@ export default function Underlay() {
 
 
           <br />
+          <HeroP>
           Define the model state
+          </HeroP>
           <br />
+          <HeroP>
+
           changes model properties
+          </HeroP>
+
           <br />
+
+          <HeroP>
+
           identify prediction controls.
+          </HeroP>
+
+        
         </div>
         <Sub />
         
         {/* <Videoapp2/>  */}
       </Left>
-      <Right>
+      {/* <Right> */}
+      {/* <Jumbo> */}
+      {/* <AnimatedGradientText> */}
+      {/* <HeroP> */}
+      {/* Model State */}
+      {/* </HeroP> */}
+      {/* </AnimatedGradientText> */}
+      {/* </Jumbo> */}
+
+      {/* <TimeClock/> */}
+
       
       {/* <HeroContent2>
       <HeroH1>
@@ -129,7 +157,7 @@ export default function Underlay() {
       </HeroH1>
       </HeroContent2> */}
 
-      </Right>
+      {/* </Right> */}
 
 
     </Grid>
