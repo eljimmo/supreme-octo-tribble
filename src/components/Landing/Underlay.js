@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import {
   HeroContainerTransparent,
   HeroContainer252525,
-  AnimatedGradientText
+  AnimatedGradientText,
+  HeroContent2,
+  HeroH1
 } from "../../components/HeroSection/HeroElements";
 // import App2 from '../../components/FrostedGlass/App2';
 // import Videoapp from '../../components/VideoTexture/App';
@@ -13,6 +15,8 @@ import Videoapp2 from '../../components/VideoTexture/VApp_2';
 // import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
 // import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 // import App from "../../components/Flower/App";
+import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
+import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
 
 
 const Grid = styled.div`
@@ -115,12 +119,16 @@ export default function Underlay() {
         {/* <Videoapp2/>  */}
       </Left>
       <Right>
-      {/* <Videoapp2/> */}
-
-      {/* <App2/> */}
-        <Jumbo>M1</Jumbo>
       
-      {/* <Heroartificialintelligence/> */}
+      {/* <HeroContent2>
+      <HeroH1>
+
+      A comprehensive deep & powerful search ability to find the optimum architecture of a model. Candidate solutions are then evaluated for a fitness function. 
+
+
+      </HeroH1>
+      </HeroContent2> */}
+
       </Right>
 
 

@@ -19,6 +19,7 @@ import {
 // import App from '../../components/Flower/App';
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
 
+
 export default function AboutIndex() {
   const [isOpen, setIsOpen] = useState(false);
 

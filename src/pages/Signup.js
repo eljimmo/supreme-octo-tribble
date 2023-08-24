@@ -3,6 +3,9 @@ import Text from '../elements/Text';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {  createUserWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from '../firebase';
+import Footer from '../components/Footer/index';
+import Videoapp from '../components/VideoTexture/App';
+
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -137,6 +140,8 @@ const Signup = () => {
                     
                 </div>
             </div>
+            <Videoapp/>
+                    <Footer/>
         </section>
     </main>
   )

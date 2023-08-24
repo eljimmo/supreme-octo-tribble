@@ -3,6 +3,22 @@ import Text from '../elements/Text';
 import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from '../firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
+import {
+    InfoWrapper2,
+    InfoContainer,
+    // TopLine,
+    // Heading1,
+    TopLine1,
+    Heading2,
+    Wrapper,
+    Wrapper2,
+    Heading3,
+    BlackTopLine,
+    HeroContainer1
+  } from "../components/InfoSection/InfoElements";
+
+import Footer from '../components/Footer/index';
+import Videoapp from '../components/VideoTexture/App';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -28,8 +44,10 @@ const Login = () => {
 
     return(
         <>
-            <main >        
-                <section>
+            {/* <main >        
+                <section> */}
+                <InfoContainer>
+                {/* <Wrapper> */}
                     <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
                         <div className="w-full max-w-md space-y-8">
                             <div>
@@ -99,8 +117,12 @@ const Login = () => {
                             
                         </div>
                     </div>
-                </section>
-            </main>
+                    {/* </Wrapper> */}
+                    </InfoContainer>
+                    <Videoapp/>
+                    <Footer/>
+                {/* </section>
+            </main> */}
         </>
     )
 }

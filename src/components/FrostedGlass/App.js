@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshTransmissionMaterial, ContactShadows, Environment, Grid , Stage
+import { MeshTransmissionMaterial, ContactShadows, Environment, Grid, Stage
 } from '@react-three/drei'
 import { easing } from 'maath'
 import { useStore } from './store'
