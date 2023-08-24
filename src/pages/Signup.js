@@ -5,7 +5,8 @@ import {  createUserWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from '../firebase';
 import Footer from '../components/Footer/index';
 import Videoapp from '../components/VideoTexture/App';
-
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar/index';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -14,7 +15,11 @@ const Signup = () => {
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
-  
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };   
     const onSubmit = async (e) => {
       e.preventDefault()
       
@@ -39,7 +44,9 @@ const Signup = () => {
   
 
   return (
-    <main >        
+    <main >
+                    <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />         
         <section>
             <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className="w-full max-w-md space-y-8">

@@ -17,14 +17,22 @@ import {
     HeroContainer1
   } from "../components/InfoSection/InfoElements";
 
+import '../components/FrostedGlass/styles.css'
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar/index';
 import Footer from '../components/Footer/index';
 import Videoapp from '../components/VideoTexture/App';
 
 const Login = () => {
+
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-       
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };   
     const onLogin = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
@@ -44,8 +52,10 @@ const Login = () => {
 
     return(
         <>
-            {/* <main >        
-                <section> */}
+            <main >
+            <Navbar toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />        
+                <section>
                 <InfoContainer>
                 {/* <Wrapper> */}
                     <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -121,8 +131,8 @@ const Login = () => {
                     </InfoContainer>
                     <Videoapp/>
                     <Footer/>
-                {/* </section>
-            </main> */}
+                </section>
+            </main>
         </>
     )
 }
