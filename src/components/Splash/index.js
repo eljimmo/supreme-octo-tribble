@@ -199,9 +199,9 @@ class App extends Component {
       <div style={ styles.container }
         className="bg-black vh-100 flex items-center">
         
-        <a style={ styles.link } 
+        {/* <a style={ styles.link } 
           href="https://github.com/winkerVSbecks/splash"
-          target="_blank">GITHUB</a>
+          target="_blank">GITHUB</a> */}
         
         <Canvas w={ s } h={ s }>
 
