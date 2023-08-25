@@ -3,6 +3,8 @@ import { TopLine, Subtitle, InfoContainer3, YTopLine, RTopLine, Wrapper } from "
 import Typewriter from 'typewriter-effect';
 // import App from "../../../Flower/App";
 import SplashApp from "../../../Splash";
+// import Videoapp from "../../../VideoTexture/App";
+import App from "../../../Flower/App";
 
 const Testimonial = () => {
   return (
@@ -19,7 +21,21 @@ const Testimonial = () => {
           {/* <TopLine> Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
           </TopLine> */}
 
+          <RTopLine>
+          Create parameters of intelligence 
+          </RTopLine>
 
+          <br/>
+
+
+
+          <RTopLine>
+          Create and Alter intelligence parameters
+          </RTopLine>
+
+
+          <br/>
+          <App/>
           <br/>
           
           <RTopLine>
@@ -31,7 +47,7 @@ const Testimonial = () => {
 
 
           <RTopLine>
-          Create and Alter Intelligence Parameters
+          Create and Alter intelligent decision making processes
           </RTopLine>
 
 

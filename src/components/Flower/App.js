@@ -1,7 +1,7 @@
 // https://twitter.com/igor_3000A/status/1646542441112297474
 
 import { Canvas, useLoader } from '@react-three/fiber'
-import { Environment, Lightformer, OrbitControls, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
+import { Environment, Lightformer, OrbitControls, Stage, Grid, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
 import { EffectComposer, Bloom, LUT, BrightnessContrast, HueSaturation } from '@react-three/postprocessing'
 import { LUTCubeLoader } from 'postprocessing'
 
@@ -41,8 +41,8 @@ export default function App() {
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Model position={[0, -0.25, 0]} />
-      <OrbitControls autoRotate />
+            <Model position={[0, -0.25, 0]} />
+<OrbitControls autoRotate />
       <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/blue_photo_studio_1k.hdr" resolution={512}>
         <group rotation={[0, 0, 1]}>
           <Lightformer form="circle" intensity={10} position={[0, 10, -10]} scale={20} onUpdate={(self) => self.lookAt(0, 0, 0)} />
