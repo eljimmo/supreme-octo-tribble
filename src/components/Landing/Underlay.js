@@ -134,30 +134,8 @@ export default function Underlay() {
         </div>
         <Sub />
         
-        {/* <Videoapp2/>  */}
       </Left>
-      {/* <Right> */}
-      {/* <Jumbo> */}
-      {/* <AnimatedGradientText> */}
-      {/* <HeroP> */}
-      {/* Model State */}
-      {/* </HeroP> */}
-      {/* </AnimatedGradientText> */}
-      {/* </Jumbo> */}
 
-      {/* <TimeClock/> */}
-
-      
-      {/* <HeroContent2>
-      <HeroH1>
-
-      A comprehensive deep & powerful search ability to find the optimum architecture of a model. Candidate solutions are then evaluated for a fitness function. 
-
-
-      </HeroH1>
-      </HeroContent2> */}
-
-      {/* </Right> */}
 
 
     </Grid>

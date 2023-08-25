@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+/* @import url('https://fonts.googleapis.com/css?family=Lato'); */
 
 * {
 	box-sizing: border-box;
@@ -17,8 +17,7 @@
 	margin: 0;
 } */
 
-h1 {
-	letter-spacing: 2px;
+.h1countdown {
     color: #00b100;
 	text-align: center;
 	text-transform: uppercase;

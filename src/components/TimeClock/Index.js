@@ -45,7 +45,7 @@ class Countdown extends React.Component {
 		
 		return (
 			<div>
-				<h1>Countdown</h1>
+				<h1 className='h1countdown'>Countdown</h1>
 				<div className='countdown-wrapper'>
 					{days && (
 						<div className='countdown-item'>
@@ -86,14 +86,6 @@ const SVGCircle = ({ radius }) => (
 		<path fill="none" stroke="#00b100" stroke-width="4" d={describeArc(50, 50, 48, 0, radius)}/>
 	</svg>
 );
-
-// ReactDOM.render(
-// 	<Countdown 
-// 		timeTillDate="05 26 2019, 6:00 am" 
-// 		timeFormat="MM DD YYYY, h:mm a" 
-// 	/>, 
-// 	document.getElementById('app')
-// );
 
 
 

@@ -23,6 +23,8 @@ import {
 // import App from '../../components/Flower/App';
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
 import TimeClock from '../../components/TimeClock/Index';
+import MarketNews from '../../components/Stock_Portfolio/Market_News';
+// import App from '../../components/ShadowParallax/Index'; 
 
 
 export default function AboutIndex() {
@@ -40,6 +42,8 @@ export default function AboutIndex() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
+          <MarketNews/>
+          {/* <App/> */}
           <Videoapp/>
 
           <Footer/>
