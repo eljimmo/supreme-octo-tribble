@@ -23,24 +23,24 @@ const PostsData = [
       "text": "The first ever decoupled starter theme for React & the WP-API",
       "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
     },
-    {
-      "category": "News",
-      "title": "CNN Acquire BEME",
-      "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-      "image": "https://source.unsplash.com/user/erondu/600x400"
-    },
-    {
-      "category": "Travel",
-      "title": "Nomad Lifestyle",
-      "text": "Learn our tips and tricks on living a nomadic lifestyle",
-      "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-    },
-    {
-      "category": "Development",
-      "title": "React and the WP-API",
-      "text": "The first ever decoupled starter theme for React & the WP-API",
-      "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-    }
+    // {
+    //   "category": "News",
+    //   "title": "CNN Acquire BEME",
+    //   "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+    //   "image": "https://source.unsplash.com/user/erondu/600x400"
+    // },
+    // {
+    //   "category": "Travel",
+    //   "title": "Nomad Lifestyle",
+    //   "text": "Learn our tips and tricks on living a nomadic lifestyle",
+    //   "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
+    // },
+    // {
+    //   "category": "Development",
+    //   "title": "React and the WP-API",
+    //   "text": "The first ever decoupled starter theme for React & the WP-API",
+    //   "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+    // }
   ]
   
   
@@ -81,8 +81,8 @@ const PostsData = [
     render() {
       return <section className="app-title">
         <div className="app-title-content">
-          <h1>Latest News</h1>
-          <p>Covering March & April 2015</p>
+          <h1>Understanding Artificial Intelligence</h1>
+          <p>Arriving Soon</p>
           <a className="designer-link" href="https://dribbble.com/shots/1978243-Latest-News" target="_blank">Design from <i className="fa fa-dribbble"></i></a>
         </div>
       </section>
