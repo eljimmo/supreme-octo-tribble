@@ -1,6 +1,10 @@
-import { OrbitControls, CameraShake } from '@react-three/drei'
+import { CameraShake, Environment, Lightformer, OrbitControls, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
 import { useControls } from 'leva'
 import { Particles } from './Particles'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { LUTCubeLoader } from 'postprocessing'
+import { EffectComposer, Bloom, LUT, BrightnessContrast, HueSaturation } from '@react-three/postprocessing'
+
 
 export default function App() {
   const props = useControls({
@@ -12,9 +16,16 @@ export default function App() {
   })
   return (
     <>
+        <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>
+        {/* <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/blue_photo_studio_1k.hdr" resolution={512}> */}
+
       <OrbitControls makeDefault autoRotate autoRotateSpeed={0.5} zoomSpeed={0.1} />
       <CameraShake yawFrequency={1} maxYaw={0.05} pitchFrequency={1} maxPitch={0.05} rollFrequency={0.5} maxRoll={0.5} intensity={0.2} />
       <Particles {...props} />
+      {/* </Environment> */}
+
+      </Canvas>
+
     </>
   )
 }

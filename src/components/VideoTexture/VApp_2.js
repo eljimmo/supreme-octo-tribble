@@ -1,10 +1,15 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
+import App from '../Curl_Noise/App'
+
 
 export default function Videoapp2() {
   return (
     <Canvas orthographic>
+    {/* // <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>  */}
+    {/* <App/> */}
+      
       <Scene />
     </Canvas>
   )

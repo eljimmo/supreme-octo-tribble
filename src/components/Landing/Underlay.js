@@ -23,6 +23,7 @@ import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
 import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
 // import TimeClock from '../../components/TimeClock/Index';
 // import '../../components/TimeClock/styles.css'; 
+import App from '../../components/Curl_Noise/App';
 
 
 const Grid = styled.div`
@@ -111,7 +112,7 @@ export default function Underlay() {
 
          
 
-
+          {/* <App/> */}
 
           <br />
           <HeroP>
