@@ -123,7 +123,7 @@ const TimeClock = () => {
     return (
         <div>
             <Countdown 
-        timeTillDate="05 26 2024, 6:00 am" 
+        timeTillDate="05 12 2024, 6:00 am" 
         timeFormat="MM DD YYYY, h:mm a" 
     />
         </div>

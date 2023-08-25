@@ -121,7 +121,7 @@ export default function Underlay() {
           <br />
           <HeroP>
 
-          changes model properties
+          change model properties
           </HeroP>
 
           <br />
@@ -130,6 +130,30 @@ export default function Underlay() {
 
           identify prediction controls.
           </HeroP>
+
+          <br />
+
+        <HeroP>
+
+        create intelligence parameters  
+        </HeroP>
+
+        <br />
+
+        <HeroP>
+
+        optimize parameters of prediction
+        </HeroP>
+
+
+
+        <br />
+{/* 
+        <HeroP>
+        
+        
+        </HeroP> */}
+
 
         
         </div>
