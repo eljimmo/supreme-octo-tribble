@@ -24,7 +24,8 @@ import {
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
 import TimeClock from '../../components/TimeClock/Index';
 import MarketNews from '../../components/Stock_Portfolio/Market_News';
-// import App from '../../components/ShadowParallax/Index'; 
+// import App from '../../components/ShadowParallax/Index';
+import CardApp from '../../components/Card_Component/Index'; 
 
 
 
@@ -54,7 +55,7 @@ export default function AboutIndex() {
 
 
           {/* <MarketNews/> */}
-          {/* <App/> */}
+          <CardApp/>
           <Videoapp/>
 
           <Footer/>

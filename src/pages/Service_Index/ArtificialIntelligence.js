@@ -27,7 +27,7 @@ import {
   Heading3,
   BlackTopLine
 } from "../../../src/components/InfoSection/InfoElements";
-
+// import SplashApp from '../../components/Splash/index';
 
 
 export default function ArtificialIntelligenceIndex() {
@@ -45,7 +45,7 @@ export default function ArtificialIntelligenceIndex() {
           <Heroartificialintelligence/>
           <Testimonial/>
           {/* </Wrapper2> */}
-
+          {/* <SplashApp/> */}
 
           <Videoapp/>
 

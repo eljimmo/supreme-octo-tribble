@@ -2,6 +2,7 @@ import React from "react";
 import { TopLine, Subtitle, InfoContainer3, YTopLine, RTopLine, Wrapper } from "../../../InfoSection/InfoElements";
 import Typewriter from 'typewriter-effect';
 // import App from "../../../Flower/App";
+import SplashApp from "../../../Splash";
 
 const Testimonial = () => {
   return (
@@ -10,7 +11,7 @@ const Testimonial = () => {
       <div className="gridlayout1">
         <div>
 
-        {/* <App /> */}
+        <SplashApp />
         
         </div>
         <div>
