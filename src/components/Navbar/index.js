@@ -8,6 +8,7 @@ import {
   NavbarContainer,
   NavItem,
   NavLinks2,
+  NavLinks2a,
   NavLogo,
   NavMenu,
 } from './NavbarElements';
@@ -48,11 +49,11 @@ const Navbar = ({ toggle }) => {
 
 
               <NavItem>
-                <NavLinks2
+                <NavLinks2a
                   to='/about'
                 >
                   About
-                </NavLinks2>
+                </NavLinks2a>
               </NavItem>
 
 
@@ -66,29 +67,29 @@ const Navbar = ({ toggle }) => {
 
 
               <NavItem>
-                <NavLinks2
+                <NavLinks2a
                   to='/machinelearning'
                 >
                   Machine Learning
-                </NavLinks2>
+                </NavLinks2a>
               </NavItem>
 
 
               <NavItem>
-                <NavLinks2
+                <NavLinks2a
                   to='/artificialintelligence'
                 >
                   Artificial Intelligence
-                </NavLinks2>
+                </NavLinks2a>
               </NavItem>
 
 
               <NavItem>
-                <NavLinks2
+                <NavLinks2a
                   to='/login'
                 >
                   Login
-                </NavLinks2>
+                </NavLinks2a>
               </NavItem>
 
             </NavMenu>

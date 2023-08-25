@@ -139,7 +139,7 @@ export const BTopLine = styled.div`
   margin-bottom: 16px;
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 16px;
   }
 
 `;
@@ -155,7 +155,7 @@ export const RTopLine = styled.div`
   margin-bottom: 16px;
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 16px;
   }
 
 `;

@@ -28,6 +28,8 @@ export default function WelcomePage() {
 
 <InfoSection {...homeObjOne} />
 <InfoSectionCanva {...homeObjTwo} />
+<br/>
+<br/>
 
             {/* <BOTA/> */}
             <ScApp/>

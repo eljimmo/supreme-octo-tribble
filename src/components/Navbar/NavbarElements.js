@@ -96,6 +96,8 @@ export const NavLinks = styled(LinkS)`
 
 
 
+
+
 export const NavLinks2 = styled(LinkR)`
   color: #fff;
   display: flex;
@@ -108,7 +110,52 @@ export const NavLinks2 = styled(LinkR)`
   &.active {
     border-bottom: 3px solid #39FF14;
   }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
 `;
+
+
+
+export const NavLinks2a = styled(LinkR)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #39FF14;
+  }
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &: hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+`;
+
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
