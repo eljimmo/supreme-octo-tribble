@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 // import App from "../../../Flower/App";
 import SplashApp from "../../../Splash";
 // import Videoapp from "../../../VideoTexture/App";
-import App from "../../../Flower/App";
+// import App from "../../../Flower/App";
 
 const Testimonial = () => {
   return (
@@ -22,7 +22,7 @@ const Testimonial = () => {
           </TopLine> */}
 
           <RTopLine>
-          Create parameters of intelligence 
+          Create networks of intelligence 
           </RTopLine>
 
           <br/>
@@ -35,7 +35,7 @@ const Testimonial = () => {
 
 
           <br/>
-          <App/>
+          {/* <App/> */}
           <br/>
           
           <RTopLine>
