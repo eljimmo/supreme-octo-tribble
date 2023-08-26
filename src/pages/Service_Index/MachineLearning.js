@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/index';
 import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
-// import '../components/portfolio_react/styles.css';
 import '../../components/portfolio_react/styles.css';
-
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
-// import App from '../../components/Dbismut/App';
 import Videoapp from '../../components/VideoTexture/App';
 import {
   HeroContainerTransparent,
@@ -25,15 +22,9 @@ export default function MachinelearningIndex() {
       <>
         <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <HeroContainerWhite> */}
-
           <HeroMachineLearning/>
-
           <Experience/>
-          {/* </HeroContainerWhite> */}
           <Videoapp/>
-
-          {/* <App/> */}
           <Footer/>
       </>
     );

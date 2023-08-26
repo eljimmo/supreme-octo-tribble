@@ -12,17 +12,9 @@ import {
   HeroContent
 
 } from "../../components/HeroSection/HeroElements";
-// import App2 from '../../components/FrostedGlass/App2';
-// import Videoapp from '../../components/VideoTexture/App';
-// import App from '../../components/Curl_Noise/App';
 import Videoapp2 from '../../components/VideoTexture/VApp_2';
-// import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
-// import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
-// import App from "../../components/Flower/App";
 import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
 import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
-// import TimeClock from '../../components/TimeClock/Index';
-// import '../../components/TimeClock/styles.css'; 
 import App from '../../components/Curl_Noise/App';
 
 
@@ -107,12 +99,8 @@ export default function Underlay() {
     <Grid>
       <Left>
 
-      {/* <App/> */}
         <div>
 
-         
-
-          {/* <App/> */}
 
           <br />
           <HeroP>
@@ -148,11 +136,6 @@ export default function Underlay() {
 
 
         <br />
-{/* 
-        <HeroP>
-        
-        
-        </HeroP> */}
 
 
         

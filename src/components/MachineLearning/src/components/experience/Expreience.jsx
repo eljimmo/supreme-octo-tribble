@@ -115,47 +115,39 @@ class Experience extends Component {
 
         <div className="container experience__container">
           <div className="experience__frontend">
-          {/* <div class="svg-wrapper"> */}
-
             <RTopLine>Machine learning Algorithm Development</RTopLine>
             <div className="experience__content">
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Supervised learning</ZTopLine>
                   <ZTopLine>Training Data</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Unsupervised learning</ZTopLine>
                   <ZTopLine>Learn Patterns from unlabeled data.</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine >Reinforcement learning</ZTopLine>
                   <ZTopLine>Take Actions in Environments</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Dimensionality Reduction</ZTopLine>
                   <ZTopLine>reducing variables & set of principal variables</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Feature Learning</ZTopLine>
                   <ZTopLine>Representative Elements</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Statistical Model</ZTopLine>
                   <ZTopLine>Embodies a set of statistical Assumptions</ZTopLine>
@@ -167,42 +159,36 @@ class Experience extends Component {
             <BTopLine>Foundational Development of Chatbots and Virtual Assistants</BTopLine>
             <div className="experience__content">
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Input Sequences</ZTopLine>
                   <ZTopLine>each vector represents a single time step in the sequence</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Embeddings</ZTopLine>
                   <ZTopLine>Matrix of Vectors</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Self Attention Mechanism</ZTopLine>
                   <ZTopLine>Attention Computation</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Multi-Head Self-Attention</ZTopLine>
                   <ZTopLine>Transformer Architecture</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Feedforward Network</ZTopLine>
                   <ZTopLine>Connected Layers and Activation Functions</ZTopLine>
                 </div>
               </article>
               <article className="experience__details">
-                {/* <BsPatchCheckFill className="experience__details-icon" /> */}
                 <div>
                   <ZTopLine>Layer Normalization</ZTopLine>
                   <ZTopLine> stabilize the training process and prevent the model from overfitting</ZTopLine>

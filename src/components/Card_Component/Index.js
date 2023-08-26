@@ -1,46 +1,52 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './styles.css';
+import {
+  HeroContainerTransparent,
+  HeroContainer252525,
+  AnimatedGradientText,
+  HeroContent2,
+  HeroH1,
+  HeroP,
+  HeroContainer,
+  HeroContent
 
+} from "../../components/HeroSection/HeroElements";
+
+import {
+  InfoContainer,
+  InfoContainer3,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  TopLine2a,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+} from '../../components/InfoSection/InfoElements';
 
 //Temporarily store data here
 const PostsData = [
     {
-      "category": "News",
+      "category": "Trading Bots",
       "title": "CNN Acquire BEME",
       "text": "CNN purchased Casey Neistat's Beme app for $25million.",
       "image": "https://source.unsplash.com/user/erondu/600x400"
     },
     {
-      "category": "Travel",
+      "category": "Analytical Tool Development",
       "title": "Nomad Lifestyle",
       "text": "Learn our tips and tricks on living a nomadic lifestyle",
       "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
     },
     {
-      "category": "Development",
+      "category": "Portfolio Optimization",
       "title": "React and the WP-API",
       "text": "The first ever decoupled starter theme for React & the WP-API",
       "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
     },
-    // {
-    //   "category": "News",
-    //   "title": "CNN Acquire BEME",
-    //   "text": "CNN purchased Casey Neistat's Beme app for $25million.",
-    //   "image": "https://source.unsplash.com/user/erondu/600x400"
-    // },
-    // {
-    //   "category": "Travel",
-    //   "title": "Nomad Lifestyle",
-    //   "text": "Learn our tips and tricks on living a nomadic lifestyle",
-    //   "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
-    // },
-    // {
-    //   "category": "Development",
-    //   "title": "React and the WP-API",
-    //   "text": "The first ever decoupled starter theme for React & the WP-API",
-    //   "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-    // }
+    
   ]
   
   
@@ -83,20 +89,8 @@ const PostsData = [
         <div className="app-title-content">
           <h1>Understanding Artificial Intelligence</h1>
           <p>Arriving Soon</p>
-          <a className="designer-link" href="https://dribbble.com/shots/1978243-Latest-News" target="_blank">Design from <i className="fa fa-dribbble"></i></a>
         </div>
       </section>
-    }
-  }
-  
-  
-  class Button extends React.Component {
-    render() {
-      return (
-        <button className="button button-primary">
-          <i className="fa fa-chevron-right"></i> Find out more
-        </button>
-      )
     }
   }
   
@@ -109,7 +103,7 @@ const PostsData = [
       };
       return (
         <header style={style} className="card-header">
-          <h4 className="card-header--title">{category}</h4>
+          <TopLine className="card-header--title">{category}</TopLine>
         </header>
       )
     }
@@ -120,13 +114,9 @@ const PostsData = [
     render() {
       return (
         <div className="card-body">
-          <p className="date">March 20 2015</p>
-          
-          <h2>{this.props.title}</h2>
-          
-          <p className="body-content">{this.props.text}</p>
-          
-          <Button />
+          <Heading className="date">Releasing 2024</Heading>
+          <TopLine2a>{this.props.title}</TopLine2a>
+          <Subtitle className="body-content">{this.props.text}</Subtitle>
         </div>
       )
     }
@@ -145,11 +135,6 @@ const PostsData = [
   }
   
   
-//   ReactDOM.render(
-//     <Main />,
-//     document.getElementById('app')
-//   );
-
 
 export default function CardApp() {
     return (
