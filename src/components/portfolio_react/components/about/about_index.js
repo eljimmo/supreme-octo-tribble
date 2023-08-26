@@ -1,19 +1,21 @@
 import { React } from "react";
 import { Typography, styled } from "@mui/material";
 
-
 import {
-  StyledDivider,
-  StyledGenericContainer,
-  StyledGenericRoot,
-  StyledGenericSubText,
-  StyledGenericTitle,
-} 
-from "./styles"; 
-
-
-
-// import "animate.css";
+    InfoWrapper2,
+    // TopLine,
+    // Heading1,
+    TopLine1,
+    Heading2,
+    Wrapper,
+    Wrapper2,
+    Heading3,
+    BlackTopLine,
+    HeroContainer1,
+    InfoContainer3,
+    AnimatedGradientText1
+  } from "../../../InfoSection/InfoElements";
+  
 import { useInView } from "react-intersection-observer";
 import * as Scroll from "react-scroll";
 
@@ -103,51 +105,39 @@ const About = () => {
     triggerOnce: true,
   });
   const technologiesArr = [
-    "Java",
-    "Swift",
-    "Node",
-    "AWS",
-    "Material-UI",
-    "MetaMask",
-    "Ethereum",
-    "Javascript",
-    "PostgresSQL",
-    "Solidity",
-    "React",
-    "Kubernetes",
-    "Angular",
-    "Git",
-    "Express",
-    "Java",
-    "Swift",
+    "build network architecture ",
+    "paper trading mode ",
+    "sampling period and trade frequency",
+    "cryptocurrency",
+    "order & pair management",
+    "portfolio management",
+    "trading bots",
+    "backtesting",
+    "trading charts",
+    "technical-analysis-based approach",
+    "watchdog bots",
+    "live strategy",
+    "open trading intelligence network",
+    "integrated charting system",
+    "algorithmic trading",
+    "data-mining",
   ];
 
   return (
     <Scroll.Element name="About">
-      <StyledGenericRoot>
-        <StyledGenericContainer
-          style={{ overflow: "hidden" }}
-          ref={aboutContainer}
-          sx={
-            aboutContainerInView
-              ? { visibility: "visible" }
-              : { visibility: "hidden" }
-          }
-          className={
-            aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
-          }
-        >
-          <StyledGenericTitle component="h1">
-            About Me
-            <StyledDivider />
-          </StyledGenericTitle>
-          <StyledGenericSubText component="h1">
+        {/* <InfoContainer3>
+
+          <TopLine1>
+
+
             Hey there! My name is Maximilian and I have been building different
             types of web and mobile applications for 7+ years. After publishing
             a few games to the iOS App Store, I became more interested in
             developing responsive web designs with React. Listed below are some
             of the languages and technologies that I have experience using.
-          </StyledGenericSubText>
+          </TopLine1>
+          </InfoContainer3> */}
+
           <StyledScrollingContainer>
             <StyledScrollingBelt>
               {technologiesArr.map((item, index) => (
@@ -159,9 +149,8 @@ const About = () => {
               ))}
             </StyledScrollingBelt>
           </StyledScrollingContainer>
-        </StyledGenericContainer>
-      </StyledGenericRoot>
     </Scroll.Element>
+
   );
 };
 

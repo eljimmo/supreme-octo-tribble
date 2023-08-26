@@ -20,7 +20,7 @@ import {
 } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
-// import About from  "../../components/portfolio_react/components/about/about_index";
+import About from  "../../components/portfolio_react/components/about/about_index";
 
 
 
@@ -40,7 +40,7 @@ export default function AboutIndex() {
           <Underlay/>
           </HeroContainerTransparent>
           <CardApp/>
-          {/* <About/> */}
+          <About/>
           <Videoapp/>
           <Footer/>
       </>
