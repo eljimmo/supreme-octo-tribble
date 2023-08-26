@@ -30,20 +30,20 @@ import {
 const PostsData = [
     {
       "category": "Trading Bots",
-      "title": "CNN Acquire BEME",
-      "text": "CNN purchased Casey Neistat's Beme app for $25million.",
+      // "title": "CNN Acquire BEME",
+      "text": "testing strategies with a backtesting then run the trading bot in Dry-run.",
       "image": "https://source.unsplash.com/user/erondu/600x400"
     },
     {
       "category": "Analytical Tool Development",
-      "title": "Nomad Lifestyle",
-      "text": "Learn our tips and tricks on living a nomadic lifestyle",
+      // "title": "Nomad Lifestyle",
+      "text": "provides users with financial tools to monitor investments and analyze stock behavior.",
       "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
     },
     {
       "category": "Portfolio Optimization",
-      "title": "React and the WP-API",
-      "text": "The first ever decoupled starter theme for React & the WP-API",
+      // "title": "React and the WP-API",
+      "text": " committed to translating research into practice and profits.",
       "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
     },
     
