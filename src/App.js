@@ -73,14 +73,14 @@ export default function App() {
                     <AboutIndex/>
                 }
               />
-{/* 
-            <Route path="/signup" element={<Signup/>}/>
-            <Route path="/login" element={<Login/>}/> */}
 
-            {/* <Route exact path='/home' element={<PrivateRoute/>}>
+            <Route path="/signup" element={<Signup/>}/>
+            <Route path="/login" element={<Login/>}/>
+
+            <Route exact path='/home' element={<PrivateRoute/>}>
                 <Route exact path='/home' element={<MarketNews/>} />
 
-            </Route> */}
+            </Route>
 
             {/* <Route exact path='/dashboard' element={<PrivateRoute/>}>
                 <Route exact path='/dashboard' element={<NewDashboard/>} />

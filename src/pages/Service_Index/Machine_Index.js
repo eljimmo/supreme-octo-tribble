@@ -3,7 +3,6 @@ import { Affix, Button, rem } from '@mantine/core';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer/index';
 import Sidebar from '../../components/Sidebar/index';
-// import CApp from '../components/CoBot/App';
 import StockSearch from '../../views/StockSearch/Stock_Search_Index';
 import DashboardContent from '../../components/Stock_Portfolio/Market_News';
 import ACpp from '../../components/Stock_Portfolio/Coin_Load';

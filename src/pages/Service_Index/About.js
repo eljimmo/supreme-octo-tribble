@@ -8,15 +8,7 @@ import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
 
 import {
-  HeroContainerTransparent,
-  // HeroContainer252525,
-  // HeroContainerWhite,
-  // HeroContainerWhite2,
-  // HeroP,
-  // HeroH1,
-  // HeroContainer,
-  // HeroContent
-
+  HeroContainerTransparent
 } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';

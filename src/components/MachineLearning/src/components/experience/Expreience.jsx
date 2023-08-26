@@ -13,7 +13,8 @@ import {
   BTopLine,
   ZTopLine,
   RTopLine,
-  BlackTopLine
+  BlackTopLine,
+  WhiteTopLine
   // Heading1,
   // Heading2,
   // Subtitle,

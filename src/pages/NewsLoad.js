@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-// import NewsCard from "../Cards/NewsCard";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 

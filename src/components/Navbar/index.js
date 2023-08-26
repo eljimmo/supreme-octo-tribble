@@ -84,13 +84,13 @@ const Navbar = ({ toggle }) => {
               </NavItem>
 
 
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks2a
                   to='/login'
                 >
                   Login
                 </NavLinks2a>
-              </NavItem> */}
+              </NavItem>
 
             </NavMenu>
         

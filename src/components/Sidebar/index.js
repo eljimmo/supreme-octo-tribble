@@ -50,7 +50,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarRoute>
 
 
-          {/* <SidebarRoute
+          <SidebarRoute
             to='/signup'
           >
             Sign Up
@@ -61,7 +61,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             to='/login'
           >
             Log in
-          </SidebarRoute> */}
+          </SidebarRoute>
 
 
           

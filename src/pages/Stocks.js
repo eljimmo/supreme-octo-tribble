@@ -8,7 +8,7 @@ import { rows } from "./indData";
 import IconButton from "@mui/material/IconButton";
 import Fingerprint from "@mui/icons-material/Fingerprint";
 import TablePagination from "@mui/material/TablePagination";
-// import Title from "./Title";
+
 import {
   doc,
   updateDoc,

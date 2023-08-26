@@ -8,6 +8,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { Outlet } from 'react-router-dom';
+// import Copyright from "../components/Copyright";
 import { styled } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
 import Avatar from "@mui/material/Avatar";
@@ -19,22 +20,18 @@ import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-// import NotificationsIcon from "@mui/icons-material/Notifications";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+
+import MainListItems from "../pages/listitems";
+import SecondaryListItems from "../pages/listitems2";
 import { deepPurple } from "@mui/material/colors";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-// import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import ClearIcon from '@mui/icons-material/Clear';
-// import Typewriter from 'typewriter-effect';
-
-// import { useLocation } from 'react-router-dom';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import MainListItems from "../pages/listitems";
-import SecondaryListItems from "../pages/listitems2";
-import ThirdListItems from "../pages/listitems3";
-
-
+// import CheckboxesTags from "../Dashboard/SearchBar"
 const drawerWidth = 240;
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -127,7 +124,7 @@ const Drawer = styled(MuiDrawer, {
     })
   }
 }));
-
+//
 
 
 function DashboardContent() {
@@ -142,7 +139,7 @@ function DashboardContent() {
   const[error,setError]= useState("");
   const {currentUser, logout} = useAuth();
   const history = useNavigate();
-  // const location = useLocation();
+  const location = useLocation();
   async function handleLogout(){
     setError('');
     try{
@@ -212,28 +209,25 @@ if(currentUser===null)
               noWrap
               sx={{ flexGrow: 1 }}
             >
-
-
-              Analytical Modeling
-
-
+              Dashboard
             </Typography>
+            {/* <CheckboxesTags/> */}
             <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}
         
       />
-            {/* <IconButton color="inherit">
+            <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
               </Badge>
-            </IconButton> */}
+            </IconButton>
             
             <IconButton color="inherit">
               <Avatar sx={{ bgcolor: deepPurple[500] }}>{currentUser.email[0].toUpperCase()}</Avatar>
             </IconButton>
             <IconButton color="inherit"  onClick={handleLogout}>
               <Badge color="secondary">
-                <ClearIcon />
+                <ExitToAppIcon />
               </Badge>
             </IconButton>
           </Toolbar>
@@ -256,8 +250,6 @@ if(currentUser===null)
             <MainListItems/>
             <Divider sx={{ my: 1 }} />
             <SecondaryListItems/>
-            <Divider sx={{ my: 1 }} />
-            <ThirdListItems/>
           </List>
         </Drawer>
 
@@ -282,6 +274,7 @@ if(currentUser===null)
               <Outlet/>
               
             </Grid>
+            {/* <Copyright sx={{ pt: 4 }} /> */}
           </Container>
         </Box>
       </Box>

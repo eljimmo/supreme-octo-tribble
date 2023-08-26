@@ -4,17 +4,7 @@ import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from '../firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import {
-    InfoWrapper2,
     InfoContainer,
-    // TopLine,
-    // Heading1,
-    TopLine1,
-    Heading2,
-    Wrapper,
-    Wrapper2,
-    Heading3,
-    BlackTopLine,
-    HeroContainer1
   } from "../components/InfoSection/InfoElements";
 
 import '../components/FrostedGlass/styles.css'

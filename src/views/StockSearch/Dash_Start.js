@@ -6,7 +6,10 @@ import { Tabs } from '@mantine/core';
 // import Performance_page from './Analytic_Dash/Performance_Stren';
 import StockSearch from '../StockSearch/Stock_Search_Index';
 import { Icon3dCubeSphere, IconAlphabetGreek, IconBinaryTree, IconTriangleSquareCircle, IconFocusCentered } from '@tabler/icons-react';
-
+// import StockPrediction from '../StockSearch/Stock_Pred';
+// import App from './DataChart';
+// import App from '../StockSearch/Testing/Index';
+import CardApp from '../StockSearch/Testing/Card_Index';
 
 function Tabs_Demo() {
   return (
@@ -24,14 +27,15 @@ function Tabs_Demo() {
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
       <StockSearch/>
+      <CardApp/>
+
       </Tabs.Panel>
       <Tabs.Panel value="second" pt="xs">
       </Tabs.Panel>
       <Tabs.Panel value="third" pt="xs">
-      {/* <Demo_con/> */}
       </Tabs.Panel>
       <Tabs.Panel value="fourth" pt="xs">
-      {/* <Performance_page/> */}
+      {/* <App/> */}
     </Tabs.Panel>
     <Tabs.Panel value="fifth" pt="xs">
     {/* <Backtesting_Page/> */}

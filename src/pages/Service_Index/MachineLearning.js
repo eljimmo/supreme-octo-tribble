@@ -6,11 +6,6 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
 import Videoapp from '../../components/VideoTexture/App';
-import {
-  HeroContainerTransparent,
-  HeroContainer252525,
-  HeroContainerWhite
-} from "../../components/HeroSection/HeroElements";
 
 export default function MachinelearningIndex() {
   const [isOpen, setIsOpen] = useState(false);

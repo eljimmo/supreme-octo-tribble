@@ -69,7 +69,7 @@ loop: true,
         </h1>
         <List open={state.open}>
           <p>
-            Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build research AI models and experimentational Agents for Financial Analysis & decision making. We utilize a variety of technologies to create a powerful ecosystem for testing analytical agents. 
+            Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build research AI models and experimentational Agents for Financial Analysis & decision making. We utilize a variety of technologies to create a powerful ecosystem for testing analytical bots to trade & simulate stock movements. 
 
 
                       </p>
