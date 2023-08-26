@@ -36,8 +36,8 @@ const Footer = () => {
               <FooterLinkTitle>About Us</FooterLinkTitle>
               <FooterLink to='/about'>How it works</FooterLink>
               <FooterLink to='/'>Why Choose Project Leibniz</FooterLink>
-              <FooterLink to='/'>Careers</FooterLink>
-              <FooterLink to='/'>Investors</FooterLink>
+              {/* <FooterLink to='/'>Careers</FooterLink>
+              <FooterLink to='/'>Investors</FooterLink> */}
               <FooterLink to='/'>Terms of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
