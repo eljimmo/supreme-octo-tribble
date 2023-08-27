@@ -5,22 +5,10 @@ import StockCard from './StockCard';
 import StockCardNegative from './StockCardNeg';
 
   import {
-    // InfoContainer,
-    // InfoWrapper,
-    // InfoWrapper2,
-    // InfoRow,
-    // Column1,
-    // Column2,
-    // TextWrapper,
-    // TextWrapper2,
     BTopLine,
-    ZTopLine,
     RTopLine,
-    BlackTopLine,
     WhiteTopLine
-    // Heading1,
-    // Heading2,
-    // Subtitle,
+
   } from "../../../components/MachineLearning/src/components/experience/elements";
 
 

@@ -22,11 +22,13 @@ import {
 function StockCardNegative({ stock }) {
   return (
     <div className="stock-card">
-      {/* <img src={stock.logo} alt={`${stock.companyName} logo`} className="stock-logo" /> */}
       <Heading4a>{stock.companyName}</Heading4a>
       <LilRTopLine>Change: {stock.changePercent}%</LilRTopLine>
       <p>Price: ${stock.latestPrice}</p>
-      {/* <p>Sector: {stock.sector}</p> */}
+      <p>PE Ratio {stock.peRatio}</p>
+      <p>52 Week High: ${stock.week52High}</p>
+      <p>52 Week Low: ${stock.week52Low}</p>
+      <p>Symbol {stock.symbol}</p>
     </div>
   );
 }

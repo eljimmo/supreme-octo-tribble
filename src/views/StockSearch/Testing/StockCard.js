@@ -1,31 +1,34 @@
 import React from 'react';
 import {
-    InfoWrapper2,
-    // TopLine,
-    // Heading1,
-    TopLine1,
-    Heading2,
-    Wrapper,
-    Wrapper2,
-    Heading3,
     LilGreenLine,
     Heading4a,
-    BlackTopLine,
-    HeroContainer1,
-    InfoContainer3,
-    AnimatedGradientText1
   } from "../../../components/InfoSection/InfoElements";
-  
+  import { Line } from 'react-chartjs-2';
 
+
+// const chartData = {
+//     labels: stockData.map(data => data.date),
+//     datasets: [
+//       {
+//         label: 'Stock Price',
+//         data: stockData.map(data => data.close),
+//         borderColor: 'rgba(75,192,192,1)',
+//         backgroundColor: 'rgba(75,192,192,0.2)',
+//         fill: true,
+//       },
+//     ],
+//   };
 
 function StockCard({ stock }) {
   return (
     <div className="stock-card">
-      {/* <img src={stock.logo} alt={`${stock.companyName} logo`} className="stock-logo" /> */}
       <Heading4a>{stock.companyName}</Heading4a>
       <LilGreenLine>Change: {stock.changePercent}%</LilGreenLine>
       <p>Price: ${stock.latestPrice}</p>
-      {/* <p>Sector: {stock.sector}</p> */}
+      <p>PE Ratio {stock.peRatio}</p>
+      <p>52 Week High: ${stock.week52High}</p>
+      <p>52 Week Low: ${stock.week52Low}</p>
+      <p>Symbol {stock.symbol}</p>
     </div>
   );
 }
