@@ -251,6 +251,22 @@ export const TopLine = styled.div`
 `;
 
 
+
+export const LilGreenLine = styled.div`
+  color: #00b100;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+
+`;
+
 export const YTopLine = styled.div`
   color: #ffff00;
   font-size: 16px;
@@ -270,6 +286,11 @@ export const RTopLine = styled.div`
   text-transform: uppercase;
   margin-bottom: 16px;
 `;
+
+
+
+
+
 
 export const TopLine1 = styled.div`
   color: #00b100;
@@ -372,6 +393,36 @@ export const Heading3 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 48px;
+  }
+`;
+
+
+
+export const Heading4a = styled.h1`
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+
+
+export const LilRTopLine = styled.div`
+  color: #ff0900;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
   }
 `;
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles.css';
 import StockCard from './StockCard';
+import StockCardNegative from './StockCardNeg';
 
   import {
     // InfoContainer,
@@ -58,7 +59,7 @@ function CardApp() {
         <div className="stock-section">
           <RTopLine>Losers</RTopLine>
           {losers.map(stock => (
-            <StockCard key={stock.symbol} stock={stock} />
+            <StockCardNegative key={stock.symbol} stock={stock} />
           ))}
         </div>
       </div>

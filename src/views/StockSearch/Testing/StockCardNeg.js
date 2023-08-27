@@ -7,9 +7,10 @@ import {
     Heading2,
     Wrapper,
     Wrapper2,
+    RTopLine,
     Heading3,
-    LilGreenLine,
     Heading4a,
+    LilRTopLine,
     BlackTopLine,
     HeroContainer1,
     InfoContainer3,
@@ -18,16 +19,16 @@ import {
   
 
 
-function StockCard({ stock }) {
+function StockCardNegative({ stock }) {
   return (
     <div className="stock-card">
       {/* <img src={stock.logo} alt={`${stock.companyName} logo`} className="stock-logo" /> */}
       <Heading4a>{stock.companyName}</Heading4a>
-      <LilGreenLine>Change: {stock.changePercent}%</LilGreenLine>
+      <LilRTopLine>Change: {stock.changePercent}%</LilRTopLine>
       <p>Price: ${stock.latestPrice}</p>
       {/* <p>Sector: {stock.sector}</p> */}
     </div>
   );
 }
 
-export default StockCard;
+export default StockCardNegative;
