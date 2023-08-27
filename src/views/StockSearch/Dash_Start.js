@@ -10,6 +10,8 @@ import { Icon3dCubeSphere, IconAlphabetGreek, IconBinaryTree, IconTriangleSquare
 // import App from './DataChart';
 // import App from '../StockSearch/Testing/Index';
 import CardApp from '../StockSearch/Testing/Card_Index';
+// import StockMov from '../StockSearch/Testing/Stock_Mov';
+import StockCard from './Testing/StockCard';
 
 function Tabs_Demo() {
   return (
@@ -27,6 +29,7 @@ function Tabs_Demo() {
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
       <StockSearch/>
+      <StockCard/>
       <CardApp/>
 
       </Tabs.Panel>

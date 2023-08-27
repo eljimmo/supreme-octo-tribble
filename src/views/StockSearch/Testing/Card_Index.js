@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles.css';
-import StockCard from './StockCard';
+import StockCard from './StockCardPos';
 import StockCardNegative from './StockCardNeg';
 
   import {
