@@ -11,7 +11,8 @@ import { Icon3dCubeSphere, IconAlphabetGreek, IconBinaryTree, IconTriangleSquare
 // import App from '../StockSearch/Testing/Index';
 import CardApp from '../StockSearch/Testing/Card_Index';
 // import StockMov from '../StockSearch/Testing/Stock_Mov';
-import StockCard from './Testing/StockCard';
+import BarCharts from './Testing/BarCharts';
+import ThreejsApp from './Testing/threejschart';
 
 function Tabs_Demo() {
   return (
@@ -29,9 +30,9 @@ function Tabs_Demo() {
       <div className="content">
       <Tabs.Panel value="first" pt="xs">
       <StockSearch/>
-      <StockCard/>
+      <BarCharts/>
       <CardApp/>
-
+      <ThreejsApp/>
       </Tabs.Panel>
       <Tabs.Panel value="second" pt="xs">
       </Tabs.Panel>

@@ -426,6 +426,41 @@ export const LilRTopLine = styled.div`
   }
 `;
 
+export const LilGTopLine = styled.div`
+  color: #00b100;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
+
+
+
+export const AnimatedGradientSmall = styled.h1`
+  animation: ${gradientText} 5s ease-in-out infinite;
+  font-size: 14px;
+
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+
+`;
+
 
 export const Subtitle = styled.p`
   max-width: 440px;

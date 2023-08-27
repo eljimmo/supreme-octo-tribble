@@ -3,12 +3,13 @@ import axios from 'axios';
 import './styles.css';
 import StockCard from './StockCardPos';
 import StockCardNegative from './StockCardNeg';
-
-  import {
+import HoverCard from './HoverChart';
+import {
     BTopLine,
     RTopLine,
-    WhiteTopLine
-
+    WhiteTopLine,
+    AnimatedGradientSmall
+    
   } from "../../../components/MachineLearning/src/components/experience/elements";
 
 
@@ -36,7 +37,8 @@ function CardApp() {
 
   return (
     <div className="App">
-      <WhiteTopLine>Top Daily Stock Gainers and Losers</WhiteTopLine>
+      <br/>
+      <AnimatedGradientSmall>Top Daily Stock Gainers and Losers</AnimatedGradientSmall>
       <div className="stock-list">
         <div className="stock-section">
           <BTopLine>Gainers</BTopLine>
@@ -49,6 +51,11 @@ function CardApp() {
           {losers.map(stock => (
             <StockCardNegative key={stock.symbol} stock={stock} />
           ))}
+
+        {/* {losers.map(stock => (
+            <HoverCard key={stock.symbol} stock={stock} />
+          ))} */}
+
         </div>
       </div>
     </div>
