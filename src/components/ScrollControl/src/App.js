@@ -3,12 +3,14 @@ import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
 import Typewriter from 'typewriter-effect';
-
+import InfoSection from '../../InfoSection';
+import InfoSectionCanva from '../../InfoSection/index_Canvas';
+import { homeObjOne, homeObjTwo } from '../../InfoSection/Data';
 
 
 export default function ScApp() {
   return (
-    <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'transparent' }}>
+    <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'transparent' }}>
     <Canvas camera={{ position: [0, 0, 20], fov: 15
 
     // set the background color of the scene to black
@@ -16,33 +18,60 @@ export default function ScApp() {
     
     
     }}>
-      <ScrollControls damping={0.2} pages={3} distance={0.5}>
+      <ScrollControls damping={0.2} pages={3} distance={0.9}>
           <Scroll>
 
             <Typography />
             <Images />
           </Scroll>
+          {/* <Scroll html>
+            <div>
+          <InfoSection {...homeObjOne} />
+          <InfoSectionCanva {...homeObjTwo} />
+          </div>
+            </Scroll> */}
+
           <Scroll html>
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'whitesmoke' }}>
+                    <div style={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100vw',
+            height: '100vh',
+            color: 'whitesmoke'
+          }}>
             artificial Neurons or Nodes
-                          <br />
-                          predictive modeling, adaptive control
-                                        <br />
+            <br />
+            predictive modeling, adaptive control
+            <br />
+            <br />
 
+            <br />
 
-                                        cognitive modelling
-                                                      <br />
-            </div>
+            <br />
+
+            cognitive modelling
+            <br />
+            {/* <InfoSectionCanva {...homeObjTwo} /> */}
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <InfoSection {...homeObjOne} />
+
+          </div>
+
 
 
             <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
             <Typewriter
-  options={{
-    strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
-    autoStart: true,
-    loop: true,
-  }}
-/>
+              options={{
+                strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
             </div>
 
           </Scroll>
@@ -77,8 +106,8 @@ function Images() {
   })
   return (
     <group ref={group}>
-      <Image position={[-2, 0, 0]} scale={[4, height, 1]} url="/invest.jpg" />
-      <Image position={[2, 0, 3]} scale={3} url="/nodes.jpg" />
+      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/invest.jpg" />
+      <Image position={[2, 2.5, 3]} scale={3} url="/nodes.jpg" />
       <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/crosshair.jpg" />
       <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
       <Image position={[0.75, -height, 10.5]} scale={1.5} url="/Blue.jpg" />
@@ -94,8 +123,9 @@ function Typography() {
   const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'whitesmoke' }
   return (
     <>
-      <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height / 10, 6]} {...shared} />
-      <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, -height * 2, 6]} {...shared} />
+
+      <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height  * 3, 2]} {...shared} />
+      <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, -height * 1, 6]} {...shared} />
       <Text children="Smart Analysis" position={[0, -height * 4.624, 6]} {...shared} />
     </>
   )

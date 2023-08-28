@@ -26,8 +26,8 @@ export default function WelcomePage() {
 <HeroSection/>
 <Videoapp/>
 
-<InfoSection {...homeObjOne} />
-<InfoSectionCanva {...homeObjTwo} />
+{/* <InfoSection {...homeObjOne} />
+<InfoSectionCanva {...homeObjTwo} /> */}
 <br/>
 <br/>
 

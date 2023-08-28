@@ -99,7 +99,7 @@ const StyledScrollingText = styled(Typography)(({ theme }) => ({
 }));
 //End component styles
 
-const About = () => {
+const ScrollBelt = () => {
   const [aboutContainer, aboutContainerInView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -125,19 +125,6 @@ const About = () => {
 
   return (
     <Scroll.Element name="About">
-        {/* <InfoContainer3>
-
-          <TopLine1>
-
-
-            Hey there! My name is Maximilian and I have been building different
-            types of web and mobile applications for 7+ years. After publishing
-            a few games to the iOS App Store, I became more interested in
-            developing responsive web designs with React. Listed below are some
-            of the languages and technologies that I have experience using.
-          </TopLine1>
-          </InfoContainer3> */}
-
           <StyledScrollingContainer>
             <StyledScrollingBelt>
               {technologiesArr.map((item, index) => (
@@ -154,4 +141,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ScrollBelt;
