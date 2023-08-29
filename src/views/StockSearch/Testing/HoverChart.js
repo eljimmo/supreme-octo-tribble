@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import {
-    LilGTopLine,
-    LilRTopLine,
     AnimatedGradientSmall
   } from "../../../components/InfoSection/InfoElements";
 
@@ -16,7 +14,6 @@ const [likeList, setLikeList] = useState('');
       <p>PE Ratio {stock.peRatio}</p>
       <p>52 Week High: ${stock.week52High}</p>
       <p>52 Week Low: ${stock.week52Low}</p>
-      {/* <p>Symbol {stock.symbol}</p> */}
 
 
     </div>;

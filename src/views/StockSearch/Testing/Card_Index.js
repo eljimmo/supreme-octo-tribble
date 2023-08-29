@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles.css';
-import StockCard from './StockCardPos';
+import StockCardPos from './StockCardPos';
 import StockCardNegative from './StockCardNeg';
-import HoverCard from './HoverChart';
 import {
     BTopLine,
     RTopLine,
-    WhiteTopLine,
     AnimatedGradientSmall
     
   } from "../../../components/MachineLearning/src/components/experience/elements";
@@ -43,7 +41,7 @@ function CardApp() {
         <div className="stock-section">
           <BTopLine>Gainers</BTopLine>
           {gainers.map(stock => (
-            <StockCard key={stock.symbol} stock={stock} />
+            <StockCardPos key={stock.symbol} stock={stock} />
           ))}
         </div>
         <div className="stock-section">
@@ -52,9 +50,6 @@ function CardApp() {
             <StockCardNegative key={stock.symbol} stock={stock} />
           ))}
 
-        {/* {losers.map(stock => (
-            <HoverCard key={stock.symbol} stock={stock} />
-          ))} */}
 
         </div>
       </div>

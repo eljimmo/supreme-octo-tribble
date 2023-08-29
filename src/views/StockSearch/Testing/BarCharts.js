@@ -131,20 +131,6 @@ const historicalChartData = {
         />
         {selectedStockData && (
           <>
-            {/* <Line
-              data={historicalChartData}
-              options={{ maintainAspectRatio: false }}
-              height={150}
-            /> */}
-            {/* <div className="tooltip-line-chart">
-              {selectedStockData.symbol === historicalChartData.datasets[0].label && (
-                <Line
-                  data={historicalChartData}
-                  options={{ maintainAspectRatio: true }}
-                  height={150}
-                />
-              )}
-            </div> */}
           </>
         )}
           </div>
@@ -156,20 +142,6 @@ const historicalChartData = {
         />
         {selectedStockData && (
           <>
-            {/* <Line
-              data={historicalChartData}
-              options={{ maintainAspectRatio: true }}
-              height={100}
-            /> */}
-          {/* <div className="tooltip-line-chart">
-        {selectedStockData.symbol === historicalChartData.datasets[0].label && (
-            <Line
-              data={historicalChartData}
-              options={{ maintainAspectRatio: true }}
-              height={100}
-            />
-)}
-            </div> */}
           </>
         )}
       </div>

@@ -10,7 +10,7 @@ import {
 
 
 
-function StockCard({ stock }) {
+function StockCardPos({ stock }) {
   
 
 
@@ -23,4 +23,4 @@ function StockCard({ stock }) {
   );
 }
 
-export default StockCard;
+export default StockCardPos;

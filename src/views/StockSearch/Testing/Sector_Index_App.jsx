@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
-// import HoverCardSector from "../../../../views/StockSearch/Testing/SectorCard";
-import { HeroContainer, HeroContainer400  } from "../../../HeroSection/HeroElements";
-import { Heading4a, HeroContainer1 } from "../../../InfoSection/InfoElements";
 import styled from "styled-components";
-
 
 const SectorInfoContainer = styled.div`
   display: flex;
@@ -28,9 +23,7 @@ const SectorPerformance = styled.p`
   margin: 5px 0;
 `;
 
-
-
-const SectorInfo = () => {
+const SectorInfoIndex = () => {
   const [sectorData, setSectorData] = useState([]);
 
   useEffect(() => {
@@ -55,40 +48,17 @@ const SectorInfo = () => {
 
   return (
     <div>
-    <SectorInfoContainer>
-      <Heading4a>
-        Sector Information
-      </Heading4a>
-      <List>
+      <h2>Sector Information</h2>
       <SectorInfoContainer>
         {sectorData.map((sector, index) => (
-          <ListItem key={index}>
-            <ListItemText
-              primary={
-                <span
-                  style={{
-                    color: sector.performance > 0 ? "green" : "red",
-                  }}
-                >
-                  performance: {sector.performance}
-                </span>
-              }
-              secondary={
-                <span style={{ color: "white" }}>{sector.name}</span>
-              }
-            />
-          </ListItem>
+          <SectorCard key={index}>
+            <SectorTitle>{sector.name}</SectorTitle>
+            <SectorPerformance>Performance: {sector.performance}</SectorPerformance>
+          </SectorCard>
         ))}
       </SectorInfoContainer>
-      </List>
-      </SectorInfoContainer>
-
     </div>
   );
 };
 
-export default SectorInfo;
-
-
-
-
+export default SectorInfoIndex;
