@@ -31,11 +31,11 @@ export default function WelcomePage() {
 <br/>
 
             {/* <BOTA/> */}
-            <HeroContainerTransparent>
-            <SectorInfoIndex/>
+            {/* <HeroContainerTransparent> */}
+            {/* <SectorInfoIndex/> */}
 
             {/* <DashApp/> */}
-            </HeroContainerTransparent>
+            {/* </HeroContainerTransparent> */}
             <ScApp/>
         <Footer/>
     </>
