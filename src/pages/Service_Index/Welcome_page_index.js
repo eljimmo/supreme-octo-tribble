@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import InfoSection from '../../components/InfoSection';
-import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
-import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
 import Footer from '../../components/Footer/index';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
-
+import MiniApp from '../../components/MiniMap/App';
+import SectorInfo from '../../components/portfolio_react/components/about/SectorInfo';
+import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 
 
 export default function WelcomePage() {
@@ -21,22 +20,16 @@ export default function WelcomePage() {
     <>
           <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <Videoapp/> */}
-
 <HeroSection/>
 <Videoapp/>
+      <ScrollBelt/>
+      <SectorInfo/>
 
-{/* <InfoSection {...homeObjOne} />
-<InfoSectionCanva {...homeObjTwo} /> */}
 <br/>
 <br/>
 
             {/* <BOTA/> */}
             <ScApp/>
-            {/* <HeroSection2/> */}
-            {/* <App/> */}
-            {/* <TilesApp/> */}
-
         <Footer/>
     </>
   );

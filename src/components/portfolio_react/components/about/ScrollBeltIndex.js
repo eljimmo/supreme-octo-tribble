@@ -1,23 +1,8 @@
-import { React } from "react";
+import React, { useState, useEffect } from "react";
 import { Typography, styled } from "@mui/material";
-
-import {
-    InfoWrapper2,
-    // TopLine,
-    // Heading1,
-    TopLine1,
-    Heading2,
-    Wrapper,
-    Wrapper2,
-    Heading3,
-    BlackTopLine,
-    HeroContainer1,
-    InfoContainer3,
-    AnimatedGradientText1
-  } from "../../../InfoSection/InfoElements";
-  
 import { useInView } from "react-intersection-observer";
 import * as Scroll from "react-scroll";
+import axios from "axios"; // Import axios for API requests
 
 //Component styles//
 const StyledScrollingContainer = styled("div")(({ theme }) => ({
@@ -99,45 +84,95 @@ const StyledScrollingText = styled(Typography)(({ theme }) => ({
 }));
 //End component styles
 
+
+
+
 const ScrollBelt = () => {
   const [aboutContainer, aboutContainerInView] = useInView({
     threshold: 0.5,
     triggerOnce: true,
   });
-  const technologiesArr = [
-    "build network architecture ",
-    "paper trading mode ",
-    "sampling period and trade frequency",
-    "cryptocurrency",
-    "order & pair management",
-    "portfolio management",
-    "trading bots",
-    "backtesting",
-    "trading charts",
-    "technical-analysis-based approach",
-    "watchdog bots",
-    "live strategy",
-    "open trading intelligence network",
-    "integrated charting system",
-    "algorithmic trading",
-    "data-mining",
-  ];
+
+  const [topGainers, setTopGainers] = useState([]);
+  const [topLosers, setTopLosers] = useState([]);
+
+  useEffect(() => {
+    async function fetchTopGainersAndLosers() {
+      try {
+        const responseGainers = await axios.get(
+          "https://cloud.iexapis.com/stable/stock/market/list/gainers",
+          {
+            params: {
+              token: "pk_0e682b29c77d48f9804e3dd05453bf0e",
+            },
+          }
+        );
+        setTopGainers(responseGainers.data);
+
+        const responseLosers = await axios.get(
+          "https://cloud.iexapis.com/stable/stock/market/list/losers",
+          {
+            params: {
+              token: "pk_0e682b29c77d48f9804e3dd05453bf0e",
+            },
+          }
+        );
+        setTopLosers(responseLosers.data);
+      } catch (error) {
+        console.error("Error fetching top gainers and losers", error);
+      }
+    }
+
+    fetchTopGainersAndLosers();
+  }, []);
 
   return (
     <Scroll.Element name="About">
-          <StyledScrollingContainer>
-            <StyledScrollingBelt>
-              {technologiesArr.map((item, index) => (
-                <StyledScrollingItem key={index}>
-                  <StyledScrollingText component="h1">
-                    {item}
-                  </StyledScrollingText>
-                </StyledScrollingItem>
-              ))}
-            </StyledScrollingBelt>
-          </StyledScrollingContainer>
-    </Scroll.Element>
+      <StyledScrollingContainer>
+        <StyledScrollingBelt>
+          {topGainers.map((stock, index) => (
+            <StyledScrollingItem key={index}>
+              <StyledScrollingText component="h1">
+                {stock.symbol} (
+                <span
+                  style={{
+                    color: stock.changePercent > 0 ? "green" : "red",
+                  }}
+                >
+                  {stock.changePercent.toFixed(2)}%
+                </span>
+                )
+                <br />
+                Price: {stock.latestPrice}
+                <br />
+                52 Week High: {stock.week52High}
 
+              </StyledScrollingText>
+            </StyledScrollingItem>
+          ))}
+          {topLosers.map((stock, index) => (
+            <StyledScrollingItem key={index}>
+              <StyledScrollingText component="h1">
+                {stock.symbol} (
+                <span
+                  style={{
+                    color: stock.changePercent > 0 ? "green" : "red",
+                  }}
+                >
+                  {stock.changePercent.toFixed(2)}%
+                </span>
+                )
+                <br />
+                Price: {stock.latestPrice}
+                <br />
+                52 Week High: {stock.week52High}
+   
+              </StyledScrollingText>
+            </StyledScrollingItem>
+          ))}
+        </StyledScrollingBelt>
+      </StyledScrollingContainer>
+    </Scroll.Element>
   );
 };
 

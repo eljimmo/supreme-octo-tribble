@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { useAspect, useVideoTexture, useTexture } from '@react-three/drei'
+import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 
 export default function Videoapp() {
   return (

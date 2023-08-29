@@ -6,9 +6,11 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
+import MiniApp from '../../components/MiniMap/App';
 
 import {
-  HeroContainerTransparent
+  HeroContainerTransparent,
+  HeroContainer200
 } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
@@ -26,11 +28,12 @@ export default function AboutIndex() {
       <>
           <Navbar toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
-          < HeroContainerTransparent>
+          <HeroContainerTransparent>
           <App/>
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
+          {/* <MiniApp/> */}
           <CardApp/>
           <ScrollBelt/>
           <Videoapp/>
