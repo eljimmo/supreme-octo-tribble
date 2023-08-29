@@ -5,7 +5,6 @@ import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
-import MiniApp from '../../components/MiniMap/App';
 import SectorInfo from '../../components/portfolio_react/components/about/SectorInfo';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 

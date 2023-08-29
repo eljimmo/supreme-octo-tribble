@@ -6,8 +6,6 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
-import MiniApp from '../../components/MiniMap/App';
-
 import {
   HeroContainerTransparent,
   HeroContainer200
@@ -33,7 +31,6 @@ export default function AboutIndex() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          {/* <MiniApp/> */}
           <CardApp/>
           <ScrollBelt/>
           <Videoapp/>
