@@ -33,7 +33,6 @@ export default function WelcomePage() {
             {/* <BOTA/> */}
             {/* <HeroContainerTransparent> */}
             {/* <SectorInfoIndex/> */}
-
             {/* <DashApp/> */}
             {/* </HeroContainerTransparent> */}
             <ScApp/>
