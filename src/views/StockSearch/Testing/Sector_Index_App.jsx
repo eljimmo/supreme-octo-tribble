@@ -5,6 +5,8 @@ import styled from "styled-components";
 const SectorInfoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+
 `;
 
 const SectorCard = styled.div`
@@ -13,6 +15,7 @@ const SectorCard = styled.div`
   margin: 10px;
   padding: 10px;
   width: 300px;
+  flex-direction: row;
 `;
 
 const SectorTitle = styled.h3`

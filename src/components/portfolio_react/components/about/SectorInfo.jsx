@@ -3,11 +3,14 @@ import axios from "axios";
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Heading4a } from "../../../InfoSection/InfoElements";
 import styled from "styled-components";
+import { Tooltip } from 'antd';
 
 
 const SectorInfoContainer = styled.div`
-  display: flex;
+  display: block;
   flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: row;
 `;
 
 const SectorCard = styled.div`
@@ -52,17 +55,21 @@ const SectorInfo = () => {
   }, []);
 
   return (
-    <div>
+    // <div>
     <SectorInfoContainer>
+  <Tooltip title="US Economic Sectors">
+
       <Heading4a>
         Sector Information
       </Heading4a>
+
+  </Tooltip>
       <List>
       <SectorInfoContainer>
         {sectorData.map((sector, index) => (
           <ListItem key={index}>
             <ListItemText
-              primary={
+              secondary={
                 <span
                   style={{
                     color: sector.performance > 0 ? "green" : "red",
@@ -71,7 +78,7 @@ const SectorInfo = () => {
                   performance: {sector.performance}
                 </span>
               }
-              secondary={
+              primary={
                 <span style={{ color: "white" }}>{sector.name}</span>
               }
             />
@@ -81,7 +88,7 @@ const SectorInfo = () => {
       </List>
       </SectorInfoContainer>
 
-    </div>
+    // </div>
   );
 };
 
