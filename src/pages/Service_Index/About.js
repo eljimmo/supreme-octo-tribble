@@ -6,10 +6,7 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
-import {
-  HeroContainerTransparent,
-  HeroContainer200
-} from "../../components/HeroSection/HeroElements";
+import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";

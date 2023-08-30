@@ -1,6 +1,5 @@
 import { React, Suspense } from 'react';
 import {
-  InfoContainer,
   InfoContainer3,
   InfoWrapper,
   InfoRow,

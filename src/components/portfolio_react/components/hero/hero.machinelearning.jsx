@@ -1,15 +1,8 @@
 import React from "react";
 import {
-  InfoWrapper2,
-  // TopLine,
-  Heading,
+  InfoWrapper2,  
   TopLine2a,
-  Heading3,
   AnimatedGradientText1,
-  BlueTopLine,
-  BlackTopLine,
-  HeroContainer1,
-  HeroContainerTransparent
   
 
 } from "../../../InfoSection/InfoElements";

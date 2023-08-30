@@ -1,6 +1,5 @@
 import { React } from 'react';
 import {
-  InfoContainer,
   InfoContainer3,
   InfoWrapper,
   InfoRow,
@@ -11,7 +10,6 @@ import {
   Heading,
   Subtitle,
   ImgWrap,
-  Img
 } from './InfoElements';
 import App from '../../components/shader/App';
 

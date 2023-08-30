@@ -3,7 +3,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import DynamicFormIcon from '@mui/icons-material/DynamicForm';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
 import WaterfallChartIcon from '@mui/icons-material/WaterfallChart';

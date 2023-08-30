@@ -14,7 +14,7 @@ import CardApp from '../StockSearch/Testing/Card_Index';
 import BarCharts from './Testing/BarCharts';
 import ThreejsApp from './Testing/threejschart';
 
-function Tabs_Demo() {
+function TabsDemo() {
   return (
     
     <Tabs color="yellow" defaultValue="first">
@@ -49,4 +49,4 @@ function Tabs_Demo() {
   );
 }
 
-export default Tabs_Demo;
+export default TabsDemo;

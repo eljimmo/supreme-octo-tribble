@@ -7,7 +7,7 @@ import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
 import SectorInfo from '../../components/portfolio_react/components/about/SectorInfo';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
-import DashApp from '../../components/Stock_Portfolio/LineChartIndex';
+// import DashApp from '../../components/Stock_Portfolio/LineChartIndex';
 // import { HeroContainerTransparent } from '../../components/HeroSection/HeroElements';
 // import PlotlyApp from '../../components/Stock_Portfolio/PlotlyTest';
 // import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
@@ -27,17 +27,8 @@ export default function WelcomePage() {
 <HeroSection/>
 <Videoapp/>
       <ScrollBelt/>
-      <SectorInfo/>
-
-<br/>
-<br/>
-
-            {/* <BOTA/> */}
-            {/* <HeroContainerTransparent>
-            <SectorInfoIndex/>
-            </HeroContainerTransparent> */}
             <BatchApp/>
-
+            <SectorInfo/>
             <ScApp/>
         <Footer/>
     </>

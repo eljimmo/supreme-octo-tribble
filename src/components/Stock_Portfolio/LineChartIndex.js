@@ -1,6 +1,5 @@
 import React from "react";
 import StockPriceChart from "./StockPriceChart";
-import { Row, Col } from 'reactstrap';
 import { Grid } from '@mantine/core';
 import styled from "styled-components";
 

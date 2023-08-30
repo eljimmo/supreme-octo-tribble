@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import { List, ListItemText } from "@mui/material";
 import { Heading4a } from "../../../InfoSection/InfoElements";
 import styled from "styled-components";
 import { Tooltip } from 'antd';
@@ -20,15 +20,6 @@ const SectorCard = styled.div`
   padding: 10px;
   width: 300px;
 `;
-
-const SectorTitle = styled.h3`
-  margin: 0;
-`;
-
-const SectorPerformance = styled.p`
-  margin: 5px 0;
-`;
-
 
 
 const SectorInfo = () => {

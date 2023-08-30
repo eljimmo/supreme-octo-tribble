@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import { WhiteTopLine } from "../../../components/InfoSection/InfoElements";
 
 const SectorInfoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
 `;
 
@@ -15,7 +17,6 @@ const SectorCard = styled.div`
   margin: 10px;
   padding: 10px;
   width: 300px;
-  flex-direction: row;
 `;
 
 const SectorTitle = styled.h3`
@@ -50,9 +51,8 @@ const SectorInfoIndex = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Sector Information</h2>
-      <SectorInfoContainer>
+    <SectorInfoContainer>
+   <WhiteTopLine>Sector Information</WhiteTopLine>
         {sectorData.map((sector, index) => (
           <SectorCard key={index}>
             <SectorTitle>{sector.name}</SectorTitle>
@@ -60,7 +60,7 @@ const SectorInfoIndex = () => {
           </SectorCard>
         ))}
       </SectorInfoContainer>
-    </div>
+    // </div>
   );
 };
 
