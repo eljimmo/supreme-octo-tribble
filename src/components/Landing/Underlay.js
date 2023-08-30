@@ -2,20 +2,12 @@ import styled from 'styled-components'
 
 
 import {
-  HeroContainerTransparent,
-  HeroContainer252525,
-  AnimatedGradientText,
-  HeroContent2,
-  HeroH1,
   HeroP,
-  HeroContainer,
-  HeroContent
-
 } from "../../components/HeroSection/HeroElements";
-import Videoapp2 from '../../components/VideoTexture/VApp_2';
-import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
-import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
-import App from '../../components/Curl_Noise/App';
+// import Videoapp2 from '../../components/VideoTexture/VApp_2';
+// import InfoSectionCanva from '../../components/InfoSection/index_Canvas';
+// import { homeObjOne, homeObjTwo } from '../../components/InfoSection/Data';
+// import App from '../../components/Curl_Noise/App';
 
 
 const Grid = styled.div`

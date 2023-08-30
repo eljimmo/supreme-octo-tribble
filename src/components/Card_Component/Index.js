@@ -1,26 +1,19 @@
 import React from 'react';
 import './styles.css';
-import {
-  HeroContainerTransparent,
-  HeroContainer252525,
-  AnimatedGradientText,
-  HeroContent2,
-  HeroH1,
-  HeroP,
-  HeroContainer,
-  HeroContent
+// import {
+//   HeroContainerTransparent,
+//   HeroContainer252525,
+//   AnimatedGradientText,
+//   HeroContent2,
+//   HeroH1,
+//   HeroP,
+//   HeroContainer,
+//   HeroContent
 
-} from "../../components/HeroSection/HeroElements";
+// } from "../../components/HeroSection/HeroElements";
 
 import {
-  InfoContainer,
-  InfoContainer3,
-  InfoWrapper,
-  InfoRow,
-  Column1,
   TopLine2a,
-  Column2,
-  TextWrapper,
   TopLine,
   Heading,
   Subtitle,

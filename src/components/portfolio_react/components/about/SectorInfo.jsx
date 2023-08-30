@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
-// import HoverCardSector from "../../../../views/StockSearch/Testing/SectorCard";
-import { HeroContainer, HeroContainer400  } from "../../../HeroSection/HeroElements";
-import { Heading4a, HeroContainer1 } from "../../../InfoSection/InfoElements";
+import { Heading4a } from "../../../InfoSection/InfoElements";
 import styled from "styled-components";
 
 

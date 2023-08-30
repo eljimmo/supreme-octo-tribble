@@ -4,8 +4,8 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
 import Typewriter from 'typewriter-effect';
 import InfoSection from '../../InfoSection';
-import InfoSectionCanva from '../../InfoSection/index_Canvas';
-import { homeObjOne, homeObjTwo } from '../../InfoSection/Data';
+// import InfoSectionCanva from '../../InfoSection/index_Canvas';
+import { homeObjOne } from '../../InfoSection/Data';
 
 
 export default function ScApp() {

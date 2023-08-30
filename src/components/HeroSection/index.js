@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Button } from '../ButtonElements';
-import Video from './videos/125.mp4';
+// import { Button } from '../ButtonElements';
+// import Video from './videos/125.mp4';
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
-  HeroContent,
-  HeroH1,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight
+  // HeroBg,
+  // VideoBg,
+  // HeroContent,
+  // HeroH1,
+  // HeroP,
+  // HeroBtnWrapper,
+  // ArrowForward,
+  // ArrowRight
 } from './HeroElements';
 import FrostedApp from '../../components/FrostedGlass/index';
 

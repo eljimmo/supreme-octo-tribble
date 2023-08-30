@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { BsPatchCheckFill } from "react-icons/bs";
+// import { BsPatchCheckFill } from "react-icons/bs";
 import "./experience.css";
 import {
   // InfoContainer,
@@ -13,8 +13,8 @@ import {
   BTopLine,
   ZTopLine,
   RTopLine,
-  BlackTopLine,
-  WhiteTopLine
+  // BlackTopLine,
+  // WhiteTopLine
   // Heading1,
   // Heading2,
   // Subtitle,
