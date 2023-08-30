@@ -8,7 +8,6 @@ import {
 } from '../components/InfoSection/Data';
 import HeroSection from '../components/HeroSection';
 import Services from '../components/Services/index2';
-import ChatApp from '../components/Chatbot/App';
 
 
 export default function AIPage() {
@@ -19,7 +18,6 @@ export default function AIPage() {
 <InfoSectionCanva {...homeObjOne} />
 <InfoSection {...homeObjThree} />
 <Services/>
-<ChatApp/>
         <Footer/>
     </>
   );
