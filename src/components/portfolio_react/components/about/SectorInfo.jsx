@@ -55,7 +55,6 @@ const SectorInfo = () => {
   }, []);
 
   return (
-    // <div>
     <SectorInfoContainer>
   <Tooltip title="US Economic Sectors">
 
@@ -67,7 +66,7 @@ const SectorInfo = () => {
       <List>
       <SectorInfoContainer>
         {sectorData.map((sector, index) => (
-          <ListItem key={index}>
+          <SectorCard key={index}>
             <ListItemText
               secondary={
                 <span
@@ -82,13 +81,12 @@ const SectorInfo = () => {
                 <span style={{ color: "white" }}>{sector.name}</span>
               }
             />
-          </ListItem>
+          </SectorCard>
         ))}
       </SectorInfoContainer>
       </List>
       </SectorInfoContainer>
 
-    // </div>
   );
 };
 
