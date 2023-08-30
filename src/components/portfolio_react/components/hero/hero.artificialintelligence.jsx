@@ -4,12 +4,12 @@ import {
   // TopLine,
   // Heading1,
   TopLine1,
-  Heading2,
-  Wrapper,
-  Wrapper2,
-  Heading3,
-  BlackTopLine,
-  HeroContainer1,
+  // Heading2,
+  // Wrapper,
+  // Wrapper2,
+  // Heading3,
+  // BlackTopLine,
+  // HeroContainer1,
   InfoContainer3,
   AnimatedGradientText1
 } from "../../../InfoSection/InfoElements";

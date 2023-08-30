@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Chart from 'chart.js/auto';
+// import Chart from 'chart.js/auto';
 import { Bar, Line } from 'react-chartjs-2';
-import { Row, Col } from 'reactstrap';
-import { Grid } from '@mantine/core';
+// import { Row, Col } from 'reactstrap';
+// import { Grid } from '@mantine/core';
 
 
 const BarCharts = () => {

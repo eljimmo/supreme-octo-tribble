@@ -4,7 +4,7 @@ import {
     LilGreenLine,
     Heading4a,
   } from "../../../components/InfoSection/InfoElements";
-  import { Line } from 'react-chartjs-2';
+  // import { Line } from 'react-chartjs-2';
   import HoverCard from './HoverChart';
 
 
