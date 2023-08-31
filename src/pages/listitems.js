@@ -17,20 +17,20 @@ export default function MainListItems ()
   const history = useNavigate();
 
   function Home(){
-    history('/');
+    history('/home');
   }
 
   function WatchList(){
-    history('/watchlist');
+    history('/portfolio');
   }
 
   function Dashboard(){
-    history('/dashboard',{state:{Symbol:"TSLA"}});
+    history('/portfolio',{state:{Symbol:"TSLA"}});
   }
 
 
 function Advchart(){
-  history('/lightWeight',{state:{Symbol:"TSLA"}});
+  history('/portfolio',{state:{Symbol:"TSLA"}});
 }
   return  <React.Fragment>
 
@@ -48,7 +48,7 @@ function Advchart(){
     <ListItemIcon>
       < ListIcon />
     </ListItemIcon>
-    <ListItemText primary="Monitor List" />
+    <ListItemText primary="Portfolio Page" />
   </ListItemButton>
   <ListItemButton onClick={Dashboard}>
     <ListItemIcon>

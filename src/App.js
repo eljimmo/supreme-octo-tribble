@@ -22,7 +22,7 @@ import NeuroevolutionIndex from "./pages/Service_Index/Neuroevolution";
 import MarketNews from "./pages/Market_Index";
 // import Adv from "./pages/Advchart";
 // import NewDashboard from "./pages/NewDashboard";
-
+import Pagenotfound from "./pages/Service_Index/Pagenotfound";
 
 
 export default function App() {
@@ -78,7 +78,12 @@ export default function App() {
             <Route path="/login" element={<Login/>}/>
 
             <Route exact path='/home' element={<PrivateRoute/>}>
-                <Route exact path='/home' element={<MarketNews/>} />
+                <Route exact path='/home' element={<Pagenotfound/>} />
+
+            </Route>
+
+            <Route exact path='/portfolio' element={<PrivateRoute/>}>
+                <Route exact path='/portfolio' element={<Pagenotfound/>} />
 
             </Route>
 
