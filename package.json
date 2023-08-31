@@ -8,7 +8,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@fireactjs/core": "^1.0.1",
+    "@fireactjs/core": "^1.0.15",
     "@heroicons/react": "^2.0.10",
     "@makotot/ghostui": "^2.0.0",
     "@mantine/core": "^6.0.4",
@@ -40,7 +40,7 @@
     "date-fns": "^2.30.0",
     "express": "^4.18.2",
     "express-favicon": "^2.0.4",
-    "firebase": "^9.6.10",
+    "firebase": "^10.3.0",
     "framer-motion": "^10.10.0",
     "gh-pages": "^5.0.0",
     "glsl-curl-noise2": "^0.0.4",
