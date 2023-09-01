@@ -19,7 +19,7 @@ import ArtificialIntelligenceIndex from './pages/Service_Index/ArtificialIntelli
 import MachinelearningIndex from "./pages/Service_Index/MachineLearning";
 import NeuroevolutionIndex from "./pages/Service_Index/Neuroevolution";
 // import MarketNews from "./pages/Coins_Data";
-import MarketNews from "./pages/Market_Index";
+// import MarketNews from "./pages/Market_Index";
 // import Adv from "./pages/Advchart";
 // import NewDashboard from "./pages/NewDashboard";
 import Pagenotfound from "./pages/Service_Index/Pagenotfound";
