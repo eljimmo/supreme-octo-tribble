@@ -7,11 +7,11 @@ import FrostedApp from '../../components/FrostedGlass/index';
 
 
 export default function HeroSection() {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
-  const onHover = () => {
-    setHover(!hover);
-  };
+  // const onHover = () => {
+  //   setHover(!hover);
+  // };
   return (
     <HeroContainer id='home'>
       <FrostedApp/>
