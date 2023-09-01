@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './styles.css';
 import HoverCardSector from './SectorCard';
-// import StockCardNegative from './StockCardNeg';
 import {
     BTopLine,
     AnimatedGradientSmall

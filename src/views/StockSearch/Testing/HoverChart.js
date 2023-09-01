@@ -9,7 +9,6 @@ const [likeList, setLikeList] = useState('');
 
   const renderLikeList = () => {
     return <div className="likes__list">
-        
         <p>Price: ${stock.latestPrice}</p>
       <p>PE Ratio {stock.peRatio}</p>
       <p>52 Week High: ${stock.week52High}</p>

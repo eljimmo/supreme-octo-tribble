@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import './App.css';
 import StockSelector from './StockSelector';
 import StockChart from './StockChart';
 
