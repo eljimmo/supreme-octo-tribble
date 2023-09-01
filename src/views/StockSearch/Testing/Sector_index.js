@@ -5,7 +5,6 @@ import HoverCardSector from './SectorCard';
 // import StockCardNegative from './StockCardNeg';
 import {
     BTopLine,
-    RTopLine,
     AnimatedGradientSmall
     
   } from "../../../components/MachineLearning/src/components/experience/elements";

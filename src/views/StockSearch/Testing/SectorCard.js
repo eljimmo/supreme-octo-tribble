@@ -2,12 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
     AnimatedGradientSmall
   } from "../../../components/InfoSection/InfoElements";
-// import { List, ListItem, ListItemText, Typography } from "@mui/material";
-// import axios from "axios";
-// import {
-//   LilGreenLine,
-//   Heading4a,
-// } from "../../../components/InfoSection/InfoElements";
+
 
 function HoverCardSector ( sector ) {
     const [likeList, setLikeList] = useState('');
