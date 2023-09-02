@@ -13,6 +13,7 @@ import ScrollBelt from  "../../components/portfolio_react/components/about/Scrol
 // import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
 // import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
 import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
+// import StockGraph from '../../../src/views/StockSearch/Testing/Confidence';
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,8 +29,9 @@ export default function WelcomePage() {
 <Videoapp/>
       <ScrollBelt/>
             <BatchApp/>
-            {/* <SectorInfo/> */}
             <ScApp/>
+            {/* <SectorInfo/> */}
+            {/* <StockGraph/> */}
         <Footer/>
     </>
   );

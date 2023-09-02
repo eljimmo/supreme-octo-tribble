@@ -332,6 +332,17 @@ export const WhiteTopLine = styled.div`
   margin-bottom: 16px;
 `;
 
+
+export const WhiteSmallText = styled.div`
+  color: #ffffff ;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 export const BlackTopLine = styled.div`
   color: #000000;
   font-size: 16px;
