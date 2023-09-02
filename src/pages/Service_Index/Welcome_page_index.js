@@ -14,6 +14,10 @@ import ScrollBelt from  "../../components/portfolio_react/components/about/Scrol
 // import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
 import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
 // import StockGraph from '../../../src/views/StockSearch/Testing/Confidence';
+// import RoutingApp from '../../../src/views/StockSearch/Testing/RoutingApp';
+// import Indexapp from '../../../src/views/StockSearch/Testing/RoutingTests/Index';
+// import StockQuoteR from '../../../src/views/StockSearch/Testing/RoutingTests/StockQuoteR';
+
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +34,9 @@ export default function WelcomePage() {
       <ScrollBelt/>
             <BatchApp/>
             <ScApp/>
+            {/* <StockQuoteR/> */}
             {/* <SectorInfo/> */}
-            {/* <StockGraph/> */}
+            {/* <Indexapp/> */}
         <Footer/>
     </>
   );

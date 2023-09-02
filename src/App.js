@@ -13,16 +13,11 @@ import AboutIndex from './pages/Service_Index/About';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from '../src/contexts/AuthContext';
 import ArtificialIntelligenceIndex from './pages/Service_Index/ArtificialIntelligence';
-// import Home from './pages/Home';
-// import AboutIndex from "./pages/About";
-// import MachinePage from "./pages/Machine_Index";
 import MachinelearningIndex from "./pages/Service_Index/MachineLearning";
 import NeuroevolutionIndex from "./pages/Service_Index/Neuroevolution";
-// import MarketNews from "./pages/Coins_Data";
-// import MarketNews from "./pages/Market_Index";
-// import Adv from "./pages/Advchart";
-// import NewDashboard from "./pages/NewDashboard";
 import Pagenotfound from "./pages/Service_Index/Pagenotfound";
+// import RoutingApp from './views/StockSearch/Testing/RoutingApp';
+// import Indexapp from "./views/StockSearch/Testing/RoutingTests/Index";
 
 
 export default function App() {
@@ -66,6 +61,13 @@ export default function App() {
                     <ArtificialIntelligenceIndex/>
                 }
               /> 
+
+              {/* <Route
+                path="/stocksearch"
+                element={
+                  <RoutingApp/>
+                }
+              /> */}
               
               <Route 
                 path="/about"
@@ -86,6 +88,7 @@ export default function App() {
                 <Route exact path='/portfolio' element={<Pagenotfound/>} />
 
             </Route>
+
 
             {/* <Route exact path='/dashboard' element={<PrivateRoute/>}>
                 <Route exact path='/dashboard' element={<NewDashboard/>} />

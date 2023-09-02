@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import Plotly from 'react-plotly.js';
+import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Plot from 'react-plotly.js';
+// import StockDetails from './StockDeets';
+// import StockRow from './RoutingTests/StockRow';
 
-import { WhiteTopLine, Heading4a, WhiteSmallText } from "../../../components/InfoSection/InfoElements";
+import { WhiteTopLine, Heading4a, Heading12, WhiteSmallText } from "../../../components/InfoSection/InfoElements";
 
 const SectorCard = styled.div`
   border: 1px solid #00b100;
@@ -40,15 +42,15 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
       const sharesPurchased = 100 / price52WeeksAgo; // Number of shares bought with $100
       const currentValue = sharesPurchased * latestPrice; // Current value of the investment
 
-      return currentValue.toFixed(2); // Return the current value with 2 decimal places
+  return currentValue.toFixed(2); // Return the current value with 2 decimal places
     }
     return 'N/A'; // Not enough historical data
   };
 
   const investmentReturn = calculateReturn();
 
-
-
+    
+  
   return (
     <SectorCard>
       <WhiteTopLine>Stock Symbol: {symbol}</WhiteTopLine>
@@ -76,8 +78,15 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
           paper_bgcolor: 'transparent',
           plot_bgcolor: 'transparent',
         }}
-config={{ displayModeBar: false }}
+        config={{ displayModeBar: false }}
               />
+
+      <Link to={`/stock/${symbol}`}>
+        <Heading12>
+        <button className="btn btn-sm btn-outline-secondary float-right">View Details</button>
+        </Heading12>
+      </Link>
+
     </SectorCard>
   );
 };
@@ -87,14 +96,14 @@ const BatchApp = () => {
   const [stockData, setStockData] = useState([]);
 
   useEffect(() => {
-    // Replace 'YOUR_IEX_API_TOKEN' with your actual IEX API token
-    const apiToken = 'pk_0e682b29c77d48f9804e3dd05453bf0e';
+// Replace 'YOUR_IEX_API_TOKEN' with your actual IEX API token
+        const apiToken = 'pk_0e682b29c77d48f9804e3dd05453bf0e';
     const symbols = ['XOM', 'AMZN', 'QQQ', 'SPY', 'BAC', 'XPO', 'SYM', 'USLM', 'ACIC', 'HOV']; // Example stock symbols
 
     const fetchData = async () => {
       const response = await Promise.all(
         symbols.map(async symbol => {
-          const historicalApiResponse = await fetch(
+const historicalApiResponse = await fetch(
             `https://cloud.iexapis.com/stable/stock/${symbol}/chart/2y?token=${apiToken}`
           );
           const historicalData = await historicalApiResponse.json();
@@ -104,11 +113,11 @@ const BatchApp = () => {
           );
           const latestData = await latestApiResponse.json();
 
-          return {
+                    return {
             symbol: symbol,
-            latestPrice: latestData.latestPrice,
+latestPrice: latestData.latestPrice,
             historicalData: historicalData,
-          };
+                      };
         })
       );
 
@@ -119,18 +128,19 @@ const BatchApp = () => {
   }, []);
 
   return (
-    <SectorInfoContainer>
-      <WhiteTopLine>Stock Quotes</WhiteTopLine>
-      {stockData.map((stock, index) => (
-        <StockCard
+          <SectorInfoContainer>
+        <WhiteTopLine>Stock Quotes</WhiteTopLine>
+        {stockData.map((stock, index) => (
+          <StockCard
           key={index}
           symbol={stock.symbol}
           latestPrice={stock.latestPrice}
           historicalData={stock.historicalData}
         />
-      ))}
-    </SectorInfoContainer>
-  );
+        ))}
+      </SectorInfoContainer>
+      );
 };
 
 export default BatchApp;
+

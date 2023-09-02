@@ -423,6 +423,19 @@ export const Heading4a = styled.h1`
 
 
 
+export const Heading12 = styled.h1`
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
+
+
 export const LilRTopLine = styled.div`
   color: #ff0900;
   font-size: 14px;
