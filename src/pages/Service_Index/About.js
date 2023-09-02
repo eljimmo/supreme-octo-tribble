@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/index';
-import '../../components/portfolio_react/styles.css';
 import Videoapp from '../../components/VideoTexture/App';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
