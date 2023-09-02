@@ -18,8 +18,10 @@ import NeuroevolutionIndex from "./pages/Service_Index/Neuroevolution";
 import Pagenotfound from "./pages/Service_Index/Pagenotfound";
 // import RoutingApp from './views/StockSearch/Testing/RoutingApp';
 // import Indexapp from "./views/StockSearch/Testing/RoutingTests/Index";
-
-
+import DataCollectionIndex from "./pages/Service_Index/DataCollection";
+import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
+import AccessibilityIndex from "./pages/Service_Index/Accessibility";
+import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 export default function App() {
   return (
 
@@ -62,13 +64,39 @@ export default function App() {
                 }
               /> 
 
-              {/* <Route
-                path="/stocksearch"
+              <Route
+                path="/datacollection"
                 element={
-                  <RoutingApp/>
+                  <DataCollectionIndex/>
                 }
-              /> */}
+              />
               
+
+              
+              <Route
+                path="/privacypolicies"
+                element={
+                  <PrivacyPoliciesIndex/>
+                }
+              />
+
+
+                <Route
+                path="/accessibility"
+                element={
+                  <AccessibilityIndex/>
+                }
+              />
+
+
+                <Route
+                path="/generalterms"
+                element={
+                  <GeneralTermsIndex/>
+                }
+              />
+
+
               <Route 
                 path="/about"
                 element={
