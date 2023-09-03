@@ -7,10 +7,10 @@ import { Tooltip } from 'antd';
 
 
 const SectorInfoContainer = styled.div`
-  display: block;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
   margin: 10px;
-  flex-direction: row;
+  justify-content: center;
 `;
 
 const SectorCard = styled.div`

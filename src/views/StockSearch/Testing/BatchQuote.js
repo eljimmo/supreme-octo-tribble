@@ -161,7 +161,6 @@ const BatchApp = () => {
     'XPO', 
     'SYM', 
     'USLM', 
-    'ACIC', 
     'HOV'
   ]; // Example stock symbols
 

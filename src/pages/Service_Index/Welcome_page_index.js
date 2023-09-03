@@ -5,18 +5,14 @@ import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
-// import SectorInfo from '../../components/portfolio_react/components/about/SectorInfo';
+import SectorInfo from '../../components/portfolio_react/components/about/SectorInfo';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 // import DashApp from '../../components/Stock_Portfolio/LineChartIndex';
 // import { HeroContainerTransparent } from '../../components/HeroSection/HeroElements';
-// import PlotlyApp from '../../components/Stock_Portfolio/PlotlyTest';
-// import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
-// import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
+import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
+import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
 import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
-// import StockGraph from '../../../src/views/StockSearch/Testing/Confidence';
-// import RoutingApp from '../../../src/views/StockSearch/Testing/RoutingApp';
-// import Indexapp from '../../../src/views/StockSearch/Testing/RoutingTests/Index';
-// import StockQuoteR from '../../../src/views/StockSearch/Testing/RoutingTests/StockQuoteR';
+import RoutingApp from '../../../src/views/StockSearch/Testing/RoutingApp';
 import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
 import Underlay from '../../components/Landing/Underlay';
@@ -48,11 +44,11 @@ export default function WelcomePage() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          {/* <CardApp/> */}
+          <HoverCardSector/>
 
-            {/* <StockQuoteR/> */}
-            {/* <SectorInfo/> */}
-            {/* <Indexapp/> */}
+            {/* <RoutingApp/> */}
+            <SectorInfo/>
+            {/* <SectorInfoIndex/> */}
         <Footer/>
     </>
   );
