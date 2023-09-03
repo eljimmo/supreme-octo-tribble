@@ -76,7 +76,8 @@ export default function GeneralTermsIndex() {
           of the updated Terms.
         </TermsSectionText>
       </TermsSection>
-    </TermsContainer>          <Footer/>
+    </TermsContainer>          
+    <Footer/>
       </>
     );
   }

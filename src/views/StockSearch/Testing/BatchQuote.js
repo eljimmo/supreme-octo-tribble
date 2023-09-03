@@ -20,6 +20,8 @@ const SectorInfoContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  //make the background transparent
+  background: transparent;
 
 `;
 
@@ -98,7 +100,17 @@ const BatchApp = () => {
   useEffect(() => {
 // Replace 'YOUR_IEX_API_TOKEN' with your actual IEX API token
         const apiToken = 'pk_0e682b29c77d48f9804e3dd05453bf0e';
-    const symbols = ['XOM', 'AMZN', 'QQQ', 'SPY', 'BAC', 'XPO', 'SYM', 'USLM', 'ACIC', 'HOV']; // Example stock symbols
+    const symbols = ['XOM', 
+    'AMZN', 
+    'QQQ', 
+    'SPY', 
+    'BAC', 
+    'XPO', 
+    'SYM', 
+    'USLM', 
+    'ACIC', 
+    'HOV'
+  ]; // Example stock symbols
 
     const fetchData = async () => {
       const response = await Promise.all(

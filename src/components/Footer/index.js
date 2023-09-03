@@ -34,7 +34,7 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to='/about'>How it works</FooterLink>
+              <FooterLink to='/howitworks'>How it works</FooterLink>
               <FooterLink to='/'>Why Choose Project Leibniz</FooterLink>
               {/* <FooterLink to='/'>Careers</FooterLink>
               <FooterLink to='/'>Investors</FooterLink> */}

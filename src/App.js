@@ -22,6 +22,9 @@ import DataCollectionIndex from "./pages/Service_Index/DataCollection";
 import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
+import Howitworks from "./pages/Service_Index/How";
+
+
 export default function App() {
   return (
 
@@ -93,6 +96,13 @@ export default function App() {
                 path="/generalterms"
                 element={
                   <GeneralTermsIndex/>
+                }
+              />
+
+                <Route
+                path="/howitworks"
+                element={
+                  <Howitworks/>
                 }
               />
 

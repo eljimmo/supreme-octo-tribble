@@ -2,92 +2,95 @@ import * as THREE from 'three'
 import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
-import Typewriter from 'typewriter-effect';
 import InfoSection from '../../InfoSection';
+import InfoSectionCanva from '../../InfoSection/index_Canvas';
+import InfoSection2 from '../../InfoSection/Index_Infosection2';
 // import InfoSectionCanva from '../../InfoSection/index_Canvas';
-import { homeObjOne } from '../../InfoSection/Data';
+import { homeObjOne, homeObjThree } from '../../InfoSection/Data';
 
+// import BatchApp from '../../../views/StockSearch/Testing/BatchQuote';
 
 export default function ScApp() {
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: 'transparent' }}>
-    <Canvas camera={{ position: [0, 0, 20], fov: 15
-
-    // set the background color of the scene to black
-    , background: new THREE.Color(0x000000)
-    
-    
-    }}>
-      <ScrollControls damping={0.2} pages={3} distance={0.9}>
+      <Canvas camera={{ position: [0, 0, 20], fov: 15, background: new THREE.Color(0x000000) }}>
+        <ScrollControls damping={0.2} pages={3} distance={0.9}>
           <Scroll>
-
             <Typography />
             <Images />
           </Scroll>
-          {/* <Scroll html>
-            <div>
-          <InfoSection {...homeObjOne} />
-          <InfoSectionCanva {...homeObjTwo} />
-          </div>
-            </Scroll> */}
-
           <Scroll html>
-                    <div style={{ 
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100vw',
-            height: '100vh',
-            color: 'whitesmoke'
-          }}>
-            artificial Neurons or Nodes
-            <br />
-            predictive modeling, adaptive control
-            <br />
-            <br />
-
-            <br />
-
-            <br />
-
-            cognitive modelling
-            <br />
-            {/* <InfoSectionCanva {...homeObjTwo} /> */}
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <InfoSection {...homeObjOne} />
-
-          </div>
-
-
-
-            <div style={{ transform: 'translate3d(65vw, 192vh, 0)', color: 'white' }}>
-            <Typewriter
-              options={{
-                strings: ['Creating Intelligence', 'Creating Agency', 'Creating Consciousness'],
-                autoStart: true,
-                loop: true,
+            {/* First Div */}
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100vw',
+                height: '100vh',
+                color: 'whitesmoke',
               }}
-            />
+            >
+              artificial Neurons or Nodes
+              <br />
+              predictive modeling, adaptive control
+              <br />
+              <br />
+              <br />
+              <br />
+              cognitive modeling
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <InfoSection {...homeObjOne} />
             </div>
 
+            {/* Second Div */}
+            <div
+                           style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '100vw',
+                            height: '100vh',
+                            color: 'whitesmoke',
+                          }}
+
+            >
+                   <br />
+              <br />
+              <br />
+              <br />
+              <InfoSection {...homeObjThree} />
+
+
+            {/* <BatchApp/> */}
+            </div>
           </Scroll>
           {/** This is a helper that pre-emptively makes threejs aware of all geometries, textures etc
                By default threejs will only process objects if they are "seen" by the camera leading 
                to jank as you scroll down. With <Preload> that's solved.  */}
           <Preload />
-      </ScrollControls>
-      <Environment background preset="sunset" blur={0.8} />
-
-      <Grid renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} sectionColor={[0.5, 0.5, 10]} fadeDistance={30} />
-
-
-    </Canvas>
+        </ScrollControls>
+        <Environment background preset="sunset" blur={0.8} />
+        <Grid
+          renderOrder={-1}
+          position={[0, -1.85, 0]}
+          infiniteGrid
+          cellSize={0.6}
+          cellThickness={0.6}
+          sectionSize={3.3}
+          sectionThickness={1.5}
+          sectionColor={[0.5, 0.5, 10]}
+          fadeDistance={30}
+        />
+      </Canvas>
     </div>
-  )
+  );
 }
 
 
