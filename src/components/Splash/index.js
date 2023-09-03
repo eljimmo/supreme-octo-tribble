@@ -1,9 +1,7 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import './styles.css';
 import TweenMax from 'gsap';
-// import Sine from 'gsap/src/uncompressed/easing/Sine';
-// import Sine from 'gsap';
+
 
 
 
