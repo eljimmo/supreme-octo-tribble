@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
 // import StockDetails from './StockDeets';
 // import StockRow from './RoutingTests/StockRow';

@@ -3,8 +3,6 @@ import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
 import InfoSection from '../../InfoSection';
-import InfoSectionCanva from '../../InfoSection/index_Canvas';
-import InfoSection2 from '../../InfoSection/Index_Infosection2';
 // import InfoSectionCanva from '../../InfoSection/index_Canvas';
 import { homeObjOne, homeObjThree } from '../../InfoSection/Data';
 
