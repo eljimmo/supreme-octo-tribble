@@ -44,8 +44,6 @@ const Footer = () => {
               <FooterLinkTitle>Contact Us</FooterLinkTitle>
               <FooterLink to='/'>Contact</FooterLink>
               <FooterLink to='/'>Support</FooterLink>
-              {/* <FooterLink to='/'>Destinations</FooterLink> */}
-              {/* <FooterLink to='/'>Sponsorships</FooterLink> */}
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
