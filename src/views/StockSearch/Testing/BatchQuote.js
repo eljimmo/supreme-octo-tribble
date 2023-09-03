@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
-
-
 import { WhiteTopLine, Heading4a, Heading12, WhiteSmallText } from "../../../components/InfoSection/InfoElements";
 
 const SectorCard = styled.div`
