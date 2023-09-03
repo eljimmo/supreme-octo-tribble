@@ -17,6 +17,13 @@ import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
 // import RoutingApp from '../../../src/views/StockSearch/Testing/RoutingApp';
 // import Indexapp from '../../../src/views/StockSearch/Testing/RoutingTests/Index';
 // import StockQuoteR from '../../../src/views/StockSearch/Testing/RoutingTests/StockQuoteR';
+import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
+import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
+import Underlay from '../../components/Landing/Underlay';
+import App from '../../components/Curl_Noise/App';
+import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
+import TimeClock from '../../components/TimeClock/Index';
+import CardApp from '../../components/Card_Component/Index';
 
 
 export default function WelcomePage() {
@@ -34,6 +41,15 @@ export default function WelcomePage() {
       <ScrollBelt/>
             <BatchApp/>
             <ScApp/>
+            <HeroMachineLearning/>
+            <Experience/>
+            <HeroContainerTransparent>
+          <App/>
+          <TimeClock/>
+          <Underlay/>
+          </HeroContainerTransparent>
+          <CardApp/>
+
             {/* <StockQuoteR/> */}
             {/* <SectorInfo/> */}
             {/* <Indexapp/> */}
