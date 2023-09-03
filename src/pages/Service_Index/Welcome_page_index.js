@@ -23,7 +23,7 @@ import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
 import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
-import CardApp from '../../components/Card_Component/Index';
+// import CardApp from '../../components/Card_Component/Index';
 
 
 export default function WelcomePage() {
@@ -48,7 +48,7 @@ export default function WelcomePage() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          <CardApp/>
+          {/* <CardApp/> */}
 
             {/* <StockQuoteR/> */}
             {/* <SectorInfo/> */}

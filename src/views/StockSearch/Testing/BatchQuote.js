@@ -23,6 +23,23 @@ const SectorInfoContainer = styled.div`
 `;
 
 
+function erfinv(x) {
+  const a1 =  0.254829592;
+  const a2 = -0.284496736;
+  const a3 =  1.421413741;
+  const a4 = -1.453152027;
+  const a5 =  1.061405429;
+  const p  =  0.3275911;
+
+  const sign = (x < 0) ? -1 : 1;
+  x = Math.abs(x);
+
+  const t = 1.0 / (1.0 + p * x);
+  const y = (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t;
+  
+  return sign * Math.sqrt(-2.0 * Math.log(1.0 - x * y));
+}
+
 const StockCard = ({ symbol, latestPrice, historicalData }) => {
   // Create an array to store the line color for each data point
   const lineColors = historicalData.map((dataPoint, index, data) => {
@@ -34,6 +51,30 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
       return todayClose < yesterdayClose ? 'red' : 'green';
     }
   });
+
+  const calculateConfidenceIntervals = () => {
+    const confidenceLevels = [0.95, 0.5, 0.25]; // 95%, 50%, 25%
+    const intervals = {};
+  
+    confidenceLevels.forEach(confidence => {
+      const alpha = 1 - confidence;
+      const zScore = Math.sqrt(2) * erfinv(1 - alpha);
+  
+      const confidenceInterval = historicalData.map(dataPoint => {
+        const stdDev = Math.sqrt(dataPoint.variance); // Assuming you have variance data for each data point
+        const marginOfError = zScore * (stdDev / Math.sqrt(historicalData.length));
+        const lowerBound = dataPoint.close - marginOfError;
+        const upperBound = dataPoint.close + marginOfError;
+        return [lowerBound, upperBound];
+      });
+
+      intervals[`${confidence * 100}% Confidence`] = confidenceInterval;
+    });
+
+    return intervals;
+  };
+
+  const confidenceIntervals = calculateConfidenceIntervals();
 
   const calculateReturn = () => {
     if (historicalData.length >= 52) {
@@ -69,16 +110,31 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
               width: 3
             },
           },
+          // Add confidence interval traces
+          ...Object.keys(confidenceIntervals).map(confidenceLabel => ({
+            x: historicalData.map(dataPoint => dataPoint.date),
+            y: confidenceIntervals[confidenceLabel].map(interval => (interval[0] + interval[1]) / 2), // Midpoint of the interval
+            type: 'scatter',
+            mode: 'lines',
+            name: confidenceLabel,
+            line: {
+              color: 'rgba(0, 0, 255, 0.5)', // Adjust color and opacity as needed
+              width: 1
+            },
+            fill: 'tonexty', // Fill area between lines
+            fillcolor: 'rgba(0, 0, 255, 0.2)' // Adjust fill color and opacity as needed
+          })),
         ]}
         layout={{
           width: 300,
           height: 300,
-          title: 'Stock Price Over Time',
+          title: 'Stock Price Over Time with Confidence Intervals',
           paper_bgcolor: 'transparent',
           plot_bgcolor: 'transparent',
         }}
         config={{ displayModeBar: false }}
-              />
+      />
+
 
       <Link to={`/stock/${symbol}`}>
         <Heading12>
