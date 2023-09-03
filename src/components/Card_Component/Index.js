@@ -1,17 +1,5 @@
 import React from 'react';
 import './styles.css';
-// import {
-//   HeroContainerTransparent,
-//   HeroContainer252525,
-//   AnimatedGradientText,
-//   HeroContent2,
-//   HeroH1,
-//   HeroP,
-//   HeroContainer,
-//   HeroContent
-
-// } from "../../components/HeroSection/HeroElements";
-
 import {
   TopLine2a,
   TopLine,
