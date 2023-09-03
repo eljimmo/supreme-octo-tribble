@@ -19,15 +19,10 @@ import IconButton from "@mui/material/IconButton";
 import Badge from "@mui/material/Badge";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-// import NotificationsIcon from "@mui/icons-material/Notifications";
 import { deepPurple } from "@mui/material/colors";
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-// import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import ClearIcon from '@mui/icons-material/Clear';
-// import Typewriter from 'typewriter-effect';
-
-// import { useLocation } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import MainListItems from "../pages/listitems";
