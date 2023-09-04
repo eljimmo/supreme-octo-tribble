@@ -2,26 +2,22 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Plot from 'react-plotly.js';
 import styled from 'styled-components';
+import {
+  AnimatedGradientText2
+} from "../../../components/InfoSection/InfoElements";
 
 
-
-
-
-const SectorCard = styled.div`
-  border: 1px solid #00b100;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  width: 300px;
-`;
 const SectorInfoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  //make the background transparent
   background: transparent;
+  margin: 10px;
+  padding: 10px;
+
+
 
 `;
 
@@ -106,7 +102,14 @@ const BarCharts = () => {
   return (
     // <div className="card">
     <SectorInfoContainer>
-      <div className="card-header">Top Movers - Positive Change</div>
+      <div className="card-header">
+      <AnimatedGradientText2>
+        Top Movers - Positive Change
+        </AnimatedGradientText2>
+
+      
+      
+      </div>
       <div className="card-body">
         <Plot
           data={[getChartData(topMovers.filter((stock) => stock.changePercent >= 0), positiveChangeColor)]}
@@ -126,7 +129,13 @@ const BarCharts = () => {
         />
         {selectedStockData && <>{/* Render additional information if needed */}</>}
       </div>
-      <div className="card-header">Top Losers - Negative Change</div>
+      <div className="card-header">
+      <AnimatedGradientText2>
+
+        Top Losers - Negative Change
+
+        </AnimatedGradientText2>
+        </div>
       <div className="card-body">
         <Plot
           data={[getChartData(topLosers.filter((stock) => stock.changePercent < 0), negativeChangeColor)]}

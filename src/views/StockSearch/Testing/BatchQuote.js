@@ -10,7 +10,7 @@ const SectorCard = styled.div`
   border-radius: 8px;
   margin: 10px;
   padding: 10px;
-  width: 300px;
+  width: 350px;
 `;
 const SectorInfoContainer = styled.div`
   display: flex;
@@ -155,7 +155,7 @@ const BatchApp = () => {
 // Replace 'YOUR_IEX_API_TOKEN' with your actual IEX API token
     const apiToken = 'pk_0e682b29c77d48f9804e3dd05453bf0e';
     const symbols = [
-    'XOM',  
+    // 'XOM',  
     'XPO', 
     'SYM', 
     'USLM', 
