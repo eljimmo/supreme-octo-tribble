@@ -1,13 +1,9 @@
 import { React } from 'react';
 import {
   SidebarContainer,
-  // Icon,
-  // CloseIcon,
   SidebarWrapper,
   SidebarMenu,
-  // SidebarLink,
   SidebarRoute,
-  // SideBtnWrap
 } from './SidebarElements';
 
 
@@ -21,12 +17,12 @@ const Sidebar = ({ isOpen, toggle }) => {
 
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarRoute
+          {/* <SidebarRoute
             to='/about'
 
           >
             About
-          </SidebarRoute>
+          </SidebarRoute> */}
 
 
           {/* <SidebarRoute
@@ -37,7 +33,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarRoute> */}
 
 
-          <SidebarRoute
+          {/* <SidebarRoute
             to='/MachineLearning'
           >
             Machine Learning
@@ -47,7 +43,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             to='/artificialintelligence'
           >
             Artificial Intelligence
-          </SidebarRoute>
+          </SidebarRoute> */}
 
 
           <SidebarRoute

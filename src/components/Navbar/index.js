@@ -47,13 +47,13 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/about'
                 >
                   About
                 </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
 
               {/* <NavItem>
@@ -65,22 +65,22 @@ const Navbar = ({ toggle }) => {
               </NavItem> */}
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/machinelearning'
                 >
                   Machine Learning
                 </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/artificialintelligence'
                 >
                   Artificial Intelligence
                 </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
 
               <NavItem>

@@ -45,27 +45,27 @@ export default function App() {
               />
               
 
-              <Route 
+              {/* <Route 
                 path="/neuroevolution"
                 element={
                     <NeuroevolutionIndex/>
                 }
-              />
+              /> */}
 
 
-              <Route 
+              {/* <Route 
                 path="/machinelearning"
                 element={
                     <MachinelearningIndex/>
                 }
-              />
+              /> */}
               
-              <Route 
+              {/* <Route 
                 path="/artificialintelligence"
                 element={
                     <ArtificialIntelligenceIndex/>
                 }
-              /> 
+              />  */}
 
               <Route
                 path="/datacollection"
@@ -107,12 +107,12 @@ export default function App() {
               />
 
 
-              <Route 
+              {/* <Route 
                 path="/about"
                 element={
                     <AboutIndex/>
                 }
-              />
+              /> */}
 
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>

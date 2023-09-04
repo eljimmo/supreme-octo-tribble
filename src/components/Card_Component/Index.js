@@ -21,12 +21,12 @@ const PostsData = [
       "text": "provides users with financial tools to monitor investments and analyze stock behavior.",
       "image": "https://source.unsplash.com/user/_vickyreyes/600x400"
     },
-    // {
-    //   "category": "Portfolio Optimization",
-    //   // "title": "React and the WP-API",
-    //   "text": " committed to translating research into practice and profits.",
-    //   "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
-    // },
+    {
+      "category": "Portfolio Optimization",
+      // "title": "React and the WP-API",
+      "text": " committed to translating research into practice and profits.",
+      "image": "https://source.unsplash.com/user/ilyapavlov/600x400"
+    },
     
   ]
   

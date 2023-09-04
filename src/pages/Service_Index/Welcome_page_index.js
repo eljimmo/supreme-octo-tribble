@@ -18,7 +18,7 @@ import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
 import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
-// import CardApp from '../../components/Card_Component/Index';
+import CardApp from '../../components/Card_Component/Index';
 // import Testimonial from "../../components/portfolio_react/components/testimonial/testimonial.component";
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 
@@ -49,8 +49,8 @@ export default function WelcomePage() {
             {/* <RoutingApp/> */}
             <SectorInfo/>
             <Heroartificialintelligence/>
-            {/* <Testimonial/> */}
-            {/* <SectorInfoIndex/> */}
+            <CardApp/>
+            <Videoapp/>
         <Footer/>
     </>
   );
