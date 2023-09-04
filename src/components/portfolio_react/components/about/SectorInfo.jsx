@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { Tooltip } from 'antd';
 import Plot from 'react-plotly.js';
 
+
 const SectorInfoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;

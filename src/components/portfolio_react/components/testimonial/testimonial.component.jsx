@@ -5,17 +5,25 @@ import { RTopLine } from "../../../InfoSection/InfoElements";
 import SplashApp from "../../../Splash";
 // import Videoapp from "../../../VideoTexture/App";
 // import App from "../../../Flower/App";
+import styled from "styled-components";
+
+const SectorInfoContainer = styled.div`
+  display: block;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: row;
+`;
 
 const Testimonial = () => {
   return (
 
     <div id="testimonial">
       <div className="gridlayout1">
-        <div>
+        <SectorInfoContainer>
 
         <SplashApp />
         
-        </div>
+        </SectorInfoContainer>
         <div>
 
           {/* <TopLine> Utilizing data provided by IEXCloud, Alpha Vantage, & Polygon API, we are able to create AI chatbots that can give you predictions and suggestions on what to do with your stocks.
