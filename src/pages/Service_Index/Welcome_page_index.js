@@ -9,7 +9,7 @@ import SectorInfo from '../../components/portfolio_react/components/about/Sector
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 // import DashApp from '../../components/Stock_Portfolio/LineChartIndex';
 // import { HeroContainerTransparent } from '../../components/HeroSection/HeroElements';
-import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
+// import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
 // import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
 import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
 import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
@@ -43,7 +43,7 @@ export default function WelcomePage() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          <HoverCardSector/>
+          {/* <HoverCardSector/> */}
 
             {/* <RoutingApp/> */}
             <SectorInfo/>

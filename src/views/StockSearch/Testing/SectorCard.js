@@ -2,37 +2,38 @@ import React, { useState, useEffect } from 'react';
 import {
     AnimatedGradientSmall
   } from "../../../components/InfoSection/InfoElements";
-
+import axios from "axios";
+import { List, ListItemText, ListItem } from "@mui/material";
 
 function HoverCardSector ( sector ) {
     const [likeList, setLikeList] = useState('');
-    // const [sectorData, setSectorData] = useState([]);
+    const [sectorData, setSectorData] = useState([]);
 
 
-  //   useEffect(() => {
-  //       async function fetchSectorData() {
-  //       try {
-  //           const response = await axios.get(
-  //           "https://api.iex.cloud/v1/data/CORE/SECTOR_PERFORMANCE/market",
-  //           {
-  //               params: {
-  //               token: "pk_0e682b29c77d48f9804e3dd05453bf0e", // Replace with your IEX API token
-  //               },
-  //           }
-  //           );
-  //           setSectorData(response.data);
-  //       } catch (error) {
-  //           console.error("Error fetching sector data", error);
-  //       }
-  //       }
+    useEffect(() => {
+        async function fetchSectorData() {
+        try {
+            const response = await axios.get(
+            "https://api.iex.cloud/v1/data/CORE/SECTOR_PERFORMANCE/market",
+            {
+                params: {
+                token: "pk_0e682b29c77d48f9804e3dd05453bf0e", // Replace with your IEX API token
+                },
+            }
+            );
+            setSectorData(response.data);
+        } catch (error) {
+            console.error("Error fetching sector data", error);
+        }
+        }
 
-  //   fetchSectorData();
-  // }, []);
+    fetchSectorData();
+  }, []);
 
   const renderLikeList = () => {
     return <div className="likes__list">
         
-        {/* <List>
+        <List>
         {sectorData.map((sector, index) => (
           <ListItem key={index}>
             <ListItemText
@@ -51,7 +52,7 @@ function HoverCardSector ( sector ) {
             />
           </ListItem>
         ))}
-      </List> */}
+      </List>
 
     </div>;
   };
