@@ -10,9 +10,8 @@ import ScrollBelt from  "../../components/portfolio_react/components/about/Scrol
 // import DashApp from '../../components/Stock_Portfolio/LineChartIndex';
 // import { HeroContainerTransparent } from '../../components/HeroSection/HeroElements';
 import HoverCardSector from '../../../src/views/StockSearch/Testing/SectorCard';
-import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
+// import SectorInfoIndex from '../../../src/views/StockSearch/Testing/Sector_Index_App';
 import BatchApp from '../../../src/views/StockSearch/Testing/BatchQuote';
-import RoutingApp from '../../../src/views/StockSearch/Testing/RoutingApp';
 import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
 import Underlay from '../../components/Landing/Underlay';
