@@ -156,7 +156,6 @@ const BatchApp = () => {
     const apiToken = 'pk_0e682b29c77d48f9804e3dd05453bf0e';
     const symbols = [
     'XOM',  
-    'QQQ', 
     'XPO', 
     'SYM', 
     'USLM', 
