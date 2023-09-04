@@ -1,9 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// import Chart from 'chart.js/auto';
-import { Bar } from 'react-chartjs-2';
-// import { Row, Col } from 'reactstrap';
-// import { Grid } from '@mantine/core';
+import Plot from 'react-plotly.js';
+import styled from 'styled-components';
+
+
+
+
+
+const SectorCard = styled.div`
+  border: 1px solid #00b100;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+`;
+const SectorInfoContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  //make the background transparent
+  background: transparent;
+
+`;
 
 
 const BarCharts = () => {
@@ -12,7 +32,6 @@ const BarCharts = () => {
   const [selectedStockData, setSelectedStockData] = useState(null);
   const [historicalData, setHistoricalData] = useState([]);
 
-  
   useEffect(() => {
     // Fetch top movers and losers data from the IEX API
     const fetchStockData = async () => {
@@ -45,7 +64,6 @@ const BarCharts = () => {
     fetchStockData();
   }, []);
 
-
   useEffect(() => {
     const fetchHistoricalData = async () => {
       if (selectedStockData) {
@@ -64,93 +82,73 @@ const BarCharts = () => {
         }
       }
     };
-  
+
     fetchHistoricalData();
   }, [selectedStockData]);
 
   const getChartData = (stocks, color) => {
+    const labels = stocks.map((stock) => stock.symbol);
+    const data = stocks.map((stock) => stock.changePercent);
+
     return {
-      labels: stocks.map((stock) => stock.symbol),
-      datasets: [
-        {
-          label: 'Percentage Change',
-          data: stocks.map((stock) => stock.changePercent),
-          backgroundColor: color,
-        },
-      ],
+      type: 'bar',
+      x: labels,
+      y: data,
+      marker: {
+        color: color,
+      },
     };
   };
-
-  const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-    plugins: {
-      tooltip: {
-        callbacks: {
-          label: (context) => {
-            const stock = topMovers[context.dataIndex] || topLosers[context.dataIndex];
-            return `${stock.symbol} - ${stock.changePercent}%\n52-Week High: ${stock.week52High}\n52-Week Low: ${stock.week52Low}\nP/E Ratio: ${stock.peRatio}`;
-          },
-          afterLabel: (context) => {
-            const stock = topMovers[context.dataIndex] || topLosers[context.dataIndex];
-            setSelectedStockData(stock);
-          },
-        },
-      },
-    },
-  };
-
-
-
-const historicalChartData = {
-  labels: historicalData.map(data => data.date),
-  datasets: [
-    {
-      label: selectedStockData?.symbol || '',
-      data: historicalData.map(data => data.close),
-      borderColor: 'rgba(75, 192, 192, 1)',
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-    },
-  ],
-};
-
 
   const positiveChangeColor = 'rgba(75, 192, 192, 0.6)';
   const negativeChangeColor = 'rgba(255, 99, 132, 0.6)';
 
   return (
-    <div className="card">
+    // <div className="card">
+    <SectorInfoContainer>
       <div className="card-header">Top Movers - Positive Change</div>
       <div className="card-body">
-          <Bar
-          data={getChartData(topMovers.filter(stock => stock.changePercent >= 0), positiveChangeColor)}
-          options={options}
+        <Plot
+          data={[getChartData(topMovers.filter((stock) => stock.changePercent >= 0), positiveChangeColor)]}
+          layout={{
+            title: 'Top Movers - Positive Change',
+            xaxis: {
+              title: 'Stock Symbol',
+            },
+            yaxis: {
+              title: 'Percentage Change',
+            },
+            paper_bgcolor: 'transparent',
+            plot_bgcolor: 'transparent',
+          }}
+          config={{ displayModeBar: false }}
+
         />
-        {selectedStockData && (
-          <>
-          </>
-        )}
-          </div>
-          <div className="card-header">Top Losers - Negative Change</div>
-      <div className="card-body">
-          <Bar
-          data={getChartData(topLosers.filter(stock => stock.changePercent < 0), negativeChangeColor)}
-          options={options}
-        />
-        {selectedStockData && (
-          <>
-          </>
-        )}
+        {selectedStockData && <>{/* Render additional information if needed */}</>}
       </div>
-    </div>
+      <div className="card-header">Top Losers - Negative Change</div>
+      <div className="card-body">
+        <Plot
+          data={[getChartData(topLosers.filter((stock) => stock.changePercent < 0), negativeChangeColor)]}
+          layout={{
+            title: 'Top Losers - Negative Change',
+            xaxis: {
+              title: 'Stock Symbol',
+            },
+            yaxis: {
+              title: 'Percentage Change',
+            },
+            paper_bgcolor: 'transparent',
+            plot_bgcolor: 'transparent',
+          }}
+          config={{ displayModeBar: false }}
+
+        />
+        {selectedStockData && <>{/* Render additional information if needed */}</>}
+      </div>
+      </SectorInfoContainer>
+
   );
 };
 
 export default BarCharts;
-
-
-
-
