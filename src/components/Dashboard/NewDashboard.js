@@ -7,7 +7,6 @@ import Orders from "./Orders";
 //import { fetchData } from "../charts/data.js";
 import TradingWidget from "../charts/tradingView";
 import Quotes from "../charts/Quotes";
-import NewsLoad from "../charts/NewsLoad";
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
@@ -86,7 +85,6 @@ if(location.state.Symbol===null)
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
-              <NewsLoad symbol={location.state.Symbol} basic="company-news?symbol="/>
               
               </>
             

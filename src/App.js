@@ -81,12 +81,7 @@ export default function App() {
               />
 
 
-              {/* <Route 
-                path="/about"
-                element={
-                    <AboutIndex/>
-                }
-              /> */}
+
 
             <Route path="/signup" element={<Signup/>}/>
             <Route path="/login" element={<Login/>}/>
