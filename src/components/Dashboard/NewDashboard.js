@@ -2,11 +2,11 @@ import * as React from "react";
 import { Suspense} from "react";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import Chart from "./RSIChart";
-import Orders from "./Orders";
+// import Chart from "./RSIChart";
+// import Orders from "./Orders";
 //import { fetchData } from "../charts/data.js";
-import TradingWidget from "../charts/tradingView";
-import Quotes from "../charts/Quotes";
+// import TradingWidget from "../charts/tradingView";
+// import Quotes from "../charts/Quotes";
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
@@ -46,7 +46,7 @@ if(location.state.Symbol===null)
                     height: 240
                   }}
                 >
-                  <Chart symbol={location.state.Symbol}/>
+                  {/* <Chart symbol={location.state.Symbol}/> */}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
@@ -59,13 +59,13 @@ if(location.state.Symbol===null)
                     height: 240
                   }}
                 >
-                  <Quotes symbol={location.state.Symbol} />
+                  {/* <Quotes symbol={location.state.Symbol} /> */}
                 </Paper>
               </Grid>
               {/* Recent Orders */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  <Orders symbol={location.state.Symbol}/>
+                  {/* <Orders symbol={location.state.Symbol}/> */}
                 </Paper>
               </Grid>
               {/* Recent Orders */}
@@ -74,14 +74,14 @@ if(location.state.Symbol===null)
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
                   <Suspense fallback={<h1>Loading profile...</h1>}>
-                    <TradingWidget symbol={location.state.Symbol}/>
+                    {/* <TradingWidget symbol={location.state.Symbol}/> */}
                   </Suspense>
                 </Paper>
               </Grid>
               {/* Recent Orders */}
               <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-                  <Button onClick={()=>AdvanceChart(location.state)} >Advance Chart</Button>
+                  {/* <Button onClick={()=>AdvanceChart(location.state)} >Advance Chart</Button> */}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
