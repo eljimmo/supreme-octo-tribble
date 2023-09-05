@@ -1,11 +1,60 @@
 import React from 'react';
-import './styles.css';
-import {
-  TopLine2a,
-  TopLine,
-  Heading,
-  Subtitle,
-} from '../../components/InfoSection/InfoElements';
+import styled from 'styled-components';
+
+const SectorInfoContainer = styled.div`
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  margin: 10px;
+  padding: 10px;
+
+`;
+
+
+const Subtitle = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+`;
+
+const Heading = styled.h1`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+font-weight: 600;
+color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#f7f8fa')};
+
+@media screen and (max-width: 480px) {
+  font-size: 32px;
+}
+`;
+
+const TopLine = styled.div`
+  color: #00b100;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+
+const TopLine2a = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 
 //Temporarily store data here
 const PostsData = [
@@ -119,8 +168,8 @@ const PostsData = [
 
 export default function CardApp() {
     return (
-        <div>
+        <SectorInfoContainer>
             <Main />
-        </div>
+        </SectorInfoContainer>
     )
 }

@@ -1,11 +1,42 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Plot from 'react-plotly.js';
-import styled from 'styled-components';
-import {
-  AnimatedGradientText2
-} from "../../../components/InfoSection/InfoElements";
+import styled, { keyframes } from 'styled-components';
 
+
+
+
+const gradientText = keyframes`
+{
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}}
+`;
+
+
+const AnimatedGradientText2 = styled.h1`
+  animation: ${gradientText} 5s ease-in-out infinite;
+  font-size: 20px;
+  margin: 10px;
+
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+
+`;
 
 const SectorInfoContainer = styled.div`
   display: flex;
@@ -16,8 +47,6 @@ const SectorInfoContainer = styled.div`
   background: transparent;
   margin: 10px;
   padding: 10px;
-
-
 
 `;
 

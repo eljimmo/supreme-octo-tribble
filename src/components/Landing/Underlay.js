@@ -1,8 +1,24 @@
 import styled from 'styled-components'
-import {
-  HeroP,
-} from "../../components/HeroSection/HeroElements";
+import React from 'react';
 
+
+
+const HeroP = styled.p`
+  margin-top: 24px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  max-width: 600px;
+  display: inline-block;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+`;
 
 
 const Grid = styled.div`

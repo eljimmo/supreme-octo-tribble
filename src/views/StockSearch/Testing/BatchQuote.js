@@ -1,9 +1,55 @@
 
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
-import { WhiteTopLine, Heading4a, Heading12, WhiteSmallText } from "../../../components/InfoSection/InfoElements";
+
+
+const Heading12 = styled.h1`
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+`;
+
+const Heading4a = styled.h1`
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+const WhiteTopLine = styled.div`
+  color: #ffffff ;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+
+const WhiteSmallText = styled.div`
+  color: #ffffff ;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 
 const SectorCard = styled.div`
   border: 1px solid #00b100;

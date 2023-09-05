@@ -4,6 +4,21 @@ import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 
+
+// const SectorInfoContainer = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 10px;
+//   justify-content: center;
+// `;
+
+// const SectorCard = styled.div`
+//   border: 1px solid #ccc;
+//   border-radius: 8px;
+//   margin: 10px;
+//   padding: 10px;
+//   width: 300px;
+// `;
 // Styled components
 const AccessibilityContainer = styled.div`
   background-color: #f0f0f0;

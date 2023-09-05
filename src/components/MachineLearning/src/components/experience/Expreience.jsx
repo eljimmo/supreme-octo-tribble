@@ -1,12 +1,48 @@
 import { Component } from "react";
 import "./experience.css";
-import {
-  BTopLine,
-  ZTopLine,
-  RTopLine,
+import styled from 'styled-components';
 
-} from "../experience/elements";
 
+
+const RTopLine = styled.div`
+  color: #ff0900;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+
+`;
+
+const ZTopLine = styled.div`
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+const BTopLine = styled.div`
+  color: #4485c9;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+
+`;
 
 
 class Experience extends Component {

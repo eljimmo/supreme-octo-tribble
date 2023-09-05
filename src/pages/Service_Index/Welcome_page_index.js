@@ -19,7 +19,6 @@ import App from '../../components/Curl_Noise/App';
 import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
-// import Testimonial from "../../components/portfolio_react/components/testimonial/testimonial.component";
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import BarCharts from '../../../src/views/StockSearch/Testing/BarCharts';
 
@@ -45,12 +44,10 @@ export default function WelcomePage() {
           <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          {/* <HoverCardSector/> */}
             <SectorInfo/>
             <Heroartificialintelligence/>
             <BarCharts/>
             <CardApp/>
-
             <Videoapp/>
         <Footer/>
     </>

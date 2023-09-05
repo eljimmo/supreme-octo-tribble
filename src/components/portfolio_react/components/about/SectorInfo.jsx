@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { List, ListItemText } from "@mui/material";
-import { Heading4a } from "../../../InfoSection/InfoElements";
 import styled from "styled-components";
 import { Tooltip } from 'antd';
 import Plot from 'react-plotly.js';
 
+
+const Heading4a = styled.h1`
+  margin-bottom: 24px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
 
 const SectorInfoContainer = styled.div`
   display: flex;
