@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from '../ButtonElements';
-import Video from './videos/125.mp4';
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
   HeroContent
 } from './HeroElements';
-import Artificialintelligenceabout from "../portfolio_react/components/about/about.artificialintelligence";
 import App from '../../components/Dbismut/App';
 
 

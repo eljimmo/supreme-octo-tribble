@@ -16,11 +16,23 @@ import HeroMachineLearning from "../../components/portfolio_react/components/her
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
 import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
-import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
+// import { HeroContainerTransparent } from "../../components/HeroSection/HeroElements";
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import BarCharts from '../../../src/views/StockSearch/Testing/BarCharts';
+import styled from 'styled-components';
+
+
+const HeroContainerTransparent = styled.div`
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  position: relative;
+}
+`;
 
 export default function WelcomePage() {
   const [isOpen, setIsOpen] = useState(false);
