@@ -99,29 +99,29 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
     }
   });
 
-  const calculateConfidenceIntervals = () => {
-    const confidenceLevels = [0.95, 0.5, 0.25]; // 95%, 50%, 25%
-    const intervals = {};
+  // const calculateConfidenceIntervals = () => {
+  //   const confidenceLevels = [0.95, 0.5, 0.25]; // 95%, 50%, 25%
+  //   const intervals = {};
   
-    confidenceLevels.forEach(confidence => {
-      const alpha = 1 - confidence;
-      const zScore = Math.sqrt(2) * erfinv(1 - alpha);
+  //   confidenceLevels.forEach(confidence => {
+  //     const alpha = 1 - confidence;
+  //     const zScore = Math.sqrt(2) * erfinv(1 - alpha);
   
-      const confidenceInterval = historicalData.map(dataPoint => {
-        const stdDev = Math.sqrt(dataPoint.variance); // Assuming you have variance data for each data point
-        const marginOfError = zScore * (stdDev / Math.sqrt(historicalData.length));
-        const lowerBound = dataPoint.close - marginOfError;
-        const upperBound = dataPoint.close + marginOfError;
-        return [lowerBound, upperBound];
-      });
+  //     const confidenceInterval = historicalData.map(dataPoint => {
+  //       const stdDev = Math.sqrt(dataPoint.variance); // Assuming you have variance data for each data point
+  //       const marginOfError = zScore * (stdDev / Math.sqrt(historicalData.length));
+  //       const lowerBound = dataPoint.close - marginOfError;
+  //       const upperBound = dataPoint.close + marginOfError;
+  //       return [lowerBound, upperBound];
+  //     });
 
-      intervals[`${confidence * 100}% Confidence`] = confidenceInterval;
-    });
+  //     intervals[`${confidence * 100}% Confidence`] = confidenceInterval;
+  //   });
 
-    return intervals;
-  };
+  //   return intervals;
+  // };
 
-  const confidenceIntervals = calculateConfidenceIntervals();
+  // const confidenceIntervals = calculateConfidenceIntervals();
 
   const calculateReturn = () => {
     if (historicalData.length >= 52) {
@@ -158,24 +158,24 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
             },
           },
           // Add confidence interval traces
-          ...Object.keys(confidenceIntervals).map(confidenceLabel => ({
-            x: historicalData.map(dataPoint => dataPoint.date),
-            y: confidenceIntervals[confidenceLabel].map(interval => (interval[0] + interval[1]) / 2), // Midpoint of the interval
-            type: 'scatter',
-            mode: 'lines',
-            name: confidenceLabel,
-            line: {
-              color: 'rgba(0, 0, 255, 0.5)', // Adjust color and opacity as needed
-              width: 1
-            },
-            fill: 'tonexty', // Fill area between lines
-            fillcolor: 'rgba(0, 0, 255, 0.2)' // Adjust fill color and opacity as needed
-          })),
+          // ...Object.keys(confidenceIntervals).map(confidenceLabel => ({
+          //   x: historicalData.map(dataPoint => dataPoint.date),
+          //   y: confidenceIntervals[confidenceLabel].map(interval => (interval[0] + interval[1]) / 2), // Midpoint of the interval
+          //   type: 'scatter',
+          //   mode: 'lines',
+          //   name: confidenceLabel,
+          //   line: {
+          //     color: 'rgba(0, 0, 255, 0.5)', // Adjust color and opacity as needed
+          //     width: 1
+          //   },
+          //   fill: 'tonexty', // Fill area between lines
+          //   fillcolor: 'rgba(0, 0, 255, 0.2)' // Adjust fill color and opacity as needed
+          // })),
         ]}
         layout={{
           width: 300,
           height: 300,
-          title: 'Stock Price Over Time with Confidence Intervals',
+          title: 'Stock Price Over Time ',
           paper_bgcolor: 'transparent',
           plot_bgcolor: 'transparent',
         }}
