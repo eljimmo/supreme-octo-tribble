@@ -20,7 +20,7 @@ import App from '../../components/Curl_Noise/App';
 import TimeClock from '../../components/TimeClock/Index';
 import CardApp from '../../components/Card_Component/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
-import BarCharts from '../../../src/views/StockSearch/Testing/BarCharts';
+// import BarCharts from '../../../src/views/StockSearch/Testing/BarCharts';
 import styled from 'styled-components';
 
 
@@ -58,7 +58,7 @@ export default function WelcomePage() {
           </HeroContainerTransparent>
             <SectorInfo/>
             <Heroartificialintelligence/>
-            <BarCharts/>
+            {/* <BarCharts/> */}
             <CardApp/>
             <Videoapp/>
         <Footer/>

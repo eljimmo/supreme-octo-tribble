@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import HighchartsStock from 'highcharts/modules/stock'; // Import the Highstock module
+import StockGaugeChart from './StockGaugeChart'; // Import the StockGaugeChart component
 
 
 
@@ -160,6 +161,9 @@ const StockCard = ({ symbol, latestPrice, historicalData }) => {
       <WhiteSmallText>Return on $100 Investment 52 Weeks Ago: ${investmentReturn}</WhiteSmallText>
 
       <HighchartsReact highcharts={Highcharts} options={highchartsConfig} />
+      <WhiteSmallText>Stock Momentum 52 Week Gauge  </WhiteSmallText>
+
+      <StockGaugeChart currentValue={latestPrice} lowValue={0} highValue={100} />
 
       <Link to={`/stock/${symbol}`}>
         <Heading12>
