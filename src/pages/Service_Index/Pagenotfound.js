@@ -1,5 +1,6 @@
 import React from "react";
 import { TopLine1, Wrapper, HeroContainer1  } from "../../components/InfoSection/InfoElements";
+import styled, { keyframes } from 'styled-components';
 
 
 

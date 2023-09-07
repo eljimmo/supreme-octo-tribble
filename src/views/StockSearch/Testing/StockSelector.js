@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import GlassBox from '../../../elements/Card/GlassBox';
 
 function StockSelector({ onSelect }) {
   const [stockSymbols, setStockSymbols] = useState([]);
@@ -31,7 +32,8 @@ function StockSelector({ onSelect }) {
   });
 
   return (
-    <div>
+    <GlassBox>
+
       <label htmlFor="stockSearch">Search for a stock:</label>
       <input
         type="text"
@@ -47,7 +49,8 @@ function StockSelector({ onSelect }) {
           </li>
         ))}
       </ul>
-    </div>
+      </GlassBox>
+
   );
 }
 

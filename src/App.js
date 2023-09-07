@@ -19,7 +19,7 @@ import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
-// import StockSelector from "./views/StockSearch/Testing/StockSelector";
+import StockSelector from "./views/StockSearch/Testing/StockSelector";
 
 
 export default function App() {
