@@ -32,9 +32,9 @@ const SectorCard = styled.div`
   padding: 10px;
   width: 300px;
 `;
-
 const SectorInfo = () => {
   const [sectorData, setSectorData] = useState([]);
+  const [aggregatePerformance, setAggregatePerformance] = useState(0);
 
   useEffect(() => {
     async function fetchSectorData() {
@@ -48,6 +48,10 @@ const SectorInfo = () => {
           }
         );
         setSectorData(response.data);
+
+        // Calculate aggregate performance
+        const aggregate = response.data.reduce((sum, sector) => sum + sector.performance, 0);
+        setAggregatePerformance(aggregate);
       } catch (error) {
         console.error("Error fetching sector data", error);
       }
@@ -62,7 +66,7 @@ const SectorInfo = () => {
     mode: 'number+delta+gauge',
     value: sectorData.length > 0 ? sectorData[0].performance : 0, // You can adjust this to show performance for a specific sector
     title: { text: 'Sector Performance' },
-    delta: { reference: 0 },
+    value: aggregatePerformance, // Use the aggregate performance as the value
     gauge: {
       axis: { range: [-1, 1] }, // Adjust the range as needed
       steps: [

@@ -19,7 +19,8 @@ import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
-import StockSelector from "./views/StockSearch/Testing/StockSelector";
+// import StockSelector from "./views/StockSearch/Testing/StockSelector";
+import StockDetails from '../src/views/StockSearch/Testing/Stockdetails'; // Import the StockDetails component
 
 
 export default function App() {
@@ -79,6 +80,11 @@ export default function App() {
                 element={
                   <Howitworks/>
                 }
+              />
+              
+              <Route
+                path="/stock/:symbol" 
+                component={StockDetails}
               />
 
 

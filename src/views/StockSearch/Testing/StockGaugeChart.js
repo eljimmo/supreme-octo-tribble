@@ -23,11 +23,13 @@ const StockGaugeChart = ({ currentValue, lowValue, highValue }) => {
       },
       number: {
         font: {
-          color: "white", // Set the font color of the currentValue to white
+          color: "white", // Set the font color of the value to white
         },
+        valueformat: "$", // Add "$" sign as a prefix to the value
       },
     },
   ];
+  
 
   return (
     <Plot
