@@ -7,7 +7,6 @@ import HighchartsStock from 'highcharts/modules/stock'; // Import the Highstock 
 import StockGaugeChart from './StockGaugeChart'; // Import the StockGaugeChart component
 // import StockBulletGaugeChart from './StockBulletGaugeChart'; // Import the StockBulletGaugeChart component
 import StockInfo from './StockInfo';
-// import StockLineChart from './StockLineChart';
 
 // Initialize the Highstock module
 HighchartsStock(Highcharts);
