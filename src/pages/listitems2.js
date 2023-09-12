@@ -7,11 +7,16 @@ import SmartToyIcon from '@mui/icons-material/SmartToy';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import BorderBottomIcon from '@mui/icons-material/BorderBottom';
 import DataSaverOnIcon from '@mui/icons-material/DataSaverOn';
+import  { AnimatedGradientText2 } from "../../src/components/ButtonElements";
+
+
 export default function SecondaryListItems ()
 {
     return <React.Fragment>
     <ListSubheader component="div" inset>
-      Bot Creation & Modeling
+    <AnimatedGradientText2>
+        Analytic Bots 
+        </AnimatedGradientText2>
     </ListSubheader>
 
 

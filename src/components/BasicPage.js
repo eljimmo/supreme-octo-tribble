@@ -28,6 +28,7 @@ import Switch from '@mui/material/Switch';
 import MainListItems from "../pages/listitems";
 import SecondaryListItems from "../pages/listitems2";
 import ThirdListItems from "../pages/listitems3";
+import  { AnimatedGradientText15 } from "./ButtonElements";
 
 
 const drawerWidth = 240;
@@ -124,68 +125,61 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 
-
 function DashboardContent() {
   const [open, setOpen] = React.useState(true);
-  const [darkMode,setDarkMode]=React.useState(createTheme({
-    palette: {
-      mode: 'dark',
-    },
-  }));
+  const [darkMode, setDarkMode] = React.useState(
+    createTheme({
+      palette: {
+        mode: 'dark',
+      },
+    })
+  );
 
-  
-  const[error,setError]= useState("");
-  const {currentUser, logout} = useAuth();
+  const [error, setError] = useState('');
+  const { currentUser, logout } = useAuth();
   const history = useNavigate();
-  // const location = useLocation();
-  async function handleLogout(){
-    setError('');
-    try{
-        await logout();
-        history('/login');
 
+  async function handleLogout() {
+    setError('');
+    try {
+      await logout();
+      history('/login');
+    } catch {
+      setError('Failed to logout');
     }
-    catch{
-        setError("Failed to logout");
-    }
-}
-if(currentUser===null)
-{
-  history('/login');
-}
+  }
+
+  if (currentUser === null) {
+    history('/login');
+  }
+
   const toggleDrawer = () => {
-    //console.log(234);
     setOpen(!open);
   };
 
-  function handleClick(){
-    console.log(darkMode);
-    if(darkMode.palette.mode==="light")
-    {
-      setDarkMode(createTheme({
-        palette: {
-          mode: 'dark',
-        },
-      }));
-    }
-    else
-    {
+  function handleClick() {
+    if (darkMode.palette.mode === 'light') {
+      setDarkMode(
+        createTheme({
+          palette: {
+            mode: 'dark',
+          },
+        })
+      );
+    } else {
       setDarkMode(createTheme());
     }
   }
 
-
-
   return (
     <ThemeProvider theme={darkMode}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: 'flex' }}>
         <CssBaseline />
         {/* appbar component starts here */}
-        
         <AppBar position="absolute" open={open}>
           <Toolbar
             sx={{
-              pr: "24px" // keep right padding when drawer closed
+              pr: '24px', // keep right padding when drawer closed
             }}
           >
             <IconButton
@@ -194,8 +188,8 @@ if(currentUser===null)
               aria-label="open drawer"
               onClick={toggleDrawer}
               sx={{
-                marginRight: "36px",
-                ...(open && { display: "none" })
+                marginRight: '36px',
+                ...(open && { display: 'none' }),
               }}
             >
               <MenuIcon />
@@ -207,26 +201,15 @@ if(currentUser===null)
               noWrap
               sx={{ flexGrow: 1 }}
             >
-
-
-              Analytical Modeling
-
-
+              <AnimatedGradientText15>Analytical Modeling</AnimatedGradientText15>
             </Typography>
             <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick}/>}
-        
-      />
-            {/* <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton> */}
-            
+              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={handleClick} />}
+            />
             <IconButton color="inherit">
               <Avatar sx={{ bgcolor: deepPurple[500] }}>{currentUser.email[0].toUpperCase()}</Avatar>
             </IconButton>
-            <IconButton color="inherit"  onClick={handleLogout}>
+            <IconButton color="inherit" onClick={handleLogout}>
               <Badge color="secondary">
                 <ClearIcon />
               </Badge>
@@ -236,10 +219,10 @@ if(currentUser===null)
         <Drawer variant="permanent" open={open}>
           <Toolbar
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-end",
-              px: [1]
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+              px: [1],
             }}
           >
             <IconButton onClick={toggleDrawer}>
@@ -248,20 +231,18 @@ if(currentUser===null)
           </Toolbar>
           <Divider />
           <List component="nav">
-            <MainListItems/>
+            <MainListItems />
             <Divider sx={{ my: 1 }} />
-            <SecondaryListItems/>
+            <SecondaryListItems />
             <Divider sx={{ my: 1 }} />
-            <ThirdListItems/>
+            <ThirdListItems />
           </List>
         </Drawer>
-
-
         {/* appbar component ends here */}
         <Box
           component="main"
           sx={{
-            backgroundColor: (theme) =>
+                        backgroundColor: (theme) =>
               theme.palette.mode === "light"
                 ? theme.palette.grey[100]
                 : theme.palette.grey[900],
@@ -275,7 +256,7 @@ if(currentUser===null)
             <Grid container spacing={3}>
               
               <Outlet/>
-              
+
             </Grid>
           </Container>
         </Box>
