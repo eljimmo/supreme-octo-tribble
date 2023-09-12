@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/index';
-import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Sidebar/index';
+// import Navbar from '../../components/Navbar';
+// import Sidebar from '../../components/Sidebar/index';
 import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
