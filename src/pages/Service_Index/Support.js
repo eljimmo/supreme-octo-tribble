@@ -51,6 +51,8 @@ const AnimatedGradientText1 = styled.h1`
   }
 
 `;
+
+
 const PageWrapper = styled.div`
     max-width: 600px;
     margin: 50px auto;
