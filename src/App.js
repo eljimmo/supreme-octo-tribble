@@ -13,7 +13,7 @@ import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
 import SupportPage from "./pages/Service_Index/Support";
-
+import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 
 
 export default function App() {
@@ -84,7 +84,12 @@ export default function App() {
                 }
               />
               
-            
+              <Route
+                path="/chooseus"
+                element={
+                  <ChooseUs/>
+                }
+              />
 
 
 
