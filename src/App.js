@@ -12,6 +12,7 @@ import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
+import SupportPage from "./pages/Service_Index/Support";
 
 
 
@@ -34,6 +35,13 @@ export default function App() {
                 }
               />
 
+
+              <Route
+                path="/support"
+                element={
+                  <SupportPage/>
+                }
+              />
 
               
 
