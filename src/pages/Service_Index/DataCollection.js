@@ -1,10 +1,50 @@
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/index';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 
+
 // Styled components
+
+
+
+
+const gradientText = keyframes`
+{
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}}
+`;
+
+
+const AnimatedGradientText1 = styled.h1`
+  animation: ${gradientText} 5s ease-in-out infinite;
+  font-size: 50px;
+
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+
+`;
+
+
+
 const DataCollectionNoticeContainer = styled.div`
   background-color: #f0f0f0;
   padding: 20px;
@@ -13,18 +53,19 @@ const DataCollectionNoticeContainer = styled.div`
   margin-bottom: 20px;
 `;
 
-const NoticeTitle = styled.h3`
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-`;
-
-const NoticeText = styled.p`
-  font-size: 1rem;
-  color: #333;
-`;
-
 const HighlightedText = styled.span`
   font-weight: bold;
+`;
+
+
+const TopLine1 = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 `;
 
 export default function DataCollectionIndex() {
@@ -43,14 +84,24 @@ export default function DataCollectionIndex() {
       <br/>
       <br/>
       <DataCollectionNoticeContainer>
-      <NoticeTitle>Data Collection Notice</NoticeTitle>
-      <NoticeText>
-        <HighlightedText>Important Notice:</HighlightedText> We value your privacy and
+      <AnimatedGradientText1>Data Collection Notice</AnimatedGradientText1>
+      <HighlightedText>Important Notice:</HighlightedText> 
+
+      <TopLine1>
+        
+        
+        We value your privacy and
         are committed to protecting your personal information. This Data Collection Notice
         explains how we collect, use, and safeguard your data when you use our services.
-      </NoticeText>
-      <NoticeText>
-        <HighlightedText>Data We Collect:</HighlightedText> When you visit our website,
+      </TopLine1>
+
+
+      <HighlightedText>Data We Collect:</HighlightedText> 
+
+      <TopLine1>
+        
+        
+        When you visit our website,
         we may collect the following information:
         <ul>
           <li>Your IP address</li>
@@ -60,9 +111,13 @@ export default function DataCollectionIndex() {
         </ul>
         This data is collected for analytics purposes, to enhance our services, and to
         ensure legal compliance.
-      </NoticeText>
-      <NoticeText>
-        <HighlightedText>Legal Basis:</HighlightedText> We collect and process your data
+      </TopLine1>
+
+      <HighlightedText>Legal Basis:</HighlightedText> 
+
+      <TopLine1>
+        
+        We collect and process your data
         based on one or more of the following legal grounds:
         <ul>
           <li>Your consent</li>
@@ -70,9 +125,14 @@ export default function DataCollectionIndex() {
           <li>Compliance with legal obligations</li>
           <li>Legitimate interests</li>
         </ul>
-      </NoticeText>
-      <NoticeText>
-        <HighlightedText>How We Use Your Data:</HighlightedText> We use the collected data
+      </TopLine1>
+
+      <HighlightedText>How We Use Your Data:</HighlightedText> 
+
+      <TopLine1>
+        
+        
+        We use the collected data
         to:
         <ul>
           <li>Improve our services</li>
@@ -80,17 +140,23 @@ export default function DataCollectionIndex() {
           <li>Analyze website traffic</li>
           <li>Ensure security and legal compliance</li>
         </ul>
-      </NoticeText>
-      <NoticeText>
-        <HighlightedText>Your Rights:</HighlightedText> You have the right to access,
+      </TopLine1>
+
+
+      <HighlightedText>Your Rights:</HighlightedText> 
+
+      <TopLine1>
+        
+        
+        You have the right to access,
         rectify, or delete your personal data. You can also withdraw your consent at any time.
         To exercise your rights or for inquiries, please contact us.
-      </NoticeText>
-      <NoticeText>
+      </TopLine1>
+      <TopLine1>
         By using our website, you acknowledge that you have read and understood this Data
         Collection Notice and agree to our data collection and processing practices. For
         more details, please review our Privacy Policy.
-      </NoticeText>
+      </TopLine1>
       
     </DataCollectionNoticeContainer>
        <Footer/>
