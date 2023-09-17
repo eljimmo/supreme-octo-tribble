@@ -37,6 +37,11 @@ export default function DataCollectionIndex() {
       <>
     <Navbar toggle={toggle} />
     <Sidebar isOpen={isOpen} toggle={toggle} />
+          <hr/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <DataCollectionNoticeContainer>
       <NoticeTitle>Data Collection Notice</NoticeTitle>
       <NoticeText>

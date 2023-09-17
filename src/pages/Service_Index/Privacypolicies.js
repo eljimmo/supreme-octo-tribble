@@ -11,6 +11,11 @@ const PrivacyPolicyContainer = styled.div`
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 800px;
+  position: relative;
 `;
 
 const PolicyTitle = styled.h2`
@@ -43,6 +48,11 @@ export default function PrivacyPoliciesIndex() {
       <>
 <Navbar toggle={toggle} />
 <Sidebar isOpen={isOpen} toggle={toggle} />
+<hr/>
+<br/>
+<br/>
+<br/>
+<br/>
 <PrivacyPolicyContainer>
       <PolicyTitle>Privacy Policy</PolicyTitle>
       <PolicySection>

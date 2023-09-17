@@ -44,6 +44,11 @@ export default function Howitworks() {
         <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      <hr/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
      <TermsContainer>
         <TermsTitle>General Terms and Conditions</TermsTitle>
         <TermsSection>

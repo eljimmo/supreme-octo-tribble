@@ -58,6 +58,11 @@ export default function AccessibilityIndex() {
       <>
       <Navbar toggle={toggle} />
 <Sidebar isOpen={isOpen} toggle={toggle} />
+<hr/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     <AccessibilityContainer>
       <AccessibilityTitle>Accessibility Statement</AccessibilityTitle>
       <AccessibilitySection>
