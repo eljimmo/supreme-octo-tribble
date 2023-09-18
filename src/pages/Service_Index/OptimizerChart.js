@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-const OptimizerComparisonChart = ({ sgdData, adamData }) => {
+        const OptimizerComparisonChart = ({ sgdData, adamData, rmspropData, adagradData }) => {
 
     const sgdTrace = {
         x: sgdData.epochs,
@@ -17,7 +17,24 @@ const OptimizerComparisonChart = ({ sgdData, adamData }) => {
         name: 'Adam'
     };
 
-    const data = [sgdTrace, adamTrace];
+    const rmspropTrace = {
+        x: rmspropData.epochs,
+        y: rmspropData.loss,
+        mode: 'lines',
+        name: 'RMSprop'
+    };
+
+    const adagradTrace = {
+        x: adagradData.epochs,
+        y: adagradData.loss,
+        mode: 'lines',
+        name: 'Adagrad'
+    };
+
+
+
+
+    const data = [sgdTrace, adamTrace, rmspropTrace, adagradTrace];
     const layout = {
         title: 'Optimizer Loss Comparison',
         xaxis: {

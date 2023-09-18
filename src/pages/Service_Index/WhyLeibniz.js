@@ -122,10 +122,10 @@ const Paragraph = styled.p`
 export default function ChooseUs() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
+      {/* <Navbar />
+      <Sidebar /> */}
       <PageWrapper>
-        <Title>Why Choose Our Trading Bot?</Title>
+        <Title>Why Choose Our Trading Bots?</Title>
         <Content>
           <Subtitle>Experience the power of advanced algorithms, unparalleled deep learning techniques,
              and innovative technology that ensures a competitive edge in the trading world.</Subtitle>
@@ -189,7 +189,7 @@ export default function ChooseUs() {
           </FeatureBox>
         </Row>
         <>
-        <OptimizerComparisonChart sgdData={sgdSampleData} adamData={adamSampleData} />
+        <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
         </>
         <Subtitle>Deep Neural Network Layers</Subtitle>
         <Paragraph>
@@ -197,7 +197,7 @@ export default function ChooseUs() {
         </Paragraph>
 
       </PageWrapper>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
