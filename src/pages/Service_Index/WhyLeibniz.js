@@ -86,9 +86,19 @@ const FeatureBox = styled.div`
   }
 `;
 
-const FeatureTitle = styled.h3`
-  color: #333;
-  margin-bottom: 16px;
+
+const Subtitle = styled.h2`
+  font-size: 28px;
+  color: #2193b0;
+  margin-top: 30px;
+  text-align: center;
+`;
+
+const Paragraph = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
 `;
 
 export default function ChooseUs() {
@@ -116,6 +126,22 @@ export default function ChooseUs() {
             <p>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</p>
           </FeatureBox>
         </Row>
+
+        <Subtitle>Deep Neural Networks (DNN)</Subtitle>
+        <Paragraph>
+          At the core of our bot's intelligence lies the power of DNNs. Deep Neural Networks are a class of models in the neural network family that excel in recognizing patterns and features in vast datasets. By utilizing multiple layers, our bot can understand the intricacies of financial data, making more accurate and informed trading decisions.
+        </Paragraph>
+
+        <Subtitle>Keras & Training Models</Subtitle>
+        <Paragraph>
+          Our bot is built using Keras, an open-source neural network API that provides an easy and fast way to design and experiment with deep learning models. With Keras, we can efficiently train our models, ensuring that they're always equipped with the latest patterns and trends identified in the trading world.
+        </Paragraph>
+
+        <Subtitle>Feature Extraction & Machine Learning</Subtitle>
+        <Paragraph>
+          The process of identifying the most relevant features from raw data is pivotal. Our bot uses advanced machine learning techniques to filter out noise and focus on the key indicators that matter most. This process ensures that our bot is not just crunching numbers but making decisions based on the genuine insights drawn from the data.
+        </Paragraph>
+        
       </PageWrapper>
       <Footer/>
     </>
