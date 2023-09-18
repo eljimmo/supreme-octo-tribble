@@ -1,15 +1,6 @@
 import React from "react";
 import styled, { keyframes } from 'styled-components';
 
-// import {
-//   InfoWrapper2,  
-//   TopLine2a,
-//   AnimatedGradientText1,
-  
-
-// } from "../../../InfoSection/InfoElements";
-
-
 const gradientText = keyframes`
 {
 0% {
@@ -20,8 +11,8 @@ const gradientText = keyframes`
 }
 100% {
   background-position: 0 50%;
-}}
-`;
+}
+}`;
 
 const AnimatedGradientText1 = styled.h1`
   animation: ${gradientText} 5s ease-in-out infinite;
@@ -39,16 +30,14 @@ const AnimatedGradientText1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-
 `;
-
 
 const TopLine2a = styled.div`
   color: #00b100;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 700;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 16px;
 `;
@@ -64,21 +53,53 @@ const InfoWrapper2 = styled.div`
   justify-content: center;
 `;
 
+const Row = styled.div`
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+  margin-top: 40px;
+`;
+
+const Box = styled.div`
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #00b100;
+  background: transparent;
+  max-width: 300px;
+  text-align: center;
+  color: #ffffff;  // Add this line to set the font color to white
+`;
+
+
 const HeroMachineLearning = () => {
   return (
     <div id="hero">
-      <AnimatedGradientText1>Machine Learning in Financial Applications</AnimatedGradientText1>
-              <InfoWrapper2>
-      <br/>
-      <TopLine2a>
-      Machine learning (ML) is the subset of artificial intelligence (AI) that focuses on building systems that learn—or improve performance—based on the data they consume.
-      Create your own custom financial trading agent to better assist you when trading.
-      Machine learning algorithms build a model based on sample data, known as training data, in order to make predictions or decisions without being explicitly programmed to do so.
-      </TopLine2a>
+      <AnimatedGradientText1>Machine Learning & Financial Decision-Making</AnimatedGradientText1>
+      <InfoWrapper2>
+        <TopLine2a>
+          At the heart of modern finance lies Machine Learning (ML), a branch of artificial intelligence (AI) that equips systems with the ability to learn from and interpret data without explicit instructions. As the financial sector becomes increasingly complex, ML emerges as a powerful tool, offering solutions tailored to navigate the intricate world of finance.
+        </TopLine2a>
+        
+        <Row>
+          <Box>
+            <h3>Intelligent Trading Bots</h3>
+            Leveraging ML, our platform offers trading bots that continuously learn from market data. They assess patterns and execute trades, maximizing profitability and reducing human error.
+          </Box>
+          
+          <Box>
+            <h3>Optimizers & Loss Functions</h3>
+            The core of ML in trading lies in optimizing algorithms. By fine-tuning optimizers and loss functions, our tools ensure that trading strategies are efficient and yield positive returns.
+          </Box>
+          
+          <Box>
+            <h3>Math-Powered Finance</h3>
+            Dive deep into the intricate mathematics of trading. Utilize our advanced tools to harness the power of algorithms, making your investment decisions more strategic and data-driven.
+          </Box>
+        </Row>
       </InfoWrapper2>
       <br/>
-      </div>
-
+      <br/>
+    </div>
   );
 };
 
