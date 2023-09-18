@@ -45,7 +45,7 @@ const AnimatedGradientText1 = styled.h1`
 
 
 const AccessibilityContainer = styled.div`
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -60,6 +60,7 @@ const AccessibilitySection = styled.div`
 const AccessibilitySectionTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #ffffff;
 `;
 
 

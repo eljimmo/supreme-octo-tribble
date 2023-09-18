@@ -4,6 +4,20 @@ import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Footer from '../../components/Footer/index';
 
+
+
+
+
+const TopLine1 = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
 const gradientText = keyframes`
 {
   0% {
@@ -90,15 +104,15 @@ export default function ChooseUs() {
 
         <Row>
           <FeatureBox>
-            <FeatureTitle>Advanced Algorithms</FeatureTitle>
+            <TopLine1>Advanced Algorithms</TopLine1>
             <p>Our algorithms are built on the latest research and are continuously updated to ensure maximum profitability and efficiency.</p>
           </FeatureBox>
           <FeatureBox>
-            <FeatureTitle>Deep Learning</FeatureTitle>
+            <TopLine1>Deep Learning</TopLine1>
             <p>With TensorFlow integration, our bot learns from market patterns and can predict price movements with uncanny accuracy.</p>
           </FeatureBox>
           <FeatureBox>
-            <FeatureTitle>Innovative Technology</FeatureTitle>
+            <TopLine1>Innovative Technology</TopLine1>
             <p>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</p>
           </FeatureBox>
         </Row>

@@ -44,7 +44,7 @@ const AnimatedGradientText1 = styled.h1`
 
 
 const PrivacyPolicyContainer = styled.div`
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -63,6 +63,7 @@ const PolicySection = styled.div`
 const PolicySectionTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #ffffff;
 `;
 
 

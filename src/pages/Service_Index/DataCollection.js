@@ -46,7 +46,7 @@ const AnimatedGradientText1 = styled.h1`
 
 
 const DataCollectionNoticeContainer = styled.div`
-  background-color: #f0f0f0;
+  background-color: #transparent;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -55,6 +55,7 @@ const DataCollectionNoticeContainer = styled.div`
 
 const HighlightedText = styled.span`
   font-weight: bold;
+  color: #ffffff;
 `;
 
 
