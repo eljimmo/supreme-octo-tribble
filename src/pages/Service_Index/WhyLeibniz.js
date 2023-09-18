@@ -75,7 +75,7 @@ const PageWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  background-color: #f9f9f9;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -90,7 +90,7 @@ const Row = styled.div`
 
 const FeatureBox = styled.div`
   flex: 1;
-  background-color: #e7e7e7;
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   margin: 0 10px;
@@ -127,21 +127,24 @@ export default function ChooseUs() {
       <PageWrapper>
         <Title>Why Choose Our Trading Bot?</Title>
         <Content>
-          <p>Experience the power of advanced algorithms, unparalleled deep learning techniques, and innovative technology that ensures a competitive edge in the trading world.</p>
+          <Subtitle>Experience the power of advanced algorithms, unparalleled deep learning techniques,
+             and innovative technology that ensures a competitive edge in the trading world.</Subtitle>
         </Content>
 
         <Row>
           <FeatureBox>
             <TopLine1>Advanced Algorithms</TopLine1>
-            <p>Our algorithms are built on the latest research and are continuously updated to ensure maximum profitability and efficiency.</p>
+            <Paragraph>Our algorithms are built on the latest research and are continuously updated
+               to ensure maximum profitability and efficiency.</Paragraph>
           </FeatureBox>
           <FeatureBox>
             <TopLine1>Deep Learning</TopLine1>
-            <p>With TensorFlow integration, our bot learns from market patterns and can predict price movements with uncanny accuracy.</p>
+            <Paragraph>With TensorFlow integration, our bot learns from market patterns and can 
+              predict price movements with uncanny accuracy.</Paragraph>
           </FeatureBox>
           <FeatureBox>
             <TopLine1>Innovative Technology</TopLine1>
-            <p>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</p>
+            <Paragraph>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</Paragraph>
           </FeatureBox>
         </Row>
 
@@ -168,15 +171,21 @@ export default function ChooseUs() {
         <Row>
           <FeatureBox>
             <TopLine1>SGD (Stochastic Gradient Descent)</TopLine1>
-            <p>SGD is a classic optimization algorithm. It updates the weights using only one training example at a time and is suitable for large datasets. Though simple, it's proven effective for many tasks.</p>
+            <Paragraph>SGD is a classic optimization algorithm.
+               It updates the weights using only one training example at a time and is suitable for large datasets. 
+               Though simple, it's proven effective for many tasks.</Paragraph>
           </FeatureBox>
           <FeatureBox>
             <TopLine1>Adam</TopLine1>
-            <p>Adam is an adaptive learning rate optimization algorithm. It combines the best properties of AdaGrad and RMSprop algorithms to provide an optimization that can handle sparse gradients on noisy problems.</p>
+            <Paragraph>Adam is an adaptive learning rate optimization algorithm. 
+              It combines the best properties of AdaGrad and RMSprop algorithms to provide an optimization that can handle 
+              sparse gradients on noisy problems.</Paragraph>
           </FeatureBox>
           <FeatureBox>
             <TopLine1>Learning Rate Decay</TopLine1>
-            <p>A high learning rate can speed up training, but it might skip the optimal solution. Learning rate decay gradually reduces the learning rate over epochs, ensuring convergence to the best weights without overshooting.</p>
+            <Paragraph>A high learning rate can speed up training, but it might skip the optimal solution. 
+              Learning rate decay gradually reduces the learning rate over epochs, ensuring convergence to the best 
+              weights without overshooting.</Paragraph>
           </FeatureBox>
         </Row>
         <>
