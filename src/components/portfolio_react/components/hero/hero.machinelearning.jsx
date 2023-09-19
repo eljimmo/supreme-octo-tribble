@@ -51,24 +51,49 @@ const InfoWrapper2 = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  p {
+    color: #ffffff;  // Setting the color of p tags to white.
+  }
 `;
 
 const Row = styled.div`
   display: flex;
-  gap: 24px;
-  justify-content: space-around;
+  flex-wrap: wrap;  // This ensures the boxes wrap onto the next line in smaller screens.
+  justify-content: space-between;
   margin-top: 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column; // Stack the boxes vertically for screens smaller than 768px.
+  }
 `;
-
 const Box = styled.div`
   flex: 1;
+  background-color: transparent;
   padding: 20px;
+  border-radius: 10px;
   border: 2px solid #00b100;
-  background: transparent;
-  max-width: 300px;
-  text-align: center;
-  color: #ffffff;  // Add this line to set the font color to white
+  margin: 0 10px;
+  box-sizing: border-box;
+
+  p {
+    color: #ffffff;  // Setting the color of p tags to white.
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    max-width: 100%;
+    padding: 10px;
+  }
 `;
+
 
 
 const HeroMachineLearning = () => {
@@ -77,23 +102,33 @@ const HeroMachineLearning = () => {
       <AnimatedGradientText1>Machine Learning & Financial Decision-Making</AnimatedGradientText1>
       <InfoWrapper2>
         <TopLine2a>
+        <p>
           At the heart of modern finance lies Machine Learning (ML), a branch of artificial intelligence (AI) that equips systems with the ability to learn from and interpret data without explicit instructions. As the financial sector becomes increasingly complex, ML emerges as a powerful tool, offering solutions tailored to navigate the intricate world of finance.
+          </p>
         </TopLine2a>
         
         <Row>
           <Box>
-            <h3>Intelligent Trading Bots</h3>
+            <TopLine2a>Intelligent Trading Bots</TopLine2a>
+            <p>
             Leveraging ML, our platform offers trading bots that continuously learn from market data. They assess patterns and execute trades, maximizing profitability and reducing human error.
+            </p>
           </Box>
           
           <Box>
-            <h3>Optimizers & Loss Functions</h3>
+            <TopLine2a>Optimizers & Loss Functions</TopLine2a>
+            <p>
             The core of ML in trading lies in optimizing algorithms. By fine-tuning optimizers and loss functions, our tools ensure that trading strategies are efficient and yield positive returns.
+            </p>
           </Box>
           
           <Box>
-            <h3>Math-Powered Finance</h3>
+            <TopLine2a>Math-Powered Finance</TopLine2a>
+            <p>
             Dive deep into the intricate mathematics of trading. Utilize our advanced tools to harness the power of algorithms, making your investment decisions more strategic and data-driven.
+            </p>
+
+          
           </Box>
         </Row>
       </InfoWrapper2>
