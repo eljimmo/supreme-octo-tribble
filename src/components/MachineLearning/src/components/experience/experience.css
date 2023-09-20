@@ -126,7 +126,7 @@ make it thinner, then set it to again wrap around the entire parent element.
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   /* border: 1px solid transparent; */
-  border: 1px solid #ccc;
+  border: 2px solid green;
 
   transition: var(--transition);
 }
