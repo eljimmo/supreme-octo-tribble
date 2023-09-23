@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import './styles.css';
-
+// import ChooseUs from '../../pages/Service_Index/WhyLeibniz';
 class Countdown extends React.Component {
   state = {
     days: undefined,
@@ -113,7 +113,9 @@ function mapNumber(number, in_min, in_max, out_min, out_max) {
 const TimeClock = () => {
   return (
     <div>
+      
       <Countdown timeTillDate={moment().add(365, 'days').format('MM DD YYYY, h:mm a')} timeFormat='MM DD YYYY, h:mm a' />
+      {/* <ChooseUs/> */}
     </div>
   );
 };

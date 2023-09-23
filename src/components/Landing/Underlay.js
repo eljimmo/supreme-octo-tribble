@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from 'react';
-
+import ChooseUs from '../../pages/Service_Index/WhyLeibniz';
 
 
 const HeroP = styled.p`
@@ -30,7 +30,6 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: start;
-  font-family: 'ThunderBlack';
   font-size: 4em;
   line-height: 0.74em;
   color: #00b100;
@@ -48,13 +47,19 @@ const Left = styled.div`
   height: 100%;
   padding: 100px;
   white-space: nowrap;
-  font-family: 'ThunderThin';
   line-height: 1em;
   @media (max-width: 768px) {
     padding: 50px;
   }
 `
 
+const Right = styled.div`
+  position: relative;
+  display: flex;
+
+  background: transparent;
+  
+`
 
 const Sub = styled.div`
   align-self: end;
@@ -70,7 +75,7 @@ export default function Underlay() {
     <Grid>
       <Left>
 
-        <div>
+      <div>
 
 
           <br />
@@ -110,11 +115,14 @@ export default function Underlay() {
 
 
         
-        </div>
+      </div>
         <Sub />
         
       </Left>
+      <Right>
+              <ChooseUs/>
 
+      </Right>
 
 
     </Grid>

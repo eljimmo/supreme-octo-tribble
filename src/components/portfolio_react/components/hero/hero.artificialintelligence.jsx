@@ -1,6 +1,42 @@
 import React from "react";
 import styled, { keyframes } from 'styled-components';
 
+import OptimizerComparisonChart from '../../../../pages/Service_Index/OptimizerChart';
+
+
+
+
+const sgdSampleData = {
+    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], // example epochs data
+    loss: [0.9, 0.85, 0.8, 0.78, 0.76, 0.74, 0.73, 0.72, 0.71, 0.7]  // example loss data for SGD
+};
+
+const adamSampleData = {
+    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    loss: [0.9, 0.82, 0.7, 0.6, 0.55, 0.52, 0.5, 0.49, 0.48, 0.47] // example loss data for Adam
+};
+
+const rmspropSampleData = {
+    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    loss: [0.9, 0.83, 0.71, 0.63, 0.59, 0.57, 0.54, 0.52, 0.51, 0.5] // example loss data for RMSprop
+};
+
+const adagradSampleData = {
+    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    loss: [0.9, 0.86, 0.79, 0.77, 0.75, 0.73, 0.72, 0.71, 0.7, 0.69] // example loss data for Adagrad
+};
+
+
+const HiddenContent = styled.div`
+  display: none;
+  background-color: rgba(0, 0, 0, 0.1); // semi-transparent background
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+`;
+
+
+
 const gradientText = keyframes`
   0% { background-position: 0 50%; }
   50% { background-position: 100% 50%; }
@@ -81,7 +117,7 @@ const FeatureBox = styled.div`
   border-radius: 10px;
   border: 2px solid #00b100;
   margin: 0 10px;
-  box-sizing: border-box; // To ensure padding and border are included in the width.
+  box-sizing: border-box;
 
   &:first-child {
     margin-left: 0;
@@ -92,13 +128,28 @@ const FeatureBox = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 20px; // Add some bottom margin for spacing when boxes are stacked.
-    max-width: 100%;  // Allows the box to take the full width of the container.
-    padding: 10px;    // Reduce the padding for smaller screens.
+    margin-bottom: 20px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  &:hover ${HiddenContent}, &:active ${HiddenContent} {
+    display: block; // This allows HiddenContent to show on hover for desktops and on tap/click for mobile.
   }
 `;
 
-const Heroartificialintelligence = () => {
+
+export default function Heroartificialintelligence() {
+  const [hoveredBox, setHoveredBox] = React.useState(null);
+  const toggleContentVisibility = (boxName) => {
+    if (hoveredBox === boxName) {
+      setHoveredBox(null);
+    } else {
+      setHoveredBox(boxName);
+    }
+  };
+
+// const Heroartificialintelligence = () => {
   return (
     <div id="hero">
       <InfoContainer3>
@@ -111,23 +162,55 @@ const Heroartificialintelligence = () => {
             While many might confuse machine learning (ML) as synonymous with AI, it's essential to clarify that ML is a subset focused on creating systems that enhance their performance through data. Hence, while all ML is AI, not all AI entails ML.
           </TopLine1>
           <Row>
-            <FeatureBox>
-              <TopLine1>Importance in Investment</TopLine1>
-              <p>
-                AI has transformed the investment landscape by introducing data-driven decision-making processes. It helps investors analyze vast amounts of data in seconds and offers predictions with better accuracy than traditional methods.
-              </p>
-            </FeatureBox>
-            <FeatureBox>
+
+                      <FeatureBox
+                  onMouseEnter={() => setHoveredBox('Importance')}
+                  onMouseLeave={() => setHoveredBox(null)}
+                  onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
+                >
+                <TopLine1>Importance in Investment</TopLine1>
+                <p>
+                AI has transformed the investment landscape by introducing unprecedented capabilities and tools that enhance both strategic decision-making and operational efficiencies.                 </p>
+                {hoveredBox === 'Importance' && (
+                  <HiddenContent>
+                    More information about Importance in Investment...
+                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+
+                  </HiddenContent>
+                )}
+              </FeatureBox>
+
+
+              <FeatureBox
+                onMouseEnter={() => setHoveredBox('Importance')}
+                onMouseLeave={() => setHoveredBox(null)}
+                onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
+              >
               <TopLine2>Deep Learning & Patterns</TopLine2>
               <p>
-                Leveraging deep learning, our software can discern patterns in data previously invisible to human analysts. By understanding these patterns, investors gain a unique edge in predicting market movements.
-              </p>
+              Leveraging deep learning in financial investments has paved the way for a revolutionary approach to predicting market behaviors, understanding complex financial products, and managing vast portfolios.               </p>
+              {hoveredBox === 'Importance' && (
+                <HiddenContent>
+                  Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
+                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+                </HiddenContent>
+              )}
             </FeatureBox>
-            <FeatureBox>
+                        <FeatureBox
+                  onMouseEnter={() => setHoveredBox('Importance')}
+                  onMouseLeave={() => setHoveredBox(null)}
+                  onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
+                >
               <TopLine1>Why Our Bots Stand Out</TopLine1>
               <p>
                 Our algorithmic trading bots utilize the best in AI and ML to offer a competitive advantage. If you're serious about maximizing returns and staying ahead of the market curve, there's no tool better equipped than ours.
               </p>
+              {hoveredBox === 'Importance' && (
+                <HiddenContent>
+                  Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
+                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+                </HiddenContent>
+              )}
             </FeatureBox>
           </Row>
         </InfoWrapper2>
@@ -140,4 +223,3 @@ const Heroartificialintelligence = () => {
   );
 };
 
-export default Heroartificialintelligence;

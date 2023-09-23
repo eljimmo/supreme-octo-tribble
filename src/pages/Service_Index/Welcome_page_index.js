@@ -38,14 +38,15 @@ export default function WelcomePage() {
       <Heroartificialintelligence/>
             <ScApp/>
             <HeroMachineLearning/>
+            <TimeClock/>
+
             <Experience/>
 
             <HeroContainerTransparent>
+
           <App/>
-          <TimeClock/>
           <Underlay/>
           </HeroContainerTransparent>
-          <ChooseUs/> 
             <Videoapp/>
         <Footer/>
     </>

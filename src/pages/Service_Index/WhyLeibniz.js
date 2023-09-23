@@ -1,9 +1,11 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Sidebar/index';
-import Footer from '../../components/Footer/index';
+
+
 import OptimizerComparisonChart from './OptimizerChart';
+
+
+
 
 const sgdSampleData = {
     epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], // example epochs data
@@ -24,6 +26,35 @@ const adagradSampleData = {
     epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     loss: [0.9, 0.86, 0.79, 0.77, 0.75, 0.73, 0.72, 0.71, 0.7, 0.69] // example loss data for Adagrad
 };
+
+const FeatureBox = styled.div`
+  flex: 1;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  border: 2px solid #00b100;  // Green border
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // Hover effect
+  &:hover {
+    transform: scale(1.05);  // Slightly enlarges the card on hover
+    box-shadow: 0px 4px 15px rgba(0, 177, 0, 0.4);  // Greenish shadow
+    transition: all 0.3s ease-out;  // Smooth transition effect
+  }
+`;
+
+
+
+
+
 
 
 const TopLine1 = styled.div`
@@ -67,6 +98,8 @@ const Title = styled.h1`
 `;
 
 const PageWrapper = styled.div`
+	display: relative;
+
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
@@ -88,21 +121,6 @@ const Row = styled.div`
   margin-top: 40px;
 `;
 
-const FeatureBox = styled.div`
-  flex: 1;
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 0 10px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
 
 
 const Subtitle = styled.h2`
@@ -122,8 +140,7 @@ const Paragraph = styled.p`
 export default function ChooseUs() {
   return (
     <>
-      {/* <Navbar />
-      <Sidebar /> */}
+
       <PageWrapper>
         <Title>Why Choose Our Trading Bots?</Title>
         <Content>
@@ -148,7 +165,7 @@ export default function ChooseUs() {
           </FeatureBox>
         </Row>
 
-        <Subtitle>Deep Neural Networks (DNN)</Subtitle>
+        {/* <Subtitle>Deep Neural Networks (DNN)</Subtitle>
         <Paragraph>
           At the core of our bot's intelligence lies the power of DNNs. Deep Neural Networks are a class of models in the neural network family that excel in recognizing patterns and features in vast datasets. By utilizing multiple layers, our bot can understand the intricacies of financial data, making more accurate and informed trading decisions.
         </Paragraph>
@@ -194,10 +211,13 @@ export default function ChooseUs() {
         <Subtitle>Deep Neural Network Layers</Subtitle>
         <Paragraph>
           Layers in a DNN can be thought of as levels of abstraction. The initial layers might recognize simple patterns, like lines and edges in an image. As we go deeper, these patterns combine to recognize more complex structures. In trading, early layers might identify basic market movements, whereas deeper layers interpret these as potential trading signals or strategies. Our bot's deep architecture ensures a comprehensive understanding of market data.
-        </Paragraph>
+        </Paragraph> */}
 
       </PageWrapper>
-      {/* <Footer/> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </>
   );
 }
