@@ -12,6 +12,7 @@ import TimeClock from '../../components/TimeClock/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import styled from 'styled-components';
 import ChooseUs from './WhyLeibniz';
+import App2 from '../../../src/components/Curl_Noise/App2';
 
 
 const HeroContainerTransparent = styled.div`
@@ -47,6 +48,8 @@ export default function WelcomePage() {
           <App/>
           <Underlay/>
           </HeroContainerTransparent>
+
+          {/* <App2/> */}
             <Videoapp/>
         <Footer/>
     </>

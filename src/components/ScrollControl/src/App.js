@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
 import InfoSection from '../../InfoSection';
+import InfoSection2 from '../../InfoSection/Index2';
 import { homeObjOne, homeObjThree } from '../../InfoSection/Data';
 
 export default function ScApp() {
@@ -60,7 +61,7 @@ export default function ScApp() {
               <br />
               <br />
               <br />
-              <InfoSection {...homeObjThree} />
+              <InfoSection2 {...homeObjThree} />
 
 
             {/* <BatchApp/> */}
@@ -104,12 +105,12 @@ function Images() {
   })
   return (
     <group ref={group}>
-      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/invest.jpg" />
+      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/neuron_network.png" />
       <Image position={[2, 2.5, 3]} scale={3} url="/nodes.jpg" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/crosshair.jpg" />
+      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/sublime_charting.png" />
       <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
       <Image position={[0.75, -height, 10.5]} scale={1.5} url="/Blue.jpg" />
-      <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/board.jpg" />
+      <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/Eye_Providence.png" />
       <Image position={[0, -height * 2 - height / 4, 0]} scale={[width, height / 1.1, 1]} url="/ComputingAbstract.jpg" />
     </group>
   )

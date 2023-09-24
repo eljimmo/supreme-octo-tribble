@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 import React from 'react';
 import ChooseUs from '../../pages/Service_Index/WhyLeibniz';
 
@@ -70,6 +70,128 @@ const Sub = styled.div`
 
 
 
+const FeatureBox = styled.div`
+  flex: 1;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  border: 2px solid #00b100;  // Green border
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // Hover effect
+  &:hover {
+    transform: scale(1.05);  // Slightly enlarges the card on hover
+    box-shadow: 0px 4px 15px rgba(0, 177, 0, 0.4);  // Greenish shadow
+    transition: all 0.3s ease-out;  // Smooth transition effect
+  }
+`;
+
+
+
+
+
+
+
+const TopLine1 = styled.div`
+  color: #00b100;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+const gradientText = keyframes`
+{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}`;
+
+const Title = styled.h1`
+  animation: ${gradientText} 5s ease-in-out infinite;
+  font-size: 48px;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+const PageWrapper = styled.div`
+  display: relative;
+  max-width: 800px;
+  width: 100%;  // take full width by default
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;  // Reduce padding for mobile
+  }
+`;
+
+
+const Content = styled.div`
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+`;
+
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;  // stack boxes vertically on mobile
+  }
+`;
+
+
+
+const Subtitle = styled.h2`
+  font-size: 28px;
+  color: #2193b0;
+  margin-top: 30px;
+  text-align: center;
+`;
+
+const Paragraph = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;  // slightly smaller font for mobile
+  }
+`;
+
+
 export default function Underlay() {
   return (
     <Grid>
@@ -120,8 +242,32 @@ export default function Underlay() {
         
       </Left>
       <Right>
-              <ChooseUs/>
+      <>
+        {/* <Title>Why Choose Our Trading Bots?</Title>
+        <Content>
+          <Subtitle>Experience the power of advanced algorithms, unparalleled deep learning techniques,
+             and innovative technology that ensures a competitive edge in the trading world.</Subtitle>
+        </Content> */}
 
+        {/* <Row>
+          <FeatureBox>
+            <TopLine1>Advanced Algorithms</TopLine1>
+            <Paragraph>Our algorithms are built on the latest research and are continuously updated
+               to ensure maximum profitability and efficiency.</Paragraph>
+          </FeatureBox>
+          <FeatureBox>
+            <TopLine1>Deep Learning</TopLine1>
+            <Paragraph>With TensorFlow integration, our bot learns from market patterns and can 
+              predict price movements with uncanny accuracy.</Paragraph>
+          </FeatureBox>
+          <FeatureBox>
+            <TopLine1>Innovative Technology</TopLine1>
+            <Paragraph>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</Paragraph>
+          </FeatureBox>
+        </Row> */}
+
+
+      </>
       </Right>
 
 

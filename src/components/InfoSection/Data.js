@@ -47,7 +47,7 @@ export const homeObjThree = {
     "Releasing 2023.",
   buttonLabel: 'Start Now',
   imgStart: false,
-  img: require('./img/Server.jpg'),
+  img: require('./img/neuron_network.png'),
   alt: 'img',
   dark: true,
   primary: true,
