@@ -105,7 +105,7 @@ function Images() {
   })
   return (
     <group ref={group}>
-      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/neuron_network.png" />
+      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/invest.jpg" />
       <Image position={[2, 2.5, 3]} scale={3} url="/nodes.jpg" />
       <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/sublime_charting.png" />
       <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
