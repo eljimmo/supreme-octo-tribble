@@ -13,6 +13,7 @@ import Heroartificialintelligence from "../../components/portfolio_react/compone
 import styled from 'styled-components';
 import ChooseUs from './WhyLeibniz';
 import App2 from '../../../src/components/Curl_Noise/App2';
+// import ModelConfigurator from '../Service_Index/Config';
 
 
 const HeroContainerTransparent = styled.div`
@@ -42,7 +43,7 @@ export default function WelcomePage() {
             <TimeClock/>
 
             <Experience/>
-
+            {/* <ModelConfigurator/> */}
             <HeroContainerTransparent>
 
           <App/>

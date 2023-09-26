@@ -2,8 +2,8 @@ import React from "react";
 import styled, { keyframes } from 'styled-components';
 
 import OptimizerComparisonChart from '../../../../pages/Service_Index/OptimizerChart';
-
-
+import InfoSection from "../../../InfoSection";
+import { homeObjOne } from "../../../InfoSection/Data";
 
 
 const sgdSampleData = {
@@ -174,7 +174,8 @@ export default function Heroartificialintelligence() {
                 {hoveredBox === 'Importance' && (
                   <HiddenContent>
                     More information about Importance in Investment...
-                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
+                    <InfoSection {...homeObjOne} />
 
                   </HiddenContent>
                 )}
@@ -208,7 +209,10 @@ export default function Heroartificialintelligence() {
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
                   Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
-                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+                    
+                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
+                    <InfoSection {...homeObjOne} />
+
                 </HiddenContent>
               )}
             </FeatureBox>
