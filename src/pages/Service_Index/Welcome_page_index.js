@@ -11,9 +11,7 @@ import App from '../../components/Curl_Noise/App';
 import TimeClock from '../../components/TimeClock/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import styled from 'styled-components';
-import ChooseUs from './WhyLeibniz';
-import App2 from '../../../src/components/Curl_Noise/App2';
-// import ModelConfigurator from '../Service_Index/Config';
+
 
 
 const HeroContainerTransparent = styled.div`
@@ -36,21 +34,17 @@ export default function WelcomePage() {
     <>
 <HeroSection/>
 <Videoapp/>
+<Heroartificialintelligence/>
+
       <ScrollBelt/>
-      <Heroartificialintelligence/>
             <ScApp/>
             <HeroMachineLearning/>
             <TimeClock/>
-
             <Experience/>
-            {/* <ModelConfigurator/> */}
             <HeroContainerTransparent>
-
           <App/>
           <Underlay/>
           </HeroContainerTransparent>
-
-          {/* <App2/> */}
             <Videoapp/>
         <Footer/>
     </>

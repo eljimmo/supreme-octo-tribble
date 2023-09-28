@@ -30,8 +30,8 @@ export const homeObjTwo = {
   img: require('./img/invest.jpg'),
   alt: 'img',
   dark: true,
-  primary: false,
-  darkText: true
+  primary: true,
+  darkText: false
 };
 
 export const homeObjThree = {

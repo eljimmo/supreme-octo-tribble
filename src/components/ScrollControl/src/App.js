@@ -63,8 +63,6 @@ export default function ScApp() {
               <br />
               <InfoSection2 {...homeObjThree} />
 
-
-            {/* <BatchApp/> */}
             </div>
           </Scroll>
           {/** This is a helper that pre-emptively makes threejs aware of all geometries, textures etc

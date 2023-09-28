@@ -2,8 +2,9 @@ import React from "react";
 import styled, { keyframes } from 'styled-components';
 
 import OptimizerComparisonChart from '../../../../pages/Service_Index/OptimizerChart';
-import InfoSection from "../../../InfoSection";
-import { homeObjOne } from "../../../InfoSection/Data";
+// import InfoSection from "../../../InfoSection";
+import InfoSection3 from "../../../InfoSection/Index3";
+import { homeObjOne, homeObjTwo } from "../../../InfoSection/Data";
 
 
 const sgdSampleData = {
@@ -33,6 +34,21 @@ const HiddenContent = styled.div`
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
+`;
+
+
+const StyledParagraph = styled.p`
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cbcbcb;
+  
+  /* Add a default margin for larger screens */
+  margin: 0 20px;
+
+  @media screen and (max-width: 768px) {
+    /* Adjust margin for smaller screens (e.g., mobile devices) */
+    margin: 0 10px;
+  }
 `;
 
 
@@ -67,6 +83,21 @@ const InfoContainer3 = styled.div`
     height: 1100px;
   }
 `;
+
+const InfoContainer4 = styled.div`
+  color: #fff;
+  background: transparent;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 20px; /* Add padding for spacing around the content */
+  
+  @media screen and (max-width: 768px) {
+    padding: 60px 0; /* Adjust padding for smaller screens */
+  }
+`;
+
 
 const TopLine1 = styled.div`
   color: #00b100;
@@ -152,7 +183,7 @@ export default function Heroartificialintelligence() {
 // const Heroartificialintelligence = () => {
   return (
     <div id="hero">
-      <InfoContainer3>
+      <InfoContainer4>
         <AnimatedGradientText1>
           Artificial Intelligence in Commercial Investments
         </AnimatedGradientText1>
@@ -169,13 +200,13 @@ export default function Heroartificialintelligence() {
                   onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
                 >
                 <TopLine1>Importance in Investment</TopLine1>
-                <p>
-                AI has transformed the investment landscape by introducing unprecedented capabilities and tools that enhance both strategic decision-making and operational efficiencies.                 </p>
+                <StyledParagraph>
+                AI has transformed the investment landscape by introducing unprecedented capabilities and tools that enhance both strategic decision-making and operational efficiencies.        
+                </StyledParagraph>
                 {hoveredBox === 'Importance' && (
                   <HiddenContent>
                     More information about Importance in Investment...
-                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
-                    <InfoSection {...homeObjOne} />
+                    <InfoSection3 {...homeObjOne} />
 
                   </HiddenContent>
                 )}
@@ -188,8 +219,9 @@ export default function Heroartificialintelligence() {
                 onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
               >
               <TopLine2>Deep Learning & Patterns</TopLine2>
-              <p>
-              Leveraging deep learning in financial investments has paved the way for a revolutionary approach to predicting market behaviors, understanding complex financial products, and managing vast portfolios.               </p>
+              <StyledParagraph>
+              Leveraging deep learning in financial investments has paved the way for a revolutionary approach to predicting market behaviors, understanding complex financial products, and managing vast portfolios.
+               </StyledParagraph>
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
                   Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
@@ -203,22 +235,21 @@ export default function Heroartificialintelligence() {
                   onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
                 >
               <TopLine1>Why Our Bots Stand Out</TopLine1>
-              <p>
+              <StyledParagraph>
                 Our algorithmic trading bots utilize the best in AI and ML to offer a competitive advantage. If you're serious about maximizing returns and staying ahead of the market curve, there's no tool better equipped than ours.
-              </p>
+              </StyledParagraph>
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
-                  Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
+                  Finding patterns in data is a key component of machine learning.
                     
-                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
-                    <InfoSection {...homeObjOne} />
+                    <InfoSection3 {...homeObjTwo} />
 
                 </HiddenContent>
               )}
             </FeatureBox>
           </Row>
         </InfoWrapper2>
-      </InfoContainer3>
+      </InfoContainer4>
       <br/>
       <br/>
       <br/>
