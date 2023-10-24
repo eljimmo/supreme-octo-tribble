@@ -21,10 +21,11 @@ export const homeObjTwo = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Stock Market Derivative Modeling, Machine Learning for Predictive Analysis',
-  headline: 'A comprehensive financial net modeling structure enabling users to create a holistic valuation towards determining navigation in a changing risk field.',
-  // description:
-  //     'The foundation of Leibniz Analytica is to build AI models to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once.',
+  topLine: 'Project Leibniz Analytica',
+  headline: 'Comprehensive financial modeling.', 
+  // structure enabling users to create a holistic valuation towards securities.',
+  description:
+      'The foundation of Leibniz Analytica is to build AI models to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once.',
   buttonLabel: 'Learn More',
   imgStart: true,
   img: require('./img/invest.jpg'),
@@ -60,7 +61,7 @@ export const homeObjFour = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Understanding What is Machine Learning.',
-  headline: 'Machine Learning is a vast field of study dedicated to the research of algorithimic methods that utilize data to better performance for a given problem.',
+  headline: 'Machine Learning is a field of study dedicated to the research of algorithimic methods.',
 
   description:
     "learn and improve from experience.",

@@ -4,7 +4,8 @@ import styled, { keyframes } from 'styled-components';
 import OptimizerComparisonChart from '../../../../pages/Service_Index/OptimizerChart';
 // import InfoSection from "../../../InfoSection";
 import InfoSection3 from "../../../InfoSection/Index3";
-import { homeObjOne, homeObjTwo } from "../../../InfoSection/Data";
+import InfoSection4 from "../../../InfoSection/Index4";
+import { homeObjOne, homeObjTwo, homeObjFour } from "../../../InfoSection/Data";
 
 
 const sgdSampleData = {
@@ -185,12 +186,11 @@ export default function Heroartificialintelligence() {
     <div id="hero">
       <InfoContainer4>
         <AnimatedGradientText1>
-          Artificial Intelligence in Commercial Investments
+          Artificial Intelligence for Derivatives Options Pricing
         </AnimatedGradientText1>
         <InfoWrapper2>
-          <TopLine1>
-            “Artificial intelligence is a system built to make predictions or decisions that influence our environment, based on objectives defined by humans.”
-            While many might confuse machine learning (ML) as synonymous with AI, it's essential to clarify that ML is a subset focused on creating systems that enhance their performance through data. Hence, while all ML is AI, not all AI entails ML.
+        <TopLine1>
+            "Options trading is a sophisticated financial strategy that allows investors to leverage their positions and potentially amplify returns. Just as it's crucial to distinguish between machine learning (ML) and artificial intelligence (AI) in technology, it's essential to understand the nuances in options trading. Our app harnesses the power of AI to guide traders in navigating this complex landscape, pinpointing optimal options to consider based on data-driven insights. So, while all options trading can benefit from informed decisions, not all trading tools empower traders the way our app does."
           </TopLine1>
           <Row>
 
@@ -225,7 +225,8 @@ export default function Heroartificialintelligence() {
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
                   Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
-                    <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} />
+                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
+                    <InfoSection4 {...homeObjFour} />
                 </HiddenContent>
               )}
             </FeatureBox>
