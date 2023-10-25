@@ -199,37 +199,33 @@ export default function Underlay() {
 
       <div>
 
+      <br />
+<HeroP>
+    Analyze option contract trends
+</HeroP>
+<br />
+<HeroP>
+    Adjust Greek parameters on-the-fly
+</HeroP>
 
-          <br />
-          <HeroP>
-          Define the model state
-          </HeroP>
-          <br />
-          <HeroP>
+<br />
 
-          change model properties
-          </HeroP>
+<HeroP>
+    Forecast contract profitability
+</HeroP>
 
-          <br />
+<br />
 
-          <HeroP>
+<HeroP>
+    Tailor your strategy with dynamic data
+</HeroP>
 
-          identify prediction controls.
-          </HeroP>
+<br />
 
-          <br />
+<HeroP>
+    Maximize potential returns through AI-driven insights
+</HeroP>
 
-        <HeroP>
-
-        create intelligence parameters  
-        </HeroP>
-
-        <br />
-
-        <HeroP>
-
-        optimize parameters of prediction
-        </HeroP>
 
 
 
