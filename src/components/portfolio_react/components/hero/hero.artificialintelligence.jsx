@@ -199,10 +199,9 @@ export default function Heroartificialintelligence() {
                   onMouseLeave={() => setHoveredBox(null)}
                   onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
                 >
-                <TopLine1>Importance in Investment</TopLine1>
+                <TopLine1>Importance in options trading Investment</TopLine1>
                 <StyledParagraph>
-                AI has transformed the investment landscape by introducing unprecedented capabilities and tools that enhance both strategic decision-making and operational efficiencies.        
-                </StyledParagraph>
+                AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.                </StyledParagraph>
                 {hoveredBox === 'Importance' && (
                   <HiddenContent>
                     More information about Importance in Investment...
@@ -220,12 +219,10 @@ export default function Heroartificialintelligence() {
               >
               <TopLine2>Deep Learning & Patterns</TopLine2>
               <StyledParagraph>
-              Leveraging deep learning in financial investments has paved the way for a revolutionary approach to predicting market behaviors, understanding complex financial products, and managing vast portfolios.
-               </StyledParagraph>
+              Leveraging deep learning in options trading has ushered in a groundbreaking approach to deciphering market behaviors, gaining intricate insights into the 'Greeks' and their implications, and comprehensively understanding the underlying assets. This sophisticated AI-driven perspective empowers traders to manage their positions with enhanced precision and foresight.               </StyledParagraph>
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
                   Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
-                    {/* <OptimizerComparisonChart adagradData={adagradSampleData} rmspropData={rmspropSampleData} sgdData={sgdSampleData} adamData={adamSampleData} /> */}
                     <InfoSection4 {...homeObjFour} />
                 </HiddenContent>
               )}
@@ -237,8 +234,7 @@ export default function Heroartificialintelligence() {
                 >
               <TopLine1>Why Our Bots Stand Out</TopLine1>
               <StyledParagraph>
-                Our algorithmic trading bots utilize the best in AI and ML to offer a competitive advantage. If you're serious about maximizing returns and staying ahead of the market curve, there's no tool better equipped than ours.
-              </StyledParagraph>
+              Our algorithmic trading bots, specialized for options trading, harness the prowess of AI and ML to interpret intricate market conditions and the dynamics of the 'Greeks'. If you're committed to optimizing your options strategy, navigating market nuances, and consistently staying ahead of the market curve, our platform provides an unparalleled advantage.              </StyledParagraph>
               {hoveredBox === 'Importance' && (
                 <HiddenContent>
                   Finding patterns in data is a key component of machine learning.

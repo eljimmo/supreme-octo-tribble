@@ -69,8 +69,7 @@ loop: true,
         </h1>
         <List open={state.open}>
           <p>
-            Named after Gottfried Wilhelm Leibniz the Father of Calculus, Project Leibniz Analytica is a project that aims to create a platform to build research AI models and experimentational Agents for Financial Analysis & decision making. We utilize a variety of technologies to create a powerful ecosystem for testing analytical bots to trade & simulate stock movements. 
-
+          Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.
 
                       </p>
         </List>

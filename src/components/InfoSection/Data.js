@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'Project Leibniz Analytica',
   headline: 'What is Project Leibniz Analytica?',
   description:
-  'Project Leibniz Analytica is a web based Machine Learning platform for the creation of testing financial Artificial Agents to better understand market value assets including common stocks, futures contracts, exchange-traded funds, crypto-currency, & options. By creating an enviroment where risk, volitilty & loss are measured as a metric, financial decision making can be better understood and improved upon.',
+  'Project Leibniz Analytica is your indispensable tool for options trading in todays dynamic markets. At the heart of our web-based platform lies a specialized machine learning ecosystem dedicated to transforming the landscape of options trading. We do not just analyze market assets like common stocks, futures, ETFs, cryptocurrencies, and options; we dive deep into the nuances of risk, volatility, and potential loss. With metrics designed to decode the intricacies of options profitability, our platform ensures that your financial decision-making is not just informed, but primed for success. If profitability in options trading is your goal, Project Leibniz Analytica is the game-changer you have been waiting for.',
   buttonLabel: 'Demo',
   imgStart: false,
   img: require('./img/nodes.jpg'),
@@ -23,9 +23,8 @@ export const homeObjTwo = {
   lightTextDesc: true,
   topLine: 'Project Leibniz Analytica',
   headline: 'Comprehensive financial modeling.', 
-  // structure enabling users to create a holistic valuation towards securities.',
   description:
-      'The foundation of Leibniz Analytica is to build AI models to help guide an investment decision. Create, optimize, manipulate agents to learn how to trade a stock or multiple at once.',
+      'The cornerstone of Leibniz Analytica is the crafting of AI models tailored for options trading insights. Design, refine, and adapt agents to master the nuances of trading individual or multiple options contracts, guiding you toward informed and strategic investment decisions.',
   buttonLabel: 'Learn More',
   imgStart: true,
   img: require('./img/invest.jpg'),
