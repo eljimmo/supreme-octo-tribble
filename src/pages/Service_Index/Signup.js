@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import {  createUserWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from '../../firebase';
 import Footer from '../../components/Footer/index';
-import Videoapp from '../../components/VideoTexture/App';
+// import Videoapp from '../../components/VideoTexture/App';
 import Navbar from '../../components/Navbar/index';
 import Sidebar from '../../components/Sidebar/index';
 
@@ -147,7 +147,7 @@ const Signup = () => {
                     
                 </div>
             </div>
-            <Videoapp/>
+            {/* <Videoapp/> */}
                     <Footer/>
         </section>
     </main>

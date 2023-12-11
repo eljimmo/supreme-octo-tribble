@@ -14,7 +14,7 @@ import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
 import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
-// import Login from "./pages/Service_Index/login";
+import Login from "./pages/Service_Index/login";
 import Signup from "./pages/Service_Index/Signup";
 
 export default function App() {
@@ -27,15 +27,15 @@ export default function App() {
 
 
 
-
+{/* 
     <Routes>
       
             <Route path="/signup" element={<Signup/>}/>
     
     
-            {/* <Route path="/login" element={<Login/>}/> */}
+            <Route path="/login" element={<Login/>}/>
 
-    </Routes>
+    </Routes> */}
 
 
 
@@ -51,6 +51,11 @@ export default function App() {
                 }
               />
 
+
+                <Route path="/login" element={<Login/>}/>
+
+
+                <Route path="/login" element={<Signup/>}/>
 
               <Route
                 path="/support"

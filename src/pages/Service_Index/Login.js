@@ -4,7 +4,7 @@ import {  signInWithEmailAndPassword   } from 'firebase/auth';
 import { auth } from '../../firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer/index';
-import Videoapp from '../../components/VideoTexture/App';
+// import Videoapp from '../../components/VideoTexture/App';
 import Navbar from '../../components/Navbar/index';
 import Sidebar from '../../components/Sidebar/index';
 import styled from 'styled-components';
@@ -125,7 +125,7 @@ const Login = () => {
                         </div>
                     </div>
                     </InfoContainer>
-                    <Videoapp/>
+                    {/* <Videoapp/> */}
                     <Footer/>
                 </section>
             </main>
