@@ -15,6 +15,7 @@ export default function ScApp() {
             <Typography />
             <Images />
           </Scroll>
+          
           <Scroll html>
             {/* First Div */}
             <div

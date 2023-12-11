@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
+import Navbar from '../Navbar';
 
 
 
@@ -69,11 +70,19 @@ loop: true,
         </h1>
         <List open={state.open}>
           <p>
-          Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.
+          "Project Leibniz Analytica, named to honor the legacy of calculus pioneer Gottfried Wilhelm Leibniz, is not just a platform but a paradigm shift in trading technologies. 
+
+At the heart of Project Leibniz Analytica lies an advanced suite designed to serve both novice traders and seasoned analysts. Users can engage with our suite to construct, test, and refine trading strategies through a sophisticated environment that includes options, stocks, and beyond. Our platform facilitates the simulation of stock movements, enabling traders to forecast potential values and visualize prospective profits without the immediate risks of actual capital investment.
+
+One of our cornerstone features, bot paper trading, allows users to experiment with trading bots that execute trades in a simulated market environment. 
+
+Furthermore, Project Leibniz Analytica nurtures an ecosystem of analytical bots that can automate the exploration of market trends and trading opportunities. These bots are designed to learn from market fluctuations, trader behavior, and economic indicators to propose informed trading strategies, be it in real-world scenarios or within the risk-free confines of paper trading.
 
                       </p>
         </List>
       </div>
+      <Navbar/>
+
     </>
   )
 }

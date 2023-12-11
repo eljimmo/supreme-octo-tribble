@@ -1,5 +1,5 @@
 import React from 'react';
-import FrostedApp from '../../components/FrostedGlass/index';
+import FrostedApp from '../FrostedGlass/index';
 import styled from 'styled-components';
 
 const HeroContainer = styled.div`

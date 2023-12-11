@@ -47,47 +47,47 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
 
 
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks2a
-                  to='/about'
+                  to='/home'
                 >
-                  About
+                  Home
                 </NavLinks2a>
-              </NavItem> */}
+              </NavItem>
 
 
-              {/* <NavItem>
-                <NavLinks2
-                  to='/neuroevolution'
-                >
-                  Neuro Evolution
-                </NavLinks2>
-              </NavItem> */}
-
-
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks2a
-                  to='/machinelearning'
+                  to='/PersonalDashboard'
                 >
-                  Machine Learning
+                  dashboard
                 </NavLinks2a>
-              </NavItem> */}
+              </NavItem> 
 
 
               {/* <NavItem>
                 <NavLinks2a
-                  to='/artificialintelligence'
+                  to='/AssetAnalysis'
                 >
-                  Artificial Intelligence
+                  Analysis
                 </NavLinks2a>
               </NavItem> */}
 
 
               <NavItem>
                 <NavLinks2a
-                  to='/login'
+                  to='/livebots'
                 >
-                  Login
+                  bots
+                </NavLinks2a>
+              </NavItem>
+
+
+              <NavItem>
+                <NavLinks2a
+                  to='/botworkshop'
+                >
+                  botworkshop
                 </NavLinks2a>
               </NavItem>
 

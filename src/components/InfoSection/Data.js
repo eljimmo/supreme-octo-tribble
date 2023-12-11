@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'Project Leibniz Analytica',
   headline: 'What is Project Leibniz Analytica?',
   description:
-  'Project Leibniz Analytica is your indispensable tool for options trading in todays dynamic markets. At the heart of our web-based platform lies a specialized machine learning ecosystem dedicated to transforming the landscape of options trading. We do not just analyze market assets like common stocks, futures, ETFs, cryptocurrencies, and options; we dive deep into the nuances of risk, volatility, and potential loss. With metrics designed to decode the intricacies of options profitability, our platform ensures that your financial decision-making is not just informed, but primed for success. If profitability in options trading is your goal, Project Leibniz Analytica is the game-changer you have been waiting for.',
+  'Project Leibniz Analytica is your indispensable tool for options trading in todays dynamic markets. We dive deep into the nuances of risk, volatility, and potential loss.',
   buttonLabel: 'Demo',
   imgStart: false,
   img: require('./img/nodes.jpg'),

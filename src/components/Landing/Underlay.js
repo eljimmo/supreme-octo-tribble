@@ -239,28 +239,6 @@ export default function Underlay() {
       </Left>
       <Right>
       <>
-        {/* <Title>Why Choose Our Trading Bots?</Title>
-        <Content>
-          <Subtitle>Experience the power of advanced algorithms, unparalleled deep learning techniques,
-             and innovative technology that ensures a competitive edge in the trading world.</Subtitle>
-        </Content> */}
-
-        {/* <Row>
-          <FeatureBox>
-            <TopLine1>Advanced Algorithms</TopLine1>
-            <Paragraph>Our algorithms are built on the latest research and are continuously updated
-               to ensure maximum profitability and efficiency.</Paragraph>
-          </FeatureBox>
-          <FeatureBox>
-            <TopLine1>Deep Learning</TopLine1>
-            <Paragraph>With TensorFlow integration, our bot learns from market patterns and can 
-              predict price movements with uncanny accuracy.</Paragraph>
-          </FeatureBox>
-          <FeatureBox>
-            <TopLine1>Innovative Technology</TopLine1>
-            <Paragraph>Stay ahead of the curve with high-frequency trading, cloud integration, and real-time analytics.</Paragraph>
-          </FeatureBox>
-        </Row> */}
 
 
       </>

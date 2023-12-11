@@ -35,7 +35,6 @@ export default function WelcomePage() {
 <HeroSection/>
 <Videoapp/>
 <Heroartificialintelligence/>
-
       <ScrollBelt/>
             <ScApp/>
             <HeroMachineLearning/>

@@ -16,13 +16,10 @@ export default function App() {
       <Environment background preset="sunset" blur={0.8} />
       <ContactShadows resolution={512} position={[0, -0.8, 0]} opacity={1} scale={10} blur={2} far={0.8} />
       <Selector>
-
       <Stage intensity={0.5} environment="city" shadows={{ type: 'accumulative', bias: -0.001 }} adjustCamera={false}>
       <Model rotation={[0.3, Math.PI / 1.6, 0]} />
       </Stage>
       <Grid renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} sectionColor={[0.5, 0.5, 10]} fadeDistance={30} />
-
-        {/* <Model rotation={[0.3, Math.PI / 1.6, 0]} /> */}
       </Selector>
     </Canvas>
   )

@@ -1,7 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 import './styles.css';
-// import ChooseUs from '../../pages/Service_Index/WhyLeibniz';
+
+
 class Countdown extends React.Component {
   state = {
     days: undefined,
