@@ -14,7 +14,7 @@ import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
 import Howitworks from "./pages/Service_Index/How";
 import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
-import Login from "./pages/Service_Index/login";
+import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
 
 export default function App() {
