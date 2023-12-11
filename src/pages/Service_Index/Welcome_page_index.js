@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/index';
-import Videoapp from '../../components/VideoTexture/App';
+// import Videoapp from '../../components/VideoTexture/App';
 import HeroSection from '../../components/HeroSection/index';
 import ScApp from '../../components/ScrollControl/src/App';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
@@ -33,7 +33,7 @@ export default function WelcomePage() {
   return (
     <>
 <HeroSection/>
-<Videoapp/>
+{/* <Videoapp/> */}
 <Heroartificialintelligence/>
       <ScrollBelt/>
             <ScApp/>
@@ -44,7 +44,7 @@ export default function WelcomePage() {
           <App/>
           <Underlay/>
           </HeroContainerTransparent>
-            <Videoapp/>
+            {/* <Videoapp/> */}
         <Footer/>
     </>
   );
