@@ -138,6 +138,8 @@ const Title = styled.h1`
     font-size: 32px;
   }
 `;
+
+
 const PageWrapper = styled.div`
   display: relative;
   max-width: 800px;

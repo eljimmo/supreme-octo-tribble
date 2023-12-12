@@ -1,6 +1,10 @@
-import { CameraShake } from '@react-three/drei';
-import { Particles } from './Particles';
-import { Canvas } from '@react-three/fiber';
+import { CameraShake, Environment, Lightformer, OrbitControls, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
+import { useControls } from 'leva'
+import { Particles } from './Particles'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { LUTCubeLoader } from 'postprocessing'
+import { EffectComposer, Bloom, LUT, BrightnessContrast, HueSaturation } from '@react-three/postprocessing'
+
 
 export default function App() {
   const props = {
@@ -13,7 +17,7 @@ export default function App() {
 
   return (
     <>
-      <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>
+        <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>
         <CameraShake
           yawFrequency={1}
           maxYaw={0.05}
@@ -23,8 +27,8 @@ export default function App() {
           maxRoll={0.5}
           intensity={0.2}
         />
-        <Particles {...props} />
-      </Canvas>
+      <Particles {...props} />
+            </Canvas>
     </>
   );
 }

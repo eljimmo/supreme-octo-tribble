@@ -6,7 +6,7 @@ import ScApp from '../../components/ScrollControl/src/App';
 import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
 import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
 import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
-// import Underlay from '../../components/Landing/Underlay';
+import Underlay from '../../components/Landing/Underlay';
 import App from '../../components/Curl_Noise/App';
 import TimeClock from '../../components/TimeClock/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
@@ -42,7 +42,7 @@ export default function WelcomePage() {
             <Experience/>
             <HeroContainerTransparent>
               <App/>
-              {/* <Underlay/> */}
+              <Underlay/>
             </HeroContainerTransparent>
             {/* <Videoapp/> */}
         <Footer/>
