@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
-// import Navbar from '../Navbar';
+import Navbar from '../Navbar';
 
 
 

@@ -11,6 +11,7 @@ import App from '../../components/Curl_Noise/App';
 import TimeClock from '../../components/TimeClock/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import styled from 'styled-components';
+import Navbar from '../../components/Navbar';
 
 
 
@@ -33,7 +34,7 @@ export default function WelcomePage() {
   return (
     <>
 <HeroSection/>
-{/* <Videoapp/> */}
+<Navbar/>
 <Heroartificialintelligence/>
       <ScrollBelt/>
             <ScApp/>
@@ -42,7 +43,7 @@ export default function WelcomePage() {
             <Experience/>
             <HeroContainerTransparent>
               <App/>
-              <Underlay/>
+              {/* <Underlay/> */}
             </HeroContainerTransparent>
             {/* <Videoapp/> */}
         <Footer/>
