@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { GiAbstract053 } from "react-icons/gi";
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import {
@@ -42,7 +42,7 @@ const Navbar = ({ toggle }) => {
               Project Leibniz
             </NavLogo>
             <MobileIcon onClick={toggle}>
-              <FaBars />
+              <GiAbstract053 />
             </MobileIcon>
             <NavMenu>
 

@@ -12,6 +12,7 @@ import TimeClock from '../../components/TimeClock/Index';
 import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
 import styled from 'styled-components';
 import Navbar from '../../components/Navbar';
+import Sidebar from '../../components/Sidebar/index';
 
 
 
@@ -34,7 +35,8 @@ export default function WelcomePage() {
   return (
     <>
 <HeroSection/>
-<Navbar/>
+<Navbar toggle={toggle} />
+<Sidebar isOpen={isOpen} toggle={toggle} />
 <Heroartificialintelligence/>
       <ScrollBelt/>
             <ScApp/>

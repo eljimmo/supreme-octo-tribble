@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? 'transparent' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -52,8 +52,10 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: white; /* Set the color to white */
   }
 `;
+
 
 export const NavMenu = styled.ul`
   display: flex;
