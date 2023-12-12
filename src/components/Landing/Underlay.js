@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 import React from 'react';
-import ChooseUs from '../../pages/Service_Index/WhyLeibniz';
 
 
 const HeroP = styled.p`
