@@ -20,8 +20,8 @@ import { useNavigate } from 'react-router-dom';
 import ClearIcon from '@mui/icons-material/Clear';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import './components.css';
-import Navbar from "../Navbar/index";
+// import './components.css';
+// import Navbar from "../Navbar/index";
 import { useStore } from './store'
 import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -29,7 +29,7 @@ import { MeshTransmissionMaterial } from '@react-three/drei';
 import { easing } from 'maath';
 import { Grid } from '@react-three/drei';
 import { extend } from '@react-three/fiber';
-import { GridBackground } from "../../views/Grids/Styled Elements/HomeElements";
+import { GridBackground } from "../layout/Elements";
 import { Menu } from 'antd';
 import { Perf } from "r3f-perf"
 import { useControls } from "leva";
@@ -348,7 +348,7 @@ const backgroundStyle = themeMode === 'dark'
 
         </Box>
 
-      <Navbar/>
+      {/* <Navbar/> */}
 
 
       <Affix >

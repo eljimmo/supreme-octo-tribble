@@ -16,6 +16,7 @@ import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
+import PrivateRoute from "./pages/layout/PrivateRoute";
 
 export default function App() {
   return (
@@ -27,22 +28,33 @@ export default function App() {
 
 
 
-{/* 
-    <Routes>
-      
-            <Route path="/signup" element={<Signup/>}/>
-    
-    
-            <Route path="/login" element={<Login/>}/>
-
-    </Routes> */}
-
 
 
     <div className="App bg-primary">
       <section>          
         <div>            
           <Routes>
+
+
+
+
+          <Route path="/login" element={<Login/>}/>
+
+
+          <Route path="/signup" element={<Signup/>}/>
+
+
+
+          
+          <Route exact path='/' element={<PrivateRoute/>}>
+                  <Route exact path='/' element={<SupportPage/>} />
+                </Route>
+
+
+
+
+
+
 
               <Route 
                 path="/"
@@ -52,10 +64,7 @@ export default function App() {
               />
 
 
-                <Route path="/login" element={<Login/>}/>
 
-
-                <Route path="/signup" element={<Signup/>}/>
 
               <Route
                 path="/support"
