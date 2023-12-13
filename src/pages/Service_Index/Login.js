@@ -83,7 +83,8 @@ const Login = () => {
                                             id="email-address"
                                             name="email"
                                             type="email"                                    
-                                            required                                            
+                                            required
+                                            className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"                                            
                                             placeholder="Email address"
                                             onChange={(e)=>setEmail(e.target.value)}
                                             style={inputStyle} // Apply the inputStyle to change font color
@@ -99,7 +100,9 @@ const Login = () => {
                                             id="password"
                                             name="password"
                                             type="password"                                    
-                                            required                                            
+                                            required
+                                            className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                                            
                                             placeholder="Password"
                                             onChange={(e)=>setPassword(e.target.value)}
                                             style={inputStyle} // Apply the inputStyle to change font color
@@ -108,19 +111,21 @@ const Login = () => {
                                 </div>                        
 
                                 <div>
-                                    <button                                     
-                                        onClick={onLogin}
-                                        className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                                    >      
-                                        Login                                                                  
-                                    </button>
+                                <button
+                                onClick={onLogin}
+                                className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                style={{ color: 'black' }} // Set text color to black
+                                >
+                                Login
+                                </button>
+
                                 </div>
                                 
                             </form>
                         
                             <p className="text-sm text-white text-center">
                                 No account yet?{' '}
-                                <NavLink to="/signup" className="underline text-tertiary">
+                                <NavLink to="/signup" className="underline text-tertiary text-sm text-white text-center">
                                     Sign up
                                 </NavLink>
                             </p>
