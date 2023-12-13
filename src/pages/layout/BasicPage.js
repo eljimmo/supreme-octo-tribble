@@ -22,17 +22,13 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 // import './components.css';
 // import Navbar from "../Navbar/index";
-import { useStore } from './store'
-import { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshTransmissionMaterial } from '@react-three/drei';
-import { easing } from 'maath';
+// import { useStore } from './store'
+// import { useRef } from 'react'
+import { Canvas } from '@react-three/fiber'
 import { Grid } from '@react-three/drei';
 import { extend } from '@react-three/fiber';
 import { GridBackground } from "../layout/Elements";
-import { Menu } from 'antd';
 import { Perf } from "r3f-perf"
-import { useControls } from "leva";
 import { Affix, Button } from 'antd';
 
 
@@ -45,11 +41,9 @@ extend({ Grid });
 
 
 
-function BackgroundGrid({ preset = 'sunset' }) {
+function BackgroundGrid() {
   const [bad, set] = useState(false);
-  const { impl, debug, enabled, samples, ...config } = useControls({
-    debug: true,
-  });
+
   return (
     <GridBackground>
       
@@ -65,7 +59,7 @@ function BackgroundGrid({ preset = 'sunset' }) {
             <color attach="background" args={['#15151a']} />
 
       <ambientLight intensity={0.7} />
-      {debug && <Perf position="bottom-left" />}
+      { <Perf position="bottom-left" />}
         <Grid
           renderOrder={-1}
           position={[0, -1.85, 0]}
@@ -77,7 +71,6 @@ function BackgroundGrid({ preset = 'sunset' }) {
           sectionColor={[0.5, 0.5, 10]}
           fadeDistance={30}
         />
-        {/* <OrbitControls/> */}
 
       </Canvas>
     </GridBackground>
@@ -155,26 +148,11 @@ const AppBar = styled(MuiAppBar, {
 
 
 
-function DashboardContent({ envPreset, setEnvPreset, showBackgroundGrid, toggleBackgroundGrid }) {
+function DashboardContent({ setEnvPreset }) {
   const [open, setOpen] = useState(true);
   const { currentUser, logout } = useAuth();
   const history = useNavigate();
 
-  // const envMenu = (
-  //   <Menu onClick={(e) => setEnvPreset(e.key)}>
-  //     <Menu.Item key="sunset">Sunset</Menu.Item>
-  //     <Menu.Item key="dawn">Dawn</Menu.Item>
-  //     <Menu.Item key="night">Night</Menu.Item>
-  //     <Menu.Item key="forest">Forest</Menu.Item>
-  //     <Menu.Item key="city">City</Menu.Item>
-  //     <Menu.Item key="park">Park</Menu.Item>
-  //     <Menu.Item key="warehouse">Warehouse</Menu.Item>
-  //     <Menu.Item key="apartment">Apartment</Menu.Item>
-  //     <Menu.Item key="studio">Studio</Menu.Item>
-  //     <Menu.Item key="lobby">Lobby</Menu.Item>
-
-  //   </Menu>
-  // );
 
 
   const [error, setError] = useState('');
@@ -240,15 +218,6 @@ const backgroundStyle = themeMode === 'dark'
   : { backgroundImage: 'linear-gradient(45deg, #214E66 30%, #E8EDEF 90%)' }; // Gradient for light mode
 
 
-  const menu = (
-    <Menu onClick={(e) => setEnvPreset(e.key)}>
-      <Menu.Item key="forest">Forest</Menu.Item>
-      <Menu.Item key="city">City</Menu.Item>
-      <Menu.Item key="dawn">Dawn</Menu.Item>
-      {/* ... other presets ... */}
-    </Menu>
-  );
-  
 
 
 
@@ -267,19 +236,6 @@ const backgroundStyle = themeMode === 'dark'
             }}
           >
 
-
-          {/* <Dropdown overlay={envMenu}  placement="bottom">
-            <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-              Change Lighting <DownOutlined />
-            </a>
-          </Dropdown> */}
-          
-          {/* <IconButton
-          color="inherit"
-          onClick={toggleBackgroundGrid}
-        >
-          {showBackgroundGrid ? <VisibilityOffIcon /> : <VisibilityIcon />}
-        </IconButton> */}
 
 
 
@@ -339,7 +295,6 @@ const backgroundStyle = themeMode === 'dark'
             <Container maxWidth="xl" >
 
                                     <MuiGrid container spacing={3}>
-                                      {/* Your Grid Content */}
                                       <Outlet/>
                                     </MuiGrid>      
                                     
@@ -347,8 +302,6 @@ const backgroundStyle = themeMode === 'dark'
             </Container>
 
         </Box>
-
-      {/* <Navbar/> */}
 
 
       <Affix >
@@ -429,30 +382,3 @@ export default function BasicPage() {
 }
 
 
-function Selector({ children }) {
-  const ref = useRef()
-  const store = useStore()
-  useFrame(({ viewport, camera, pointer }, delta) => {
-    const { width, height } = viewport.getCurrentViewport(camera, [0, 0, 3])
-    easing.damp3(ref.current.position, [(pointer.x * width) / 2, (pointer.y * height) / 2, 3], store.open ? 0 : 0.1, delta)
-    easing.damp3(ref.current.scale, store.open ? 4 : 0.01, store.open ? 0.5 : 0.2, delta)
-    easing.dampC(ref.current.material.color, store.open ? '#f0f0f0' : '#ccc', 0.1, delta)
-    // easing.dampC(ref.current.material.color, store.open ? '#000000' : '#ccc', 0.1, delta)
-
-  })
-  return (
-    <>
-      <mesh ref={ref}>
-        <circleGeometry args={[1, 64, 64]} />
-        <MeshTransmissionMaterial samples={16} resolution={512} anisotropy={1} thickness={0.1} roughness={0.4} toneMapped={true} />
-      </mesh>
-      <group
-        onPointerOver={() => (store.open = true)}
-        onPointerOut={() => (store.open = false)}
-        onPointerDown={() => (store.open = true)}
-        onPointerUp={() => (store.open = false)}>
-        {children}
-      </group>
-    </>
-  )
-}

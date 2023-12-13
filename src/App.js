@@ -46,9 +46,9 @@ export default function App() {
 
 
           
-          <Route exact path='/' element={<PrivateRoute/>}>
-                  <Route exact path='/' element={<SupportPage/>} />
-                </Route>
+          <Route exact path='/home' element={<PrivateRoute/>}>
+                  <Route exact path='/home' element={<SupportPage/>} />
+          </Route>
 
 
 
