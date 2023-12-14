@@ -150,6 +150,7 @@ const FeatureBox = styled.div`
   border: 2px solid #00b100;
   margin: 0 10px;
   box-sizing: border-box;
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
 
   &:first-child {
     margin-left: 0;
@@ -185,13 +186,17 @@ export default function Heroartificialintelligence() {
   return (
     <div id="hero">
       <InfoContainer4>
+      <FeatureBox>
         <AnimatedGradientText1>
           Artificial Intelligence for Derivatives Options Pricing
         </AnimatedGradientText1>
+       </FeatureBox>
         <InfoWrapper2>
+          {/* <FeatureBox>
         <TopLine1>
             "Options trading is a sophisticated financial strategy that allows investors to leverage their positions and potentially amplify returns. Just as it's crucial to distinguish between machine learning (ML) and artificial intelligence (AI) in technology, it's essential to understand the nuances in options trading. Our app harnesses the power of AI to guide traders in navigating this complex landscape, pinpointing optimal options to consider based on data-driven insights. So, while all options trading can benefit from informed decisions, not all trading tools empower traders the way our app does."
           </TopLine1>
+          </FeatureBox> */}
           <Row>
 
                       <FeatureBox

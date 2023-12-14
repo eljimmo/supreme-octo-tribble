@@ -20,10 +20,6 @@ import { useNavigate } from 'react-router-dom';
 import ClearIcon from '@mui/icons-material/Clear';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-// import './components.css';
-// import Navbar from "../Navbar/index";
-// import { useStore } from './store'
-// import { useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Grid } from '@react-three/drei';
 import { extend } from '@react-three/fiber';
@@ -31,15 +27,7 @@ import { GridBackground } from "../layout/Elements";
 import { Perf } from "r3f-perf"
 import { Affix, Button } from 'antd';
 
-
-
-
 extend({ Grid });
-
-
-
-
-
 
 function BackgroundGrid() {
   const [bad, set] = useState(false);
@@ -236,9 +224,6 @@ const backgroundStyle = themeMode === 'dark'
             }}
           >
 
-
-
-
             <IconButton
               edge="start"
               color="inherit"
@@ -251,17 +236,6 @@ const backgroundStyle = themeMode === 'dark'
             >
               <MenuIcon />
             </IconButton>
-
-
-
-
-
-
-
-          
-
-
-
 
 
             <FormControlLabel
