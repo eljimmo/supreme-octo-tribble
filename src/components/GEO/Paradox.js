@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from "react";
+import React, { useRef, useMemo, useState } from "react";
 import { useGLTF, Html } from "@react-three/drei";
 import { useFrame, useThree, SoftShadows, CameraControls, extend } from "@react-three/fiber";
 
@@ -7,6 +7,8 @@ import { EffectComposer, Bloom, Glitch } from "@react-three/postprocessing";
 import { easing, geometry } from 'maath'
 
 extend(geometry)
+
+
 function Annotation({ children, position }) {
   return (
     <Html position={position}>
@@ -66,11 +68,11 @@ export function Paradox(props) {
   
           />
 
-
-                  <Annotation>
-                   Learning 
-                  </Annotation>
-
+            
+            {/* <Annotation>
+              Learning
+            </Annotation>
+ */}
 
           <mesh
             castShadow
@@ -876,9 +878,9 @@ export function Paradox(props) {
             ref={shadow} // Assign the ref here
             
           />
-                        <Annotation position={[1, 0, 0]}>
+                        {/* <Annotation position={[1, 0, 0]}>
                         Investigation 
-                        </Annotation>
+                        </Annotation> */}
           <mesh
             castShadow
             receiveShadow
@@ -898,9 +900,9 @@ export function Paradox(props) {
   
           />
 
-      {/* <Annotation position={[1.75, 3, 2.5]}>
-        Thalia <span style={{ fontSize: '1.5em' }}>🌗</span>
-      </Annotation> */}
+            {/* <Annotation position={[1.5, 0, 0]}>
+              Intelligence 
+            </Annotation> */}
 
 
           <mesh

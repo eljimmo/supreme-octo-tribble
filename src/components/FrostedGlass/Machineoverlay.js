@@ -40,7 +40,7 @@ export function Overlay() {
 
             <HeroMachineLearning/>
             <TimeClock/>
-            <Experience/>
+            {/* <Experience/> */}
                   </div>
 
     </>

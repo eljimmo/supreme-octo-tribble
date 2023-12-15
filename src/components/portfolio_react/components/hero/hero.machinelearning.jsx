@@ -108,7 +108,7 @@ const HeroMachineLearning = () => {
         </TopLine2a>
         
         <Row>
-          <Box>
+          {/* <Box>
             <TopLine2a>Intelligent Trading Bots</TopLine2a>
             <p>
             Leveraging ML, our platform offers trading bots that continuously learn from market data. They assess patterns and execute trades, maximizing profitability and reducing human error.
@@ -129,7 +129,7 @@ const HeroMachineLearning = () => {
             </p>
 
           
-          </Box>
+          </Box> */}
         </Row>
       </InfoWrapper2>
       <br/>

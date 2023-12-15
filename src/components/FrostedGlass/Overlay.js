@@ -3,17 +3,12 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
-// import Navbar from '../Navbar';
-import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
-
 
 const container = {
   hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
   show: {
     opacity: 1,
     height: 'auto',
-// width: '1000px',
-
     transition: { when: 'beforeChildren', staggerChildren: 0.05 }
   }
 }
@@ -27,26 +22,24 @@ function List({ children, open }) {
   return (
     <motion.ul variants={container} initial="hidden" animate={open ? 'show' : 'hidden'}>
       {Children.map(children, (child) => (
-        // <li>
+        <li>
           <motion.div variants={item}>{child}</motion.div>
-        // </li>
+        </li>
       ))}
     </motion.ul>
-  );
+  )
 }
-
 
 export function Overlay() {
   const state = useStore()
   return (
     <>
       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
-
-
         <a href="https://pmnd.rs/" style={{ position: 'absolute', bottom: 40, left: 40, fontSize: '13px' }}>
-          <br />
-</a>
+                    <br />
+          </a>
         <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>
+        <h1 style={{ color: 'white' }}>
 
         <Typewriter
           options={{
@@ -55,46 +48,37 @@ export function Overlay() {
           loop: true,
           }}
           /> 
-        
+        </h1>
+
         </div>
       </div>
       <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} />
 
 
-                              <div className="info">
-                                <h1>
-                                <Typewriter
-                                  options={{
-                                  strings: ['Project Leibniz', 'Releasing 2024', 'Creating Intelligent Solutions', 'Discovering Artificial Reasoning'],
-                                  autoStart: true,
-                                  loop: true,
-                                  }}
-                                  /> 
+      <div className="info">
+      <h1 style={{ color: 'white' }}>
+  <Typewriter
+    options={{
+      strings: ['Project Leibniz', 'Releasing 2024', 'Creating Intelligent Solutions', 'Discovering Artificial Reasoning'],
+      autoStart: true,
+      loop: true,
+    }}
+  />
+</h1>
 
-
-                                </h1>
-                                <List open={state.open}>
-
-
-                                <Heroartificialintelligence/>
+                  
+<List open={state.open}>
+<p color='white'>
+                                              Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.
                                 
-                                
-                                              {/* <p>
-                                              "Project Leibniz Analytica, named to honor the legacy of calculus pioneer Gottfried Wilhelm Leibniz, is not just a platform but a paradigm shift in trading technologies. 
-
-                                    At the heart of Project Leibniz Analytica lies an advanced suite designed to serve both novice traders and seasoned analysts. Users can engage with our suite to construct, test, and refine trading strategies through a sophisticated environment that includes options, stocks, and beyond. Our platform facilitates the simulation of stock movements, enabling traders to forecast potential values and visualize prospective profits without the immediate risks of actual capital investment.
-
-                                    One of our cornerstone features, bot paper trading, allows users to experiment with trading bots that execute trades in a simulated market environment. 
-
-                                    Furthermore, Project Leibniz Analytica nurtures an ecosystem of analytical bots that can automate the exploration of market trends and trading opportunities. These bots are designed to learn from market fluctuations, trader behavior, and economic indicators to propose informed trading strategies, be it in real-world scenarios or within the risk-free confines of paper trading.
-
-                                                          </p> */}
+</p>
                                 </List>
-                              </div>
+                                
+                                              
+              </div>
 
 
-      {/* <Navbar/> */}
-
+      
     </>
   )
 }

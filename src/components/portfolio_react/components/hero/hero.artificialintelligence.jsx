@@ -204,7 +204,7 @@ export default function Heroartificialintelligence() {
                   onMouseLeave={() => setHoveredBox(null)}
                   onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
                 >
-                <TopLine1>Importance in options trading Investment</TopLine1>
+                                      <TopLine1>Importance in options trading Investment</TopLine1>
                 <StyledParagraph>
                 AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.                </StyledParagraph>
                 {hoveredBox === 'Importance' && (
@@ -222,7 +222,7 @@ export default function Heroartificialintelligence() {
                 onMouseLeave={() => setHoveredBox(null)}
                 onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
               >
-              <TopLine2>Deep Learning & Patterns</TopLine2>
+                                    <TopLine2>Deep Learning & Patterns</TopLine2>
               <StyledParagraph>
               Leveraging deep learning in options trading has ushered in a groundbreaking approach to deciphering market behaviors, gaining intricate insights into the 'Greeks' and their implications, and comprehensively understanding the underlying assets. This sophisticated AI-driven perspective empowers traders to manage their positions with enhanced precision and foresight.               </StyledParagraph>
               {hoveredBox === 'Importance' && (
@@ -236,7 +236,7 @@ export default function Heroartificialintelligence() {
                   onMouseEnter={() => setHoveredBox('Importance')}
                   onMouseLeave={() => setHoveredBox(null)}
                   onClick={() => toggleContentVisibility('Importance')} // Added onClick for touch devices
-                >
+                  >
               <TopLine1>Why Our Bots Stand Out</TopLine1>
               <StyledParagraph>
               Our algorithmic trading bots, specialized for options trading, harness the prowess of AI and ML to interpret intricate market conditions and the dynamics of the 'Greeks'. If you're committed to optimizing your options strategy, navigating market nuances, and consistently staying ahead of the market curve, our platform provides an unparalleled advantage.              </StyledParagraph>
