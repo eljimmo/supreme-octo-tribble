@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Logo } from '@pmndrs/branding'
 import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
+import TimeClock from '../../components/TimeClock/Index';
 
 const container = {
   hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
@@ -67,11 +68,15 @@ export function Overlay() {
 </h1>
 
                   
-<List open={state.open}>
+                                  <List open={state.open}>
 <p color='white'>
                                               Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.
-                                
+                                              <TimeClock/>
+              
 </p>
+
+{/* <TimeClock/> */}
+
                                 </List>
                                 
                                               

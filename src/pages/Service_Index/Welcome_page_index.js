@@ -45,14 +45,15 @@
   {/* <BackgroundApp/> */}
         {/* <ScrollBelt/> */}
               <ScApp/>
-              <HeroMachineLearning/>
-              <TimeClock/>
-              <Experience/>
-              <HeroContainerTransparent>
+              {/* <HeroMachineLearning/> */}
+              {/* <TimeClock/> */}
+              {/* <Experience/> */}
+              {/* <HeroContainerTransparent>
                         <Heroartificialintelligence/>
-                      </HeroContainerTransparent>
+                      </HeroContainerTransparent> */}
               {/* <HeroContainerTransparent>
                 <App/>
+                <Underlay/>
               </HeroContainerTransparent> */}
           <Footer/>
       </>
