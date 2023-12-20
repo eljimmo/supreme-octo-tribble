@@ -44,7 +44,7 @@
                       </HeroContainerTransparent> */}
   {/* <BackgroundApp/> */}
         {/* <ScrollBelt/> */}
-              <ScApp/>
+              {/* <ScApp/> */}
               {/* <HeroMachineLearning/> */}
               {/* <TimeClock/> */}
               {/* <Experience/> */}

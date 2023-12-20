@@ -5,6 +5,8 @@ import { useStore } from './store'
 import Typewriter from 'typewriter-effect';
 import TimeClock from '../../components/TimeClock/Index';
 
+
+
 const container = {
   hidden: { opacity: 0, height: 0, transition: { staggerChildren: 0.05 } },
   show: {
@@ -75,7 +77,6 @@ export function Overlay() {
               
 </p>
 
-{/* <TimeClock/> */}
 
                                 </List>
                                 
