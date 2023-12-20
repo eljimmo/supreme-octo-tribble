@@ -9,10 +9,10 @@ import { EffectComposer, Bloom, LUT, BrightnessContrast, HueSaturation } from '@
 export default function App() {
   const props = {
     focus: 5.1,
-    speed: 42.9,
-    aperture: 5.8,
+    speed: 100,
+    aperture: 1.8,
     fov: 50,
-    curl: 0.65
+    curl: 0.25
   };
 
   return (
