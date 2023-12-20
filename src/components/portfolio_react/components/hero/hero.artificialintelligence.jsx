@@ -206,7 +206,8 @@ export default function Heroartificialintelligence() {
                 >
                                       <TopLine1>Importance in options trading Investment</TopLine1>
                 <StyledParagraph>
-                AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.                </StyledParagraph>
+                AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.                
+                </StyledParagraph>
                 {hoveredBox === 'Importance' && (
                   <HiddenContent>
                     More information about Importance in Investment...

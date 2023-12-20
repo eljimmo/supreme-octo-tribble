@@ -11,33 +11,45 @@ const TopLeft = styled.div`
   position: absolute;
   top: 6vw;
   left: 6vw;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: min(10vw, 5em);
-  line-height: 0.9em;
-`
+  line-height: 1.5; /* Adjust line height as needed */
+  max-width: 40%; /* Limit the width to control text wrapping */
+  overflow: hidden; /* Hide any overflow content */
+  word-wrap: break-word; /* Allow words to break to the next line */
+`;
+
+const StyledParagraph = styled.p`
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0; /* Remove default margin */
+  /* You can add padding or margin here as well */
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px; /* Adjust font size for mobile devices */
+  }
+`;
 
 const BottomLeft = styled.div`
   position: absolute;
   bottom: 6vw;
   left: 6vw;
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: min(15vw, 20em);
-  line-height: 0.9em;
-`
+
+  line-height: 1.5; /* Adjust line height as needed */
+  max-width: 40%; /* Limit the width to control text wrapping */
+  overflow: hidden; /* Hide any overflow content */
+  word-wrap: break-word; /* Allow words to break to the next line */
+`;
 
 const BottomRight = styled.div`
   position: absolute;
   bottom: 6vw;
   right: 6vw;
-  font-family: 'Inter';
-  font-weight: 400;
-  line-height: 1em;
-  letter-spacing: -0.01em;
-  font-size: 12px;
+
   text-align: right;
-`
+  line-height: 1.5; /* Adjust line height as needed */
+  max-width: 40%; /* Limit the width to control text wrapping */
+  overflow: hidden; /* Hide any overflow content */
+  word-wrap: break-word; /* Allow words to break to the next line */
+`;
 
 const LeftMiddle = styled.div`
   position: absolute;
@@ -58,7 +70,7 @@ const Bar = styled.div`
   left: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #252525;
+  background: #ffffff;
 `
 const BarBT = styled.div`
   position: absolute;
@@ -66,7 +78,7 @@ const BarBT = styled.div`
   left: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #252525;
+  background: #ffffff;
 `
 
 
@@ -76,7 +88,7 @@ const BarR = styled.div`
   right: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #252525;
+  background: #ffffff;
 `
 
 const Hamburger = styled.div`
@@ -89,10 +101,11 @@ const Hamburger = styled.div`
     position: relative;
     width: 24px;
     height: 2px;
-    background: #252525;
+    background: #ffffff;
     margin-bottom: 6px;
   }
 `
+
 
 
 const container = {
@@ -125,10 +138,14 @@ export function Underlay() {
   const state = useStore()
   return (
     <>
+      
       <TopLeft>
-        <i>Design</i>
-        <br />
-        Type
+        <StyledParagraph>
+          AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies.
+        </StyledParagraph>
+        <StyledParagraph>
+          With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.
+        </StyledParagraph>
       </TopLeft>
 
 
@@ -154,13 +171,28 @@ export function Underlay() {
 
 
 
-      <BottomLeft>B</BottomLeft>
+      <BottomLeft>
+{/*         
+      <StyledParagraph>
+      Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
+        </StyledParagraph>
+        <StyledParagraph>
+        Sophisticated AI-driven perspective leveraging deep learning empowers traders to manage their positions with enhanced precision and foresight.            
+      </StyledParagraph> */}
+
+
+      </BottomLeft>
       <BottomRight>
-        2021
-        <br />
-        poimandres
-        <br />
-        dev collective
+
+        
+      <StyledParagraph>
+      Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
+        </StyledParagraph>
+        <StyledParagraph>
+        Sophisticated AI-driven perspective leveraging deep learning empowers traders to manage their positions with enhanced precision and foresight.            
+      </StyledParagraph>
+
+
       </BottomRight>
       {/* <LeftMiddle>A flight of stairs</LeftMiddle> */}
       {/* <Hamburger>

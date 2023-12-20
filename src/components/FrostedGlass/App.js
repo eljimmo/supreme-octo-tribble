@@ -20,6 +20,8 @@ import { Route, Link, useLocation } from "wouter"
 import { suspend } from "suspend-react"
 
 
+
+
 function Rig() {
   useFrame((state, delta) => {
     easing.damp3(
@@ -81,6 +83,7 @@ export default function App() {
     //   </Canvas>
     <>
     <Canvas eventSource={document.getElementById("root")} eventPrefix="client" shadows camera={{ position: [0, 0, 20], fov: 50 }}>
+    <Selector>
       <color attach="background" args={["#e0e0e0"]} />
       <spotLight position={[20, 20, 10]} penumbra={1} castShadow angle={0.2} />
       <Status position={[0, 0, -10]} />
@@ -104,6 +107,8 @@ export default function App() {
         <TiltShift2 blur={0.2} />
       </EffectComposer>
       <Rig />
+    </Selector>
+
     </Canvas>
     <div class="nav">
       <Link to="/">knot</Link>
