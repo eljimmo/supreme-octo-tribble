@@ -1,32 +1,9 @@
 import React from "react";
 import styled, { keyframes } from 'styled-components';
-
-import OptimizerComparisonChart from '../../../../pages/Service_Index/OptimizerChart';
-// import InfoSection from "../../../InfoSection";
 import InfoSection3 from "../../../InfoSection/Index3";
 import InfoSection4 from "../../../InfoSection/Index4";
 import { homeObjOne, homeObjTwo, homeObjFour } from "../../../InfoSection/Data";
 
-
-const sgdSampleData = {
-    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], // example epochs data
-    loss: [0.9, 0.85, 0.8, 0.78, 0.76, 0.74, 0.73, 0.72, 0.71, 0.7]  // example loss data for SGD
-};
-
-const adamSampleData = {
-    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    loss: [0.9, 0.82, 0.7, 0.6, 0.55, 0.52, 0.5, 0.49, 0.48, 0.47] // example loss data for Adam
-};
-
-const rmspropSampleData = {
-    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    loss: [0.9, 0.83, 0.71, 0.63, 0.59, 0.57, 0.54, 0.52, 0.51, 0.5] // example loss data for RMSprop
-};
-
-const adagradSampleData = {
-    epochs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    loss: [0.9, 0.86, 0.79, 0.77, 0.75, 0.73, 0.72, 0.71, 0.7, 0.69] // example loss data for Adagrad
-};
 
 
 const HiddenContent = styled.div`
@@ -41,7 +18,7 @@ const HiddenContent = styled.div`
 const StyledParagraph = styled.p`
   font-size: 16px;
   line-height: 1.5;
-  color: #cbcbcb;
+  color: #fff;
   
   /* Add a default margin for larger screens */
   margin: 0 20px;
@@ -86,7 +63,7 @@ const InfoContainer3 = styled.div`
 `;
 
 const InfoContainer4 = styled.div`
-  color: #fff;
+  color: #000000;
   background: transparent;
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -147,7 +124,7 @@ const FeatureBox = styled.div`
   background-color: transparent;
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid #00b100;
+  border: 2px solid #fff;
   margin: 0 10px;
   box-sizing: border-box;
   backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
@@ -184,7 +161,9 @@ export default function Heroartificialintelligence() {
 
 // const Heroartificialintelligence = () => {
   return (
-    <div id="hero">
+    <div id="hero"
+    color="black"
+    >
       <InfoContainer4>
       <FeatureBox>
         <AnimatedGradientText1>

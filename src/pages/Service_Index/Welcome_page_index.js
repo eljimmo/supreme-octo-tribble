@@ -6,8 +6,10 @@
   // import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
   import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
   // import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
-  // import Underlay from '../../components/Landing/Underlay';
-  // import App from '../../components/Curl_Noise/App';
+  import Underlay from '../../components/Landing/Underlay';
+  // import { Underlay } from '../../components/FrostedGlass/Herooverlay'
+
+  import App from '../../components/Curl_Noise/App';
   // import TimeClock from '../../components/TimeClock/Index';
   import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
   import styled from 'styled-components';
@@ -27,6 +29,18 @@
   }
   `;
 
+
+  const HeroContainer = styled.div`
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 800px;
+  position: relative;
+  z-index: 1;
+
+`;
 
   export default function WelcomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,10 +65,10 @@
               {/* <HeroContainerTransparent>
                         <Heroartificialintelligence/>
                       </HeroContainerTransparent> */}
-              {/* <HeroContainerTransparent>
+              <HeroContainer>
                 <App/>
                 <Underlay/>
-              </HeroContainerTransparent> */}
+              </HeroContainer>
           <Footer/>
       </>
     );

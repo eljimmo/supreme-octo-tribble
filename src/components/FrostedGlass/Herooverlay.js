@@ -70,17 +70,20 @@ const Bar = styled.div`
   left: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #ffffff;
-`
+  background: transparent; /* Set the background to transparent */
+  box-shadow: 0 0 10px 5px white; /* Add a white box-shadow for the glow effect */
+`;
+
+
 const BarBT = styled.div`
   position: absolute;
   bottom: ${(props) => (props.vertical ? '0px' : '50%')};
   left: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #ffffff;
-`
-
+  background: transparent; /* Set the background to transparent */
+  box-shadow: 0 0 10px 5px white; /* Add a white box-shadow for the glow effect */
+`;
 
 const BarR = styled.div`
   position: absolute;
@@ -91,20 +94,6 @@ const BarR = styled.div`
   background: #ffffff;
 `
 
-const Hamburger = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 6vw;
-  right: 6vw;
-  & > div {
-    position: relative;
-    width: 24px;
-    height: 2px;
-    background: #ffffff;
-    margin-bottom: 6px;
-  }
-`
 
 
 
@@ -202,7 +191,7 @@ export function Underlay() {
       </Hamburger> */}
       <Bar />
       <Bar vertical />
-      <BarR />
+      {/* <BarR /> */}
       <BarBT vertical/>
       {/* <OverlayLine /> Add the LeftBar component here */}
 

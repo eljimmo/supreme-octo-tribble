@@ -153,7 +153,7 @@ export const InfoContainer = styled.div`
 
 export const InfoContainer3 = styled.div`
 
-  color: #fff;
+  color: black;
   background: transparent;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
