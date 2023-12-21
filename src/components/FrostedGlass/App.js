@@ -116,19 +116,105 @@ export default function App() {
       <Float floatIntensity={2}>
         <Route path="/sim">
           <Knot />
-          {/* <Overlay/> */}
+          <ScrollControls horizontal damping={0.1}  distance={0.9}>
+
+          
+          <Scroll html style={{ 
+          overflowY: 'scroll', 
+          scrollbarWidth: 'none',
+          overflowX: 'hidden',
+          scrollbarWidth: 'none',
+          }}>
+          <br />
+                            <br />
+                            <br />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100vw',
+                height: '100vh',
+                color: 'whitesmoke',
+              }}
+            >
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+            
+              <Infosection3 {...homeObjThree} />
+
+            </div>
+            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+          </Scroll>
+
+          </ScrollControls>
         </Route>
         <Route path="/model">
           <Torus />
+          <ScrollControls horizontal damping={0.1}  distance={0.9}>
+
+          
+          <Scroll html style={{ 
+          overflowY: 'scroll', 
+          scrollbarWidth: 'none',
+          overflowX: 'hidden',
+          scrollbarWidth: 'none',
+          }}>
+          <br />
+                            <br />
+                            <br />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100vw',
+                height: '100vh',
+                color: 'whitesmoke',
+              }}
+            >
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+            
+              <Infosection3 {...homeObjThree} />
+
+            </div>
+            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+          </Scroll>
+
+          </ScrollControls>
         </Route>
         <Route path="/">
 
           <Model scale={2.5} />
           <ScrollControls horizontal damping={0.1}  distance={0.9}>
-          {/* <ScrollControls > */}
-          {/* <Scroll> */}
-            {/* <Typography /> */}
-          {/* </Scroll> */}
+
           
           <Scroll html style={{ 
           overflowY: 'scroll', 
