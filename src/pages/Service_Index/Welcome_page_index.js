@@ -33,27 +33,28 @@
 
 // `;
 
-  const HeroContainer = styled.div`
-  background: 
-  /* Diagonal split - top left to bottom right */
-  linear-gradient(to bottom right, transparent 50%, transparent 50%), 
-  url('nodes.jpg') left top,
-  
-  /* Diagonal split - top right to bottom left */
-  linear-gradient(to bottom left, transparent 50%, transparent 50%), 
-  url('blue.jpg') right top;
-  
-  background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1;
+const HeroContainer = styled.div`
+background: 
+/* Diagonal split - top left to bottom right */
+linear-gradient(to bottom right, transparent 50%, transparent 50%), 
+url('nodes.jpg') left top,
+
+/* Diagonal split - top right to bottom left */
+linear-gradient(to bottom left, transparent 50%, transparent 50%), 
+url('blue.jpg') right top;
+
+background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 800px;
+position: relative;
+z-index: 1;
 
 `;
+
 
   export default function WelcomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,19 +68,6 @@
   <Navbar toggle={toggle} />
   <Sidebar isOpen={isOpen} toggle={toggle} />
                       {/* <HeroContainerTransparent> */}
-                      {/* <App/> */}
-                        {/* <Overlay/> */}
-                        {/* <Underlay/> */}
-                      {/* </HeroContainerTransparent> */}
-  {/* <BackgroundApp/> */}
-        {/* <ScrollBelt/> */}
-              {/* <ScApp/> */}
-              {/* <HeroMachineLearning/> */}
-              {/* <TimeClock/> */}
-              {/* <Experience/> */}
-              {/* <HeroContainerTransparent>
-                        <Heroartificialintelligence/>
-                      </HeroContainerTransparent> */}
               <HeroContainer>
                 <App/>
                 <Underlay/>

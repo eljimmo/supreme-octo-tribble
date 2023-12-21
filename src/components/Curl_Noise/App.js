@@ -1,4 +1,13 @@
-import { CameraShake, Environment, Lightformer, OrbitControls, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
+import { 
+  CameraShake, 
+  Environment, 
+  Lightformer, 
+  OrbitControls, 
+  MeshTransmissionMaterial, 
+  useGLTF,
+  Stage,
+  Grid,  
+} from '@react-three/drei'
 import { useControls } from 'leva'
 import { Particles } from './Particles'
 import { Canvas, useLoader } from '@react-three/fiber'
@@ -18,6 +27,8 @@ export default function App() {
   return (
     <>
         <Canvas gl={{ antialias: false }} camera={{ position: [0, 2.5, 5], fov: 35 }}>
+        {/* <Stage intensity={0.5} environment="city" shadows={{ type: 'accumulative', bias: -0.001 }} adjustCamera={true}> */}
+
         <CameraShake
           yawFrequency={1}
           maxYaw={0.05}
@@ -28,6 +39,9 @@ export default function App() {
           intensity={0.2}
         />
       <Particles {...props} />
+        {/* </Stage> */}
+      {/* <Grid renderOrder={-1} position={[0, -1.85, 0]} infiniteGrid cellSize={0.6} cellThickness={0.6} sectionSize={3.3} sectionThickness={1.5} sectionColor={[0.5, 0.5, 10]} fadeDistance={30} /> */}
+
             </Canvas>
     </>
   );
