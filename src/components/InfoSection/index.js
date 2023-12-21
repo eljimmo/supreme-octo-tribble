@@ -10,7 +10,10 @@ import {
   Heading,
   Subtitle,
   ImgWrap,
+  Img
 } from './InfoElements';
+
+
 import App from '../../components/shader/App';
 
 
@@ -46,7 +49,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
             <ImgWrap>
-                {/* <Img src={img} alt={alt} /> */}
+                <Img src={img} alt={alt} />
                 <App/>
               </ImgWrap>
             </Column2>

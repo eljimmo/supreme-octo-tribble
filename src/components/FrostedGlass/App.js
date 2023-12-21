@@ -1,25 +1,53 @@
-import { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { MeshTransmissionMaterial, ContactShadows, Environment, Grid, Stage, OrbitControls, Loader,
+import { useRef, useEffect, useState } from 'react'
+import { 
+  Canvas, 
+  useFrame, 
+  useThree
+ } from '@react-three/fiber'
+
+import { MeshTransmissionMaterial, 
+  ContactShadows, 
+  Environment, 
+  Stage, 
+  OrbitControls, 
+  Loader,
   useGLTF, 
   Float, 
-  Lightformer, 
+  Lightformer,  
+  Html,
+  useScroll, 
   Text, 
-  Html, 
+  Image, 
+  Scroll, 
+  Preload, 
+  ScrollControls, 
+  Grid,  
 } from '@react-three/drei'
 import { easing } from 'maath'
 import { useStore } from './store'
 import Model from '../GEO/Geo'
 import { Paradox } from '../GEO/Paradox'
 import './styles.css';
-
-
+import * as THREE from 'three'
+// import Underlay from '../FrostedGlass/Herooverlay';
+import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
+import Overlay from '../Landing/Overlay';
 
 import { EffectComposer, N8AO, TiltShift2 } from "@react-three/postprocessing"
 import { Route, Link, useLocation } from "wouter"
 import { suspend } from "suspend-react"
 
+// import InfoSection from '../../../src/components/InfoSection/index';
+// import Infosection from '../InfoSection/Index';
 
+import Infosection3 from '../InfoSection/Index3';
+
+// import InfoSection2 from '../../../src/Components/InfoSection/Index2';
+import { 
+  homeObjOne, 
+  homeObjThree
+ } from '../../../src/components/InfoSection/Data';
+import InfoSection3 from '../InfoSection/Index3'
 
 
 function Rig() {
@@ -62,6 +90,19 @@ function Status(props) {
   )
 }
 
+function Typography() {
+  const state = useThree()
+  const { width, height } = state.viewport.getCurrentViewport(state.cameta, [0, 0, 12])
+  const shared = { font: '/Inter-Regular.woff', letterSpacing: -0.1, color: 'whitesmoke' }
+  return (
+<>
+  <Text children="Intelligence" anchorX="left" position={[-width / 2.5, height / 2 - 2, 2]} {...shared} />
+  <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, height / 2 - 2, 6]} {...shared} />
+  <Text children="Smart Analysis" position={[0, height / 2, 6]} {...shared} />
+</>
+
+  )
+}
 
 
 
@@ -72,16 +113,67 @@ export default function App() {
     <Selector>
       <color attach="background" args={["#e0e0e0"]} />
       <spotLight position={[20, 20, 10]} penumbra={1} castShadow angle={0.2} />
-      <Status position={[0, 0, -10]} />
       <Float floatIntensity={2}>
-        <Route path="/">
+        <Route path="/sim">
           <Knot />
+          {/* <Overlay/> */}
         </Route>
-        <Route path="/torus">
+        <Route path="/model">
           <Torus />
         </Route>
-        <Route path="/bomb">
-          <Model scale={0.7} />
+        <Route path="/">
+
+          <Model scale={2.5} />
+          <ScrollControls horizontal damping={0.1}  distance={0.9}>
+          {/* <ScrollControls > */}
+          {/* <Scroll> */}
+            {/* <Typography /> */}
+          {/* </Scroll> */}
+          
+          <Scroll html style={{ 
+          overflowY: 'scroll', 
+          scrollbarWidth: 'none',
+          overflowX: 'hidden',
+          scrollbarWidth: 'none',
+          }}>
+          <br />
+                            <br />
+                            <br />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100vw',
+                height: '100vh',
+                color: 'whitesmoke',
+              }}
+            >
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+            
+              <Infosection3 {...homeObjThree} />
+
+            </div>
+            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+          </Scroll>
+
+        </ScrollControls>
+
+
         </Route>
       </Float>
       <ContactShadows scale={100} position={[0, -7.5, 0]} blur={1} far={100} opacity={0.85} />
@@ -90,7 +182,7 @@ export default function App() {
       </Environment>
       <EffectComposer disableNormalPass>
         <N8AO aoRadius={1} intensity={2} />
-        <TiltShift2 blur={0.2} />
+        {/* <TiltShift2 blur={0.2} /> */}
       </EffectComposer>
       <Rig />
     </Selector>
@@ -98,9 +190,9 @@ export default function App() {
     </Canvas>
 
     <ul className="nav">
-  <li><Link to="/">knot</Link></li>
-  <li><Link to="/torus">torus</Link></li>
-  <li><Link to="/bomb">bomb</Link></li>
+  <li><Link to="/">algo</Link></li>
+  <li><Link to="/model">model</Link></li>
+  <li><Link to="/sim">sim</Link></li>
 </ul>
 
 
@@ -108,6 +200,20 @@ export default function App() {
   </>
     )
 }
+
+function VideoText(props) {
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/1616.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
+  useEffect(() => void video.play(), [video])
+  return (
+    <Text font="/Inter-Bold.woff" fontSize={8} letterSpacing={-0.06} {...props}>
+      Simulations
+      <meshBasicMaterial toneMapped={false}>
+        <videoTexture attach="map" args={[video]} encoding={THREE.sRGBEncoding} />
+      </meshBasicMaterial>
+    </Text>
+  )
+}
+
 
 function Selector({ children }) {
   const ref = useRef()

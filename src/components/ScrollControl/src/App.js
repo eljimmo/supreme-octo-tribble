@@ -1,10 +1,25 @@
 import * as THREE from 'three'
 import { useRef } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { useScroll, Text, Image, Scroll, Preload, ScrollControls, Grid, Environment } from '@react-three/drei'
-import InfoSection from '../../InfoSection';
+import { 
+  Canvas, 
+  useFrame, 
+  useThree } from '@react-three/fiber'
+import { 
+  useScroll, 
+  Text, 
+  Image, 
+  Scroll, 
+  Preload, 
+  ScrollControls, 
+  Grid, 
+  Environment
+ } from '@react-three/drei'
+// import InfoSection from '../../InfoSection';
 import InfoSection2 from '../../InfoSection/Index2';
-import { homeObjOne, homeObjThree } from '../../InfoSection/Data';
+import { 
+  homeObjOne, 
+  homeObjThree
+ } from '../../InfoSection/Data';
 
 export default function ScApp() {
   return (

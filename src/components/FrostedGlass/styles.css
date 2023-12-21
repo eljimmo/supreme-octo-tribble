@@ -10,31 +10,32 @@ body {
 		linear-gradient(#111 1rem, transparent 1rem);
 	background-size: 1.2rem 1.2rem; */
 }
- 
+
 .nav {
   list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
+  padding: 10;
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 15px; /* Adjust the right position as needed */
+  display: flex; /* Use flex display */
+  flex-direction: column; /* Display items in a column format */
+  align-items: flex-end; /* Align items to the right side */
 }
 
 .nav li {
-  margin-right: 20px; /* Adjust the margin as needed */
+  margin-bottom: 20px;
 }
 
 .nav li:last-child {
-  margin-right: 0; /* Remove margin for the last item */
+  margin-bottom: 0;
 }
 
 .nav a {
   text-decoration: none;
-  color: white; /* Set the text color to white */
-  
-  font-size: 16px; /* Adjust the font size as needed */
-
-
-  /* You can add additional styling here */
+  color: white;
+  font-size: 16px;
 }
+
 
 a {
   color: black;

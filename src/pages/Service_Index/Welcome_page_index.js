@@ -13,7 +13,7 @@
 
   import App from '../../components/Curl_Noise/App';
   // import TimeClock from '../../components/TimeClock/Index';
-  import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
+  // import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
   import styled from 'styled-components';
   import Navbar from '../../components/Navbar';
   import Sidebar from '../../components/Sidebar/index';
@@ -21,20 +21,30 @@
   // import MachineApp from '../../components/FrostedGlass/MachineIndex';
 
 
-  const HeroContainerTransparent = styled.div`
-  background: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1;
+//   const HeroContainerTransparent = styled.div`
+//   background: #000000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0 30px;
+//   height: 800px;
+//   position: relative;
+//   z-index: 1;
 
-`;
+// `;
 
   const HeroContainer = styled.div`
-  background: #000000;
+  background: 
+  /* Diagonal split - top left to bottom right */
+  linear-gradient(to bottom right, transparent 50%, transparent 50%), 
+  url('nodes.jpg') left top,
+  
+  /* Diagonal split - top right to bottom left */
+  linear-gradient(to bottom left, transparent 50%, transparent 50%), 
+  url('blue.jpg') right top;
+  
+  background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

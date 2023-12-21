@@ -42,9 +42,8 @@ export const homeObjThree = {
   topLine: 'Modeling Statistical properties as distribution variables to quantify the effect of variables as features in a set.',
   // headline: 'From Value at Risk, Portfolio vs Benchmark Strategy, Genetic Algorithms, LSTMs, Recurrent Neural Networks, Leibniz provides the tools you need to better your financial asset portfolio.',
   headline: 'Create your own custom financial trading agent to better assist you when trading.',
-
   description:
-    "Releasing 2023.",
+    "Releasing 2024.",
   buttonLabel: 'Start Now',
   imgStart: false,
   img: require('./img/Eye_Providence.png'),

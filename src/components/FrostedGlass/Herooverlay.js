@@ -91,9 +91,9 @@ const BarR = styled.div`
   right: ${(props) => (props.vertical ? '50%' : '0px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
-  background: #ffffff;
-`
-
+  background: transparent; /* Set the background to transparent */
+  box-shadow: 0 0 10px 5px white; /* Add a white box-shadow for the glow effect */
+`;
 
 
 
@@ -129,16 +129,41 @@ export function Underlay() {
     <>
       
       <TopLeft>
-        <StyledParagraph>
+      {/* <div className="info"> */}
+                                  <h1 style={{ color: 'white' }}>
+                                          <Typewriter
+                                            options={{
+                                              strings: ['AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading.', 
+                                              'Releasing 2024', 
+                                              'With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies. By leveraging cutting-edge technologies, cultivating an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, not just offering a tool; shaping the future of informed options trading.', 
+                                              'Discovering Artificial Reasoning'
+                                            ],
+                                              autoStart: true,
+                                              loop: true,
+                                              delay: 50,
+                                            }}
+                                          />
+                                  </h1>
+
+                  
+                                  <List open={state.open}>
+                                          <p color='white'>
+                                                                                        Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.          
+                                          </p>
+                                  </List>                  
+      {/* </div> */}
+
+
+        {/* <StyledParagraph>
           AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies.
         </StyledParagraph>
         <StyledParagraph>
-          With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.
-        </StyledParagraph>
+          With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies.
+        </StyledParagraph> */}
       </TopLeft>
 
 
-      <div className="info">
+      {/* <div className="info">
                                   <h1 style={{ color: 'white' }}>
                                           <Typewriter
                                             options={{
@@ -155,7 +180,7 @@ export function Underlay() {
                                                                                         Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading. By leveraging cutting-edge technologies, we've cultivated an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, we're not just offering a tool; we're shaping the future of informed options trading.          
                                           </p>
                                   </List>                  
-      </div>
+      </div> */}
 
 
 
@@ -179,7 +204,7 @@ export function Underlay() {
 
       <Bar />
       <Bar vertical />
-      {/* <BarR /> */}
+      <BarR />
       <BarBT vertical/>
 
     </>
