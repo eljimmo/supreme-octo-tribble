@@ -47,6 +47,11 @@ a {
   text-decoration: none;
 }
 
+.nav a.underline {
+  text-decoration: underline;
+}
+
+
 svg {
   fill: black;
 }

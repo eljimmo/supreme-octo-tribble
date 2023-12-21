@@ -133,10 +133,12 @@ export function Underlay() {
                                   <h1 style={{ color: 'white' }}>
                                           <Typewriter
                                             options={{
-                                              strings: ['AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus, Project Leibniz Analytica is designed with a singular focus: to revolutionize the realm of options trading. Our platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading.', 
+                                              strings: ['AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus.', 
                                               'Releasing 2024', 
-                                              'With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies. By leveraging cutting-edge technologies, cultivating an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits. With Project Leibniz Analytica, not just offering a tool; shaping the future of informed options trading.', 
-                                              'Discovering Artificial Reasoning'
+                                              'With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies.',
+                                              'By leveraging cutting-edge technologies, cultivating an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits.', 
+                                              'Discovering Artificial Reasoning',
+                                              'The Project Leibniz platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading'
                                             ],
                                               autoStart: true,
                                               loop: true,
