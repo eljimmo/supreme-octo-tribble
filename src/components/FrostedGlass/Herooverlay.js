@@ -161,13 +161,6 @@ export function Underlay() {
 
 
       <BottomLeft>
-{/*         
-      <StyledParagraph>
-      Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
-        </StyledParagraph>
-        <StyledParagraph>
-        Sophisticated AI-driven perspective leveraging deep learning empowers traders to manage their positions with enhanced precision and foresight.            
-      </StyledParagraph> */}
 
 
       </BottomLeft>
@@ -183,17 +176,11 @@ export function Underlay() {
 
 
       </BottomRight>
-      {/* <LeftMiddle>A flight of stairs</LeftMiddle> */}
-      {/* <Hamburger>
-        <div />
-        <div />
-        <div />
-      </Hamburger> */}
+
       <Bar />
       <Bar vertical />
       {/* <BarR /> */}
       <BarBT vertical/>
-      {/* <OverlayLine /> Add the LeftBar component here */}
 
     </>
   )

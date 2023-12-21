@@ -3,7 +3,7 @@ import FrostedApp from '../FrostedGlass/index';
 import styled from 'styled-components';
 
 const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;

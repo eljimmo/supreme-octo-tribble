@@ -7,6 +7,7 @@
   import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
   // import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
   import Underlay from '../../components/Landing/Underlay';
+  import Overlay from '../../components/Landing/Overlay';
   // import Overlay from '../../components/Landing/Overlay';
   // import { Underlay } from '../../components/FrostedGlass/Herooverlay'
 
@@ -21,18 +22,19 @@
 
 
   const HeroContainerTransparent = styled.div`
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    position: relative;
-  }
-  `;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 800px;
+  position: relative;
+  z-index: 1;
 
+`;
 
   const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,9 +56,11 @@
   <HeroSection/>
   <Navbar toggle={toggle} />
   <Sidebar isOpen={isOpen} toggle={toggle} />
-                      {/* <HeroContainerTransparent>
-                        <Heroartificialintelligence/>
-                      </HeroContainerTransparent> */}
+                      {/* <HeroContainerTransparent> */}
+                      {/* <App/> */}
+                        {/* <Overlay/> */}
+                        {/* <Underlay/> */}
+                      {/* </HeroContainerTransparent> */}
   {/* <BackgroundApp/> */}
         {/* <ScrollBelt/> */}
               {/* <ScApp/> */}

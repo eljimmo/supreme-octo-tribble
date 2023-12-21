@@ -165,11 +165,11 @@ export default function Heroartificialintelligence() {
     color="black"
     >
       <InfoContainer4>
-      <FeatureBox>
+      {/* <FeatureBox>
         <AnimatedGradientText1>
           Artificial Intelligence for Derivatives Options Pricing
         </AnimatedGradientText1>
-       </FeatureBox>
+       </FeatureBox> */}
         <InfoWrapper2>
           {/* <FeatureBox>
         <TopLine1>

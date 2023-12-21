@@ -10,7 +10,7 @@ export default function ScApp() {
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#000000' }}>
       <Canvas camera={{ position: [0, 0, 20], fov: 15, background: new THREE.Color(0x000000) }}>
-      <color attach="background" args={['#15151a']} />
+      <color attach="background" args={['#000000']} />
 
         <ScrollControls damping={0.2} pages={3} distance={0.9}>
           <Scroll>
