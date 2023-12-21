@@ -44,9 +44,10 @@ const Left = styled.div`
 
 const Right = styled.div`
   position: absolute;
+  margin: 5px;
   display: flex;
-  top: ${(props) => (props.vertical ? '0px' : '10%')};
-  right: ${(props) => (props.vertical ? '25%' : '0px')};
+  top: ${(props) => (props.vertical ? '0px' : '25%')};
+  right: ${(props) => (props.vertical ? '50%' : '50px')};
   width: ${(props) => (props.vertical ? '2px' : '150px')};
   height: ${(props) => (props.vertical ? '150px' : '2px')};
 

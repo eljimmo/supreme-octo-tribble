@@ -7,6 +7,7 @@
   import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
   // import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
   import Underlay from '../../components/Landing/Underlay';
+  // import Overlay from '../../components/Landing/Overlay';
   // import { Underlay } from '../../components/FrostedGlass/Herooverlay'
 
   import App from '../../components/Curl_Noise/App';
@@ -69,6 +70,8 @@
                 <App/>
                 <Underlay/>
               </HeroContainer>
+              <ScApp/>
+
           <Footer/>
       </>
     );

@@ -44,7 +44,7 @@ export default function ScApp() {
               <br />
               <br />
               <br />
-              <InfoSection {...homeObjOne} />
+              {/* <InfoSection {...homeObjOne} /> */}
             </div>
 
             {/* Second Div */}
@@ -64,7 +64,7 @@ export default function ScApp() {
               <br />
               <br />
               <br />
-              <InfoSection2 {...homeObjThree} />
+              {/* <InfoSection2 {...homeObjThree} /> */}
 
             </div>
           </Scroll>
