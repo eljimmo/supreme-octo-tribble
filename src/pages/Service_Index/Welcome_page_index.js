@@ -75,7 +75,6 @@
                 <Underlay/>
               </HeroContainer>
               <ScApp/>
-
           <Footer/>
       </>
     );

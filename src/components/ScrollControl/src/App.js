@@ -45,6 +45,8 @@ export default function ScApp() {
               <br />
               <br />
               {/* <InfoSection {...homeObjOne} /> */}
+              <InfoSection2 {...homeObjThree} />
+
             </div>
 
             {/* Second Div */}
