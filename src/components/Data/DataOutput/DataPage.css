@@ -1,0 +1,96 @@
+.data-page {
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  overflow-x: auto; /* Ensure the container can scroll horizontally if needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px; /* Reduce padding for smaller screens */
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+  word-wrap: break-word; /* Allow long words to break */
+}
+
+th {
+  background-color: #f4f4f4;
+  font-size: 14px; /* Slightly smaller font size for better fit */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media queries for various screen sizes */
+@media (max-width: 1200px) {
+  th, td {
+    font-size: 12px; /* Smaller font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  th, td {
+    font-size: 10px; /* Even smaller font size for small screens */
+    padding: 6px; /* Reduce padding for smaller screens */
+  }
+
+  table {
+    font-size: 10px; /* Ensure table font size is consistent */
+  }
+
+  .data-page {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  th, td {
+    display: block; /* Stack table cells vertically */
+    width: 100%; /* Full width for each cell */
+    box-sizing: border-box;
+  }
+
+  th, td {
+    padding: 10px 0; /* Increase padding for better readability */
+    text-align: right; /* Align text to the right for better readability */
+  }
+
+  th {
+    background-color: #f4f4f4;
+    position: absolute; /* Position header cells */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    font-size: 12px; /* Ensure header font size is consistent */
+  }
+
+  td {
+    border-top: 1px solid #ddd; /* Add border between rows */
+    border-left: none; /* Remove left border to align with header */
+    border-right: none; /* Remove right border */
+    position: relative; /* Allow positioning of content */
+    padding-left: 50%; /* Offset content to make space for labels */
+    text-align: left; /* Align text to the left */
+  }
+
+  td::before {
+    content: attr(data-label); /* Use data-label for cell labels */
+    position: absolute; /* Position labels */
+    left: 0;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

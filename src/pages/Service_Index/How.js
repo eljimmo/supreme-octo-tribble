@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/index';
 import Overlay from '../../components/Landing/Overlay';
 import Map from '../../components/Maps/index';
 import Underlay from '../../components/Landing/Underlay';
+import EnhancedTable from '../../components/Data/DataOutput/Table';
 
 
 const TopLine1 = styled.div`
@@ -198,12 +199,16 @@ export default function Howitworks() {
             In the modern era, data is invaluable. Leveraging the power of TensorFlow, statistical modeling, 
             and cutting-edge algorithmic systems, our software provides unparalleled insights into complex datasets.
             </p>
+            
             <Map/>
 
        
         </DataDisplay>
         <Analysis>
           <h2>Booked Freight Shipments </h2>
+
+          <EnhancedTable/>
+
           <p>
             Deep Learning with TensorFlow: Harnessing the power of neural networks and deep learning models to make sense of massive datasets.
           </p>
