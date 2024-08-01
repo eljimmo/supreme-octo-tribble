@@ -1,6 +1,6 @@
   import React, { useState } from 'react';
   import Footer from '../../components/Footer/index';
-  // import Videoapp from '../../components/VideoTexture/App';
+  import Videoapp from '../../components/VideoTexture/App';
   import HeroSection from '../../components/HeroSection/index';
   import ScApp from '../../components/ScrollControl/src/App';
   // import ScrollBelt from  "../../components/portfolio_react/components/about/ScrollBeltIndex";
@@ -12,8 +12,9 @@
   // import { Underlay } from '../../components/FrostedGlass/Herooverlay'
 
   import App from '../../components/Curl_Noise/App';
+  import App2 from '../../components/Curl_Noise/App2';
   // import TimeClock from '../../components/TimeClock/Index';
-  // import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
+  import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
   import styled from 'styled-components';
   import Navbar from '../../components/Navbar';
   import Sidebar from '../../components/Sidebar/index';
@@ -21,27 +22,27 @@
   // import MachineApp from '../../components/FrostedGlass/MachineIndex';
 
 
-//   const HeroContainerTransparent = styled.div`
-//   background: #000000;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0 30px;
-//   height: 800px;
-//   position: relative;
-//   z-index: 1;
+  const HeroContainerTransparent = styled.div`
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
 
-// `;
+`;
 
 const HeroContainer = styled.div`
 background: 
 /* Diagonal split - top left to bottom right */
 linear-gradient(to bottom right, transparent 50%, transparent 50%), 
-url('nodes.jpg') left top,
+url('container.jpg') left top,
 
 /* Diagonal split - top right to bottom left */
 linear-gradient(to bottom left, transparent 50%, transparent 50%), 
-url('blue.jpg') right top;
+url('containers.jpg') right top;
 
 background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
 background-repeat: no-repeat;
@@ -56,6 +57,7 @@ z-index: 1;
 `;
 
 
+
   export default function WelcomePage() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -64,15 +66,23 @@ z-index: 1;
     };
     return (
       <>
-  <HeroSection/>
+  {/* <HeroSection/> */}
   <Navbar toggle={toggle} />
   <Sidebar isOpen={isOpen} toggle={toggle} />
-                      {/* <HeroContainerTransparent> */}
-              <HeroContainer>
-                <App/>
-                <Underlay/>
+
+  <HeroContainer>
+                <App2/>
+                {/* <Underlay/> */}
               </HeroContainer>
-              <ScApp/>
+              <Videoapp/>
+                      <ScApp/>
+
+                                            {/* <HeroContainer>
+                                            <Heroartificialintelligence/>
+                                            </HeroContainer> */}
+
+                {/* <HeroSection/> */}
+
           <Footer/>
       </>
     );

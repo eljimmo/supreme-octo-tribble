@@ -1,0 +1,24 @@
+.map {
+    text-align: center;
+  }
+  
+  .google-map {
+    height: 400px; /* Set a height for the map container */
+    width: 100%; /* Ensure it takes up the full width */
+    position: relative; /* Ensure that the map container is positioned correctly */
+  }
+  
+  .pin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pin-icon {
+    font-size: 24px; /* Adjust size as needed */
+  }
+  
+  .pin-text {
+    margin-top: 4px;
+  }
+  

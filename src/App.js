@@ -16,6 +16,7 @@ import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
+// import AssetAnalysis from "./pages/Service_Index/AssetAnalysis";
 import PrivateRoute from "./pages/layout/PrivateRoute";
 
 export default function App() {
@@ -67,7 +68,7 @@ export default function App() {
 
 
               <Route
-                path="/support"
+                path="/home"
                 element={
                   <SupportPage/>
                 }
@@ -76,7 +77,7 @@ export default function App() {
               
 
               <Route
-                path="/datacollection"
+                path="/domestic"
                 element={
                   <DataCollectionIndex/>
                 }
@@ -85,7 +86,7 @@ export default function App() {
 
               
               <Route
-                path="/privacypolicies"
+                path="/international"
                 element={
                   <PrivacyPoliciesIndex/>
                 }
@@ -93,7 +94,7 @@ export default function App() {
 
 
                 <Route
-                path="/accessibility"
+                path="/contact"
                 element={
                   <AccessibilityIndex/>
                 }
@@ -101,21 +102,21 @@ export default function App() {
 
 
                 <Route
-                path="/generalterms"
+                path="/about"
                 element={
                   <GeneralTermsIndex/>
                 }
               />
 
                 <Route
-                path="/howitworks"
+                path="/software"
                 element={
                   <Howitworks/>
                 }
               />
               
               <Route
-                path="/chooseus"
+                path="/login"
                 element={
                   <ChooseUs/>
                 }

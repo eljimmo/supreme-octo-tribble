@@ -3,8 +3,9 @@ import styled, { keyframes } from 'styled-components';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
 import Footer from '../../components/Footer/index';
-
-
+import Overlay from '../../components/Landing/Overlay';
+import Map from '../../components/Maps/index';
+import Underlay from '../../components/Landing/Underlay';
 
 
 const TopLine1 = styled.div`
@@ -74,15 +75,32 @@ const Analysis = styled.div`
   padding: 20px;
 `;
 
-
 const PageWrapper = styled.div`
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 75px auto;
     padding: 20px;
     border: 1px solid #00b100;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1200px) {
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+        margin: 30px auto;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+        margin: 20px auto;
+        padding: 5px;
+        max-width: 100%;
+    }
 `;
+
 
 const Row = styled.div`
   display: flex;
@@ -113,6 +131,43 @@ const BoxHeader = styled.h3`
   margin-bottom: 16px;
 `;
 
+
+const HeroContainer = styled.div`
+background: 
+/* Diagonal split - top left to bottom right */
+linear-gradient(to bottom right, transparent 50%, transparent 50%), 
+url('container.jpg') left top,
+
+/* Diagonal split - top right to bottom left */
+linear-gradient(to bottom left, transparent 50%, transparent 50%), 
+url('containers.jpg') right top;
+
+background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 800px;
+position: relative;
+z-index: 1;
+
+`;
+
+
+const HeroContainerTransparent = styled.div`
+background: #000000;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 100px;
+position: relative;
+z-index: 1;
+
+`;
+
+
 export default function Howitworks() {
   const [isOpen, setIsOpen] = useState(false);
   const sampleData = [10, 12, 15, 20, 27, 35];
@@ -135,17 +190,23 @@ export default function Howitworks() {
 
       <PageWrapper>
         <AnimatedGradientText1>
-          Advanced Data Analysis Software
+          2024 Freight Analysis
         </AnimatedGradientText1>
         <DataDisplay>
-          <h2>Introduction</h2>
-          <p>In the modern era, data is invaluable. Leveraging the power of TensorFlow, statistical modeling, and cutting-edge algorithmic systems, our software provides unparalleled insights into complex datasets.</p>
+          <h2>Current Freight Map Movement</h2>
+          <p>
+            In the modern era, data is invaluable. Leveraging the power of TensorFlow, statistical modeling, 
+            and cutting-edge algorithmic systems, our software provides unparalleled insights into complex datasets.
+            </p>
+            <Map/>
+
+       
         </DataDisplay>
         <Analysis>
-          <h2>Our Approach</h2>
-          <TopLine1>
+          <h2>Booked Freight Shipments </h2>
+          <p>
             Deep Learning with TensorFlow: Harnessing the power of neural networks and deep learning models to make sense of massive datasets.
-          </TopLine1>
+          </p>
           <TopLine1>
             Algorithmic Systems: Sophisticated algorithms designed to detect patterns, anomalies, and meaningful information from raw data.
           </TopLine1>
@@ -156,20 +217,28 @@ export default function Howitworks() {
 
         <Row>
           <BoxWrapper>
-            <BoxHeader>TensorFlow</BoxHeader>
+            <BoxHeader>Carousel Key Result Areas (KRAs)</BoxHeader>
             <p>Utilize the open-source software library for dataflow and machine learning tasks, ensuring precise and efficient analyses.</p>
           </BoxWrapper>
           <BoxWrapper>
-            <BoxHeader>Algorithmic Systems</BoxHeader>
+            <BoxHeader>Key Performance Indicators | KPIs</BoxHeader>
             <p>Empower decision-making with algorithms that sift through data to highlight actionable insights and patterns.</p>
           </BoxWrapper>
           <BoxWrapper>
-            <BoxHeader>Statistical Analysis</BoxHeader>
+            <BoxHeader>Statistical OKRs (Objectives and Key Results) </BoxHeader>
             <p>Apply rigorous statistical methods to predict outcomes, understand data distributions, and infer trends.</p>
           </BoxWrapper>
         </Row>
 
       </PageWrapper>
+
+      
+  <HeroContainer>
+                {/* <Map/> */}
+                <Underlay/>
+              </HeroContainer>
+
+
       <Footer/>
     </>
   );

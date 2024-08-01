@@ -70,7 +70,7 @@ const Sub = styled.div`
 
 
 const StyledParagraph = styled.p`
-  font-size: 14px;
+  font-size: 20px;
   color: #ffffff;
   margin: 0; /* Remove default margin */
   /* You can add padding or margin here as well */
@@ -94,7 +94,7 @@ export default function Underlay() {
       <h1 style={{ color: 'white' }}>
                                           <Typewriter
                                             options={{
-                                              strings: ['Project Leibniz', 'Releasing 2024', 'Financial Simulations', 'Predicting Behaviors'],
+                                              strings: ['Life On The Road International Logistics', 'Efficiency in Technology', 'Asset Security & Recovery', 'Life On The Road International Logistics', 'Reliabile Network of Partners ', 'Customer Satisfaction Always'],
                                               autoStart: true,
                                               loop: true,
                                             }}
@@ -106,27 +106,32 @@ export default function Underlay() {
         </StyledParagraph>
 
         <StyledParagraph>
-        simulations in trading.
+        freight brokerage | carrier management
           {/* AI underscores the importance of informed trading. */}
         </StyledParagraph>
 
         <StyledParagraph>
-          AI has opened the world 
+          warehousing | distribution
         </StyledParagraph>
 
         <StyledParagraph>
-        of synthetic trading.
+        freight forwarding
           {/* Enabling computational prowess. */}
         </StyledParagraph>
 
         <StyledParagraph>
-          Introducing computational tools 
+          software solutions for supply chains
         </StyledParagraph>
 
+        
         <StyledParagraph>
-        that magnify strategic decision-making.
-          {/* With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies. */}
+          prioritizing clients, partners & stakeholders 
         </StyledParagraph>
+
+        {/* <StyledParagraph> */}
+        {/* committing to sustainability for unparalleled  */}
+          {/* With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies. */}
+        {/* </StyledParagraph> */}
 
         {/* <StyledParagraph>
           With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness cutting-edge tools for more accurate forecasts and optimized trade strategies.
@@ -156,7 +161,7 @@ export default function Underlay() {
 
       <Right>
       <>
-      <TimeClock/>
+      {/* <TimeClock/> */}
 
       </>
       </Right>

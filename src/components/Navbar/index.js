@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              Project Leibniz
+              Life On The Road International
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <GiAbstract053 />
@@ -60,26 +60,20 @@ const Navbar = ({ toggle }) => {
                 <NavLinks2a
                   to='/PersonalDashboard'
                 >
-                  dashboard
+                  Domestic
                 </NavLinks2a>
               </NavItem> 
 
 
-              {/* <NavItem>
-                <NavLinks2a
-                  to='/AssetAnalysis'
-                >
-                  Analysis
-                </NavLinks2a>
-              </NavItem> */}
+              
 
 
               <NavItem>
                 <NavLinks2a
                   to='/livebots'
                 >
-                  bots
-                </NavLinks2a>
+                  International 
+                  </NavLinks2a>
               </NavItem>
 
 
@@ -87,7 +81,31 @@ const Navbar = ({ toggle }) => {
                 <NavLinks2a
                   to='/botworkshop'
                 >
-                  botworkshop
+                  Contact
+                </NavLinks2a>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks2a
+                  to='/about'
+                >
+                  About
+                </NavLinks2a>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks2a
+                  to='/software'
+                >
+                  Software
+                </NavLinks2a>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks2a
+                  to='/login'
+                >
+                  Login
                 </NavLinks2a>
               </NavItem>
 

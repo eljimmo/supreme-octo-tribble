@@ -212,7 +212,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #00b100;
+  color: grey;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

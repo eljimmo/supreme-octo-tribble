@@ -1,6 +1,7 @@
 import { CameraShake } from '@react-three/drei';
 import { Parti } from './Part';
 import { Canvas } from '@react-three/fiber';
+import Geo from '../GEO/Geo';
 
 export default function App2() {
   const props = {
@@ -23,7 +24,9 @@ export default function App2() {
           maxRoll={0.5}
           intensity={0.2}
         />
-        <Parti {...props} />
+                    <Geo/>
+
+        {/* <Parti {...props} /> */}
       </Canvas>
     </>
   );

@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import {
   HeroContainer,
   HeroBg,
+  VideoBg,
   HeroContent
 } from './HeroElements';
-import App from '../../components/Dbismut/App';
+// import App from '../../components/Dbismut/App';
 
 
 export default function HeroSection2() {
@@ -16,9 +17,9 @@ export default function HeroSection2() {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-      <App/>
+      {/* <App/> */}
 
-        {/* <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' /> */}
+        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
 

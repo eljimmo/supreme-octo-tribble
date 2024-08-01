@@ -133,12 +133,14 @@ export function Underlay() {
                                   <h1 style={{ color: 'white' }}>
                                           <Typewriter
                                             options={{
-                                              strings: ['AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus.', 
+                                              strings: [
+                                                // 'AI has revolutionized the world of options trading, introducing advanced tools that magnify strategic decision-making and bolster operational efficiencies. Named in homage to Gottfried Wilhelm Leibniz, the pioneer of calculus.', 
                                               'Releasing 2024', 
-                                              'With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies.',
-                                              'By leveraging cutting-edge technologies, cultivating an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits.', 
-                                              'Discovering Artificial Reasoning',
-                                              'The Project Leibniz platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading'
+                                              // 'With its computational prowess, AI underscores the importance of informed trading, enabling traders to harness accurate forecasts and optimized trade strategies.',
+                                              // 'By leveraging cutting-edge technologies, cultivating an ecosystem where traders can employ analytical bots to simulate stock movements, strategize trades, forecast potential values, and visualize prospective profits.', 
+                                              'Discovering Artificial Reasoning in Data',
+                                              'AI-driven data mining to manage numerical data in large quantities.',
+                                              // 'The Project Leibniz platform offers an advanced suite for constructing AI-driven research models and experimental agents dedicated to financial analysis and decision-making in options trading'
                                             ],
                                               autoStart: true,
                                               loop: true,
@@ -191,21 +193,21 @@ export function Underlay() {
 
 
       </BottomLeft>
-      <BottomRight>
+      {/* <BottomRight> */}
 
         
-      <StyledParagraph>
+      {/* <StyledParagraph>
       Finding patterns in data is a key component of machine learning. In fact, it's the primary way that ML algorithms learn. The more data you feed an ML algorithm, the more patterns it can find, and the more accurate its predictions become.
-        </StyledParagraph>
-        <StyledParagraph>
-        Sophisticated AI-driven perspective leveraging deep learning empowers traders to manage their positions with enhanced precision and foresight.            
-      </StyledParagraph>
+        </StyledParagraph> */}
+        {/* <StyledParagraph>
+        AI-driven data mining to manage numerical data in large quantities.            
+      </StyledParagraph> */}
 
 
-      </BottomRight>
+      {/* </BottomRight> */}
 
       <Bar />
-      <Bar vertical />
+      {/* <Bar vertical /> */}
       <BarR />
       {/* <BarBT vertical/> */}
 

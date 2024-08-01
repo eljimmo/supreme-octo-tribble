@@ -35,7 +35,7 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
               <FooterLink to='/howitworks'>How it works</FooterLink>
-              <FooterLink to='/chooseus'>Why Choose Project Leibniz</FooterLink>
+              <FooterLink to='/chooseus'>Why Choose Life On The Road </FooterLink>
               {/* <FooterLink to='/'>Careers</FooterLink>
               <FooterLink to='/'>Investors</FooterLink> */}
               <FooterLink to='/'>Terms of Service</FooterLink>
@@ -59,9 +59,9 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              Project Leibniz Analytica
+            Life On The Road International
             </SocialLogo>
-            <WebsiteRights>Project Leibniz Analytica © 2023 All rights reserved.</WebsiteRights>
+            <WebsiteRights>Life On The Road International © 2017 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />

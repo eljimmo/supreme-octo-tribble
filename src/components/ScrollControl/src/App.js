@@ -23,6 +23,7 @@ import {
 
 export default function ScApp() {
   return (
+
     <div style={{ width: '100vw', height: '100vh', overflow: 'auto', background: '#000000' }}>
       <Canvas camera={{ position: [0, 0, 20], fov: 15, background: new THREE.Color(0x000000) }}>
       <color attach="background" args={['#000000']} />
@@ -35,6 +36,17 @@ export default function ScApp() {
           
           <Scroll html>
             {/* First Div */}
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+
+            <br/>
+            <br/>
+
+            <br/>
+            <br/>
+
             <div
               style={{
                 display: 'flex',
@@ -46,23 +58,62 @@ export default function ScApp() {
                 color: 'whitesmoke',
               }}
             >
-              artificial Neurons or Nodes
+
+
+              An American Made Logistics Leader Across the Globe
               <br />
-              predictive modeling, adaptive control
-              <br />
-              <br />
-              <br />
-              <br />
-              cognitive modeling
+              Connecting the World, One Technological step at a time 
               <br />
               <br />
               <br />
+              Dallas Texas, Los Angeles California, Buenos Aires Argentina, Foz do Iguacu Brazil & Bejing China. 
               <br />
               <br />
+              We connect the world.
+
+              <br />
+              <br />
+              John 3:16
+
+              <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+     
+    
               {/* <InfoSection {...homeObjOne} /> */}
               <InfoSection2 {...homeObjThree} />
 
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div style={
+              {
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100vw',
+                height: '100vh',
+                color: 'whitesmoke',
+              }}/>
+
+              <hr/>
+              <hr/>
+              <hr/>
+              <hr/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <InfoSection2 {...homeObjThree}/>
+            }/>
 
             {/* Second Div */}
             <div
@@ -104,6 +155,8 @@ export default function ScApp() {
         />
       </Canvas>
     </div>
+
+
   );
 }
 
@@ -113,23 +166,29 @@ function Images() {
   const data = useScroll()
   const { width, height } = useThree((state) => state.viewport)
   useFrame(() => {
-    group.current.children[0].material.zoom = 1 + data.range(0, 1 / 3) / 3
-    group.current.children[1].material.zoom = 1 + data.range(0, 1 / 3) / 3
+
+
+    group.current.children[0].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2
+    group.current.children[1].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2
     group.current.children[2].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2
-    group.current.children[3].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2
-    group.current.children[4].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2
-    group.current.children[5].material.grayscale = 1 - data.range(1.6 / 3, 1 / 3)
-    group.current.children[6].material.zoom = 1 + (1 - data.range(2 / 3, 1 / 3)) / 3
+    group.current.children[3].material.grayscale = 1 - data.range(1.6 / 3, 1 / 3)
+    group.current.children[4].material.zoom = 1 + (1 - data.range(2 / 3, 1 / 3)) / 3
+
+
   })
   return (
     <group ref={group}>
-      <Image position={[-2, 3.3, 0]} scale={[4, height, 1]} url="/invest.jpg" />
-      <Image position={[2, 2.5, 3]} scale={3} url="/nodes.jpg" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/sublime_charting.png" />
-      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/Server.jpg" />
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/Blue.jpg" />
-      <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/oil_painting_chart.png" />
-      <Image position={[0, -height * 2 - height / 4, 0]} scale={[width, height / 1.1, 1]} url="/ComputingAbstract.jpg" />
+
+      
+
+      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/port.jpg" />
+      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/manager.jpg" />
+      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/stacked.jpg" />
+      <Image position={[0, -height * 1.5, 7.5]} scale={[1.5, 3, 1]} url="/fleet.jpg" />
+      <Image position={[0, -height * 2 - height / 4, 0]} scale={[width, height / 1.1, 1]} url="/distribution.png" />
+    
+    
+    
     </group>
   )
 }
@@ -141,9 +200,9 @@ function Typography() {
   return (
     <>
 
-      <Text children="Intelligence" anchorX="left" position={[-width / 2.5, -height  * 3, 2]} {...shared} />
-      <Text children="Artificial Agents" anchorX="right" position={[width / 1.2, -height * 1, 6]} {...shared} />
-      <Text children="Smart Analysis" position={[0, -height * 4.624, 6]} {...shared} />
+      <Text children="Customer-Centric" anchorX="left" position={[-width / 1.5, -height  * 3, 2]} {...shared} />
+      <Text children="Scalability | Security" anchorX="right" position={[width / 1.2, -height * 1.8, 6]} {...shared} />
+      <Text children="A Global Logistics Leader" anchorX="right" position={[width / 1.9, -height  * 4, 2]} {...shared} />
     </>
   )
 }
