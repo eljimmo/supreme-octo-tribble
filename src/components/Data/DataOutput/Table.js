@@ -18,28 +18,18 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-// import DeleteIcon from '@mui/icons-material/Delete';
-// import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
-
-function createData(date, revenue, shipper, delivery, miles) {
-  return {
-    date,
-    revenue,
-    shipper,
-    delivery,
-    miles,
-  };
+function createData(id, date, proofofdelivery, revenue, net, paymentStatus, remit, invoicing, brokerage, rateConfirmation, weight, agent, email, phoneNumber, miles, perMileRate, shipper, pickUpDateShipperDate, receiver, deliveryDateReceiverDate, secondConsignee, secondDeliveryDateSecondReceiverDate, thirdConsignee, commodity) {
+  return { id, date, proofofdelivery, revenue, net, paymentStatus, remit, invoicing, brokerage, rateConfirmation, weight, agent, email, phoneNumber, miles, perMileRate, shipper, pickUpDateShipperDate, receiver, deliveryDateReceiverDate, secondConsignee, secondDeliveryDateSecondReceiverDate, thirdConsignee, commodity };
 }
 
-// Example data
 const rows = [
-  createData('2024-07-01', '$1,200.00', '123 Shipper St', '456 Delivery Ave', 150),
-  createData('2024-07-02', '$1,500.00', '789 Shipper St', '012 Delivery Ave', 200),
-  createData('2024-07-03', '$1,800.00', '345 Shipper St', '678 Delivery Ave', 250),
-  createData('2024-07-04', '$2,000.00', '567 Shipper St', '901 Delivery Ave', 300),
-  createData('2024-07-05', '$2,500.00', '890 Shipper St', '234 Delivery Ave', 350),
+  createData(1, '2024-07-01', 'Invoice123', 1100.00, 1083.50, 'Paid', 'Bank Transfer', 'Invoice 8093770', 'Trinity Logistics, Inc', '8093770', 40000, 'David Newberry', 'david.newberry@trinitylogistics.com', '(817) 789-4168', 318, 3.46, '1301 Forum Way S, Fort Worth, TX 76140', '2024-07-02', '11717 West, CR 125, Odessa, TX 79765', '2024-07-05', 'None', '2024-07-07', 'None', 'Machine Parts'),
+  createData(2, '2024-07-02', 'Invoice124', 1200.00, 1180.00, 'Paid', 'Credit Card', 'Invoice 8093771', 'Logistics Co', '8093771', 35000, 'Jane Doe', 'jane.doe@logisticsco.com', '(123) 456-7890', 280, 4.29, '1502 Market St, Austin, TX 73301', '2024-07-03', '4501 Industrial Blvd, Houston, TX 77002', '2024-07-06', 'None', '2024-07-08', 'None', 'Electronics'),
+  createData(3, '2024-07-03', 'Invoice125', 1300.00, 1280.00, 'Pending', 'Bank Transfer', 'Invoice 8093772', 'Freight Movers', '8093772', 38000, 'Alice Smith', 'alice.smith@freightmovers.com', '(234) 567-8901', 290, 4.48, '2901 Commerce Rd, Dallas, TX 75201', '2024-07-04', '5002 Distribution Ave, San Antonio, TX 78201', '2024-07-07', 'None', '2024-07-09', 'None', 'Automotive Parts'),
+  // Add more data as needed
 ];
+
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -57,10 +47,6 @@ function getComparator(order, orderBy) {
     : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
-// Since 2020 all major browsers ensure sort stability with Array.prototype.sort().
-// stableSort() brings sort stability to non-modern browsers (notably IE11). If you
-// only support modern browsers you can replace stableSort(exampleArray, exampleComparator)
-// with exampleArray.slice().sort(exampleComparator)
 function stableSort(array, comparator) {
   const stabilizedThis = array.map((el, index) => [el, index]);
   stabilizedThis.sort((a, b) => {
@@ -72,38 +58,33 @@ function stableSort(array, comparator) {
   });
   return stabilizedThis.map((el) => el[0]);
 }
+
 const headCells = [
-  {
-    id: 'date',
-    numeric: false,
-    disablePadding: true,
-    label: 'Date',
-  },
-  {
-    id: 'revenue',
-    numeric: true,
-    disablePadding: false,
-    label: 'Revenue',
-  },
-  {
-    id: 'shipper',
-    numeric: false,
-    disablePadding: false,
-    label: 'Shipper Address',
-  },
-  {
-    id: 'delivery',
-    numeric: false,
-    disablePadding: false,
-    label: 'Delivery Address',
-  },
-  {
-    id: 'miles',
-    numeric: true,
-    disablePadding: false,
-    label: 'Miles',
-  },
+  { id: 'date', numeric: false, disablePadding: true, label: 'Date' },
+  { id: 'revenue', numeric: true, disablePadding: false, label: 'Revenue' },
+  { id: 'shipper', numeric: false, disablePadding: false, label: 'Shipper Address' },
+  { id: 'delivery', numeric: false, disablePadding: false, label: 'Delivery Address' },
+  { id: 'miles', numeric: true, disablePadding: false, label: 'Miles' },
+  { id: 'perMileRate', numeric: true, disablePadding: false, label: 'Per Mile Rate' },
+  { id: 'brokerage', numeric: false, disablePadding: false, label: 'Brokerage' },
+  { id: 'rateConfirmation', numeric: false, disablePadding: false, label: 'Rate Confirmation' },
+  { id: 'weight', numeric: true, disablePadding: false, label: 'Weight' },
+  { id: 'agent', numeric: false, disablePadding: false, label: 'Agent' },
+  { id: 'email', numeric: false, disablePadding: false, label: 'Email' },
+  { id: 'phoneNumber', numeric: false, disablePadding: false, label: 'Phone Number' },
+  { id: 'proofofdelivery', numeric: false, disablePadding: false, label: 'Proof of Delivery' },
+  { id: 'paymentStatus', numeric: false, disablePadding: false, label: 'Payment Status' },
+  { id: 'remit', numeric: false, disablePadding: false, label: 'Remit' },
+  { id: 'invoicing', numeric: false, disablePadding: false, label: 'Invoicing' },
+  { id: 'pickUpDateShipperDate', numeric: false, disablePadding: false, label: 'Pick Up Date' },
+  { id: 'receiver', numeric: false, disablePadding: false, label: 'Receiver' },
+  { id: 'deliveryDateReceiverDate', numeric: false, disablePadding: false, label: 'Delivery Date' },
+  { id: 'secondConsignee', numeric: false, disablePadding: false, label: 'Second Consignee' },
+  { id: 'secondDeliveryDateSecondReceiverDate', numeric: false, disablePadding: false, label: 'Second Delivery Date' },
+  { id: 'thirdConsignee', numeric: false, disablePadding: false, label: 'Third Consignee' },
+  { id: 'commodity', numeric: false, disablePadding: false, label: 'Commodity' },
 ];
+
 function EnhancedTableHead(props) {
   const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
 
@@ -215,7 +196,7 @@ EnhancedTableToolbar.propTypes = {
 
 export default function EnhancedTable() {
   const [order, setOrder] = React.useState('asc');
-  const [orderBy, setOrderBy] = React.useState('calories');
+  const [orderBy, setOrderBy] = React.useState('date');
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -270,7 +251,6 @@ export default function EnhancedTable() {
 
   const isSelected = (id) => selected.indexOf(id) !== -1;
 
-  // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
@@ -332,12 +312,31 @@ export default function EnhancedTable() {
                       scope="row"
                       padding="none"
                     >
-                      {row.name}
+                      {row.date}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.revenue}</TableCell>
+                    <TableCell>{row.shipper}</TableCell>
+                    <TableCell>{row.delivery}</TableCell>
+                    <TableCell align="right">{row.miles}</TableCell>
+                    <TableCell align="right">{row.perMileRate}</TableCell>
+                    <TableCell>{row.brokerage}</TableCell>
+                    <TableCell>{row.rateConfirmation}</TableCell>
+                    <TableCell align="right">{row.weight}</TableCell>
+                    <TableCell>{row.agent}</TableCell>
+                    <TableCell>{row.email}</TableCell>
+                    <TableCell>{row.phoneNumber}</TableCell>
+                    <TableCell>{row.proofofdelivery}</TableCell>
+                    <TableCell>{row.paymentStatus}</TableCell>
+                    <TableCell>{row.remit}</TableCell>
+                    <TableCell>{row.invoicing}</TableCell>
+                    <TableCell>{row.pickUpDateShipperDate}</TableCell>
+                    <TableCell>{row.receiver}</TableCell>
+                    <TableCell>{row.deliveryDateReceiverDate}</TableCell>
+                    <TableCell>{row.secondConsignee}</TableCell>
+                    <TableCell>{row.secondDeliveryDateSecondReceiverDate}</TableCell>
+                    <TableCell>{row.thirdConsignee}</TableCell>
+                    <TableCell>{row.commodity}</TableCell>
+
                   </TableRow>
                 );
               })}
@@ -347,7 +346,7 @@ export default function EnhancedTable() {
                     height: (dense ? 33 : 53) * emptyRows,
                   }}
                 >
-                  <TableCell colSpan={6} />
+                  <TableCell colSpan={headCells.length} />
                 </TableRow>
               )}
             </TableBody>

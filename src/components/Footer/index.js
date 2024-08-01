@@ -59,9 +59,9 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-            Life On The Road International
+            Life On The Road 
             </SocialLogo>
-            <WebsiteRights>Life On The Road International © 2017 All rights reserved.</WebsiteRights>
+            <WebsiteRights>Life On The Road © 2017 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />

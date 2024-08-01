@@ -16,6 +16,7 @@ import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
+import DataDash from "./pages/Dashboard";
 // import AssetAnalysis from "./pages/Service_Index/AssetAnalysis";
 import PrivateRoute from "./pages/layout/PrivateRoute";
 
@@ -70,16 +71,16 @@ export default function App() {
               <Route
                 path="/home"
                 element={
-                  <SupportPage/>
+                  <WelcomePage/>
                 }
               />
 
               
 
               <Route
-                path="/domestic"
+                path="/dashboard"
                 element={
-                  <DataCollectionIndex/>
+                  <DataDash/>
                 }
               />
               

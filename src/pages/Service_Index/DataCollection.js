@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import Footer from '../../components/Footer/index';
 import styled, { keyframes } from 'styled-components';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar/index';
-
-
-// Styled components
 
 
 
@@ -85,7 +82,7 @@ export default function DataCollectionIndex() {
       <br/>
       <br/>
       <DataCollectionNoticeContainer>
-      <AnimatedGradientText1>Data Collection Notice</AnimatedGradientText1>
+      <AnimatedGradientText1>Data Collection</AnimatedGradientText1>
       <HighlightedText>Important Notice:</HighlightedText> 
 
       <TopLine1>

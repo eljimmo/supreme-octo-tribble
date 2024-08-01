@@ -58,9 +58,9 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks2a
-                  to='/PersonalDashboard'
+                  to='/Dashboard'
                 >
-                  Domestic
+                  Dashboard
                 </NavLinks2a>
               </NavItem> 
 
@@ -68,30 +68,30 @@ const Navbar = ({ toggle }) => {
               
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/livebots'
                 >
                   International 
                   </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/botworkshop'
                 >
                   Contact
                 </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks2a
                   to='/about'
                 >
                   About
                 </NavLinks2a>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem>
                 <NavLinks2a

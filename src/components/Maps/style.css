@@ -1,24 +1,47 @@
 .map {
-    text-align: center;
-  }
-  
+  text-align: center;
+  padding: 0 10px; /* Add some padding for better appearance on mobile */
+}
+
+.google-map {
+  height: 400px; /* Fixed height for larger screens */
+  width: 100%; /* Full width */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  position: relative;
+}
+
+.pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; /* Add some padding for better spacing on smaller screens */
+}
+
+.pin-icon {
+  font-size: 24px; /* Default size */
+}
+
+.pin-text {
+  margin-top: 4px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .google-map {
-    height: 400px; /* Set a height for the map container */
-    width: 100%; /* Ensure it takes up the full width */
-    position: relative; /* Ensure that the map container is positioned correctly */
+    height: 300px; /* Reduce height for tablets and smaller screens */
   }
-  
-  .pin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+
   .pin-icon {
-    font-size: 24px; /* Adjust size as needed */
+    font-size: 20px; /* Slightly smaller icon */
   }
-  
-  .pin-text {
-    margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .google-map {
+    height: 200px; /* Further reduce height for mobile phones */
   }
-  
+
+  .pin-icon {
+    font-size: 18px; /* Smaller icon for mobile */
+  }
+}

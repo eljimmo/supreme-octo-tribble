@@ -44,6 +44,7 @@ const AnimatedGradientText1 = styled.h1`
   background: linear-gradient(to right, #ee9ca7, #ffdde1, #2193b0, #6dd5ed);
   background-size: 200%;
   background-clip: text;
+  padding: 20px;
   -webkit-background-clip: text;
   color: transparent;
 
@@ -67,9 +68,12 @@ const Header = styled.h1`
 
 const DataDisplay = styled.div`
   background-color: #f4f4f4;
-  padding: 20px;
-  margin-bottom: 20px;
-`;
+  padding: 5px;
+  height: 500px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  `;
+
 
 const Analysis = styled.div`
   background-color: #e0e0e0;
@@ -77,14 +81,14 @@ const Analysis = styled.div`
 `;
 
 const PageWrapper = styled.div`
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 75px auto;
     padding: 20px;
     border: 1px solid #00b100;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         margin: 50px auto;
         padding: 15px;
     }
@@ -156,17 +160,6 @@ z-index: 1;
 `;
 
 
-const HeroContainerTransparent = styled.div`
-background: #000000;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 30px;
-height: 100px;
-position: relative;
-z-index: 1;
-
-`;
 
 
 export default function Howitworks() {
@@ -183,22 +176,15 @@ export default function Howitworks() {
     <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <hr/>
-      <br/>
-      <br/>
-      <br/>
       <br/>
 
       <PageWrapper>
         <AnimatedGradientText1>
           2024 Freight Analysis
         </AnimatedGradientText1>
+
         <DataDisplay>
-          <h2>Current Freight Map Movement</h2>
-          <p>
-            In the modern era, data is invaluable. Leveraging the power of TensorFlow, statistical modeling, 
-            and cutting-edge algorithmic systems, our software provides unparalleled insights into complex datasets.
-            </p>
+
             
             <Map/>
 
@@ -208,38 +194,165 @@ export default function Howitworks() {
           <h2>Booked Freight Shipments </h2>
 
           <EnhancedTable/>
-
-          <p>
-            Deep Learning with TensorFlow: Harnessing the power of neural networks and deep learning models to make sense of massive datasets.
-          </p>
-          <TopLine1>
-            Algorithmic Systems: Sophisticated algorithms designed to detect patterns, anomalies, and meaningful information from raw data.
-          </TopLine1>
-          <TopLine1>
-            Statistical Analysis: Using proven statistical models to infer, predict, and understand underlying trends in the data.
-          </TopLine1>
         </Analysis>
 
         <Row>
           <BoxWrapper>
-            <BoxHeader>Carousel Key Result Areas (KRAs)</BoxHeader>
-            <p>Utilize the open-source software library for dataflow and machine learning tasks, ensuring precise and efficient analyses.</p>
+            <BoxHeader>Financial KPIs
+            </BoxHeader>
+            <p>Gross Margin:
+            Gross Margin: Gross margin is a financial metric that represents the percentage of revenue remaining after deducting the cost of goods sold (COGS).
+            </p>
+
+            <p>Operating Expense Ratio (OER)
+            Gross Margin: Gross margin is a financial metric that represents the percentage of revenue remaining after deducting the cost of goods sold (COGS).
+            Where:
+
+Operating Expenses include all expenses related to the core operations of the business, such as salaries, rent, utilities, and other day-to-day costs.
+Total Revenue is the total income generated from sales of goods or services.
+
+Key Points:
+
+A lower OER suggests that a company is more efficient in managing its operating expenses relative to its revenue.
+A higher OER indicates that a larger portion of revenue is used to cover operating costs, which might suggest inefficiencies or higher operational costs.
+            </p>
+            
+            <p>
+            Revenue Growth Rate: The Revenue Growth Rate is a financial metric that measures the percentage increase or decrease in a company’s revenue over a specific period. 
+            It helps to assess how quickly a companys revenue is growing and can be a key indicator of business performance and market potential.
+            Where:
+
+    Current Period Revenue is the revenue earned during the current reporting period (e.g., the current fiscal quarter or year).
+    Previous Period Revenue is the revenue earned during the previous comparable period.
+
+Key Points:
+
+    A positive Revenue Growth Rate indicates an increase in revenue, reflecting successful business expansion or increased sales.
+    A negative Revenue Growth Rate indicates a decrease in revenue, which may signal declining sales or business challenges.
+            </p>
+
+          
           </BoxWrapper>
+
+
           <BoxWrapper>
             <BoxHeader>Key Performance Indicators | KPIs</BoxHeader>
-            <p>Empower decision-making with algorithms that sift through data to highlight actionable insights and patterns.</p>
+
+
+            <p>Transit Time
+            Transit Time: Transit Time refers to the duration it takes for goods to travel from the point of origin to the destination. It is a key performance metric in logistics and transportation, reflecting the efficiency and speed of the shipping process.
+
+The formula to calculate Transit Time is:
+
+Transit Time=Delivery Date−Pickup DateTransit Time=Delivery Date−Pickup Date
+
+Where:
+
+    Delivery Date is the date when the goods reach their final destination.
+    Pickup Date is the date when the goods are first collected.
+
+Key Points:
+
+    Shorter Transit Times typically indicate more efficient transportation and faster delivery to customers.
+    Longer Transit Times can reflect potential delays or inefficiencies in the supply chain.
+
+Understanding Transit Time helps businesses improve logistics operations and enhance customer satisfaction by ensuring timely deliveries.
+            </p>  
+
+            <p>Fleet Utilization Rate
+            Fleet Utilization Rate: The Fleet Utilization Rate is a measure of how effectively a company's fleet of vehicles is being used. It indicates the percentage of time that the fleet is operational and actively transporting goods compared to the total available time.
+
+The formula to calculate Fleet Utilization Rate is:
+
+Fleet Utilization Rate=Total Operational HoursTotal Available Hours×100%Fleet Utilization Rate=Total Available HoursTotal Operational Hours​×100%
+
+Where:
+
+    Total Operational Hours is the total number of hours that vehicles in the fleet are actively in use for transporting goods.
+    Total Available Hours is the total number of hours the fleet is available for use, including idle time.
+
+Key Points:
+
+    A higher Fleet Utilization Rate suggests that the fleet is being used efficiently, with minimal downtime.
+    A lower Fleet Utilization Rate may indicate underutilization of the fleet, potentially leading to higher operational costs.
+
+Monitoring the Fleet Utilization Rate helps companies optimize their fleet management and reduce costs by improving vehicle usage and minimizing idle time.
+</p>
+
+            <p>Freight Cost per Mile
+            Freight Cost per Mile: Freight Cost per Mile is a financial metric that measures the cost associated with transporting goods for each mile traveled. It helps evaluate the efficiency of transportation operations and the overall cost of shipping.
+
+The formula to calculate Freight Cost per Mile is:
+
+Freight Cost per Mile=Total Freight CostTotal Miles TraveledFreight Cost per Mile=Total Miles TraveledTotal Freight Cost​
+
+Where:
+
+    Total Freight Cost is the total expense incurred for transporting the goods, including fuel, labor, maintenance, and other related costs.
+    Total Miles Traveled is the total distance covered during the transportation of the goods.
+
+Key Points:
+
+    A lower Freight Cost per Mile indicates more efficient transportation operations and cost management.
+    A higher Freight Cost per Mile may suggest increased expenses or inefficiencies in the transportation process.
+
+Understanding Freight Cost per Mile helps businesses manage transportation budgets, identify cost-saving opportunities, and optimize their logistics operations.
+            </p>  
+
+
           </BoxWrapper>
+
+
           <BoxWrapper>
-            <BoxHeader>Statistical OKRs (Objectives and Key Results) </BoxHeader>
-            <p>Apply rigorous statistical methods to predict outcomes, understand data distributions, and infer trends.</p>
+            <BoxHeader>Statistical Frequency Distribution Table  </BoxHeader>
+            <p>
+            This table helps identify the most common or frequent entities in each category, providing valuable insights for analysis and decision-making.
+            </p>
+            <p>
+            When creating a Statistical Frequency Distribution Table for a trucking company, especially when considering expansion to include commodities from South America to North America, you should focus on data that provides insights into key operational and financial aspects. Here’s what to highlight in the table:
+Key Data to Highlight:
+
+    Commodity Type:
+        Purpose: Track the frequency and distribution of different types of commodities transported.
+        Example: Count of shipments by commodity type (e.g., Machine Parts, Electronics, etc.).
+
+    Revenue:
+        Purpose: Analyze revenue generated across different periods or for different types of shipments.
+        Example: Average revenue per shipment or per commodity.
+
+    Net Revenue:
+        Purpose: Understand the profitability of different shipments or routes.
+        Example: Net revenue distribution by commodity type or region.
+
+    Weight:
+        Purpose: Track the distribution of shipment weights to optimize load planning and cost management.
+        Example: Frequency of shipments within different weight ranges (e.g., 0-10,000 lbs, 10,000-20,000 lbs).
+
+    Miles Traveled:
+        Purpose: Assess the distribution of travel distances and identify trends or opportunities for route optimization.
+        Example: Distribution of miles traveled for shipments to and from South America.
+
+    Per Mile Rate:
+        Purpose: Evaluate the cost efficiency of different routes or types of shipments.
+        Example: Average per mile rate by commodity type or region.
+
+    Transit Time:
+        Purpose: Monitor and optimize the efficiency of the transportation process.
+        Example: Frequency distribution of transit times to identify potential delays or efficiencies.
+
+    Payment Status:
+        Purpose: Track payment collection efficiency and identify patterns in payment issues.
+        Example: Frequency of different payment statuses (e.g., Paid, Pending, Overdue).
+        </p>
           </BoxWrapper>
+
+
         </Row>
 
       </PageWrapper>
 
       
   <HeroContainer>
-                {/* <Map/> */}
                 <Underlay/>
               </HeroContainer>
 
