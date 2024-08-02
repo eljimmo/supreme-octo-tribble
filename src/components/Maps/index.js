@@ -28,7 +28,7 @@ const Map = () => {
           id="tableTitle"
           component="div"
         >
-          Current Shipments
+          Shipment Map Overview
         </Typography>
                       <br/>
               

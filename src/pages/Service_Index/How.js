@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/index';
 import Overlay from '../../components/Landing/Overlay';
 import Map from '../../components/Maps/index';
 import Underlay from '../../components/Landing/Underlay';
-import EnhancedTable from '../../components/Data/DataOutput/Table';
+import EnhancedTable from '../../components/Data/DataOutput/DataTables/Table';
 
 
 const TopLine1 = styled.div`
@@ -180,7 +180,7 @@ export default function Howitworks() {
 
       <PageWrapper>
         <AnimatedGradientText1>
-          2024 Freight Analysis
+        Operations Overview
         </AnimatedGradientText1>
 
         <DataDisplay>
@@ -191,7 +191,7 @@ export default function Howitworks() {
        
         </DataDisplay>
         <Analysis>
-          <h2>Booked Freight Shipments </h2>
+          <h2>Freight Management </h2>
 
           <EnhancedTable/>
         </Analysis>
