@@ -7,29 +7,28 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function DocumentControlMediaCard() {
+export default function AssetManagementMediaCard() {
   return (
     <Box
       sx={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // minHeight: '100vh',
         p: 2,
       }}
     >
-      <Card sx={{ maxWidth: '100%', width: { xs: '100%', sm: 345 }, boxShadow: 3 }}>
+      <Card sx={{ width: '100%', maxWidth: 345, boxShadow: 3 }}>
         <CardMedia
           sx={{ height: 140 }}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Document Control Center"
+          image="/static/images/cards/asset-management.jpg"
+          title="Asset Management"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Document Control Center
+            Asset Management Panel
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Manage all your export documentation, bills of lading (BOLs), rate confirmations, receipts, and invoicing in one place. Streamline your workflow and ensure all your transportation documents are organized and easily accessible.
+            Optimize the management of your logistics and transportation assets. Track and maintain vehicles, equipment, and other assets to ensure efficiency and reliability, including those used for transporting commodities from South America.
           </Typography>
         </CardContent>
         <CardActions>

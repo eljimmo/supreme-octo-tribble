@@ -3,25 +3,30 @@
   max-width: 100%;
   margin: auto;
   font-family: Arial, sans-serif;
-  overflow-x: auto; /* Ensure the container can scroll horizontally if needed */
+  overflow-x: auto; /* Ensure horizontal scroll if needed */
 }
 
 table {
-  width: 100%;
+  width: 100%; /* Ensure the table width adjusts to the parent */
   border-collapse: collapse;
+  table-layout: auto; /* Allow columns to adjust to content */
 }
 
 th, td {
-  padding: 8px; /* Reduce padding for smaller screens */
+  padding: 8px;
   border: 1px solid #ddd;
   text-align: left;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap; /* Prevent text wrapping */
   word-wrap: break-word; /* Allow long words to break */
 }
 
 th {
   background-color: #f4f4f4;
-  font-size: 14px; /* Slightly smaller font size for better fit */
+  font-size: 14px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
 }
 
 tr:nth-child(even) {
@@ -29,20 +34,20 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #e0e0e0;
 }
 
 /* Media queries for various screen sizes */
 @media (max-width: 1200px) {
   th, td {
-    font-size: 12px; /* Smaller font size for medium screens */
+    font-size: 12px; /* Adjust font size for medium screens */
   }
 }
 
 @media (max-width: 768px) {
   th, td {
-    font-size: 10px; /* Even smaller font size for small screens */
-    padding: 6px; /* Reduce padding for smaller screens */
+    font-size: 10px; /* Further adjust font size for small screens */
+    padding: 6px; /* Reduce padding */
   }
 
   table {
@@ -50,43 +55,40 @@ tr:hover {
   }
 
   .data-page {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   th, td {
-    display: block; /* Stack table cells vertically */
+    display: block; /* Stack cells vertically */
     width: 100%; /* Full width for each cell */
     box-sizing: border-box;
-  }
-
-  th, td {
-    padding: 10px 0; /* Increase padding for better readability */
-    text-align: right; /* Align text to the right for better readability */
+    padding: 10px 0; /* Increase padding for readability */
+    text-align: right; /* Align text to the right */
   }
 
   th {
     background-color: #f4f4f4;
-    position: absolute; /* Position header cells */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
-    width: 100%; /* Full width */
-    font-size: 12px; /* Ensure header font size is consistent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
   }
 
   td {
-    border-top: 1px solid #ddd; /* Add border between rows */
-    border-left: none; /* Remove left border to align with header */
-    border-right: none; /* Remove right border */
-    position: relative; /* Allow positioning of content */
-    padding-left: 50%; /* Offset content to make space for labels */
-    text-align: left; /* Align text to the left */
+    border-top: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding-left: 50%; /* Space for labels */
+    text-align: left;
   }
 
   td::before {
-    content: attr(data-label); /* Use data-label for cell labels */
-    position: absolute; /* Position labels */
+    content: attr(data-label);
+    position: absolute;
     left: 0;
     width: 45%;
     padding-left: 10px;

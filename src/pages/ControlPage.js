@@ -71,7 +71,7 @@ const SectionContainer = styled.div`
   margin-top: 20px;
 `;
 
-export default function DataDash() {
+export default function ControlPage() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -87,7 +87,7 @@ export default function DataDash() {
       <br />
       <br />
       <DataCollectionNoticeContainer>
-        <AnimatedGradientText1>Logistics Control</AnimatedGradientText1>
+        <AnimatedGradientText1>Logistics Control Center</AnimatedGradientText1>
 
           <HighlightedText>Document Control Center</HighlightedText>
           

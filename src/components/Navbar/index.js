@@ -58,48 +58,31 @@ const Navbar = ({ toggle }) => {
 
               <NavItem>
                 <NavLinks2a
-                  to='/Dashboard'
+                  to='/control'
                 >
-                  Dashboard
+                  Control
                 </NavLinks2a>
               </NavItem> 
 
 
               
 
-
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks2a
-                  to='/livebots'
+                  to='/operations'
                 >
-                  International 
-                  </NavLinks2a>
-              </NavItem> */}
-
-
-              {/* <NavItem>
-                <NavLinks2a
-                  to='/botworkshop'
-                >
-                  Contact
+                  Operations
                 </NavLinks2a>
-              </NavItem> */}
-
-              {/* <NavItem>
-                <NavLinks2a
-                  to='/about'
-                >
-                  About
-                </NavLinks2a>
-              </NavItem> */}
+              </NavItem>
 
               <NavItem>
                 <NavLinks2a
-                  to='/software'
+                  to='/database'
                 >
-                  Software
+                  Database
                 </NavLinks2a>
               </NavItem>
+
 
               <NavItem>
                 <NavLinks2a

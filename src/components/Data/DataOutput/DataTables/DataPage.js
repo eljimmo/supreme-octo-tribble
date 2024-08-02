@@ -1,12 +1,14 @@
-// DataPage.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './DataPage.css'; // Optional: for styling
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Typography, Button } from '@mui/material';
+import DataForm from './DataForm'; // Import the form component
+import './DataPage.css'; // Optional: for additional styling
 
 const DataPage = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,72 +25,87 @@ const DataPage = () => {
     fetchData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  const handleFormSuccess = async () => {
+    // Fetch new data after form submission
+    try {
+      const response = await axios.get('http://localhost:3500/api/data');
+      setData(response.data);
+    } catch (err) {
+      setError('Error fetching data');
+    }
+    setShowForm(false);
+  };
+
+  if (loading) return <CircularProgress />;
+  if (error) return <Typography color="error">{error}</Typography>;
 
   return (
     <div className="Current Freight Movement">
-      <h1>Current Freight Movement</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th> Date </th>
-            <th> Revenue </th>
-            <th> Net Amount </th>
-            <th> Payment Status </th>
-            <th> Remit </th>
-            <th> Invoicing </th>
-            <th> Brokerage </th>
-            <th> Rate Confirmation </th>
-            <th> Weight </th>
-            <th> Agent </th>
-            <th> Email </th>
-            <th> Phone Number </th>
-            <th> Miles </th>
-            <th> Per Mile Rate </th>
-            <th> Shipper </th>
-            <th> Pick Up Date Shipper Date </th>
-            <th> Receiver </th>
-            <th> Delivery Date Receiver Date </th>
-            <th> Second Consignee </th>
-            <th> Second Delivery Date Second Receiver Date </th>
-            <th> Third Consignee </th>
-            <th> Commodity </th>
-            
-
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(item => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.date}</td>
-              <td>${item.revenue.toLocaleString()}</td>
-              <td>${item.net.toLocaleString()}</td>
-              <td>{item.paymentStatus}</td>
-              <td>{item.remit.toLocaleString()}</td>
-              <td>{item.invoicing.toLocaleString()}</td>
-              <td>{item.brokerage}</td>
-              <td>{item.rateConfirmation}</td>
-              <td>{item.weight}</td>
-              <td>{item.agent}</td>
-              <td>{item.email}</td>
-              <td>{item.phoneNumber}</td>
-              <td>{item.miles}</td>
-              <td>{item.perMileRate}</td>
-              <td>{item.shipper}</td>
-              <td>{item.pickUpDateShipperDate}</td>
-              <td>{item.receiver}</td>
-              <td>{item.deliveryDateReceiverDate}</td>
-              <td>{item.secondConsignee}</td>
-              <td>{item.secondDeliveryDateSecondReceiverDate}</td>
-              <td>{item.thirdConsignee}</td>
-              <td>{item.commodity}</td> 
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <Typography variant="h4" gutterBottom>Current Freight Movement</Typography>
+      <Button variant="contained" color="primary" onClick={() => setShowForm(!showForm)}>
+        {showForm ? 'Cancel' : 'Add New Data'}
+      </Button>
+      {showForm && <DataForm onSuccess={handleFormSuccess} />}
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>ID</TableCell>
+              <TableCell>Date</TableCell>
+              <TableCell>Revenue</TableCell>
+              <TableCell>Net Amount</TableCell>
+              <TableCell>Payment Status</TableCell>
+              <TableCell>Remit</TableCell>
+              <TableCell>Invoicing</TableCell>
+              <TableCell>Brokerage</TableCell>
+              <TableCell>Rate Confirmation</TableCell>
+              <TableCell>Weight</TableCell>
+              <TableCell>Agent</TableCell>
+              <TableCell>Email</TableCell>
+              <TableCell>Phone Number</TableCell>
+              <TableCell>Miles</TableCell>
+              <TableCell>Per Mile Rate</TableCell>
+              <TableCell>Shipper</TableCell>
+              <TableCell>Pick Up Date Shipper Date</TableCell>
+              <TableCell>Receiver</TableCell>
+              <TableCell>Delivery Date Receiver Date</TableCell>
+              <TableCell>Second Consignee</TableCell>
+              <TableCell>Second Delivery Date Second Receiver Date</TableCell>
+              <TableCell>Third Consignee</TableCell>
+              <TableCell>Commodity</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {data.map(item => (
+              <TableRow key={item.id}>
+                <TableCell>{item.id}</TableCell>
+                <TableCell>{item.date}</TableCell>
+                <TableCell>${item.revenue.toLocaleString()}</TableCell>
+                <TableCell>${item.net.toLocaleString()}</TableCell>
+                <TableCell>{item.paymentStatus}</TableCell>
+                <TableCell>{item.remit.toLocaleString()}</TableCell>
+                <TableCell>{item.invoicing.toLocaleString()}</TableCell>
+                <TableCell>{item.brokerage}</TableCell>
+                <TableCell>{item.rateConfirmation}</TableCell>
+                <TableCell>{item.weight}</TableCell>
+                <TableCell>{item.agent}</TableCell>
+                <TableCell>{item.email}</TableCell>
+                <TableCell>{item.phoneNumber}</TableCell>
+                <TableCell>{item.miles}</TableCell>
+                <TableCell>{item.perMileRate}</TableCell>
+                <TableCell>{item.shipper}</TableCell>
+                <TableCell>{item.pickUpDateShipperDate}</TableCell>
+                <TableCell>{item.receiver}</TableCell>
+                <TableCell>{item.deliveryDateReceiverDate}</TableCell>
+                <TableCell>{item.secondConsignee}</TableCell>
+                <TableCell>{item.secondDeliveryDateSecondReceiverDate}</TableCell>
+                <TableCell>{item.thirdConsignee}</TableCell>
+                <TableCell>{item.commodity}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </div>
   );
 };

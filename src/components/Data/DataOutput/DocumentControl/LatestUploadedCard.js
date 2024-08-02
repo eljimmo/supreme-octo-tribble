@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function LatestUploadedlMediaCard() {
+export default function LatestUploadedMediaCard() {
   return (
     <Box
       sx={{
@@ -22,15 +22,14 @@ export default function LatestUploadedlMediaCard() {
         <CardMedia
           sx={{ height: 140 }}
           image="/static/images/cards/contemplative-reptile.jpg"
-          title="Document Control Center"
+          title="Latest Uploaded Documents"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Latest Uploaded Documents 
+            Latest Uploaded Documents
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
+            Keep track of the most recently uploaded documents, including bills of lading, rate confirmations, receipts, and invoices. Ensure you're always up-to-date with the latest paperwork.
           </Typography>
         </CardContent>
         <CardActions>

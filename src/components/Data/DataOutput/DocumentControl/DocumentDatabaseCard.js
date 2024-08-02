@@ -22,15 +22,14 @@ export default function DocumentDatabaseMediaCard() {
         <CardMedia
           sx={{ height: 140 }}
           image="/static/images/cards/contemplative-reptile.jpg"
-          title="Document Control Center"
+          title="Document Database Media"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          Document Database Media
-         </Typography>
+            Document Database Media
+          </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
+            Access a comprehensive database of all your transportation documents. Organize and manage bills of lading, rate confirmations, receipts, invoices, and more with ease.
           </Typography>
         </CardContent>
         <CardActions>

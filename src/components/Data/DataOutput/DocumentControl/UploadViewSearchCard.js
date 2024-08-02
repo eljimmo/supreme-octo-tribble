@@ -22,15 +22,14 @@ export default function UploadViewSearchMediaCard() {
         <CardMedia
           sx={{ height: 140 }}
           image="/static/images/cards/contemplative-reptile.jpg"
-          title="UploadViewSearchMediaCard"
+          title="Upload, View & Search Documents"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          Upload, View & Search Documents 
+            Upload, View & Search Documents
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica.
+            Easily upload, view, and search for documents related to your shipments. Stay organized and quickly access the files you need, including bills of lading, rate confirmations, receipts, and invoices.
           </Typography>
         </CardContent>
         <CardActions>

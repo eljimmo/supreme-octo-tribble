@@ -11,12 +11,14 @@ import DataCollectionIndex from "./pages/Service_Index/DataCollection";
 import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
 import GeneralTermsIndex from "./pages/Service_Index/Generalterms";
-import Howitworks from "./pages/Service_Index/How";
+import FleetOperationsHub from "./pages/Service_Index/FleetOperationsHub";
 import SupportPage from "./pages/Service_Index/Support";
 import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
-import DataDash from "./pages/Dashboard";
+import ControlPage from "./pages/ControlPage";
+import DatabaseMain from "./components/Data/DataOutput/MainDataBasePage/Index"; 
+// import DataPage from "./components/Data/DataOutput/DataTables/DataPage";
 // import AssetAnalysis from "./pages/Service_Index/AssetAnalysis";
 import PrivateRoute from "./pages/layout/PrivateRoute";
 
@@ -78,41 +80,17 @@ export default function App() {
               
 
               <Route
-                path="/dashboard"
+                path="/control"
                 element={
-                  <DataDash/>
+                  <ControlPage/>
                 }
               />
-              
-
-              
-              <Route
-                path="/international"
-                element={
-                  <PrivacyPoliciesIndex/>
-                }
-              />
-
+         
 
                 <Route
-                path="/contact"
+                path="/operations"
                 element={
-                  <AccessibilityIndex/>
-                }
-              />
-
-
-                <Route
-                path="/about"
-                element={
-                  <GeneralTermsIndex/>
-                }
-              />
-
-                <Route
-                path="/software"
-                element={
-                  <Howitworks/>
+                  <FleetOperationsHub/>
                 }
               />
               
@@ -120,6 +98,13 @@ export default function App() {
                 path="/login"
                 element={
                   <ChooseUs/>
+                }
+              />
+
+              <Route
+                path="/database"
+                element={
+                  <DatabaseMain/>
                 }
               />
 

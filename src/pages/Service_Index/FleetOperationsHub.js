@@ -162,7 +162,7 @@ z-index: 1;
 
 
 
-export default function Howitworks() {
+export default function FleetOperationsHub() {
   const [isOpen, setIsOpen] = useState(false);
   const sampleData = [10, 12, 15, 20, 27, 35];
   const growth = ((sampleData[sampleData.length - 1] - sampleData[0]) / sampleData[0]) * 100;
@@ -180,7 +180,7 @@ export default function Howitworks() {
 
       <PageWrapper>
         <AnimatedGradientText1>
-        Operations Overview
+        Fleet Operations Hub
         </AnimatedGradientText1>
 
         <DataDisplay>
