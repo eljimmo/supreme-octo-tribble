@@ -4,9 +4,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import WelcomePage from './pages/Service_Index/Welcome_page_index';
-
 import { AuthProvider } from '../src/contexts/AuthContext';
-
 import DataCollectionIndex from "./pages/Service_Index/DataCollection";
 import PrivacyPoliciesIndex from "./pages/Service_Index/Privacypolicies";
 import AccessibilityIndex from "./pages/Service_Index/Accessibility";
