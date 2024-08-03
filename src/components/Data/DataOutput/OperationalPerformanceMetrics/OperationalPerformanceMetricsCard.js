@@ -52,14 +52,14 @@ export default function OperationalPerformanceMetricsMediaCard() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <CustomTab label="Transit Time" {...a11yProps(0)} />
-          <CustomTab label="Fleet Utilization Rate" {...a11yProps(1)} />
-          <CustomTab label="Freight Cost per Mile" {...a11yProps(2)} />
+          <CustomTab label="(TT)" {...a11yProps(0)} />
+          <CustomTab label="(FUR)" {...a11yProps(1)} />
+          <CustomTab label="(FCPM)" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
 
-      Transit Time
+      Transit Time (TT)
             Transit Time: Transit Time refers to the duration it 
             takes for goods to travel from the point of 
             origin to the destination. It is a key performance metric in 
@@ -82,7 +82,7 @@ Key Points:
 
 Understanding Transit Time helps businesses improve logistics operations and enhance customer satisfaction by ensuring timely deliveries.        </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-      Fleet Utilization Rate: The Fleet Utilization Rate is a measure of how effectively a company's fleet of vehicles is being used. It indicates the percentage of time that the fleet is operational and actively transporting goods compared to the total available time.
+      Fleet Utilization Rate (FUR): The Fleet Utilization Rate is a measure of how effectively a company's fleet of vehicles is being used. It indicates the percentage of time that the fleet is operational and actively transporting goods compared to the total available time.
 
 The formula to calculate Fleet Utilization Rate is:
 
@@ -101,7 +101,7 @@ Key Points:
 Monitoring the Fleet Utilization Rate helps companies optimize their fleet management and reduce costs by improving vehicle usage and minimizing idle time.
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-      Freight Cost per Mile
+      Freight Cost per Mile (FCPM)
             Freight Cost per Mile: Freight Cost per Mile is a financial metric that measures the cost associated with transporting goods for each mile traveled. It helps evaluate the efficiency of transportation operations and the overall cost of shipping.
 
 The formula to calculate Freight Cost per Mile is:

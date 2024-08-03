@@ -55,6 +55,7 @@ export default function FinancialKPITabMediaCard() {
           <CustomTab label="(OER)" {...a11yProps(0)} />
           <CustomTab label="(RGR)" {...a11yProps(1)} />
           <CustomTab label="(CPR)" {...a11yProps(2)} />
+          <CustomTab label="(DER)" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -84,6 +85,23 @@ Key Points:
 
     A positive Revenue Growth Rate indicates an increase in revenue, reflecting successful business expansion or increased sales.
     A negative Revenue Growth Rate indicates a decrease in revenue, which may signal declining sales or business challenges.
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+      Debt-to-Equity Ratio (DER): The Debt-to-Equity Ratio is a financial metric that compares a company’s total debt to its total equity. It is used to assess a company’s financial leverage and risk exposure.
+            The formula to calculate the Debt-to-Equity Ratio is:
+            
+            Debt-to-Equity Ratio=Total DebtTotal Equity
+            
+            Where:
+            
+            Total Debt includes all of a company’s short-term and long-term debt obligations.
+            Total Equity represents the total value of a company’s assets minus its total liabilities.
+            
+            Key Points:
+            
+            A lower Debt-to-Equity Ratio indicates that a company relies less on debt financing and has a stronger equity position.
+            A higher Debt-to-Equity Ratio suggests that a company is more leveraged and may have higher financial risk.
+
       </CustomTabPanel>
     </Box>
   );

@@ -19,6 +19,8 @@ import DatabaseMain from "./components/Data/DataOutput/MainDataBasePage/Index";
 // import DataPage from "./components/Data/DataOutput/DataTables/DataPage";
 // import AssetAnalysis from "./pages/Service_Index/AssetAnalysis";
 import PrivateRoute from "./pages/layout/PrivateRoute";
+import FinancialControlPage from "./components/Data/DataOutput/FinancialControl/FinancialControlPage";
+
 
 export default function App() {
   return (
@@ -106,6 +108,13 @@ export default function App() {
                 }
               />
 
+
+          <Route
+                path="/FinancialControl"
+                element={
+                  <FinancialControlPage/>
+                }
+              />
 
 
           </Routes>          

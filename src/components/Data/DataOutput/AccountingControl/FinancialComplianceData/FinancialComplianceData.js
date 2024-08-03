@@ -5,10 +5,12 @@ import Sidebar from '../components/Sidebar/index';
 import Footer from '../components/Footer';
 import DocumentControl from '../components/Data/DataOutput/DocumentControl/DocumentControlPanel';
 import FinancialGridControl from '../components/Data/DataOutput/FinancialControl/FinancialControlPanel';
-import TabDatabase from '../components/Data/DataOutput/TabDatabase/index';
 import AccountingControlPanel from '../components/Data/DataOutput/AccountingControl/AccountingControlPanel';
-
-
+import TabDatabase from '../components/Data/DataOutput/TabDatabase/index';
+// import InvoiceManagementPanel from '../components/Data/DataOutput/InvoiceManagement/InvoiceManagementPanel';
+// import PaymentStatusPanel from '../components/Data/DataOutput/PaymentStatus/PaymentStatusPanel';
+// import ComplianceDataPanel from '../components/Data/DataOutput/ComplianceData/ComplianceDataPanel'; // Import new component
+import ComplianceDataPanel from './ComplianceDataPanel';
 const gradientText = keyframes`
 {
   0% {
@@ -73,7 +75,7 @@ const SectionContainer = styled.div`
   margin-top: 20px;
 `;
 
-export default function ControlPage() {
+export default function FinancialComplianceDataPage() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -91,34 +93,52 @@ export default function ControlPage() {
       <DataCollectionNoticeContainer>
         <AnimatedGradientText1>Logistics Control Center</AnimatedGradientText1>
 
-          <HighlightedText>Document Control Center</HighlightedText>
-          
-          
-          <TopLine1>
-            Document Control Center | Upload, View, and Search for Documents
-          </TopLine1>
+        <HighlightedText>Document Control Center</HighlightedText>
+        
+        <TopLine1>
+          Document Control Center | Upload, View, and Search for Documents
+        </TopLine1>
 
+        <DocumentControl />
 
-          <DocumentControl />
+        <HighlightedText>Financial Control Panel</HighlightedText>
+        
+        <TopLine1>
+          <ul>
+            <li>Revenue and Expenses | Profitability Metrics | Asset Management | Cash Flow Management</li>
+          </ul>
+        </TopLine1>
 
-          <HighlightedText>Financial Control Panel</HighlightedText>
-          
-          <TopLine1>
-            <ul>
-              <li>Revenue and Expenses | Profitability Metrics | Asset Management | Cash Flow Management</li>
-            </ul>
-          </TopLine1>
-
-
-          <FinancialGridControl />
+        <FinancialGridControl />
 
         <SectionContainer>
           <TopLine1>
-          Accounting Control Panel
-            </TopLine1>
-            <AccountingControlPanel />
-
+            Accounting Control Panel
+          </TopLine1>
+          <AccountingControlPanel />
           <TabDatabase />
+        </SectionContainer>
+
+        <SectionContainer>
+          <HighlightedText>Invoice Management | Payment Status</HighlightedText>
+          <TopLine1>
+            <ul>
+              <li>Manage Invoices | Track Payment Status | Aging Reports</li>
+            </ul>
+          </TopLine1>
+          {/* <InvoiceManagementPanel /> */}
+          {/* <PaymentStatusPanel /> */}
+        </SectionContainer>
+
+        {/* New Section */}
+        <SectionContainer>
+          <HighlightedText>Financial Compliance Data</HighlightedText>
+          <TopLine1>
+            <ul>
+              <li>Compliance Metrics | Regulatory Data | Financial Audits</li>
+            </ul>
+          </TopLine1>
+          <ComplianceDataPanel /> {/* Add new component for financial compliance data */}
         </SectionContainer>
       </DataCollectionNoticeContainer>
       <Footer />

@@ -52,19 +52,23 @@ export default function TabDatabase() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <CustomTab label="Item One" {...a11yProps(0)} />
-          <CustomTab label="Item Two" {...a11yProps(1)} />
-          <CustomTab label="Item Three" {...a11yProps(2)} />
+          <CustomTab label="Factored" {...a11yProps(0)} />
+          <CustomTab label="QuickPay" {...a11yProps(1)} />
+          <CustomTab label="TruimphPay" {...a11yProps(2)} />
+          <CustomTab label="Transflo" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Item One
+        Factored
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        QuickPay
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        TruimphPay
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+        Transflo
       </CustomTabPanel>
     </Box>
   );

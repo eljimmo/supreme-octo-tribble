@@ -20,26 +20,24 @@ export default function FinancialGridControl() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <Item>Revenue and Expenses
           <RevenueExpensesMediaCard/>
-
           </Item>
-          {/* <RevenueExpensesMediaCard/> */}
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <Item>Profitability Metrics 
           <ProfitabilityMetricsMediaCard/>
           </Item>
 
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <Item>Asset Management
           <AssetManagementMediaCard/>
 
           </Item>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <Item>Cash Flow Management
           <CashFlowManagementMediaCard/>
           </Item>
