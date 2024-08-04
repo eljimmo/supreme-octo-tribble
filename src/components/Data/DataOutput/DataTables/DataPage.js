@@ -1,38 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+// DataPage.js
+
+import React, { useState } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Typography, Button } from '@mui/material';
 import DataForm from './DataForm'; // Import the form component
 import './DataPage.css'; // Optional: for additional styling
+// import { useData } from '../../../../../dataserver/DataProvider'; // Import the useData hook
+// import { useData } from '../../../../DataPoint/DataProvider'; // Import the useData hook
+import { useData } from '../DataProviding/DataProvider'; // Import the useData hook
 
 const DataPage = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { data, loading, error } = useData(); // Use the custom hook to get data
   const [showForm, setShowForm] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:3500/api/data');
-        setData(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError('Error fetching data');
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   const handleFormSuccess = async () => {
-    // Fetch new data after form submission
-    try {
-      const response = await axios.get('http://localhost:3500/api/data');
-      setData(response.data);
-    } catch (err) {
-      setError('Error fetching data');
-    }
+    // Trigger data refetch
+    // Since useData already updates data automatically, you might not need to refetch here
     setShowForm(false);
   };
 
@@ -83,8 +65,8 @@ const DataPage = () => {
                 <TableCell>${item.revenue.toLocaleString()}</TableCell>
                 <TableCell>${item.net.toLocaleString()}</TableCell>
                 <TableCell>{item.paymentStatus}</TableCell>
-                <TableCell>{item.remit.toLocaleString()}</TableCell>
-                <TableCell>{item.invoicing.toLocaleString()}</TableCell>
+                <TableCell>{item.remit}</TableCell>
+                <TableCell>{item.invoicing}</TableCell>
                 <TableCell>{item.brokerage}</TableCell>
                 <TableCell>{item.rateConfirmation}</TableCell>
                 <TableCell>{item.weight}</TableCell>
@@ -92,7 +74,7 @@ const DataPage = () => {
                 <TableCell>{item.email}</TableCell>
                 <TableCell>{item.phoneNumber}</TableCell>
                 <TableCell>{item.miles}</TableCell>
-                <TableCell>{item.perMileRate}</TableCell>
+                <TableCell>${item.perMileRate.toFixed(2)}</TableCell>
                 <TableCell>{item.shipper}</TableCell>
                 <TableCell>{item.pickUpDateShipperDate}</TableCell>
                 <TableCell>{item.receiver}</TableCell>

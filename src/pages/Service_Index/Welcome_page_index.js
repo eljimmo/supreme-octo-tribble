@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 100px;
+  height: 600px;
   position: relative;
   z-index: 1;
 
@@ -70,10 +70,10 @@ z-index: 1;
   <Navbar toggle={toggle} />
   <Sidebar isOpen={isOpen} toggle={toggle} />
 
-  <HeroContainer>
+  <HeroContainerTransparent>
                 <App2/>
                 {/* <Underlay/> */}
-              </HeroContainer>
+              </HeroContainerTransparent>
               <Videoapp/>
                       <ScApp/>
 
