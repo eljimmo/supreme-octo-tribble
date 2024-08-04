@@ -6,9 +6,9 @@ import Geo from '../GEO/Geo';
 export default function App2() {
   const props = {
     focus: 5.1,
-    speed: 100,
-    aperture: 1.8,
-    fov: 50,
+    speed: 50,
+    aperture: 1.0,
+    fov: 75,
     curl: 0.25
   };
 
@@ -20,7 +20,7 @@ export default function App2() {
           maxYaw={0.05}
           pitchFrequency={1}
           maxPitch={0.05}
-          rollFrequency={0.5}
+          rollFrequency={0.1}
           maxRoll={0.5}
           intensity={0.2}
         />

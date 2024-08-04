@@ -7,11 +7,13 @@
   import HeroMachineLearning from "../../components/portfolio_react/components/hero/hero.machinelearning";
   // import Experience from "../../components/MachineLearning/src/components/experience/Expreience";
   import Underlay from '../../components/Landing/Underlay';
+  import Underlay2 from '../../components/Landing/Underlay2';
   import Overlay from '../../components/Landing/Overlay';
   // import Overlay from '../../components/Landing/Overlay';
   // import { Underlay } from '../../components/FrostedGlass/Herooverlay'
 
-  import App from '../../components/Curl_Noise/App';
+  // import App from '../../components/Curl_Noise/App';
+  import App4 from '../../components/Curl_Noise/App4';
   import App2 from '../../components/Curl_Noise/App2';
   // import TimeClock from '../../components/TimeClock/Index';
   import Heroartificialintelligence from "../../components/portfolio_react/components/hero/hero.artificialintelligence";
@@ -34,27 +36,35 @@
 
 `;
 
-const HeroContainer = styled.div`
-background: 
-/* Diagonal split - top left to bottom right */
-linear-gradient(to bottom right, transparent 50%, transparent 50%), 
-url('container.jpg') left top,
 
-/* Diagonal split - top right to bottom left */
-linear-gradient(to bottom left, transparent 50%, transparent 50%), 
-url('containers.jpg') right top;
-
-background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 30px;
-height: 800px;
-position: relative;
-z-index: 1;
-
+const AppWrapper = styled.div`
+  margin-top: 50px; /* Adjust the margin to move the component lower */
 `;
+
+const Spacer = styled.div`
+  height: 50px; /* Adjust the height to move the component lower */
+`;
+// const HeroContainer = styled.div`
+// background: 
+// /* Diagonal split - top left to bottom right */
+// linear-gradient(to bottom right, transparent 50%, transparent 50%), 
+// url('container.jpg') left top,
+
+// /* Diagonal split - top right to bottom left */
+// linear-gradient(to bottom left, transparent 50%, transparent 50%), 
+// url('containers.jpg') right top;
+
+// background-size: 50% 100%, 50% 100%; /* Adjust the size as needed */
+// background-repeat: no-repeat;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// padding: 0 30px;
+// height: 800px;
+// position: relative;
+// z-index: 1;
+
+// `;
 
 
 
@@ -70,11 +80,27 @@ z-index: 1;
   <Navbar toggle={toggle} />
   <Sidebar isOpen={isOpen} toggle={toggle} />
 
-  <HeroContainerTransparent>
-                <App2/>
+  {/* <HeroContainerTransparent> */}
+  {/* <Spacer> */}
+              
+                {/* <App2/> */}
+                {/* </Spacer> */}
                 {/* <Underlay/> */}
+              {/* </HeroContainerTransparent> */}
+              {/* <HeroContainerTransparent>
+                <App4/>
+                <Underlay/>
+              </HeroContainerTransparent> */}
+              <HeroContainerTransparent>
+                <App4/>
+                {/* <Underlay2/> */}
               </HeroContainerTransparent>
-              <Videoapp/>
+
+              {/* <HeroContainerTransparent> */}
+                {/* <App4/> */}
+                {/* <Underlay/> */}
+              {/* </HeroContainerTransparent> */}
+              {/* <Videoapp/> */}
                       <ScApp/>
 
                                             {/* <HeroContainer>

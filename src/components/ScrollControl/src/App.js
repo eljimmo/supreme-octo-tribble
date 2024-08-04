@@ -35,8 +35,13 @@ export default function ScApp() {
           </Scroll>
           
           <Scroll html>
+
+          <br />
+            <br />
+            <br />
+            <br />
             {/* First Div */}
-            <hr/>
+            {/* <hr/>
             <hr/>
             <hr/>
             <hr/>
@@ -45,7 +50,7 @@ export default function ScApp() {
             <br/>
 
             <br/>
-            <br/>
+            <br/> */}
 
             <div
               style={{
@@ -113,8 +118,9 @@ export default function ScApp() {
               <br/>
               <br/>
               <InfoSection2 {...homeObjThree}/>
-            }/>
-
+              <br/>
+              
+            
             {/* Second Div */}
             <div
                            style={{

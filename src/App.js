@@ -15,11 +15,15 @@ import ChooseUs from "./pages/Service_Index/WhyLeibniz";
 import Login from "./pages/Service_Index/Login";
 import Signup from "./pages/Service_Index/Signup";
 import ControlPage from "./pages/ControlPage";
-import DatabaseMain from "./components/Data/DataOutput/MainDataBasePage/Index"; 
+// import DatabaseMain from "./components/Data/DataOutput/MainDataBasePage/Index"; 
 // import DataPage from "./components/Data/DataOutput/DataTables/DataPage";
 // import AssetAnalysis from "./pages/Service_Index/AssetAnalysis";
 import PrivateRoute from "./pages/layout/PrivateRoute";
 import FinancialControlPage from "./components/Data/DataOutput/FinancialControl/FinancialControlPage";
+import TestDataPage from "./components/Data/DataOutput/DataTables/DataPageTest";
+import DataPageDirect from "./components/Data/DataOutput/DataTables/DataPageDirectHost";
+import AllDataPage from "./components/Data/DataOutput/DataTables/AllData";
+
 
 
 export default function App() {
@@ -104,7 +108,7 @@ export default function App() {
               <Route
                 path="/database"
                 element={
-                  <DatabaseMain/>
+                  <AllDataPage/>
                 }
               />
 
